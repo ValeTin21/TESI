@@ -1,0 +1,107 @@
+
+%%Packages import
+\documentclass[a4paper, oneside]{sapthesis}
+\usepackage{microtype}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\usepackage{subfigure}
+\usepackage[acronym]{glossaries}
+\usepackage{graphicx}
+\captionsetup{labelsep=quad}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage[table]{xcolor}
+
+\definecolor{citegreen}{RGB}{0, 128, 0} 
+
+\usepackage[colorlinks=true, citecolor=citegreen, linkcolor=black, urlcolor=black, filecolor=black]{hyperref}
+\usepackage{blindtext}
+\usepackage{comment}
+\usepackage{color,soul}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+
+\usepackage[linguistics]{forest} %per dare i diagrammi: https://texdoc.org/serve/forest/0
+
+\newcommand*{\belowrulesepcolor}[1]{% 
+  \noalign{% 
+  \kern-\belowrulesep \begingroup \color{#1}% 
+  \hrule height\belowrulesep \endgroup }%
+}
+\newcommand*{\aboverulesepcolor}[1]{% 
+  \noalign{%
+  \begingroup \color{#1}% 
+  \hrule height\aboverulesep \endgroup \kern-\aboverulesep }%
+}
+
+\usepackage[sort&compress,numbers]{natbib}
+\bibliographystyle{plainnat}
+\setcitestyle{lower,open={[},close={]}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Main Settings
+\hypersetup{pdftitle={Search for New Physics with Anomaly Detection approach at the LHC}, pdfauthor={Nome Cognome}}
+\title{Search for New Physics in anomalous jets\\ using jet substructures with the ATLAS detector and LHC Run 3 data}
+\author{Valerio Tinari}
+\IDnumber{1998628}
+\course{Master's Degree in Physics}
+\courseorganizer{Facoltà di Scienze Matematiche, Fisiche e Naturali }
+\AcademicYear{2025/2026}
+\advisor{Prof. Stefano Giagu  }
+\customadvisorlabel{Advisor}
+\coadvisor{Dr. Valerio Ippolito \\Dr. Giuliano Gustavino}
+\customcoadvisorlabel{Co-Advisors}
+%\director{Dott.  Nome Cognome}
+%\customdirectorlabel{Specializzando\\Responsabile della ricerca}
+\authoremail{tinari.1998628@studenti.uniroma1.it}
+\copyyear{2026}
+\examdate{12/07}
+\examiner{examiner} 
+
+%In caso di titoli di section a 2 righe
+%\setlength{\headheight}{22.59052pt}
+%\addtolength{\topmargin}{-10.59052pt}
+
+\makeindex
+
+% \includeonly{Cap_1,Cap_2,Cap_3,Cap_4,Cap_5}
+\newcommand{\Fig}[1]{[{\footnotesize \texttt{Fig.#1}}]}
+\newcommand{\citfig}[1]{\ap{\scriptsize\textrm{(\textit{F#1})}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Document
+\begin{document}
+
+\frontmatter
+\maketitle
+\dedication{dedica}
+
+\tableofcontents
+
+\newpage
+\thispagestyle{empty}
+\mbox{} 
+\newpage
+\mainmatter
+\include{Chap_0_Intro}
+\include{Chap_1}
+\include{Chap_2}
+\include{Chap_3}
+\include{Chap_4}
+\include{Chap_5}
+\include{Chap_6_concl}
+
+\backmatter
+\cleardoublepage
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{bibliography}
+
+% \input{OLD/ringraziamenti}
+
+\end{document}

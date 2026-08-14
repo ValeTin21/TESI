@@ -1,0 +1,26 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Collaboration((2012){\natexlab{a}})]{HiggsDiscoveryATLAS}
+ATLAS Collaboration.
+\newblock {\textit{Observation of a new particle in the search for the Standard
+  Model Higgs boson with the ATLAS detector at the LHC}}.
+\newblock \emph{Phys. Lett. B}, 716:\penalty0 1--29, (2012){\natexlab{a}}.
+
+\bibitem[Collaboration((2012){\natexlab{b}})]{HiggsDiscoveryCMS}
+CMS Collaboration.
+\newblock {\textit{Observation of a New Boson at a Mass of 125 GeV with the CMS
+  Experiment at the LHC}}.
+\newblock \emph{Phys. Lett. B}, 716:\penalty0 30--61, (2012){\natexlab{b}}.
+
+\bibitem[et~al.(2011)]{DM_Garrett}
+K.~Garrett et~al.
+\newblock \textit{Dark Matter: A Primer}.
+\newblock \emph{Advances in Astronomy}, 2011, 2011.
+\newblock \doi{10.1155/2011/968283}.
+
+\end{thebibliography}
