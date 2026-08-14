@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,5 +22,12 @@ K.~Garrett et~al.
 \newblock \textit{Dark Matter: A Primer}.
 \newblock \emph{Advances in Astronomy}, 2011, 2011.
 \newblock \doi{10.1155/2011/968283}.
+
+\bibitem[Peskin and Schroeder(1995)]{Peskin_QFT}
+Michael~E. Peskin and Daniel~V. Schroeder.
+\newblock \emph{{An Introduction to quantum field theory}}.
+\newblock Addison-Wesley, Reading, USA, 1995.
+\newblock ISBN 978-0-201-50397-5, 978-0-429-50355-9, 978-0-429-49417-8.
+\newblock \doi{10.1201/9780429503559}.
 
 \end{thebibliography}

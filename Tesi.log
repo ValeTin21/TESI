@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  14 AUG 2026 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  14 AUG 2026 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1290,42 +1290,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
  (Chap_1.tex
 Chapter 1.
 
-Package natbib Warning: Citation `Garrett:2011' on page 3 undefined on input line 19.
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+
+Package natbib Warning: Citation `Garrett:2011' on page 3 undefined on input line 27.
 
 [3
 
 
 
 
-{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [4{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 
-Package natbib Warning: Citation `ATLAS:2012' on page 4 undefined on input line 59.
-
-
-Package natbib Warning: Citation `CMS:2012' on page 4 undefined on input line 59.
-
-[4{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [5]
-
-Package natbib Warning: Citation `ATLAS:2012' on page 6 undefined on input line 144.
+Package natbib Warning: Citation `ATLAS:2012' on page 5 undefined on input line 67.
 
 
-Package natbib Warning: Citation `CMS:2012' on page 6 undefined on input line 144.
+Package natbib Warning: Citation `CMS:2012' on page 5 undefined on input line 67.
+
+[5] [6]
+
+Package natbib Warning: Citation `ATLAS:2012' on page 7 undefined on input line 152.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 6 undefined on input line 144.
-
-[6]
-
-Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 147.
+Package natbib Warning: Citation `CMS:2012' on page 7 undefined on input line 152.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 147.
+Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 152.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 151.
+Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 155.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 151.
+Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 155.
+
+
+Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 159.
+
+
+Package natbib Warning: Citation `Garrett:2011' on page 7 undefined on input line 159.
 
 ) [7]
 \openout2 = `Chap_2.aux'.
@@ -1400,17 +1404,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 15D2DBC5B87EDE540D8AD7DEF74B9F5F;3799.
  ) 
 Here is how much of TeX's memory you used:
- 45413 strings out of 467510
- 988341 string characters out of 5408794
- 1506534 words of memory out of 5000000
- 73663 multiletter control sequences out of 15000+600000
- 720769 words of font info for 197 fonts, out of 8000000 for 9000
+ 45422 strings out of 467510
+ 988469 string characters out of 5408794
+ 1505896 words of memory out of 5000000
+ 73666 multiletter control sequences out of 15000+600000
+ 720982 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2543b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,131p,2543b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Tesi.pdf (18 pages, 378705 bytes).
+Output written on Tesi.pdf (18 pages, 381397 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  55514 words of extra memory for PDF output out of 61914 (max. 10000000)
 
