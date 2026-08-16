@@ -19,48 +19,49 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "Garrett:2011"
 Warning--I didn't find a database entry for "ATLAS:2012"
 Warning--I didn't find a database entry for "CMS:2012"
-You've used 4 entries,
+Warning--I didn't find a database entry for "Garrett:2011"
+Warning--empty publisher in Peskin_QFT
+You've used 5 entries,
             2773 wiz_defined-function locations,
-            635 strings with 5668 characters,
-and the built_in function-call counts, 1468 in all, are:
-= -- 136
-> -- 51
-< -- 4
-+ -- 20
-- -- 15
-* -- 98
-:= -- 240
-add.period$ -- 15
-call.type$ -- 4
-change.case$ -- 16
-chr.to.int$ -- 3
-cite$ -- 8
-duplicate$ -- 79
-empty$ -- 136
-format.name$ -- 21
-if$ -- 301
+            638 strings with 5749 characters,
+and the built_in function-call counts, 1745 in all, are:
+= -- 156
+> -- 61
+< -- 5
++ -- 24
+- -- 18
+* -- 112
+:= -- 279
+add.period$ -- 17
+call.type$ -- 5
+change.case$ -- 20
+chr.to.int$ -- 4
+cite$ -- 11
+duplicate$ -- 94
+empty$ -- 168
+format.name$ -- 25
+if$ -- 359
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 5
-newline$ -- 31
-num.names$ -- 16
-pop$ -- 30
+newline$ -- 35
+num.names$ -- 20
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 16
 quote$ -- 0
-skip$ -- 53
+skip$ -- 66
 stack$ -- 0
-substring$ -- 43
-swap$ -- 6
+substring$ -- 45
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 39
-warning$ -- 0
-while$ -- 16
+type$ -- 50
+warning$ -- 1
+while$ -- 19
 width$ -- 0
-write$ -- 65
-(There were 3 warnings)
+write$ -- 72
+(There were 4 warnings)

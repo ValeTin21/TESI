@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,27 +7,32 @@
 
 \bibitem[Collaboration((2012){\natexlab{a}})]{HiggsDiscoveryATLAS}
 ATLAS Collaboration.
-\newblock {\textit{Observation of a new particle in the search for the Standard
-  Model Higgs boson with the ATLAS detector at the LHC}}.
+\newblock {\textit{"Observation of a new particle in the search for the
+  Standard Model Higgs boson with the ATLAS detector at the LHC"}}.
 \newblock \emph{Phys. Lett. B}, 716:\penalty0 1--29, (2012){\natexlab{a}}.
 
 \bibitem[Collaboration((2012){\natexlab{b}})]{HiggsDiscoveryCMS}
 CMS Collaboration.
-\newblock {\textit{Observation of a New Boson at a Mass of 125 GeV with the CMS
-  Experiment at the LHC}}.
+\newblock {\textit{"Observation of a New Boson at a Mass of 125 GeV with the
+  CMS Experiment at the LHC"}}.
 \newblock \emph{Phys. Lett. B}, 716:\penalty0 30--61, (2012){\natexlab{b}}.
 
-\bibitem[et~al.(2011)]{DM_Garrett}
+\bibitem[et~al.((2011))]{DM_Garrett}
 K.~Garrett et~al.
-\newblock \textit{Dark Matter: A Primer}.
-\newblock \emph{Advances in Astronomy}, 2011, 2011.
+\newblock {\textit{"Dark Matter: A Primer"}}.
+\newblock \emph{Advances in Astronomy}, (2011).
 \newblock \doi{10.1155/2011/968283}.
 
-\bibitem[Peskin and Schroeder(1995)]{Peskin_QFT}
-Michael~E. Peskin and Daniel~V. Schroeder.
-\newblock \emph{{An Introduction to quantum field theory}}.
-\newblock Addison-Wesley, Reading, USA, 1995.
-\newblock ISBN 978-0-201-50397-5, 978-0-429-50355-9, 978-0-429-49417-8.
+\bibitem[Peskin and Schroeder((1995))]{Peskin_QFT}
+M.~E. Peskin and D.~V. Schroeder.
+\newblock \emph{\textit{"An Introduction to quantum field theory"}}.
+\newblock (1995).
 \newblock \doi{10.1201/9780429503559}.
+
+\bibitem[{Wikipedia The Free Encyclopedia}((2026))]{SM_wiki}
+{Wikipedia The Free Encyclopedia}.
+\newblock \textit{"Standard Model"}, (2026).
+\newblock URL
+  \url{https://en.wikipedia.org/w/index.php?title=Standard_Model&oldid=1368397978}.
 
 \end{thebibliography}
