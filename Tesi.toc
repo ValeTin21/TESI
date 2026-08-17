@@ -6,12 +6,10 @@
 \contentsline {subsection}{\numberline {1.1.2}Quantum Chromodynamics}{5}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Electroweak model}{5}{subsection.1.1.3}%
 \contentsline {section}{\numberline {1.2}Hints of Physics Beyond the Standard Model}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}The Standard Model}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Particles}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Quantum Electrodynamics}{5}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Quantum Chromodynamics}{5}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Electroweak Model}{6}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}Hints of Physics Beyond the Standard Model}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.2.1}Quantum Electrodynamics}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Quantum Chromodynamics}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Electroweak Model}{6}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Hints of Physics Beyond the Standard Model}{7}{section.1.3}%
 \contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiments}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The LHC}{9}{section.2.1}%
 \contentsline {chapter}{\numberline {3}Anomaly Detection}{10}{chapter.3}%

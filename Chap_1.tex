@@ -6,7 +6,7 @@ Despite the success of the SM, there are many phenomena that are not explained b
 This chapter presentes a brief overview of the SM, highlighting its major features. In addition, hints for Physics Beyond it are exposed.
 
 \section{An overview of the Standard Model} \label{sec:SM_BSM/SM}
-The fundamental constituents of Universe are precisely described by the SM. They are called elementary particles, which are mathematically described as quantum fields $\psi(x)$ and the dynamics is modelled by Lagrangian densities $\mathcal{L}(\psi, \partial_{\mu}\psi)$ \cite{Peskin_QFT}. 
+The fundamental constituents of Universe are precisely described by the SM. They are called elementary particles, which are mathematically described as quantum fields $\psi(x)$ and their dynamics is modelled by Lagrangian densities $\mathcal{L}(\psi, \partial_{\mu}\psi)$ \cite{Peskin_QFT}. 
 
 \begin{figure}[ht!]
     \centering
@@ -16,40 +16,37 @@ The fundamental constituents of Universe are precisely described by the SM. They
 \end{figure}
 
 \noindent Such particles can be graphically pictured as presented in Fig. \ref{fig:SM_BSM/SM/SM_framework}. 
-They are divided into two fundamental classes based on their spin quantum number. The first class is composed by \textit{fermions}, which cover the first three column of Fig. \ref{fig:SM_BSM/SM/SM_framework} and are organised in three \textit{generations} of increasing proper mass; they have spin 1/2 and constitute \textit{matter}. The second class is those of \textit{bosons} with integer spin which \textit{mediate} fundamental interactions and generate mass.\\
-Fermions are further classified into two distinct categories depending on their participation in the strong interaction. In the first category \textit{quarks} are present. They carry \textit{colour charge} (red, green, blue) and therefore interact via all fundamental forces, among which the strong one.
-Quarks exist in six flavors, organized into three generations of weak doublets:
-\begin{equation}
+They are divided into two fundamental classes based on their spin quantum number. The first class is composed by \textit{fermions}, which cover the first three column of Fig. \ref{fig:SM_BSM/SM/SM_framework} and are organised in three \textit{generations} of increasing proper mass; they have spin 1/2 and constitute \textit{matter}. The second class is those of \textit{bosons}, with integer spin, which \textit{mediate} fundamental interactions and generate mass.\\
+Fermions are further classified into two distinct categories depending on their participation in the strong interaction. The first category is relative to \textit{quarks}. They carry \textit{colour charge} (red, green, blue), making them triplets under $SU(3)$ and therefore interact via all fundamental forces, among which the strong one.
+Quarks exist in six flavors, organized into three generations of weak SU(2) doublets:
+\begin{equation}\label{eq:SM_BSM/SM/quarks}
     \begin{pmatrix} u \\ d \end{pmatrix}, \quad 
     \begin{pmatrix} c \\ s \end{pmatrix}, \quad 
     \begin{pmatrix} t \\ b \end{pmatrix}
 \end{equation}
-Quarks carry a fractional electromagnetic charge: the \textit{up-type} ones ($u, c, t$) have a charge of $+2/3$, while the \textit{down-type} ones ($d, s, b$) carry a $-1/3$ charge.
-
-\textbf{Leptons:} Six leptons are similarly grouped into three generations:
-\begin{equation}
-    \begin{pmatrix} \nu_e \\ e^- \end{pmatrix}, \quad 
-    \begin{pmatrix} \nu_\mu \\ \mu^- \end{pmatrix}, \quad 
-    \begin{pmatrix} \nu_\tau \\ \tau^- \end{pmatrix}
+Quarks carry a fractional electromagnetic charge: the \textit{up-type} ones ($u, c, t$) have a charge of $+2/3$, while the \textit{down-type} ones ($d, s, b$) carry a $-1/3$ charge.\\
+The second category of fermions is associated to \textit{leptons}; they are six and similarly grouped into three generations:
+\begin{equation}\label{eq:SM_BSM/SM/leptons}
+    \begin{pmatrix} e^- \\ \nu_e \end{pmatrix}, \quad 
+    \begin{pmatrix} \mu^- \\ \nu_\mu \end{pmatrix}, \quad 
+    \begin{pmatrix} \tau^- \\ \nu_\tau \end{pmatrix}
 \end{equation}
-Charged leptons ($e^-, \mu^-, \tau^-$) carry an electric charge of $-1\,e$ and interact via electromagnetic and weak forces. Neutrinos ($\nu_e, \nu_\mu, \nu_\tau$) are electrically neutral, massless within the minimal SM, and interact exclusively via the weak force.
-
-Interaction dynamics are mediated by spin-1 \textbf{gauge bosons}, which arise naturally from the requirement of local gauge invariance:
-\begin{itemize}
-    \item $8$ massless \textbf{gluons} ($g$) mediating the strong interaction.
-    \item $1$ massless \textbf{photon} ($\gamma$) mediating the electromagnetic interaction.
-    \item $3$ massive vector bosons ($W^\pm, Z^0$) mediating the weak interaction ($m_W \approx 80.38\text{ GeV}$, $m_Z \approx 91.19\text{ GeV}$).
-\end{itemize}
-Finally, a single spin-0 scalar particle, the \textbf{Higgs boson} ($H$, $m_H \approx 125.09\text{ GeV}$), completes the particle spectrum, arising as a physical state from the spontaneous breaking of electroweak symmetry~\cite{ATLAS:2012, CMS:2012}.
+The charged leptons ($e^-, \mu^-, \tau^-$) carry an electric charge of $-1$ and interact via electromagnetic and weak forces. Neutrinos ($\nu_e, \nu_\mu, \nu_\tau$) are electrically neutral and interact exclusively via the weak force.\\
+Both quarks and charged leptons, have their own anti-particles, which have the same mass of the matter components but opposite quantum numbers. Regarding neutrinos, it is still debated and to be proved whether they have a distinct anti-particles or they are Majorana fermions, being their own anti-particles.\\
+The second class of particles is associated to mediatiors and mass. Spin 1 vector bosons, known as \textit{gauge bosons}, are the mediators of three of the fundamental interactions, which arise naturally from the requirement of local gauge invariance. Among those fields we find the 8 massless gluons $g$ mediating the strong interaction, the massless photon $\gamma$ is associated to electromagnetic interaction and 3 massive vector bosons, $W^\pm \text{ and } Z^0$, with masses $m_W=80.36\text{ GeV}$, $m_Z=91.19\text{ GeV}$, mediating the weak interaction.\\
+In conclusion, a spin 0 scalar particle, the \textit{Higgs boson} $H$, with a mass $m_H = 125.13\text{ GeV}$, completes the particle spectrum, arising as a physical state from the spontaneous breaking of electroweak symmetry.\\
 
 %-------------------------------------------------%
-
-The SM is a gauge theory, meaning that the Lagrangian is invariant under local transformations of the fields. The gauge group of the SM is a non-abelian symmetry group defined as:
+\noindent The SM is a gauge theory, meaning that the Lagrangian is invariant under local transformations of the fields. The Lagrangian density describing the SM dynamics is:
+\begin{equation}\label{eq:SM_BSM/SM/SM_Lag}
+\mathcal{L}_{\text{SM}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - i\bar{\psi} \slashed{D} \psi + (D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi) + \bar{\psi}_i y_{ij} \psi_j \phi + h.c.,
+\end{equation}
+\noindent The gauge group of the SM, under which such lagrangian is invariant, is a non-abelian symmetry group defined as:
 \begin{equation}
     SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
 \end{equation}
 \noindent where $SU(3)_C$ describes the strong interaction via Quantum Chromodynamics (QCD) with subscript \textit{C} standing for colour, and $SU(2)_L \otimes U(1)_Y$ represents the unified electroweak (EW) interaction, with \textit{L} associated to the left component of fermions and \textit{Y} to hypercharge.\\
-
+The terms of the equation \ref{eq:SM_BSM/SM/SM_Lag} above are presented in detail in the following sections.
 
 \subsection{Quantum Electrodynamics}\label{subsec:SM_BSM/SM/QED}
 \subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
@@ -61,12 +58,6 @@ The SM is a gauge theory, meaning that the Lagrangian is invariant under local t
 /////////////////////////////////////////// \\
 
 %-------------------------------------------------------------------------------
-\section{The Standard Model}
-\label{sec:sm}
-
-\subsection{Particles}
-\label{subsec:particles}
-
 %-------------------------------------------------------------------------------
 \subsection{Quantum Electrodynamics}
 \label{subsec:qed}
