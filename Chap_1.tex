@@ -60,7 +60,7 @@ Using the Lagrangian formalism \cite{Feynman_QFT}, QED is constructed starting f
     \mathcal{L}_\text{Dirac} = \bar{\psi} (i\gamma^\mu \partial_\mu - m) \psi
 \end{equation}
 
-\noindent In the equation above, $\bar{\psi} = \psi^\dagger \gamma^0$ is the Dirac adjoint of the field $\psi$ and $\gamma^\mu$ are the Dirac matrices derived from Pauli matrices $\sigma_i$ ($i$ =1,2,3): 
+\noindent In the equation above, $\bar{\psi} = \psi^\dagger \gamma^0$ is the Dirac adjoint of the field $\psi$ and $\gamma^\mu$ are the Dirac matrices derived from Pauli matrices $\sigma_i$ ($i$ =1,2,3 and $\mu$=0,1,2,3): 
 
 \begin{equation}\label{eq:SM_BSM/QED/PauliMatrix}
 \gamma^0 = \begin{pmatrix} 0 & \mathbb{I} \\ \mathbb{I} & 0 \end{pmatrix}, \qquad
@@ -68,16 +68,17 @@ Using the Lagrangian formalism \cite{Feynman_QFT}, QED is constructed starting f
 \end{equation}
 
 \noindent The Dirac Lagrangian \ref{eq:SM_BSM/QED/Dirac_L} is invariant under a global $U(1)$ phase transformation $\psi(x) \to e^{i e \alpha} \psi(x)$, with $e$ the electric charge of the fermion and $\alpha$ a constant phase.
+Such invariance is not preserved under a local $U(1)$ phase transformation $\psi(x) \to e^{i e \alpha(x)} \psi(x)$, where $\alpha(x)$ is a space-time dependent phase. In order to preserve the invariance, the partial derivative $\partial_\mu$ is replaced by the covariant derivative $D_\mu$:
 
-Under a local $U(1)$ phase transformation $\psi(x) \to e^{i e \alpha(x)} \psi(x)$, the derivative transforms non-covariantly. To preserve local gauge invariance, the partial derivative $\partial_\mu$ is replaced by the gauge-covariant derivative $D_\mu$:
-\begin{equation}
+\begin{equation}\label{eq:SM_BSM/QED/cov_der}
     D_\mu = \partial_\mu + i e A_\mu(x)
 \end{equation}
-where $A_\mu(x)$ is a vector gauge field (the photon field) transforming as $A_\mu(x) \to A_\mu(x) - \partial_\mu \alpha(x)$. Adding the gauge-invariant kinetic term for $A_\mu$ yields the full QED Lagrangian:
-\begin{equation}
+where $A_\mu(x)$ is a vector gauge field representing the photon field, which transforms as $A_\mu(x) \to A_\mu(x) - \partial_\mu \alpha(x)$. Including the gauge-invariant kinetic term to take into account for the new field $A_\mu$, we derive the full QED Lagrangian:
+
+\begin{equation}\label{eq:SM_BSM/QED/QED_L}
     \mathcal{L}_\text{QED} = \bar{\psi} (i\gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
 \end{equation}
-where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ dictates the coupling of charged fermions to photons with strength proportional to the charge $e$.
+where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ rules the coupling of charged fermions to photons with a strength proportional to the electric charge $e$.
 
 
 \subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
