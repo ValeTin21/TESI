@@ -36,8 +36,8 @@ Both quarks and charged leptons, have their own anti-particles, which have the s
 The second class of particles is associated to mediatiors and mass. Spin 1 vector bosons, known as \textit{gauge bosons}, are the mediators of three of the fundamental interactions, which arise naturally from the requirement of local gauge invariance. Among those fields we find the 8 massless gluons $g$ mediating the strong interaction, the massless photon $\gamma$ is associated to electromagnetic interaction and 3 massive vector bosons, $W^\pm \text{ and } Z^0$, with masses $m_W=80.36\text{ GeV}$, $m_Z=91.19\text{ GeV}$, mediating the weak interaction.\\
 In conclusion, a spin 0 scalar particle, the \textit{Higgs boson} $H$, with a mass $m_H = 125.13\text{ GeV}$, completes the particle spectrum, arising as a physical state from the spontaneous breaking of electroweak symmetry.\\
 
-%-------------------------------------------------%
-\noindent The SM is a gauge theory, meaning that the Lagrangian is invariant under local transformations of the fields. The Lagrangian density describing the SM dynamics is:
+%-------------------------------------------------------------------------------%
+\noindent The SM is a gauge theory, meaning that the Lagrangian is invariant under local transformations of the fields. The Lagrangian density describing the SM dynamics can be written as:
 
 \begin{equation}\label{eq:SM_BSM/SM/SM_Lag}
 \mathcal{L}_{\text{SM}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - i\bar{\psi} \gamma_\mu D^\mu \psi + (D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi) + \bar{\psi}_i y_{ij} \psi_j \phi + h.c.,
@@ -51,7 +51,7 @@ In conclusion, a spin 0 scalar particle, the \textit{Higgs boson} $H$, with a ma
 \noindent where $SU(3)_C$ describes the strong interaction via Quantum Chromodynamics (QCD) with subscript \textit{C} standing for colour, and $SU(2)_L \otimes U(1)_Y$ represents the unified electroweak (EW) interaction, with \textit{L} associated to the left component of fermions and \textit{Y} to hypercharge.\\
 The terms of the equation \ref{eq:SM_BSM/SM/SM_Lag} above are presented in detail in the following sections.
 
-%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------%
 \subsection{Quantum Electrodynamics}\label{subsec:SM_BSM/SM/QED}
 The first and simplest gauge theory within the SM framework is Quantum Electrodynamics (QED). It describes the electromagnetic interactions between a charged massive fermion, with mass \textit{m} and represented by a field $\psi(x)$, and the photon, the massless gauge boson represented by the vector field $A_\mu$.
 Using the Lagrangian formalism \cite{Feynman_QFT}, QED is constructed starting from the free Dirac Lagrangian for a massive fermion \cite{pich_QED_EW}:
@@ -80,31 +80,34 @@ where $A_\mu(x)$ is a vector gauge field representing the photon field, which tr
 \end{equation}
 where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ rules the coupling of charged fermions to photons with a strength proportional to the electric charge $e$.\\
 The invariance under a local $U(1)$ transformation gurantees, via the Noether's theorem \cite{Noether}, the existence of a conserved current and charge which, in the case of QED, are the electromagnetic current and the electric charge, respectively.
-%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------%
 
 \subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
 The building of the Lagrangian for QCD is similar to the one for QED: the Dirac Lagrangian is required to be invariant under a local symmetry group, which in this case is the non-Abelian $SU(3)_C$ group, where $C$ represents the triplet color degree of freedom (red, green, blue), the conserved charge of QCD. 
-This theory models the strong interaction between quarks, fundamental constituents of hadrons represented as fermionic fields $q(x)$, and gluons, the massless gauge bosons represented as vector fields $G_{\mu\nu}^a(x)$ with $a=1,...,8$.
-Similarly to QED, the local transformation of the quark field is defined as $q(x) \to q'(x)= e^{i g_sT^a \alpha_a(x)}q(x)$, with $g_s$ the strong coupling constant, $\alpha_a(x)$ the local phase and $T^a$ the generators of the $SU(3)_C$ group.
-Finally, the Lagrangian for $N_f$ quark flavors is given by:
-\begin{equation}
-    \mathcal{L}_\text{QCD} = \sum_{f} \bar{q}_f^a \left( i \gamma^\mu (D_\mu)_{ab} - m_f \delta_{ab} \right) q_f^b - \frac{1}{4} G_{\mu\nu}^A G^{A, \mu\nu}
-\end{equation}
-where $q_f^a$ represents a quark field of flavor $f$ and color index $a \in \{1, 2, 3\}$. The gauge-covariant derivative is defined as:
-\begin{equation}
-    (D_\mu)_{ab} = \partial_\mu \delta_{ab} - i g_s T^A_{ab} A_\mu^A
-\end{equation}
-where $g_s$ is the strong coupling constant, $A_\mu^A$ ($A = 1, \dots, 8$) are the eight gluon vector fields, and $T^A = \frac{1}{2} \lambda^A$ are the $SU(3)$ generators expressed via the Gell-Mann matrices satisfying $[T^A, T^B] = i f^{ABC} T^C$.
+This theory models the strong interaction between \textit{quarks}, fundamental constituents of hadrons represented as fermionic fields $q(x)$, and \textit{gluons}, the massless gauge bosons represented as vector fields $G_{\mu\nu}^a(x)$ with $a=1,...,8$.
+Similarly to QED, the local transformation of the quark field is defined as $q(x) \to q'(x)= e^{i g_sT^a \alpha_a(x)}q(x)$, with $g_s$ the strong coupling constant and $\alpha_a(x)$ the local phase. The term $T^a$ appearing in the previous transformation equation is associated to the generators of the $SU(3)_C$ group, which can be expressed via the Gell-Mann matrices as $T^a = \frac{1}{2} \lambda^a$; such generators satisfy $[T^a, T^a] = i f^{abc} T^c$ with $f^{abc}$ being the structure constants of $SU(3)$.\\
+Also in this case, a covariant derivative is introduced to preserve the invariance of the Lagrangian under local transformations:
 
-The non-Abelian structure gives rise to the field strength tensor:
-\begin{equation}
-    G_{\mu\nu}^A = \partial_\mu A_\nu^A - \partial_\nu A_\mu^A + g_s f^{ABC} A_\mu^B A_\nu^C
+\begin{equation}\label{eq:SM_BSM/QCD/cov_der}
+    D_\mu = \partial_\mu + i g_s T_{a} G_\mu^a
 \end{equation}
-The presence of the non-linear structure constant term $f^{ABC}$ introduces triple and quadruple gluon self-interactions. This characteristic yields two defining physical properties of QCD:
-\begin{enumerate}
-    \item \textbf{Asymptotic Freedom:} At high energy scales (short distances), the running coupling constant $\alpha_s(Q^2) = \frac{g_s^2}{4\pi}$ decreases logarithmically, enabling accurate calculations via perturbative QCD (pQCD).
-    \item \textbf{Color Confinement:} At low energy scales (long distances), $\alpha_s(Q^2)$ grows large. Colored particles cannot exist as isolated free states; they undergo fragmentation and hadronization, producing collimated sprays of energetic, neutral hadrons known as \textbf{jets}.
-\end{enumerate}
+
+\noindent The non-Abelian structure of the group, gives rise to the QCD field tensor:
+
+\begin{equation}\label{eq:SM_BSM/QCD/QCD_tensor}
+    F_{\mu\nu}^a = \partial_\mu G_\nu^a - \partial_\nu G_\mu^a - g_s f^{abc} G_\mu^b G_\nu^c
+\end{equation}
+
+\noindent The presence of the non-linear structure factor $f^{abc}$ both in the commutators and in the tensor, is associated to a particular feature of QCD: the triple and quadruple gluon self-interaction of gluons, a feature not present in QED.\\
+Finally, the Lagrangian describing the dynamics of QCD is written as:
+
+\begin{equation}\label{eq:SM_BSM/QCD/QCD_L}
+    \mathcal{L}_\text{QCD} =  \bar{q} \left( i \gamma^\mu D_\mu - m \right) q - \frac{1}{4} F_{\mu\nu}^a F^{a, \mu\nu}
+\end{equation}
+
+\noindent The term $g_s$, cited before in the local transformation, is usually presented as $\alpha_s = \frac{g_s^2}{4\pi}$, which is the running coupling constant of QCD, whose value depends on the energy scale $Q^2$ of the process. The non-Abelian nature of QCD gives rise to a peculiar behavior of $\alpha_s(Q^2)$.
+In fact, at high energy scales (meaning short distances), $\alpha_s(Q^2)$ decreases logrithmically,  giving rise to the \textit{asymptotic freedom}, enabling accurate calculations via perturbative QCD (pQCD). On the other hand, at low energy scales (meaning long distances), $\alpha_s(Q^2)$ increases, giving rise to the \textit{color confinement}, which prevents colored particles from existing as isolated free states. In this regime, quarks and gluons undergo fragmentation and hadronization, producing collimated sprays of energetic hadrons, known as \textit{jets}.\\
+
 
 \subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
 
@@ -117,8 +120,7 @@ The presence of the non-linear structure constant term $f^{ABC}$ introduces trip
 
 
 %-------------------------------------------------------------------------------
-\subsection{Electroweak Model}
-\label{subsec:electroweak}
+\subsection{Electroweak Model}\label{subsec:electroweak}
 
 The unification of electromagnetic and weak interactions is realized through the Glashow-Weinberg-Salam (GWS) model, structured around the local gauge symmetry group $SU(2)_L \times U(1)_Y$. The left-handed fermion components transform as doublets under weak isospin $T$, whereas right-handed components transform as singlets:
 \begin{equation}
