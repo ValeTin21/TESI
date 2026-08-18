@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -34,5 +34,16 @@ M.~E. Peskin and D.~V. Schroeder.
 \newblock \textit{"Standard Model"}, (2026).
 \newblock URL
   \url{https://en.wikipedia.org/w/index.php?title=Standard_Model&oldid=1368397978}.
+
+\bibitem[Feynman((2005))]{Feynman_QFT}
+R.~P. Feynman.
+\newblock \emph{\textit{ "A New Approach to Quantum Theory"}}.
+\newblock Ed. by Brown Laurie M. World Scientific Publishing Co. Pte. Ltd.,
+  (2005).
+
+\bibitem[Pich((2012))]{pich_QED_EW}
+A.~Pich.
+\newblock \textit{"The Standard Model of Electroweak Interactions"}, (2012).
+\newblock URL \url{https://arxiv.org/abs/1201.0537}.
 
 \end{thebibliography}

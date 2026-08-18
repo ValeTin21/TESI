@@ -38,34 +38,37 @@ In conclusion, a spin 0 scalar particle, the \textit{Higgs boson} $H$, with a ma
 
 %-------------------------------------------------%
 \noindent The SM is a gauge theory, meaning that the Lagrangian is invariant under local transformations of the fields. The Lagrangian density describing the SM dynamics is:
+
 \begin{equation}\label{eq:SM_BSM/SM/SM_Lag}
-\mathcal{L}_{\text{SM}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - i\bar{\psi} \slashed{D} \psi + (D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi) + \bar{\psi}_i y_{ij} \psi_j \phi + h.c.,
+\mathcal{L}_{\text{SM}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} - i\bar{\psi} \gamma_\mu D^\mu \psi + (D_\mu \phi)^\dagger (D^\mu \phi) - V(\phi) + \bar{\psi}_i y_{ij} \psi_j \phi + h.c.,
 \end{equation}
+
 \noindent The gauge group of the SM, under which such lagrangian is invariant, is a non-abelian symmetry group defined as:
+
 \begin{equation}
     SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
 \end{equation}
 \noindent where $SU(3)_C$ describes the strong interaction via Quantum Chromodynamics (QCD) with subscript \textit{C} standing for colour, and $SU(2)_L \otimes U(1)_Y$ represents the unified electroweak (EW) interaction, with \textit{L} associated to the left component of fermions and \textit{Y} to hypercharge.\\
 The terms of the equation \ref{eq:SM_BSM/SM/SM_Lag} above are presented in detail in the following sections.
 
+%-------------------------------------------------------------------------------
 \subsection{Quantum Electrodynamics}\label{subsec:SM_BSM/SM/QED}
-\subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
-\subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
+The first and simplest gauge theory within the SM framework is Quantum Electrodynamics (QED). It describes the electromagnetic interactions between a charged massive fermion, with mass \textit{m} and represented by a field $\psi(x)$, and the photon, the massless gauge boson represented by the vector field $A_\mu$.
+Using the Lagrangian formalism \cite{Feynman_QFT}, QED is constructed starting from the free Dirac Lagrangian for a massive fermion \cite{pich_QED_EW}:
 
-\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
-
-
-/////////////////////////////////////////// \\
-
-%-------------------------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Quantum Electrodynamics}
-\label{subsec:qed}
-
-Quantum Electrodynamics (QED) is the simplest gauge theory within the SM, describing the relativistic quantum field theory of electromagnetic interactions. QED is constructed by requiring local $U(1)_\text{EM}$ gauge invariance of the free Dirac Lagrangian for a massive fermion field $\psi(x)$:
-\begin{equation}
+\begin{equation}\label{eq:SM_BSM/QED/Dirac_L}
     \mathcal{L}_\text{Dirac} = \bar{\psi} (i\gamma^\mu \partial_\mu - m) \psi
 \end{equation}
+
+\noindent In the equation above, $\bar{\psi} = \psi^\dagger \gamma^0$ is the Dirac adjoint of the field $\psi$ and $\gamma^\mu$ are the Dirac matrices derived from Pauli matrices $\sigma_i$ ($i$ =1,2,3): 
+
+\begin{equation}\label{eq:SM_BSM/QED/PauliMatrix}
+\gamma^0 = \begin{pmatrix} 0 & \mathbb{I} \\ \mathbb{I} & 0 \end{pmatrix}, \qquad
+\gamma^i = \begin{pmatrix} 0 & \sigma_i \\ -\sigma_i & 0 \end{pmatrix}
+\end{equation}
+
+\noindent The Dirac Lagrangian \ref{eq:SM_BSM/QED/Dirac_L} is invariant under a global $U(1)$ phase transformation $\psi(x) \to e^{i e \alpha} \psi(x)$, with $e$ the electric charge of the fermion and $\alpha$ a constant phase.
+
 Under a local $U(1)$ phase transformation $\psi(x) \to e^{i e \alpha(x)} \psi(x)$, the derivative transforms non-covariantly. To preserve local gauge invariance, the partial derivative $\partial_\mu$ is replaced by the gauge-covariant derivative $D_\mu$:
 \begin{equation}
     D_\mu = \partial_\mu + i e A_\mu(x)
@@ -75,6 +78,18 @@ where $A_\mu(x)$ is a vector gauge field (the photon field) transforming as $A_\
     \mathcal{L}_\text{QED} = \bar{\psi} (i\gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
 \end{equation}
 where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ dictates the coupling of charged fermions to photons with strength proportional to the charge $e$.
+
+
+\subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
+\subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
+
+\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
+
+
+/////////////////////////////////////////// \\
+
+%-------------------------------------------------------------------------------
+
 
 %-------------------------------------------------------------------------------
 \subsection{Quantum Chromodynamics}
