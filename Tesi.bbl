@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -63,5 +63,12 @@ S.~Weinberg.
 \newblock \textit{"A Model of Leptons"}.
 \newblock (1967).
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.19.1264}.
+
+\bibitem[Particle Data~Group((2026))]{PDG_higgs}
+F.~Takahashi et~al. Particle Data~Group.
+\newblock \textit{"Review of Particle Physics"}.
+\newblock Table 11, (2026).
+\newblock URL
+  \url{https://pdg.lbl.gov/2026/web/viewer.html?file=../reviews/rpp2026-rev-higgs-boson.pdf}.
 
 \end{thebibliography}

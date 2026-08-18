@@ -26,45 +26,46 @@ Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
 Warning--empty journal in Weinberg_EW
-You've used 10 entries,
+Warning--empty journal in PDG_higgs
+You've used 11 entries,
             2481 wiz_defined-function locations,
-            627 strings with 5998 characters,
-and the built_in function-call counts, 2873 in all, are:
-= -- 248
-> -- 78
-< -- 10
-+ -- 43
-- -- 22
-* -- 156
-:= -- 464
-add.period$ -- 35
-call.type$ -- 10
-change.case$ -- 17
-chr.to.int$ -- 9
-cite$ -- 14
-duplicate$ -- 178
-empty$ -- 307
-format.name$ -- 34
-if$ -- 610
+            633 strings with 6185 characters,
+and the built_in function-call counts, 3148 in all, are:
+= -- 273
+> -- 85
+< -- 11
++ -- 47
+- -- 24
+* -- 170
+:= -- 510
+add.period$ -- 39
+call.type$ -- 11
+change.case$ -- 19
+chr.to.int$ -- 10
+cite$ -- 16
+duplicate$ -- 196
+empty$ -- 335
+format.name$ -- 37
+if$ -- 668
 int.to.chr$ -- 2
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 63
-num.names$ -- 30
-pop$ -- 103
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 69
+num.names$ -- 33
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 11
 quote$ -- 0
-skip$ -- 106
+skip$ -- 118
 stack$ -- 0
-substring$ -- 55
-swap$ -- 21
+substring$ -- 57
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 61
-warning$ -- 4
-while$ -- 24
+type$ -- 68
+warning$ -- 5
+while$ -- 26
 width$ -- 0
-write$ -- 136
-(There were 7 warnings)
+write$ -- 150
+(There were 8 warnings)
