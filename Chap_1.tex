@@ -157,6 +157,26 @@ The SSB is realized by introducing a complex scalar field $\Phi$, which is a dou
     \phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} \phi_1 + i \phi_2 \\ \phi_3 + i \phi_4 \end{pmatrix}
 \end{equation}
 
+\noindent The potential associated to the scalar field is defined as:
+\begin{equation}\label{eq:SM_BSM/Higgs/potential}
+    V(\Phi) = -\mu^2 \phi^\dagger \phi + \frac{\lambda}{2} \left(\phi^\dagger \phi\right)^2
+\end{equation}
+
+\noindent where $\mu^2$ and $\lambda$ are constants. Among the two constants, $\lambda$ must be positive to ensure the stability of the potential, while $\mu^2$ can be either positive or negative. The shape of the potential is determined by the sign of $\mu^2$. If $-\mu^2 > 0$, the potential has a single minimum at $\phi = 0$, preserving the symmetry. If $-\mu^2 < 0$, the potential gets the well-known mexican hat shape presented in Fig \ref{fig:SM_BSM/SM/Higgs_potential}.
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap1/HiggsPotential.png}
+    \caption{Representation of the Higgs potential $V(\phi)$. Figure from Ref. \cite{Higgs_historical}.}
+    \label{fig:SM_BSM/SM/Higgs_potential}
+\end{figure}
+
+
+The potential has a non-zero vacuum expectation value (VEV) $v = \sqrt{\mu^2/\lambda}$, which spontaneously breaks the symmetry of the Lagrangian. The scalar field can be expanded around its VEV as:
+\begin{equation}\label{eq:SM_BSM/Higgs/phi_expansion}
+    \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + H(x) \end{pmatrix}
+\end{equation}
+\noindent where $H(x)$ is the physical Higgs boson field. 
+
 Unbroken $SU(2)_L \times U(1)_Y$ symmetry forbids mass terms for gauge bosons and fermions, as explicit mass terms violate local gauge invariance. Mass generation is accommodated via the Brout-Englert-Higgs mechanism by introducing a complex scalar doublet field $\Phi$:
 \begin{equation}
     \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}, \quad \mathcal{V}(\Phi) = \mu^2 \Phi^\dagger \Phi + \lambda (\Phi^\dagger \Phi)^2 \quad (\mu^2 < 0, \lambda > 0)
