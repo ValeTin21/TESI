@@ -78,25 +78,15 @@ where $A_\mu(x)$ is a vector gauge field representing the photon field, which tr
 \begin{equation}\label{eq:SM_BSM/QED/QED_L}
     \mathcal{L}_\text{QED} = \bar{\psi} (i\gamma^\mu D_\mu - m) \psi - \frac{1}{4} F_{\mu\nu} F^{\mu\nu}
 \end{equation}
-where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ rules the coupling of charged fermions to photons with a strength proportional to the electric charge $e$.
-
+where $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is the electromagnetic field strength tensor. The interaction term $-e \bar{\psi} \gamma^\mu \psi A_\mu$ rules the coupling of charged fermions to photons with a strength proportional to the electric charge $e$.\\
+The invariance under a local $U(1)$ transformation gurantees, via the Noether's theorem \cite{Noether}, the existence of a conserved current and charge which, in the case of QED, are the electromagnetic current and the electric charge, respectively.
+%-------------------------------------------------------------------------------
 
 \subsection{Quantum Chromodynamics}\label{subsec:SM_BSM/SM/QCD}
-\subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
-
-\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
-
-
-/////////////////////////////////////////// \\
-
-%-------------------------------------------------------------------------------
-
-
-%-------------------------------------------------------------------------------
-\subsection{Quantum Chromodynamics}
-\label{subsec:qcd}
-
-Quantum Chromodynamics (QCD) is the non-Abelian gauge theory describing the strong force acting between color-charged quarks and gluons. QCD is based on the local $SU(3)_C$ gauge symmetry, where $C$ represents the triplet color degree of freedom (red, green, blue). The Lagrangian for $N_f$ quark flavors is given by:
+The building of the Lagrangian for QCD is similar to the one for QED: the Dirac Lagrangian is required to be invariant under a local symmetry group, which in this case is the non-Abelian $SU(3)_C$ group, where $C$ represents the triplet color degree of freedom (red, green, blue), the conserved charge of QCD. 
+This theory models the strong interaction between quarks, fundamental constituents of hadrons represented as fermionic fields $q(x)$, and gluons, the massless gauge bosons represented as vector fields $G_{\mu\nu}^a(x)$ with $a=1,...,8$.
+Similarly to QED, the local transformation of the quark field is defined as $q(x) \to q'(x)= e^{i g_sT^a \alpha_a(x)}q(x)$, with $g_s$ the strong coupling constant, $\alpha_a(x)$ the local phase and $T^a$ the generators of the $SU(3)_C$ group.
+Finally, the Lagrangian for $N_f$ quark flavors is given by:
 \begin{equation}
     \mathcal{L}_\text{QCD} = \sum_{f} \bar{q}_f^a \left( i \gamma^\mu (D_\mu)_{ab} - m_f \delta_{ab} \right) q_f^b - \frac{1}{4} G_{\mu\nu}^A G^{A, \mu\nu}
 \end{equation}
@@ -115,6 +105,16 @@ The presence of the non-linear structure constant term $f^{ABC}$ introduces trip
     \item \textbf{Asymptotic Freedom:} At high energy scales (short distances), the running coupling constant $\alpha_s(Q^2) = \frac{g_s^2}{4\pi}$ decreases logarithmically, enabling accurate calculations via perturbative QCD (pQCD).
     \item \textbf{Color Confinement:} At low energy scales (long distances), $\alpha_s(Q^2)$ grows large. Colored particles cannot exist as isolated free states; they undergo fragmentation and hadronization, producing collimated sprays of energetic, neutral hadrons known as \textbf{jets}.
 \end{enumerate}
+
+\subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
+
+\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
+
+
+/////////////////////////////////////////// \\
+
+
+
 
 %-------------------------------------------------------------------------------
 \subsection{Electroweak Model}

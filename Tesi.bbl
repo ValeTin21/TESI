@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -45,5 +45,11 @@ R.~P. Feynman.
 A.~Pich.
 \newblock \textit{"The Standard Model of Electroweak Interactions"}, (2012).
 \newblock URL \url{https://arxiv.org/abs/1201.0537}.
+
+\bibitem[Noether((1971))]{Noether}
+E.~Noether.
+\newblock \textit{"Invariant variation problems"}.
+\newblock \emph{Transport Theory and Statistical Physics}, (1971).
+\newblock URL \url{http://dx.doi.org/10.1080/00411457108231446}.
 
 \end{thebibliography}
