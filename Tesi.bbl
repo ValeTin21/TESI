@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -57,5 +57,11 @@ W.~Greiner et~al.
 \newblock \emph{\textit{"Quantum Chromodynamics"}}.
 \newblock (2002).
 \newblock URL \url{https://doi.org/10.1007/978-3-662-04707-1}.
+
+\bibitem[Weinberg((1967))]{Weinberg_EW}
+S.~Weinberg.
+\newblock \textit{"A Model of Leptons"}.
+\newblock (1967).
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.19.1264}.
 
 \end{thebibliography}

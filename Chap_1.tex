@@ -107,33 +107,31 @@ Finally, the Lagrangian describing the dynamics of QCD is written as:
 
 \noindent The term $g_s$, cited before in the local transformation, is usually presented as $\alpha_s = \frac{g_s^2}{4\pi}$, which is the running coupling constant of QCD, whose value depends on the energy scale $Q^2$ of the process. The non-Abelian nature of QCD gives rise to a peculiar behavior of $\alpha_s(Q^2)$.
 In fact, at high energy scales (meaning short distances), $\alpha_s(Q^2)$ decreases logrithmically,  giving rise to the \textit{asymptotic freedom}, enabling accurate calculations via perturbative QCD (pQCD). On the other hand, at low energy scales (meaning long distances), $\alpha_s(Q^2)$ increases, giving rise to the \textit{color confinement}, which prevents colored particles from existing as isolated free states. In this regime, quarks and gluons undergo fragmentation and hadronization, producing collimated sprays of energetic hadrons, known as \textit{jets}.\\
-
+%-------------------------------------------------------------------------------%
 
 \subsection{Electroweak model}\label{subsec:SM_BSM/SM/EW}
+Making use of the Glashow-Weinberg-Salam (GWS) model \cite{pich_QED_EW,Weinberg_EW}, it possible to derive a unified description of \textit{electromagnetic} interaction, already presented in Sec. \ref{subsec:SM_BSM/SM/QED}, and the final third interaction, the \textit{weak} one.\\
+To derive the Electroweak (EW) Lagrangian, the steps to follow are similar to those already presented for QED and QCD. In the first place, the symmetry group under which the Lagrangian is invariant is defined, which is $SU(2)_L \otimes U(1)_Y$ in this case, with $Y$ known as hypercharge, the quantum number of EW interactions.\\
+Secondly, the description of fermions and gauge bosons is defined. Concerning the latter, we have four bosons: $W^i_\mu$ with $i=1,2,3$ associated to $SU(2)_L$ and $B_\mu$ associated to $U(1)_Y$, with coupling constants $g$ and $g'$ respectively.
+Moving to fermions, they are chirality eigenstates. This means that they can be expressed as left-handed and right-handed components, which are defined as $\psi_{L,R} = \frac{1}{2}(1 \mp \gamma^5)\psi$, with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$. The left-handed components of fermions transform as doublets under $SU(2)_L$ and are described as $L=\left(\nu,l^-\right)$ for leptons and $Q=\left(u,d\right)$ for quarks. They have quantum numbers $(T = 1/2, T_3 = \pm 1/2)$, with T being the isospin. The right-handed components, instead, transform as singlets under $U(1)_Y$, with quantum numbers $(T = 0, T_3 = 0)$.\\ 
+The transformation of the fermion components is defined in a compact way as:
 
-\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
-
-
-/////////////////////////////////////////// \\
-
-
-
-
-%-------------------------------------------------------------------------------
-\subsection{Electroweak Model}\label{subsec:electroweak}
-
-The unification of electromagnetic and weak interactions is realized through the Glashow-Weinberg-Salam (GWS) model, structured around the local gauge symmetry group $SU(2)_L \times U(1)_Y$. The left-handed fermion components transform as doublets under weak isospin $T$, whereas right-handed components transform as singlets:
-\begin{equation}
-    \Psi_L = \begin{pmatrix} \nu_{L} \\ e_L^- \end{pmatrix} \quad (T = 1/2, T_3 = \pm 1/2), \qquad e_R^- \quad (T = 0, T_3 = 0)
+\begin{equation}\label{eq:SM_BSM/EW/field_EW}
+\begin{array}{r@{\;}l}
+  \psi_L(x) &\longrightarrow \psi'_L(x) = e^{i\vec{\alpha}(x)\cdot\vec{\tau} + i\beta(x)Y} \psi_L(x), \\
+  \psi_R(x) &\longrightarrow \psi'_R(x) = e^{i\beta(x)Y} \psi_R(x)
+\end{array}
 \end{equation}
-Electric charge $Q$, weak isospin $T_3$, and weak hypercharge $Y$ are unified by the Gell-Mann-Nishijima relation:
-\begin{equation}
+
+\noindent where $\vec{\tau} = \frac{1}{2}\vec{\sigma}$ are the weak isospin, generators of $SU(2)_L$. \\
+Electric charge $Q$, weak isospin $T_3$, and weak hypercharge $Y$ are connected by the relation:
+\begin{equation}\label{eq:SM_BSM/EW/Q_Y}
     Q = T_3 + \frac{Y}{2}
 \end{equation}
 
-The gauge-covariant derivative introducing three $W_\mu^i$ ($i=1,2,3$) bosons for $SU(2)_L$ and one $B_\mu$ boson for $U(1)_Y$ is written as:
-\begin{equation}
-    D_\mu = \partial_\mu - i g T^i W_\mu^i - i g' \frac{Y}{2} B_\mu
+\noindent The following step towards the EW Lagrangian, is to introduce the covariant derivative to preserve the invariance of the Lagrangian under local transformations. The derivative is defined as:
+\begin{equation}\label{eq:SM_BSM/EW/cov_der}
+    D_\mu = \partial_\mu + i g \frac{\tau^a}{2} W_\mu^a(x) + i g' \frac{Y}{2} B_\mu(x)
 \end{equation}
 
 Spontaneous Symmetry Breaking (The Higgs Mechanism)
@@ -155,6 +153,14 @@ where $\theta_W = \arctan(g'/g)$ is the weak mixing angle. The photon field $A_\
     \mathcal{L}_\text{Yukawa} = -y_f \bar{\Psi}_L \Phi f_R + \text{h.c.} \quad \implies \quad m_f = \frac{y_f v}{\sqrt{2}}
 \end{equation}
 
+\section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
+
+
+/////////////////////////////////////////// \\
+
+
+
+%-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Hints of Physics Beyond the Standard Model}
 \label{sec:bsm}
