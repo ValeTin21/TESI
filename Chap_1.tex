@@ -134,6 +134,23 @@ Electric charge $Q$, weak isospin $T_3$, and weak hypercharge $Y$ are connected 
     D_\mu = \partial_\mu + i g \frac{\tau^a}{2} W_\mu^a(x) + i g' \frac{Y}{2} B_\mu(x)
 \end{equation}
 
+\noindent At this point, the EW Lagrangian can be written as:
+\begin{equation}\label{eq:SM_BSM/EW/EW_L}
+    \mathcal{L}_\text{EW} = -\frac{1}{4} W^{a,\mu\nu} W^a_{\mu\nu} -\frac{1}{4} B^{\mu\nu} B_{\mu\nu}+ i\bar{\psi} \gamma^\mu D_\mu \psi
+\end{equation}
+
+\noindent where $W^{a,\mu\nu}$ and $B^{\mu\nu}$ are the field strength tensors associated to the gauge bosons $W^a_\mu$ and $B_\mu$, respectively.\\
+In conclusion, if a rotaion is applied to the $W^a_\mu$ and $B_\mu$ fields, the four physical gauge bosons $\gamma, Z, W^{\pm}$ are obtained as:
+\begin{equation}\label{eq:SM_BSM/EW/phys_bosons}
+    \begin{pmatrix} A_\mu \\ Z_\mu \end{pmatrix} = \begin{pmatrix} \cos\theta_W & \sin\theta_W \\ -\sin\theta_W & \cos\theta_W \end{pmatrix} \begin{pmatrix} B_\mu \\ W_\mu^3 \end{pmatrix}, \quad W_\mu^\pm = \frac{1}{\sqrt{2}}(W_\mu^1 \mp i W_\mu^2)
+\end{equation}
+
+\noindent The parameter appearing in the previous equation is the Weinberg or weak-mixing angle $\theta_W$, which is defined as $\tan\theta_W = g'/g$.\\ 
+The EW Lagrangian \ref{eq:SM_BSM/EW/EW_L} does not provide a proper description about the mass of the bosons involved, which is in contrast with the experimental observations of massive $W^\pm$ and $Z^0$ bosons. The solution to this issue is provided by the Brout-Englert-Higgs mechanism (BEH), which is presented in the following section.
+
+%-------------------------------------------------------------------------------
+\subsection{The Brout-Englert-Higgs mechanism}\label{subsec:SM_BSM/SM/Higgs}
+
 Spontaneous Symmetry Breaking (The Higgs Mechanism)
 Unbroken $SU(2)_L \times U(1)_Y$ symmetry forbids mass terms for gauge bosons and fermions, as explicit mass terms violate local gauge invariance. Mass generation is accommodated via the Brout-Englert-Higgs mechanism by introducing a complex scalar doublet field $\Phi$:
 \begin{equation}
