@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -51,5 +51,11 @@ E.~Noether.
 \newblock \textit{"Invariant variation problems"}.
 \newblock \emph{Transport Theory and Statistical Physics}, (1971).
 \newblock URL \url{http://dx.doi.org/10.1080/00411457108231446}.
+
+\bibitem[et~al.((2002))]{Greiner_QCD}
+W.~Greiner et~al.
+\newblock \emph{\textit{"Quantum Chromodynamics"}}.
+\newblock (2002).
+\newblock URL \url{https://doi.org/10.1007/978-3-662-04707-1}.
 
 \end{thebibliography}
