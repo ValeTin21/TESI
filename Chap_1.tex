@@ -165,12 +165,12 @@ The SSB is realized by introducing a complex scalar field $\phi$, which is a dou
 \noindent where $\mu^2$ and $\lambda$ are constants. Among the two constants, $\lambda$ must be positive to ensure the stability of the potential, while $\mu^2$ can be either positive or negative. The shape of the potential is determined by the sign of $\mu^2$. If $-\mu^2 > 0$, the potential has a single minimum at $\phi = 0$, preserving the symmetry. If $-\mu^2 < 0$, the potential gets the well-known mexican hat shape presented in Fig \ref{fig:SM_BSM/SM/Higgs_potential}.
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap1/HiggsPotential.png}
+    \includegraphics[width=2.6 in]{Images/Chap1/HiggsPotential.png}
     \caption{Representation of the Higgs potential $V(\phi)$. Figure from Ref. \cite{Higgs_historical}.}
     \label{fig:SM_BSM/SM/Higgs_potential}
 \end{figure}
 
-\noindent In the latter case, the vacuum state, as known as the minimum of the potential, is degenerate and associated to a non-zero value of the scalar field $\phi$. In particular, the vacuum expectation value (VEV) $v$ of the Higgs field, defined as $v = \sqrt{\mu^2/\lambda}$, is not null and it is found to be $v=246 \text{ GeV}$. As direct consqeuence, the global $U(1)_Y$ symmetry is spontaneously broken. The VEV is given by:
+\noindent In the latter case, the vacuum state, as known as the minimum of the potential, is degenerate and associated to a non-zero value of the scalar field $\phi$. In particular, the vacuum expectation value (VEV) $v$ of the Higgs field, defined as $v = \sqrt{\mu^2/\lambda}$, is not null. As direct consqeuence, the global $U(1)_Y$ symmetry is spontaneously broken. The VEV is given by:
 \begin{equation}\label{eq:SM_BSM/Higgs/VEV}
     \phi^\dagger \phi =  \frac{\mu^2}{2\lambda} = \frac{v^2}{2}, \quad \phi_0 = \frac{v}{\sqrt{2}}
 \end{equation}
@@ -189,32 +189,15 @@ Using the definition of $\phi$ presented in Eq. \ref{eq:SM_BSM/Higgs/phi_gauge},
 \end{array}
 \end{equation}
 
-\noindent where ...
+\noindent where the term $D_\mu$ is the covariant derivative defined in Eq. \ref{eq:SM_BSM/EW/cov_der} and $Y_{ij}$ are the Yukawa couplings. 
+Each line of the Lagrangian density \ref{eq:SM_BSM/Higgs/SM_L_Higgs} has as specific role. The first line represents the gauge bosons and how they interact with fermions, the second one contains the Yukawa couplings which is associated to Higgs coupling with fermions, and the third line contains the kinetic term for the Higgs field and its potential.\\
+The Higgs potential $V(\phi)$, defined in Eq. \ref{eq:SM_BSM/Higgs/potential}, with che chosen gauge, can be expressed as:
+\begin{equation}\label{eq:SM_BSM/Higgs/potential_gauge}
+    V(h) = \frac{1}{2}m_h^2h^2 + \frac{m_h^2}{2v}h^3 + \frac{m_h^2}{8v^2}h^4
+\end{equation}
 
-
-The potential has a non-zero vacuum expectation value (VEV) $v = \sqrt{\mu^2/\lambda}$, which spontaneously breaks the symmetry of the Lagrangian. The scalar field can be expanded around its VEV as:
-\begin{equation}\label{eq:SM_BSM/Higgs/phi_expansion}
-    \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + H(x) \end{pmatrix}
-\end{equation}
-\noindent where $H(x)$ is the physical Higgs boson field. 
-
-Unbroken $SU(2)_L \times U(1)_Y$ symmetry forbids mass terms for gauge bosons and fermions, as explicit mass terms violate local gauge invariance. Mass generation is accommodated via the Brout-Englert-Higgs mechanism by introducing a complex scalar doublet field $\Phi$:
-\begin{equation}
-    \Phi = \frac{1}{\sqrt{2}} \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}, \quad \mathcal{V}(\Phi) = \mu^2 \Phi^\dagger \Phi + \lambda (\Phi^\dagger \Phi)^2 \quad (\mu^2 < 0, \lambda > 0)
-\end{equation}
-The scalar field acquires a non-zero vacuum expectation value (VEV) $v = \sqrt{-\mu^2/\lambda} \approx 246\text{ GeV}$, spontaneously breaking the symmetry:
-\begin{equation}
-    SU(2)_L \times U(1)_Y \xrightarrow{\text{SSB}} U(1)_\text{EM}
-\end{equation}
-Expanding $\Phi$ around its minimum in the unitary gauge transforms three degrees of freedom into longitudinal polarization states for the gauge physical bosons $W^\pm$ and $Z^0$:
-\begin{equation}
-    W_\mu^\pm = \frac{1}{\sqrt{2}}(W_\mu^1 \mp i W_\mu^2), \quad 
-    \begin{pmatrix} Z_\mu \\ A_\mu \end{pmatrix} = \begin{pmatrix} \cos\theta_W & -\sin\theta_W \\ \sin\theta_W & \cos\theta_W \end{pmatrix} \begin{pmatrix} W_\mu^3 \\ B_\mu \end{pmatrix}
-\end{equation}
-where $\theta_W = \arctan(g'/g)$ is the weak mixing angle. The photon field $A_\mu$ remains massless, while gauge bosons acquire masses $m_W = \frac{1}{2} g v$ and $m_Z = \frac{1}{2} v \sqrt{g^2 + g'^2}$. Fermions acquire mass through gauge-invariant Yukawa couplings:
-\begin{equation}
-    \mathcal{L}_\text{Yukawa} = -y_f \bar{\Psi}_L \Phi f_R + \text{h.c.} \quad \implies \quad m_f = \frac{y_f v}{\sqrt{2}}
-\end{equation}
+\noindent The $m_h$ term appearing in the previous equation is the mass of the Higgs boson, which is a free parameter of the SM, depending on the parameters of the potential, as $m_h =\sqrt{2\lambda v^2} =\sqrt{2\mu^2}$. The cubic and quartic terms in $h$ represent self-interactions of the Higgs boson.\\
+The Higgs boson mass has been measured by the ATLAS and CMS collaborations~\cite{HiggsDiscoveryATLAS,HiggsDiscoveryCMS} to be $m_h = (125.13 \pm 0.11) \text{ GeV}$, which is consistent with the SM predictions. From this measurement, the value of VEV $v$ can be derived as $v\approx246 \text{ GeV}$.\\
 
 \section{Hints of Physics Beyond the Standard Model}\label{sec:SM_BSM/BSM}
 
