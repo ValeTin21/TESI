@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -134,5 +134,12 @@ A.~Tumasyan et~al.
 \newblock \emph{Physics Letters, Section B: Nuclear, Elementary Particle and
   High-Energy Physics}, (2023).
 \newblock \doi{10.1016/j.physletb.2023.137813}.
+
+\bibitem[et~al.()]{DarkJets_GG}
+G.~Albouy et~al.
+\newblock \textit{"Theory, phenomenology, and experimental avenues for dark
+  showers: a Snowmass 2021 report"}.
+\newblock \emph{The European Physical Journal C}, \penalty0 (12).
+\newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-022-11048-8}.
 
 \end{thebibliography}

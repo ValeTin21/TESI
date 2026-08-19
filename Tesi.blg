@@ -28,45 +28,48 @@ Warning--empty journal in Higgs_historical
 Warning--empty journal in Hubble_GalRot
 Warning--empty journal in GalaxyLensing
 Warning--empty journal in Cluster_DM
-You've used 21 entries,
+Warning--there's a number but no volume in DarkJets_GG
+Warning--empty year in DarkJets_GG
+Warning--empty year in DarkJets_GG
+You've used 22 entries,
             2481 wiz_defined-function locations,
-            685 strings with 8004 characters,
-and the built_in function-call counts, 6002 in all, are:
-= -- 520
-> -- 195
-< -- 21
-+ -- 97
-- -- 54
-* -- 321
-:= -- 978
-add.period$ -- 74
-call.type$ -- 21
-change.case$ -- 39
-chr.to.int$ -- 20
-cite$ -- 30
-duplicate$ -- 372
-empty$ -- 617
-format.name$ -- 87
-if$ -- 1277
+            693 strings with 8262 characters,
+and the built_in function-call counts, 6289 in all, are:
+= -- 545
+> -- 202
+< -- 22
++ -- 101
+- -- 56
+* -- 342
+:= -- 1024
+add.period$ -- 78
+call.type$ -- 22
+change.case$ -- 41
+chr.to.int$ -- 21
+cite$ -- 34
+duplicate$ -- 390
+empty$ -- 646
+format.name$ -- 90
+if$ -- 1336
 int.to.chr$ -- 2
-int.to.str$ -- 22
-missing$ -- 21
-newline$ -- 124
-num.names$ -- 63
-pop$ -- 205
+int.to.str$ -- 23
+missing$ -- 22
+newline$ -- 130
+num.names$ -- 66
+pop$ -- 215
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 22
 quote$ -- 0
-skip$ -- 235
+skip$ -- 243
 stack$ -- 0
-substring$ -- 77
-swap$ -- 38
+substring$ -- 79
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
-warning$ -- 9
-while$ -- 46
+type$ -- 145
+warning$ -- 12
+while$ -- 48
 width$ -- 0
-write$ -- 277
-(There were 9 warnings)
+write$ -- 291
+(There were 12 warnings)
