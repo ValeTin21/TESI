@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -106,5 +106,33 @@ D.~Clowe et~al.
 \newblock \textit{"A Direct Empirical Proof of the Existence of Dark Matter"}.
 \newblock (2006).
 \newblock URL \url{http://dx.doi.org/10.1086/508162}.
+
+\bibitem[et~al.((2012))]{LHCNPWG_SimplifiedModels}
+D.~Alves et~al.
+\newblock \textit{"Simplified Models for LHC New Physics Searches"}.
+\newblock \emph{J. Phys. G}, (2012).
+
+\bibitem[D.~Pappadopulo and Wulzer((2014))]{HVT_th_data}
+R.~Torre D.~Pappadopulo, A.~Thamm and A.~Wulzer.
+\newblock \textit{"Heavy vector triplets: bridging theory and data"}.
+\newblock \emph{Journal of High Energy Physics}, (2014).
+
+\bibitem[Aad((2023))]{ATLAS_AD_VVJJ}
+G.~et~al. Aad.
+\newblock \textit{"Anomaly detection search for new resonances decaying into a
+  Higgs boson and a generic new particle $X$ in hadronic final states using
+  $\sqrt{s}=13\text{ }\text{ }\mathrm{TeV}$ $pp$ collisions with the ATLAS
+  detector"}.
+\newblock \emph{Phys. Rev. D}, (2023).
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.108.052009}.
+
+\bibitem[et~al.((2023))]{CMS_AD}
+A.~Tumasyan et~al.
+\newblock \textit{"Search for new heavy resonances decaying to WW, WZ, ZZ, WH,
+  or ZH boson pairs in the all-jets final state in proton-proton collisions at
+  s=13TeV"}.
+\newblock \emph{Physics Letters, Section B: Nuclear, Elementary Particle and
+  High-Energy Physics}, (2023).
+\newblock \doi{10.1016/j.physletb.2023.137813}.
 
 \end{thebibliography}

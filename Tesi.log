@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,12 +1327,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--214
 
  []
 
-[9] [10]) [11]
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+<Images/Chap1/ATLAS_VVJJ.png, id=297, 501.875pt x 475.7775pt>
+File: Images/Chap1/ATLAS_VVJJ.png Graphic file (type png)
+<use Images/Chap1/ATLAS_VVJJ.png>
+Package pdftex.def Info: Images/Chap1/ATLAS_VVJJ.png  used on input line 236.
+(pdftex.def)             Requested size: 216.81pt x 205.53862pt.
+) [11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>] [12]
 \openout2 = `Chap_2.aux'.
 
  (Chap_2.tex
 Chapter 2.
-) [12
+) [13
 
 
 
@@ -1342,7 +1352,7 @@ Chapter 2.
 
  (Chap_3.tex
 Chapter 3.
-) [13
+) [14
 
 
 
@@ -1352,7 +1362,7 @@ Chapter 3.
 
  (Chap_4.tex
 Chapter 4.
-) [14
+) [15
 
 
 
@@ -1362,7 +1372,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [15
+) [16
 
 
 
@@ -1372,7 +1382,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [16
+) [17
 
 
 
@@ -1386,13 +1396,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17
+ [18
 
 
 
 
 
-]) [18] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+]) [19] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1402,20 +1412,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 821BD3679A70CF8FB6C8F54065026A78;3353.
+(rerunfilecheck)             Checksum: 9B6CFD198CAFE121EA6026A7E1925433;3353.
  ) 
 Here is how much of TeX's memory you used:
- 45619 strings out of 467510
- 992415 string characters out of 5408794
- 1510049 words of memory out of 5000000
- 73811 multiletter control sequences out of 15000+600000
- 722690 words of font info for 212 fonts, out of 8000000 for 9000
+ 45663 strings out of 467510
+ 993268 string characters out of 5408794
+ 1510380 words of memory out of 5000000
+ 73836 multiletter control sequences out of 15000+600000
+ 731837 words of font info for 219 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (23 pages, 752922 bytes).
+Output written on Tesi.pdf (24 pages, 829690 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 56012 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 60113 words of extra memory for PDF output out of 61914 (max. 10000000)
 
