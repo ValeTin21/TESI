@@ -19,54 +19,54 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "ATLAS:2012"
-Warning--I didn't find a database entry for "CMS:2012"
-Warning--I didn't find a database entry for "Garrett:2011"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
 Warning--empty journal in Weinberg_EW
 Warning--empty journal in PDG_higgs
 Warning--empty journal in Higgs_historical
-You've used 13 entries,
+Warning--empty journal in Hubble_GalRot
+Warning--empty journal in GalaxyLensing
+Warning--empty journal in Cluster_DM
+You've used 17 entries,
             2481 wiz_defined-function locations,
-            645 strings with 6607 characters,
-and the built_in function-call counts, 3722 in all, are:
-= -- 323
-> -- 107
-< -- 13
-+ -- 57
-- -- 30
-* -- 201
-:= -- 605
-add.period$ -- 46
-call.type$ -- 13
-change.case$ -- 23
-chr.to.int$ -- 12
-cite$ -- 19
-duplicate$ -- 232
-empty$ -- 391
-format.name$ -- 47
-if$ -- 790
+            662 strings with 7109 characters,
+and the built_in function-call counts, 4901 in all, are:
+= -- 423
+> -- 159
+< -- 17
++ -- 79
+- -- 44
+* -- 267
+:= -- 794
+add.period$ -- 60
+call.type$ -- 17
+change.case$ -- 31
+chr.to.int$ -- 16
+cite$ -- 26
+duplicate$ -- 300
+empty$ -- 505
+format.name$ -- 71
+if$ -- 1042
 int.to.chr$ -- 2
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 80
-num.names$ -- 39
-pop$ -- 128
+int.to.str$ -- 18
+missing$ -- 17
+newline$ -- 102
+num.names$ -- 51
+pop$ -- 171
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 17
 quote$ -- 0
-skip$ -- 142
+skip$ -- 190
 stack$ -- 0
-substring$ -- 61
-swap$ -- 25
+substring$ -- 69
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
-warning$ -- 6
-while$ -- 30
+type$ -- 110
+warning$ -- 9
+while$ -- 38
 width$ -- 0
-write$ -- 176
+write$ -- 225
 (There were 9 warnings)
