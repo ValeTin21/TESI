@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  18 AUG 2026 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 09:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1318,32 +1318,33 @@ File: Images/Chap1/HiggsPotential.png Graphic file (type png)
 Package pdftex.def Info: Images/Chap1/HiggsPotential.png  used on input line 168.
 (pdftex.def)             Requested size: 216.81pt x 136.80963pt.
  [8 <./Images/Chap1/HiggsPotential.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Package natbib Warning: Citation `ATLAS:2012' on page 9 undefined on input line 210.
+Package natbib Warning: Citation `ATLAS:2012' on page 9 undefined on input line 231.
 
 
-Package natbib Warning: Citation `CMS:2012' on page 9 undefined on input line 210.
+Package natbib Warning: Citation `CMS:2012' on page 9 undefined on input line 231.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 210.
+Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 231.
+
+[9]
+
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 234.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 213.
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 234.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 213.
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 217.
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 238.
 
-
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 217.
-
-[9]) [10]
+) [10]
 \openout2 = `Chap_2.aux'.
 
  (Chap_2.tex
@@ -1425,17 +1426,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 68B6730076913A31B03721B5E86DBD1D;3162.
  ) 
 Here is how much of TeX's memory you used:
- 45587 strings out of 467510
- 991779 string characters out of 5408794
- 1509575 words of memory out of 5000000
- 73789 multiletter control sequences out of 15000+600000
- 722521 words of font info for 211 fonts, out of 8000000 for 9000
+ 45595 strings out of 467510
+ 991916 string characters out of 5408794
+ 1510766 words of memory out of 5000000
+ 73792 multiletter control sequences out of 15000+600000
+ 722604 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2543b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,131p,2543b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (21 pages, 742834 bytes).
+Output written on Tesi.pdf (21 pages, 745536 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
  55996 words of extra memory for PDF output out of 61914 (max. 10000000)
 

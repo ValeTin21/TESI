@@ -151,7 +151,7 @@ The EW Lagrangian \ref{eq:SM_BSM/EW/EW_L} does not provide a proper description 
 %-------------------------------------------------------------------------------
 \subsection{The Brout-Englert-Higgs mechanism}\label{subsec:SM_BSM/SM/Higgs}
 The BEH mechanism provides a theoretical framework to generate masses for the gauge bosons and fermions of the SM, while preserving the local gauge invariance of the Lagrangian. The mechanism is based on the concept of spontaneous symmetry breaking (SSB) of the group $SU(3)_C\otimes SU(2)_L \otimes U(1)_Y$ into $SU(2)_L\otimes U(1)_{EM}$ \cite{PDG_higgs}.\\
-The SSB is realized by introducing a complex scalar field $\Phi$, which is a doublet under $SU(2)_L$ and carries hypercharge $Y=1/2$. It is defined as:
+The SSB is realized by introducing a complex scalar field $\phi$, which is a doublet under $SU(2)_L$ and carries hypercharge $Y=1/2$. It is defined as:
 
 \begin{equation}\label{eq:SM_BSM/Higgs/phi_def}
     \phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix} = \frac{1}{\sqrt{2}} \begin{pmatrix} \phi_1 + i \phi_2 \\ \phi_3 + i \phi_4 \end{pmatrix}
@@ -159,7 +159,7 @@ The SSB is realized by introducing a complex scalar field $\Phi$, which is a dou
 
 \noindent The potential associated to the scalar field is defined as:
 \begin{equation}\label{eq:SM_BSM/Higgs/potential}
-    V(\Phi) = -\mu^2 \phi^\dagger \phi + \frac{\lambda}{2} \left(\phi^\dagger \phi\right)^2
+    V(\phi) = -\mu^2 \phi^\dagger \phi + \frac{\lambda}{2} \left(\phi^\dagger \phi\right)^2
 \end{equation}
 
 \noindent where $\mu^2$ and $\lambda$ are constants. Among the two constants, $\lambda$ must be positive to ensure the stability of the potential, while $\mu^2$ can be either positive or negative. The shape of the potential is determined by the sign of $\mu^2$. If $-\mu^2 > 0$, the potential has a single minimum at $\phi = 0$, preserving the symmetry. If $-\mu^2 < 0$, the potential gets the well-known mexican hat shape presented in Fig \ref{fig:SM_BSM/SM/Higgs_potential}.
@@ -169,6 +169,27 @@ The SSB is realized by introducing a complex scalar field $\Phi$, which is a dou
     \caption{Representation of the Higgs potential $V(\phi)$. Figure from Ref. \cite{Higgs_historical}.}
     \label{fig:SM_BSM/SM/Higgs_potential}
 \end{figure}
+
+\noindent In the latter case, the vacuum state, as known as the minimum of the potential, is degenerate and associated to a non-zero value of the scalar field $\phi$. In particular, the vacuum expectation value (VEV) $v$ of the Higgs field, defined as $v = \sqrt{\mu^2/\lambda}$, is not null and it is found to be $v=246 \text{ GeV}$. As direct consqeuence, the global $U(1)_Y$ symmetry is spontaneously broken. The VEV is given by:
+\begin{equation}\label{eq:SM_BSM/Higgs/VEV}
+    \phi^\dagger \phi =  \frac{\mu^2}{2\lambda} = \frac{v^2}{2}, \quad \phi_0 = \frac{v}{\sqrt{2}}
+\end{equation}
+
+\noindent Since the theory is built to be gauge invariant, in order to remove the unphysical degrees of freedom, the unitary gauge transformation is applied to the scalar field $\phi$. In this gauge, the Higgs field can be expressed as:
+\begin{equation}\label{eq:SM_BSM/Higgs/phi_gauge}
+    \phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + h(x) \end{pmatrix}
+\end{equation}
+\noindent where $h(x)$ is the Higgs boson scalar field.\\
+Using the definition of $\phi$ presented in Eq. \ref{eq:SM_BSM/Higgs/phi_gauge}, the EW Lagrangian density can be written as:
+\begin{equation}\label{eq:SM_BSM/Higgs/SM_L_Higgs}
+\begin{array}{l@{\;}r}
+\mathcal{L}_{\text{SM}} = -\frac{1}{4} W^{a,\mu\nu} W^{a}_{\mu\nu} - \frac{1}{4} B^{\mu\nu} B_{\mu\nu} + i\overline{\psi}\gamma^{\mu} D_{\mu}\psi + \\
+- Y^{l}_{ij}\overline{L_i}\phi \, e_j - Y^{\nu}_{ij}\overline{e_i}\phi \, L_j - Y^{d}_{ij}\overline{Q_i}\phi \, d'_j - Y^{u}_{ij}\overline{Q_i}\phi \, u_j + \text{h.c.} \\
++ (D^{\mu}\phi)^{\dagger}(D_{\mu}\phi) - V(\phi)
+\end{array}
+\end{equation}
+
+\noindent where ...
 
 
 The potential has a non-zero vacuum expectation value (VEV) $v = \sqrt{\mu^2/\lambda}$, which spontaneously breaks the symmetry of the Lagrangian. The scalar field can be expanded around its VEV as:
