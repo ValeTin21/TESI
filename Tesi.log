@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,7 +1195,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=86, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=82, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 81.
@@ -1291,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  (Chap_1.tex
 Chapter 1.
-<Images/Chap1/SM_framework.png, id=167, 1074.0125pt x 1027.84pt>
+<Images/Chap1/SM_framework.png, id=162, 1074.0125pt x 1027.84pt>
 File: Images/Chap1/SM_framework.png Graphic file (type png)
 <use Images/Chap1/SM_framework.png>
 Package pdftex.def Info: Images/Chap1/SM_framework.png  used on input line 13.
@@ -1312,7 +1312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
  []
 
 [6] [7]
-<Images/Chap1/HiggsPotential.png, id=239, 563.10374pt x 355.3275pt>
+<Images/Chap1/HiggsPotential.png, id=234, 563.10374pt x 355.3275pt>
 File: Images/Chap1/HiggsPotential.png Graphic file (type png)
 <use Images/Chap1/HiggsPotential.png>
 Package pdftex.def Info: Images/Chap1/HiggsPotential.png  used on input line 168.
@@ -1323,31 +1323,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--201
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 
-Package natbib Warning: Citation `ATLAS:2012' on page 9 undefined on input line 214.
+Package natbib Warning: Citation `ATLAS:2012' on page 9 undefined on input line 212.
 
 
-Package natbib Warning: Citation `CMS:2012' on page 9 undefined on input line 214.
+Package natbib Warning: Citation `CMS:2012' on page 9 undefined on input line 212.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 214.
+Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 212.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 217.
-
-
-Package natbib Warning: Citation `Garrett:2011' on page 9 undefined on input line 217.
+Overfull \hbox (3.38385pt too wide) in paragraph at lines 212--213
+[]\T1/lmr/m/n/10.95 (-20) Despite the ex-traor-di-nary pre-dic-tive pre-ci-sion of the Stan-dard Model^^Vculminating
+ []
 
 [9]
 
-Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 221.
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 215.
 
 
-Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 221.
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 215.
+
+
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 219.
+
+
+Package natbib Warning: Citation `Garrett:2011' on page 10 undefined on input line 219.
 
 ) [10]
 \openout2 = `Chap_2.aux'.
@@ -1428,20 +1433,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 68B6730076913A31B03721B5E86DBD1D;3162.
+(rerunfilecheck)             Checksum: F8161CF963B6846B59085599E533156C;2879.
  ) 
 Here is how much of TeX's memory you used:
- 45593 strings out of 467510
- 991886 string characters out of 5408794
- 1509764 words of memory out of 5000000
- 73792 multiletter control sequences out of 15000+600000
- 722687 words of font info for 213 fonts, out of 8000000 for 9000
+ 45598 strings out of 467510
+ 992008 string characters out of 5408794
+ 1509730 words of memory out of 5000000
+ 73793 multiletter control sequences out of 15000+600000
+ 722947 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2543b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,131p,2543b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (21 pages, 743326 bytes).
+Output written on Tesi.pdf (21 pages, 745098 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
+ 413 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
- 55996 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 55988 words of extra memory for PDF output out of 61914 (max. 10000000)
 

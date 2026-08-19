@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -76,5 +76,12 @@ M.~K.~Gaillard J.~Ellis and D.~V. Nanopoulos.
 \newblock \textit{"A Historical Profile of the Higgs Boson"}.
 \newblock (2016).
 \newblock URL \url{https://cds.cern.ch/record/2012465}.
+
+\bibitem[Collaboration((2024))]{Higgs_extended_ATLAS}
+ATLAS Collaboration.
+\newblock {\textit{"Search for heavy neutral Higgs bosons decaying into a top
+  quark pair in 140 $fb^{-1}$ of proton-proton collision data at $\sqrt{s} $=
+  13 TeV with the ATLAS detector"}}.
+\newblock \emph{Journal of High Energy Physics}, 13, (2024).
 
 \end{thebibliography}
