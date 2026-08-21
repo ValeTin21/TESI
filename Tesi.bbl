@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -148,5 +148,36 @@ G.~et~al. Aad.
   final state with the ATLAS detector"}.
 \newblock \emph{Journal of High Energy Physics}, (2024).
 \newblock URL \url{https://doi.org/10.1007/JHEP02(2024)128}.
+
+\bibitem[Mobs(2019)]{CERN_AcceleratorComplex}
+Esma Mobs.
+\newblock {The CERN accelerator complex in 2019}.
+\newblock 2019.
+\newblock URL \url{https://cds.cern.ch/record/2684277}.
+
+\bibitem[Education and Outreach~Group()]{LHCguide}
+Communications Education and CERN Outreach~Group.
+\newblock {LHC the guide FAQ}.
+\newblock URL:
+  \url{https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures}.
+
+\bibitem[Bini(2024)]{Bini}
+Cesare Bini.
+\newblock {Lezioni di Fisica Nucleare e Subnucleare}, 2024.
+
+\bibitem[Brüning et~al.(2004)Brüning, Collier, Lebrun, Myers, Ostojic, Poole,
+  and Proudlock]{LHCreport}
+Oliver~Sim Brüning, Paul Collier, P~Lebrun, Stephen Myers, Ranko Ostojic, John
+  Poole, and Paul Proudlock.
+\newblock \emph{{LHC Design Report}}.
+\newblock CERN Yellow Reports: Monographs. CERN, 2004.
+\newblock \doi{10.5170/CERN-2004-003-V-1}.
+\newblock URL \url{https://cds.cern.ch/record/782076}.
+
+\bibitem[Frattari(2021)]{PhDFrattari}
+Guglielmo Frattari.
+\newblock {Investigating the nature of dark matter and of the Higgs boson with
+  jets and missing transverse momentum at the LHC}, 2021.
+\newblock URL \url{https://cds.cern.ch/record/2802389}.
 
 \end{thebibliography}

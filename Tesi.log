@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  21 AUG 2026 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  21 AUG 2026 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1348,17 +1348,28 @@ Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
 
  (Chap_2.tex
 Chapter 2.
-) [13
+<Images/Chap2/CERN_acc_system.png, id=324, 346.896pt x 308.352pt>
+File: Images/Chap2/CERN_acc_system.png Graphic file (type png)
+<use Images/Chap2/CERN_acc_system.png>
+Package pdftex.def Info: Images/Chap2/CERN_acc_system.png  used on input line 13.
+(pdftex.def)             Requested size: 216.81pt x 192.71951pt.
+[13
 
 
 
 
 ]
+
+LaTeX Warning: Reference `fig:LHCaccelerators' on page 14 undefined on input line 23.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 24.
+[14 <./Images/Chap2/CERN_acc_system.png>]) [15]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
 Chapter 3.
-) [14
+) [16
 
 
 
@@ -1368,7 +1379,7 @@ Chapter 3.
 
  (Chap_4.tex
 Chapter 4.
-) [15
+) [17
 
 
 
@@ -1378,7 +1389,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [16
+) [18
 
 
 
@@ -1388,7 +1399,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [17
+) [19
 
 
 
@@ -1402,36 +1413,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [18
+ [20
 
 
 
 
 
-]) [19] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+] [21]) [22] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 2277E38D47335BCC00E3103D50931C4B;3353.
+(rerunfilecheck)             Checksum: FC4DA895CE4095CE67D0FF3322D031D0;3353.
  ) 
 Here is how much of TeX's memory you used:
- 45692 strings out of 467510
- 993787 string characters out of 5408794
- 1510587 words of memory out of 5000000
- 73850 multiletter control sequences out of 15000+600000
- 732393 words of font info for 225 fonts, out of 8000000 for 9000
+ 45768 strings out of 467510
+ 995065 string characters out of 5408794
+ 1511051 words of memory out of 5000000
+ 73893 multiletter control sequences out of 15000+600000
+ 740015 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2543b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (24 pages, 859053 bytes).
+ 102i,13n,131p,2543b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Tesi.pdf (27 pages, 1190023 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 60118 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 64219 words of extra memory for PDF output out of 74296 (max. 10000000)
 

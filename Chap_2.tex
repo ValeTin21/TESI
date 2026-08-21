@@ -4,4 +4,44 @@ The roots of the European Organization for Nuclear Research (CERN) trace back to
 Designed to collide protons at a design center-of-mass energy of 14 TeV (and heavy ions at 5.6 TeV), the LHC accommodates four primary interaction points hosting the ALICE, CMS, LHCb, and ATLAS experiments. Among these, the ATLAS (A Toroidal LHC ApparatuS) detector is an almost hermetic, highly sophisticated instrument optimized to reconstruct particles produced in high-energy collisions.\\
 In the following, after a description of the LHC machine, the discussion covers the architecture of the ATLAS detector, including its main sub-systems and simulation procedures. A special focus is given to the proton-proton collision dataset collected by ATLAS at a center-of-mass energy of 13.6 TeV during LHC Run 3, which forms the basis for this study.
 
+%-------------------------------------------------------------------------------
+
 \section{The LHC} \label{sec:LHC}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap2/CERN_acc_system.png}
+    \caption{CERN accelerating system. Figure from Ref. \cite{CERN_AcceleratorComplex}.}
+    \label{fig:LHCAtlas/LHC/CERN_acc_system}
+\end{figure}
+
+The Large Hadron Collider (LHC), with its 27 kilometres ring \cite{LHCguide}, is the world largest particle accelerator. It is part of the CERN's accelerator complex and it is situated around 100 metres underground to shield from radiation and for both economic\footnotemark and geological reasons. With its first run on 10 September 2008, it currently accelerates hadrons, in particular protons or lead nuclei. The LHC is composed by two circular beam pipes where two particle beams travel separately in opposite direction, close to the speed of light. Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles \cite{Bini}:
+\begin{equation}\label{eq:centerofmasseq}
+    \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
+\end{equation}
+
+\noindent where we assumed $E_1$ = $E_2$. At the LHC protons are accelerated with an energy of 6.8 TeV ($10^{12}$ eV), which confirms the assumption p>>m and it leads to $\sqrt{s}=13.6$ TeV \cite{LHCreport}. Such high energies are reached through a series of increasing accelerators, shown in figure \ref{fig:LHCaccelerators}, where Radio-frequency cavities accelerate particles, through an oscillating electric field.\\
+\footnotetext{Building LHC on the surface would have required the purchase of properties to do so and an under the open sky structure with a 27 km circumference would have been more expensive than agreeing with landowner and excavate a tunnel underground.}
+
+Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{PhDFrattari}: 1232 dipole magnets and 392 quadrupole magnets are used. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum and its radius of curvature, which is \cite{Bini}:
+\begin{equation}\label{eq:pqBR}
+    p = qBR
+\end{equation}
+
+\noindent where q is the charge of the particle and R the radius of curvature. It is evident that, working with high energy particles, to reduce R we need to generate a bigger magnetic field, but current technologies set a limit to this value.
+
+\noindent Performance of the LHC are evaluated based on an essential parameter: the instantaneous luminosity $\mathcal{L}$, measured in $cm^{-2}s^{-1}$ and computed as follows \cite{LHCreport}.
+\begin{equation}\label{eq:Luminosity}
+    \mathcal{L}=\frac{N_b^2n_bf_{rev}\gamma_r}{4 \pi \epsilon_n \beta^*}F
+\end{equation}
+
+\noindent where: $N_b$ is the number of particles in a bunch, $n_b$ is the number of bunches in a beam, $\epsilon_n$ is the normalized transverse beam emittance, $\beta^*$ is the beta function at the collision point, $\gamma_r$ is the relativistic factor, $f_{rev}$ is the revolution frequency. F represents the geometric luminosity reduction factor:
+\begin{equation}
+    F=\frac{1}{\sqrt{1+\Big(\frac{\theta_c\sigma_z}{2\sigma^*}\Big)^2}}
+\end{equation}
+\noindent where $\theta_c$ is the full crossing angle at the interaction point, $\sigma_z$ is the RMS bunch length and $\sigma^*$ is the transverse RMS beam size at the interaction point. Luminosity is linked with the number of collisions per second \cite{Bini}:
+\begin{equation}\label{eq:dNdt}
+    \frac{dN}{dt}=\mathcal{L}\sigma_{tot}
+\end{equation}
+\noindent where $\sigma_{tot}$ is the total cross section. If the
+instantaneous luminosity goes below a fixed threshold, beams are dumped.
