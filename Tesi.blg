@@ -31,45 +31,45 @@ Warning--empty journal in Cluster_DM
 Warning--there's a number but no volume in DarkJets_GG
 Warning--empty year in DarkJets_GG
 Warning--empty year in DarkJets_GG
-You've used 22 entries,
+You've used 23 entries,
             2481 wiz_defined-function locations,
-            693 strings with 8262 characters,
-and the built_in function-call counts, 6289 in all, are:
-= -- 545
-> -- 202
-< -- 22
-+ -- 101
-- -- 56
-* -- 342
-:= -- 1024
-add.period$ -- 78
-call.type$ -- 22
-change.case$ -- 41
-chr.to.int$ -- 21
-cite$ -- 34
-duplicate$ -- 390
-empty$ -- 646
-format.name$ -- 90
-if$ -- 1336
+            697 strings with 8422 characters,
+and the built_in function-call counts, 6561 in all, are:
+= -- 570
+> -- 209
+< -- 23
++ -- 105
+- -- 58
+* -- 355
+:= -- 1070
+add.period$ -- 82
+call.type$ -- 23
+change.case$ -- 43
+chr.to.int$ -- 22
+cite$ -- 35
+duplicate$ -- 408
+empty$ -- 674
+format.name$ -- 93
+if$ -- 1394
 int.to.chr$ -- 2
-int.to.str$ -- 23
-missing$ -- 22
-newline$ -- 130
-num.names$ -- 66
-pop$ -- 215
+int.to.str$ -- 24
+missing$ -- 23
+newline$ -- 136
+num.names$ -- 69
+pop$ -- 223
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 23
 quote$ -- 0
-skip$ -- 243
+skip$ -- 254
 stack$ -- 0
-substring$ -- 79
-swap$ -- 40
+substring$ -- 81
+swap$ -- 42
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 145
+type$ -- 152
 warning$ -- 12
-while$ -- 48
+while$ -- 50
 width$ -- 0
-write$ -- 291
+write$ -- 305
 (There were 12 warnings)

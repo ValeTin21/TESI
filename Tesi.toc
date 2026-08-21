@@ -20,4 +20,4 @@
 \contentsline {section}{\numberline {5.1}The LHC}{16}{section.5.1}%
 \contentsline {chapter}{\numberline {6}Conclusions}{17}{chapter.6}%
 \contentsline {section}{\numberline {6.1}The LHC}{17}{section.6.1}%
-\contentsline {chapter}{Bibliography}{18}{section*.7}%
+\contentsline {chapter}{Bibliography}{18}{section*.8}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  19 AUG 2026 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  21 AUG 2026 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,7 +1337,13 @@ File: Images/Chap1/ATLAS_VVJJ.png Graphic file (type png)
 <use Images/Chap1/ATLAS_VVJJ.png>
 Package pdftex.def Info: Images/Chap1/ATLAS_VVJJ.png  used on input line 236.
 (pdftex.def)             Requested size: 216.81pt x 205.53862pt.
-[11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>]) [12]
+[11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>]
+<Images/Chap1/DJ_Run2.png, id=313, 845.1575pt x 597.23125pt>
+File: Images/Chap1/DJ_Run2.png Graphic file (type png)
+<use Images/Chap1/DJ_Run2.png>
+Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
+(pdftex.def)             Requested size: 361.34999pt x 255.35545pt.
+) [12 <./Images/Chap1/DJ_Run2.png>]
 \openout2 = `Chap_2.aux'.
 
  (Chap_2.tex
@@ -1412,20 +1418,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 9B6CFD198CAFE121EA6026A7E1925433;3353.
+(rerunfilecheck)             Checksum: 2277E38D47335BCC00E3103D50931C4B;3353.
  ) 
 Here is how much of TeX's memory you used:
- 45669 strings out of 467510
- 993363 string characters out of 5408794
- 1510402 words of memory out of 5000000
- 73839 multiletter control sequences out of 15000+600000
- 731920 words of font info for 220 fonts, out of 8000000 for 9000
+ 45692 strings out of 467510
+ 993789 string characters out of 5408794
+ 1510587 words of memory out of 5000000
+ 73850 multiletter control sequences out of 15000+600000
+ 732393 words of font info for 225 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (24 pages, 832820 bytes).
+Output written on Tesi.pdf (24 pages, 857711 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
- 60113 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 60118 words of extra memory for PDF output out of 61914 (max. 10000000)
 
