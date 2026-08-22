@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  22 AUG 2026 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  22 AUG 2026 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,7 +1195,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=94, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=102, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 81.
@@ -1291,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  (Chap_1.tex
 Chapter 1.
-<Images/Chap1/SM_framework.png, id=177, 1074.0125pt x 1027.84pt>
+<Images/Chap1/SM_framework.png, id=187, 1074.0125pt x 1027.84pt>
 File: Images/Chap1/SM_framework.png Graphic file (type png)
 <use Images/Chap1/SM_framework.png>
 Package pdftex.def Info: Images/Chap1/SM_framework.png  used on input line 13.
@@ -1312,7 +1312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
  []
 
 [6] [7]
-<Images/Chap1/HiggsPotential.png, id=249, 563.10374pt x 355.3275pt>
+<Images/Chap1/HiggsPotential.png, id=259, 563.10374pt x 355.3275pt>
 File: Images/Chap1/HiggsPotential.png Graphic file (type png)
 <use Images/Chap1/HiggsPotential.png>
 Package pdftex.def Info: Images/Chap1/HiggsPotential.png  used on input line 168.
@@ -1332,13 +1332,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
-<Images/Chap1/ATLAS_VVJJ.png, id=297, 501.875pt x 475.7775pt>
+<Images/Chap1/ATLAS_VVJJ.png, id=307, 501.875pt x 475.7775pt>
 File: Images/Chap1/ATLAS_VVJJ.png Graphic file (type png)
 <use Images/Chap1/ATLAS_VVJJ.png>
 Package pdftex.def Info: Images/Chap1/ATLAS_VVJJ.png  used on input line 236.
 (pdftex.def)             Requested size: 216.81pt x 205.53862pt.
 [11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>]
-<Images/Chap1/DJ_Run2.png, id=313, 845.1575pt x 597.23125pt>
+<Images/Chap1/DJ_Run2.png, id=323, 845.1575pt x 597.23125pt>
 File: Images/Chap1/DJ_Run2.png Graphic file (type png)
 <use Images/Chap1/DJ_Run2.png>
 Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
@@ -1348,23 +1348,33 @@ Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
 
  (Chap_2.tex
 Chapter 2.
-<Images/Chap2/CERN_acc_system.png, id=324, 346.896pt x 308.352pt>
+<Images/Chap2/CERN_acc_system.png, id=334, 346.896pt x 308.352pt>
 File: Images/Chap2/CERN_acc_system.png Graphic file (type png)
 <use Images/Chap2/CERN_acc_system.png>
-Package pdftex.def Info: Images/Chap2/CERN_acc_system.png  used on input line 13.
-(pdftex.def)             Requested size: 216.81pt x 192.71951pt.
+Package pdftex.def Info: Images/Chap2/CERN_acc_system.png  used on input line 14.
+(pdftex.def)             Requested size: 325.215pt x 289.0934pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--38
+
+ []
+
 [13
 
 
 
 
-]
+] [14 <./Images/Chap2/CERN_acc_system.png>]
 
-LaTeX Warning: Reference `fig:LHCaccelerators' on page 14 undefined on input line 28.
+LaTeX Warning: Reference `fig:LHCaccelerators' on page 15 undefined on input line 50.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 29.
-[14 <./Images/Chap2/CERN_acc_system.png>]) [15]
+(Font)              <9> on input line 51.
+) [15]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
@@ -1419,7 +1429,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-] [21]) [22] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+]) [21] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1432,20 +1442,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: FC4DA895CE4095CE67D0FF3322D031D0;3353.
+(rerunfilecheck)             Checksum: 14E394B34D399B9E4149D0113C06C6EE;3704.
  ) 
 Here is how much of TeX's memory you used:
- 45768 strings out of 467510
- 995065 string characters out of 5408794
- 1511051 words of memory out of 5000000
- 73893 multiletter control sequences out of 15000+600000
- 740015 words of font info for 238 fonts, out of 8000000 for 9000
+ 45777 strings out of 467510
+ 995226 string characters out of 5408794
+ 1511213 words of memory out of 5000000
+ 73897 multiletter control sequences out of 15000+600000
+ 740181 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2543b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,131p,2543b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (27 pages, 1190243 bytes).
+Output written on Tesi.pdf (26 pages, 1192977 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 64219 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 64235 words of extra memory for PDF output out of 74296 (max. 10000000)
 

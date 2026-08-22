@@ -149,17 +149,16 @@ G.~et~al. Aad.
 \newblock \emph{Journal of High Energy Physics}, (2024).
 \newblock URL \url{https://doi.org/10.1007/JHEP02(2024)128}.
 
-\bibitem[Mobs(2019)]{CERN_AcceleratorComplex}
+\bibitem[Mobs((2019))]{CERN_AcceleratorComplex}
 Esma Mobs.
-\newblock {The CERN accelerator complex in 2019}.
-\newblock 2019.
+\newblock \textit{"The CERN accelerator complex in 2019"}.
+\newblock (2019).
 \newblock URL \url{https://cds.cern.ch/record/2684277}.
 
 \bibitem[Education and Outreach~Group()]{LHCguide}
 Communications Education and CERN Outreach~Group.
-\newblock {LHC the guide FAQ}.
-\newblock URL
-  \url{https://home.cern/resources/brochure/knowledge-sharing/lhc-facts-and-figures}.
+\newblock \textit{"LHC the guide FAQ"}.
+\newblock URL \url{https://cds.cern.ch/record/2255762}.
 
 \bibitem[Bini(2024)]{Bini}
 Cesare Bini.
@@ -174,10 +173,9 @@ Oliver~Sim Brüning, Paul Collier, P~Lebrun, Stephen Myers, Ranko Ostojic, John
 \newblock \doi{10.5170/CERN-2004-003-V-1}.
 \newblock URL \url{https://cds.cern.ch/record/782076}.
 
-\bibitem[Frattari(2021)]{PhDFrattari}
-Guglielmo Frattari.
-\newblock {Investigating the nature of dark matter and of the Higgs boson with
-  jets and missing transverse momentum at the LHC}, 2021.
-\newblock URL \url{https://cds.cern.ch/record/2802389}.
+\bibitem[Rossi((2003))]{LHC_magnets}
+L.~Rossi.
+\newblock \textit{"The LHC superconducting magnets"}.
+\newblock \emph{Conf. Proc. C}, (2003).
 
 \end{thebibliography}

@@ -12,6 +12,8 @@
 \contentsline {subsection}{\numberline {1.2.3}Dark Jets}{12}{subsection.1.2.3}%
 \contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiments}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The LHC}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}CERN's accelerator system}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The LHC parameters}{14}{subsection.2.1.2}%
 \contentsline {chapter}{\numberline {3}Anomaly Detection}{16}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The LHC}{16}{section.3.1}%
 \contentsline {chapter}{\numberline {4}A particle physics analysis}{17}{chapter.4}%

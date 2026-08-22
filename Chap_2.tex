@@ -1,26 +1,48 @@
 \chapter{The LHC and the ATLAS experiments} \label{chap:LHCAtlas}
 
 The roots of the European Organization for Nuclear Research (CERN) trace back to the post-WWII era, when European physicists and statesmen, including Edoardo Amaldi, Niels Bohr, and Pierre Auger, promoted a collaborative international laboratory dedicated purely to fundamental science. CERN was established in September 1954 and today it hosts the world's largest and most energetic accelerator complex, centered around the Large Hadron Collider (LHC).\\
-Designed to collide protons at a design center-of-mass energy of 14 TeV (and heavy ions at 5.6 TeV), the LHC accommodates four primary interaction points hosting the ALICE, CMS, LHCb, and ATLAS experiments. Among these, the ATLAS (A Toroidal LHC ApparatuS) detector is an almost hermetic, highly sophisticated instrument optimized to reconstruct particles produced in high-energy collisions.\\
-In the following, after a description of the LHC machine, the discussion covers the architecture of the ATLAS detector, including its main sub-systems and simulation procedures. A special focus is given to the proton-proton collision dataset collected by ATLAS at a center-of-mass energy of 13.6 TeV during LHC Run 3, which forms the basis for this study.
+In the following, after a description of the LHC machine, the discussion covers the architecture of the ATLAS (A Toroidal LHC ApparatuS) detector, one of the four major experiments at CERN, including its main sub-systems and simulation procedures. A special focus is given to the proton-proton collision dataset collected by ATLAS at a center-of-mass energy of 13.6 TeV during LHC Run 3, which forms the basis for this study.
+
 
 %-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
-\section{The LHC} \label{sec:LHC}
+\section{The LHC} \label{sec:LHCAtlas/LHC}
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap2/CERN_acc_system.png}
+    \includegraphics[width=4.5 in]{Images/Chap2/CERN_acc_system.png}
     \caption{CERN accelerating system. Figure from Ref. \cite{CERN_AcceleratorComplex}.}
     \label{fig:LHCAtlas/LHC/CERN_acc_system}
 \end{figure}
 
-The Large Hadron Collider (LHC), with its 27 kilometres ring \cite{LHCguide}, is the world largest particle accelerator. It is part of the CERN's accelerator complex and it is situated around 100 metres underground to shield from radiation and for both economic\footnotemark and geological reasons. With its first run on 10 September 2008, it currently accelerates hadrons. Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV respectively.
-In order to reach such high energies, a complex system of pre-accelaration stage is adopted, as presented in Fig. \ref{fig:LHCAtlas/LHC/CERN_acc_system}.
+The Large Hadron Collider (LHC) at CERN, with its 27 kilometres ring \cite{LHCguide}, is the world largest particle accelerator. 
+It has four major interaction points which host the major CERN's experiments: ATLAS, CMS, LHCb and ALICE. 
+LHC is situated around 100 metres underground to shield from radiation and for both economic\footnotemark and geological reasons. 
+With its first run on 10 September 2008, it currently accelerates hadrons. Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV respectively.
+In order to reach such high energies, a complex system of pre-accelaration is adopted, as presented in Fig. \ref{fig:LHCAtlas/LHC/CERN_acc_system}.\\
+
+%-------------------------------------------------------------------------------
+
+\subsection{CERN's accelerator system}\label{sec:LHCAtlas/LHC/CAS}
+
+For proton-proton ($pp$) collisions, the process begins with the extraction of negative hydrogen ions ($H^-$), which are initially accelerated to an energy of $160\text{ MeV}$ by the Linear Accelerator 4 ($\text{LINAC4}$). 
+Upon injection into the Proton Synchrotron Booster (PSB), the ions are stripped of their two electrons leaving only the bare protons, which are grouped into bunches and boosted to an energy of $2\text{ GeV}$. 
+The protons then enter the Proton Synchrotron (PS), reaching an energy of $25\text{ GeV}$. 
+The final step takes place in the Super Proton Synchrotron (SPS) that accelerates the proton bunches up to the LHC injection energy of $450\text{ GeV}$. 
+Finally, the proton bunches are injected into the two counter-rotating beam pipes of the LHC (denominated Beam 1 and Beam 2), where they are accelerated to their maximum operational energy of $6.8\text{ TeV}$ per beam.
+In heavy-ion operations (primarily based on lead nuclei, $^{208}\text{Pb}$), ions are initially accelerated by the Linear Accelerator 3 ($\text{LINAC3}$) to an energy of $4.2\text{ MeV per nucleon}$.
+The nucleons are then accumulated and boosted to $72\text{ MeV per nucleon}$ inside the Low Energy Ion Ring (LEIR).
+In the next stage, the PS accelerates ions to $5.9\text{ GeV per nucleon}$, before transferring them to the SPS where they reach an energy of $177\text{ GeV per nucleon}$. 
+When injected into the main LHC ring, the heavy-ion beams are accelerated to a final energy of $2.68\text{ TeV per nucleon}$.\\
+
+%-------------------------------------------------------------------------------
+
+\subsection{The LHC parameters}\label{sec:LHCAtlas/LHC/parameters}
 
 
+The LHC is composed by two circular beam pipes where two particle beams composed by 2460 bunches, spaced by 25 ns, travel separately in opposite direction, close to the speed of light. Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles \cite{Bini}:
 
-The LHC is composed by two circular beam pipes where two particle beams travel separately in opposite direction, close to the speed of light. Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles \cite{Bini}:
 \begin{equation}\label{eq:centerofmasseq}
     \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
 \end{equation}
@@ -28,7 +50,7 @@ The LHC is composed by two circular beam pipes where two particle beams travel s
 \noindent where we assumed $E_1$ = $E_2$. At the LHC protons are accelerated with an energy of 6.8 TeV ($10^{12}$ eV), which confirms the assumption p>>m and it leads to $\sqrt{s}=13.6$ TeV \cite{LHCreport}. Such high energies are reached through a series of increasing accelerators, shown in figure \ref{fig:LHCaccelerators}, where Radio-frequency cavities accelerate particles, through an oscillating electric field.\\
 \footnotetext{Building LHC on the surface would have required the purchase of properties to do so and an under the open sky structure with a 27 km circumference would have been more expensive than agreeing with landowner and excavate a tunnel underground.}
 
-Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{PhDFrattari}: 1232 dipole magnets and 392 quadrupole magnets are used. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum and its radius of curvature, which is \cite{Bini}:
+Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used, while kept at a temperature of 1.9 K. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum and its radius of curvature, which is \cite{Bini}:
 \begin{equation}\label{eq:pqBR}
     p = qBR
 \end{equation}
