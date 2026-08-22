@@ -33,45 +33,45 @@ Warning--empty year in DarkJets_GG
 Warning--empty year in DarkJets_GG
 Warning--empty journal in CERN_AcceleratorComplex
 Warning--empty year in LHCguide
-You've used 28 entries,
+You've used 29 entries,
             2481 wiz_defined-function locations,
-            728 strings with 9110 characters,
-and the built_in function-call counts, 8093 in all, are:
-= -- 691
-> -- 290
-< -- 27
-+ -- 139
-- -- 82
-* -- 449
-:= -- 1325
-add.period$ -- 100
-call.type$ -- 28
-change.case$ -- 52
-chr.to.int$ -- 27
-cite$ -- 42
-duplicate$ -- 491
-empty$ -- 820
-format.name$ -- 124
-if$ -- 1718
+            735 strings with 9253 characters,
+and the built_in function-call counts, 8406 in all, are:
+= -- 719
+> -- 305
+< -- 28
++ -- 145
+- -- 86
+* -- 468
+:= -- 1377
+add.period$ -- 104
+call.type$ -- 29
+change.case$ -- 54
+chr.to.int$ -- 28
+cite$ -- 43
+duplicate$ -- 509
+empty$ -- 848
+format.name$ -- 131
+if$ -- 1785
 int.to.chr$ -- 2
-int.to.str$ -- 29
-missing$ -- 27
-newline$ -- 163
-num.names$ -- 84
-pop$ -- 275
+int.to.str$ -- 30
+missing$ -- 28
+newline$ -- 169
+num.names$ -- 87
+pop$ -- 283
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 29
 quote$ -- 0
-skip$ -- 311
+skip$ -- 323
 stack$ -- 0
-substring$ -- 91
-swap$ -- 51
+substring$ -- 93
+swap$ -- 53
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 184
+type$ -- 191
 warning$ -- 14
-while$ -- 60
+while$ -- 62
 width$ -- 0
-write$ -- 368
+write$ -- 382
 (There were 14 warnings)

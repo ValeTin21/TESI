@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  22 AUG 2026 18:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  22 AUG 2026 19:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1358,28 +1358,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--38
-
- []
-
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 25.
 [13
 
 
 
 
 ] [14 <./Images/Chap2/CERN_acc_system.png>]
-
-LaTeX Warning: Reference `fig:LHCaccelerators' on page 15 undefined on input line 50.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 51.
-) [15]
+<Images/Chap2/BeamsCERN.png, id=356, 506.89375pt x 521.95pt>
+File: Images/Chap2/BeamsCERN.png Graphic file (type png)
+<use Images/Chap2/BeamsCERN.png>
+Package pdftex.def Info: Images/Chap2/BeamsCERN.png  used on input line 57.
+(pdftex.def)             Requested size: 144.54pt x 148.82896pt.
+ [15 <./Images/Chap2/BeamsCERN.png (PNG copy)>]) [16]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
 Chapter 3.
-) [16
+) [17
 
 
 
@@ -1389,7 +1386,7 @@ Chapter 3.
 
  (Chap_4.tex
 Chapter 4.
-) [17
+) [18
 
 
 
@@ -1399,7 +1396,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [18
+) [19
 
 
 
@@ -1409,7 +1406,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [19
+) [20
 
 
 
@@ -1423,39 +1420,36 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20
+ [21
 
 
 
 
 
-]) [21] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+]) [22] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 14E394B34D399B9E4149D0113C06C6EE;3704.
+(rerunfilecheck)             Checksum: 4654462CAD3D4A05C636FA9CBAF89AE7;3705.
  ) 
 Here is how much of TeX's memory you used:
- 45777 strings out of 467510
- 995226 string characters out of 5408794
- 1511213 words of memory out of 5000000
- 73897 multiletter control sequences out of 15000+600000
- 740181 words of font info for 240 fonts, out of 8000000 for 9000
+ 45792 strings out of 467510
+ 995598 string characters out of 5408794
+ 1511385 words of memory out of 5000000
+ 73907 multiletter control sequences out of 15000+600000
+ 740264 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (26 pages, 1192977 bytes).
+Output written on Tesi.pdf (27 pages, 1390893 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 64235 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
+ 64240 words of extra memory for PDF output out of 74296 (max. 10000000)
 

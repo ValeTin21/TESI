@@ -22,6 +22,9 @@ LHC is situated around 100 metres underground to shield from radiation and for b
 With its first run on 10 September 2008, it currently accelerates hadrons. Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV respectively.
 In order to reach such high energies, a complex system of pre-accelaration is adopted, as presented in Fig. \ref{fig:LHCAtlas/LHC/CERN_acc_system}.\\
 
+\footnotetext{Building LHC on the surface would have required the purchase of properties to do so and an under the open sky structure with a 27 km circumference would have been more expensive than agreeing with landowner and excavate a tunnel underground.}
+
+
 %-------------------------------------------------------------------------------
 
 \subsection{CERN's accelerator system}\label{sec:LHCAtlas/LHC/CAS}
@@ -35,29 +38,42 @@ In heavy-ion operations (primarily based on lead nuclei, $^{208}\text{Pb}$), ion
 The nucleons are then accumulated and boosted to $72\text{ MeV per nucleon}$ inside the Low Energy Ion Ring (LEIR).
 In the next stage, the PS accelerates ions to $5.9\text{ GeV per nucleon}$, before transferring them to the SPS where they reach an energy of $177\text{ GeV per nucleon}$. 
 When injected into the main LHC ring, the heavy-ion beams are accelerated to a final energy of $2.68\text{ TeV per nucleon}$.\\
+Particles are accelerated up to such high energies by means of radio-frequency (RF) cavities, resonant structures generating an oscillating electric field which accelerates charged particles each time they pass through. 
+The field oscillates at a fixed frequency of 400MHz. 
+Particles with the target energy passing trough the cavity while the field is zero, will not be accelerated, while more (less) energetic particles will be decelerated (accelerated). 
+This ensures that particles stays in the cited bunches.
+
 
 %-------------------------------------------------------------------------------
 
 \subsection{The LHC parameters}\label{sec:LHCAtlas/LHC/parameters}
 
+The LHC is composed by two circular beam pipes where two particle beams composed by a maximum of 2460 bunches, spaced by 25 ns, travel separately close to the speed of light in opposite direction.
+There are eight IPs along the LHC ring, but only four of them are used for collisions, hosting the main LHC experiments: ATLAS at IP1, ALICE (A Large Ion Collider Experiment) at IP2, CMS (Compact Muon Solenoid) at IP5 and LHCb (LHC beauty) at IP8.
+The beam pipes and the interaction points are presented in Fig. \ref{fig:LHCAtlas/LHC/parameters/BeamsCERN}.
 
-The LHC is composed by two circular beam pipes where two particle beams composed by 2460 bunches, spaced by 25 ns, travel separately in opposite direction, close to the speed of light. Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles \cite{Bini}:
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2 in]{Images/Chap2/BeamsCERN.png}
+    \caption{Schematic layout of the LHC (Beam 1 clockwise, Beam 2 anticlockwise). Figure from Ref. \cite{LHC_Machine}.}
+    \label{fig:LHCAtlas/LHC/parameters/BeamsCERN}
+\end{figure}
+
+\noindent Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles:
 
 \begin{equation}\label{eq:centerofmasseq}
     \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
 \end{equation}
 
-\noindent where we assumed $E_1$ = $E_2$. At the LHC protons are accelerated with an energy of 6.8 TeV ($10^{12}$ eV), which confirms the assumption p>>m and it leads to $\sqrt{s}=13.6$ TeV \cite{LHCreport}. Such high energies are reached through a series of increasing accelerators, shown in figure \ref{fig:LHCaccelerators}, where Radio-frequency cavities accelerate particles, through an oscillating electric field.\\
-\footnotetext{Building LHC on the surface would have required the purchase of properties to do so and an under the open sky structure with a 27 km circumference would have been more expensive than agreeing with landowner and excavate a tunnel underground.}
-
-Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used, while kept at a temperature of 1.9 K. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum and its radius of curvature, which is \cite{Bini}:
+\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV of energy reached by LHC protons confirm the assumption p>>m .\\
+Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used, while kept at a temperature of 1.9 K. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum $p$ and its radius of curvature $R$, which is;
 \begin{equation}\label{eq:pqBR}
-    p = qBR
+    p[GeV] = 0.3B[T]R[m]
 \end{equation}
 
-\noindent where q is the charge of the particle and R the radius of curvature. It is evident that, working with high energy particles, to reduce R we need to generate a bigger magnetic field, but current technologies set a limit to this value.
+\noindent It is evident that, working with high energy particles, to reduce R we need to generate a bigger magnetic field, but current technologies set a limit to this value.
 
-\noindent Performance of the LHC are evaluated based on an essential parameter: the instantaneous luminosity $\mathcal{L}$, measured in $cm^{-2}s^{-1}$ and computed as follows \cite{LHCreport}.
+\noindent Performance of the LHC are evaluated based on an essential parameter: the instantaneous luminosity $\mathcal{L}$, measured in $cm^{-2}s^{-1}$ and computed as follows \cite{LHCreport}:
 \begin{equation}\label{eq:Luminosity}
     \mathcal{L}=\frac{N_b^2n_bf_{rev}\gamma_r}{4 \pi \epsilon_n \beta^*}F
 \end{equation}

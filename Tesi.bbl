@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -160,9 +160,16 @@ Communications Education and CERN Outreach~Group.
 \newblock \textit{"LHC the guide FAQ"}.
 \newblock URL \url{https://cds.cern.ch/record/2255762}.
 
-\bibitem[Bini(2024)]{Bini}
-Cesare Bini.
-\newblock {Lezioni di Fisica Nucleare e Subnucleare}, 2024.
+\bibitem[Evans and Bryant((2008))]{LHC_Machine}
+L.~Evans and P.~Bryant.
+\newblock \textit{"LHC Machine"}.
+\newblock \emph{Journal of Instrumentation}, (2008).
+\newblock URL \url{https://doi.org/10.1088/1748-0221/3/08/S08001}.
+
+\bibitem[Rossi((2003))]{LHC_magnets}
+L.~Rossi.
+\newblock \textit{"The LHC superconducting magnets"}.
+\newblock \emph{Conf. Proc. C}, (2003).
 
 \bibitem[Brüning et~al.(2004)Brüning, Collier, Lebrun, Myers, Ostojic, Poole,
   and Proudlock]{LHCreport}
@@ -173,9 +180,8 @@ Oliver~Sim Brüning, Paul Collier, P~Lebrun, Stephen Myers, Ranko Ostojic, John
 \newblock \doi{10.5170/CERN-2004-003-V-1}.
 \newblock URL \url{https://cds.cern.ch/record/782076}.
 
-\bibitem[Rossi((2003))]{LHC_magnets}
-L.~Rossi.
-\newblock \textit{"The LHC superconducting magnets"}.
-\newblock \emph{Conf. Proc. C}, (2003).
+\bibitem[Bini(2024)]{Bini}
+Cesare Bini.
+\newblock {Lezioni di Fisica Nucleare e Subnucleare}, 2024.
 
 \end{thebibliography}
