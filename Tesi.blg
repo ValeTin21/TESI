@@ -34,45 +34,46 @@ Warning--empty year in DarkJets_GG
 Warning--empty journal in CERN_AcceleratorComplex
 Warning--empty year in LHCguide
 Warning--empty publisher in LHCreport
+Warning--empty note in ATLAS_Luminosity
 You've used 29 entries,
             2481 wiz_defined-function locations,
-            733 strings with 9127 characters,
-and the built_in function-call counts, 8228 in all, are:
-= -- 713
+            732 strings with 9247 characters,
+and the built_in function-call counts, 8214 in all, are:
+= -- 717
 > -- 267
 < -- 29
 + -- 133
 - -- 74
-* -- 440
-:= -- 1337
-add.period$ -- 103
+* -- 444
+:= -- 1344
+add.period$ -- 105
 call.type$ -- 29
 change.case$ -- 54
 chr.to.int$ -- 28
-cite$ -- 44
-duplicate$ -- 509
-empty$ -- 848
+cite$ -- 45
+duplicate$ -- 507
+empty$ -- 835
 format.name$ -- 119
-if$ -- 1754
+if$ -- 1744
 int.to.chr$ -- 2
 int.to.str$ -- 30
 missing$ -- 28
-newline$ -- 168
+newline$ -- 170
 num.names$ -- 87
-pop$ -- 285
+pop$ -- 276
 preamble$ -- 1
 purify$ -- 29
 quote$ -- 0
-skip$ -- 324
+skip$ -- 321
 stack$ -- 0
 substring$ -- 93
-swap$ -- 53
+swap$ -- 52
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 191
-warning$ -- 15
+warning$ -- 16
 while$ -- 62
 width$ -- 0
-write$ -- 379
-(There were 15 warnings)
+write$ -- 382
+(There were 16 warnings)

@@ -177,8 +177,11 @@ O.~Brüning et~al.
 \newblock CERN Yellow Reports: Monographs. (2004).
 \newblock URL \url{https://cds.cern.ch/record/782076}.
 
-\bibitem[Bini(2024)]{Bini}
-Cesare Bini.
-\newblock {Lezioni di Fisica Nucleare e Subnucleare}, 2024.
+\bibitem[Collaboration((2026))]{ATLAS_Luminosity}
+ATLAS Collaboration.
+\newblock \textit{"Cumulative integrated luminosity delivered to and recorded
+  by the ATLAS Experiment during LHC Run 1, 2 and 3"}.
+\newblock (2026).
+\newblock URL \url{https://cds.cern.ch/record/2964765}.
 
 \end{thebibliography}
