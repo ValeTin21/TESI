@@ -171,13 +171,10 @@ L.~Rossi.
 \newblock \textit{"The LHC superconducting magnets"}.
 \newblock \emph{Conf. Proc. C}, (2003).
 
-\bibitem[Brüning et~al.(2004)Brüning, Collier, Lebrun, Myers, Ostojic, Poole,
-  and Proudlock]{LHCreport}
-Oliver~Sim Brüning, Paul Collier, P~Lebrun, Stephen Myers, Ranko Ostojic, John
-  Poole, and Paul Proudlock.
-\newblock \emph{{LHC Design Report}}.
-\newblock CERN Yellow Reports: Monographs. CERN, 2004.
-\newblock \doi{10.5170/CERN-2004-003-V-1}.
+\bibitem[et~al.((2004))]{LHCreport}
+O.~Brüning et~al.
+\newblock \emph{\textit{"LHC Design Report"}}.
+\newblock CERN Yellow Reports: Monographs. (2004).
 \newblock URL \url{https://cds.cern.ch/record/782076}.
 
 \bibitem[Bini(2024)]{Bini}

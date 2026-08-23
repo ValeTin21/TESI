@@ -1,6 +1,6 @@
 \chapter{The LHC and the ATLAS experiments} \label{chap:LHCAtlas}
 
-The roots of the European Organization for Nuclear Research (CERN) trace back to the post-WWII era, when European physicists and statesmen, including Edoardo Amaldi, Niels Bohr, and Pierre Auger, promoted a collaborative international laboratory dedicated purely to fundamental science. CERN was established in September 1954 and today it hosts the world's largest and most energetic accelerator complex, centered around the Large Hadron Collider (LHC).\\
+The history of the European Organization for Nuclear Research (CERN) traces back to the post-WWII era, when European physicists, including Edoardo Amaldi, Niels Bohr and Pierre Auger, promoted a collaborative international laboratory dedicated to fundamental science. CERN was established in September 1954 and today it hosts the world's largest and most energetic accelerator complex, centered around the Large Hadron Collider (LHC).\\
 In the following, after a description of the LHC machine, the discussion covers the architecture of the ATLAS (A Toroidal LHC ApparatuS) detector, one of the four major experiments at CERN, including its main sub-systems and simulation procedures. A special focus is given to the proton-proton collision dataset collected by ATLAS at a center-of-mass energy of 13.6 TeV during LHC Run 3, which forms the basis for this study.
 
 
@@ -33,23 +33,22 @@ For proton-proton ($pp$) collisions, the process begins with the extraction of n
 Upon injection into the Proton Synchrotron Booster (PSB), the ions are stripped of their two electrons leaving only the bare protons, which are grouped into bunches and boosted to an energy of $2\text{ GeV}$. 
 The protons then enter the Proton Synchrotron (PS), reaching an energy of $25\text{ GeV}$. 
 The final step takes place in the Super Proton Synchrotron (SPS) that accelerates the proton bunches up to the LHC injection energy of $450\text{ GeV}$. 
-Finally, the proton bunches are injected into the two counter-rotating beam pipes of the LHC (denominated Beam 1 and Beam 2), where they are accelerated to their maximum operational energy of $6.8\text{ TeV}$ per beam.
+Finally, the proton bunches are injected into the two counter-rotating beam pipes of the LHC, where they are accelerated to their maximum operational energy of $6.8\text{ TeV}$ per beam.\\
 In heavy-ion operations (primarily based on lead nuclei, $^{208}\text{Pb}$), ions are initially accelerated by the Linear Accelerator 3 ($\text{LINAC3}$) to an energy of $4.2\text{ MeV per nucleon}$.
 The nucleons are then accumulated and boosted to $72\text{ MeV per nucleon}$ inside the Low Energy Ion Ring (LEIR).
 In the next stage, the PS accelerates ions to $5.9\text{ GeV per nucleon}$, before transferring them to the SPS where they reach an energy of $177\text{ GeV per nucleon}$. 
 When injected into the main LHC ring, the heavy-ion beams are accelerated to a final energy of $2.68\text{ TeV per nucleon}$.\\
-Particles are accelerated up to such high energies by means of radio-frequency (RF) cavities, resonant structures generating an oscillating electric field which accelerates charged particles each time they pass through. 
-The field oscillates at a fixed frequency of 400MHz. 
+Particles are accelerated up to such high energies by means of radio-frequency (RF) cavities, resonant structures generating an oscillating electric field, with a fixed frequency of 400MHz, which accelerates charged particles each time they pass through. 
 Particles with the target energy passing trough the cavity while the field is zero, will not be accelerated, while more (less) energetic particles will be decelerated (accelerated). 
-This ensures that particles stays in the cited bunches.
+Using this technique, it is ensured that particles stays in the cited bunches.
 
 
 %-------------------------------------------------------------------------------
 
 \subsection{The LHC parameters}\label{sec:LHCAtlas/LHC/parameters}
 
-The LHC is composed by two circular beam pipes where two particle beams composed by a maximum of 2460 bunches, spaced by 25 ns, travel separately close to the speed of light in opposite direction.
-There are eight IPs along the LHC ring, but only four of them are used for collisions, hosting the main LHC experiments: ATLAS at IP1, ALICE (A Large Ion Collider Experiment) at IP2, CMS (Compact Muon Solenoid) at IP5 and LHCb (LHC beauty) at IP8.
+The LHC is composed by two circular beam pipes (denominated Beam 1 and Beam 2) where two particle beams composed by a maximum of 2460 bunches, spaced by 25 ns, travel separately close to the speed of light in opposite direction.
+There are eight Interaction Points (IPs) along the LHC ring, but only four of them are used for collisions, hosting the main LHC experiments: ATLAS at IP1, ALICE (A Large Ion Collider Experiment) at IP2, CMS (Compact Muon Solenoid) at IP5 and LHCb (LHC beauty) at IP8.
 The beam pipes and the interaction points are presented in Fig. \ref{fig:LHCAtlas/LHC/parameters/BeamsCERN}.
 
 \begin{figure}[ht!]
@@ -65,8 +64,8 @@ The beam pipes and the interaction points are presented in Fig. \ref{fig:LHCAtla
     \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
 \end{equation}
 
-\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV of energy reached by LHC protons confirm the assumption p>>m .\\
-Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used, while kept at a temperature of 1.9 K. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum $p$ and its radius of curvature $R$, which is;
+\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV of energy reached by LHC protons confirm the assumption p>>m and it leads to the known value of $\sqrt{s}=13.6 \text{ TeV}$.\\
+Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used to mantain the beams focused, while being kept at a temperature of 1.9 K. Although its huge contribution, magnetic field also represents one of the main limitations of this apparatus. In fact from the Lorentz force $\Vec{F}=q(\Vec{E}+\Vec{v}\times \Vec{B})$, it is possible to get a connection between external magnetic field $\Vec{B}$, particle momentum $p$ and its radius of curvature $R$, which is:
 \begin{equation}\label{eq:pqBR}
     p[GeV] = 0.3B[T]R[m]
 \end{equation}
@@ -88,3 +87,8 @@ Accelerated beams are directed and curved by superconducting electromagnets with
 \end{equation}
 \noindent where $\sigma_{tot}$ is the total cross section. If the
 instantaneous luminosity goes below a fixed threshold, beams are dumped.
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+\section{The ATLAS detector} \label{sec:LHCAtlas/ATLAS}
