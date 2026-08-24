@@ -145,15 +145,28 @@ Before analysing the ATLAS detector, it is important to introduce the coordinate
     \label{fig:LHCAtlas/ATLAS/coordinatesystem/CoordinateSystem}
 \end{figure}
 
-\noindent Cartesian axes (\textit{x,y,z}) are constructed as follows. The origin is set in the interaction point (IP). From it, the z-axis departs parallel to the beam tunnel with positive z-values in anticlockwise direction. As direct consequence, the x-y plane is perpendicular to it, with positive x-values towards the center of the LHC and positive y-values upward. On this Cartesian system, a cylindrical coordinate system ($r , \eta ,  \phi $) is defined to describe geometric position and components of particle momenta. $\phi$ is the azimuth angle, measured around the z-axis, with values [$-\pi , \pi $]. $\eta$ is named pseudo-rapidity and it is linked to the polar angle $\theta$ by the equation below:
-
-\begin{equation}\label{eq:eta}
-    \eta = - ln \Big( tan \frac{\theta}{2}\Big)
+\noindent Cartesian axes (\textit{x,y,z}) are constructed as follows. 
+The origin is set in the interaction point (IP). From it, the z-axis departs parallel to the beam tunnel with positive z-values in anticlockwise direction. 
+As direct consequence, the x-y plane is perpendicular to it, with positive x-values towards the center of the LHC and positive y-values upward. 
+On this Cartesian system, a more natural cylindrical coordinate system ($r , \theta ,  \phi $) is defined to describe geometric position and components of particle momenta. 
+$r$ is the absolute distance from the interaction point. $\phi$ is the azimuth angle, measured around the z-axis, with values [$-\pi , \pi $]. $\theta$ is the polar angle, measured starting from the z-axis, with values [$0 , \pi $].\\ 
+Two more coordinates are defined to describe the position of particles in the detector: the rapidity $y$ and the pseudo-rapidity $\eta$. They are defined as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity}
+    y= \frac{1}{2} ln \Bigg( \frac{E+p_z}{E-p_z}\Bigg) = \text{arctanh} \Bigg( \frac{p_z}{E}\Bigg)
+\end{equation}
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/eta}
+    \eta = - ln \Bigg[ tan \Bigg(\frac{\theta}{2}\Bigg)\Bigg] = \text{arctanh} \Bigg( \frac{p_z}{|~\Vec{p}~|}\Bigg)
 \end{equation}
 
-\noindent The pseudo-rapidity and the azimuth angle, known as geographical coordinates \cite{ATLASexp}, are used to define a geometrical distance, applied when computing the separation between two physics objects:
+\noindent where $\vec{p}$ is the three-momentum of the particle and $p_z$ is its component along the z-axis. $E$ represents the energy of the particle. $y$ and $\eta$ get values in the range [$-\infty , \infty$], being zero for $\theta = \pi /2$ and $\pm \infty$ for $\theta = 0$ or $\theta = \pi$.\\
+These latter two variables are introduced because the difference of rapidities between two particles is a Lorentz invariant quantity under boosts along the z-axis.
+Since Lorentz boosts are applied to move from the laboratory frame to the center-of-mass frame of the colliding particles, $\eta$ and $y$ are widely used instead of the polar angle $\theta$.
+In case of an ultra-relativistic particle, the rapidity and the pseudo-rapidity are approximately equal, $\eta \approx y$, as shown in Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity} and Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/eta}.
+The main difference between the two is that the rapidity depends both on the energy of the particle and its momentum, a combined measurement not trivial at high energies, while the pseudo-rapidity depends only on the particle's momentum.
+For these reasons, the pseudo-rapidity is preferred to the rapidity, making  ($r, \eta , \phi$) the used coordinate system.\\
+The pseudo-rapidity and the azimuth angle, are used to define a geometrical distance, applied when computing the separation between two physics objects:
 
-\begin{equation} \label{eq:distance}
+\begin{equation} \label{eq:LHCAtlas/ATLAS/coordinatesystem/distance}
     \Delta R=\sqrt{\Delta \eta ^2 + \Delta \phi ^2}
 \end{equation}
 
