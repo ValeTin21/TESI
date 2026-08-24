@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -183,5 +183,16 @@ ATLAS Collaboration.
   by the ATLAS Experiment during LHC Run 1, 2 and 3"}.
 \newblock (2026).
 \newblock URL \url{https://cds.cern.ch/record/2964765}.
+
+\bibitem[collaboration()]{ATLASwebsite}
+ATLAS collaboration.
+\newblock {The ATLAS Experiment}.
+\newblock URL: \url{https://atlas.cern/}.
+
+\bibitem[Aad et~al.(2008)]{ATLASexp}
+G.~Aad et~al.
+\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
+\newblock \emph{JINST}, 3:\penalty0 S08003, 2008.
+\newblock \doi{10.1088/1748-0221/3/08/S08003}.
 
 \end{thebibliography}

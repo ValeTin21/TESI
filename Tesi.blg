@@ -35,45 +35,46 @@ Warning--empty journal in CERN_AcceleratorComplex
 Warning--empty year in LHCguide
 Warning--empty publisher in LHCreport
 Warning--empty note in ATLAS_Luminosity
-You've used 29 entries,
+Warning--empty year in ATLASwebsite
+You've used 31 entries,
             2481 wiz_defined-function locations,
-            732 strings with 9247 characters,
-and the built_in function-call counts, 8214 in all, are:
-= -- 717
-> -- 267
-< -- 29
-+ -- 133
-- -- 74
-* -- 444
-:= -- 1344
-add.period$ -- 105
-call.type$ -- 29
-change.case$ -- 54
-chr.to.int$ -- 28
-cite$ -- 45
-duplicate$ -- 507
-empty$ -- 835
-format.name$ -- 119
-if$ -- 1744
+            745 strings with 9476 characters,
+and the built_in function-call counts, 8842 in all, are:
+= -- 773
+> -- 289
+< -- 31
++ -- 143
+- -- 80
+* -- 478
+:= -- 1442
+add.period$ -- 112
+call.type$ -- 31
+change.case$ -- 58
+chr.to.int$ -- 30
+cite$ -- 48
+duplicate$ -- 540
+empty$ -- 901
+format.name$ -- 128
+if$ -- 1882
 int.to.chr$ -- 2
-int.to.str$ -- 30
-missing$ -- 28
-newline$ -- 170
-num.names$ -- 87
-pop$ -- 276
+int.to.str$ -- 32
+missing$ -- 29
+newline$ -- 181
+num.names$ -- 93
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 31
 quote$ -- 0
-skip$ -- 321
+skip$ -- 344
 stack$ -- 0
-substring$ -- 93
-swap$ -- 52
+substring$ -- 115
+swap$ -- 56
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 191
-warning$ -- 16
-while$ -- 62
+type$ -- 205
+warning$ -- 17
+while$ -- 67
 width$ -- 0
-write$ -- 382
-(There were 16 warnings)
+write$ -- 408
+(There were 17 warnings)
