@@ -170,17 +170,38 @@ The pseudo-rapidity and the azimuth angle, are used to define a geometrical dist
     \Delta R=\sqrt{\Delta \eta ^2 + \Delta \phi ^2}
 \end{equation}
 
-\noindent The third coordinate, $r$, is the radius from the center of the system. Actually, in this thesis, we use another information: the transverse momentum $p_T$. It is a 2D vector defined as the projection of the momentum in the transverse plane of the interaction. This parameter is related to the radius and it is important because it brings information about energy. In figure \ref{fig:pT} it is possible to observe how $p_T$ is calculated.
+\noindent Prior to an analysis of materials, some more useful quantities are defined. The first one is the transverse momentum $p_T$, which is the projection of the momentum  of the particle in the transverse plane $(x,y)$ of the interaction, defined as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/pT}
+    p_T = \sqrt{p_x^2 + p_y^2}
+\end{equation}
+
+\noindent The importance of this variables relies in the fact that at the LHC collisions happen mostly along the z-axis, generating Lorentz boosts mainly along this axis. This means that the transverse plane is not affected by these boosts, making $p_T$ a Lorentz invariant quantity.\\
+Similarly, the transverse energy $E_T$ is defined as the projection of the energy of the particle in the transverse plane $(x,y)$ of the interaction, defined as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/ET}
+    E_T = E\cdot \frac{p_T}{|\Vec{p}|}
+\end{equation}
+
+\noindent A fundamental variables for the purposes of this thesis is the invariant mass $m_{inv}$, which is associated to the energy of a system of particles. In the case of two particles, using their four-momenta $P_1$ and $P_2$, $m_{inv}$ is defined as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/minv}
+    m_{inv}=\sqrt{(P_1+P_2)^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}+\Vec{p_2}|^2}
+\end{equation}
+
+\noindent The invariant mass is a Lorentz invariant quantity, which is used to measure the mass of a resonant state, composed by a particle decaying into two others. In fact, the invariant mass of the system will be equal to the mass of the mother particle.\\
+Based on what has been discussed on Lorentz boosts at the LHC, the sum of the the transverse momenta of the events is expected to be zero, since the initial state of the collision has no transverse momentum.
+For this this reason, if a particle is not detected, as neutrinos, its transverse momentum, known as missing transverse momentum $\Vec{p_T^{miss}}$, can be computed as the opposite of the sum of the transverse momenta of all the detected particles in the event:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/pTmiss}
+    \Vec{p_T^{miss}}=-\sum_i \Vec{p}_{T,i}
+\end{equation}
+
+\noindent In these cases, the transverse mass is used instead of the invariant mass, which is defined as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/mT}
+    m_T=\sqrt{2p_TE_T^{miss}[1-\cos(\Delta \phi)]}
+\end{equation}
+
+\noindent where $E_T^{miss}$ is the magnitude of the missing transverse momentum and $\Delta \phi$ is the azimuthal angle between the transverse momentum of the detected particle and the missing transverse momentum.\\
 
 
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=3 in]{Images/Cap4/TransverseMomentum.png}
-%     \caption{Schematic of $p_T$ computing in the CMS experiment, analogous  to ATLAS}
-%     \label{fig:pT}
-% \end{figure}
-
-
+\subsection{PID or ID}
 
 
 The inner detector relies on a 2 T solenoidal magnetic field, parallel to the beam axis, to 
