@@ -189,10 +189,10 @@ ATLAS collaboration.
 \newblock {The ATLAS Experiment}.
 \newblock URL: \url{https://atlas.cern/}.
 
-\bibitem[Aad et~al.(2008)]{ATLASexp}
-G.~Aad et~al.
-\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
-\newblock \emph{JINST}, 3:\penalty0 S08003, 2008.
-\newblock \doi{10.1088/1748-0221/3/08/S08003}.
+\bibitem[Bianchi and Collaboration((2022))]{ATLAS_detector}
+Riccardo~Maria Bianchi and ATLAS Collaboration.
+\newblock \textit{"ATLAS experiment schematic or layout illustration"}.
+\newblock (2022).
+\newblock URL \url{https://cds.cern.ch/record/2837191}.
 
 \end{thebibliography}

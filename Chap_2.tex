@@ -121,10 +121,58 @@ A graph showing the LHC delivered integrated luminosity during the different Run
 %-------------------------------------------------------------------------------
 \section{The ATLAS detector} \label{sec:LHCAtlas/ATLAS}
 
-A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world largest particle detector, situated at interaction point 1 at CERN. It has many layers in a cylindrical symmetry around the beam pipe. 44m in length and 25m in height are required to investigate collisions between particles accelerated by LHC, to study phenomena such dark matter, the Higgs boson and top quark. The main components of the detector are: an inner detector, an electromagnetic and a hadronic calorimeter, and the muon spectrometer, as shown in Figure \ref{fig:ATLASdetector}.\\
+A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world largest particle detector, situated at Interaction Point 1 at CERN.
+44m in length and 25m in height are required to investigate collisions between particles accelerated by the LHC, to study phenomena such dark matter, the Higgs boson and top quark.
+The ATLAS detector is composed by multiple sub-detectors organized in layers with a cylindrical symmetry around the beam pipe.
+Among the main sub-detectors we can find: the Inner Detector (ID), the Electromagnetic Calorimeter (ECAL), the Hadronic Calorimeter (HCAL) and the Muon Spectrometer (MS), as shown in Fig. \ref{fig:LHCAtlas/ATLAS/ATLASdetector}.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=4.3 in]{Images/Chap2/ATLASDetector.png}
+    \caption{ATLAS schematic. Figure form Ref. \cite{ATLAS_detector}.}
+    \label{fig:LHCAtlas/ATLAS/ATLASdetector}
+\end{figure}
+
+%-------------------------------------------------------------------------------
+\subsection{Coordinate system} \label{sec:LHCAtlas/ATLAS/coordinatesystem}
+
+Before analysing the ATLAS detector, it is important to introduce the coordinate system used to describe the position of particles and their momenta inside the sub-detectors. In figure \ref{fig:LHCAtlas/ATLAS/coordinatesystem/CoordinateSystem} an overview of the system is presented.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap2/CoordinateSyst.png}
+    \caption{Schematic of ATLAS coordinate system}
+    \label{fig:LHCAtlas/ATLAS/coordinatesystem/CoordinateSystem}
+\end{figure}
+
+\noindent Cartesian axes (\textit{x,y,z}) are constructed as follows. The origin is set in the interaction point (IP). From it, the z-axis departs parallel to the beam tunnel with positive z-values in anticlockwise direction. As direct consequence, the x-y plane is perpendicular to it, with positive x-values towards the center of the LHC and positive y-values upward. On this Cartesian system, a cylindrical coordinate system ($r , \eta ,  \phi $) is defined to describe geometric position and components of particle momenta. $\phi$ is the azimuth angle, measured around the z-axis, with values [$-\pi , \pi $]. $\eta$ is named pseudo-rapidity and it is linked to the polar angle $\theta$ by the equation below:
+
+\begin{equation}\label{eq:eta}
+    \eta = - ln \Big( tan \frac{\theta}{2}\Big)
+\end{equation}
+
+\noindent The pseudo-rapidity and the azimuth angle, known as geographical coordinates \cite{ATLASexp}, are used to define a geometrical distance, applied when computing the separation between two physics objects:
+
+\begin{equation} \label{eq:distance}
+    \Delta R=\sqrt{\Delta \eta ^2 + \Delta \phi ^2}
+\end{equation}
+
+\noindent The third coordinate, $r$, is the radius from the center of the system. Actually, in this thesis, we use another information: the transverse momentum $p_T$. It is a 2D vector defined as the projection of the momentum in the transverse plane of the interaction. This parameter is related to the radius and it is important because it brings information about energy. In figure \ref{fig:pT} it is possible to observe how $p_T$ is calculated.
+
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=3 in]{Images/Cap4/TransverseMomentum.png}
+%     \caption{Schematic of $p_T$ computing in the CMS experiment, analogous  to ATLAS}
+%     \label{fig:pT}
+% \end{figure}
+
+
+
+
 The inner detector relies on a 2 T solenoidal magnetic field, parallel to the beam axis, to 
 reconstruct the tracks of charged particles. This information is used to measure the momentum of them using the sagitta method and the relation between momentum and radius of curvature, presented in (\ref{eq:pqBR}).\\
-The electromagnetic calorimeter \cite{ATLASexp} measures the energy of electrons, photons and hadrons. Once a particle among them hits the detector, an electromagnetic shower is generated and the energy of the particle is transferred to the material through radiation, as shown in figure \ref{fig:EMShower}. Passive components of the calorimeter such as lead induce the loss of energy and the active ones, made by Liquid Argon (LAr) kept at a temperature of -184 °C, measure it. The shower is fully contained in this part of the detector, which is longer then 20 radiation lengths. For this reason this technique to measure energy is defined \textit{destructive}.\\
+The electromagnetic calorimeter \cite{ATLAS_detector} measures the energy of electrons, photons and hadrons. Once a particle among them hits the detector, an electromagnetic shower is generated and the energy of the particle is transferred to the material through radiation, as shown in figure \ref{fig:EMShower}. Passive components of the calorimeter such as lead induce the loss of energy and the active ones, made by Liquid Argon (LAr) kept at a temperature of -184 °C, measure it. The shower is fully contained in this part of the detector, which is longer then 20 radiation lengths. For this reason this technique to measure energy is defined \textit{destructive}.\\
 
 % \begin{figure}[h!]
 %     \centering
@@ -136,10 +184,3 @@ The electromagnetic calorimeter \cite{ATLASexp} measures the energy of electrons
 \noindent The hadronic calorimeter has been placed to measure the energy of hadrons that survive to the electromagnetic calorimeter. It relies on the principle of particle shower, which is converted into an electric current and measured.\\
 The muon spectrometer is the last component of the ATLAS experiment and measures the momenta of muons. In fact, they are similar to electrons, but with a greater mass, which leads only to weak interactions and more depth of penetration. This is why they are not revealed by inner systems.\\
 The coordinate system adopted at ATLAS to describe events is discussed in detail in section \ref{sec:CoordinateSystem}.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=3.5 in]{Images/Cap2/ATLASdetector.png}
-%     \caption{ATLAS schematic. Figure form Ref. \cite{ATLASexp}}
-%     \label{fig:ATLASdetector}
-% \end{figure}
