@@ -19,9 +19,6 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "source3"
-Warning--I didn't find a database entry for "source5"
-Warning--I didn't find a database entry for "source6"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -41,45 +38,47 @@ Warning--empty note in ATLAS_Luminosity
 Warning--empty year in ATLASwebsite
 Warning--empty note in ATLAS_detector
 Warning--empty author in ATLAS_exp_2008
-You've used 33 entries,
+Warning--empty author and editor in ATLAS_ID
+Warning--empty note in ATLAS_ID_3D
+You've used 35 entries,
             2481 wiz_defined-function locations,
-            759 strings with 9938 characters,
-and the built_in function-call counts, 9322 in all, are:
-= -- 821
-> -- 296
-< -- 32
-+ -- 149
-- -- 82
-* -- 512
-:= -- 1514
-add.period$ -- 119
-call.type$ -- 33
-change.case$ -- 62
-chr.to.int$ -- 32
-cite$ -- 53
-duplicate$ -- 570
-empty$ -- 949
-format.name$ -- 132
-if$ -- 1984
+            769 strings with 10190 characters,
+and the built_in function-call counts, 9811 in all, are:
+= -- 870
+> -- 303
+< -- 33
++ -- 155
+- -- 84
+* -- 544
+:= -- 1589
+add.period$ -- 127
+call.type$ -- 35
+change.case$ -- 65
+chr.to.int$ -- 34
+cite$ -- 58
+duplicate$ -- 603
+empty$ -- 1002
+format.name$ -- 135
+if$ -- 2091
 int.to.chr$ -- 2
-int.to.str$ -- 34
-missing$ -- 30
-newline$ -- 192
-num.names$ -- 96
-pop$ -- 308
+int.to.str$ -- 36
+missing$ -- 31
+newline$ -- 203
+num.names$ -- 99
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 35
 quote$ -- 0
-skip$ -- 364
+skip$ -- 383
 stack$ -- 0
-substring$ -- 123
-swap$ -- 59
+substring$ -- 128
+swap$ -- 62
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 219
-warning$ -- 19
-while$ -- 69
+type$ -- 230
+warning$ -- 21
+while$ -- 71
 width$ -- 0
-write$ -- 433
-(There were 22 warnings)
+write$ -- 460
+(There were 21 warnings)

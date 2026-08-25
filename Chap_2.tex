@@ -244,23 +244,44 @@ Making use of the relation \ref{eq:LHCAtlas/LHC/parameters/pqBR} between the rad
 %-------------------------------------------------------------------------------
 \subsection{The Inner Detector}\label{sec:LHCAtlas/ATLAS/innerDetector}
 
+The Inner Detector (ID) \cite{ATLAS_ID} is the closest system to the interaction point. Its function is to reconstruct the trajectories of charged particles, measure their transverse momentum and identify both primary and secondary interaction vertices of decays.
+Covering a pseudo-rapidity region of $|\eta| \leq 2.5$, 7.02 m long and 2.30 in diameter, it is inserted in the central solenoid (Sec. \ref{sec:LHCAtlas/ATLAS/magneticsystem}), providing the tracking sub-systems an external magnetic field of 2 T parallel to the beam axis.
+In order to balance both optimal resolution, material budget and radiation exposure, the ID utilizes three concentric silicon-based tracking technologies organized radially outward from the beam pipe: the Pixel Detector, the Semiconductor Tracker (SCT) and the Transition Radiation Tracker (TRT).
+In Fig. \ref{fig:LHCAtlas/ATLAS/ATLAS_InnerDetector} a schematic of the ID is shown.
+
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3.5 in]{Images/Chap2/InnerDetector.jpg}
-    \caption{ATLAS inner detector. Figure form Ref. \cite{ATLAS_exp_2008}.}
+    \includegraphics[width=3 in]{Images/Chap2/InnerDetector_3D.png}
+    \caption{3D representation of the ATLAS inner detector. Figure form Ref. \cite{ATLAS_ID_3D}.}
     \label{fig:LHCAtlas/ATLAS/ATLAS_InnerDetector}
 \end{figure}
 
-The ATLAS Inner Detector (ID) functions as the central tracking system closest to the interaction point, designed to reconstruct the trajectories of charged particles, measure their transverse momentum, and identify both primary and secondary interaction vertices~\cite{source3, source5, source6}. Operating within a $2\text{ T}$ uniform axial magnetic field provided by the central solenoid magnet, the ID delivers continuous coverage across the pseudorapidity range $|\eta| < 2.5$~\cite{source3, source5, source6}. The overall tracking volume is enclosed in a cylindrical envelope measuring $7.02\text{ m}$ in length and $2.30\text{ m}$ in diameter~\cite{source5, source6}. To maintain optimal resolution while managing material budget and radiation exposure, the ID utilizes three concentric tracking technologies organized radially outward from the beam pipe~\cite{source3, source5, source6}.
+%%%%
+\subsection*{Pixel Detector}\label{sec:sec:LHCAtlas/ATLAS/innerDetector/PD}
 
-Positioned closest to the beam pipe is the silicon Pixel Detector, which provides the highest spatial granularity of the tracking system~\cite{source3, source6}. The innermost component is the Insertable B-Layer (IBL), installed during Long Shutdown 1 at a radial distance of $33.25\text{ mm}$~\cite{source3, source5, source6}. The IBL consists of 14 carbon-fiber staves housing radiation-hard 3D and planar silicon pixel sensors with a reduced pitch of $50\ \mu\text{m} \times 250\ \mu\text{m}$, extending pseudorapidity coverage up to $|\eta| = 2.58$~\cite{source3, source5, source6}. Outer pixel layers reside at radial distances of $50.5\text{ mm}$, $88.5\text{ mm}$, and $122.5\text{ mm}$ in the barrel, supplemented by three transverse end-cap disks on each side located between $z = \pm 495\text{ mm}$ and $\pm 650\text{ mm}$~\cite{source3, source5, source6}. The pixel system delivers a spatial resolution of $10\ \mu\text{m}$ in the transverse $(r,\phi)$ plane and $115\ \mu\text{m}$ along the longitudinal $z$-axis, enabling high-precision impact parameter determination essential for $b$-tagging and $\tau$-lepton reconstruction~\cite{source3, source5, source6}.
+The closest system to the beam pipe is the Pixel Detector. It is composed by three pixel layers placed at distance of 50.5 mm, 88.5 mm and 122.5 mm from the IP respectively in the barrel.
+In the end-caps, there are installed three disks on each side located between $z = \pm 495\text{ mm}$ and $\pm 650\text{ mm}$. 
+The pixel system has the finest granurality, delivering a spatial resolution of $10\ \mu\text{m}$ in the $(r,\phi)$ plane and $115\ \mu\text{m}$ along the longitudinal $z$-axis.\\
+During LS1, an additional innermost layer was added at $r= 33.25\text{ mm}$. It is called the Insertable B-Layer (IBL) and it was added to improve the tracking performance, providing coverage up to $|\eta| = 2.58$ and to increase the radiation resistence of the ID.
 
-Surrounding the pixel layers, the Semiconductor Tracker (SCT) spans intermediate radial distances from $299\text{ mm}$ to $514\text{ mm}$~\cite{source3, source5, source6}. The SCT is built from silicon microstrip modules arranged across four cylindrical barrel layers and 18 end-cap wheels (nine per side)~\cite{source3, source5, source6}. Each module features microstrips with an $80\ \mu\text{m}$ pitch glued back-to-back with a $40\text{ mrad}$ stereo angle~\cite{source3, source5, source6}. This relative tilt provides three-dimensional position measurements while controlling readout channel density and material thickness~\cite{source3, source5}. The SCT achieves an intrinsic spatial resolution of $16\ \mu\text{m}$ in $(r,\phi)$ and $580\ \mu\text{m}$ along $z$, typically providing at least four distinct space-point measurements per track trajectory~\cite{source3, source5, source6}.
+%%%%
+\subsection*{SemiConductor Tracker}\label{sec:sec:LHCAtlas/ATLAS/innerDetector/SCT}
 
-Occupying the outermost region of the ID volume between radii of $563\text{ mm}$ and $1066\text{ mm}$ is the Transition Radiation Tracker (TRT)~\cite{source3, source5, source6}. Unlike the inner silicon-based detectors, the TRT consists of approximately 300,000 polyimide drift straw tubes, each $4\text{ mm}$ in diameter and equipped with a central gold-plated tungsten wire~\cite{source3, source5, source6}. The straws are filled with a gas mixture based on xenon or argon~\cite{source3, source5, source6}. While its single-hit spatial resolution is coarser at roughly $130\ \mu\text{m}$, the TRT provides continuous tracking by recording an average of 36 hits per charged track up to $|\eta| = 2.0$~\cite{source3, source5, source6}. Interleaved polypropylene fibers (in the barrel) and foils (in the end-caps) act as radiators~\cite{source3, source5, source6}. Highly relativistic particles, such as electrons, cross the radiator interfaces and emit transition radiation X-ray photons, which are absorbed by the heavy xenon gas to produce high-threshold hit signals used for electron-hadron identification~\cite{source3, source5, source6}.
+Outside the Pixel Detector, the SemiConductor Tracker (SCT) is positioned.
+It is composed by four barrel layers at distances between 299 mm and 514 mm and 18 overall end-cap disks. 
+SCT delivers a a spatial resolution of $16\ \mu\text{m}$ in the $(r,\phi)$ plane and $580\ \mu\text{m}$ along the longitudinal $z$-axis.\\
 
-Track candidates are reconstructed from raw detector hits using an inside-out tracking strategy~\cite{source3, source5}. Three-dimensional space points in the Pixel and SCT layers form initial track seeds, which are extended outward using a combinatorial Kalman filter to build full trajectory candidates~\cite{source3, source5}. These candidates are fitted via a global $\chi^2$ procedure before incorporating outer TRT hits~\cite{source3, source5}. Subsequent refitting via a Gaussian Sum Filter accounts for energy loss via bremsstrahlung~\cite{source3, source5}. Complementary back-tracking algorithms extend TRT track segments inward toward the interaction point to recover secondary tracks, such as those originating from photon conversion vertices~\cite{source3, source5}.
+%%%%
+\subsection*{Trasnsition Radiation Tracker}\label{sec:sec:LHCAtlas/ATLAS/innerDetector/TCT}
+The outermost region of the ID is composed by the Transition Radiation Tracker (TRT) situated between 554 mm  and 1082 mm from the IP. 
+Unlike the inner silicon-based detectors, the TRT consists of approximately 300,000 polyimide drift tubes, 4 mm each in diameter and equipped with a central gold-plated tungsten wire. 
+The tubes are filled with a gas mixture based on Xenon-$CO_2$-$O_2$ (70\%-27\%-3\%).
+TRT provides a single-hit spatial resolution of $130\ \mu\text{m}$ in the barrel region with $|\eta| < 0.7$. In the end-caps, with $0.7\leq |\eta| \leq 2.0$ the structure of the tubes is the one of disk, as for the other systems. 
+The main feature of TRT is to provide continuous tracking by recording an average of 36 hits per charged track.
+Additionally, it is able to distinguish electrons from other objects by detecting the transition radiation photons which are emitted when charged particles cross the active materials inside the tubes. 
 
+%-------------------------------------------------------------------------------
+\subsection{Calorimeters}\label{sec:LHCAtlas/ATLAS/Calo}
 
 
 
