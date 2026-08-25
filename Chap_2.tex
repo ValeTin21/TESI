@@ -163,7 +163,7 @@ These latter two variables are introduced because the difference of rapidities b
 Since Lorentz boosts are applied to move from the laboratory frame to the center-of-mass frame of the colliding particles, $\eta$ and $y$ are widely used instead of the polar angle $\theta$.
 In case of an ultra-relativistic particle, the rapidity and the pseudo-rapidity are approximately equal, $\eta \approx y$, as shown in Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity} and Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/eta}.
 The main difference between the two is that the rapidity depends both on the energy of the particle and its momentum, a combined measurement not trivial at high energies, while the pseudo-rapidity depends only on the particle's momentum.
-For these reasons, the pseudo-rapidity is preferred to the rapidity, making  ($r, \eta , \phi$) the used coordinate system.\\
+For these reasons, the pseudo-rapidity is preferred to the rapidity, making  ($r, \eta , \phi$) the used coordinate system. With such choice of coordinates, the detector components placed at high values of pseudo-rapidity are addressed as \textit{forward region}.\\
 The pseudo-rapidity and the azimuth angle, are used to define a geometrical distance, applied when computing the separation between two physics objects:
 
 \begin{equation} \label{eq:LHCAtlas/ATLAS/coordinatesystem/distance}
@@ -188,7 +188,7 @@ Similarly, the transverse energy $E_T$ is defined as the projection of the energ
 
 \noindent The invariant mass is a Lorentz invariant quantity, which is used to measure the mass of a resonant state, composed by a particle decaying into two others. In fact, the invariant mass of the system will be equal to the mass of the mother particle.\\
 Based on what has been discussed on Lorentz boosts at the LHC, the sum of the the transverse momenta of the events is expected to be zero, since the initial state of the collision has no transverse momentum.
-For this this reason, if a particle is not detected, as neutrinos, its transverse momentum, known as missing transverse momentum $\Vec{p_T^{miss}}$, can be computed as the opposite of the sum of the transverse momenta of all the detected particles in the event:
+For this this reason, if a particle is not detected, as it happens with neutrinos, its transverse momentum, known as missing transverse momentum $\Vec{p_T^{miss}}$, can be computed as the opposite of the sum of the transverse momenta of all the detected particles in the event:
 \begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/pTmiss}
     \Vec{p_T^{miss}}=-\sum_i \Vec{p}_{T,i}
 \end{equation}
@@ -203,9 +203,9 @@ For this this reason, if a particle is not detected, as neutrinos, its transvers
 %-------------------------------------------------------------------------------
 \subsection{Magnetic system}\label{sec:LHCAtlas/ATLAS/magneticsystem}
 
-\begin{figure}
+\begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap2/ATLASMagnetSystem.png}
+    \includegraphics[width=2 in]{Images/Chap2/ATLASMagnetSystem.png}
     \caption{ATLAS magnetic system. Figure form Ref. \cite{ATLAS_exp_2008}.}
     \label{fig:LHCAtlas/ATLAS/ATLASmagneticsystem}
 \end{figure}
