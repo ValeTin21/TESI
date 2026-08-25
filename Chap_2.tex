@@ -220,14 +220,31 @@ To minimize dead material in front of the Electromagnetic Calorimeter, the solen
 Providing the deflection field for the outer Muon Spectrometer, the barrel toroid is composed by eight large rectangular coils mounted radially with eight-fold azimuthal symmetry around the calorimeters. 
 Extending 25.3 m in length with inner and outer diameters of 9.4 m and 20.1 m, respectively, it generates a peak magnetic field 3.9 T.\\
 Two smaller end-cap toroid structures, 5 m long with an inner and an outer diameter of 1.65 m  and 10.7 m respectively, are inserted into each end of the barrel to extend coverage into forward regions. They generate a peak field 4.1 T. Both the barrel and end-cap toroids bend charged particles in the longitudinal plane.
+%-------------------------------------------------------------------------------
+\subsection{Particle tracking}\label{sec:LHCAtlas/ATLAS/particleTracking}
+As mentioned in the previous section, magnets are fundamental to measure the momentum of charged particles. In fact, when a charged particle enters a magnetic field, it is deflected by the Lorentz force, leading to a curved trajectory, whose radius of curvature is proportional to the momentum of the particle. By measuring the curvature of the track, the momentum can be inferred.\\
+The method used to measure the particle momentum is the sagitta method, where the sagitta $s$ is defined as the distance between the midpoint of the chord connecting two points on the track and the track itself. The sagitta is related to the radius of curvature $R$, the length of the chord $L$ and the angle $\theta$ under the arc by the following equation:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/particleTracking/sagitta}
+    s = R\Bigg[1-cos\Bigg(\frac{\theta}{2}\Bigg)\Bigg]\simeq \frac{L^2}{8R}
+\end{equation}
 
+\noindent where the assumption of small angles was used in the final step.\\
+Making use of the relation \ref{eq:LHCAtlas/LHC/parameters/pqBR} between the radius of curvature $R$, the momentum $p$ and the magnetic field $B$, the sagitta can be expressed as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/particleTracking/sagitta_p}
+    p = \frac{0.3BL^2}{8s}
+\end{equation}
+
+\noindent As direct consequence of this latter equation, the reltive uncertainty on the momentum measurement is equal to the relative uncertainty on the sagitta measurement, $\frac{\Delta p}{p}=\frac{\Delta s}{s}$, which, using $\sigma_x$ position uncertainty and N number of measured points, leads to:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/particleTracking/momentum_uncertainty_sagitta}
+    \frac{\sigma_p}{p} = \frac{\sigma_x [m]}{0.3BL^2 [T m^2]}\sqrt{\frac{720}{N+5}}p [GeV]
+\end{equation}
+
+\noindent From Eq. \ref{eq:LHCAtlas/ATLAS/particleTracking/momentum_uncertainty_sagitta} it is evident that the momentum resolution can improve with a stronger magnetic field, a longer track length and a higher number of measured points but it worsens with higher momentum particles since $\frac{\sigma_p}{p}\propto p$ .\\
 
 %-------------------------------------------------------------------------------
 \subsection{PID or ID}
 
 
-The inner detector relies on a 2 T solenoidal magnetic field, parallel to the beam axis, to 
-reconstruct the tracks of charged particles. This information is used to measure the momentum of them using the sagitta method and the relation between momentum and radius of curvature, presented in (\ref{eq:pqBR}).\\
 The electromagnetic calorimeter \cite{ATLAS_detector} measures the energy of electrons, photons and hadrons. Once a particle among them hits the detector, an electromagnetic shower is generated and the energy of the particle is transferred to the material through radiation, as shown in figure \ref{fig:EMShower}. Passive components of the calorimeter such as lead induce the loss of energy and the active ones, made by Liquid Argon (LAr) kept at a temperature of -184 °C, measure it. The shower is fully contained in this part of the detector, which is longer then 20 radiation lengths. For this reason this technique to measure energy is defined \textit{destructive}.\\
 
 % \begin{figure}[h!]
