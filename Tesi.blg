@@ -21,9 +21,8 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Warning--I didn't find a database entry for "1"
 Warning--I didn't find a database entry for "2"
-Warning--I didn't find a database entry for "3"
 Warning--I didn't find a database entry for "4"
-Warning--I didn't find a database entry for "5"
+Warning--I didn't find a database entry for "3"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -45,45 +44,46 @@ Warning--empty note in ATLAS_detector
 Warning--empty author in ATLAS_exp_2008
 Warning--empty author and editor in ATLAS_ID
 Warning--empty note in ATLAS_ID_3D
-You've used 35 entries,
+Warning--empty author and editor in ATLAS_Calo
+You've used 36 entries,
             2481 wiz_defined-function locations,
-            770 strings with 10191 characters,
-and the built_in function-call counts, 9811 in all, are:
-= -- 870
+            773 strings with 10283 characters,
+and the built_in function-call counts, 10067 in all, are:
+= -- 895
 > -- 303
 < -- 33
-+ -- 155
++ -- 157
 - -- 84
-* -- 544
-:= -- 1589
-add.period$ -- 127
-call.type$ -- 35
-change.case$ -- 65
-chr.to.int$ -- 34
-cite$ -- 58
-duplicate$ -- 603
-empty$ -- 1002
+* -- 562
+:= -- 1620
+add.period$ -- 131
+call.type$ -- 36
+change.case$ -- 66
+chr.to.int$ -- 35
+cite$ -- 61
+duplicate$ -- 624
+empty$ -- 1038
 format.name$ -- 135
-if$ -- 2091
+if$ -- 2153
 int.to.chr$ -- 2
-int.to.str$ -- 36
-missing$ -- 31
-newline$ -- 203
+int.to.str$ -- 37
+missing$ -- 32
+newline$ -- 208
 num.names$ -- 99
-pop$ -- 321
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 36
 quote$ -- 0
-skip$ -- 383
+skip$ -- 393
 stack$ -- 0
-substring$ -- 128
-swap$ -- 62
+substring$ -- 131
+swap$ -- 64
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 230
-warning$ -- 21
+type$ -- 234
+warning$ -- 22
 while$ -- 71
 width$ -- 0
-write$ -- 460
+write$ -- 473
 (There were 26 warnings)
