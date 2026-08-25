@@ -38,45 +38,45 @@ Warning--empty note in ATLAS_Luminosity
 Warning--empty year in ATLASwebsite
 Warning--empty note in ATLAS_detector
 Warning--empty author in ATLAS_exp_2008
-You've used 32 entries,
+You've used 33 entries,
             2481 wiz_defined-function locations,
-            747 strings with 9655 characters,
-and the built_in function-call counts, 8972 in all, are:
-= -- 787
-> -- 289
-< -- 31
-+ -- 145
-- -- 80
-* -- 489
-:= -- 1459
-add.period$ -- 115
-call.type$ -- 32
-change.case$ -- 60
-chr.to.int$ -- 31
-cite$ -- 52
-duplicate$ -- 551
-empty$ -- 912
-format.name$ -- 129
-if$ -- 1907
+            756 strings with 9917 characters,
+and the built_in function-call counts, 9322 in all, are:
+= -- 821
+> -- 296
+< -- 32
++ -- 149
+- -- 82
+* -- 512
+:= -- 1514
+add.period$ -- 119
+call.type$ -- 33
+change.case$ -- 62
+chr.to.int$ -- 32
+cite$ -- 53
+duplicate$ -- 570
+empty$ -- 949
+format.name$ -- 132
+if$ -- 1984
 int.to.chr$ -- 2
-int.to.str$ -- 33
-missing$ -- 29
-newline$ -- 186
-num.names$ -- 93
-pop$ -- 302
+int.to.str$ -- 34
+missing$ -- 30
+newline$ -- 192
+num.names$ -- 96
+pop$ -- 308
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 33
 quote$ -- 0
-skip$ -- 353
+skip$ -- 364
 stack$ -- 0
-substring$ -- 100
-swap$ -- 57
+substring$ -- 123
+swap$ -- 59
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 212
+type$ -- 219
 warning$ -- 19
-while$ -- 66
+while$ -- 69
 width$ -- 0
-write$ -- 418
+write$ -- 433
 (There were 19 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -199,5 +199,14 @@ Riccardo~Maria Bianchi and ATLAS Collaboration.
 \textit{"The ATLAS Experiment at the CERN Large Hadron Collider"}.
 \newblock \emph{Journal of Instrumentation}, (2008).
 \newblock URL \url{https://doi.org/10.1088/1748-0221/3/08/S08003}.
+
+\bibitem[Gluckstern((1963))]{Sagitta_method}
+R.L. Gluckstern.
+\newblock \textit{"Uncertainties in track momentum and direction, due to
+  multiple scattering and measurement errors"}.
+\newblock \emph{Nuclear Instruments and Methods}, 24:\penalty0 381--389,
+  (1963).
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0029554X63903471}.
 
 \end{thebibliography}
