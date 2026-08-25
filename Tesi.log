@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,7 +1195,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=130, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=134, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 81.
@@ -1291,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  (Chap_1.tex
 Chapter 1.
-<Images/Chap1/SM_framework.png, id=226, 1074.0125pt x 1027.84pt>
+<Images/Chap1/SM_framework.png, id=231, 1074.0125pt x 1027.84pt>
 File: Images/Chap1/SM_framework.png Graphic file (type png)
 <use Images/Chap1/SM_framework.png>
 Package pdftex.def Info: Images/Chap1/SM_framework.png  used on input line 13.
@@ -1312,7 +1312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
  []
 
 [6] [7]
-<Images/Chap1/HiggsPotential.png, id=299, 563.10374pt x 355.3275pt>
+<Images/Chap1/HiggsPotential.png, id=304, 563.10374pt x 355.3275pt>
 File: Images/Chap1/HiggsPotential.png Graphic file (type png)
 <use Images/Chap1/HiggsPotential.png>
 Package pdftex.def Info: Images/Chap1/HiggsPotential.png  used on input line 168.
@@ -1332,13 +1332,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
-<Images/Chap1/ATLAS_VVJJ.png, id=346, 501.875pt x 475.7775pt>
+<Images/Chap1/ATLAS_VVJJ.png, id=351, 501.875pt x 475.7775pt>
 File: Images/Chap1/ATLAS_VVJJ.png Graphic file (type png)
 <use Images/Chap1/ATLAS_VVJJ.png>
 Package pdftex.def Info: Images/Chap1/ATLAS_VVJJ.png  used on input line 236.
 (pdftex.def)             Requested size: 216.81pt x 205.53862pt.
 [11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>]
-<Images/Chap1/DJ_Run2.png, id=362, 845.1575pt x 597.23125pt>
+<Images/Chap1/DJ_Run2.png, id=367, 845.1575pt x 597.23125pt>
 File: Images/Chap1/DJ_Run2.png Graphic file (type png)
 <use Images/Chap1/DJ_Run2.png>
 Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
@@ -1348,7 +1348,7 @@ Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 251.
 
  (Chap_2.tex
 Chapter 2.
-<Images/Chap2/CERN_acc_system.png, id=373, 346.896pt x 308.352pt>
+<Images/Chap2/CERN_acc_system.png, id=378, 346.896pt x 308.352pt>
 File: Images/Chap2/CERN_acc_system.png Graphic file (type png)
 <use Images/Chap2/CERN_acc_system.png>
 Package pdftex.def Info: Images/Chap2/CERN_acc_system.png  used on input line 14.
@@ -1366,13 +1366,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [14 <./Images/Chap2/CERN_acc_system.png>]
-<Images/Chap2/BeamsCERN.png, id=395, 506.89375pt x 521.95pt>
+<Images/Chap2/BeamsCERN.png, id=400, 506.89375pt x 521.95pt>
 File: Images/Chap2/BeamsCERN.png Graphic file (type png)
 <use Images/Chap2/BeamsCERN.png>
 Package pdftex.def Info: Images/Chap2/BeamsCERN.png  used on input line 56.
 (pdftex.def)             Requested size: 144.54pt x 148.82896pt.
  [15 <./Images/Chap2/BeamsCERN.png (PNG copy)>] [16]
-<Images/Chap2/ATLAS_L_R1_R3.png, id=421, 798.985pt x 574.145pt>
+<Images/Chap2/ATLAS_L_R1_R3.png, id=426, 798.985pt x 574.145pt>
 File: Images/Chap2/ATLAS_L_R1_R3.png Graphic file (type png)
 <use Images/Chap2/ATLAS_L_R1_R3.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_L_R1_R3.png  used on input line 115.
@@ -1382,13 +1382,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
-<Images/Chap2/ATLASDetector.png, id=426, 1445.4pt x 886.31125pt>
+<Images/Chap2/ATLASDetector.png, id=431, 1445.4pt x 886.31125pt>
 File: Images/Chap2/ATLASDetector.png Graphic file (type png)
 <use Images/Chap2/ATLASDetector.png>
 Package pdftex.def Info: Images/Chap2/ATLASDetector.png  used on input line 131.
 (pdftex.def)             Requested size: 310.76122pt x 190.55319pt.
 [17 <./Images/Chap2/ATLAS_L_R1_R3.png>]
-<Images/Chap2/CoordinateSyst.png, id=438, 935.74594pt x 454.69875pt>
+<Images/Chap2/CoordinateSyst.png, id=443, 935.74594pt x 454.69875pt>
 File: Images/Chap2/CoordinateSyst.png Graphic file (type png)
 <use Images/Chap2/CoordinateSyst.png>
 Package pdftex.def Info: Images/Chap2/CoordinateSyst.png  used on input line 143.
@@ -1398,7 +1398,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
-<Images/Chap2/ATLASMagnetSystem.png, id=460, 620.91975pt x 486.618pt>
+<Images/Chap2/ATLASMagnetSystem.png, id=465, 620.91975pt x 486.618pt>
 File: Images/Chap2/ATLASMagnetSystem.png Graphic file (type png)
 <use Images/Chap2/ATLASMagnetSystem.png>
 Package pdftex.def Info: Images/Chap2/ATLASMagnetSystem.png  used on input line 208.
@@ -1409,7 +1409,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
  []
 
 [21]
-<Images/Chap2/InnerDetector_3D.png, id=490, 956.57375pt x 831.105pt>
+<Images/Chap2/InnerDetector_3D.png, id=495, 956.57375pt x 831.105pt>
 File: Images/Chap2/InnerDetector_3D.png Graphic file (type png)
 <use Images/Chap2/InnerDetector_3D.png>
 Package pdftex.def Info: Images/Chap2/InnerDetector_3D.png  used on input line 254.
@@ -1420,86 +1420,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--273
  []
 
 [22 <./Images/Chap2/InnerDetector_3D.png (PNG copy)>]
-<Images/Chap2/ATLAS_Calo.png, id=504, 1621.05624pt x 1091.07625pt>
+<Images/Chap2/ATLAS_Calo.png, id=509, 1621.05624pt x 1091.07625pt>
 File: Images/Chap2/ATLAS_Calo.png Graphic file (type png)
 <use Images/Chap2/ATLAS_Calo.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_Calo.png  used on input line 294.
 (pdftex.def)             Requested size: 252.94499pt x 170.24716pt.
  [23 <./Images/Chap2/ATLAS_Calo.png (PNG copy)>]
-<Images/Chap2/Accordion_CAL.png, id=514, 803.0pt x 652.4375pt>
+<Images/Chap2/Accordion_CAL.png, id=519, 803.0pt x 652.4375pt>
 File: Images/Chap2/Accordion_CAL.png Graphic file (type png)
 <use Images/Chap2/Accordion_CAL.png>
 Package pdftex.def Info: Images/Chap2/Accordion_CAL.png  used on input line 320.
 (pdftex.def)             Requested size: 180.67499pt x 146.7921pt.
-
-
-Package natbib Warning: Citation `1' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `3' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `4' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `1' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `3' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `4' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `1' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `1' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `3' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `1' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `2' on page 24 undefined on input line 328.
-
-
-Package natbib Warning: Citation `3' on page 24 undefined on input line 328.
-
-[24 <./Images/Chap2/Accordion_CAL.png>]
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 332.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 332.
-
-
-LaTeX Warning: Reference `fig:EMShower' on page 25 undefined on input line 335.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+ [24 <./Images/Chap2/Accordion_CAL.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
 
-LaTeX Warning: Reference `sec:CoordinateSystem' on page 25 undefined on input line 346.
+Package natbib Warning: Citation `2' on page 25 undefined on input line 344.
+
+
+Package natbib Warning: Citation `2' on page 25 undefined on input line 344.
+
+
+LaTeX Warning: Reference `fig:EMShower' on page 25 undefined on input line 347.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+
+LaTeX Warning: Reference `sec:CoordinateSystem' on page 25 undefined on input line 358.
 
 ) [25]
 \openout2 = `Chap_3.aux'.
@@ -1573,20 +1525,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 0A454285E6C6B496AE5D389DB56C2CE8;4724.
+(rerunfilecheck)             Checksum: ADEE9E0A541668132D83178428246388;4874.
  ) 
 Here is how much of TeX's memory you used:
- 45980 strings out of 467510
- 1000357 string characters out of 5408794
- 1513548 words of memory out of 5000000
- 74021 multiletter control sequences out of 15000+600000
- 741293 words of font info for 252 fonts, out of 8000000 for 9000
+ 45984 strings out of 467510
+ 1000459 string characters out of 5408794
+ 1513654 words of memory out of 5000000
+ 74024 multiletter control sequences out of 15000+600000
+ 741329 words of font info for 252 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (38 pages, 4728190 bytes).
+Output written on Tesi.pdf (38 pages, 4729516 bytes).
 PDF statistics:
- 737 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 64331 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
+ 64339 words of extra memory for PDF output out of 74296 (max. 10000000)
 

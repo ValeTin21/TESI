@@ -287,8 +287,8 @@ Calorimeters are used in ATLAS to measure the energy of particles by means of a 
 Covering a region up to $\vert{}\eta\vert{} < 4.9$, the calorimetry system features sampling technology with dense absorbers alternated with active media to completely contain electromagnetic and hadronic showers.
 The showers' lenght is measured in terms of radiation lenght $X_0$, which is defined as the distance a particle travels in a material to reduce its energy by a factor $1/e$.
 The idea behind this technique is to have a low probability of signals in the muon spectrometer from a particle different from a muon, which is the only particle that should cross the calorimeter without being absorbed (apart from not interacting particle such as neutrinos).\\
-Liquid argon (LAr) serves as the active material, while being kept at a temperature of 88.5 K by three cryostats.\\ 
-The calorimeter complex in ATLAS is divided into three components: the Electromagnetic Calorimeter (ECal), the Hadronic Calorimeter (HCal) and the Forward Calorimeter (FCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
+Liquid argon (LAr) serves as the active material, while being kept at a temperature of 88.5 K by three cryostats. When a charged particle crosses LAr, light is produced, which is collected by wavelength-shifting fibers and routed to photo-multipliers (PMTs) for the conversion to signal.\\ 
+The calorimeter complex in ATLAS is divided into two components: the Electromagnetic Calorimeter (ECal) and the Hadronic Calorimeter (HCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=3.5 in]{Images/Chap2/ATLAS_Calo.png}
@@ -325,10 +325,22 @@ A schematic representation of the ATLAS ECal is shown in Fig. \ref{fig:LHCAtlas/
 %%%%
 \subsection*{Hadronic Calorimeter}\label{sec:sec:LHCAtlas/ATLAS/Calo/HCal}
 
-Hadronic energy measurement is tailored to the pseudorapidity environment \cite{1, 2, 3, 4}. Surrounding the barrel EM cryostat, the Tile calorimeter covers $\vert{}\eta\vert{} < 1.7$ using steel plates as absorbers interleaved with plastic scintillating tiles \cite{1, 2, 3, 4}. Wavelength-shifting fibers collect the produced scintillation light and route it to photomultiplier tubes \cite{1, 2}. Segmented into three radial layers, the Tile calorimeter provides $9.7$ interaction lengths ($\lambda$) of material at $\eta=0$ \cite{2}. In the intermediate forward region $1.5 \le \vert{}\eta\vert{} < 3.2$, the HEC employs copper plates within LAr gaps \cite{1, 2, 3}. The FCAL covers the high-flux region $3.1 \le \vert{}\eta\vert{} < 4.9$ using concentric tube-rod geometries with copper absorbers for the electromagnetic module and tungsten for the two hadronic modules \cite{1, 2, 3}. The overall hadronic calorimeter resolution is parametrized as:
-\begin{equation}
+Hadronic energy measurements are handlead by the HCal, which is composed by three sub-sections: the Tile calorimeter, the Hadronic End-Cap Calorimeter (HEC) and the Forward Calorimeter (FCal).
+The Tile calorimeter is a sampling calorimeter with steel as absorber and scintillating tiles as active material, covering the central region of the detector with $|\eta|\leq 1.7$. With an inner diameter of 4.46 m  and a outer one of 8.50 m, it covers 7.4 $\lambda$ (the interaction lenght) at $\eta = 0$.\\
+The HEC is based on two wheels per end-cap, with copper as absorber material. With an outer diameter of 4.06 m, it covers the intermediate region of the detector with $1.5 \leq |\eta| \leq 3.2$.\\
+In conclusion, the FCal covers the region $3.1 \leq |\eta| \leq 4.9$ and it is the closest component of the calorimeter system to the beam pipe. It is composed by three modules (FCal1, FCal2, FCal3), with copper as absorber for the FCal1, reaching 27.6 $X_0$, and tungsten for the other two, which allows to reach 90 $X_0$.
+The FCal is designed to resist to high radiation doses, being exposed to a high flux of particles, since a big fraction of collisions is associated with low momentum transfer.\\
+The overall hadronic calorimeter resolution can be parametrized as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/Calo/ECal/HCal_resolution}
     \frac{\sigma_E}{E} = \frac{52\%}{\sqrt{E[\text{GeV}]}} \oplus \frac{1.6\text{ GeV}}{E[\text{GeV}]} \oplus 3.0\%
 \end{equation}
+
+\noindent where the first term, as for the ECal, is the stochastic term; the second one is associated to the noise from the read-out electronics and the last one is a constant term keeping tracks of unknown effects.\\
+
+%-------------------------------------------------------------------------------
+\subsection{Muon spectrometer}\label{sec:LHCAtlas/ATLAS/Muon}
+
+
 Topological cell-clustering algorithms group neighboring energy deposits above noise thresholds into three-dimensional topo-clusters \cite{2}. These topo-clusters serve as inputs for jet reconstruction algorithms or are combined with Inner Detector tracks through Particle Flow and Track-CaloCluster frameworks to refine low-momentum jet and isolation measurements \cite{2}.
 
 %%%#############%%%
