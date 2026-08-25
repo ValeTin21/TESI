@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1421,22 +1421,158 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--273
 
 [22 <./Images/Chap2/InnerDetector_3D.png (PNG copy)>]
 
-LaTeX Warning: Reference `fig:EMShower' on page 23 undefined on input line 288.
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `4' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `4' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `5' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `4' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 286.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `4' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `4' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `1' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `2' on page 23 undefined on input line 290.
+
+
+Package natbib Warning: Citation `3' on page 23 undefined on input line 290.
+
+[23]
+
+Package natbib Warning: Citation `2' on page 24 undefined on input line 294.
+
+
+Package natbib Warning: Citation `2' on page 24 undefined on input line 294.
+
+
+LaTeX Warning: Reference `fig:EMShower' on page 24 undefined on input line 297.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 
-LaTeX Warning: Reference `sec:CoordinateSystem' on page 23 undefined on input line 299.
+LaTeX Warning: Reference `sec:CoordinateSystem' on page 24 undefined on input line 308.
 
-) [23]
+) [24]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
 Chapter 3.
-) [24
+) [25
 
 
 
@@ -1446,7 +1582,7 @@ Chapter 3.
 
  (Chap_4.tex
 Chapter 4.
-) [25
+) [26
 
 
 
@@ -1456,7 +1592,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [26
+) [27
 
 
 
@@ -1466,7 +1602,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [27
+) [28
 
 
 
@@ -1480,13 +1616,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [28
+ [29
 
 
 
 
 
-] [29]) [30] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+] [30])
+
+Package natbib Warning: There were undefined citations.
+
+[31] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1502,17 +1642,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 0B96C2EF1EA8C8B6D33CCC0B6E4B2541;4724.
  ) 
 Here is how much of TeX's memory you used:
- 45939 strings out of 467510
- 999355 string characters out of 5408794
+ 45958 strings out of 467510
+ 999574 string characters out of 5408794
  1513084 words of memory out of 5000000
  73996 multiletter control sequences out of 15000+600000
- 740986 words of font info for 249 fonts, out of 8000000 for 9000
+ 741725 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (36 pages, 3139159 bytes).
+Output written on Tesi.pdf (37 pages, 3144823 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
  64321 words of extra memory for PDF output out of 74296 (max. 10000000)
 
