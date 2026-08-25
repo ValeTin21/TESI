@@ -284,7 +284,8 @@ Additionally, it is able to distinguish electrons from other objects by detectin
 \subsection{Calorimeters}\label{sec:LHCAtlas/ATLAS/Calo}
 
 Calorimeters are used in ATLAS to measure the energy of particles by means of a destructive measurement on the particles. For this reason, calorimeters in ATLAS are placed outside the Inner Detector, allowing a complete reconstruction of the particle trajectory before it is absorbed \cite{ATLAS_Calo}.\\
-Covering a region up to $\vert{}\eta\vert{} < 4.9$, the calorimetry system features sampling technology with dense absorbers alternated with active media to completely contain electromagnetic and hadronic showers, whose lenght is measured in terms of radiation lenght $X_0$.
+Covering a region up to $\vert{}\eta\vert{} < 4.9$, the calorimetry system features sampling technology with dense absorbers alternated with active media to completely contain electromagnetic and hadronic showers.
+The showers' lenght is measured in terms of radiation lenght $X_0$, which is defined as the distance a particle travels in a material to reduce its energy by a factor $1/e$.
 The idea behind this technique is to have a low probability of signals in the muon spectrometer from a particle different from a muon, which is the only particle that should cross the calorimeter without being absorbed (apart from not interacting particle such as neutrinos).\\
 Liquid argon (LAr) serves as the active material, while being kept at a temperature of 88.5 K by three cryostats.\\ 
 The calorimeter complex in ATLAS is divided into three components: the Electromagnetic Calorimeter (ECal), the Hadronic Calorimeter (HCal) and the Forward Calorimeter (FCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
@@ -295,11 +296,35 @@ The calorimeter complex in ATLAS is divided into three components: the Electroma
     \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}
 \end{figure}
 
-One central cryostat contains the electromagnetic barrel (EMB), while two endcap cryostats contain the electromagnetic endcap (EMEC), the hadronic endcap (HEC), and the forward calorimeter (FCAL) \cite{1, 2, 4}. The central hadronic region is covered by a plastic tile calorimeter surrounding the LAr barrel \cite{1, 2, 3}.The LAr electromagnetic calorimeter uses lead absorbers separated by LAr gaps with accordion-shaped geometry \cite{1, 2}. This layout ensures uniform azimuthal response without structural cracks \cite{1}. The EMB covers $0 \le \vert{}\eta\vert{} < 1.475$, whereas the EMEC spans $1.375 < \vert{}\eta\vert{} < 3.2$ \cite{2}. The transition region at $1.37 < \vert{}\eta\vert{} < 1.52$ contains substantial passive material and exhibits degraded energy resolution \cite{2}. In the region $\vert{}\eta\vert{} < 1.8$, a thin LAr presampler layer sits in front of the primary calorimeter to correct for upstream energy loss \cite{2}. The total thickness of the electromagnetic system exceeds 22 radiation lengths ($X_0$) in the barrel and 24 $X_0$ in the endcaps \cite{2}. Radially, the EM calorimeter is divided into three sampling layers with varying spatial granularity \cite{2}. The first layer features fine $\eta$-strip segmentation to discriminate single photons from neutral pion decays \cite{2}. The second layer collects the majority of the electromagnetic shower energy, while the third layer measures high-energy shower tails \cite{2}. The test-beam energy resolution of the EM calorimeter follows:
+%%%%
+\subsection*{Electromagnetic Calorimeter}\label{sec:LHCAtlas/ATLAS/Calo/ECal}
 
-\begin{equation}
+The LAr ECal is composed by lead (Pb) absorbers (passive material) separated by LAr gaps (active material) with an accordion-shaped geometry.
+This particular layout is chosen to obtain high sampling rate while keeping a fast signal extraction time, ensuring uniform cover in $\phi$.
+As previous systems, also ECal has a symmetric structure, with three main components: the barrel, with coverage  $|\eta| \leq 1.475$ and the two end-caps in the range $1.35 \leq |\eta| \leq 3.2$. The region $1.37 \leq |\eta| \leq 1.52$ is known as \textit{crack-region}, given the large amount of inactive material present in this area, which leads to a degraded energy resolution.\\
+Based on the $\eta$ region, the thickness of the ECal varies between 22 to 33 $X_0$, which is sufficent to contain the full electromagnetic showers.\\
+The ECal is structured in three layers in the radial direction, each with a different granularity in $\eta$ and $\phi$. 
+The first layer has a fine granularity in $\eta$, enabling the discrimination between showers coming from elctrons, photons or neutral pions. 
+The second layer collects the majority of the electromagnetic shower energy, with fine granurality in both coordinates.
+The third and final layer measures high-energy shower tails.\\
+The ECal energy resolution has been measured during test-beams and, as a function of the beam energy, it is computed as:
+\begin{equation}\label{eq:LHCAtlas/ATLAS/Calo/ECal/ECal_resolution}
     \frac{\sigma_E}{E} = \frac{10.1\%}{\sqrt{E[\text{GeV}]}} \oplus 0.17\%
 \end{equation}
+
+\noindent where the first term is the stochastic term, dominant at low energies, summed in quadrature with the term accounting for the non-uniform response of the detector.\\
+A schematic representation of the ATLAS ECal is shown in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Accordion_Calo}.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.5 in]{Images/Chap2/Accordion_CAL.png}
+    \caption{Schematic view of the accordion shape of the ATLAS ECal at $\eta = 0$. Figure form Ref. \cite{ATLAS_LArCalo}.}
+    \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Accordion_Calo}
+\end{figure}
+
+%%%%
+\subsection*{Hadronic Calorimeter}\label{sec:sec:LHCAtlas/ATLAS/Calo/HCal}
+
 Hadronic energy measurement is tailored to the pseudorapidity environment \cite{1, 2, 3, 4}. Surrounding the barrel EM cryostat, the Tile calorimeter covers $\vert{}\eta\vert{} < 1.7$ using steel plates as absorbers interleaved with plastic scintillating tiles \cite{1, 2, 3, 4}. Wavelength-shifting fibers collect the produced scintillation light and route it to photomultiplier tubes \cite{1, 2}. Segmented into three radial layers, the Tile calorimeter provides $9.7$ interaction lengths ($\lambda$) of material at $\eta=0$ \cite{2}. In the intermediate forward region $1.5 \le \vert{}\eta\vert{} < 3.2$, the HEC employs copper plates within LAr gaps \cite{1, 2, 3}. The FCAL covers the high-flux region $3.1 \le \vert{}\eta\vert{} < 4.9$ using concentric tube-rod geometries with copper absorbers for the electromagnetic module and tungsten for the two hadronic modules \cite{1, 2, 3}. The overall hadronic calorimeter resolution is parametrized as:
 \begin{equation}
     \frac{\sigma_E}{E} = \frac{52\%}{\sqrt{E[\text{GeV}]}} \oplus \frac{1.6\text{ GeV}}{E[\text{GeV}]} \oplus 3.0\%
