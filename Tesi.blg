@@ -19,6 +19,9 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "source3"
+Warning--I didn't find a database entry for "source5"
+Warning--I didn't find a database entry for "source6"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -40,7 +43,7 @@ Warning--empty note in ATLAS_detector
 Warning--empty author in ATLAS_exp_2008
 You've used 33 entries,
             2481 wiz_defined-function locations,
-            756 strings with 9917 characters,
+            759 strings with 9938 characters,
 and the built_in function-call counts, 9322 in all, are:
 = -- 821
 > -- 296
@@ -79,4 +82,4 @@ warning$ -- 19
 while$ -- 69
 width$ -- 0
 write$ -- 433
-(There were 19 warnings)
+(There were 22 warnings)

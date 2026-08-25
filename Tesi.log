@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 AUG 2026 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1408,24 +1408,231 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
+<Images/Chap2/InnerDetector.jpg, id=470, 810.52812pt x 540.51938pt>
+File: Images/Chap2/InnerDetector.jpg Graphic file (type jpg)
+<use Images/Chap2/InnerDetector.jpg>
+Package pdftex.def Info: Images/Chap2/InnerDetector.jpg  used on input line 249.
+(pdftex.def)             Requested size: 252.94499pt x 168.68095pt.
 
-LaTeX Warning: Reference `fig:EMShower' on page 21 undefined on input line 248.
+Package natbib Warning: Citation `source3' on page 21 undefined on input line 254.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Package natbib Warning: Citation `source5' on page 21 undefined on input line 254.
 
- []
+
+Package natbib Warning: Citation `source6' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source3' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source5' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source6' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source5' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source6' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source3' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source5' on page 21 undefined on input line 254.
+
+
+Package natbib Warning: Citation `source6' on page 21 undefined on input line 254.
 
 [21]
 
-LaTeX Warning: Reference `sec:CoordinateSystem' on page 22 undefined on input line 259.
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 256.
 
-) [22]
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 256.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 258.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source3' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source5' on page 22 undefined on input line 260.
+
+
+Package natbib Warning: Citation `source6' on page 22 undefined on input line 260.
+
+[22 <./Images/Chap2/InnerDetector.jpg>]
+
+Package natbib Warning: Citation `source3' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source5' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source3' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source5' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source3' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source5' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source3' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source5' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source3' on page 23 undefined on input line 262.
+
+
+Package natbib Warning: Citation `source5' on page 23 undefined on input line 262.
+
+
+LaTeX Warning: Reference `fig:EMShower' on page 23 undefined on input line 267.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+LaTeX Warning: Reference `sec:CoordinateSystem' on page 23 undefined on input line 278.
+
+) [23]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
 Chapter 3.
-) [23
+) [24
 
 
 
@@ -1435,7 +1642,7 @@ Chapter 3.
 
  (Chap_4.tex
 Chapter 4.
-) [24
+) [25
 
 
 
@@ -1445,7 +1652,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [25
+) [26
 
 
 
@@ -1455,7 +1662,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [26
+) [27
 
 
 
@@ -1469,13 +1676,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [27
+ [28
 
 
 
 
 
-] [28]) [29] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+] [29])
+
+Package natbib Warning: There were undefined citations.
+
+[30] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1488,20 +1699,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 39225A2E9E5570331436814D32F93FCB;4557.
+(rerunfilecheck)             Checksum: 60FD9CE0AB2258551C25929DE96DA5CC;4602.
  ) 
 Here is how much of TeX's memory you used:
- 45908 strings out of 467510
- 998599 string characters out of 5408794
- 1512658 words of memory out of 5000000
- 73976 multiletter control sequences out of 15000+600000
- 740903 words of font info for 248 fonts, out of 8000000 for 9000
+ 45945 strings out of 467510
+ 999245 string characters out of 5408794
+ 1512801 words of memory out of 5000000
+ 73985 multiletter control sequences out of 15000+600000
+ 742092 words of font info for 261 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2543b,645s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (34 pages, 2352491 bytes).
+Output written on Tesi.pdf (35 pages, 2566277 bytes).
 PDF statistics:
- 674 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 64308 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 64313 words of extra memory for PDF output out of 74296 (max. 10000000)
 
