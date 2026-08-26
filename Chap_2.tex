@@ -291,7 +291,7 @@ Liquid argon (LAr) serves as the active material, while being kept at a temperat
 The calorimeter complex in ATLAS is divided into two components: the Electromagnetic Calorimeter (ECal) and the Hadronic Calorimeter (HCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3.5 in]{Images/Chap2/ATLAS_Calo.png}
+    \includegraphics[width=4 in]{Images/Chap2/ATLAS_Calo.png}
     \caption{Schematic of the ATLAS calorimeter system. Figure form Ref. \cite{ATLAS_exp_2008}.}
     \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}
 \end{figure}
@@ -317,7 +317,7 @@ A schematic representation of the ATLAS ECal is shown in Fig. \ref{fig:LHCAtlas/
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=2.5 in]{Images/Chap2/Accordion_CAL.png}
+    \includegraphics[width=3 in]{Images/Chap2/Accordion_CAL.png}
     \caption{Schematic view of the accordion shape of the ATLAS ECal at $\eta = 0$. Figure form Ref. \cite{ATLAS_LArCalo}.}
     \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Accordion_Calo}
 \end{figure}
@@ -340,22 +340,39 @@ The overall hadronic calorimeter resolution can be parametrized as:
 %-------------------------------------------------------------------------------
 \subsection{Muon spectrometer}\label{sec:LHCAtlas/ATLAS/Muon}
 
-The Muon Spectrometer (MS) forms the outermost layer of the ATLAS detector, surrounding the central calorimeters and occupying a large total volume defined by the open air-core toroidal magnet system \cite{1, 3, 4}. 
-Designed to track minimally ionizing muons that traverse the inner sub-detectors with transverse momenta $p_{\text{T}} > 3\text{ GeV}$, the MS delivers precise momentum measurements and fast trigger signals across a pseudorapidity coverage up to $\vert{}\eta\vert{} = 2.7$ \cite{2, 3, 4}. 
-Magnetic deflection within the outer volume is driven by the 0.5\text{ T} barrel toroid in the central region ($\vert{}\eta\vert{} < 1.4$) and two 1.0\text{ T} end-cap toroids in forward zones ($1.6 < \vert{}\eta\vert{} < 2.7$), with combined bending fields operating throughout the intermediate transition region ($1.4 < \vert{}\eta\vert{} < 1.6$) \cite{1, 4}. 
-Charged trajectories bend in the longitudinal $(z, r)$ plane, enabling offline determination of track momentum from the sagitta $s$, defined along a chord of length $L$ through the relation:
-\begin{equation}
-p_{\text{T}} = \frac{0.3 , B , L^2}{8 s}
-\end{equation}
+The Muon Spectrometer (MS) forms the outermost layer of the ATLAS detector, with a total length of 44 m and an outer diameter of 25 m.
+Making use of the toroid magnets (Sec. \ref{sec:LHCAtlas/ATLAS/magneticsystem}) and the sagitta method (Sec. \ref{sec:LHCAtlas/ATLAS/particleTracking}), it tracks particles with $p_T>3 \text{ GeV}$ that are not absorbed by the different calorimeters in the region $|\eta| \leq 2.7$, which are mainly muons.
+Targeting a resolution of 10\% for $1\text{ TeV}$ muon tracks, MS is required to measure sagittas down to approximately 500 $\mu\text{m}$, which is quite a challenge for the detector.
+As for the other ATLAS sub-detectors, the MS is organized in a barrel, which covers the central region $|\eta| < 1.05$, and two end-cap regions in the forward zones, $1.05 < |\eta| < 2.7$ for tracking and $1.05 < |\eta| < 2.7$ for Level 1 trigger.
+A schematic view of the MS is shown in Fig. \ref{fig:LHCAtlas/ATLAS/Muon/MS_schematic}.
 
-The relative resolution on track momentum scales directly with spatial precision $\sigma_x$ and hit multiplicity $N$ according to:
-\begin{equation}
-\frac{\sigma_p}{p} = \frac{\sigma_x}{0.3 , q , B , L^2} \sqrt{\frac{720}{N + 5}} \cdot p
-\end{equation}
+\begin{figure}[htbp]
+    \centering
+    % Subfigure (a)
+    \begin{subfigure}[b]{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/Chap2/ATLAS_muon.png}
+        \caption{}
+        \label{fig:LHCAtlas/ATLAS/Muon/MStransverse}
+    \end{subfigure}
+    \hfill
+    % Subfigure (b)
+    \begin{subfigure}[b]{0.58\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/Chap2/ATLAS_muon_proj.png}
+        \caption{}
+        \label{fig:LHCAtlas/ATLAS/Muon/MSlongitudinal}
+    \end{subfigure}
+    
+    % Main Figure Caption
+    \caption{Fig. \ref{fig:LHCAtlas/ATLAS/Muon/MStransverse} represents the transverse view of the ATLAS Muon Spectrometer. Fig. \ref{fig:LHCAtlas/ATLAS/Muon/MSlongitudinal} shows the longitudinal ($z,r$) view of the MS, plane orthogonal to the magnetic field from the barrel coils and therefore banding plane for muons. Figure from \cite{ATLAS_exp_Run3}.}
+    \label{fig:LHCAtlas/ATLAS/Muon/MS_schematic}
+\end{figure}
 
-Targeting a resolution of 10\% for ultra-high energy $1\text{ TeV}$ muon tracks requires measuring tiny sagittas down to approximately $500\ \mu\text{m}$ \cite{2}.
-The tracking and trigger instrumentation follows a 16-fold azimuthal layout matching the eight-fold geometry of the toroidal magnet coils \cite{2, 3}. 
-Sub-detector stations split into alternating large sectors positioned between adjacent coils and small sectors covering regions directly aligned with the magnet structures \cite{3}. 
+\noindent The tracking and trigger instrumentation follows a 16-fold azimuthal ($\phi$) layout, matching the geometry of the toroidal magnet coils. 
+Sub-detector stations are alternated large sectors, positioned between adjacent coils, and small sectors, covering regions directly aligned with the magnet structures.
+
+
 Geometrically, the barrel consists of three concentric cylindrical shells placed at radii of 5\text{ m}, 7.5\text{ m}, and 10\text{ m} from the beam line, covering $\vert{}\eta\vert{} < 1.05$ \cite{2, 3}. 
 End-cap detectors are mounted on large perpendicular wheels centered at longitudinal positions $\vert{}z\vert{} = 7.4\text{ m}$ (Small Wheel), $10.8\text{ m}$ (Big Wheel), and $21.5\text{ m}$ (Outer Wheel) \cite{2, 3}. 
 A structural gap at $\eta = 0$ provides necessary passage for cryogenic and electrical services routing to the inner detector and calorimeters \cite{3}
@@ -375,6 +392,7 @@ In the barrel region ($\vert{}\eta\vert{} < 1.05$), doublets and triplets of Res
 RPCs function as continuous gaseous detectors operating without wires, built from parallel bakelite plates separated by a 2\text{ mm} gas gap filled with $\text{C}_2\text{H}_2\text{F}_4/\text{Iso-C}_4\text{H}_{10}/\text{SF}_6$ ($94.7:5.0:0.3$) under an electric field of $4.9\text{ kV/mm}$ \cite{3, 4}. 
 RPC readout strips achieve an exceptional timing resolution of $1.5\text{ ns}$ and spatial resolution of 10\text{ mm} \cite{2, 3}. In the forward end-caps ($1.05 < \vert{}\eta\vert{} < 2.4$), fast triggering is handled by Thin Gap Chambers (TGC) arranged in concentric disks \cite{1, 2}. 
 TGCs operate as multi-wire proportional chambers with an anode wire pitch closely matched to a 1.4\text{ mm} gas gap, providing $4\text{ ns}$ time resolution along with spatial resolutions between 2\text{ mm} and 7\text{ mm} \cite{2}.
+
 
 
 
