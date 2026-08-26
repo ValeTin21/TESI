@@ -343,7 +343,10 @@ The overall hadronic calorimeter resolution can be parametrized as:
 The Muon Spectrometer (MS) forms the outermost layer of the ATLAS detector, with a total length of 44 m and an outer diameter of 25 m.
 Making use of the toroid magnets (Sec. \ref{sec:LHCAtlas/ATLAS/magneticsystem}) and the sagitta method (Sec. \ref{sec:LHCAtlas/ATLAS/particleTracking}), it tracks particles with $p_T>3 \text{ GeV}$ that are not absorbed by the different calorimeters in the region $|\eta| \leq 2.7$, which are mainly muons.
 Targeting a resolution of 10\% for $1\text{ TeV}$ muon tracks, MS is required to measure sagittas down to approximately 500 $\mu\text{m}$, which is quite a challenge for the detector.
-As for the other ATLAS sub-detectors, the MS is organized in a barrel, which covers the central region $|\eta| < 1.05$, and two end-cap regions in the forward zones, $1.05 < |\eta| < 2.7$ for tracking and $1.05 < |\eta| < 2.7$ for Level 1 trigger.
+As for the other ATLAS sub-detectors, the MS is organized in a barrel and in an end-cap region. 
+The barrel covers the central region $|\eta| < 1.05$ and it consists of three concentric cylindrical shells placed at radii of 5\text{ m}, 7.5\text{ m}, and 10\text{ m} from the beam line. 
+The two end-cap regions cover the forward zones, $1.05 < |\eta| < 2.7$ for tracking and $1.05 < |\eta| < 2.7$ for Level 1 trigger.
+The end-cap detectors are divided in Small Wheel, located in front of the end-cap toroids, and Big Wheel, behind them. They are mounted on large perpendicular wheels centered at longitudinal positions $|z| = 7.4\text{ m}$, $10.8\text{ m}$ and $21.5\text{ m}$.
 A schematic view of the MS is shown in Fig. \ref{fig:LHCAtlas/ATLAS/Muon/MS_schematic}.
 
 \begin{figure}[htbp]
@@ -369,45 +372,34 @@ A schematic view of the MS is shown in Fig. \ref{fig:LHCAtlas/ATLAS/Muon/MS_sche
     \label{fig:LHCAtlas/ATLAS/Muon/MS_schematic}
 \end{figure}
 
-\noindent The tracking and trigger instrumentation follows a 16-fold azimuthal ($\phi$) layout, matching the geometry of the toroidal magnet coils. 
+\noindent The tracking and trigger instrumentation follow a 16-fold azimuthal ($\phi$) layout, matching the geometry of the toroidal magnet coils. 
 Sub-detector stations are alternated large sectors, positioned between adjacent coils, and small sectors, covering regions directly aligned with the magnet structures.
+Precision tracking and momentum measurement rely primarily on Monitored Drift Tube (MDT) chambers. Fast triggering is taken care by Resistive Plate Chambers (RPCs).
 
+%%%%
+\subsection*{Tracking chambers}\label{sec:sec:LHCAtlas/ATLAS/Muon/MDT}
 
-Geometrically, the barrel consists of three concentric cylindrical shells placed at radii of 5\text{ m}, 7.5\text{ m}, and 10\text{ m} from the beam line, covering $\vert{}\eta\vert{} < 1.05$ \cite{2, 3}. 
-End-cap detectors are mounted on large perpendicular wheels centered at longitudinal positions $\vert{}z\vert{} = 7.4\text{ m}$ (Small Wheel), $10.8\text{ m}$ (Big Wheel), and $21.5\text{ m}$ (Outer Wheel) \cite{2, 3}. 
-A structural gap at $\eta = 0$ provides necessary passage for cryogenic and electrical services routing to the inner detector and calorimeters \cite{3}
-Precision tracking relies primarily on Monitored Drift Tube (MDT) chambers covering the pseudorapidity region $\vert{}\eta\vert{} < 2.7$ \cite{1, 3, 4}. 
-Each MDT chamber contains aluminum drift tubes of 30\text{ mm} outer diameter filled with an $\text{Ar/CO}_2$ gas mixture ($93:7$) pressurized at 3\text{ bar} \cite{2, 4}. 
-A central tungsten-rhenium anode wire of $50\ \mu\text{m}$ diameter operates at 3080\text{ V}, providing a gas gain of $2 \times 10^4$ and yielding a single-tube spatial resolution better than $100\ \mu\text{m}$ \cite{4}. 
-MDT chambers are built from two multilayers—comprising three or four tube layers each—separated by structural aluminum spacers \cite{1, 3, 4}. 
-Optical alignment systems continuously monitor structural deformations to preserve an intrinsic segment resolution of $40\ \mu\text{m}$ to $50\ \mu\text{m}$, which translates to a single-station sagitta resolution of $\sigma_S = 45\ \mu\text{m}$ \cite{2, 3}.
-In high-particle flux zones, specific detector upgrades and specialized gaseous technologies replace standard drift tubes. 
-Historically, multi-wire proportional Cathode Strip Chambers (CSCs) covered the innermost forward region ($2.0 < \vert{}\eta\vert{} < 2.7$) during Run 1 and Run 2 to handle high counting rates \cite{1, 2}. 
-To sustain expected HL-LHC background conditions, the original Small Wheels were completely replaced for Run 3 by the New Small Wheel (NSW) system \cite{3, 4}. 
-The NSW introduces two complementary thin-gap technologies across 16 sectors per wheel: resistive-strip Micromegas (MM) for precision tracking and small-strip Thin Gap Chambers (sTGC) for fast triggering \cite{3, 4}. 
-Micromegas modules employ a $120\text{--}130\ \mu\text{m}$ amplification gap defined by a metallic micro-mesh, achieving $100\ \mu\text{m}$ spatial resolution in the bending plane \cite{4}. 
-The sTGCs utilize a 3.2\text{ mm} strip pitch to provide fast trigger signals and offline spatial hits under elevated particle fluxes \cite{4}.
-Dedicated fast-response trigger chambers complement the precision tracking array by providing level-1 event selection and measuring the azimuthal coordinate $\phi$ orthogonal to the MDT bending plane \cite{1, 3}. 
-In the barrel region ($\vert{}\eta\vert{} < 1.05$), doublets and triplets of Resistive Plate Chambers (RPC) are mounted directly on the middle and outer MDT stations \cite{2, 3}. 
-RPCs function as continuous gaseous detectors operating without wires, built from parallel bakelite plates separated by a 2\text{ mm} gas gap filled with $\text{C}_2\text{H}_2\text{F}_4/\text{Iso-C}_4\text{H}_{10}/\text{SF}_6$ ($94.7:5.0:0.3$) under an electric field of $4.9\text{ kV/mm}$ \cite{3, 4}. 
-RPC readout strips achieve an exceptional timing resolution of $1.5\text{ ns}$ and spatial resolution of 10\text{ mm} \cite{2, 3}. In the forward end-caps ($1.05 < \vert{}\eta\vert{} < 2.4$), fast triggering is handled by Thin Gap Chambers (TGC) arranged in concentric disks \cite{1, 2}. 
-TGCs operate as multi-wire proportional chambers with an anode wire pitch closely matched to a 1.4\text{ mm} gas gap, providing $4\text{ ns}$ time resolution along with spatial resolutions between 2\text{ mm} and 7\text{ mm} \cite{2}.
+Each MDT chamber contains aluminum drift tubes of 30 mm diameter and 400 $\mu m$ thick wall, filled with an $\text{Ar:CO}_2$ gas mixture (93\%:7\%) at a pressure of 3 bar. 
+A central tungsten-rhenium anode wire of $50\ \mu\text{m}$ diameter is insterted in the tubes. It operates at 3080\text{ V}, providing a gas gain of order $ 10^4$ and yielding a muon sagitta resolution of $\sigma_S = 45\ \mu\text{m}$. 
+The drift chambers are composed by multi-layers of MDTs, each one containing three or four tube layers separated by aluminum spacers. 
+Optical alignment systems continuously monitor structural deformations to preserve the tracking resolution.
+Alignment represents the dominant source of uncertainty in high $p_T$ muon measurements; with low momentum particles, the uncertainty is dominated by flactuations in the energy deposit.\\
+To sustain expected HL-LHC background conditions, the original Small Wheels were completely replaced for Run 3 by the New Small Wheel (NSW) system.
+It introduces two complementary thin-gap technologies across 16 sectors per wheel: resistive-strip MicroMegas (MMs) for precision tracking and Thin Gap Chambers (TGCs) for fast triggering.
+MMs modules employ a $\sim 130\ \mu\text{m}$ amplification gap defined by a metallic micro-mesh, achieving a 100 $\mu\text{m}$ spatial resolution. 
+
+%%%%
+\subsection*{Trigger chambers}\label{sec:sec:LHCAtlas/ATLAS/Muon/RPCs}
+
+In the barrel region ($|\eta| < 1.05$), doublets and triplets of Resistive Plate Chambers (RPCs) are mounted. 
+They function as continuous gaseous detectors operating without wires, built from parallel bakelite plates separated by a 2\text{ mm} gas gap operating under an electric field of 4.9 kV/mm. 
+RPC readout strips achieve an exceptional timing resolution of 1.5 ns and spatial resolution of 10 mm both in $z$ and $\phi$ direction.\\ 
+In the forward end-caps ($1.05 < |\eta| < 2.4$), fast triggering is handled by TGCs, which are designed to work under high flux of particles. 
+They utilize a 3.2 mm strip pitch to provide a 4 ns time resoution and a spatial resolution of 2-6 mm in the bending plane and 3-7 mm in the non-bending plane.
+
 
 
 
 
 Topological cell-clustering algorithms group neighboring energy deposits above noise thresholds into three-dimensional topo-clusters \cite{2}. These topo-clusters serve as inputs for jet reconstruction algorithms or are combined with Inner Detector tracks through Particle Flow and Track-CaloCluster frameworks to refine low-momentum jet and isolation measurements \cite{2}.
 
-%%%#############%%%
-The electromagnetic calorimeter \cite{ATLAS_detector} measures the energy of electrons, photons and hadrons. Once a particle among them hits the detector, an electromagnetic shower is generated and the energy of the particle is transferred to the material through radiation, as shown in figure \ref{fig:EMShower}. Passive components of the calorimeter such as lead induce the loss of energy and the active ones, made by Liquid Argon (LAr) kept at a temperature of -184 °C, measure it. The shower is fully contained in this part of the detector, which is longer then 20 radiation lengths. For this reason this technique to measure energy is defined \textit{destructive}.\\
-
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=3 in]{Images/Cap2/EMShower.png}
-%     \caption{Schematic of an electromagnetic shower starting from a photon}
-%     \label{fig:EMShower}
-% \end{figure}
-
-\noindent The hadronic calorimeter has been placed to measure the energy of hadrons that survive to the electromagnetic calorimeter. It relies on the principle of particle shower, which is converted into an electric current and measured.\\
-The muon spectrometer is the last component of the ATLAS experiment and measures the momenta of muons. In fact, they are similar to electrons, but with a greater mass, which leads only to weak interactions and more depth of penetration. This is why they are not revealed by inner systems.\\
-The coordinate system adopted at ATLAS to describe events is discussed in detail in section \ref{sec:CoordinateSystem}.

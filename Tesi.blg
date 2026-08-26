@@ -20,9 +20,6 @@ A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Warning--I didn't find a database entry for "2"
-Warning--I didn't find a database entry for "3"
-Warning--I didn't find a database entry for "1"
-Warning--I didn't find a database entry for "4"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -87,4 +84,4 @@ warning$ -- 23
 while$ -- 73
 width$ -- 0
 write$ -- 501
-(There were 27 warnings)
+(There were 24 warnings)

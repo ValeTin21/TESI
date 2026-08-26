@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  26 AUG 2026 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  26 AUG 2026 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1425,135 +1425,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--339
 <Images/Chap2/ATLAS_muon.png, id=534, 548.0475pt x 604.2575pt>
 File: Images/Chap2/ATLAS_muon.png Graphic file (type png)
 <use Images/Chap2/ATLAS_muon.png>
-Package pdftex.def Info: Images/Chap2/ATLAS_muon.png  used on input line 354.
+Package pdftex.def Info: Images/Chap2/ATLAS_muon.png  used on input line 357.
 (pdftex.def)             Requested size: 150.48193pt x 165.91777pt.
 <Images/Chap2/ATLAS_muon_proj.png, id=535, 626.94225pt x 401.0985pt>
 File: Images/Chap2/ATLAS_muon_proj.png Graphic file (type png)
 <use Images/Chap2/ATLAS_muon_proj.png>
-Package pdftex.def Info: Images/Chap2/ATLAS_muon_proj.png  used on input line 362.
+Package pdftex.def Info: Images/Chap2/ATLAS_muon_proj.png  used on input line 365.
 (pdftex.def)             Requested size: 229.68073pt x 146.94136pt.
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 376.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 376.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 377.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 377.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 378.
-
-
-Package natbib Warning: Citation `1' on page 25 undefined on input line 379.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 379.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 379.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 380.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 380.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 381.
-
-
-Package natbib Warning: Citation `1' on page 25 undefined on input line 382.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 382.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 382.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 383.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 383.
-
-
-Package natbib Warning: Citation `1' on page 25 undefined on input line 385.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 385.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 386.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 386.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 387.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 387.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 388.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 389.
-
-
-Package natbib Warning: Citation `1' on page 25 undefined on input line 390.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 390.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 391.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 391.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 392.
-
-
-Package natbib Warning: Citation `4' on page 25 undefined on input line 392.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 393.
-
-
-Package natbib Warning: Citation `3' on page 25 undefined on input line 393.
-
-
-Package natbib Warning: Citation `1' on page 25 undefined on input line 393.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 393.
-
-
-Package natbib Warning: Citation `2' on page 25 undefined on input line 394.
-
 [25] [26 <./Images/Chap2/ATLAS_muon.png (PNG copy)> <./Images/Chap2/ATLAS_muon_proj.png>]
 
-Package natbib Warning: Citation `2' on page 27 undefined on input line 399.
+Package natbib Warning: Citation `2' on page 27 undefined on input line 404.
 
 
-Package natbib Warning: Citation `2' on page 27 undefined on input line 399.
-
-
-LaTeX Warning: Reference `fig:EMShower' on page 27 undefined on input line 402.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
-
- []
-
-
-LaTeX Warning: Reference `sec:CoordinateSystem' on page 27 undefined on input line 413.
+Package natbib Warning: Citation `2' on page 27 undefined on input line 404.
 
 ) [27]
 \openout2 = `Chap_3.aux'.
@@ -1621,26 +1505,23 @@ L3 programming layer <2026-06-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: B9EF3A6C36E2D5598615780AE67BF356;4874.
+(rerunfilecheck)             Checksum: 8ED012380BA31AC4882CDA46A9386B2B;4874.
  ) 
 Here is how much of TeX's memory you used:
- 45987 strings out of 467510
- 1001195 string characters out of 5408794
- 1513922 words of memory out of 5000000
- 73995 multiletter control sequences out of 15000+600000
- 742814 words of font info for 268 fonts, out of 8000000 for 9000
+ 45966 strings out of 467510
+ 1000989 string characters out of 5408794
+ 1514015 words of memory out of 5000000
+ 73994 multiletter control sequences out of 15000+600000
+ 741813 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (40 pages, 5038244 bytes).
+Output written on Tesi.pdf (40 pages, 5035076 bytes).
 PDF statistics:
- 766 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
+ 767 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
  64349 words of extra memory for PDF output out of 74296 (max. 10000000)
 
