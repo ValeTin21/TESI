@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -238,5 +238,12 @@ G.~Aad et~al.
 \newblock \emph{Journal of Instrumentation}, 19\penalty0 (05),
   (2024){\natexlab{b}}.
 \newblock URL \url{https://doi.org/10.1088/1748-0221/19/05/P05063}.
+
+\bibitem[et~al.((2013))]{ATLAS_TDAQ_report}
+G.~Aad et~al.
+\newblock \textit{"Technical Design Report for the Phase-I Upgrade of the ATLAS
+  TDAQ System"}.
+\newblock Technical report, (2013).
+\newblock URL \url{https://cds.cern.ch/record/1602235}.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  26 AUG 2026 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  26 AUG 2026 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1433,70 +1433,25 @@ File: Images/Chap2/ATLAS_muon_proj.png Graphic file (type png)
 Package pdftex.def Info: Images/Chap2/ATLAS_muon_proj.png  used on input line 365.
 (pdftex.def)             Requested size: 229.68073pt x 146.94136pt.
 [25] [26 <./Images/Chap2/ATLAS_muon.png (PNG copy)> <./Images/Chap2/ATLAS_muon_proj.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
- []
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 412.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 412.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 414.
-
-
-Package natbib Warning: Citation `Caprio_thesis' on page 27 undefined on input line 414.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 416.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 416.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 418.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 419.
-
-
-Package natbib Warning: Citation `Kahn_thesis' on page 27 undefined on input line 419.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 420.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 420.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 421.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 421.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 422.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 27 undefined on input line 423.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 27 undefined on input line 423.
-
-) [27]
+pdfTeX warning: pdflatex (file ./Images/Chap2/TDAQ_complex.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap2/TDAQ_complex.pdf, id=566, 796.77673pt x 597.432pt>
+File: Images/Chap2/TDAQ_complex.pdf Graphic file (type pdf)
+<use Images/Chap2/TDAQ_complex.pdf>
+Package pdftex.def Info: Images/Chap2/TDAQ_complex.pdf  used on input line 410.
+(pdftex.def)             Requested size: 325.215pt x 243.85477pt.
+[27 <./Images/Chap2/TDAQ_complex.pdf>]) [28]
 \openout2 = `Chap_3.aux'.
 
  (Chap_3.tex
 Chapter 3.
 
-Package natbib Warning: Citation `2' on page 28 undefined on input line 4.
+Package natbib Warning: Citation `2' on page 29 undefined on input line 4.
 
 
-Package natbib Warning: Citation `2' on page 28 undefined on input line 4.
+Package natbib Warning: Citation `2' on page 29 undefined on input line 4.
 
-) [28
+) [29
 
 
 
@@ -1506,7 +1461,7 @@ Package natbib Warning: Citation `2' on page 28 undefined on input line 4.
 
  (Chap_4.tex
 Chapter 4.
-) [29
+) [30
 
 
 
@@ -1516,7 +1471,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [30
+) [31
 
 
 
@@ -1526,7 +1481,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [31
+) [32
 
 
 
@@ -1540,17 +1495,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [32
+ [33
 
 
 
 
 
-] [33])
+] [34])
 
 Package natbib Warning: There were undefined citations.
 
-[34] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+[35] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1560,20 +1515,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 9DEEE83128DED9E88AE80D6161188B31;5009.
+(rerunfilecheck)             Checksum: DBCEB8316057E7C2760517185CCE2DFD;5009.
  ) 
 Here is how much of TeX's memory you used:
- 45981 strings out of 467510
- 1001183 string characters out of 5408794
- 1514064 words of memory out of 5000000
- 73996 multiletter control sequences out of 15000+600000
- 742355 words of font info for 263 fonts, out of 8000000 for 9000
+ 45983 strings out of 467510
+ 1001480 string characters out of 5408794
+ 1514211 words of memory out of 5000000
+ 74007 multiletter control sequences out of 15000+600000
+ 741849 words of font info for 257 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (40 pages, 5039096 bytes).
+Output written on Tesi.pdf (41 pages, 5114878 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 178 named destinations out of 1000 (max. 500000)
- 64357 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 819 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
+ 64362 words of extra memory for PDF output out of 74296 (max. 10000000)
 

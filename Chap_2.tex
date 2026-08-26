@@ -402,25 +402,26 @@ They utilize a 3.2 mm strip pitch to provide a 4 ns time resoution and a spatial
 \subsection{Trigger system}\label{sec:LHCAtlas/ATLAS/Trigger}
 
 At the LHC, proton bunches collide every 25 ns, resulting in a collision rate of 40 MHz and a projected data occupancy of 60$\times 10^6 \text{ MBs}^{-1}$.
-Clearly, the ATLAS detector cannot record all of these events. The ATLAS Trigger and Data Acquisition (TDAQ) system is designed to select interesting events for further analysis while discarding uninteresting ones, reducing the data rate by five orders of magnitude to a manageable level.\\
+Clearly, the ATLAS detector cannot record all of these events. The ATLAS Trigger and Data Acquisition (TDAQ) system \cite{ATLAS_exp_Run3,ATLAS_TDAQ_report} is designed to select interesting events for further analysis while discarding uninteresting ones, reducing the data rate by five orders of magnitude to a manageable level.
+This reduction relies on a two level scheme: Level-1 (L1) and High-Level Trigger (HLT). An overview of the ATLAS TDAQ system is shown in Fig. \ref{fig:LHCAtlas/ATLAS/Trigger/TDAQ}.
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=4.5 in]{Images/Chap2/TDAQ_complex.pdf}
+    \caption{Schematic view of the ATLAS TDAQ system in Run 3. Figure form Ref. \cite{ATLAS_exp_Run3}.}
+    \label{fig:LHCAtlas/ATLAS/Trigger/TDAQ}
+\end{figure}
 
-This reduction relies on a two-level scheme combining hardware and software decisions. 
-First, the hardware-based Level-1 trigger screens the collisions. Then, the software-based High-Level Trigger performs the final selection.
-Custom electronics implement the Level-1 trigger. 
-Latency must remain below $2.5\ \mu\text{s}$, though Phase I upgrades extended this window to $3\ \mu\text{s}$. 
-It processes coarse-granularity information. L1Calo and L1Muon sub-systems receive these initial signals. L1Muon relies on fast gaseous detectors. Resistive Plate Chambers cover the barrel region, while Thin Gap Chambers cover the end-caps \cite{Frattari_thesis, Russo_thesis}. 
-Coincidence windows align hits to estimate muon transverse momentum. 
-Simultaneously, L1Calo identifies electromagnetic clusters, taus, and jets \cite{Frattari_thesis, Caprio_thesis}. 
-The Central Trigger Processor collects these inputs. 
-It makes the final accept decision, limiting the output rate to $100\text{ kHz}$ \cite{Frattari_thesis, Russo_thesis}.
-Accepted Level-1 events prompt full-granularity readout. 
-Front-end electronics transmit digitized signals via Read-Out Drivers to the Read-Out System buffer lanes \cite{Frattari_thesis}. 
-The High-Level Trigger then processes these buffered events. It operates on a commercial farm of approximately $4 \times 10^4$ CPU cores \cite{Russo_thesis, Kahn_thesis}. 
-To minimize network bandwidth, the algorithms initially focus on Regions of Interest defined by Level-1 coordinates \cite{Frattari_thesis, Russo_thesis}. 
-Software-based reconstruction refines the selection. This step takes several hundred milliseconds. The final output rate drops to approximately $1\text{--}3\text{ kHz}$ before storage \cite{Russo_thesis, Frattari_thesis}. 
-Dedicated streams organize the stored events. While the primary physics stream retains full event information, the Trigger-Level Analysis stream saves only partial reconstructed objects, bypassing bandwidth bottlenecks for high-rate processes \cite{Frattari_thesis}. 
-Accepted data is then transferred to Tier-0 for offline processing \cite{Russo_thesis, Frattari_thesis}.
+\noindent The L1 trigger, implemented using custom electronics, reduces the event rate to 100 kHz, which is the maximum rate that the ATLAS readout system can handle. It operates with a latency (time needed to take the decision) below 2.5 $\mu\text{s}$. 
+The L1 Trigger searches for objects like electrons, photons, jets, $\tau$-leptons, large $E_T$ and large $E_T^{miss}$ using reduced-granularity information from the calorimeters (L1Calo).
+Events containing high-$p_T$ muons, instead, are hunted by muon system (L1Muon), composed by the RPCs and TGCs.
+If an event passes the L1 selection, it is sent to the HLT, together with some Regions of Interest (RoIs) identified by the L1 trigger.\\
+The HLT then processes the buffered events, operating at higher levels of detail than the previous stage.
+It operates using full-granularity information from the ATLAS sub-detectors. 
+To minimize network bandwidth, the algorithms initially focus on RoIs, defined in $\eta$ and $\phi$ coordinates by the L1 stage.
+With a latency of 550 ms, the HLT reduces the event rate to approximately 3 kHz before storage.\\
+Dedicated streams organize the stored events. While the primary physics stream retains full event information, the Trigger-Level Analysis (TLA) stream saves only partial reconstructed objects, bypassing bandwidth bottlenecks for high-rate processes. 
+Accepted data is finally transferred to Tier-0 for offline processing.
 
 
 
