@@ -423,5 +423,22 @@ With a latency of 550 ms, the HLT reduces the event rate to approximately 3 kHz 
 Dedicated streams organize the stored events. While the primary physics stream retains full event information, the Trigger-Level Analysis (TLA) stream saves only partial reconstructed objects, bypassing bandwidth bottlenecks for high-rate processes. 
 Accepted data is finally transferred to Tier-0 for offline processing.
 
+%-------------------------------------------------------------------------------
+\subsection{The ATLAS Simulation Infrastructure}\label{sec:LHCAtlas/ATLAS/§Simulation}
+
+In order to interpret the data collected by the ATLAS detector and compare it with theoretical predictions, a detailed simulation of the detector response is required.
+The ATLAS simulation infrastructure is integrated within the Athena software framework \cite{ATLAS_Computing}, implementing the G\textsc{eant}4 simulation toolkit to simulate the interaction of particles with matter \cite{Geant4}. \\
+This process is composed by two main steps: the \textit{simulation} and the \textit{digitization}.
+In the first one, Monte Carlo generators calculate the short-distance hard scattering, followed by parton showering, ignoring the detector geometry.
+After this, the generated particles with a proper lifetime $c\tau \ge 10\text{ mm}$ are propagated through the detector geometry, using the G\textsc{eant}4 toolkit. 
+It simulates particles' interactions with the detector material and it records the energy deposits, together with the position and time of particles, referred as \textit{hits}.
+Truth-level information is preserved throughout the process to track the exact parent-daughter decay trees.\\
+The digitization step converts the previously cited hits into simulated electronic signals, emulating the readout electronics.
+To replicate realistic run conditions, the hits are combined with events due to cavern backgrounds and electronic noise. 
+Soft QCD events are overlaid too, in order to model pile-up effects. 
+The output of this stage are into Raw Data Objects, delivering a data format identical to the real detector readout. 
+Consequently, identical reconstruction softwares used for real data are applied to simulated ones.\\ 
+In conclusion, simulated events are re-weighted to match the average pile-up distribution observed in data.
+
 
 

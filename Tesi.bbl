@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -245,5 +245,19 @@ G.~Aad et~al.
   TDAQ System"}.
 \newblock Technical report, (2013).
 \newblock URL \url{https://cds.cern.ch/record/1602235}.
+
+\bibitem[ATL((2005))]{ATLAS_Computing}
+\emph{\textit{"ATLAS Computing"}}.
+\newblock Technical design report. ATLAS. CERN, Geneva, (2005).
+\newblock URL \url{https://cds.cern.ch/record/837738}.
+
+\bibitem[et~al.((2003))]{Geant4}
+S.~Agostinelli et~al.
+\newblock \textit{"Geant4—a simulation toolkit"}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  506\penalty0 (3):\penalty0 250--303, (2003).
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0168900203013688}.
 
 \end{thebibliography}
