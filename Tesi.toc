@@ -22,6 +22,7 @@
 \contentsline {subsection}{\numberline {2.2.4}The Inner Detector}{21}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Calorimeters}{23}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Muon spectrometer}{25}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Trigger system}{27}{subsection.2.2.7}%
 \contentsline {chapter}{\numberline {3}Anomaly Detection}{28}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The LHC}{28}{section.3.1}%
 \contentsline {chapter}{\numberline {4}A particle physics analysis}{29}{chapter.4}%

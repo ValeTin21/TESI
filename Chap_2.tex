@@ -398,8 +398,29 @@ In the forward end-caps ($1.05 < |\eta| < 2.4$), fast triggering is handled by T
 They utilize a 3.2 mm strip pitch to provide a 4 ns time resoution and a spatial resolution of 2-6 mm in the bending plane and 3-7 mm in the non-bending plane.
 
 
+%-------------------------------------------------------------------------------
+\subsection{Trigger system}\label{sec:LHCAtlas/ATLAS/Trigger}
+
+At the LHC, proton bunches collide every 25 ns, resulting in a collision rate of 40 MHz and a projected data occupancy of 60$\times 10^6 \text{ MBs}^{-1}$.
+Clearly, the ATLAS detector cannot record all of these events. The ATLAS Trigger and Data Acquisition (TDAQ) system is designed to select interesting events for further analysis while discarding uninteresting ones, reducing the data rate by five orders of magnitude to a manageable level.\\
 
 
+This reduction relies on a two-level scheme combining hardware and software decisions. 
+First, the hardware-based Level-1 trigger screens the collisions. Then, the software-based High-Level Trigger performs the final selection.
+Custom electronics implement the Level-1 trigger. 
+Latency must remain below $2.5\ \mu\text{s}$, though Phase I upgrades extended this window to $3\ \mu\text{s}$. 
+It processes coarse-granularity information. L1Calo and L1Muon sub-systems receive these initial signals. L1Muon relies on fast gaseous detectors. Resistive Plate Chambers cover the barrel region, while Thin Gap Chambers cover the end-caps \cite{Frattari_thesis, Russo_thesis}. 
+Coincidence windows align hits to estimate muon transverse momentum. 
+Simultaneously, L1Calo identifies electromagnetic clusters, taus, and jets \cite{Frattari_thesis, Caprio_thesis}. 
+The Central Trigger Processor collects these inputs. 
+It makes the final accept decision, limiting the output rate to $100\text{ kHz}$ \cite{Frattari_thesis, Russo_thesis}.
+Accepted Level-1 events prompt full-granularity readout. 
+Front-end electronics transmit digitized signals via Read-Out Drivers to the Read-Out System buffer lanes \cite{Frattari_thesis}. 
+The High-Level Trigger then processes these buffered events. It operates on a commercial farm of approximately $4 \times 10^4$ CPU cores \cite{Russo_thesis, Kahn_thesis}. 
+To minimize network bandwidth, the algorithms initially focus on Regions of Interest defined by Level-1 coordinates \cite{Frattari_thesis, Russo_thesis}. 
+Software-based reconstruction refines the selection. This step takes several hundred milliseconds. The final output rate drops to approximately $1\text{--}3\text{ kHz}$ before storage \cite{Russo_thesis, Frattari_thesis}. 
+Dedicated streams organize the stored events. While the primary physics stream retains full event information, the Trigger-Level Analysis stream saves only partial reconstructed objects, bypassing bandwidth bottlenecks for high-rate processes \cite{Frattari_thesis}. 
+Accepted data is then transferred to Tier-0 for offline processing \cite{Russo_thesis, Frattari_thesis}.
 
-Topological cell-clustering algorithms group neighboring energy deposits above noise thresholds into three-dimensional topo-clusters \cite{2}. These topo-clusters serve as inputs for jet reconstruction algorithms or are combined with Inner Detector tracks through Particle Flow and Track-CaloCluster frameworks to refine low-momentum jet and isolation measurements \cite{2}.
+
 
