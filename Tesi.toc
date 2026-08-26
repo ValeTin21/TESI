@@ -22,12 +22,12 @@
 \contentsline {subsection}{\numberline {2.2.4}The Inner Detector}{21}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Calorimeters}{23}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Muon spectrometer}{25}{subsection.2.2.6}%
-\contentsline {chapter}{\numberline {3}Anomaly Detection}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The LHC}{26}{section.3.1}%
-\contentsline {chapter}{\numberline {4}A particle physics analysis}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The LHC}{27}{section.4.1}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{28}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The LHC}{28}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusions}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The LHC}{29}{section.6.1}%
-\contentsline {chapter}{Bibliography}{30}{section*.22}%
+\contentsline {chapter}{\numberline {3}Anomaly Detection}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The LHC}{28}{section.3.1}%
+\contentsline {chapter}{\numberline {4}A particle physics analysis}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The LHC}{29}{section.4.1}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{30}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The LHC}{30}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusions}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The LHC}{31}{section.6.1}%
+\contentsline {chapter}{Bibliography}{32}{section*.22}%
