@@ -123,56 +123,71 @@ A graph showing the LHC delivered integrated luminosity during the different Run
 
 As presented in Sec. \ref{sec:LHCAtlas/LHC/parameters}, at the LHC protons are collided every 25 ns at a center-of-mass energy of $\sqrt{s}=13.6\text{ TeV}$.
 Theoretical calculations to model such events using QCD are not trivial, since protons are not elementary particles but composite states of quarks and gluons, collectively referred as \textit{partons} \cite{Parton_model_DY}.
+The canonical approach used with other theories, the \textit{perturbation theory}, can still be used in the case of high-energy interactions, known as \textit{hard scattering}, where the strong coupling constant $\alpha_s$ is small enough to allow a perturbative expansion.
+It fails at low energy scales, in the so called \textit{soft scattering}, where $\alpha_s$ becomes large and the perturbative expansion diverges.\\
+In these cases, the \textit{factorization theorem} allows to compute the total cross-section of $pp$ collisions as a convolution of short-distance partonic matrix elements with long-distance Parton Distribution Functions (PDFs), which describe the probability of finding a parton with a given momentum fraction $x$ inside the proton.\\
+The situation described above gets a degree of complexity when considering that, in a single bunch crossing, multiple $pp$ collisions can occur. This phenomenon, known as \textit{pile-up}, is discussed in Sec. \ref{sec:LHCAtlas/ppColl/pileup}.\\
+As said, the calculation of the total cross-section of $pp$ collisions is not trivial. For this reason, event generators are used to simulate the physics of $pp$ collisions, as described in Sec. \ref{sec:LHCAtlas/ATLAS/Simulation} for ATLAS.\\
+In Fig. \ref{fig:LHCAtlas/ppColl/ppCollision} a Feynman diagram of a $pp$ collision is shown, where the two protons are represented as two bunches of partons, among which only two of them collide and produce the final state.
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2 in]{Images/Chap2/ppCollision.png}
+    \caption{Feynman diagram of a $pp$ collision. Figure from Ref. \cite{Phenomenology}.}
+    \label{fig:LHCAtlas/ppColl/ppCollision}
+\end{figure}
 
-\subsection{Pile-Up}\label{sec:LHCAtlas/ppColl/pileup}
-At the Large Hadron Collider, proton-proton ($pp$) collisions probe the smallest scales of matter. 
-Protons are not elementary. They are composite states of quarks and gluons, collectively termed partons \cite{Russo_thesis}. 
-Collisions happen in bunches separated by $25\text{ ns}$ \cite{Russo_thesis, Caprio_thesis}. 
-Calculations of these high-energy interactions rely on the factorization theorem \cite{Russo_thesis}. 
-The total cross-section is computed as a convolution of short-distance partonic matrix elements with long-distance Parton Distribution Functions (PDFs) \cite{Russo_thesis}. 
-Perturbative QCD describes the hard scatter. However, it fails at low energy scales. 
-Outgoing partons emit gluon radiation and produce quark pairs in a cascading parton shower \cite{Russo_thesis, Caprio_thesis}. 
-As the energy scale drops toward $\Lambda_{\text{QCD}} \approx 200\text{--}300\text{ MeV}$, color confinement dominates \cite{Russo_thesis}. 
-Partons must bind into color-neutral hadrons. This non-perturbative transition is hadronisation \cite{Russo_thesis, Caprio_thesis}. 
-Spectator partons that do not participate in the primary hard scatter undergo soft interactions. 
-They produce the underlying event \cite{Russo_thesis}.
-High beam intensities generate multiple interactions per bunch crossing. This parasitic activity is pile-up \cite{Russo_thesis, Caprio_thesis}. 
-It degrades event reconstruction. We distinguish between two categories. 
-In-time pile-up occurs when several $pp$ collisions take place simultaneously within the same bunch crossing \cite{Russo_thesis, Caprio_thesis}. 
-During Run 2, the average number of interactions reached $\langle\mu\rangle \approx 34$ \cite{Russo_thesis}. 
-Out-of-time pile-up occurs because the detector electronic signals last longer than the $25\text{ ns}$ bunch spacing \cite{Russo_thesis}. 
-Signals from adjacent crossings overlap. This pile-up overlay injects spurious tracks and diffuses energy deposits across the calorimeters \cite{Russo_thesis, Caprio_thesis}. 
-Reconstructing physics objects requires dedicated mitigation techniques. 
-ATLAS subtracts pile-up contribution from jets on an event-by-event basis using the average active area energy density $\rho$ \cite{Russo_thesis, Caprio_thesis}. 
-Spurious pile-up jets are further rejected using tracking detectors and the Jet Vertex Tagger (JVT) algorithm \cite{Russo_thesis}.
+%-------------------------------------------------------------------------------
+\subsection{Pile-Up and hadronisation}\label{sec:LHCAtlas/ppColl/pileup}
+The partons coming out of the hard scattering process emit gluon radiation and produce quark pairs in a cascading parton shower (Sec. \ref{sec:LHCAtlas/ppColl/HadShow}).\\
+When approaching energies compatible with the QCD scale $\Lambda_{\text{QCD}} \approx 200\text{/}300\text{ MeV}$, the soft scattering regime is reached, with the divergence of the perturbative expansion and the araising of colour confinment.
+For this reason, colour charged partons must bind into colour-neutral hadrons. This non-perturbative transition is known as \textit{hadronisation} \cite{Phenomenology}.
+The processes and collisions not related to the primary hard scatter are defined \textit{underlying events}, which can rise from multiple sources, such as initial of final state radiation. 
+This type of events, together with soft scattering processes from other partons, are responsible for the Pile-Up (PU) phenomenon.
+PU degrades event reconstruction and it has to be carefully controlled to ensure a correct physics analysis. 
+When referring to PU, the average number of $pp$ collisions per bunch crossing is presented, using the symbol $\langle\mu\rangle$.\\
+In Fig. \ref{fig:LHCAtlas/ppColl/ATLAS_PU}, a plot showing the PU distribution in ATLAS from Run 1 to Run 3 is presented. It is evident that the average number of $pp$ collisions per bunch crossing has increased over the years, reaching a value of $\langle\mu\rangle \approx 62$ during Run 3.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.8 in]{Images/Chap2/PU_R1_R3.jpg}
+    \caption{Pile-Up distribution in ATLAS from Run 1 to Run 3. Figure from Ref. \cite{PileUp}.}
+    \label{fig:LHCAtlas/ppColl/ATLAS_PU}
+\end{figure}
+
 
 %-------------------------------------------------------------------------------
 \subsection{Electromagnetic Showers}\label{sec:LHCAtlas/ppColl/EMShow}
-Electromagnetic showers develop when high-energy electrons or photons strike heavy materials. 
-The ATLAS Liquid Argon calorimeter uses lead absorber plates for this purpose \cite{Caprio_thesis}. 
-Entering particles undergo two alternating radiative processes. 
-Electrons lose energy via bremsstrahlung, emitting high-energy photons \cite{Kahn_thesis}. 
-Photons then undergo pair production, converting into electron-positron pairs in the electric field of the absorber nuclei \cite{Kahn_thesis}. 
-This cycle repeats. The particle count grows exponentially, forming a collimated cascade of secondary electromagnetic particles \cite{Kahn_thesis}. 
-We define the radiation length $X_0$ as the mean distance over which an electron loses all but $1/e$ of its energy \cite{Caprio_thesis}. 
-The longitudinal shower profile scales with $X_0$. To ensure full containment, the electromagnetic calorimeter must be deep. 
-The total thickness exceeds $22\ X_0$ in the barrel and $24\ X_0$ in the end-caps \cite{Caprio_thesis}. 
-This depth prevents punch-through into the outer spectrometers.
+Before discussing the hadronic showers, which are essential in the formation of jets, the main focus of this thesis, it is important to introduce the electromagnetic version of them.
+Electromagnetic showers develop when high-energy electrons or photons interact with heavy materials.
+They are the basis of the electromagnetic calorimeter design, which is used to measure the energy of electrons and photons (Sec. \ref{sec:LHCAtlas/ATLAS/Calo/ECal}).
+The passive material, or absorber, is typically a high-Z material with a high probability of interacting with the incoming particles.
+These interactions reduce particles' energy and slowly stop them.\\
+Particles involved in the showering process can undergo two main processes: the first one is bremsstrahlung and the other is pair production.
+Electrons (and positrons) lose energy via bremsstrahlung, which can be defined as the emission of photons (radiation). 
+Those photons undergo pair production, converting them into electron-positron pairs which then emit more photons via bremsstrahlung. This cycle repeats until electrons and photons loose their energies.\\
+The count of particles involved in the cascade grows exponentially, forming a literal \textit{shower} of particles, as shown in Fig \ref{fig:LHCAtlas/ppColl/EMShow/EMShower}. 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.5 in]{Images/Chap2/EMShower.png}
+    \caption{Schematic of an electromagnetic shower starting from a photon.}
+    \label{fig:LHCAtlas/ppColl/EMShow/EMShower}
+\end{figure}
+
+\noindent The fundamental parameter of the electromagnetic shower is the radiation length $X_0$, the mean distance over which an electron loses a factor $1/e$ of its energy.
+A typical EM shower has a longitudinal profile of $\sim 20~X_0$. 
+The calorimeter must be deep enough to contain the entire shower and measure the energy of the incoming particle.
 
 %-------------------------------------------------------------------------------
 \subsection{Hadronic Showers}\label{sec:LHCAtlas/ppColl/HadShow}
-Hadronic showers develop when strongly interacting hadrons collide with nuclei in the calorimeter passive absorber \cite{Russo_thesis}. 
-These inelastic collisions initiate a nuclear cascade \cite{Russo_thesis}. 
-The shower is complex. It contains both an electromagnetic and a hadronic component. 
-Neutral pions ($\pi^0$) decay immediately into photon pairs, initiating electromagnetic sub-showers \cite{Caprio_thesis}. 
-Charged pions ($\pi^{\pm}$) continue to undergo nuclear interactions, producing secondary hadrons \cite{Caprio_thesis}. 
-The characteristic scale of this longitudinal development is the nuclear interaction length $\lambda$ \cite{Caprio_thesis}. 
-This scale is much larger than $X_0$. Consequently, hadronic showers are deeper and wider than electromagnetic ones, exhibiting massive spatial fluctuations \cite{Caprio_thesis}. 
-The hadronic Tile calorimeter surrounds the electromagnetic system. 
-It utilizes steel absorbers interleaved with active plastic scintillating tiles \cite{Caprio_thesis}. 
-Radial segmentation into three layers delivers $9.7\ \lambda$ of interaction length at $\eta=0$ \cite{Caprio_thesis}. 
-Including supporting structures, the total calorimeter depth reaches $11\ \lambda$ to contain high-energy hadronic jets fully \cite{Caprio_thesis, Russo_thesis}.
+Hadronic showers develop when particles sensible to the strong interaction collide with nuclei in the calorimeter passive absorber. 
+These inelastic collisions initiate a nuclear cascade with complex modelling. 
+The shower, in fact, contains both an electromagnetic and a hadronic component. 
+Neutral pions ($\pi^0$), for instance, decay immediately into photon pairs, initiating the electromagnetic sub-showers presented before. 
+Charged pions ($\pi^{\pm}$), instead, continue to undergo strong interactions, producing secondary hadrons.\\ 
+The characteristic scale of the hadronic shower development is the interaction length $\lambda$, a scale much larger than $X_0$. 
+Again, the hadronic calorimeter needs to be deep enough to manage the containment of the entire shower.
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -183,7 +198,7 @@ A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world largest partic
 The ATLAS detector is composed by multiple sub-detectors organized in layers with a cylindrical symmetry around the beam pipe.
 Among the main sub-detectors we can find: the Inner Detector (ID), the Electromagnetic Calorimeter (ECal), the Hadronic Calorimeter (HCal) and the Muon Spectrometer (MS), as shown in Fig. \ref{fig:LHCAtlas/ATLAS/ATLASdetector}.\\
 
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=4.3 in]{Images/Chap2/ATLASDetector.png}
     \caption{ATLAS schematic. Figure form Ref. \cite{ATLAS_detector}.}
@@ -342,7 +357,6 @@ Additionally, it is able to distinguish electrons from other objects by detectin
 
 Calorimeters are used in ATLAS to measure the energy of particles by means of a destructive measurement on the particles. For this reason, calorimeters in ATLAS are placed outside the Inner Detector, allowing a complete reconstruction of the particle trajectory before it is absorbed \cite{ATLAS_Calo}.\\
 Covering a region up to $\vert{}\eta\vert{} < 4.9$, the calorimetry system features sampling technology with dense absorbers alternated with active media to completely contain electromagnetic and hadronic showers.
-The showers' lenght is measured in terms of radiation lenght $X_0$, which is defined as the distance a particle travels in a material to reduce its energy by a factor $1/e$.
 The idea behind this technique is to have a low probability of signals in the muon spectrometer from a particle different from a muon, which is the only particle that should cross the calorimeter without being absorbed (apart from not interacting particle such as neutrinos).\\
 Liquid argon (LAr) serves as the active material, while being kept at a temperature of 88.5 K by three cryostats. When a charged particle crosses LAr, light is produced, which is collected by wavelength-shifting fibers and routed to photo-multipliers (PMTs) for the conversion to signal.\\ 
 The calorimeter complex in ATLAS is divided into two components: the Electromagnetic Calorimeter (ECal) and the Hadronic Calorimeter (HCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
@@ -481,7 +495,7 @@ Dedicated streams organize the stored events. While the primary physics stream r
 Accepted data is finally transferred to Tier-0 for offline processing.
 
 %-------------------------------------------------------------------------------
-\subsection{The ATLAS Simulation Infrastructure}\label{sec:LHCAtlas/ATLAS/§Simulation}
+\subsection{The ATLAS Simulation Infrastructure}\label{sec:LHCAtlas/ATLAS/Simulation}
 
 In order to interpret the data collected by the ATLAS detector and compare it with theoretical predictions, a detailed simulation of the detector response is required.
 The ATLAS simulation infrastructure is integrated within the Athena software framework \cite{ATLAS_Computing}, implementing the G\textsc{eant}4 simulation toolkit to simulate the interaction of particles with matter \cite{Geant4}. \\
