@@ -119,6 +119,63 @@ A graph showing the LHC delivered integrated luminosity during the different Run
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
+\section{\textit{pp} collisions at the LHC} \label{sec:LHCAtlas/ppColl}
+
+As presented in Sec. \ref{sec:LHCAtlas/LHC/parameters}, at the LHC protons are collided every 25 ns at a center-of-mass energy of $\sqrt{s}=13.6\text{ TeV}$.
+Theoretical calculations to model such events using QCD are not trivial, since protons are not elementary particles but composite states of quarks and gluons, collectively referred as \textit{partons} \cite{Parton_model_DY}.
+
+
+\subsection{Pile-Up}\label{sec:LHCAtlas/ppColl/pileup}
+At the Large Hadron Collider, proton-proton ($pp$) collisions probe the smallest scales of matter. 
+Protons are not elementary. They are composite states of quarks and gluons, collectively termed partons \cite{Russo_thesis}. 
+Collisions happen in bunches separated by $25\text{ ns}$ \cite{Russo_thesis, Caprio_thesis}. 
+Calculations of these high-energy interactions rely on the factorization theorem \cite{Russo_thesis}. 
+The total cross-section is computed as a convolution of short-distance partonic matrix elements with long-distance Parton Distribution Functions (PDFs) \cite{Russo_thesis}. 
+Perturbative QCD describes the hard scatter. However, it fails at low energy scales. 
+Outgoing partons emit gluon radiation and produce quark pairs in a cascading parton shower \cite{Russo_thesis, Caprio_thesis}. 
+As the energy scale drops toward $\Lambda_{\text{QCD}} \approx 200\text{--}300\text{ MeV}$, color confinement dominates \cite{Russo_thesis}. 
+Partons must bind into color-neutral hadrons. This non-perturbative transition is hadronisation \cite{Russo_thesis, Caprio_thesis}. 
+Spectator partons that do not participate in the primary hard scatter undergo soft interactions. 
+They produce the underlying event \cite{Russo_thesis}.
+High beam intensities generate multiple interactions per bunch crossing. This parasitic activity is pile-up \cite{Russo_thesis, Caprio_thesis}. 
+It degrades event reconstruction. We distinguish between two categories. 
+In-time pile-up occurs when several $pp$ collisions take place simultaneously within the same bunch crossing \cite{Russo_thesis, Caprio_thesis}. 
+During Run 2, the average number of interactions reached $\langle\mu\rangle \approx 34$ \cite{Russo_thesis}. 
+Out-of-time pile-up occurs because the detector electronic signals last longer than the $25\text{ ns}$ bunch spacing \cite{Russo_thesis}. 
+Signals from adjacent crossings overlap. This pile-up overlay injects spurious tracks and diffuses energy deposits across the calorimeters \cite{Russo_thesis, Caprio_thesis}. 
+Reconstructing physics objects requires dedicated mitigation techniques. 
+ATLAS subtracts pile-up contribution from jets on an event-by-event basis using the average active area energy density $\rho$ \cite{Russo_thesis, Caprio_thesis}. 
+Spurious pile-up jets are further rejected using tracking detectors and the Jet Vertex Tagger (JVT) algorithm \cite{Russo_thesis}.
+
+%-------------------------------------------------------------------------------
+\subsection{Electromagnetic Showers}\label{sec:LHCAtlas/ppColl/EMShow}
+Electromagnetic showers develop when high-energy electrons or photons strike heavy materials. 
+The ATLAS Liquid Argon calorimeter uses lead absorber plates for this purpose \cite{Caprio_thesis}. 
+Entering particles undergo two alternating radiative processes. 
+Electrons lose energy via bremsstrahlung, emitting high-energy photons \cite{Kahn_thesis}. 
+Photons then undergo pair production, converting into electron-positron pairs in the electric field of the absorber nuclei \cite{Kahn_thesis}. 
+This cycle repeats. The particle count grows exponentially, forming a collimated cascade of secondary electromagnetic particles \cite{Kahn_thesis}. 
+We define the radiation length $X_0$ as the mean distance over which an electron loses all but $1/e$ of its energy \cite{Caprio_thesis}. 
+The longitudinal shower profile scales with $X_0$. To ensure full containment, the electromagnetic calorimeter must be deep. 
+The total thickness exceeds $22\ X_0$ in the barrel and $24\ X_0$ in the end-caps \cite{Caprio_thesis}. 
+This depth prevents punch-through into the outer spectrometers.
+
+%-------------------------------------------------------------------------------
+\subsection{Hadronic Showers}\label{sec:LHCAtlas/ppColl/HadShow}
+Hadronic showers develop when strongly interacting hadrons collide with nuclei in the calorimeter passive absorber \cite{Russo_thesis}. 
+These inelastic collisions initiate a nuclear cascade \cite{Russo_thesis}. 
+The shower is complex. It contains both an electromagnetic and a hadronic component. 
+Neutral pions ($\pi^0$) decay immediately into photon pairs, initiating electromagnetic sub-showers \cite{Caprio_thesis}. 
+Charged pions ($\pi^{\pm}$) continue to undergo nuclear interactions, producing secondary hadrons \cite{Caprio_thesis}. 
+The characteristic scale of this longitudinal development is the nuclear interaction length $\lambda$ \cite{Caprio_thesis}. 
+This scale is much larger than $X_0$. Consequently, hadronic showers are deeper and wider than electromagnetic ones, exhibiting massive spatial fluctuations \cite{Caprio_thesis}. 
+The hadronic Tile calorimeter surrounds the electromagnetic system. 
+It utilizes steel absorbers interleaved with active plastic scintillating tiles \cite{Caprio_thesis}. 
+Radial segmentation into three layers delivers $9.7\ \lambda$ of interaction length at $\eta=0$ \cite{Caprio_thesis}. 
+Including supporting structures, the total calorimeter depth reaches $11\ \lambda$ to contain high-energy hadronic jets fully \cite{Caprio_thesis, Russo_thesis}.
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{The ATLAS detector} \label{sec:LHCAtlas/ATLAS}
 
 A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world largest particle detector, situated at Interaction Point 1 at CERN.

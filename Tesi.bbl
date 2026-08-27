@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -183,6 +183,12 @@ ATLAS Collaboration.
   by the ATLAS Experiment during LHC Run 1, 2 and 3"}.
 \newblock (2026).
 \newblock URL \url{https://cds.cern.ch/record/2964765}.
+
+\bibitem[Yan and Drell((2014))]{Parton_model_DY}
+T.~M. Yan and S.~D. Drell.
+\newblock \textit{"The parton model and its applications"}.
+\newblock \emph{International Journal of Modern Physics A}, (2014).
+\newblock URL \url{http://dx.doi.org/10.1142/S0217751X14300713}.
 
 \bibitem[collaboration()]{ATLASwebsite}
 ATLAS collaboration.
