@@ -3,17 +3,19 @@
 Before running the analysis, the signals recorded by the different ATLAS sub-detectors must be transformed into physical objects to deal with.
 In this chapter, the reconstruction of jets is presented, since they are the main objects of interest for the analysis conducted in this thesis.
 
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{Tracks reconstruction in ID}\label{sec:Reco/Tracks}
 
 The ATLAS detector relies on a complex magnetic system, as described in Sec. \ref{sec:LHCAtlas/ATLAS/magneticsystem}, to bend the trajectories of charged particles, allowing for the measurement of their momentum.
-The starting point of these measurements is the reconstruction of charged particle trajectories, or \textit{tracks}, in the Inner Detector (ID), which can be identified by groups of three-dimensional spatial points known as \textit{hits}. 
-Given the magnetic field configuration, tracks in the ID follow helicoidal trajectories, which can be described by five parameters: the transverse momentum $p_T$, the azimuthal angle $\phi$, the polar angle $\theta$, the impact parameter $d_0$ and the longitudinal impact parameter $z_0$.
+The starting point of these measurements is the reconstruction of charged particle trajectories, or \textit{tracks}, in the Inner Detector (ID). They can be identified by groups of three-dimensional spatial points known as \textit{hits}. 
+Given the magnetic field configuration, tracks in the ID follow helicoidal trajectories, which can be described by the parameters: the transverse momentum $p_T$, the azimuthal angle $\phi$, the polar angle $\theta$, the impact parameter $d_0$, the longitudinal impact parameter $z_0$ and $q/p$, the momentum dividing the charge.
 Those parameters are graphically represented in Fig. \ref{fig:Reco/Tracks/helix}.\\
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=2.1 in]{Images/Chap3/Helix_traj.pdf}
-    \caption{Track parameters . Figure form Ref. \cite{ATLAS_tracking_update}.}
+    \includegraphics[width=2 in]{Images/Chap3/Helix_traj.pdf}
+    \caption{Parameters describing a track in the ATLAS detector. Figure form Ref. \cite{ATLAS_tracking_update}.}
     \label{fig:Reco/Tracks/helix}
 \end{figure}
 
@@ -21,32 +23,17 @@ Those parameters are graphically represented in Fig. \ref{fig:Reco/Tracks/helix}
 The reconstruction algorithm begins by identifying clusters of hits in both the Pixel and SCT sub-detectors. 
 Those clusters then form \textit{track seeds}, which are composed by triplets of them. 
 Using a combinatorial Kalman filter, the track seeds are extended into full track candidates, on which a global $\chi^2$ minimization fit is performed to determine the initial trajectory parameters.
+After adding compatible hits from the TRT sub-detector, if the requirements are satisfied, another fit with higher precision is performed to refine the track parameters.\\
+The tracks which have been reconstructed as described above, are then stored and used to reconstruct the primary interaction vertex (PV).
+Among all vertices, the one with the largest scalar sum of squared track transverse momenta, $\sum p_{\text{T}}^2$, is identified as the vertex of the hard scattering (HS) and its position is taken as reference point to reconstruct all the other objects.
 
- The final track parameters are obtained through a global $\chi^2$ minimization fit, which takes into account the uncertainties in the hit measurements and the effects of multiple scattering.
-
- Charged particle tracking is executed inside the Inner Detector \cite{Frattari_thesis, Russo_thesis}. The reconstruction operates down to $p_{\text{T}} = 400\text{ MeV}$ or $500\text{ MeV}$ depending on the run configuration, covering $|\eta| < 2.5$ \cite{Frattari_thesis, Russo_thesis}. Trajectory measurements rely on an inside-out pattern recognition sequence \cite{Frattari_thesis, Russo_thesis}. Track seeds are formed from three-dimensional space-points in the silicon pixel and Semiconductor Tracker layers \cite{Frattari_thesis, Russo_thesis}. Seeds then extend outward into full track candidates using a combinatorial Kalman filter that adds compatible hits along projected roads \cite{Frattari_thesis, Russo_thesis}. A global $\chi^2$ minimization fit determines the initial trajectory parameters \cite{Frattari_thesis, Russo_thesis}. Outer Transition Radiation Tracker hits are appended subsequently to extend the track length \cite{Russo_thesis}. To account for electron bremsstrahlung energy losses, a Gaussian Sum Filter refines the track parameters by modeling non-linear radiative losses \cite{Frattari_thesis, Russo_thesis}. Complementary back-tracking algorithms run in reverse \cite{Russo_thesis}. These algorithms start from transition radiation tracker segments to reconstruct secondary vertices, targeting electrons from photon conversions \cite{Frattari_thesis, Russo_thesis}.
-Primary interaction vertices are reconstructed from the collection of fitted tracks \cite{Frattari_thesis, Russo_thesis}. Iterative vertex finding groups tracks compatible with the beam spot area, fitting candidate coordinates using an iterative $\chi^2$ minimization that down-weights outlier tracks \cite{Frattari_thesis, Russo_thesis}. The vertex exhibiting the largest scalar sum of squared track transverse momenta, $\sum p_{\text{T}}^2$, is designated as the primary hard-scatter vertex \cite{Frattari_thesis, Russo_thesis}. Remaining reconstructed vertices are classified as pile-up interactions \cite{Frattari_thesis}.
-
-
-Signals recorded by the individual ATLAS sub-detectors must be converted into physical objects to perform data analysis.
-The primary reconstructed objects comprise inner detector tracks, primary interaction vertices, electrons, photons, jets, and missing transverse energy. 
-Charged particle trajectories are reconstructed within the Inner Detector (ID) using three-dimensional space-points. 
-Space-points are formed by clustering adjacent pixel and semiconductor tracker (SCT) readout elements above a designated charge threshold \cite{Russo:2025, Frattari:2021}. 
-Track seeds are constructed from space-point triplets \cite{Russo:2025, Frattari:2021}. 
-A combinatorial Kalman filter then searches for track candidates along projected roads \cite{Russo:2025}. \\
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Jets reconstruction}\label{sec:Reco/Jets}
 
 
-Candidate tracks are fitted using a global $\chi^2$ minimization method \cite{Russo:2025, Frattari:2021}. 
-TRT extension and a Gaussian Sum Filter (GSF) fit refine the momentum resolution and account for electron bremsstrahlung energy losses \cite{Russo:2025, Frattari:2021}. 
-Track reconstruction targets prompt charged particles with $p_{\text{T}} > 500\text{ MeV}$ \cite{Russo:2025}.\\
 
 
-Primary vertices are identified by grouping reconstructed tracks compatible with originating from the beam spot area \cite{Frattari:2021}. 
-An iterative $\chi^2$ minimization algorithm fits vertex candidates, down-weighting incompatible tracks until a convergent set is established \cite{Frattari:2021}. 
-The primary interaction vertex is defined as the spatial point exhibiting the highest scalar sum of squared track transverse momenta, $\sum p_{\text{T}}^2$ \cite{Russo:2025, Frattari:2021}. 
-Remaining vertices are assigned to pile-up collisions \cite{Frattari:2021}.\\
-
-Electrons and photons are reconstructed from localized topological energy deposits (topoclusters) in the electromagnetic calorimeter (ECal) matched to ID tracks or conversion vertices \cite{Russo:2025, Frattari:2021}. Seed clusters are identified using sliding window algorithms applied to calorimeter cell towers \cite{Frattari:2021}. Prompt electrons consist of an ECal supercluster matched to a high-quality ID track fitted with the GSF \cite{Russo:2025, Frattari:2021}. Unconverted photons consist solely of isolated ECal superclusters, whereas converted photons are matched to displaced two-track secondary vertices lacking pixel hits \cite{Russo:2025, Frattari:2021}.
 
 Hadronic jets represent collimated sprays of particles originating from hard-scattered partons \cite{Russo:2025, Frattari:2021}.
 ATLAS implements multiple algorithms to combine calorimeter and tracking information prior to jet clustering. 
@@ -57,16 +44,6 @@ Jet constituents are clustered using the sequential anti-$k_t$ algorithm with a 
 Jet energy scale and pile-up mitigations are applied through dedicated calibration sequences, such as Constituent Subtraction or the Jet Vertex Tagger (JVT) \cite{Russo:2025, Frattari:2021}.
 
 \section{Version 2}
-
-Experimental signatures recorded by the ATLAS sub-detectors are processed by offline reconstruction algorithms to define the final-state physical candidates \cite{Frattari_thesis, Russo_thesis}. Reconstructed objects span charged particle tracks, primary interaction vertices, leptons, photons, hadronic jets, and missing transverse momentum \cite{Frattari_thesis, Russo_thesis}.
-
-\subsection{Track and Vertex Reconstruction}
-Charged particle tracking is executed inside the Inner Detector \cite{Frattari_thesis, Russo_thesis}. The reconstruction operates down to $p_{\text{T}} = 400\text{ MeV}$ or $500\text{ MeV}$ depending on the run configuration, covering $|\eta| < 2.5$ \cite{Frattari_thesis, Russo_thesis}. Trajectory measurements rely on an inside-out pattern recognition sequence \cite{Frattari_thesis, Russo_thesis}. Track seeds are formed from three-dimensional space-points in the silicon pixel and Semiconductor Tracker layers \cite{Frattari_thesis, Russo_thesis}. Seeds then extend outward into full track candidates using a combinatorial Kalman filter that adds compatible hits along projected roads \cite{Frattari_thesis, Russo_thesis}. A global $\chi^2$ minimization fit determines the initial trajectory parameters \cite{Frattari_thesis, Russo_thesis}. Outer Transition Radiation Tracker hits are appended subsequently to extend the track length \cite{Russo_thesis}. To account for electron bremsstrahlung energy losses, a Gaussian Sum Filter refines the track parameters by modeling non-linear radiative losses \cite{Frattari_thesis, Russo_thesis}. Complementary back-tracking algorithms run in reverse \cite{Russo_thesis}. These algorithms start from transition radiation tracker segments to reconstruct secondary vertices, targeting electrons from photon conversions \cite{Frattari_thesis, Russo_thesis}.
-Primary interaction vertices are reconstructed from the collection of fitted tracks \cite{Frattari_thesis, Russo_thesis}. Iterative vertex finding groups tracks compatible with the beam spot area, fitting candidate coordinates using an iterative $\chi^2$ minimization that down-weights outlier tracks \cite{Frattari_thesis, Russo_thesis}. The vertex exhibiting the largest scalar sum of squared track transverse momenta, $\sum p_{\text{T}}^2$, is designated as the primary hard-scatter vertex \cite{Frattari_thesis, Russo_thesis}. Remaining reconstructed vertices are classified as pile-up interactions \cite{Frattari_thesis}.
-
-\subsection{Lepton and Photon Identification}
-Electrons and photons are reconstructed by matching Inner Detector tracks or conversion vertices to topological energy deposits in the electromagnetic calorimeter \cite{Frattari_thesis, Russo_thesis}. Topological cell clustering groups neighboring cells with energy deposits above designated noise thresholds into three-dimensional topo-clusters \cite{Frattari_thesis, Russo_thesis}. Superclusters are formed by combining seed clusters with neighboring satellite clusters to capture bremsstrahlung emissions \cite{Frattari_thesis}. Prompt electrons require an electromagnetic supercluster matched to a high-quality Inner Detector track fitted via the Gaussian Sum Filter \cite{Frattari_thesis, Russo_thesis}. Photons are categorized based on tracking features. Unconverted photons consist of isolated electromagnetic superclusters without matching tracks, whereas converted photons are matched to reconstructed two-track secondary vertices consistent with massless particle decays \cite{Frattari_thesis, Russo_thesis}.
-Muons traverse the entire detector volume, leaving hits in both the Inner Detector and the outer Muon Spectrometer \cite{Frattari_thesis, Russo_thesis}. Trajectory segments within the spectrometer gaseous drift tubes are identified via the Hough transform \cite{Frattari_thesis, Russo_thesis}. Muon candidates are categorized into four types based on the sub-detectors utilized \cite{Russo_thesis}. Combined muons are reconstructed by performing a global track fit that combines standalone tracks from both the Muon Spectrometer and the Inner Detector \cite{Frattari_thesis, Russo_thesis}. Segment-tagged muons match an Inner Detector track with at least one local segment in the precision chambers \cite{Frattari_thesis, Russo_thesis}. Calorimeter-tagged muons associate an Inner Detector track with a calorimeter energy deposit consistent with a minimum-ionizing particle \cite{Frattari_thesis, Russo_thesis}. Finally, extrapolated muons utilize standalone Muon Spectrometer tracks extrapolated back to the beamline to extend the tracking coverage up to $|\eta| = 2.7$ \cite{Frattari_thesis, Russo_thesis}.
 
 \subsection{Hadronic Jet Reconstruction and Calibration}
 Hadronic jets represent collimated sprays of particles from partonic fragmentation and hadronization \cite{Frattari_thesis, Russo_thesis}. Jets are clustered using the sequential recombination anti-$k_t$ algorithm, choosing a radius parameter of $R = 0.4$ for narrow-radius jets or $R = 1.0$ for large-radius boosted decay products \cite{Frattari_thesis, Russo_thesis}. Input constituents are constructed using different strategies to improve angular and energy resolution. Topological clusters calibrated at the electromagnetic scale define the baseline EMTopo jets \cite{Frattari_thesis}. To improve low-momentum resolution, the Particle Flow algorithm matches Inner Detector tracks to calorimeter topo-clusters, subtracting the expected charged-hadron energy deposits cell-by-cell and replacing them with the superior track momentum measurements \cite{Frattari_thesis, Russo_thesis}. At high transverse momentum, Track-CaloClusters combine the angular parameters of Inner Detector tracks with the energy measurements of topo-clusters to resolve dense shower structures \cite{Frattari_thesis, Russo_thesis}. Unified Flow Objects integrate Particle Flow and Track-CaloClusters, maintaining performance across all energy regimes \cite{Russo_thesis}. Large-radius jets are groomed via trimming to suppress pile-up and soft underlying event contributions by removing low-momentum subjets \cite{Frattari_thesis}.

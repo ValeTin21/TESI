@@ -19,10 +19,10 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "Frattari_thesis"
-Warning--I didn't find a database entry for "Russo_thesis"
 Warning--I didn't find a database entry for "Russo:2025"
 Warning--I didn't find a database entry for "Frattari:2021"
+Warning--I didn't find a database entry for "Frattari_thesis"
+Warning--I didn't find a database entry for "Russo_thesis"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
