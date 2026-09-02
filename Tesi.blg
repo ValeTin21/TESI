@@ -48,45 +48,45 @@ Warning--empty author and editor in ATLAS_Calo
 Warning--empty author and editor in ATLAS_LArCalo
 Warning--empty institution in ATLAS_TDAQ_report
 Warning--empty author and editor in ATLAS_Computing
-You've used 45 entries,
+You've used 46 entries,
             2481 wiz_defined-function locations,
-            836 strings with 12055 characters,
-and the built_in function-call counts, 12710 in all, are:
-= -- 1149
-> -- 360
-< -- 41
-+ -- 193
-- -- 100
-* -- 730
-:= -- 2034
-add.period$ -- 167
-call.type$ -- 45
-change.case$ -- 83
-chr.to.int$ -- 42
-cite$ -- 75
-duplicate$ -- 792
-empty$ -- 1316
-format.name$ -- 160
-if$ -- 2734
+            841 strings with 12242 characters,
+and the built_in function-call counts, 12982 in all, are:
+= -- 1174
+> -- 367
+< -- 42
++ -- 197
+- -- 102
+* -- 743
+:= -- 2080
+add.period$ -- 171
+call.type$ -- 46
+change.case$ -- 85
+chr.to.int$ -- 43
+cite$ -- 76
+duplicate$ -- 810
+empty$ -- 1344
+format.name$ -- 163
+if$ -- 2792
 int.to.chr$ -- 4
-int.to.str$ -- 46
-missing$ -- 40
-newline$ -- 260
-num.names$ -- 120
-pop$ -- 400
+int.to.str$ -- 47
+missing$ -- 41
+newline$ -- 266
+num.names$ -- 123
+pop$ -- 408
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 46
 quote$ -- 0
-skip$ -- 487
+skip$ -- 498
 stack$ -- 0
-substring$ -- 191
-swap$ -- 89
+substring$ -- 193
+swap$ -- 91
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 288
+type$ -- 295
 warning$ -- 25
-while$ -- 89
+while$ -- 91
 width$ -- 0
-write$ -- 603
+write$ -- 617
 (There were 29 warnings)

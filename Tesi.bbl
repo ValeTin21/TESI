@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -289,5 +289,12 @@ T.~G.~Cornelissen et~al.
   13)"}.
 \newblock Technical report, CERN, (2007).
 \newblock URL \url{https://cds.cern.ch/record/1038095}.
+
+\bibitem[et~al.((2017))]{ATLAS_topoclusters}
+G.~Aad et~al.
+\newblock \textit{"Topological cell clustering in the ATLAS calorimeters and
+  its performance in LHC Run 1"}.
+\newblock \emph{The European Physical Journal C}, (2017).
+\newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-017-5004-5}.
 
 \end{thebibliography}

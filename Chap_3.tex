@@ -36,7 +36,7 @@ A schematic of the jets nature is presented in Fig. \ref{fig:Reco/Jets/jet_schem
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=2.5 in]{Images/Chap3/Tracks_cone.pdf}
+    \includegraphics[width=2 in]{Images/Chap3/Tracks_cone.pdf}
     \caption{Drawing of a jet, showing the cone of particles produced by the hadronization of a parton.}
     \label{fig:Reco/Jets/jet_schematic}
 \end{figure}
@@ -49,7 +49,44 @@ The combination is the not trivial part and dedicated algorithms have been devel
 %-------------------------------------------------------------------------------
 \subsection{Jet constituents reconstruction}\label{sec:Reco/Jets/Components}
 The reconstruction of jets starts with the reconstruction of their constituents, which are the physical objects detected by the ATLAS sub-detectors.
-This process uses different algorithms depending on the type
+This process uses different algorithms depending on the target physics regime and kinematic environment.
+The common starting point is the clustering of calorimeter cells, which are grouped into \textit{topological clusters}.
+
+%%%%
+\subsection*{Topoclusters}\label{sec:Reco/Jets/Components/Topoclusters}
+Topoclusters, or jet topological clusters, are three-dimensional clusters of energy deposits in calorimeter cells.
+They  dynamically adapt their spatial volume based on the topology of the energy shower across both the LAr and Tile calorimeter layers.\\
+The formation of topoclusters is controlled by the parameter $\zeta_{cell}$, the cell signal significance\cite{ATLAS_topoclusters}, computed as the ratio between the signal $E_{cell}$ and the average noise $\sigma_{noise,cell}$ in the cell:
+
+\begin{equation}\label{eq:Reco/Jets/Components/Topoclusters/zeta_cell}
+\zeta_{cell} =  \frac{E_{cell}}{\sigma_{noise, cell}}
+\end{equation}
+
+\noindent All the cells with $\zeta_{cell} \ge 4$ are considered as seeds for the topocluster formation.
+Starting from these seed cells, the cluster is grown by adding adjacent cells with lower significance, $ \zeta_{cell} \ge 2$. 
+Finally, all the cells with $ \zeta_{cell} \ge 0$ are added to the cluster if they are adjacent to a cell already added to the cluster.\\
+In the case of overlapping particle showers, the topocluster can contain multiple local energy maxima, which are then split into two separate clusters, with the requirement $E_{\text{cell}} > 500\text{ MeV}$.\\
+To each topocluster is assigned a four-momentum $P_{\text{clus}}$ and it is treated as a pseudo-particle. In fact the mass is set to zero, since there is no information about the mass of the particles producing the energy deposits, and the energy is computed as the sum of the energies of the cells in the cluster:
+\begin{equation}\label{eq:Reco/Jets/Components/Topoclusters/Eclus}
+E_{\text{clus}} = \sum_{i} E_{\text{cell}, i}
+\end{equation}
+
+\noindent The direction parameters of the cluster, $\eta_{clus}, \phi_{clus}$, are determined from the energy-weighted barycenter of the cluster relative to the nominal origin of the ATLAS coordinate system:
+\begin{equation}
+\eta_{\text{clus}} = \frac{\sum_i |E_{\text{cell}, i}| \eta_{\text{cell}, i}}{\sum_i |E_{\text{cell}, i}|}, \quad \quad \phi_{\text{clus}} = \frac{\sum_i |E_{\text{cell}, i}| \phi_{\text{cell}, i}}{\sum_i |E_{\text{cell}, i}|}
+\end{equation}
+
+\noindent Absolute cell energies are utilized in the denominator weighting to prevent directional bias from negative cell energy fluctuations induced by noise or pile-up subtraction.\\
+Those kinematic variables are used to distinguish between electromagnetic and hadronic showers. 
+In fact, as described in Sec. \ref{LHCAtlas/ppColl/HadShow}, hadronic showers contain also EM components, resulting in the fact that the reconstructed clusters are only partially hadronic.
+For this reason, after Local Cell Weighting (LCW) calibrations of the topoclusters, a probability $P_{\text{EM}}^{\text{clus}}$ is assigned.
+It tells us the probabilty that the deposit is electromagnetic versus hadronic. 
+Topoclusters with $P_{\text{EM}}^{\text{clus}} < 0.5$ are identified as hadronic, otherwise they are identified as electromagnetic.\\
+
+%%%%
+\subsection*{Particle Flow (PFlow)}\label{sec:Reco/Jets/Components/PFlow}
+
+
 
 %-------------------------------------------------------------------------------
 \subsection{Jet algorithms}\label{sec:Reco/Jets/Algorithms}
@@ -111,16 +148,6 @@ where $\beta$ is an angular weighting exponent \cite{Russo:2025, Frattari:2021}.
 D_2(\beta) = \frac{\text{ECF}_3 \cdot (\text{ECF}_1)^3}{(\text{ECF}_2)^3}
 \end{equation}
 Low $D_2$ values strongly correlate with two-hard-prong radiation profiles, serving as a powerful handle to isolate boosted hadronically decaying resonances \cite{Russo:2025, Frattari:2021}.
-
-\subsection{V1}
-
-Hadronic jets represent collimated sprays of particles originating from hard-scattered partons \cite{Russo:2025, Frattari:2021}.
-ATLAS implements multiple algorithms to combine calorimeter and tracking information prior to jet clustering. 
-The Particle Flow (PFlow) algorithm matches individual ID tracks to calorimeter topoclusters \cite{Russo:2025, Frattari:2021}. 
-Expected energy deposits from charged hadrons are subtracted cell-by-cell from topoclusters; the remaining neutral clusters and selected tracks are retained as discrete inputs \cite{Russo:2025}. 
-For high-$p_{\text{T}}$ boosted regimes, Track-CaloClusters (TCC) are constructed by matching topocluster directions with track parameters to improve angular resolution \cite{Russo:2025, Frattari:2021}. 
-Jet constituents are clustered using the sequential anti-$k_t$ algorithm with a radius parameter $R = 0.4$ for narrow-radius jets or $R = 1.0$ for large-radius boosted hadronic decays \cite{Russo:2025, Frattari:2021}. 
-Jet energy scale and pile-up mitigations are applied through dedicated calibration sequences, such as Constituent Subtraction or the Jet Vertex Tagger (JVT) \cite{Russo:2025, Frattari:2021}.
 
 \section{Version 2}
 
