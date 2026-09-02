@@ -231,7 +231,16 @@ Two more coordinates are defined to describe the position of particles in the de
 \end{equation}
 
 \noindent where $\vec{p}$ is the three-momentum of the particle and $p_z$ is its component along the z-axis. $E$ represents the energy of the particle. $y$ and $\eta$ get values in the range [$-\infty , \infty$], being zero for $\theta = \pi /2$ and $\pm \infty$ for $\theta = 0$ or $\theta = \pi$.\\
-These latter two variables are introduced because the difference of rapidities between two particles is a Lorentz invariant quantity under boosts along the z-axis.
+A schematic of the connection between the pseudo-rapidity and the polar angle $\theta$ is shown in Fig. \ref{fig:LHCAtlas/ATLAS/coordinatesystem/Rapidity_eta}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=3.3 in]{Images/Chap2/Rap_PseudoRap.png}
+    \caption{Schematic of pseudo-rapidity as a function of the polar angle $\theta$.}
+    \label{fig:LHCAtlas/ATLAS/coordinatesystem/Rapidity_eta}
+\end{figure}
+
+\noindent These latter two variables are introduced because the difference of rapidities between two particles is a Lorentz invariant quantity under boosts along the z-axis.
 Since Lorentz boosts are applied to move from the laboratory frame to the center-of-mass frame of the colliding particles, $\eta$ and $y$ are widely used instead of the polar angle $\theta$.
 In case of an ultra-relativistic particle, the rapidity and the pseudo-rapidity are approximately equal, $\eta \approx y$, as shown in Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity} and Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/eta}.
 The main difference between the two is that the rapidity depends both on the energy of the particle and its momentum, a combined measurement not trivial at high energies, while the pseudo-rapidity depends only on the particle's momentum.
@@ -264,6 +273,15 @@ For this reason, if a particle is not detected, as it happens with neutrinos, it
 \begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/pTmiss}
     \Vec{p_T^{miss}}=-\sum_i \Vec{p}_{T,i}
 \end{equation}
+
+\noindent The computed variable is shown graphically in Fig. \ref{fig:LHCAtlas/ATLAS/coordinatesystem/pTmiss}, where the missing transverse momentum is represented as the opposite of the vectorial sum of the transverse momenta of all the detected particles in the event.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.5 in]{Images/Chap2/pTmiss.png}
+    \caption{Schematic of missing transverse momentum computation.}
+    \label{fig:LHCAtlas/ATLAS/coordinatesystem/pTmiss}
+\end{figure}
 
 \noindent In these cases, the transverse mass is used instead of the invariant mass, which is defined as:
 \begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/mT}
@@ -362,7 +380,7 @@ Liquid argon (LAr) serves as the active material, while being kept at a temperat
 The calorimeter complex in ATLAS is divided into two components: the Electromagnetic Calorimeter (ECal) and the Hadronic Calorimeter (HCal). A schematic of the complex can be seen in Fig. \ref{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}.\\
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=4 in]{Images/Chap2/ATLAS_Calo.png}
+    \includegraphics[width=3.4 in]{Images/Chap2/ATLAS_Calo.png}
     \caption{Schematic of the ATLAS calorimeter system. Figure form Ref. \cite{ATLAS_exp_2008}.}
     \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Calo}
 \end{figure}
@@ -388,7 +406,7 @@ A schematic representation of the ATLAS ECal is shown in Fig. \ref{fig:LHCAtlas/
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap2/Accordion_CAL.png}
+    \includegraphics[width=2.5 in]{Images/Chap2/Accordion_CAL.png}
     \caption{Schematic view of the accordion shape of the ATLAS ECal at $\eta = 0$. Figure form Ref. \cite{ATLAS_LArCalo}.}
     \label{fig:LHCAtlas/ATLAS/Calo/ATLAS_Accordion_Calo}
 \end{figure}

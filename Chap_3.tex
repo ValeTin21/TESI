@@ -31,13 +31,31 @@ Among all vertices, the one with the largest scalar sum of squared track transve
 %-------------------------------------------------------------------------------
 \section{Jets reconstruction}\label{sec:Reco/Jets}
 
-As described in Sec. \ref{sec:LHCAtlas/ppColl}, the hard scattering of two partons in a $pp$ collision produces high-energy quarks and gluons, which are not directly observable due to the phenomenon of colour confinement.
-In fact, they undergo a process of parton showering and hadronization, producing collimated sprays of particles, which are known as \textit{jets}
+As described in Sec. \ref{sec:LHCAtlas/ppColl}, the scattering of two partons in a $pp$ collision produces high-energy quarks and gluons, which undergo a process of parton showering and hadronization, producing collimated sprays of particles, which are known as \textit{jets}.
+A schematic of the jets nature is presented in Fig. \ref{fig:Reco/Jets/jet_schematic}.\\
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.5 in]{Images/Chap3/Tracks_cone.pdf}
+    \caption{Drawing of a jet, showing the cone of particles produced by the hadronization of a parton.}
+    \label{fig:Reco/Jets/jet_schematic}
+\end{figure}
+
+\noindent Jets costituents then form hadrons due to the QCD colour confinement, which are detected by the ATLAS sub-detectors.\\
+The reconstruction of jets is a complex process, which requires the combination of information from different sub-detectors.
+The diffent components of the spray are detected and reconstructed as different objects, which are then combined to form the final jet object.
+The combination is the not trivial part and dedicated algorithms have been developed to perform it.
+
+%-------------------------------------------------------------------------------
+\subsection{Jet constituents reconstruction}\label{sec:Reco/Jets/Components}
+The reconstruction of jets starts with the reconstruction of their constituents, which are the physical objects detected by the ATLAS sub-detectors.
+This process uses different algorithms depending on the type
+
+%-------------------------------------------------------------------------------
+\subsection{Jet algorithms}\label{sec:Reco/Jets/Algorithms}
 
 \subsection{Detailed Jet Reconstruction and Substructure Variables}
 
-Due to QCD color confinement, energetic quarks and gluons produced in hard-scattering collisions undergo parton showering and hadronization, producing collimated streams of particles designated as jets \cite{Russo:2025, Frattari:2021}. 
-Modern analyses in ATLAS rely on distinct constituent definitions, advanced grooming strategies, and dedicated substructure observables to isolate boosted hadronically decaying resonances from quantum chromodynamic (QCD) backgrounds \cite{Russo:2025, Frattari:2021}.
 
 \subsubsection{Jet Constituent Definitions and Clustering}
 
