@@ -31,10 +31,17 @@
 \contentsline {chapter}{\numberline {3}Hadron reconstruction in ATLAS}{33}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Tracks reconstruction in ID}{33}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Jets reconstruction}{34}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Version 2}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Hadronic Jet Reconstruction and Calibration}{34}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Missing Transverse Momentum}{35}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Anomaly Detection}{36}{chapter.4}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{37}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{38}{chapter.6}%
-\contentsline {chapter}{Bibliography}{39}{section*.30}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Jet Reconstruction and Substructure Variables}{34}{subsection.3.2.1}%
+\contentsline {subsubsection}{Jet Constituent Definitions and Clustering}{34}{section*.30}%
+\contentsline {subsubsection}{Jet Grooming and Calibration}{35}{section*.31}%
+\contentsline {subsubsection}{Jet Substructure Observables}{35}{section*.32}%
+\contentsline {paragraph}{N-Subjettiness ($\tau _N$)}{36}{section*.33}%
+\contentsline {paragraph}{Energy Correlation Functions (ECFs) and $D_2$}{36}{section*.34}%
+\contentsline {subsection}{\numberline {3.2.2}V1}{36}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Version 2}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Hadronic Jet Reconstruction and Calibration}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Missing Transverse Momentum}{37}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Anomaly Detection}{39}{chapter.4}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{40}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{41}{chapter.6}%
+\contentsline {chapter}{Bibliography}{42}{section*.35}%

@@ -31,9 +31,70 @@ Among all vertices, the one with the largest scalar sum of squared track transve
 %-------------------------------------------------------------------------------
 \section{Jets reconstruction}\label{sec:Reco/Jets}
 
+As described in Sec. \ref{sec:LHCAtlas/ppColl}, the hard scattering of two partons in a $pp$ collision produces high-energy quarks and gluons, which are not directly observable due to the phenomenon of colour confinement.
+In fact, they undergo a process of parton showering and hadronization, producing collimated sprays of particles, which are known as \textit{jets}
 
+\subsection{Detailed Jet Reconstruction and Substructure Variables}
 
+Due to QCD color confinement, energetic quarks and gluons produced in hard-scattering collisions undergo parton showering and hadronization, producing collimated streams of particles designated as jets \cite{Russo:2025, Frattari:2021}. 
+Modern analyses in ATLAS rely on distinct constituent definitions, advanced grooming strategies, and dedicated substructure observables to isolate boosted hadronically decaying resonances from quantum chromodynamic (QCD) backgrounds \cite{Russo:2025, Frattari:2021}.
 
+\subsubsection{Jet Constituent Definitions and Clustering}
+
+ATLAS constructs jets from multiple classes of input objects depending on the target physics regime and kinematic environment \cite{Russo:2025}:
+\begin{itemize}
+    \item \textbf{Particle Flow (PFlow):} Combines Inner Detector tracking with calorimeter topological clusters (topoclusters) \cite{Russo:2025, Frattari:2021}. The PFlow algorithm evaluates the expected energy deposition of charged tracks in the calorimeter layers and subtracts it cell-by-cell \cite{Russo:2025, Frattari:2021}. Retaining track momenta for low-$p_{\text{T}}$ charged hadrons and neutral topoclusters yields superior $p_{\text{T}}$ and angular resolution while suppressing pile-up contamination \cite{Russo:2025, Frattari:2021}.
+    \item \textbf{Track-CaloClusters (TCC):} Designed primarily for high-$p_{\text{T}}$ large-radius jet reconstruction \cite{Russo:2025}. TCC objects match the directional parameters of inner detector tracks to calorimeter topoclusters, leveraging tracking precision to regain angular resolution in densely collimated particle environments \cite{Russo:2025}.
+    \item \textbf{Variable-Radius (VR) Track Jets:} Built by clustering high-quality Inner Detector tracks ($p_{\text{T}} > 500\text{ MeV}$) associated with the primary vertex \cite{Russo:2025}. VR jets employ a dynamic radius parameter scaled inversely with track $p_{\text{T}}$ according to $R_{\text{eff}}(p_{\text{T}}) = \min(0.4, \max(0.02, \rho / p_{\text{T}}))$ with $\rho = 30\text{ GeV}$, allowing efficient decay product capture across wide momentum spans \cite{Russo:2025}.
+\end{itemize}
+
+Constituent objects are combined using sequential recombination algorithms \cite{Russo:2025, Frattari:2021}. The distance $d_{ij}$ between entities $i$ and $j$, alongside the beam-distance $d_{iB}$, are defined as \cite{Russo:2025, Frattari:2021}:
+\begin{equation}
+d_{ij} = \min\left(p_{\text{T},i}^{2p}, p_{\text{T},j}^{2p}\right) \frac{\Delta R_{ij}^2}{R^2}, \quad \quad d_{iB} = p_{\text{T},i}^{2p}
+\end{equation}
+where $\Delta R_{ij}^2 = (y_i - y_j)^2 + (\phi_i - \phi_j)^2$, $R$ is the distance parameter, and $p$ dictates the clustering metric \cite{Russo:2025, Frattari:2021}. The default choice across ATLAS is the anti-$k_t$ algorithm ($p = -1$), which generates regular, cone-like jet boundaries around hard constituent seeds while minimizing susceptibility to soft background radiation \cite{Russo:2025, Frattari:2021}. Standard configurations adopt $R = 0.4$ for resolved small-radius jets and $R = 1.0$ for boosted large-radius jets \cite{Russo:2025, Frattari:2021}.
+
+\subsubsection{Jet Grooming and Calibration}
+
+Large-radius jets ($R = 1.0$) inherently collect non-negligible soft energy contributions arising from the underlying event, initial-state radiation, and in-time or out-of-time pile-up interactions \cite{Russo:2025, Frattari:2021}. Grooming algorithms remove these uncorrelated soft components \cite{Russo:2025, Frattari:2021}. 
+
+ATLAS heavily utilizes the \textit{trimming} algorithm \cite{Russo:2025, Frattari:2021}. Trimming operates by reclustering the constituent elements of a large-radius jet into smaller subjets using the $k_t$ or Cambridge/Aachen algorithm with a smaller sub-radius $R_{\text{sub}} = 0.2$ \cite{Russo:2025, Frattari:2021}. Any subjet failing a relative momentum fraction threshold $f_{\text{cut}}$, defined as:
+\begin{equation}
+\frac{p_{\text{T}, i}^{\text{subjet}}}{p_{\text{T}}^{\text{jet}}} < f_{\text{cut}} \quad \quad (\text{typically } f_{\text{cut}} = 0.05)
+\end{equation}
+is discarded from the final clustered object \cite{Russo:2025, Frattari:2021}.
+
+To ensure accurate energy and mass scale measurements, a sequential calibration workflow is implemented \cite{Frattari:2021}. Jet Energy Scale (JES) corrections account for calorimeter non-compensation, inactive detector material, and pile-up offsets using event-by-event area-based density estimations ($\rho$) combined with \textit{in-situ} balance measurements ($Z/\gamma+\text{jet}$ and multijet events) \cite{Frattari:2021}. For large-radius jets, Jet Mass Scale (JMS) calibrations restore accurate invariant mass distributions using track-assisted mass combinations and \textit{in-situ} forward-folding fits in $t\bar{t}$ events \cite{Frattari:2021}. Furthermore, the Jet Vertex Tagger (JVT)—a multivariate discriminant combining track-vertex association parameters—is applied to small-radius jets to reject pile-up artifacts \cite{Frattari:2021}.
+
+\subsubsection{Jet Substructure Observables}
+
+When massive unstable particles (e.g., $W$, $Z$, $H$ bosons or top quarks) decay hadronically with high transverse momentum ($p_{\text{T}} \gg m$), their decay products become Lorentz-boosted into a single large-radius jet envelope \cite{Russo:2025, Frattari:2021}. Identifying such boosted topologies against single-parton QCD background jets relies on characterizing energy distributions within the jet core through substructure variables \cite{Russo:2025, Frattari:2021}.
+
+\paragraph{N-Subjettiness ($\tau_N$)} 
+$N$-subjettiness quantifies the degree to which a jet's constituent energy is aligned along $N$ candidate subjet axes \cite{Russo:2025, Frattari:2021}. It is calculated as \cite{Russo:2025, Frattari:2021}:
+\begin{equation}
+\tau_N = \frac{1}{R_0 \sum_i p_{\text{T},i}} \sum_i p_{\text{T},i} \min \left\{ \Delta R_{1,i}, \Delta R_{2,i}, \dots, \Delta R_{N,i} \right\}
+\end{equation}
+where $i$ iterates over all jet constituents, $R_0$ is the main jet radius, and $\Delta R_{k,i}$ represents the spatial distance between constituent $i$ and subjet axis $k$ (typically derived via exclusive $k_t$ or winner-takes-all axes) \cite{Russo:2025, Frattari:2021}. Small values of $\tau_N$ indicate that the radiation is concentrated around $N$ or fewer cores \cite{Frattari:2021}. Disambiguation of $N$-prong hypotheses is achieved using ratio variables:
+\begin{equation}
+\tau_{N, N-1} = \frac{\tau_N}{\tau_{N-1}}
+\end{equation}
+The ratio $\tau_{21} = \tau_2 / \tau_1$ effectively isolates two-prong vector boson decays ($W/Z \to q\bar{q}$) from single-prong QCD jets, whereas $\tau_{32} = \tau_3 / \tau_2$ discriminates three-prong top-quark decays ($t \to bW \to bq\bar{q}'$) \cite{Russo:2025, Frattari:2021}.
+
+\paragraph{Energy Correlation Functions (ECFs) and $D_2$}
+Energy Correlation Functions measure multi-particle angular correlations without necessitating candidate subjet axis definitions \cite{Russo:2025, Frattari:2021}. The $v$-point correlation functions for a jet $J$ are expressed as \cite{Russo:2025, Frattari:2021}:
+\begin{align}
+\text{ECF}_1 &= \sum_{i \in J} p_{\text{T},i} \\
+\text{ECF}_2(\beta) &= \sum_{i<j \in J} p_{\text{T},i} p_{\text{T},j} (\Delta R_{ij})^\beta \\
+\text{ECF}_3(\beta) &= \sum_{i<j<k \in J} p_{\text{T},i} p_{\text{T},j} p_{\text{T},k} (\Delta R_{ij} \Delta R_{ik} \Delta R_{jk})^\beta
+\end{align}
+where $\beta$ is an angular weighting exponent \cite{Russo:2025, Frattari:2021}. Combining these function topologies yields the dimensionless discriminant $D_2$, defined as \cite{Russo:2025, Frattari:2021}:
+\begin{equation}
+D_2(\beta) = \frac{\text{ECF}_3 \cdot (\text{ECF}_1)^3}{(\text{ECF}_2)^3}
+\end{equation}
+Low $D_2$ values strongly correlate with two-hard-prong radiation profiles, serving as a powerful handle to isolate boosted hadronically decaying resonances \cite{Russo:2025, Frattari:2021}.
+
+\subsection{V1}
 
 Hadronic jets represent collimated sprays of particles originating from hard-scattered partons \cite{Russo:2025, Frattari:2021}.
 ATLAS implements multiple algorithms to combine calorimeter and tracking information prior to jet clustering. 
