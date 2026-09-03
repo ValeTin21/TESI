@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  3 SEP 2026 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  3 SEP 2026 19:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1510,266 +1510,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--85
  []
 
 [35] [36]
+<Images/Chap3/antikt_R1.png, id=798, 999.735pt x 724.7075pt>
+File: Images/Chap3/antikt_R1.png Graphic file (type png)
+<use Images/Chap3/antikt_R1.png>
+Package pdftex.def Info: Images/Chap3/antikt_R1.png  used on input line 144.
+(pdftex.def)             Requested size: 216.81pt x 157.15816pt.
+ [37 <./Images/Chap3/antikt_R1.png (PNG copy)>]
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 132.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 175.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 134.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 175.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 134.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 175.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 137.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 175.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 137.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 137.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 137.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 141.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 141.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 182.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 141.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 182.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 141.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 182.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 141.
+Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 186.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 141.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 145.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 145.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 145.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 145.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 147.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 147.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 147.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 147.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 37 undefined on input line 151.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 151.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 153.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 153.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 153.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 37 undefined on input line 153.
-
-[37]
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 157.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 157.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 157.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 157.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 160.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 160.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 160.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 160.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 164.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 164.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 164.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 168.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 168.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 171.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 171.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 171.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 171.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 177.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 177.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 177.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 177.
+Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 186.
 
 [38]
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 181.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 189.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 181.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 189.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 189.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 189.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 195.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 195.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 195.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 195.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 199.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 199.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 186.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 205.
 
 
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
+Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 205.
 
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 187.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 187.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari_thesis' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 39 undefined on input line 190.
-
-[39]) [40]
+) [39]
 \openout2 = `Chap_4.aux'.
 
  (Chap_4.tex
 Chapter 4.
-) [41
+) [40
 
 
 
@@ -1779,7 +1637,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [42
+) [41
 
 
 
@@ -1789,7 +1647,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [43
+) [42
 
 
 
@@ -1803,17 +1661,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [44
+ [43
 
 
 
 
 
-] [45] [46])
+] [44] [45])
 
 Package natbib Warning: There were undefined citations.
 
-[47] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+[46] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1823,20 +1681,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 682388E3FB727BA625371CA29F35F852;7255.
+(rerunfilecheck)             Checksum: E1B0E91A08187C3FD0E4C9235FE32C7A;7260.
  ) 
 Here is how much of TeX's memory you used:
- 46233 strings out of 467510
- 1006417 string characters out of 5408794
- 1516014 words of memory out of 5000000
- 74123 multiletter control sequences out of 15000+600000
- 757044 words of font info for 297 fonts, out of 8000000 for 9000
+ 46232 strings out of 467510
+ 1006685 string characters out of 5408794
+ 1516415 words of memory out of 5000000
+ 74142 multiletter control sequences out of 15000+600000
+ 756162 words of font info for 287 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2550b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (53 pages, 6579494 bytes).
+ 102i,19n,131p,2550b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Tesi.pdf (52 pages, 6680642 bytes).
 PDF statistics:
- 1066 PDF objects out of 1200 (max. 8388607)
+ 1078 PDF objects out of 1200 (max. 8388607)
  239 named destinations out of 1000 (max. 500000)
- 70613 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 70618 words of extra memory for PDF output out of 74296 (max. 10000000)
 

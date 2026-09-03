@@ -32,17 +32,15 @@
 \contentsline {section}{\numberline {3.1}Tracks reconstruction in ID}{33}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Jets reconstruction}{34}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Jet constituents reconstruction}{34}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Jet algorithms}{37}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Detailed Jet Reconstruction and Substructure Variables}{37}{subsection.3.2.3}%
-\contentsline {subsubsection}{Jet Constituent Definitions and Clustering}{37}{section*.37}%
-\contentsline {subsubsection}{Jet Grooming and Calibration}{37}{section*.38}%
-\contentsline {subsubsection}{Jet Substructure Observables}{38}{section*.39}%
-\contentsline {paragraph}{N-Subjettiness ($\tau _N$)}{38}{section*.40}%
-\contentsline {paragraph}{Energy Correlation Functions (ECFs) and $D_2$}{38}{section*.41}%
+\contentsline {subsection}{\numberline {3.2.2}Constituents combination and jets formation}{37}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Jet calibration}{37}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Detailed Jet Reconstruction and Substructure Variables}{38}{subsection.3.2.4}%
+\contentsline {subsubsection}{Jet Substructure Observables}{38}{section*.38}%
+\contentsline {paragraph}{N-Subjettiness ($\tau _N$)}{38}{section*.39}%
+\contentsline {paragraph}{Energy Correlation Functions (ECFs) and $D_2$}{39}{section*.40}%
 \contentsline {section}{\numberline {3.3}Version 2}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Hadronic Jet Reconstruction and Calibration}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Missing Transverse Momentum}{39}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{42}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}%
-\contentsline {chapter}{Bibliography}{44}{section*.42}%
+\contentsline {subsection}{\numberline {3.3.1}Missing Transverse Momentum}{39}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Anomaly Detection}{40}{chapter.4}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{42}{chapter.6}%
+\contentsline {chapter}{Bibliography}{43}{section*.41}%

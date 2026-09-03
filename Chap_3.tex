@@ -114,43 +114,61 @@ The TCC objects preserve fine angular substructure within large-radius ($R = 1.0
 %%%%
 \subsection*{Unified Flow Objects (UFO)}\label{sec:Reco/Jets/Components/UFO}
 
-While PFlow excels at low $p_T$ and TCCs dominate in highly boosted regimes, Unified Flow Objects (UFO) synthesize the two methodologies into a single unified input.\\
+While PFlow excels at low $p_T$ and TCCs dominate in highly boosted regimes, Unified Flow Objects (UFO) synthesize the two methodologies into a single unified input \cite{ATLAS_UFO}.\\
 UFO are built by first executing the PFlow algorithm, where charged PFlow objects associated with pile-up interaction vertices are removed.
 From the remaining neutral PFlow topoclusters uncorrelated soft radiation is removed.
 The surviving neutral clusters and hard-scatter ID tracks that were not subtracted during the initial step are passed into the TCC cluster-splitting algorithm.\\
 By combining PFlow subtraction at low $p_T$ with TCC angular splitting at high $p_T$, UFO inputs optimize small-radius ($R=0.4$) and large-radius ($R=1.0$) jet performance simultaneously across the full momentum spectrum.
 
+%-------------------------------------------------------------------------------
+\subsection{Constituents combination and jets formation}\label{sec:Reco/Jets/antikt}
+
+After having reconstructed the constituents of the jets, they are combined to form the final jet object.
+The combination is performed applying sequential recombination algorithms.
+These methods rely on the distance $d_{ij}$ between two constituents ($i, j$) and the distance $d_{iB}$ between a jet $i$ and the beam B:
+\begin{equation} \label{eq:Reco/Jets/antikt/distanceantikT}
+\begin{split}
+    d_{ij}=min\big(p^{2k}_{Ti},p^{2k}_{Tj}\big)\frac{\Delta R^2_{ij}}{R^2}\\
+    d_{iB}=p^{2k}_{ti} \ \rm \rm \ \rm \ \rm \ \rm \ \rm \ \rm \rm \ \rm \ \rm \ \rm \ \rm 
+\end{split}
+\end{equation}
+
+\noindent where R is the radius parameter of a jet and $p$ is an additional parameter about the power of energy.
+$p$ could be equal to 1, falling in the $k_t$ algorithm, 0 for the Cambridge/Aachen and -1 in case of anti-$k_t$ algorithm \cite{antikT}.\\
+For the purpose of this thesis, the anti-$k_t$ algorithm is used, since it produces regular cone-like jets around hard seeds and it is less sensitive to soft radiation.
+Typically in ATLAS large-radius jets are reconstructed with a radius parameter of $R=1.0$ and small-radius jets with $R=0.4$.\\
+In Fig. \ref{fig:Reco/Jets/antikt/antikt} an example of anti-$k_t$ application with large-radius jet $R=1.0$ is shown in the case of a parton-level event associated with soft radiation.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap3/antikt_R1.png}
+    \caption{Example of anti-$k_t$ application with large-radius jets. Figure from Ref. \cite{antikT}}
+    \label{fig:Reco/Jets/antikt/antikt}
+\end{figure}
 
 %-------------------------------------------------------------------------------
-\subsection{Jet algorithms}\label{sec:Reco/Jets/Algorithms}
+\subsection{Jet calibration}\label{sec:Reco/Jets/JCal}
+
+To ensure accurate measurements, a structured calibration workflow is implemented on the reconstructed jets.
+In the first place, a correction due to the presence of pile-up is applied. It consists in the subtraction to the jet energy, based on the average energy contribution from PU ($\rho$) and the jet area.
+This correction is applied making use of MC simulations.\\
+The second step is the Jet Energy Scale (JES) calibration, which accounts for detector response and resolution effects, as well as for the presence of inactive material in the calorimeter.
+JES is applied matching the reconstructed jets with the corresponding truth jets in MC simulations, and it is derived as a function of the jet $p_T$ and $\eta$.\\
+Another calibration, known as Global Sequential Calibration (GSC), is applied via sequential multiplicative corrections, to absorb residual differences in the ATLAS response due to variations in the energy distributions of constituents or the jet flavor and topology.
+GSC is derived from energy measurements in certain sections of the experimental apparatus.\\
+Finally, an \textit{in-situ} calibration is applied to correct for residual differences between data and MC simulation, using well-measured reference objects such as photons or $Z$ bosons.\\
+Associated to each approach cited above, a systematic uncertainty is derived, which is then propagated to the final analysis.
+At low $p_T$ the dominant uncertainty is due to PU and different detector response; JES, which is below 5\%, is the main source of uncertainty at high momentum ($p_T > 400\text{ GeV}$).\\
+The JER, jet energy resolution, can be espressed, as a function of $p_T$ in a form similar to those for the energy resolution of the calorimeters:
+\begin{equation}\label{eq:Reco/Jets/JCal/JER}
+\frac{\sigma_{p_T}}{p_T} =  \frac{S}{\sqrt{p_T}} \oplus \frac{N}{p_T} \oplus C
+\end{equation}
+
+\noindent with S the stochastic term associated with detector response, N the noise term and C the constant term associated with jet formation, which is the major contribution at high momentum.
+
 
 \subsection{Detailed Jet Reconstruction and Substructure Variables}
 
-
-\subsubsection{Jet Constituent Definitions and Clustering}
-
-ATLAS constructs jets from multiple classes of input objects depending on the target physics regime and kinematic environment \cite{Russo:2025}:
-\begin{itemize}
-       \item \textbf{Variable-Radius (VR) Track Jets:} Built by clustering high-quality Inner Detector tracks ($p_{\text{T}} > 500\text{ MeV}$) associated with the primary vertex \cite{Russo:2025}. VR jets employ a dynamic radius parameter scaled inversely with track $p_{\text{T}}$ according to $R_{\text{eff}}(p_{\text{T}}) = \min(0.4, \max(0.02, \rho / p_{\text{T}}))$ with $\rho = 30\text{ GeV}$, allowing efficient decay product capture across wide momentum spans \cite{Russo:2025}.
-\end{itemize}
-
-Constituent objects are combined using sequential recombination algorithms \cite{Russo:2025, Frattari:2021}. The distance $d_{ij}$ between entities $i$ and $j$, alongside the beam-distance $d_{iB}$, are defined as \cite{Russo:2025, Frattari:2021}:
-\begin{equation}
-d_{ij} = \min\left(p_{\text{T},i}^{2p}, p_{\text{T},j}^{2p}\right) \frac{\Delta R_{ij}^2}{R^2}, \quad \quad d_{iB} = p_{\text{T},i}^{2p}
-\end{equation}
-where $\Delta R_{ij}^2 = (y_i - y_j)^2 + (\phi_i - \phi_j)^2$, $R$ is the distance parameter, and $p$ dictates the clustering metric \cite{Russo:2025, Frattari:2021}. The default choice across ATLAS is the anti-$k_t$ algorithm ($p = -1$), which generates regular, cone-like jet boundaries around hard constituent seeds while minimizing susceptibility to soft background radiation \cite{Russo:2025, Frattari:2021}. Standard configurations adopt $R = 0.4$ for resolved small-radius jets and $R = 1.0$ for boosted large-radius jets \cite{Russo:2025, Frattari:2021}.
-
-\subsubsection{Jet Grooming and Calibration}
-
-Large-radius jets ($R = 1.0$) inherently collect non-negligible soft energy contributions arising from the underlying event, initial-state radiation, and in-time or out-of-time pile-up interactions \cite{Russo:2025, Frattari:2021}. Grooming algorithms remove these uncorrelated soft components \cite{Russo:2025, Frattari:2021}. 
-
-ATLAS heavily utilizes the \textit{trimming} algorithm \cite{Russo:2025, Frattari:2021}. Trimming operates by reclustering the constituent elements of a large-radius jet into smaller subjets using the $k_t$ or Cambridge/Aachen algorithm with a smaller sub-radius $R_{\text{sub}} = 0.2$ \cite{Russo:2025, Frattari:2021}. Any subjet failing a relative momentum fraction threshold $f_{\text{cut}}$, defined as:
-\begin{equation}
-\frac{p_{\text{T}, i}^{\text{subjet}}}{p_{\text{T}}^{\text{jet}}} < f_{\text{cut}} \quad \quad (\text{typically } f_{\text{cut}} = 0.05)
-\end{equation}
-is discarded from the final clustered object \cite{Russo:2025, Frattari:2021}.
-
-To ensure accurate energy and mass scale measurements, a sequential calibration workflow is implemented \cite{Frattari:2021}. Jet Energy Scale (JES) corrections account for calorimeter non-compensation, inactive detector material, and pile-up offsets using event-by-event area-based density estimations ($\rho$) combined with \textit{in-situ} balance measurements ($Z/\gamma+\text{jet}$ and multijet events) \cite{Frattari:2021}. For large-radius jets, Jet Mass Scale (JMS) calibrations restore accurate invariant mass distributions using track-assisted mass combinations and \textit{in-situ} forward-folding fits in $t\bar{t}$ events \cite{Frattari:2021}. Furthermore, the Jet Vertex Tagger (JVT)—a multivariate discriminant combining track-vertex association parameters—is applied to small-radius jets to reject pile-up artifacts \cite{Frattari:2021}.
 
 \subsubsection{Jet Substructure Observables}
 
@@ -182,9 +200,6 @@ Low $D_2$ values strongly correlate with two-hard-prong radiation profiles, serv
 
 \section{Version 2}
 
-\subsection{Hadronic Jet Reconstruction and Calibration}
-Hadronic jets represent collimated sprays of particles from partonic fragmentation and hadronization \cite{Frattari_thesis, Russo_thesis}. Jets are clustered using the sequential recombination anti-$k_t$ algorithm, choosing a radius parameter of $R = 0.4$ for narrow-radius jets or $R = 1.0$ for large-radius boosted decay products \cite{Frattari_thesis, Russo_thesis}. Input constituents are constructed using different strategies to improve angular and energy resolution. Topological clusters calibrated at the electromagnetic scale define the baseline EMTopo jets \cite{Frattari_thesis}. To improve low-momentum resolution, the Particle Flow algorithm matches Inner Detector tracks to calorimeter topo-clusters, subtracting the expected charged-hadron energy deposits cell-by-cell and replacing them with the superior track momentum measurements \cite{Frattari_thesis, Russo_thesis}. At high transverse momentum, Track-CaloClusters combine the angular parameters of Inner Detector tracks with the energy measurements of topo-clusters to resolve dense shower structures \cite{Frattari_thesis, Russo_thesis}. Unified Flow Objects integrate Particle Flow and Track-CaloClusters, maintaining performance across all energy regimes \cite{Russo_thesis}. Large-radius jets are groomed via trimming to suppress pile-up and soft underlying event contributions by removing low-momentum subjets \cite{Frattari_thesis}.
-Calibration sequences scale the raw jet energy to the truth-particle level \cite{Frattari_thesis, Russo_thesis}. First, pile-up offset corrections subtract the average energy density on an event-by-event basis \cite{Frattari_thesis, Russo_thesis}. Absolute jet energy scale corrections are then applied using simulated templates \cite{Frattari_thesis, Russo_thesis}. Global Sequential Calibration refines the response using jet properties like track multiplicity or longitudinal shower profiles, utilizing a neural network configuration during Run 3 \cite{Russo_thesis}. Finally, in-situ calibrations correct remaining data-to-simulation discrepancies by balancing jet transverse momentum against well-calibrated reference objects, such as $Z$ bosons or prompt photons \cite{Frattari_thesis, Russo_thesis}. Pile-up jets are further rejected using the track-based Jet Vertex Tagger likelihood discriminant \cite{Frattari_thesis, Russo_thesis}.
 
 \subsection{Missing Transverse Momentum}
 Conservation of momentum in the transverse plane allows the reconstruction of weakly interacting or stable invisible particles \cite{Frattari_thesis, Russo_thesis}. The missing transverse momentum vector, $\vec{p}_{\text{T}}^{\text{miss}}$, is defined as the negative vector sum of the transverse momenta of all reconstructed and calibrated hard physics objects, plus a soft term \cite{Frattari_thesis, Russo_thesis}. Hard objects include electrons, photons, muons, tau leptons, and jets \cite{Frattari_thesis, Russo_thesis}. The soft term accounts for signals not associated with any hard object \cite{Frattari_thesis, Russo_thesis}. To minimize pile-up contamination, the Track Soft Term is calculated using only reconstructed Inner Detector tracks associated with the primary hard-scatter vertex, omitting neutral calorimeter deposits \cite{Frattari_thesis, Russo_thesis}. Overlaps between reconstructed objects are resolved sequentially to prevent double-counting of detector signals \cite{Frattari_thesis, Russo_thesis}.

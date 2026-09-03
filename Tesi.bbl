@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -308,5 +308,17 @@ M.~Aaboud et~al.
 \textit{"Improving jet substructure performance in ATLAS using
   Track-CaloClusters"}.
 \newblock (2017).
+
+\bibitem[ATL((2022))]{ATLAS_UFO}
+\textit{"R=0.4 jets input comparison and Monte Carlo calibration with the ATLAS
+  Detector"}.
+\newblock Technical report, CERN, (2022).
+\newblock URL \url{https://cds.cern.ch/record/2824558}.
+
+\bibitem[Cacciari et~al.((2008))Cacciari, Salam, and Soyez]{antikT}
+M.~Cacciari, G.~P. Salam, and G.~Soyez.
+\newblock \textit{"The anti-ktjet clustering algorithm"}.
+\newblock \emph{Journal of High Energy Physics}, (2008).
+\newblock URL \url{http://dx.doi.org/10.1088/1126-6708/2008/04/063}.
 
 \end{thebibliography}
