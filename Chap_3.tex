@@ -96,7 +96,7 @@ If significant energy remains, it is treated as a neutral energy remnant.\\
 The finalized PFlow constituents consist of selected charged tracks for charged hadrons and un-subtracted or remnant topoclusters for neutral hadrons and photons.
 
 %%%%
-\subsection*{Track Calo-Clusters}\label{sec:Reco/Jets/Components/TCC}
+\subsection*{Track Calo-Clusters (TCCs)}\label{sec:Reco/Jets/Components/TCC}
 
 The angular separation between the products of hadronic decays is highly reduced in the case of highly boosted regimes.
 The high track density and calorimeter energy overlap degrade the performance of the PFlow algorithm.
@@ -108,22 +108,17 @@ TCCs match the tracks, which are extrapolated from the primary vertex to calorim
 \end{equation}
 
 \noindent In the equation above $\sigma_{clus}$ is the topocluster width and $\sigma_{trk}$ represents the track extrapolation uncertainty.
-Unlike PFlow, TCC does not perform energy subtraction; instead PU is removed.\\
+Unlike PFlow, TCCs do not perform energy subtraction; instead PU is removed.\\
 The TCC objects preserve fine angular substructure within large-radius ($R = 1.0$) jets, improving jet mass and substructure observable resolutions ($\tau_{21}, D_2$).
 
 %%%%
-\subsection*{Unified Flow Objects}\label{sec:Reco/Jets/Components/UFO}
+\subsection*{Unified Flow Objects (UFO)}\label{sec:Reco/Jets/Components/UFO}
 
-While PFlow excels at low $p_{\text{T}}$ and TCC dominates at high boost, utilizing separate constituent definitions across different analysis channels introduces reconstruction inconsistencies \cite{Frattari:2021}. Unified Flow Objects (UFO) synthesize the PFlow and TCC methodologies into a single unified input definition \cite{Frattari:2021}.
-
-\paragraph{UFO Construction Workflow}
-\begin{enumerate}
-    \item \textbf{PFlow Baseline \& CHS:} The standard PFlow algorithm is executed \cite{Frattari:2021}. Charged PFlow objects associated with pile-up interaction vertices are removed via CHS \cite{Frattari:2021}.
-    \item \textbf{Neutral Subtraction:} Advanced pile-up density mitigation algorithms, such as Constituent Subtraction or SoftKiller, are applied to the remaining neutral PFlow topoclusters to remove uncorrelated soft radiation \cite{Frattari:2021}.
-    \item \textbf{TCC Resampling Algorithm:} The surviving neutral PFlow clusters and hard-scatter ID tracks that were not subtracted during the initial PFlow step are passed into the TCC cluster-splitting algorithm \cite{Frattari:2021}. 
-    \item \textbf{UFO Output:} In low-$p_{\text{T}}$ environments, UFO objects default to standard CHS PFlow performance due to complete PFlow energy subtraction \cite{Frattari:2021}. In high-$p_{\text{T}}$ boosted environments where PFlow leaves un-subtracted energy remnants, the TCC re-clustering engine splits neutral energy based on track directions \cite{Frattari:2021}.
-\end{enumerate}
-By integrating PFlow subtraction at low $p_{\text{T}}$ with TCC angular splitting at high $p_{\text{T}}$, UFO inputs optimize small-radius ($R=0.4$) and large-radius ($R=1.0$) jet performance simultaneously across the full momentum spectrum \cite{Frattari:2021}.
+While PFlow excels at low $p_T$ and TCCs dominate in highly boosted regimes, Unified Flow Objects (UFO) synthesize the two methodologies into a single unified input.\\
+UFO are built by first executing the PFlow algorithm, where charged PFlow objects associated with pile-up interaction vertices are removed.
+From the remaining neutral PFlow topoclusters uncorrelated soft radiation is removed.
+The surviving neutral clusters and hard-scatter ID tracks that were not subtracted during the initial step are passed into the TCC cluster-splitting algorithm.\\
+By combining PFlow subtraction at low $p_T$ with TCC angular splitting at high $p_T$, UFO inputs optimize small-radius ($R=0.4$) and large-radius ($R=1.0$) jet performance simultaneously across the full momentum spectrum.
 
 
 %-------------------------------------------------------------------------------
@@ -136,9 +131,7 @@ By integrating PFlow subtraction at low $p_{\text{T}}$ with TCC angular splittin
 
 ATLAS constructs jets from multiple classes of input objects depending on the target physics regime and kinematic environment \cite{Russo:2025}:
 \begin{itemize}
-    \item \textbf{Particle Flow (PFlow):} Combines Inner Detector tracking with calorimeter topological clusters (topoclusters) \cite{Russo:2025, Frattari:2021}. The PFlow algorithm evaluates the expected energy deposition of charged tracks in the calorimeter layers and subtracts it cell-by-cell \cite{Russo:2025, Frattari:2021}. Retaining track momenta for low-$p_{\text{T}}$ charged hadrons and neutral topoclusters yields superior $p_{\text{T}}$ and angular resolution while suppressing pile-up contamination \cite{Russo:2025, Frattari:2021}.
-    \item \textbf{Track-CaloClusters (TCC):} Designed primarily for high-$p_{\text{T}}$ large-radius jet reconstruction \cite{Russo:2025}. TCC objects match the directional parameters of inner detector tracks to calorimeter topoclusters, leveraging tracking precision to regain angular resolution in densely collimated particle environments \cite{Russo:2025}.
-    \item \textbf{Variable-Radius (VR) Track Jets:} Built by clustering high-quality Inner Detector tracks ($p_{\text{T}} > 500\text{ MeV}$) associated with the primary vertex \cite{Russo:2025}. VR jets employ a dynamic radius parameter scaled inversely with track $p_{\text{T}}$ according to $R_{\text{eff}}(p_{\text{T}}) = \min(0.4, \max(0.02, \rho / p_{\text{T}}))$ with $\rho = 30\text{ GeV}$, allowing efficient decay product capture across wide momentum spans \cite{Russo:2025}.
+       \item \textbf{Variable-Radius (VR) Track Jets:} Built by clustering high-quality Inner Detector tracks ($p_{\text{T}} > 500\text{ MeV}$) associated with the primary vertex \cite{Russo:2025}. VR jets employ a dynamic radius parameter scaled inversely with track $p_{\text{T}}$ according to $R_{\text{eff}}(p_{\text{T}}) = \min(0.4, \max(0.02, \rho / p_{\text{T}}))$ with $\rho = 30\text{ GeV}$, allowing efficient decay product capture across wide momentum spans \cite{Russo:2025}.
 \end{itemize}
 
 Constituent objects are combined using sequential recombination algorithms \cite{Russo:2025, Frattari:2021}. The distance $d_{ij}$ between entities $i$ and $j$, alongside the beam-distance $d_{iB}$, are defined as \cite{Russo:2025, Frattari:2021}:
