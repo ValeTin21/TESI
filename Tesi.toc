@@ -32,21 +32,19 @@
 \contentsline {section}{\numberline {3.1}Tracks reconstruction in ID}{33}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Jets reconstruction}{34}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Jet constituents reconstruction}{34}{subsection.3.2.1}%
-\contentsline {subsubsection}{Particle Flow (PFlow)}{36}{section*.35}%
-\contentsline {paragraph}{Algorithm Sequence}{36}{section*.36}%
-\contentsline {paragraph}{Matching and Sharing Scheme}{37}{section*.38}%
-\contentsline {paragraph}{UFO Construction Workflow}{38}{section*.40}%
-\contentsline {subsection}{\numberline {3.2.2}Jet algorithms}{38}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Detailed Jet Reconstruction and Substructure Variables}{38}{subsection.3.2.3}%
-\contentsline {subsubsection}{Jet Constituent Definitions and Clustering}{38}{section*.41}%
-\contentsline {subsubsection}{Jet Grooming and Calibration}{39}{section*.42}%
-\contentsline {subsubsection}{Jet Substructure Observables}{39}{section*.43}%
-\contentsline {paragraph}{N-Subjettiness ($\tau _N$)}{40}{section*.44}%
-\contentsline {paragraph}{Energy Correlation Functions (ECFs) and $D_2$}{40}{section*.45}%
+\contentsline {paragraph}{Matching and Sharing Scheme}{36}{section*.36}%
+\contentsline {paragraph}{UFO Construction Workflow}{37}{section*.38}%
+\contentsline {subsection}{\numberline {3.2.2}Jet algorithms}{37}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Detailed Jet Reconstruction and Substructure Variables}{37}{subsection.3.2.3}%
+\contentsline {subsubsection}{Jet Constituent Definitions and Clustering}{37}{section*.39}%
+\contentsline {subsubsection}{Jet Grooming and Calibration}{38}{section*.40}%
+\contentsline {subsubsection}{Jet Substructure Observables}{39}{section*.41}%
+\contentsline {paragraph}{N-Subjettiness ($\tau _N$)}{39}{section*.42}%
+\contentsline {paragraph}{Energy Correlation Functions (ECFs) and $D_2$}{39}{section*.43}%
 \contentsline {section}{\numberline {3.3}Version 2}{40}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Hadronic Jet Reconstruction and Calibration}{40}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Missing Transverse Momentum}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Missing Transverse Momentum}{40}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Anomaly Detection}{42}{chapter.4}%
 \contentsline {chapter}{\numberline {5}ADJJ analysis}{43}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Conclusions}{44}{chapter.6}%
-\contentsline {chapter}{Bibliography}{45}{section*.46}%
+\contentsline {chapter}{Bibliography}{45}{section*.44}%

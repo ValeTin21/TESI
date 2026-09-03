@@ -19,8 +19,8 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "Russo:2025"
 Warning--I didn't find a database entry for "Frattari:2021"
+Warning--I didn't find a database entry for "Russo:2025"
 Warning--I didn't find a database entry for "Frattari_thesis"
 Warning--I didn't find a database entry for "Russo_thesis"
 Warning--empty publisher in Peskin_QFT
@@ -48,45 +48,45 @@ Warning--empty author and editor in ATLAS_Calo
 Warning--empty author and editor in ATLAS_LArCalo
 Warning--empty institution in ATLAS_TDAQ_report
 Warning--empty author and editor in ATLAS_Computing
-You've used 46 entries,
+You've used 47 entries,
             2481 wiz_defined-function locations,
-            841 strings with 12242 characters,
-and the built_in function-call counts, 12982 in all, are:
-= -- 1174
-> -- 367
-< -- 42
-+ -- 197
-- -- 102
-* -- 743
-:= -- 2080
-add.period$ -- 171
-call.type$ -- 46
-change.case$ -- 85
+            846 strings with 12415 characters,
+and the built_in function-call counts, 13258 in all, are:
+= -- 1199
+> -- 374
+< -- 43
++ -- 202
+- -- 104
+* -- 760
+:= -- 2126
+add.period$ -- 175
+call.type$ -- 47
+change.case$ -- 87
 chr.to.int$ -- 43
-cite$ -- 76
-duplicate$ -- 810
-empty$ -- 1344
-format.name$ -- 163
-if$ -- 2792
-int.to.chr$ -- 4
-int.to.str$ -- 47
-missing$ -- 41
-newline$ -- 266
-num.names$ -- 123
-pop$ -- 408
+cite$ -- 77
+duplicate$ -- 828
+empty$ -- 1372
+format.name$ -- 166
+if$ -- 2850
+int.to.chr$ -- 5
+int.to.str$ -- 48
+missing$ -- 42
+newline$ -- 272
+num.names$ -- 126
+pop$ -- 416
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 47
 quote$ -- 0
-skip$ -- 498
+skip$ -- 506
 stack$ -- 0
-substring$ -- 193
-swap$ -- 91
+substring$ -- 195
+swap$ -- 95
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 295
+type$ -- 302
 warning$ -- 25
-while$ -- 91
+while$ -- 93
 width$ -- 0
-write$ -- 617
+write$ -- 631
 (There were 29 warnings)

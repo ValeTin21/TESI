@@ -49,7 +49,7 @@ The combination is the not trivial part and dedicated algorithms have been devel
 %-------------------------------------------------------------------------------
 \subsection{Jet constituents reconstruction}\label{sec:Reco/Jets/Components}
 The reconstruction of jets starts with the reconstruction of their constituents, which are the physical objects detected by the ATLAS sub-detectors.
-This process uses different algorithms depending on the target physics regime and kinematic environment.
+This process uses different algorithms depending on the target physics regime and kinematic regime, combining the measurements of the ID with those from calorimeters.
 The common starting point is the clustering of calorimeter cells, which are grouped into \textit{topological clusters}.
 
 %%%%
@@ -78,31 +78,23 @@ E_{\text{clus}} = \sum_{i} E_{\text{cell}, i}
 
 \noindent Absolute cell energies are utilized in the denominator weighting to prevent directional bias from negative cell energy fluctuations induced by noise or pile-up subtraction.\\
 Those kinematic variables are used to distinguish between electromagnetic and hadronic showers. 
-In fact, as described in Sec. \ref{LHCAtlas/ppColl/HadShow}, hadronic showers contain also EM components, resulting in the fact that the reconstructed clusters are only partially hadronic.
+In fact, as described in Sec. \ref{sec:LHCAtlas/ppColl/HadShow}, hadronic showers contain also EM components, resulting in the fact that the reconstructed clusters are only partially hadronic.
 For this reason, after Local Cell Weighting (LCW) calibrations of the topoclusters, a probability $P_{\text{EM}}^{\text{clus}}$ is assigned.
 It tells us the probabilty that the deposit is electromagnetic versus hadronic. 
 Topoclusters with $P_{\text{EM}}^{\text{clus}} < 0.5$ are identified as hadronic, otherwise they are identified as electromagnetic.\\
 
 %%%%
 \subsection*{Particle Flow (PFlow)}\label{sec:Reco/Jets/Components/PFlow}
-Standard topoclusters built solely from calorimeter signals face physical resolution constraints driven by non-compensation ($e/h > 1$), coarse spatial cell granularity, and pile-up contamination \cite{Russo:2025, Frattari:2021}. The ATLAS reconstruction suite addresses these limits by combining Inner Detector (ID) tracking parameters with calorimeter measurements \cite{Frattari:2021}. Modern ATLAS analyses deploy three distinct flow algorithms depending on the jet radius, transverse momentum ($p_{\text{T}}$), and boost regime \cite{Frattari:2021}.
 
-\subsubsection{Particle Flow (PFlow)}
+The Particle Flow (PFlow) algorithm \cite{ATLAS_PFlow} is built to optimize the reconstruction of jets with lower transverse momentum, $0.5\text{ GeV} \le p_{T} \le 40\text{ GeV}$.
+This algorithm relies on the fact that at lower energies, the momentum resolution is higher than the energy one.
+This feature is evident in the formulas associated with the two resolutions, Eq. \ref{eq:LHCAtlas/ATLAS/particleTracking/momentum_uncertainty_sagitta} and Eq. \ref{eq:LHCAtlas/ATLAS/Calo/ECal/HCal_resolution}, which show the different scalings with respect to the momentum ($\sigma_{p_{T}}/p_{T} \propto p_{T}$) and energy ($\sigma_E/E \propto 1/\sqrt{E}$) respectively.\\
+The algorithm begins by the selection of the tracks to target: $0.5\text{ GeV} \le p_{T} \le 40\text{ GeV}$, $|\eta| < 2.5$, at least 9 silicon hits, zero pixel holes and $E_{clus} / p_{trk} > 0.1$ ($E_{clus}$ is the energy of the matched topocluster and $p_{trk}$ is the momentum of the track).
+After this, PFlow subtracts from the matched topoclusters the expected energy deposit from charged hadrons of the selected tracks, replacing it with the expected energy deposit estimated from the track momentum $p_{trk}$, ensuring higher resolution.\\
+If the residual energy of a topocluster after subtraction is consistent with fluctuations expected from a  single-particle signal, the remnant cluster is completely removed. 
+If significant energy remains, it is treated as a neutral energy remnant.\\
+The finalized PFlow constituents consist of selected charged tracks for charged hadrons and un-subtracted or remnant topoclusters for neutral hadrons and photons.
 
-The Particle Flow algorithm optimizes low-to-intermediate $p_{\text{T}}$ jet reconstruction by leveraging the superior momentum resolution of the ID ($\sigma_{p_{\text{T}}}/p_{\text{T}} \propto p_{\text{T}}$) relative to the calorimeter energy resolution ($\sigma_E/E \propto 1/\sqrt{E}$) \cite{Frattari:2021}. PFlow achieves optimal resolution below $p_{\text{T}} \approx 90\text{ GeV}$ while removing energy double-counting through cell-level subtraction \cite{Russo:2025, Frattari:2021}.
-
-\paragraph{Algorithm Sequence}
-\begin{enumerate}
-    \item \textbf{Track Selection:} High-quality ID tracks are selected requiring $0.5\text{ GeV} \le p_{\text{T}} \le 40\text{ GeV}$, $|\eta| < 2.5$, at least 9 silicon hits, and zero pixel holes \cite{Frattari:2021}. The upper $p_{\text{T}}$ bound is enforced because highly energetic tracks bend less, reducing momentum tracking benefits while increasing spatial overlap with nearby activity \cite{Frattari:2021}.
-    \item \textbf{Track-Cluster Matching:} Selected tracks are extrapolated to the calorimeter layers \cite{Frattari:2021}. Topoclusters at the EM scale are matched to tracks based on a rescaled angular distance metric $\Delta R'$ that incorporates cluster angular widths ($\sigma_\eta, \sigma_\phi$) \cite{Frattari:2021}:
-    \begin{equation}
-    \Delta R' = \sqrt{\left(\frac{\Delta\phi}{\sigma_\phi}\right)^2 + \left(\frac{\Delta\eta}{\sigma_\eta}\right)^2}
-    \end{equation}
-    Candidate pairs must satisfy $E_{\text{clus}} / p_{\text{trk}} > 0.1$ to discard accidental spatial matches \cite{Frattari:2021}.
-    \item \textbf{Energy Subtraction:} For each matched track-cluster pair, the expected energy deposit $\langle E_{\text{dep}} \rangle$ is calculated from the track momentum $p_{\text{trk}}$ and cluster position using Monte Carlo shower parametrization \cite{Frattari:2021}. Cell energies within the matched clusters are subtracted cell-by-cell, weighting cells by proximity to the extrapolated track trajectory \cite{Frattari:2021}.
-    \item \textbf{Remnant Removal:} If the residual energy of a topocluster after subtraction is consistent with expected single-particle signal fluctuations, the remnant cluster is completely removed \cite{Frattari:2021}. If significant energy remains, it is retained as a neutral energy remnant \cite{Russo:2025, Frattari:2021}.
-    \item \textbf{Constituent Output:} The finalized PFlow constituents consist of selected charged tracks (assigned the charged pion mass) for charged hadrons, and un-subtracted or remnant topoclusters for neutral hadrons and photons \cite{Frattari:2021}. Charged Hadron Subtraction (CHS) is applied by discarding charged tracks that originate from pile-up interaction vertices, significantly mitigating pile-up noise \cite{Frattari:2021}.
-\end{enumerate}
 
 %%%%
 \subsection*{Track Calo-Clusters}\label{sec:Reco/Jets/Components/TCC}

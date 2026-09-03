@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -290,11 +290,18 @@ T.~G.~Cornelissen et~al.
 \newblock Technical report, CERN, (2007).
 \newblock URL \url{https://cds.cern.ch/record/1038095}.
 
-\bibitem[et~al.((2017))]{ATLAS_topoclusters}
+\bibitem[et~al.((2017){\natexlab{a}})]{ATLAS_topoclusters}
 G.~Aad et~al.
 \newblock \textit{"Topological cell clustering in the ATLAS calorimeters and
   its performance in LHC Run 1"}.
-\newblock \emph{The European Physical Journal C}, (2017).
+\newblock \emph{The European Physical Journal C}, (2017){\natexlab{a}}.
 \newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-017-5004-5}.
+
+\bibitem[et~al.((2017){\natexlab{b}})]{ATLAS_PFlow}
+M.~Aaboud et~al.
+\newblock \textit{"Jet reconstruction and performance using particle flow with
+  the ATLAS Detector"}.
+\newblock \emph{The European Physical Journal C}, (2017){\natexlab{b}}.
+\newblock URL \url{https://doi.org/10.1140/epjc/s10052-017-5031-2}.
 
 \end{thebibliography}
