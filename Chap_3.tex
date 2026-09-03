@@ -85,7 +85,57 @@ Topoclusters with $P_{\text{EM}}^{\text{clus}} < 0.5$ are identified as hadronic
 
 %%%%
 \subsection*{Particle Flow (PFlow)}\label{sec:Reco/Jets/Components/PFlow}
+Standard topoclusters built solely from calorimeter signals face physical resolution constraints driven by non-compensation ($e/h > 1$), coarse spatial cell granularity, and pile-up contamination \cite{Russo:2025, Frattari:2021}. The ATLAS reconstruction suite addresses these limits by combining Inner Detector (ID) tracking parameters with calorimeter measurements \cite{Frattari:2021}. Modern ATLAS analyses deploy three distinct flow algorithms depending on the jet radius, transverse momentum ($p_{\text{T}}$), and boost regime \cite{Frattari:2021}.
 
+\subsubsection{Particle Flow (PFlow)}
+
+The Particle Flow algorithm optimizes low-to-intermediate $p_{\text{T}}$ jet reconstruction by leveraging the superior momentum resolution of the ID ($\sigma_{p_{\text{T}}}/p_{\text{T}} \propto p_{\text{T}}$) relative to the calorimeter energy resolution ($\sigma_E/E \propto 1/\sqrt{E}$) \cite{Frattari:2021}. PFlow achieves optimal resolution below $p_{\text{T}} \approx 90\text{ GeV}$ while removing energy double-counting through cell-level subtraction \cite{Russo:2025, Frattari:2021}.
+
+\paragraph{Algorithm Sequence}
+\begin{enumerate}
+    \item \textbf{Track Selection:} High-quality ID tracks are selected requiring $0.5\text{ GeV} \le p_{\text{T}} \le 40\text{ GeV}$, $|\eta| < 2.5$, at least 9 silicon hits, and zero pixel holes \cite{Frattari:2021}. The upper $p_{\text{T}}$ bound is enforced because highly energetic tracks bend less, reducing momentum tracking benefits while increasing spatial overlap with nearby activity \cite{Frattari:2021}.
+    \item \textbf{Track-Cluster Matching:} Selected tracks are extrapolated to the calorimeter layers \cite{Frattari:2021}. Topoclusters at the EM scale are matched to tracks based on a rescaled angular distance metric $\Delta R'$ that incorporates cluster angular widths ($\sigma_\eta, \sigma_\phi$) \cite{Frattari:2021}:
+    \begin{equation}
+    \Delta R' = \sqrt{\left(\frac{\Delta\phi}{\sigma_\phi}\right)^2 + \left(\frac{\Delta\eta}{\sigma_\eta}\right)^2}
+    \end{equation}
+    Candidate pairs must satisfy $E_{\text{clus}} / p_{\text{trk}} > 0.1$ to discard accidental spatial matches \cite{Frattari:2021}.
+    \item \textbf{Energy Subtraction:} For each matched track-cluster pair, the expected energy deposit $\langle E_{\text{dep}} \rangle$ is calculated from the track momentum $p_{\text{trk}}$ and cluster position using Monte Carlo shower parametrization \cite{Frattari:2021}. Cell energies within the matched clusters are subtracted cell-by-cell, weighting cells by proximity to the extrapolated track trajectory \cite{Frattari:2021}.
+    \item \textbf{Remnant Removal:} If the residual energy of a topocluster after subtraction is consistent with expected single-particle signal fluctuations, the remnant cluster is completely removed \cite{Frattari:2021}. If significant energy remains, it is retained as a neutral energy remnant \cite{Russo:2025, Frattari:2021}.
+    \item \textbf{Constituent Output:} The finalized PFlow constituents consist of selected charged tracks (assigned the charged pion mass) for charged hadrons, and un-subtracted or remnant topoclusters for neutral hadrons and photons \cite{Frattari:2021}. Charged Hadron Subtraction (CHS) is applied by discarding charged tracks that originate from pile-up interaction vertices, significantly mitigating pile-up noise \cite{Frattari:2021}.
+\end{enumerate}
+
+%%%%
+\subsection*{Track Calo-Clusters}\label{sec:Reco/Jets/Components/TCC}
+
+In highly boosted regimes ($p_{\text{T}} > 200\text{ GeV}$), the angular separation between hadronic decay products shrinks below the spatial resolution of individual calorimeter cells \cite{Frattari:2021}. Particle Flow performance degrades due to high track density and calorimeter energy overlap \cite{Frattari:2021}. Track-CaloClusters (TCCs) circumvent this limitation by combining the track directional precision evaluated at the perigee with topocluster energy measurements \cite{Russo:2025, Frattari:2021}.
+
+\paragraph{Matching and Sharing Scheme}
+Tracks from the primary vertex are extrapolated to the calorimeter and matched to topoclusters if their relative angular separation satisfies \cite{Frattari:2021}:
+\begin{equation}
+\Delta R < \sqrt{\sigma_{\text{clus}}^2 + \sigma_{\text{trk}}^2}
+\end{equation}
+where $\sigma_{\text{clus}}$ is the topocluster width and $\sigma_{\text{trk}}$ represents the track extrapolation uncertainty \cite{Frattari:2021}. Unlike PFlow, TCC does not perform cell-level energy subtraction \cite{Russo:2025, Frattari:2021}. Instead, it redistributes cluster energies according to four distinct categories \cite{Russo:2025, Frattari:2021}:
+\begin{itemize}
+    \item \textbf{Single Track Matched to Single Cluster (Combined TCC):} A single object is formed taking its energy $E$ from the topocluster and its direction $(\eta, \phi)$ from the track \cite{Russo:2025, Frattari:2021}.
+    \item \textbf{Unmatched Topocluster (Neutral TCC):} Originates from neutral hadrons ($K_L^0$, $n$, $\gamma$) \cite{Russo:2025, Frattari:2021}. Kinematic parameters $(E, \eta, \phi)$ are taken directly from the LCW topocluster \cite{Russo:2025, Frattari:2021}.
+    \item \textbf{Unmatched Track (Charged TCC):} Represents a charged particle that deposited negligible energy in the calorimeter \cite{Russo:2025, Frattari:2021}. The object uses the track momentum and direction \cite{Russo:2025, Frattari:2021}.
+    \item \textbf{Multiple Tracks Matched to One or More Clusters:} One TCC object is created per track, setting its direction to the track coordinates \cite{Russo:2025, Frattari:2021}. The total energy of the matched topocluster group is split among the tracks proportionally to their measured track transverse momenta $p_{\text{T, trk}}$ \cite{Russo:2025, Frattari:2021}.
+\end{itemize}
+TCC objects preserve fine angular substructure within large-radius ($R = 1.0$) jets, improving jet mass and substructure observable resolutions ($\tau_{21}, D_2$) in high-$p_{\text{T}}$ vector boson tagging \cite{Russo:2025, Frattari:2021}.
+
+%%%%
+\subsection*{Unified Flow Objects}\label{sec:Reco/Jets/Components/UFO}
+
+While PFlow excels at low $p_{\text{T}}$ and TCC dominates at high boost, utilizing separate constituent definitions across different analysis channels introduces reconstruction inconsistencies \cite{Frattari:2021}. Unified Flow Objects (UFO) synthesize the PFlow and TCC methodologies into a single unified input definition \cite{Frattari:2021}.
+
+\paragraph{UFO Construction Workflow}
+\begin{enumerate}
+    \item \textbf{PFlow Baseline \& CHS:} The standard PFlow algorithm is executed \cite{Frattari:2021}. Charged PFlow objects associated with pile-up interaction vertices are removed via CHS \cite{Frattari:2021}.
+    \item \textbf{Neutral Subtraction:} Advanced pile-up density mitigation algorithms, such as Constituent Subtraction or SoftKiller, are applied to the remaining neutral PFlow topoclusters to remove uncorrelated soft radiation \cite{Frattari:2021}.
+    \item \textbf{TCC Resampling Algorithm:} The surviving neutral PFlow clusters and hard-scatter ID tracks that were not subtracted during the initial PFlow step are passed into the TCC cluster-splitting algorithm \cite{Frattari:2021}. 
+    \item \textbf{UFO Output:} In low-$p_{\text{T}}$ environments, UFO objects default to standard CHS PFlow performance due to complete PFlow energy subtraction \cite{Frattari:2021}. In high-$p_{\text{T}}$ boosted environments where PFlow leaves un-subtracted energy remnants, the TCC re-clustering engine splits neutral energy based on track directions \cite{Frattari:2021}.
+\end{enumerate}
+By integrating PFlow subtraction at low $p_{\text{T}}$ with TCC angular splitting at high $p_{\text{T}}$, UFO inputs optimize small-radius ($R=0.4$) and large-radius ($R=1.0$) jet performance simultaneously across the full momentum spectrum \cite{Frattari:2021}.
 
 
 %-------------------------------------------------------------------------------
