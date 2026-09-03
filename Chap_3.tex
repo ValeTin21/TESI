@@ -95,25 +95,21 @@ If the residual energy of a topocluster after subtraction is consistent with flu
 If significant energy remains, it is treated as a neutral energy remnant.\\
 The finalized PFlow constituents consist of selected charged tracks for charged hadrons and un-subtracted or remnant topoclusters for neutral hadrons and photons.
 
-
 %%%%
 \subsection*{Track Calo-Clusters}\label{sec:Reco/Jets/Components/TCC}
 
-In highly boosted regimes ($p_{\text{T}} > 200\text{ GeV}$), the angular separation between hadronic decay products shrinks below the spatial resolution of individual calorimeter cells \cite{Frattari:2021}. Particle Flow performance degrades due to high track density and calorimeter energy overlap \cite{Frattari:2021}. Track-CaloClusters (TCCs) circumvent this limitation by combining the track directional precision evaluated at the perigee with topocluster energy measurements \cite{Russo:2025, Frattari:2021}.
-
-\paragraph{Matching and Sharing Scheme}
-Tracks from the primary vertex are extrapolated to the calorimeter and matched to topoclusters if their relative angular separation satisfies \cite{Frattari:2021}:
-\begin{equation}
+The angular separation between the products of hadronic decays is highly reduced in the case of highly boosted regimes.
+The high track density and calorimeter energy overlap degrade the performance of the PFlow algorithm.
+Track-CaloClusters (TCCs) offer a solution to this limitation \cite{ATLAS_TCC}.
+They combine the track directional precision with topocluster energy measurements.
+TCCs match the tracks, which are extrapolated from the primary vertex to calorimeters, with topoclusters if their relative angular separation satisfies:
+\begin{equation}\label{eq:Reco/Jets/Components/TCC/dR}
 \Delta R < \sqrt{\sigma_{\text{clus}}^2 + \sigma_{\text{trk}}^2}
 \end{equation}
-where $\sigma_{\text{clus}}$ is the topocluster width and $\sigma_{\text{trk}}$ represents the track extrapolation uncertainty \cite{Frattari:2021}. Unlike PFlow, TCC does not perform cell-level energy subtraction \cite{Russo:2025, Frattari:2021}. Instead, it redistributes cluster energies according to four distinct categories \cite{Russo:2025, Frattari:2021}:
-\begin{itemize}
-    \item \textbf{Single Track Matched to Single Cluster (Combined TCC):} A single object is formed taking its energy $E$ from the topocluster and its direction $(\eta, \phi)$ from the track \cite{Russo:2025, Frattari:2021}.
-    \item \textbf{Unmatched Topocluster (Neutral TCC):} Originates from neutral hadrons ($K_L^0$, $n$, $\gamma$) \cite{Russo:2025, Frattari:2021}. Kinematic parameters $(E, \eta, \phi)$ are taken directly from the LCW topocluster \cite{Russo:2025, Frattari:2021}.
-    \item \textbf{Unmatched Track (Charged TCC):} Represents a charged particle that deposited negligible energy in the calorimeter \cite{Russo:2025, Frattari:2021}. The object uses the track momentum and direction \cite{Russo:2025, Frattari:2021}.
-    \item \textbf{Multiple Tracks Matched to One or More Clusters:} One TCC object is created per track, setting its direction to the track coordinates \cite{Russo:2025, Frattari:2021}. The total energy of the matched topocluster group is split among the tracks proportionally to their measured track transverse momenta $p_{\text{T, trk}}$ \cite{Russo:2025, Frattari:2021}.
-\end{itemize}
-TCC objects preserve fine angular substructure within large-radius ($R = 1.0$) jets, improving jet mass and substructure observable resolutions ($\tau_{21}, D_2$) in high-$p_{\text{T}}$ vector boson tagging \cite{Russo:2025, Frattari:2021}.
+
+\noindent In the equation above $\sigma_{clus}$ is the topocluster width and $\sigma_{trk}$ represents the track extrapolation uncertainty.
+Unlike PFlow, TCC does not perform energy subtraction; instead PU is removed.\\
+The TCC objects preserve fine angular substructure within large-radius ($R = 1.0$) jets, improving jet mass and substructure observable resolutions ($\tau_{21}, D_2$).
 
 %%%%
 \subsection*{Unified Flow Objects}\label{sec:Reco/Jets/Components/UFO}
