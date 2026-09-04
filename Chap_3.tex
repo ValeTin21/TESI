@@ -130,16 +130,14 @@ The second one, collinear safety, requires jet invariance under the splitting of
 The sequential recombination algorithms are based on the iterative combination of pairs of constituents ($i, j$), which are combined into a single object if their distance $d_{ij}$ is smaller than the distance $d_{iB}$ between each of them and the beam.
 These distances are defined as:
 \begin{equation} \label{eq:Reco/Jets/antikt/distanceantikT}
-\begin{split}
-    d_{ij}=min\big(p^{2k}_{Ti},p^{2k}_{Tj}\big)\frac{\Delta R^2_{ij}}{R^2}\\
-    d_{iB}=p^{2k}_{ti} \ \rm \rm \ \rm \ \rm \ \rm \ \rm \ \rm \rm \ \rm \ \rm \ \rm \ \rm 
-\end{split}
+    d_{ij}=min\big(p^{2k}_{Ti},p^{2k}_{Tj}\big)\frac{\Delta R^2_{ij}}{R^2} \ \rm \rm, \quad \ \rm \rm d_{iB}=p^{2k}_{ti} 
 \end{equation}
 
 \noindent where R is the radius parameter of a jet and $p$ is an additional parameter about the power of energy.
 $p$ could be equal to 1, falling in the $k_t$ algorithm, 0 for the Cambridge/Aachen and -1 in case of anti-$k_t$ algorithm \cite{antikT}.\\
 For the purpose of this thesis, the anti-$k_t$ algorithm is used, since it produces regular cone-like jets around hard seeds and it is less sensitive to soft radiation.
-Typically in ATLAS large-radius jets are reconstructed with a radius parameter of $R=1.0$ and small-radius jets with $R=0.4$.\\
+Typically in ATLAS large-radius jets are reconstructed with a radius parameter of $R=1.0$ to collect energy deposits from boosted decays.
+Small-radius jets, instead, are built with $R=0.4$ and are usually used to identify highly energetic partons generating a shower.\\
 In Fig. \ref{fig:Reco/Jets/antikt/antikt} an example of anti-$k_t$ application with large-radius jet $R=1.0$ is shown in the case of a parton-level event associated with soft radiation.
 
 \begin{figure}[ht!]
