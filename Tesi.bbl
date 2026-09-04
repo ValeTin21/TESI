@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -338,5 +338,32 @@ Andrew~J. Larkoski, Ian Moult, and Duff Neill.
 \newblock \textit{"Analytic Boosted Boson Discrimination"}.
 \newblock (2016).
 \newblock URL \url{https://arxiv.org/abs/1507.03018}.
+
+\bibitem[et~al.((2021))]{LHCOlympics}
+G.~Kasieczka et~al.
+\newblock \textit{"The LHC Olympics 2020 a community challenge for anomaly
+  detection in high energy physics"}.
+\newblock \emph{Reports on Progress in Physics}, (2021).
+\newblock URL \url{http://dx.doi.org/10.1088/1361-6633/ac36b9}.
+
+\bibitem[Gross and Vitells((2010))]{LEE_HEP}
+E.~Gross and O.~Vitells.
+\newblock \textit{"Trial factors for the look elsewhere effect in high energy
+  physics"}.
+\newblock \emph{The European Physical Journal C}, (2010).
+\newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-010-1470-8}.
+
+\bibitem[Cloudera()]{DLforAD}
+Cloudera.
+\newblock {Deep Learning for Anomaly Detection}.
+\newblock URL: \url{https://ff12.fastforwardlabs.com/}.
+
+\bibitem[Belis et~al.(2023)Belis, Odagiu, and Aarrestad]{ML4ADHEP}
+Vasilis Belis, Patrick Odagiu, and Thea~Klaeboe Aarrestad.
+\newblock {Machine learning for anomaly detection in particle physics}.
+\newblock \emph{Reviews in Physics}, 2023.
+\newblock ISSN 2405-4283.
+\newblock \doi{10.1016/j.revip.2024.100091}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
 
 \end{thebibliography}

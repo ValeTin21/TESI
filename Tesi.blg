@@ -19,6 +19,12 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "belis2023machine"
+Warning--I didn't find a database entry for "tinari2024"
+Warning--I didn't find a database entry for "kasieczka2021lhc"
+Warning--I didn't find a database entry for "davide_proc"
+Warning--I didn't find a database entry for "Russo_thesis"
+Warning--I didn't find a database entry for "dav_ad_proc"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -48,45 +54,46 @@ Warning--empty author in ATLAS_TCC
 Warning--empty journal in ATLAS_TCC
 Warning--empty author in ATLAS_UFO
 Warning--empty journal in D2
-You've used 53 entries,
+Warning--empty year in DLforAD
+You've used 57 entries,
             2481 wiz_defined-function locations,
-            865 strings with 13142 characters,
-and the built_in function-call counts, 15002 in all, are:
-= -- 1350
-> -- 452
-< -- 44
-+ -- 236
-- -- 126
-* -- 885
-:= -- 2404
-add.period$ -- 196
-call.type$ -- 53
-change.case$ -- 100
-chr.to.int$ -- 49
-cite$ -- 89
-duplicate$ -- 932
-empty$ -- 1537
-format.name$ -- 194
-if$ -- 3220
+            898 strings with 13956 characters,
+and the built_in function-call counts, 16200 in all, are:
+= -- 1457
+> -- 502
+< -- 47
++ -- 258
+- -- 140
+* -- 954
+:= -- 2604
+add.period$ -- 213
+call.type$ -- 57
+change.case$ -- 108
+chr.to.int$ -- 53
+cite$ -- 94
+duplicate$ -- 1000
+empty$ -- 1651
+format.name$ -- 214
+if$ -- 3476
 int.to.chr$ -- 5
-int.to.str$ -- 54
-missing$ -- 47
-newline$ -- 305
-num.names$ -- 138
-pop$ -- 468
+int.to.str$ -- 58
+missing$ -- 50
+newline$ -- 330
+num.names$ -- 150
+pop$ -- 503
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 57
 quote$ -- 0
-skip$ -- 568
+skip$ -- 612
 stack$ -- 0
-substring$ -- 209
-swap$ -- 104
+substring$ -- 217
+swap$ -- 112
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 344
-warning$ -- 29
-while$ -- 101
+type$ -- 372
+warning$ -- 30
+while$ -- 109
 width$ -- 0
-write$ -- 708
-(There were 29 warnings)
+write$ -- 765
+(There were 36 warnings)

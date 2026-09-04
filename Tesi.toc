@@ -38,6 +38,13 @@
 \contentsline {subsection}{\numberline {3.3.1}$N$-Subjettiness ($\tau _N$)}{39}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Energy Correlation Functions (ECFs) and $D_2$}{39}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{42}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}%
-\contentsline {chapter}{Bibliography}{44}{section*.41}%
+\contentsline {section}{\numberline {4.1}Overview of Anomaly Detection}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Deep Learning and Neural Networks}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Graph Neural Networks}{42}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Anomaly Detection Implementation via Deep Architectures}{43}{section.4.4}%
+\contentsline {section}{\numberline {4.5}What is it?}{43}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Deep Learning and Anomaly Detection}{44}{section.4.6}%
+\contentsline {section}{\numberline {4.7}How is it implemented?}{44}{section.4.7}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{46}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{47}{chapter.6}%
+\contentsline {chapter}{Bibliography}{48}{section*.41}%
