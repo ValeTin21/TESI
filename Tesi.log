@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  4 SEP 2026 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  4 SEP 2026 12:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1513,104 +1513,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--85
 <Images/Chap3/antikt_R1.png, id=798, 999.735pt x 724.7075pt>
 File: Images/Chap3/antikt_R1.png Graphic file (type png)
 <use Images/Chap3/antikt_R1.png>
-Package pdftex.def Info: Images/Chap3/antikt_R1.png  used on input line 147.
+Package pdftex.def Info: Images/Chap3/antikt_R1.png  used on input line 145.
 (pdftex.def)             Requested size: 187.90244pt x 136.203pt.
  [37 <./Images/Chap3/antikt_R1.png (PNG copy)>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 181.
+
+pdfTeX warning: pdflatex (file ./Images/Chap3/noBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap3/noBoostTop.pdf, id=813, 166.42879pt x 118.74864pt>
+File: Images/Chap3/noBoostTop.pdf Graphic file (type pdf)
+<use Images/Chap3/noBoostTop.pdf>
+Package pdftex.def Info: Images/Chap3/noBoostTop.pdf  used on input line 184.
+(pdftex.def)             Requested size: 126.7229pt x 90.42021pt.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 181.
+pdfTeX warning: pdflatex (file ./Images/Chap3/midBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap3/midBoostTop.pdf, id=814, 169.95093pt x 110.77686pt>
+File: Images/Chap3/midBoostTop.pdf Graphic file (type pdf)
+<use Images/Chap3/midBoostTop.pdf>
+Package pdftex.def Info: Images/Chap3/midBoostTop.pdf  used on input line 191.
+(pdftex.def)             Requested size: 126.7229pt x 82.60237pt.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tau' on input line 181.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 181.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 181.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 182.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 182.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 182.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 182.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 38 undefined on input line 186.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 186.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 38 undefined on input line 186.
-
+pdfTeX warning: pdflatex (file ./Images/Chap3/HighBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap3/HighBoostTop.pdf, id=815, 169.95093pt x 80.31305pt>
+File: Images/Chap3/HighBoostTop.pdf Graphic file (type pdf)
+<use Images/Chap3/HighBoostTop.pdf>
+Package pdftex.def Info: Images/Chap3/HighBoostTop.pdf  used on input line 198.
+(pdftex.def)             Requested size: 126.7229pt x 59.88658pt.
 [38]
-
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 190.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 190.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 192.
+(hyperref)                removing `math shift' on input line 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 192.
+(hyperref)                removing `math shift' on input line 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 192.
+(hyperref)                removing `math shift' on input line 214.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 193.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 214.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 193.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 214.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 193.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 214.
+
+<Images/Chap3/tau2W.png, id=826, 405.515pt x 355.3275pt>
+File: Images/Chap3/tau2W.png Graphic file (type png)
+<use Images/Chap3/tau2W.png>
+Package pdftex.def Info: Images/Chap3/tau2W.png  used on input line 237.
+(pdftex.def)             Requested size: 145.73068pt x 127.6955pt.
+<Images/Chap3/tau2tau1W.png, id=827, 405.515pt x 355.3275pt>
+File: Images/Chap3/tau2tau1W.png Graphic file (type png)
+<use Images/Chap3/tau2tau1W.png>
+Package pdftex.def Info: Images/Chap3/tau2tau1W.png  used on input line 244.
+(pdftex.def)             Requested size: 145.73068pt x 127.6955pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 193.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 253.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 199.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 199.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 254.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 199.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 254.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 199.
+Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 254.
 
 
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 203.
+Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 254.
+
+[39 <./Images/Chap3/noBoostTop.pdf> <./Images/Chap3/midBoostTop.pdf> <./Images/Chap3/HighBoostTop.pdf>]
+
+Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 260.
 
 
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 203.
+Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 260.
 
-) [39]
+
+Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 260.
+
+
+Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 260.
+
+
+Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 264.
+
+
+Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 264.
+
+) [40 <./Images/Chap3/tau2W.png> <./Images/Chap3/tau2tau1W.png>]
 \openout2 = `Chap_4.aux'.
 
  (Chap_4.tex
 Chapter 4.
-) [40
+) [41
 
 
 
@@ -1620,7 +1635,7 @@ Chapter 4.
 
  (Chap_5.tex
 Chapter 5.
-) [41
+) [42
 
 
 
@@ -1630,7 +1645,7 @@ Chapter 5.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [42
+) [43
 
 
 
@@ -1644,17 +1659,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [43
+ [44
 
 
 
 
 
-] [44] [45])
+] [45] [46])
 
 Package natbib Warning: There were undefined citations.
 
-[46] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+[47] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1664,20 +1679,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 5D81DC40C60C09D2A1EA0D899A9587E5;7252.
+(rerunfilecheck)             Checksum: 07EE7CD1AA6EE1C9A16DA4F6F483CCD1;7252.
  ) 
 Here is how much of TeX's memory you used:
- 46242 strings out of 467510
- 1006843 string characters out of 5408794
- 1516469 words of memory out of 5000000
- 74153 multiletter control sequences out of 15000+600000
- 760165 words of font info for 292 fonts, out of 8000000 for 9000
+ 46317 strings out of 467510
+ 1008814 string characters out of 5408794
+ 1517573 words of memory out of 5000000
+ 74208 multiletter control sequences out of 15000+600000
+ 765103 words of font info for 300 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,13n,131p,2550b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (52 pages, 6684536 bytes).
+ 102i,13n,131p,2550b,690s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Tesi.pdf (53 pages, 6794005 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
- 236 named destinations out of 1000 (max. 500000)
- 72666 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1194 PDF objects out of 1200 (max. 8388607)
+ 241 named destinations out of 1000 (max. 500000)
+ 74739 words of extra memory for PDF output out of 89155 (max. 10000000)
 

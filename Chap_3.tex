@@ -171,21 +171,84 @@ The JER, jet energy resolution, can be espressed, as a function of $p_T$ in a fo
 %-------------------------------------------------------------------------------
 \section{Jet substructure variables}\label{sec:Reco/Vars}
 
-Specific variables have been developed to analyze the internal subtructure of jets.
-This task is particularly relevant in the context of boosted topologies, where the decay products of heavy particles are highly collimated and can be reconstructed as a single large-radius jet.
-Those variables should allow to discriminate jets coming from different physical processes, such as the decay of heavy particles ($W$,$Z$,$H$), those produced by QCD processes and those associated with BSM signals.
+A single hadronic final state can be reconstructed in different ways, from multiple small-radius jets to a single large-radius jet, depending on the boost regime of the event.
+In the latter case, the reconstructed jet contains the highly collimated decay products of the original parton, which form a subtructure within the jet, differentiating it from the case when the jet is produced by a single parton.
+In Fig. \ref{fig:Reco/Vars/BoostedTop} an example is shown of the top quark decaying hadronically in the channel $t \to Wb \to q\bar{q}'b$, in three different boost regimes.
+In particular, from Fig. \ref{subfig:Reco/Vars/BoostedTop/HIGH} it is visible that the highly boosted red large-radius jet contains a subtructure of three smaller jets, differentiating it from the case of a single parton small-radius jets, as shown in Fig. \ref{subfig:Reco/Vars/BoostedTop/NO}.
 
+\begin{figure}[htbp]
+  \centering
 
-\subsection{N-Subjettiness ($\tau_N$)} 
-$N$-subjettiness quantifies the degree to which a jet's constituent energy is aligned along $N$ candidate subjet axes \cite{Russo:2025, Frattari:2021}. It is calculated as \cite{Russo:2025, Frattari:2021}:
-\begin{equation}
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap3/noBoostTop.pdf}
+    \caption{}
+    \label{subfig:Reco/Vars/BoostedTop/NO}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap3/midBoostTop.pdf}
+    \caption{}
+    \label{subfig:Reco/Vars/BoostedTop/MID}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap3/HighBoostTop.pdf}
+    \caption{}
+    \label{subfig:Reco/Vars/BoostedTop/HIGH}
+  \end{subfigure}
+  
+  \caption{Diagram illustrating different boosted jet regimes of the hadronic top decay and their reconstruction. The three subfigures represent (a) a lowly boosted top quark, (b) a moderately boosted top quark, and (c) a highly boosted top quark. In each case, the decay products of the top quark are shown, along with the corresponding jet reconstruction.}
+  \label{fig:Reco/Vars/BoostedTop}
+\end{figure}
+
+\noindent Subtructure can then discriminate between jets originating from different physical processes, such as the decay of the top quark in three "prongs"\footnotemark, the decay of a $W/Z$ boson in two "prongs" or a single-prong QCD or BSM jet.
+Specific variables, based on the kinematic properties of the jet constituents and their spatial distribution within the jet, have been developed to allow this classification.
+Those variables presented below are used in the analysis conducted in this thesis, as comparison with the results obtained from the Anomaly Detection approach.
+
+\footnotetext{\textit{Prong} is the colloquial term used to refer to the constituents of the jet substructure.}
+
+%-------------------------------------------------------------------------------
+\subsection{$N$-Subjettiness ($\tau_N$)} \label{sec:Reco/Vars/tau_N}
+The $N$-subjettiness \cite{tau_N}, denoted as $\tau_N$, is used to quantify the compatibility of a jet reconstruction with an $N$-prong hypothesis.
+Following the jet reconstruction as described in the previous section, $\tau_N$ is calculated as:
+\begin{equation}\label{eq:Reco/Vars/tau_N}
 \tau_N = \frac{1}{R_0 \sum_i p_{\text{T},i}} \sum_i p_{\text{T},i} \min \left\{ \Delta R_{1,i}, \Delta R_{2,i}, \dots, \Delta R_{N,i} \right\}
 \end{equation}
-where $i$ iterates over all jet constituents, $R_0$ is the main jet radius, and $\Delta R_{k,i}$ represents the spatial distance between constituent $i$ and subjet axis $k$ (typically derived via exclusive $k_t$ or winner-takes-all axes) \cite{Russo:2025, Frattari:2021}. Small values of $\tau_N$ indicate that the radiation is concentrated around $N$ or fewer cores \cite{Frattari:2021}. Disambiguation of $N$-prong hypotheses is achieved using ratio variables:
-\begin{equation}
+
+\noindent where $i$ runs over all jet constituents, $R_0$ is the jet radius and $\Delta R_{k,i}$ represents the distance between constituent $i$ and subjet axis $k$.
+Small values of $\tau_N$ indicate that the radiation is aligned with the direction of the $N$ subjects, therefore the jet is compatible with an $N$-prong hypothesis, while large values of $\tau_N$ indicate that the jet are compatible with the $N+1$-prong and higher hypothesis.
+The ratio of two subjettiness is usually preferred to discriminate between different prong hypotheses. It is defined as:
+\begin{equation}\label{eq:Reco/Vars/tau_ratio}
 \tau_{N, N-1} = \frac{\tau_N}{\tau_{N-1}}
 \end{equation}
-The ratio $\tau_{21} = \tau_2 / \tau_1$ effectively isolates two-prong vector boson decays ($W/Z \to q\bar{q}$) from single-prong QCD jets, whereas $\tau_{32} = \tau_3 / \tau_2$ discriminates three-prong top-quark decays ($t \to bW \to bq\bar{q}'$) \cite{Russo:2025, Frattari:2021}.
+The ratio $\tau_{21} = \tau_2 / \tau_1$ can isolate two-prong vector boson decays such as $W/Z$ from single-prong QCD jets. 
+$\tau_{32} = \tau_3 / \tau_2$, instead, can be used to tag three-prong top quark decays.\\
+In Fig. \ref{fig:Reco/Vars/tauN} example distributions of $\tau_2$ and $\tau_{21}$ are shown for jets produced in $W$ and QCD processes. 
+It shows that the two-prong hypothesis is more compatible with the former than the latter and this can be identified more easily using the ratio $\tau_{21}$.
+
+\begin{figure}[htbp]
+  \centering
+
+  \begin{subfigure}[b]{0.46\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/Chap3/tau2W.png}
+    \caption{}
+    \label{subfig:Reco/Vars/tauN/tau2}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.46\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/Chap3/tau2tau1W.png}
+    \caption{}
+    \label{subfig:Reco/Vars/tauN/tau2tau1}
+  \end{subfigure}
+  
+  \caption{(a) Distribution of $\tau_2$ for jets produced by $W$ and QCD. (b) Distribution of $\tau_{21}$ for the same entities. Figure from Ref. \cite{tau_N}}
+  \label{fig:Reco/Vars/tauN}
+\end{figure}
 
 \subsection{Energy Correlation Functions (ECFs) and $D_2$}
 Energy Correlation Functions measure multi-particle angular correlations without necessitating candidate subjet axis definitions \cite{Russo:2025, Frattari:2021}. The $v$-point correlation functions for a jet $J$ are expressed as \cite{Russo:2025, Frattari:2021}:

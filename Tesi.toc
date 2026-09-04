@@ -35,9 +35,9 @@
 \contentsline {subsection}{\numberline {3.2.2}Constituents combination and jets formation}{37}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Jet calibration}{37}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Jet substructure variables}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}N-Subjettiness ($\tau _N$)}{38}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}$N$-Subjettiness ($\tau _N$)}{39}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Energy Correlation Functions (ECFs) and $D_2$}{39}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Anomaly Detection}{40}{chapter.4}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{41}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{42}{chapter.6}%
-\contentsline {chapter}{Bibliography}{43}{section*.38}%
+\contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{42}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}%
+\contentsline {chapter}{Bibliography}{44}{section*.40}%

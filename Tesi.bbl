@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -320,5 +320,11 @@ M.~Cacciari, G.~P. Salam, and G.~Soyez.
 \newblock \textit{"The anti-ktjet clustering algorithm"}.
 \newblock \emph{Journal of High Energy Physics}, (2008).
 \newblock URL \url{http://dx.doi.org/10.1088/1126-6708/2008/04/063}.
+
+\bibitem[Thaler and Van~Tilburg((2011))]{tau_N}
+Jesse Thaler and Ken Van~Tilburg.
+\newblock \textit{"Identifying boosted objects with N-subjettiness"}.
+\newblock \emph{Journal of High Energy Physics}, (2011).
+\newblock URL \url{http://dx.doi.org/10.1007/JHEP03(2011)015}.
 
 \end{thebibliography}
