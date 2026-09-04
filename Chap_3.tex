@@ -250,16 +250,28 @@ It shows that the two-prong hypothesis is more compatible with the former than t
   \label{fig:Reco/Vars/tauN}
 \end{figure}
 
-\subsection{Energy Correlation Functions (ECFs) and $D_2$}
-Energy Correlation Functions measure multi-particle angular correlations without necessitating candidate subjet axis definitions \cite{Russo:2025, Frattari:2021}. The $v$-point correlation functions for a jet $J$ are expressed as \cite{Russo:2025, Frattari:2021}:
-\begin{align}
-\text{ECF}_1 &= \sum_{i \in J} p_{\text{T},i} \\
+%-------------------------------------------------------------------------------
+\subsection{Energy Correlation Functions (ECFs) and $D_2$}\label{sec:Reco/Vars/D2}
+Energy Correlation Functions (ECFs) \cite{ECF,D2} are using, once again, to tag jets with substructure without necessitating the definition of candidate subjet axis.
+Referred to the jet $J$, they are defined as:
+\begin{align}\label{eq:Reco/Vars/D2/ECF}
+\text{ECF}_0 &= 1 , \quad \text{ECF}_1 = \sum_{i \in J} p_{\text{T},i} \\
 \text{ECF}_2(\beta) &= \sum_{i<j \in J} p_{\text{T},i} p_{\text{T},j} (\Delta R_{ij})^\beta \\
 \text{ECF}_3(\beta) &= \sum_{i<j<k \in J} p_{\text{T},i} p_{\text{T},j} p_{\text{T},k} (\Delta R_{ij} \Delta R_{ik} \Delta R_{jk})^\beta
 \end{align}
-where $\beta$ is an angular weighting exponent \cite{Russo:2025, Frattari:2021}. Combining these function topologies yields the dimensionless discriminant $D_2$, defined as \cite{Russo:2025, Frattari:2021}:
+where $\beta$, usually set to 1, is an angular weighting exponent. 
+A combination of these function is used to define $D_2$, which is a powerful discriminant to identify two-prong substructure within jets.
+The $D_2$ variable is derived as:
 \begin{equation}
-D_2(\beta) = \frac{\text{ECF}_3 \cdot (\text{ECF}_1)^3}{(\text{ECF}_2)^3}
+D_2 = \frac{\text{ECF}_3 \cdot (\text{ECF}_1)^3}{(\text{ECF}_2)^3}
 \end{equation}
-Low $D_2$ values strongly correlate with two-hard-prong radiation profiles, serving as a powerful handle to isolate boosted hadronically decaying resonances \cite{Russo:2025, Frattari:2021}.
+\noindent Similarly to $\tau_2$, lower values of $D_2$ are associated with a higher probability of the jet being produced by a two-prong decay, while higher values indicate more probable single-prong origin.
+An example of the $D_2$ distributions for jets produced by $Z$ and QCD processes is shown in Fig. \ref{fig:Reco/Vars/D2/D2}.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.2 in]{Images/Chap3/D2.pdf}
+    \caption{Distribution of $D_2$ for jets produced by $Z$ and QCD. Figure from Ref. \cite{D2}}
+    \label{fig:Reco/Vars/D2/D2}
+\end{figure}
 

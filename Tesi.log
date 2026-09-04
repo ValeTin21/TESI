@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  4 SEP 2026 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  4 SEP 2026 13:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1579,48 +1579,23 @@ Package pdftex.def Info: Images/Chap3/tau2tau1W.png  used on input line 244.
 (pdftex.def)             Requested size: 145.73068pt x 127.6955pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
+(hyperref)                removing `math shift' on input line 254.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 253.
+(hyperref)                removing `subscript' on input line 254.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 254.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 254.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 39 undefined on input line 254.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 39 undefined on input line 254.
+(hyperref)                removing `math shift' on input line 254.
 
 [39 <./Images/Chap3/noBoostTop.pdf> <./Images/Chap3/midBoostTop.pdf> <./Images/Chap3/HighBoostTop.pdf>]
-
-Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 260.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 260.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 260.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 260.
-
-
-Package natbib Warning: Citation `Russo:2025' on page 40 undefined on input line 264.
-
-
-Package natbib Warning: Citation `Frattari:2021' on page 40 undefined on input line 264.
-
-) [40 <./Images/Chap3/tau2W.png> <./Images/Chap3/tau2tau1W.png>]
+<Images/Chap3/D2.pdf, id=922, 351.3125pt x 287.0725pt>
+File: Images/Chap3/D2.pdf Graphic file (type pdf)
+<use Images/Chap3/D2.pdf>
+Package pdftex.def Info: Images/Chap3/D2.pdf  used on input line 273.
+(pdftex.def)             Requested size: 158.99377pt x 129.9217pt.
+) [40 <./Images/Chap3/tau2W.png> <./Images/Chap3/tau2tau1W.png> <./Images/Chap3/D2.pdf>]
 \openout2 = `Chap_4.aux'.
 
  (Chap_4.tex
@@ -1665,11 +1640,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-] [45] [46])
-
-Package natbib Warning: There were undefined citations.
-
-[47] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+] [45] [46]) [47] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1679,20 +1650,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 07EE7CD1AA6EE1C9A16DA4F6F483CCD1;7252.
+(rerunfilecheck)             Checksum: 21758CC3E00264A1A138EB6882EF0CE7;7252.
  ) 
 Here is how much of TeX's memory you used:
- 46317 strings out of 467510
- 1008814 string characters out of 5408794
- 1517573 words of memory out of 5000000
- 74208 multiletter control sequences out of 15000+600000
- 765103 words of font info for 300 fonts, out of 8000000 for 9000
+ 46338 strings out of 467510
+ 1009196 string characters out of 5408794
+ 1517966 words of memory out of 5000000
+ 74224 multiletter control sequences out of 15000+600000
+ 765233 words of font info for 301 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,690s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (53 pages, 6794005 bytes).
+Output written on Tesi.pdf (53 pages, 6853041 bytes).
 PDF statistics:
- 1194 PDF objects out of 1200 (max. 8388607)
- 241 named destinations out of 1000 (max. 500000)
- 74739 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1267 PDF objects out of 1440 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
+ 74744 words of extra memory for PDF output out of 89155 (max. 10000000)
 
