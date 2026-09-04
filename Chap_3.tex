@@ -124,8 +124,11 @@ By combining PFlow subtraction at low $p_T$ with TCC angular splitting at high $
 \subsection{Constituents combination and jets formation}\label{sec:Reco/Jets/antikt}
 
 After having reconstructed the constituents of the jets, they are combined to form the final jet object.
-The combination is performed applying sequential recombination algorithms.
-These methods rely on the distance $d_{ij}$ between two constituents ($i, j$) and the distance $d_{iB}$ between a jet $i$ and the beam B:
+The combination is performed applying sequential recombination algorithms, which must satisfy two main requirements: \textit{infrared} and \textit{collinear safety}.
+The first one, infrared safety, requires that the addition of a soft particle to the jet cluster does not impact on the jet itself.
+The second one, collinear safety, requires jet invariance under the splitting of a constituent particle into two collinear particles.\\
+The sequential recombination algorithms are based on the iterative combination of pairs of constituents ($i, j$), which are combined into a single object if their distance $d_{ij}$ is smaller than the distance $d_{iB}$ between each of them and the beam.
+These distances are defined as:
 \begin{equation} \label{eq:Reco/Jets/antikt/distanceantikT}
 \begin{split}
     d_{ij}=min\big(p^{2k}_{Ti},p^{2k}_{Tj}\big)\frac{\Delta R^2_{ij}}{R^2}\\
@@ -139,9 +142,9 @@ For the purpose of this thesis, the anti-$k_t$ algorithm is used, since it produ
 Typically in ATLAS large-radius jets are reconstructed with a radius parameter of $R=1.0$ and small-radius jets with $R=0.4$.\\
 In Fig. \ref{fig:Reco/Jets/antikt/antikt} an example of anti-$k_t$ application with large-radius jet $R=1.0$ is shown in the case of a parton-level event associated with soft radiation.
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap3/antikt_R1.png}
+    \includegraphics[width=2.6 in]{Images/Chap3/antikt_R1.png}
     \caption{Example of anti-$k_t$ application with large-radius jets. Figure from Ref. \cite{antikT}}
     \label{fig:Reco/Jets/antikt/antikt}
 \end{figure}
@@ -166,15 +169,16 @@ The JER, jet energy resolution, can be espressed, as a function of $p_T$ in a fo
 
 \noindent with S the stochastic term associated with detector response, N the noise term and C the constant term associated with jet formation, which is the major contribution at high momentum.
 
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Jet substructure variables}\label{sec:Reco/Vars}
 
-\subsection{Detailed Jet Reconstruction and Substructure Variables}
+Specific variables have been developed to analyze the internal subtructure of jets.
+This task is particularly relevant in the context of boosted topologies, where the decay products of heavy particles are highly collimated and can be reconstructed as a single large-radius jet.
+Those variables should allow to discriminate jets coming from different physical processes, such as the decay of heavy particles ($W$,$Z$,$H$), those produced by QCD processes and those associated with BSM signals.
 
 
-\subsubsection{Jet Substructure Observables}
-
-When massive unstable particles (e.g., $W$, $Z$, $H$ bosons or top quarks) decay hadronically with high transverse momentum ($p_{\text{T}} \gg m$), their decay products become Lorentz-boosted into a single large-radius jet envelope \cite{Russo:2025, Frattari:2021}. Identifying such boosted topologies against single-parton QCD background jets relies on characterizing energy distributions within the jet core through substructure variables \cite{Russo:2025, Frattari:2021}.
-
-\paragraph{N-Subjettiness ($\tau_N$)} 
+\subsection{N-Subjettiness ($\tau_N$)} 
 $N$-subjettiness quantifies the degree to which a jet's constituent energy is aligned along $N$ candidate subjet axes \cite{Russo:2025, Frattari:2021}. It is calculated as \cite{Russo:2025, Frattari:2021}:
 \begin{equation}
 \tau_N = \frac{1}{R_0 \sum_i p_{\text{T},i}} \sum_i p_{\text{T},i} \min \left\{ \Delta R_{1,i}, \Delta R_{2,i}, \dots, \Delta R_{N,i} \right\}
@@ -185,7 +189,7 @@ where $i$ iterates over all jet constituents, $R_0$ is the main jet radius, and 
 \end{equation}
 The ratio $\tau_{21} = \tau_2 / \tau_1$ effectively isolates two-prong vector boson decays ($W/Z \to q\bar{q}$) from single-prong QCD jets, whereas $\tau_{32} = \tau_3 / \tau_2$ discriminates three-prong top-quark decays ($t \to bW \to bq\bar{q}'$) \cite{Russo:2025, Frattari:2021}.
 
-\paragraph{Energy Correlation Functions (ECFs) and $D_2$}
+\subsection{Energy Correlation Functions (ECFs) and $D_2$}
 Energy Correlation Functions measure multi-particle angular correlations without necessitating candidate subjet axis definitions \cite{Russo:2025, Frattari:2021}. The $v$-point correlation functions for a jet $J$ are expressed as \cite{Russo:2025, Frattari:2021}:
 \begin{align}
 \text{ECF}_1 &= \sum_{i \in J} p_{\text{T},i} \\
@@ -197,10 +201,4 @@ where $\beta$ is an angular weighting exponent \cite{Russo:2025, Frattari:2021}.
 D_2(\beta) = \frac{\text{ECF}_3 \cdot (\text{ECF}_1)^3}{(\text{ECF}_2)^3}
 \end{equation}
 Low $D_2$ values strongly correlate with two-hard-prong radiation profiles, serving as a powerful handle to isolate boosted hadronically decaying resonances \cite{Russo:2025, Frattari:2021}.
-
-\section{Version 2}
-
-
-\subsection{Missing Transverse Momentum}
-Conservation of momentum in the transverse plane allows the reconstruction of weakly interacting or stable invisible particles \cite{Frattari_thesis, Russo_thesis}. The missing transverse momentum vector, $\vec{p}_{\text{T}}^{\text{miss}}$, is defined as the negative vector sum of the transverse momenta of all reconstructed and calibrated hard physics objects, plus a soft term \cite{Frattari_thesis, Russo_thesis}. Hard objects include electrons, photons, muons, tau leptons, and jets \cite{Frattari_thesis, Russo_thesis}. The soft term accounts for signals not associated with any hard object \cite{Frattari_thesis, Russo_thesis}. To minimize pile-up contamination, the Track Soft Term is calculated using only reconstructed Inner Detector tracks associated with the primary hard-scatter vertex, omitting neutral calorimeter deposits \cite{Frattari_thesis, Russo_thesis}. Overlaps between reconstructed objects are resolved sequentially to prevent double-counting of detector signals \cite{Frattari_thesis, Russo_thesis}.
 

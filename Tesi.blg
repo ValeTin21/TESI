@@ -21,8 +21,6 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Warning--I didn't find a database entry for "Russo:2025"
 Warning--I didn't find a database entry for "Frattari:2021"
-Warning--I didn't find a database entry for "Frattari_thesis"
-Warning--I didn't find a database entry for "Russo_thesis"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -53,7 +51,7 @@ Warning--empty journal in ATLAS_TCC
 Warning--empty author in ATLAS_UFO
 You've used 50 entries,
             2481 wiz_defined-function locations,
-            858 strings with 12806 characters,
+            854 strings with 12752 characters,
 and the built_in function-call counts, 14024 in all, are:
 = -- 1269
 > -- 395
@@ -92,4 +90,4 @@ warning$ -- 28
 while$ -- 95
 width$ -- 0
 write$ -- 667
-(There were 32 warnings)
+(There were 30 warnings)
