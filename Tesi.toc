@@ -38,18 +38,18 @@
 \contentsline {subsection}{\numberline {3.3.1}$N$-Subjettiness ($\tau _N$)}{39}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Energy Correlation Functions (ECFs) and $D_2$}{39}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}V 2}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}What is Anomaly Detection}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Machine Learning and Deep Neural Networks}{42}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Graph Neural Networks}{43}{section.4.4}%
+\contentsline {section}{\numberline {4.1}What is Anomaly detection?}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}V 2}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Machine Learning and Deep Neural Networks}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Graph Neural Networks}{44}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Anomaly Detection Implementation with Deep Learning}{44}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Overview of Anomaly Detection}{45}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Deep Learning and Neural Networks}{45}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Deep Learning and Neural Networks}{46}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Graph Neural Networks}{46}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Anomaly Detection Implementation via Deep Architectures}{46}{section.4.9}%
+\contentsline {section}{\numberline {4.9}Anomaly Detection Implementation via Deep Architectures}{47}{section.4.9}%
 \contentsline {section}{\numberline {4.10}What is it?}{47}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Deep Learning and Anomaly Detection}{47}{section.4.11}%
+\contentsline {section}{\numberline {4.11}Deep Learning and Anomaly Detection}{48}{section.4.11}%
 \contentsline {section}{\numberline {4.12}How is it implemented?}{48}{section.4.12}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{49}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{50}{chapter.6}%
-\contentsline {chapter}{Bibliography}{51}{section*.41}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{50}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}%
+\contentsline {chapter}{Bibliography}{52}{section*.42}%

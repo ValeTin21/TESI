@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -354,6 +354,12 @@ E.~Gross and O.~Vitells.
   physics"}.
 \newblock \emph{The European Physical Journal C}, (2010).
 \newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-010-1470-8}.
+
+\bibitem[Chandola et~al.((2009))Chandola, Banerjee, and Kumar]{AD_survey}
+V.~Chandola, A.~Banerjee, and V.~Kumar.
+\newblock \textit{"Anomaly detection: A survey"}.
+\newblock \emph{ACM Computing Surveys}, 41, (2009).
+\newblock \doi{10.1145/1541880.1541882}.
 
 \bibitem[Cloudera()]{DLforAD}
 Cloudera.

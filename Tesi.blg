@@ -53,45 +53,45 @@ Warning--empty author and editor in ATLAS_Computing
 Warning--empty journal in ATLAS_TCC
 Warning--empty journal in D2
 Warning--empty year in DLforAD
-You've used 57 entries,
+You've used 58 entries,
             2481 wiz_defined-function locations,
-            895 strings with 13889 characters,
-and the built_in function-call counts, 16247 in all, are:
-= -- 1455
-> -- 516
+            902 strings with 14019 characters,
+and the built_in function-call counts, 16584 in all, are:
+= -- 1483
+> -- 537
 < -- 49
-+ -- 262
-- -- 144
-* -- 943
-:= -- 2634
-add.period$ -- 213
-call.type$ -- 57
-change.case$ -- 108
-chr.to.int$ -- 53
-cite$ -- 90
-duplicate$ -- 1000
-empty$ -- 1647
-format.name$ -- 220
-if$ -- 3478
++ -- 270
+- -- 150
+* -- 969
+:= -- 2693
+add.period$ -- 217
+call.type$ -- 58
+change.case$ -- 110
+chr.to.int$ -- 54
+cite$ -- 91
+duplicate$ -- 1018
+empty$ -- 1675
+format.name$ -- 227
+if$ -- 3548
 int.to.chr$ -- 5
-int.to.str$ -- 58
-missing$ -- 50
-newline$ -- 330
-num.names$ -- 156
-pop$ -- 503
+int.to.str$ -- 59
+missing$ -- 51
+newline$ -- 336
+num.names$ -- 159
+pop$ -- 509
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 58
 quote$ -- 0
-skip$ -- 612
+skip$ -- 623
 stack$ -- 0
-substring$ -- 215
-swap$ -- 112
+substring$ -- 217
+swap$ -- 114
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 372
+type$ -- 379
 warning$ -- 28
-while$ -- 113
+while$ -- 115
 width$ -- 0
-write$ -- 765
+write$ -- 780
 (There were 34 warnings)
