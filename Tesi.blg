@@ -19,6 +19,8 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
+Warning--entry type for "DLThesis" isn't style-file defined
+--line 476 of file bibliography.bib
 Warning--I didn't find a database entry for "belis2023machine"
 Warning--I didn't find a database entry for "tinari2024"
 Warning--I didn't find a database entry for "kasieczka2021lhc"
@@ -53,45 +55,45 @@ Warning--empty author and editor in ATLAS_Computing
 Warning--empty journal in ATLAS_TCC
 Warning--empty journal in D2
 Warning--empty year in DLforAD
-You've used 58 entries,
+You've used 62 entries,
             2481 wiz_defined-function locations,
-            902 strings with 14019 characters,
-and the built_in function-call counts, 16584 in all, are:
-= -- 1483
-> -- 537
-< -- 49
-+ -- 270
-- -- 150
-* -- 969
-:= -- 2693
-add.period$ -- 217
-call.type$ -- 58
-change.case$ -- 110
-chr.to.int$ -- 54
-cite$ -- 91
-duplicate$ -- 1018
-empty$ -- 1675
-format.name$ -- 227
-if$ -- 3548
+            927 strings with 14697 characters,
+and the built_in function-call counts, 17683 in all, are:
+= -- 1575
+> -- 585
+< -- 52
++ -- 292
+- -- 164
+* -- 1031
+:= -- 2873
+add.period$ -- 229
+call.type$ -- 62
+change.case$ -- 117
+chr.to.int$ -- 58
+cite$ -- 95
+duplicate$ -- 1075
+empty$ -- 1785
+format.name$ -- 245
+if$ -- 3782
 int.to.chr$ -- 5
-int.to.str$ -- 59
+int.to.str$ -- 63
 missing$ -- 51
-newline$ -- 336
-num.names$ -- 159
-pop$ -- 509
+newline$ -- 356
+num.names$ -- 171
+pop$ -- 550
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 62
 quote$ -- 0
-skip$ -- 623
+skip$ -- 668
 stack$ -- 0
-substring$ -- 217
-swap$ -- 114
+substring$ -- 225
+swap$ -- 122
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 379
+type$ -- 407
 warning$ -- 28
-while$ -- 115
+while$ -- 123
 width$ -- 0
-write$ -- 780
-(There were 34 warnings)
+write$ -- 830
+(There were 35 warnings)
