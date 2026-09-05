@@ -50,50 +50,48 @@ Warning--empty author and editor in ATLAS_Calo
 Warning--empty author and editor in ATLAS_LArCalo
 Warning--empty institution in ATLAS_TDAQ_report
 Warning--empty author and editor in ATLAS_Computing
-Warning--empty author in ATLAS_TCC
 Warning--empty journal in ATLAS_TCC
-Warning--empty author in ATLAS_UFO
 Warning--empty journal in D2
 Warning--empty year in DLforAD
 You've used 57 entries,
             2481 wiz_defined-function locations,
-            898 strings with 13956 characters,
-and the built_in function-call counts, 16200 in all, are:
-= -- 1457
-> -- 502
-< -- 47
-+ -- 258
-- -- 140
-* -- 954
-:= -- 2604
+            895 strings with 13889 characters,
+and the built_in function-call counts, 16247 in all, are:
+= -- 1455
+> -- 516
+< -- 49
++ -- 262
+- -- 144
+* -- 943
+:= -- 2634
 add.period$ -- 213
 call.type$ -- 57
 change.case$ -- 108
 chr.to.int$ -- 53
-cite$ -- 94
+cite$ -- 90
 duplicate$ -- 1000
-empty$ -- 1651
-format.name$ -- 214
-if$ -- 3476
+empty$ -- 1647
+format.name$ -- 220
+if$ -- 3478
 int.to.chr$ -- 5
 int.to.str$ -- 58
 missing$ -- 50
 newline$ -- 330
-num.names$ -- 150
+num.names$ -- 156
 pop$ -- 503
 preamble$ -- 1
 purify$ -- 57
 quote$ -- 0
 skip$ -- 612
 stack$ -- 0
-substring$ -- 217
+substring$ -- 215
 swap$ -- 112
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 372
-warning$ -- 30
-while$ -- 109
+warning$ -- 28
+while$ -- 113
 width$ -- 0
 write$ -- 765
-(There were 36 warnings)
+(There were 34 warnings)

@@ -304,14 +304,16 @@ M.~Aaboud et~al.
 \newblock \emph{The European Physical Journal C}, (2017){\natexlab{b}}.
 \newblock URL \url{https://doi.org/10.1140/epjc/s10052-017-5031-2}.
 
-\bibitem[ATL((2017))]{ATLAS_TCC}
-\textit{"Improving jet substructure performance in ATLAS using
+\bibitem[collaboration((2017))]{ATLAS_TCC}
+ATLAS collaboration.
+\newblock \textit{"Improving jet substructure performance in ATLAS using
   Track-CaloClusters"}.
 \newblock (2017).
 
-\bibitem[ATL((2022))]{ATLAS_UFO}
-\textit{"R=0.4 jets input comparison and Monte Carlo calibration with the ATLAS
-  Detector"}.
+\bibitem[collaboration((2022))]{ATLAS_UFO}
+ATLAS collaboration.
+\newblock \textit{"R=0.4 jets input comparison and Monte Carlo calibration with
+  the ATLAS Detector"}.
 \newblock Technical report, CERN, (2022).
 \newblock URL \url{https://cds.cern.ch/record/2824558}.
 
@@ -322,19 +324,19 @@ M.~Cacciari, G.~P. Salam, and G.~Soyez.
 \newblock URL \url{http://dx.doi.org/10.1088/1126-6708/2008/04/063}.
 
 \bibitem[Thaler and Van~Tilburg((2011))]{tau_N}
-Jesse Thaler and Ken Van~Tilburg.
+J.~Thaler and K.~Van~Tilburg.
 \newblock \textit{"Identifying boosted objects with N-subjettiness"}.
 \newblock \emph{Journal of High Energy Physics}, (2011).
 \newblock URL \url{http://dx.doi.org/10.1007/JHEP03(2011)015}.
 
 \bibitem[Larkoski et~al.((2013))Larkoski, Salam, and Thaler]{ECF}
-Andrew~J. Larkoski, Gavin~P. Salam, and Jesse Thaler.
+A.~J. Larkoski, G.~P. Salam, and J.~Thaler.
 \newblock \textit{"Energy correlation functions for jet substructure"}.
 \newblock \emph{Journal of High Energy Physics}, (2013).
 \newblock URL \url{https://doi.org/10.1007/JHEP06(2013)108}.
 
 \bibitem[Larkoski et~al.((2016))Larkoski, Moult, and Neill]{D2}
-Andrew~J. Larkoski, Ian Moult, and Duff Neill.
+A.~J. Larkoski, I.~Moult, and D.~Neill.
 \newblock \textit{"Analytic Boosted Boson Discrimination"}.
 \newblock (2016).
 \newblock URL \url{https://arxiv.org/abs/1507.03018}.
@@ -358,12 +360,11 @@ Cloudera.
 \newblock {Deep Learning for Anomaly Detection}.
 \newblock URL: \url{https://ff12.fastforwardlabs.com/}.
 
-\bibitem[Belis et~al.(2023)Belis, Odagiu, and Aarrestad]{ML4ADHEP}
-Vasilis Belis, Patrick Odagiu, and Thea~Klaeboe Aarrestad.
-\newblock {Machine learning for anomaly detection in particle physics}.
-\newblock \emph{Reviews in Physics}, 2023.
-\newblock ISSN 2405-4283.
-\newblock \doi{10.1016/j.revip.2024.100091}.
+\bibitem[Belis et~al.((2023))Belis, Odagiu, and Aarrestad]{ML4ADHEP}
+V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
+\newblock \textit{"Machine learning for anomaly detection in particle
+  physics"}.
+\newblock \emph{Reviews in Physics}, (2023).
 \newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
 
 \end{thebibliography}
