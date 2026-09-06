@@ -55,7 +55,7 @@ If the number of layers is large, the model is defined as Deep Neural Network (D
 %%%%
 \subsection*{Mathematical definition}\label{sec:AD/DL/mathdef}
 
-\noindent The aim of a model training is to find the best function that connects input and output data. 
+\noindent The aim of a model training is to find the best function $f$ that connects input $\mathcal{X}$ and output data $\mathcal{X}$, $f: \mathcal{X} \to \mathcal{Y}$ . 
 In order to achieve this goal, the function connecting a layer to the following is defined as \cite{recoALGO}:
 \begin{equation}\label{eq:AD/DL/weightsDL}
     O^L_i=\sigma \Big(\sum_jW^L_{ij}I^L_j+B_i^L\Big)
@@ -105,7 +105,7 @@ Values are combined to present the best estimation of weights.
 %-------------------------------------------------------------------------------
 \subsection{Learning paradigms}\label{sec:AD/DL/LearParadigms}
 ML and DL methods can be classified based on how the labels of data are used to train models. 
-Main categories are: \textit{Supervised Learning, Unsupervised Learning and Semi-Supervised Learning}.\cite{DLforAD}\\
+Main categories are: \textit{Supervised, Unsupervised, Semi-Supervised and Weakly-Supervised Learning}.\cite{DLforAD}\\
 In Supervised Learning, shown in figure \ref{fig:AD/DL/LearParadigms/SUPtrain}, labeled data is used to train DL models and it can be implemented only with sufficient normal and anomalous data.
 
 \begin{figure}[h!]
@@ -117,7 +117,8 @@ In Supervised Learning, shown in figure \ref{fig:AD/DL/LearParadigms/SUPtrain}, 
 
 \noindent Unsupervised Learning is based on not labeled data, as shown in figure \ref{fig:AD/DL/LearParadigms/UNSUPtrain}, and models implementing it are trained to find a structure among the input features. 
 Then model performance is tested using a mixed dataset containing both background and signal data.\\
-Semi-Supervised Learning is a hybrid of previous techniques, implemented in the most varied ways.
+Semi-Supervised Learning is a hybrid of previous techniques, implemented in the most varied ways.\\
+Weakly-Supervised Learning, in conclusion, is associated with trainings executed using noisy samples.
 
 \begin{figure}[h!]
     \centering
@@ -126,10 +127,8 @@ Semi-Supervised Learning is a hybrid of previous techniques, implemented in the 
     \label{fig:AD/DL/LearParadigms/UNSUPtrain}
 \end{figure}
 
-\noindent In this project we implemented an Unsupervised Anomaly Detection, because labels have not been used and model was trained only over background data.
 
-
-\textbf{ADD LEARNING STEPS (TRAIN, VALI, TEST) AND LEARNING PARADIGMS}\\
+\textbf{ADD LEARNING STEPS (TRAIN, VALI, TEST)}\\
 \textbf{AFTER THIS ADD AD IN HEP (CHURCH EXAMPLE)}\\
 \textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
 
