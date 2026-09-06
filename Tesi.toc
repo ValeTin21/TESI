@@ -40,17 +40,18 @@
 \contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
 \contentsline {section}{\numberline {4.1}What is Anomaly detection?}{41}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Deep Learning}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}V 2}{44}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.1}Learning paradigms}{44}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}V 2}{45}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Machine Learning and Deep Neural Networks}{45}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Graph Neural Networks}{45}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Anomaly Detection Implementation with Deep Learning}{46}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Overview of Anomaly Detection}{47}{section.4.7}%
+\contentsline {section}{\numberline {4.5}Graph Neural Networks}{46}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Anomaly Detection Implementation with Deep Learning}{47}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Overview of Anomaly Detection}{48}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Deep Learning and Neural Networks}{48}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Graph Neural Networks}{48}{section.4.9}%
+\contentsline {section}{\numberline {4.9}Graph Neural Networks}{49}{section.4.9}%
 \contentsline {section}{\numberline {4.10}Anomaly Detection Implementation via Deep Architectures}{49}{section.4.10}%
-\contentsline {section}{\numberline {4.11}What is it?}{49}{section.4.11}%
+\contentsline {section}{\numberline {4.11}What is it?}{50}{section.4.11}%
 \contentsline {section}{\numberline {4.12}Deep Learning and Anomaly Detection}{50}{section.4.12}%
-\contentsline {section}{\numberline {4.13}How is it implemented?}{50}{section.4.13}%
+\contentsline {section}{\numberline {4.13}How is it implemented?}{51}{section.4.13}%
 \contentsline {chapter}{\numberline {5}ADJJ analysis}{52}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Conclusions}{53}{chapter.6}%
-\contentsline {chapter}{Bibliography}{54}{section*.46}%
+\contentsline {chapter}{Bibliography}{54}{section*.48}%
