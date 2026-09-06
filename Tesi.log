@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  6 SEP 2026 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  6 SEP 2026 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1637,111 +1637,59 @@ Package pdftex.def Info: Images/Chap4/prelu.pdf  used on input line 82.
 File: Images/Chap4/SUPtrain.png Graphic file (type png)
 <use Images/Chap4/SUPtrain.png>
 Package pdftex.def Info: Images/Chap4/SUPtrain.png  used on input line 113.
-(pdftex.def)             Requested size: 252.94499pt x 45.39331pt.
+(pdftex.def)             Requested size: 216.81pt x 38.90915pt.
 <Images/Chap4/UnSup_train.png, id=1153, 776.9025pt x 174.6525pt>
 File: Images/Chap4/UnSup_train.png Graphic file (type png)
 <use Images/Chap4/UnSup_train.png>
 Package pdftex.def Info: Images/Chap4/UnSup_train.png  used on input line 125.
-(pdftex.def)             Requested size: 195.12877pt x 43.86555pt.
+(pdftex.def)             Requested size: 180.67499pt x 40.61694pt.
  [44 <./Images/Chap4/SUPtrain.png> <./Images/Chap4/UnSup_train.png>]
 <Images/Chap4/ROC_AUC.png, id=1167, 524.71031pt x 366.61969pt>
 File: Images/Chap4/ROC_AUC.png Graphic file (type png)
 <use Images/Chap4/ROC_AUC.png>
 Package pdftex.def Info: Images/Chap4/ROC_AUC.png  used on input line 163.
-(pdftex.def)             Requested size: 180.67499pt x 126.23778pt.
- [45 <./Images/Chap4/ROC_AUC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+(pdftex.def)             Requested size: 144.54pt x 100.99135pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--182
 
  []
 
+[45 <./Images/Chap4/ROC_AUC.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+pdfTeX warning: pdflatex (file ./Images/Chap4/BumpHunt_drawing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap4/BumpHunt_drawing.pdf, id=1180, 228.68437pt x 120.85652pt>
+File: Images/Chap4/BumpHunt_drawing.pdf Graphic file (type pdf)
+<use Images/Chap4/BumpHunt_drawing.pdf>
+Package pdftex.def Info: Images/Chap4/BumpHunt_drawing.pdf  used on input line 185.
+(pdftex.def)             Requested size: 180.67499pt x 95.4885pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-[46]
-Overfull \hbox (7.04282pt too wide) in paragraph at lines 217--217
+[46 <./Images/Chap4/BumpHunt_drawing.pdf>]
+Overfull \hbox (7.04282pt too wide) in paragraph at lines 227--227
 []\T1/lmr/bx/n/14.4 (-20) Anomaly De-tec-tion Im-ple-men-ta-tion with Deep Learn-
  []
 
 [47]
 
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 245.
+Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 255.
 
 
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 245.
-
-
-Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 246.
-
-
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 246.
-
-
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 247.
-
-
-Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 247.
-
-
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 249.
-
-
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 249.
-
-
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 250.
-
-
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 250.
-
-
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 251.
-
-
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 251.
-
-
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 252.
-
-
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 252.
-
-
-Package natbib Warning: Citation `dav_ad_proc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `Russo_thesis' on page 48 undefined on input line 256.
+Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 255.
 
 
 Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 256.
 
 
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
+Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 256.
 
 
-Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 256.
+Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 257.
 
 
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
-
-
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 256.
+Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 257.
 
 
 Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 259.
@@ -1750,47 +1698,107 @@ Package natbib Warning: Citation `belis2023machine' on page 48 undefined on inpu
 Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 259.
 
 
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 260.
 
 
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 260.
 
 
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 261.
 
 
-Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 261.
 
 
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 262.
 
 
-Package natbib Warning: Citation `tinari2024' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 262.
 
 
-Package natbib Warning: Citation `belis2023machine' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `dav_ad_proc' on page 48 undefined on input line 266.
 
 
-Package natbib Warning: Citation `dav_ad_proc' on page 48 undefined on input line 259.
+Package natbib Warning: Citation `Russo_thesis' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `kasieczka2021lhc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 266.
+
+
+Package natbib Warning: Citation `davide_proc' on page 48 undefined on input line 266.
 
 [48]
 
-Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 259.
+Package natbib Warning: Citation `kasieczka2021lhc' on page 49 undefined on input line 266.
 
 
-Package natbib Warning: Citation `davide_proc' on page 49 undefined on input line 259.
+Package natbib Warning: Citation `davide_proc' on page 49 undefined on input line 266.
 
 
-Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 259.
+Package natbib Warning: Citation `davide_proc' on page 49 undefined on input line 266.
 
 
-Package natbib Warning: Citation `tinari2024' on page 49 undefined on input line 259.
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
 
 
-LaTeX Warning: Reference `chap:Model' on page 49 undefined on input line 272.
+Package natbib Warning: Citation `tinari2024' on page 49 undefined on input line 269.
 
 
-LaTeX Warning: Reference `chap:Results' on page 49 undefined on input line 272.
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `tinari2024' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `davide_proc' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `tinari2024' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `dav_ad_proc' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `davide_proc' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `belis2023machine' on page 49 undefined on input line 269.
+
+
+Package natbib Warning: Citation `tinari2024' on page 49 undefined on input line 269.
+
+
+LaTeX Warning: Reference `chap:Model' on page 49 undefined on input line 282.
+
+
+LaTeX Warning: Reference `chap:Results' on page 49 undefined on input line 282.
 
 [49]) [50]
 \openout2 = `Chap_5.aux'.
@@ -1849,20 +1857,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 13229BFB4CF2FFA800558EB8E2BC1A94;10540.
+(rerunfilecheck)             Checksum: 4C580AEB1390E45445D52CE02DE2B489;10540.
  ) 
 Here is how much of TeX's memory you used:
- 46562 strings out of 467510
- 1013234 string characters out of 5408794
- 1521025 words of memory out of 5000000
- 74351 multiletter control sequences out of 15000+600000
- 775821 words of font info for 323 fonts, out of 8000000 for 9000
+ 46575 strings out of 467510
+ 1013622 string characters out of 5408794
+ 1521173 words of memory out of 5000000
+ 74359 multiletter control sequences out of 15000+600000
+ 775998 words of font info for 325 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (63 pages, 7071227 bytes).
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Tesi.pdf (63 pages, 7094484 bytes).
 PDF statistics:
- 1506 PDF objects out of 1728 (max. 8388607)
- 300 named destinations out of 1000 (max. 500000)
- 81054 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1524 PDF objects out of 1728 (max. 8388607)
+ 301 named destinations out of 1000 (max. 500000)
+ 81059 words of extra memory for PDF output out of 89155 (max. 10000000)
 

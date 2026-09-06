@@ -110,7 +110,7 @@ In Supervised Learning, shown in figure \ref{fig:AD/DL/LearParadigms/SUPtrain}, 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=3.5 in]{Images/Chap4/SUPtrain.png}
+    \includegraphics[width=3 in]{Images/Chap4/SUPtrain.png}
     \caption{Data used for Supervised Learning. Figure from Ref. \cite{DLforAD}}
     \label{fig:AD/DL/LearParadigms/SUPtrain}
 \end{figure}
@@ -122,7 +122,7 @@ Weakly-Supervised Learning, in conclusion, is associated with trainings executed
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=2.7 in]{Images/Chap4/UnSup_train.png}
+    \includegraphics[width=2.5 in]{Images/Chap4/UnSup_train.png}
     \caption{Data used for Unsupervised Learning. Figure from Ref. \cite{DLforAD}}
     \label{fig:AD/DL/LearParadigms/UNSUPtrain}
 \end{figure}
@@ -160,7 +160,7 @@ A random classifier can only obtain a AUC=0.5 (TPR=FPR); a perfect classifier fl
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=2.5 in]{Images/Chap4/ROC_AUC.png}
+  \includegraphics[width=2 in]{Images/Chap4/ROC_AUC.png}
   \caption{ROC curve and AUC explained}
   \label{fig:AD/DL/AUC/exampleROCAUC}
 \end{figure}
@@ -174,8 +174,20 @@ There are two main categories by which AD be used in this context: \textit{outli
 The first one is based on the identification of events that are outliers, deviating for the common behaviour of the dataset, usually in the tails of distributions.
 This region is typically challenging to model and it is often dominated by statistical fluctuations, making it difficult to distinguish between real anomalies and random noise.
 The second one, instead, is based on the identification of a localised excess of data points over an expected smooth background.\\
-The popularity of AD in HEP is due to its model agnostic nature, which allows to scan a bigger range of events, without any stringent assumption on the theoretical model, just hunting from outliers.\\
-In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.
+The increasing popularity of AD in HEP is due to its model agnostic nature, which allows to scan a bigger range of events, without any stringent assumption on the theoretical model, just hunting from outliers.
+Together with this, large unlabeled datasets have been collected by collider experiments, boosting the usage of unsupervised learning techniques.\\
+In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.\\
+Typically, before the raise of AD, the searches for NP were conducted on simulated MC data in the first stage, applying a proper event selection to define a region of interest, called Signal Region (SR), in the phase space of parameters where the signal is expected to be found. 
+Then, after validating the found parameters, the search was performed on real data, looking for an excess of events in the SR with respect to the background prediction, as shown in figure \ref{fig:AD/ADforHEP/BumpHunt}.\\
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=2.5 in]{Images/Chap4/BumpHunt_drawing.pdf}
+  \caption{Schematic drawing of a bump hunt search, where the SR is defined to isolate a potential signal from the background.}
+  \label{fig:AD/ADforHEP/BumpHunt}
+\end{figure}
+
+\noindent With the implementation of AD, "the first stage is skipped and the search is performed directly on real data".
 
 \textbf{COMPLETE ADDING AS and WPs THING}\\
 
@@ -184,8 +196,6 @@ In this approach, the data is divided into two categories: \textit{background}, 
 
 \textbf{AFTER THIS ADD AD IN HEP (CHURCH EXAMPLE)}\\
 \textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
-
-When applying Anomaly Detection \cite{DLforAD}\cite{LHCOlympics}, we are looking for outliers or rare events, which typically have a small deviation from already known events. In this case data is divided into two categories: "background", containing Standard Model events or noise, and "signal", including the hypothetical New Physics. All SM phenomena are classified within background without any distinction based on the origin of data. It is now possible to understand why Anomaly Detection is defined "model agnostic": in fact it does not rely on a specific theoretical model. This feature allows to scan a bigger range of events but it is less sensitive to any specific model. \\
 
 
 
