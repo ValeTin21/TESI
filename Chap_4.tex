@@ -52,8 +52,8 @@ If the number of layers is large, the model is defined as Deep Neural Network (D
     \label{fig:AD/DL/MLPDnn}
 \end{figure}
 
-%%%%
-\subsection*{Mathematical definition}\label{sec:AD/DL/mathdef}
+%-------------------------------------------------------------------------------
+\subsection{Mathematical definition}\label{sec:AD/DL/mathdef}
 
 \noindent The aim of a model training is to find the best function $f$ that connects input $\mathcal{X}$ and output data $\mathcal{X}$, $f: \mathcal{X} \to \mathcal{Y}$ . 
 In order to achieve this goal, the function connecting a layer to the following is defined as \cite{recoALGO}:
@@ -84,8 +84,8 @@ It is computed as follows:
     \label{fig:AD/DL/PReLU}
 \end{figure}
 
-%%%%
-\subsection*{Loss function}\label{sec:AD/DL/loss}
+%-------------------------------------------------------------------------------
+\subsection{Loss function}\label{sec:AD/DL/loss}
 
 The model implementation is based on math and also the process of it learning does. 
 A loss function $\mathcal{L}$ is defined from the distance between the input and the output of the model. 
@@ -127,8 +127,47 @@ Weakly-Supervised Learning, in conclusion, is associated with trainings executed
     \label{fig:AD/DL/LearParadigms/UNSUPtrain}
 \end{figure}
 
+%-------------------------------------------------------------------------------
+\subsection{The steps for a model to learn}\label{sec:AD/DL/Loops}
+The process of training a  DL model is divided into three main phases: training, validation and test loop. 
+They are defined "loop" because in each of them a different section of the dataset is used and the code loops over it.\\
+The most important stage is the training loop. 
+In this phase, parameters of the model are adjusted in order to best fit to data. 
+By doing so, DL model should be able to recognise very well normal data and their structure.\\ 
+The second step is the validation loop, where a valuation of the performance of the model is elaborated using the validation set. 
+The valuation and the search for the best weights of the model are executed computing a given metric, such as the distance between output and input over training and validation set. 
+When this distance is minimum within the validation loop, the model's weights are saved.\\
+The trained and tuned model is then tested, freezing the model's weights and using a dataset containing unseen data, the test set. 
+The purpose of this phase is to validate results previously obtained and get a preview of what will happen once the model will be running with completely new data. 
 
-\textbf{ADD LEARNING STEPS (TRAIN, VALI, TEST)}\\
+
+%-------------------------------------------------------------------------------
+\subsection{Estimating the model's performance}\label{sec:AD/DL/AUC}
+In order to understand how well a model is performing, it is necessary to define a quantitive estimator.
+Since an AD task is generally a classification task (normal data or not), the most common estimators are the Area Under the Curve (AUC) \cite{AUC} and the Receiver Operating Characteristic (ROC) curve \cite{ROC}
+They are computed starting from the confusion matrix, where four groups are presented to quantify misclassification errors: true positive (TP), true negative (TN), false positive (FP) and false negative (FN). 
+From them, rates are calculated: 
+
+\begin{equation}\label{eq:AD/DL/AUC/TPR_FPR}
+    TPR=\frac{TP}{TP+FN}\ \rm , \ \rm \ \rm \ \rm \textit{FPR}=\frac{\textit{FP}}{\textit{TN+FP}}
+\end{equation}
+\\
+\noindent where TPR is the True Positive Rate and FPR is the False Positive Rate. 
+ROC curve, as shown in figure \ref{fig:AD/DL/AUC/exampleROCAUC}, is a plot showing the trade-off between TPR and FPR at various classification thresholds. 
+The curve is usually over the line where TPR=FPR and the closer it is to the top left corner, the better the model is learning. 
+AUC is, as the name suggests, the area under the ROC curve; it is computed using an integration method, for instance the trapezoidal rule. 
+A random classifier can only obtain a AUC=0.5 (TPR=FPR); a perfect classifier flies to a $AUC \to 1$.
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=2.5 in]{Images/Chap4/ROC_AUC.png}
+  \caption{ROC curve and AUC explained}
+  \label{fig:AD/DL/AUC/exampleROCAUC}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \textbf{AFTER THIS ADD AD IN HEP (CHURCH EXAMPLE)}\\
 \textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
 
@@ -153,24 +192,6 @@ Particle physics applications classify anomalies into two primary topological st
 
 Deploying AD within collider searches mitigates signal bias. Rather than optimizing event selections for a single theoretical Lagrangian, AD algorithms isolate deviations from the SM baseline, retaining sensitivity to broad classes of unexplored BSM signatures simultaneously.
 
-\section{Machine Learning and Deep Neural Networks}
-\label{sec:ml_and_dnn}
-
-Machine Learning algorithms establish functional mappings $f_{\theta}: \mathcal{X} \to \mathcal{Y}$ parameterized by weights $\theta$, optimizing performance metrics over complex datasets $\mathcal{X}$. In particle physics, training strategies are structured around the degree of available supervision:
-\begin{itemize}
-    \item \textbf{Supervised Learning:} Minimizes an empirical loss function using fully labeled datasets. Because real collider data lacks event-by-event truth labels, supervised models depend strictly on synthetic MC simulations, inheriting potential systematic discrepancies between simulation and detector reality.
-    \item \textbf{Unsupervised Learning:} Models the underlying probability density function $p_{\text{bg}}(x)$ of unlabeled data without prior signal metrics or structural target labels.
-    \item \textbf{Weakly-Supervised Learning:} Trains classifiers using noisy or class-imprecise targets, exploiting domain knowledge to isolate relative class proportions across distinct phase-space regions.
-    \item \textbf{Self-Supervised Learning:} Generates supervisory target signals directly from the structural constraints of the input data itself.
-\end{itemize}
-
-Deep Neural Networks (DNNs) serve as core function approximators in high-dimensional HEP applications. A standard feed-forward DNN processes an input vector $x \in \mathbb{R}^{d}$ through sequential non-linear operations:
-\begin{equation}
-    h^{(l)} = \sigma \left( W^{(l)} h^{(l-1)} + b^{(l)} \right)
-\end{equation}
-where $W^{(l)}$ represents the weight matrix at layer $l$, $b^{(l)}$ denotes the bias vector, and $\sigma$ specifies a non-linear activation function. 
-
-While fully connected architectures process flattened feature vectors, they discard intrinsic geometric correlations among final-state collision products. Advanced deep learning topologies rectify this limitation by incorporating structural inductive biases matching the physical symmetries of sub-detector readouts. Convolutional architectures process grid-structured spatial energy deposits, whereas Recurrent Neural Networks evaluate variable-length sequences. Graphs and point clouds preserve relational spatial information without imposing artificial spatial discretizations.
 
 \section{Graph Neural Networks}
 \label{sec:gnn}
@@ -229,20 +250,6 @@ Weakly supervised methods, such as Classification Without Labels (CWoLa) and CAT
 Conversely, fully unsupervised methods operate solely on background processes or unlabeled experimental data \cite{belis2023machine, tinari2024}. 
 These algorithms isolate rare topology features in kinematic distributions, providing an unbiased tool for model-agnostic BSM searches \cite{belis2023machine, davide_proc}.
 
-\section{Deep Learning and Neural Networks}\label{sec:dl_dnn}
-Deep Learning (DL) models use stacked layers of parametrized mathematical transformations to extract abstract features from complex data inputs \cite{tinari2024, Russo_thesis}. 
-A standard Deep Neural Network (DNN) processes an input vector $\mathbf{x} = (x_1, \dots, x_n)$ through hidden layers composed of individual processing units \cite{tinari2024, Russo_thesis}. 
-The output $z$ of a single unit is defined as:\begin{equation}z = \sum_{i=1}^{n} w_i x_i + b\end{equation}where $w_i$ denotes trainable weights and $b$ represents the bias term \cite{tinari2024}. 
-Non-linear activation functions $\sigma(z)$ map $z$ to break linear combinations across stacked layers \cite{tinari2024, Russo_thesis}:
-\begin{equation}
-y = \sigma(z)
-\end{equation}
-Common activation functions include the Rectified Linear Unit, $\text{ReLU}(z) = \max(0, z)$, and its smooth variant, the Gaussian Error Linear Unit \cite{tinari2024}:
-\begin{equation}
-    \text{GELU}(z) = z \cdot \Phi(z)
-\end{equation}
-where $\Phi(z)$ is the standard Gaussian cumulative distribution function \cite{tinari2024}. 
-Network parameters update via gradient descent backpropagation, minimizing a task-specific loss function evaluating model predictions \cite{kasieczka2021lhc, tinari2024}.
 
 \section{Graph Neural Networks}\label{sec:gnn}
 Standard feedforward architectures struggle to process variable-size physical objects without imposing artificial ordering \cite{dav_ad_proc, Russo_thesis}. Hadronic jets, composed of varying counts of collimated sub-particles, naturally map to graph structures $G = (V, E)$, where $V$ denotes constituent nodes and $E$ represents interaction edges \cite{kasieczka2021lhc, davide_proc}. Node features contain kinematic variables $\mathbf{x}_i = (p_T, \eta, \phi)$, while edge features capture pairwise angular separations $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$ \cite{kasieczka2021lhc, davide_proc}.Graph Neural Networks (GNNs) preserve permutation invariance while executing local message passing \cite{kasieczka2021lhc, davide_proc}. The representation $\mathbf{h}_i^{(l)}$ of node $i$ at layer $l$ updates according to aggregated messages from its spatial neighborhood $\mathcal{N}(i)$ \cite{davide_proc}:\begin{equation}\mathbf{m}_{ij}^{(l)} = \phi_e \left( \mathbf{h}_i^{(l-1)}, \mathbf{h}j^{(l-1)}, \mathbf{e}{ij} \right)\end{equation}\begin{equation}\mathbf{h}i^{(l)} = \phi_v \left( \mathbf{h}i^{(l-1)}, \bigoplus{j \in \mathcal{N}(i)} \mathbf{m}{ij}^{(l)} \right)\end{equation}where $\phi_e$ and $\phi_v$ denote neural operations, $\mathbf{e}_{ij}$ is the edge feature, and $\bigoplus$ represents a permutation-invariant aggregation operator such as sum, mean, or max \cite{kasieczka2021lhc, davide_proc}. Graph-level outputs obtain global representations via permutation-invariant pooling functions across all nodes \cite{davide_proc}.
@@ -265,29 +272,6 @@ When applying Anomaly Detection \cite{DLforAD}\cite{LHCOlympics}, we are looking
 
 %%%%%%%%%%%%%%%%%%
 
-\section{Deep Learning and Anomaly Detection}\label{sec:DLforAD}
-While working on a Particle Physics problem, it is common to deal with a huge amount of data collected during collisions at the LHC. Machine Learning (ML) algorithms, which are able to learn from past by using vast datasets, can help in this sense. Among all categories of ML, Deep Learning (DL) is the best for our task \cite{LHCOlympics}. Based on a multi-layer Neural Network, DL can build complex data representation, which is optimal when dealing with high-dimensional dataset. Furthermore due to its implementation, that will be discussed in chapter \ref{chap:Model}, it can be exploited for model agnostic applications. \cite{ML4ADHEP}\\
-ML and DL methods can be classified based on how the labels of data are used to train models. Main categories are: Supervised Learning, Unsupervised Learning and Semi-Supervised Learning.\cite{DLforAD}\\
-In Supervised Learning, shown in figure \ref{fig:SUPtrain}, labeled data is used to train DL models and it can be implemented only with sufficient normal and anomalous data.
-
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=3.5 in]{Images/Cap3/SUPtraining.png}
-%     \caption{Data used for Supervised Learning. Figure from Ref. \cite{DLforAD}}
-%     \label{fig:SUPtrain}
-% \end{figure}
-
-\noindent Unsupervised Learning is based on not labeled data, as shown in figure \ref{fig:UNSUPtrain}, and models implementing it are trained to find a structure among the input features. Then model performance is tested using a mixed dataset containing both background and signal data.\\
-Semi-Supervised Learning is a hybrid of previous techniques, implemented in the most varied ways.
-
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=2.7 in]{Images/Cap3/UNSUPtraining.png}
-%     \caption{Data used for Unsupervised Learning. Figure from Ref. \cite{DLforAD}}
-%     \label{fig:UNSUPtrain}
-% \end{figure}
-
-\noindent In this project we implemented an Unsupervised Anomaly Detection, because labels have not been used and model was trained only over background data.
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{How is it implemented?}\label{sec:ADimplementation}

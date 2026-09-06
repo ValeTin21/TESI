@@ -25,8 +25,8 @@ Warning--I didn't find a database entry for "belis2023machine"
 Warning--I didn't find a database entry for "tinari2024"
 Warning--I didn't find a database entry for "kasieczka2021lhc"
 Warning--I didn't find a database entry for "davide_proc"
-Warning--I didn't find a database entry for "Russo_thesis"
 Warning--I didn't find a database entry for "dav_ad_proc"
+Warning--I didn't find a database entry for "Russo_thesis"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -55,45 +55,47 @@ Warning--empty author and editor in ATLAS_Computing
 Warning--empty journal in ATLAS_TCC
 Warning--empty journal in D2
 Warning--empty year in DLforAD
-You've used 62 entries,
+Warning--empty year in AUC
+Warning--empty year in ROC
+You've used 63 entries,
             2481 wiz_defined-function locations,
-            927 strings with 14697 characters,
-and the built_in function-call counts, 17683 in all, are:
-= -- 1575
-> -- 585
-< -- 52
-+ -- 292
-- -- 164
-* -- 1031
-:= -- 2873
-add.period$ -- 229
-call.type$ -- 62
-change.case$ -- 117
+            930 strings with 14718 characters,
+and the built_in function-call counts, 17868 in all, are:
+= -- 1592
+> -- 578
+< -- 54
++ -- 293
+- -- 162
+* -- 1030
+:= -- 2893
+add.period$ -- 231
+call.type$ -- 63
+change.case$ -- 119
 chr.to.int$ -- 58
-cite$ -- 95
-duplicate$ -- 1075
-empty$ -- 1785
-format.name$ -- 245
-if$ -- 3782
-int.to.chr$ -- 5
-int.to.str$ -- 63
-missing$ -- 51
-newline$ -- 356
-num.names$ -- 171
-pop$ -- 550
+cite$ -- 98
+duplicate$ -- 1085
+empty$ -- 1817
+format.name$ -- 244
+if$ -- 3827
+int.to.chr$ -- 6
+int.to.str$ -- 64
+missing$ -- 50
+newline$ -- 360
+num.names$ -- 174
+pop$ -- 566
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 63
 quote$ -- 0
-skip$ -- 668
+skip$ -- 677
 stack$ -- 0
-substring$ -- 225
-swap$ -- 122
+substring$ -- 227
+swap$ -- 126
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 407
-warning$ -- 28
-while$ -- 123
+type$ -- 414
+warning$ -- 30
+while$ -- 125
 width$ -- 0
-write$ -- 830
-(There were 35 warnings)
+write$ -- 840
+(There were 37 warnings)

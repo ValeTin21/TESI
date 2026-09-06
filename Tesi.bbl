@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{63}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -388,11 +388,18 @@ H.~Kaiming, Z.~Xiangyu, R.~Shaoqing, and S.~Jian.
   Performance on ImageNet Classification"}, (2015).
 \newblock URL \url{https://arxiv.org/abs/1502.01852}.
 
-\bibitem[Belis et~al.((2023))Belis, Odagiu, and Aarrestad]{ML4ADHEP}
-V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
-\newblock \textit{"Machine learning for anomaly detection in particle
-  physics"}.
-\newblock \emph{Reviews in Physics}, (2023).
-\newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
+\bibitem[Scikit-learn({\natexlab{a}})]{AUC}
+Scikit-learn.
+\newblock {AUC}.
+\newblock URL:
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.auc.html},
+  {\natexlab{a}}.
+
+\bibitem[Scikit-learn({\natexlab{b}})]{ROC}
+Scikit-learn.
+\newblock {ROC curve}.
+\newblock URL:
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html},
+  {\natexlab{b}}.
 
 \end{thebibliography}
