@@ -165,6 +165,20 @@ A random classifier can only obtain a AUC=0.5 (TPR=FPR); a perfect classifier fl
   \label{fig:AD/DL/AUC/exampleROCAUC}
 \end{figure}
 
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Anomaly Detection in High Energy Physics}\label{sec:AD/ADforHEP}
+
+Searches for NP could gain a reasonable benefit from the implementation of AD techniques, given the multiple limitations of the field.
+There are two main categories by which AD be used in this context: \textit{outlier detection} and \textit{overdensity estimation} \cite{ML4ADHEP}.
+The first one is based on the identification of events that are outliers, deviating for the common behaviour of the dataset, usually in the tails of distributions.
+This region is typically challenging to model and it is often dominated by statistical fluctuations, making it difficult to distinguish between real anomalies and random noise.
+The second one, instead, is based on the identification of a localised excess of data points over an expected smooth background.\\
+The popularity of AD in HEP is due to its model agnostic nature, which allows to scan a bigger range of events, without any stringent assumption on the theoretical model, just hunting from outliers.\\
+In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.
+
+\textbf{COMPLETE ADDING AS and WPs THING}\\
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -172,25 +186,12 @@ A random classifier can only obtain a AUC=0.5 (TPR=FPR); a perfect classifier fl
 \textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
 
 When applying Anomaly Detection \cite{DLforAD}\cite{LHCOlympics}, we are looking for outliers or rare events, which typically have a small deviation from already known events. In this case data is divided into two categories: "background", containing Standard Model events or noise, and "signal", including the hypothetical New Physics. All SM phenomena are classified within background without any distinction based on the origin of data. It is now possible to understand why Anomaly Detection is defined "model agnostic": in fact it does not rely on a specific theoretical model. This feature allows to scan a bigger range of events but it is less sensitive to any specific model. \\
-\noindent To understand Anomaly Detection, we can use an example. Assuming we need to find a church in a town we do not know, without any technology. Instead of desperately walking around, we decide to climb an hill where we can scan the whole town with not so much effort. It is possible to identify the neighbourhood of the church or the "spatial region" where it is situated. We can also get some information we would not have got in the town, such as the colour of the roof or of the facade of the building we are looking for. Then we climb down the hill and go straight to the point we observed. Thanks to the details we obtained up there, we are able to find the church quite quickly and more easily. In other words, the church represents New Physics, climbing the hill is Anomaly Detection, climbing down is using normal data analysis techniques. It is quite powerful, isn't it? 
-To apply Anomaly Detection it is necessary to hypothesize that anomalies are rare and they represent a small portion of a whole dataset. 
-This assumption is realistic because it is what happens everyday in airports, finance and particle physics: normal events are way more common then deviations. 
-In addition, if anomalies in Particle Physics were more frequent, we would have already observed them through common data analysis.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{V 2}\label{sec:ad_implementationAAAA}
-
-
- Applied to experimental particle physics, AD rephrases the search for BSM phenomena as an out-of-distribution detection task or an unsupervised signal-to-background likelihood ratio estimation. 
-
-Particle physics applications classify anomalies into two primary topological structures:
-\begin{enumerate}
-    \item \textbf{Outlier Detection:} Identifies individual, highly anomalous events residing in the extreme tails of high-dimensional kinematic distributions. Outliers represent rare physical topologies characterized by exotic decay kinematics, high object multiplicities, or atypical energy depositions within detector subsystems.
-    \item \textbf{Overdensity Estimation:} Detects collective localized excesses of data points over an expected smooth background continuum. This operational mode serves as a multi-dimensional, model-agnostic extension of the traditional one-dimensional bump hunt, targeting resonant BSM states decaying into SM partons.
-\end{enumerate}
-
-Deploying AD within collider searches mitigates signal bias. Rather than optimizing event selections for a single theoretical Lagrangian, AD algorithms isolate deviations from the SM baseline, retaining sensitivity to broad classes of unexplored BSM signatures simultaneously.
 
 
 \section{Graph Neural Networks}
@@ -258,17 +259,8 @@ Standard feedforward architectures struggle to process variable-size physical ob
 Unsupervised AD implementation utilizing DNNs and GNNs relies on latent representation learning \cite{belis2023machine, tinari2024}. Autoencoders (AEs) compress input graph representations $\mathbf{x}$ into a lower-dimensional bottleneck $\mathbf{z} = f_{\text{enc}}(\mathbf{x})$ before generating a reconstructed output $\hat{\mathbf{x}} = f_{\text{dec}}(\mathbf{z})$ \cite{belis2023machine, tinari2024}. When trained exclusively on dominant Standard Model background events, the network learns lossy compression tailored to nominal physics patterns \cite{belis2023machine, davide_proc}.Events containing BSM physics produce higher reconstruction errors due to unlearned substructure features \cite{belis2023machine, tinari2024}. An Anomaly Score ($AS$) is defined using the Mean Squared Error (MSE) metric \cite{belis2023machine, dav_ad_proc}:\begin{equation}AS = \frac{1}{N} \sum_{i=1}^{N} \left| \mathbf{x}_i - \hat{\mathbf{x}}_i \right|^2\end{equation}In ATLAS model-independent searches, cuts applied to the calculated $AS$ distribution isolate BSM candidates \cite{belis2023machine, davide_proc}. By filtering out high-probability background interactions, these architectures define signal-enriched regions directly from data, enabling model-agnostic resonance searches \cite{belis2023machine, tinari2024}.
 
 % #################################################à
-\section{What is it?}\label{sec:WhatisAD}
-When applying Anomaly Detection \cite{DLforAD}\cite{LHCOlympics}, we are looking for outliers or rare events, which typically have a small deviation from already known events. In this case data is divided into two categories: "background", containing Standard Model events or noise, and "signal", including the hypothetical New Physics. All SM phenomena are classified within background without any distinction based on the origin of data. It is now possible to understand why Anomaly Detection is defined "model agnostic": in fact it does not rely on a specific theoretical model. This feature allows to scan a bigger range of events but it is less sensitive to any specific model. \\
+\section{CURCH}\label{sec:WhatisAD}
 
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=2 in]{Images/Cap3/BumpHint.png}
-%     \caption{Search for anomalies in particle physics. Figure from Ref. \cite{ML4ADHEP}}
-%     \label{fig:bumphint}
-% \end{figure}
-
-\noindent To understand Anomaly Detection, we can use an example. Assuming we need to find a church in a town we do not know, without any technology. Instead of desperately walking around, we decide to climb an hill where we can scan the whole town with not so much effort. It is possible to identify the neighbourhood of the church or the "spatial region" where it is situated. We can also get some information we would not have got in the town, such as the colour of the roof or of the facade of the building we are looking for. Then we climb down the hill and go straight to the point we observed. Thanks to the details we obtained up there, we are able to find the church quite quickly and more easily. In other words, the church represents New Physics, climbing the hill is Anomaly Detection, climbing down is using normal data analysis techniques. It is quite powerful, isn't it? To apply Anomaly Detection it is necessary to hypothesize that anomalies are rare and they represent a small portion of a whole dataset. This assumption is realistic because it is what happens everyday in airports, finance and particle physics: normal events are way more common then deviations. In addition, if anomalies in Particle Physics were more frequent, we would have already observed them through common data analysis.
 
 %%%%%%%%%%%%%%%%%%
 
@@ -287,3 +279,19 @@ The trained and tuned model is then tested, using a dataset containing unseen da
 % \end{figure}
 
 
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Towards the statistical analysis}\label{sec:AD/TowardsAnalysis}
+
+To better understand Anomaly Detection and how it is used to execute hunts for BSM processes, we can use an example.\\ 
+Assuming we need to find a church in a town we do not know, without any technology. 
+Instead of desperately walking around, we decide to climb an hill where we know that we can scan the whole town without so much effort. 
+Once on top of the hill, it is possible to identify the neighbourhood of the church or the "spatial region" where it is situated. 
+We can also get some information we would not have got in the town, such as the colour of the roof or of the facade of the building we are looking for. 
+Then we climb down the hill and go straight to the point we observed. 
+Thanks to the details we obtained up there, we are able to find the church quite quickly and more easily. \\
+In other words, the church represents New Physics to be found, climbing the hill is training a DNN within the Anomaly Detection approach, climbing down is using statistical data analysis techniques. 
+It is quite powerful, isn't it? \\
+To apply Anomaly Detection it is necessary to hypothesize that anomalies are rare and they represent a small portion of a whole dataset. 
+This assumption is realistic in everyday life, where normal events are way more common then deviations, but also in Particle Physics. 
+In addition, if anomalies in Physics were more frequent, we would have already observed them through common data analysis.

@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{64}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -401,5 +401,12 @@ Scikit-learn.
 \newblock URL:
   \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html},
   {\natexlab{b}}.
+
+\bibitem[Belis et~al.((2023))Belis, Odagiu, and Aarrestad]{ML4ADHEP}
+V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
+\newblock \textit{"Machine learning for anomaly detection in particle
+  physics"}.
+\newblock \emph{Reviews in Physics}, (2023).
+\newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
 
 \end{thebibliography}

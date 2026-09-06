@@ -45,14 +45,16 @@
 \contentsline {subsection}{\numberline {4.2.3}Learning paradigms}{44}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}The steps for a model to learn}{44}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Estimating the model's performance}{45}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}V 2}{46}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Graph Neural Networks}{46}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Anomaly Detection Implementation with Deep Learning}{47}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Overview of Anomaly Detection}{48}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Graph Neural Networks}{48}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Anomaly Detection Implementation via Deep Architectures}{49}{section.4.8}%
-\contentsline {section}{\numberline {4.9}What is it?}{49}{section.4.9}%
-\contentsline {section}{\numberline {4.10}How is it implemented?}{50}{section.4.10}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{52}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{53}{chapter.6}%
-\contentsline {chapter}{Bibliography}{54}{section*.47}%
+\contentsline {section}{\numberline {4.3}Anomaly Detection in High Energy Physics}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}V 2}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Graph Neural Networks}{46}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Anomaly Detection Implementation with Deep Learning}{47}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Overview of Anomaly Detection}{48}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Graph Neural Networks}{48}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Anomaly Detection Implementation via Deep Architectures}{49}{section.4.9}%
+\contentsline {section}{\numberline {4.10}CURCH}{49}{section.4.10}%
+\contentsline {section}{\numberline {4.11}How is it implemented?}{49}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Towards the statistical analysis}{50}{section.4.12}%
+\contentsline {chapter}{\numberline {5}ADJJ analysis}{51}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{52}{chapter.6}%
+\contentsline {chapter}{Bibliography}{53}{section*.47}%
