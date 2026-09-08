@@ -179,115 +179,32 @@ Together with this, large unlabeled datasets have been collected by collider exp
 In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.\\
 Typically, before the raise of AD, the searches for NP were conducted on simulated MC data in the first stage, applying a proper event selection to define a region of interest, called Signal Region (SR), in the phase space of parameters where the signal is expected to be found. 
 Then, after validating the found parameters, the search was performed on real data, looking for an excess of events in the SR with respect to the background prediction, as shown in figure \ref{fig:AD/ADforHEP/BumpHunt}.\\
+This approach relied strongly on simulated MC data.
 
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=2.5 in]{Images/Chap4/BumpHunt_drawing.pdf}
-  \caption{Schematic drawing of a bump hunt search, where the SR is defined to isolate a potential signal from the background.}
+  \caption{Schematic drawing of a bump hunt search, where the SR and the Control Region (SR) are defined to isolate a potential signal from the background.}
   \label{fig:AD/ADforHEP/BumpHunt}
 \end{figure}
 
-\noindent With the implementation of AD, "the first stage is skipped and the search is performed directly on real data".
+\noindent With the implementation of AD, the dependance on MC simulations can be reduced.
+The DNN, in fact, can be trained and validated directly on real data, in a CR where the presence of signal is not expected.
+For this reason, similar implementations of AD are referred to as \textit{data-driven} approaches.\\
+Once the DNN is trained, it is used to compute the Anomaly Score (SR) of the data, a distirbution of the probability for it to be anomalous, as shown in Fig. \ref{fig:AD/ADforHEP/AS_distribution}.
+AS is defined as a distance between the input and the output of the model.
+The assumption to be verified is that anomalous data will have a different distance with respect to the background, making the two AS distributions separated: greater the separation is, easier it will be to distinguish signal events from background ones and discarding the latter.\\
 
-\textbf{COMPLETE ADDING AS and WPs THING}\\
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=2.5 in]{Images/Chap4/AS_distribution.png}
+  \caption{Example of AS distribution plot}
+  \label{fig:AD/ADforHEP/AS_distribution}
+\end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textbf{AFTER THIS ADD AD IN HEP (CHURCH EXAMPLE)}\\
-\textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{V 2}\label{sec:ad_implementationAAAA}
-
-
-\section{Graph Neural Networks}
-\label{sec:gnn}
-
-Particle physics events inherently feature variable numbers of reconstructed objects—such as tracks, topological clusters, or jet constituents—interacting within complex geometrical spaces. Graph Neural Networks (GNNs) exploit this structure by representing collision events as sparse directed graphs $G = (V, E)$, where nodes $v_i \in V$ correspond to individual particles or sub-detectors, and edges $e_{ij} \in E$ parameterize relational features or spatial separations $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$.
-
-Node feature vectors $h_i^{(0)}$ encode basic spatial and kinematic observables, including transverse momentum $p_T$, pseudorapidity $\eta$, azimuthal angle $\phi$, and impact parameters. Graph neural architectures process relational topology through Message Passing Neural Network (MPNN) frameworks. At execution step $t$, node representations are updated iteratively using localized neighborhood information:
-\begin{equation}
-    m_i^{(t+1)} = \sum_{j \in \mathcal{N}(i)} \mathcal{M}_{\theta} \left( h_i^{(t)}, h_j^{(t)}, e_{ij} \right)
-\end{equation}
-\begin{equation}
-    h_i^{(t+1)} = \mathcal{U}_{\phi} \left( h_i^{(t)}, m_i^{(t+1)} \right)
-\end{equation}
-where $\mathcal{N}(i)$ defines the set of immediate spatial neighbors of node $i$, $\mathcal{M}_{\theta}$ represents a parameterized message function, and $\mathcal{U}_{\phi}$ constitutes a node-state update function.
-
-Permutation invariance across input node orderings is enforced via global pooling operations:
-\begin{equation}
-    h_G = \bigoplus_{v_i \in V} h_i^{(T)}
-\end{equation}
-where $\bigoplus$ represents a symmetric aggregation operator such as a element-wise summation, mean, or attention-weighted sum. In the context of large-radius jet substructure analyses within ATLAS, GNN architectures capture complex inter-particle correlations, color-flow dynamics, and energy distributions without relying on manually engineered substructure variables such as $N$-subjettiness $\tau_N$ or energy correlation functions $D_2$.
-
-\section{Anomaly Detection Implementation with Deep Learning}
-\label{sec:ad_implementation}
-
-Deep-learning-based Anomaly Detection in High Energy Physics is operationalized through distinct architectural formulations:
-
-\textbf{Self-Supervised Reconstruction Architectures:} Autoencoders (AEs) compress input vectors $x \in \mathbb{R}^d$ into a lower-dimensional latent representation $z \in \mathbb{R}^k$ ($k \ll d$) via an encoding network $f_\theta(x)$, subsequently reconstructing the input via a decoding network $g_\phi(z)$. Trained exclusively on dominant SM background events using loss metrics such as Mean Squared Error:
-\begin{equation}
-    \mathcal{L}_{\text{MSE}} = \| x - g_\phi(f_\theta(x)) \|^2
-\end{equation}
-the AE optimizes loss metrics for standard topologies. When evaluated on BSM topologies absent from training ensembles, the AE fails to accurately reconstruct the anomalous features, yielding significantly elevated reconstruction errors. These errors directly construct a continuous Anomaly Score (AS). Variational Autoencoders (VAEs) regularize this latent space by enforcing a standard Gaussian prior distribution $p(z) \sim \mathcal{N}(0, I)$ through a Kullback-Leibler divergence term $\mathcal{D}_{\text{KL}}$, balancing latent space continuity against reconstruction fidelity.
-
-\textbf{Weakly-Supervised Overdensity Estimation:} The Classification Without Labels (CWoLa) paradigm isolates overdensities in resonant spectra by establishing mixed signal-plus-background datasets. Defining a Signal Region (SR) in a invariant mass continuum $m_{JJ}$ alongside adjacent Control Sidebands (SB), a classifier is trained directly on unlabeled experimental data to distinguish SR events from SB events. By the Neyman-Pearson Lemma, a classifier trained on mixed ensembles with differing signal proportions converges monotonically to the optimal Likelihood Ratio:
-\begin{equation}
-    R(x) = \frac{p_{\text{data}}(x | m \in \text{SR})}{p_{\text{bg}}(x | m \in \text{SR})}
-\end{equation}
-
-Advanced weakly-supervised density estimators, such as CATHODE, CURTAINS, and ANODE, employ conditional normalizing flows or optimal transport algorithms to model sideband background dynamics, interpolating background probability densities directly into the SR to eliminate feature correlations and artificial mass sculpting.
-
-In the ATLAS ADJJ (Anomaly Detection in Dijet final states) analysis, GNN architectures are interfaced directly with model-independent search frameworks. Unsupervised GNN autoencoders process the constituent point-clouds of large-radius anti-$k_t$ ($R=1.0$) jets, outputting an Anomaly Score for every event. Selecting thresholds on the AS distribution defines specific Working Points (WPs), achieving background rejection factors spanning orders of magnitude. 
-
-Model-independent signal searches are subsequently executed by scanning the di-jet invariant mass $m_{JJ}$ spectrum across defined AS WPs. Smooth parametric functions model the suppressed SM background background continuum, while potential anomalous signals are evaluated using flexible resonance fits, such as Double-Sided Crystal Ball functions. Binned maximum likelihood fits combined with the $\text{CL}_s$ statistical method derive 95\% Confidence Level upper limits on production cross-sections, providing a sensitivity bridge between deep graph representations and model-agnostic BSM discoveries at CERN.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Overview of Anomaly Detection}
-\label{sec:ad_overview}
-
-Anomaly Detection encompasses algorithms that identify data instances deviating significantly from nominal distributions \cite{belis2023machine, tinari2024}. 
-In standard industrial contexts, anomalies manifest as out-of-sample or off-manifold events, such as fraudulent transactions or equipment failures \cite{kasieczka2021lhc, tinari2024}. 
-In High Energy Physics (HEP), single events rarely provide statistical evidence of new phenomena; BSM signals typically manifest as subtle over-densities in phase space \cite{belis2023machine, kasieczka2021lhc}.
-
-Within particle physics, ML-based AD strategies operate across different levels of supervision \cite{belis2023machine, tinari2024}. 
-Weakly supervised methods, such as Classification Without Labels (CWoLa) and CATHODE, estimate localized over-densities by comparing signal-enriched regions against adjacent sidebands \cite{belis2023machine, tinari2024}. 
-Conversely, fully unsupervised methods operate solely on background processes or unlabeled experimental data \cite{belis2023machine, tinari2024}. 
-These algorithms isolate rare topology features in kinematic distributions, providing an unbiased tool for model-agnostic BSM searches \cite{belis2023machine, davide_proc}.
-
-
-\section{Graph Neural Networks}\label{sec:gnn}
-Standard feedforward architectures struggle to process variable-size physical objects without imposing artificial ordering \cite{dav_ad_proc, Russo_thesis}. Hadronic jets, composed of varying counts of collimated sub-particles, naturally map to graph structures $G = (V, E)$, where $V$ denotes constituent nodes and $E$ represents interaction edges \cite{kasieczka2021lhc, davide_proc}. Node features contain kinematic variables $\mathbf{x}_i = (p_T, \eta, \phi)$, while edge features capture pairwise angular separations $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$ \cite{kasieczka2021lhc, davide_proc}.Graph Neural Networks (GNNs) preserve permutation invariance while executing local message passing \cite{kasieczka2021lhc, davide_proc}. The representation $\mathbf{h}_i^{(l)}$ of node $i$ at layer $l$ updates according to aggregated messages from its spatial neighborhood $\mathcal{N}(i)$ \cite{davide_proc}:\begin{equation}\mathbf{m}_{ij}^{(l)} = \phi_e \left( \mathbf{h}_i^{(l-1)}, \mathbf{h}j^{(l-1)}, \mathbf{e}{ij} \right)\end{equation}\begin{equation}\mathbf{h}i^{(l)} = \phi_v \left( \mathbf{h}i^{(l-1)}, \bigoplus{j \in \mathcal{N}(i)} \mathbf{m}{ij}^{(l)} \right)\end{equation}where $\phi_e$ and $\phi_v$ denote neural operations, $\mathbf{e}_{ij}$ is the edge feature, and $\bigoplus$ represents a permutation-invariant aggregation operator such as sum, mean, or max \cite{kasieczka2021lhc, davide_proc}. Graph-level outputs obtain global representations via permutation-invariant pooling functions across all nodes \cite{davide_proc}.
-
-\section{Anomaly Detection Implementation via Deep Architectures}\label{sec:ad_implementation}
-Unsupervised AD implementation utilizing DNNs and GNNs relies on latent representation learning \cite{belis2023machine, tinari2024}. Autoencoders (AEs) compress input graph representations $\mathbf{x}$ into a lower-dimensional bottleneck $\mathbf{z} = f_{\text{enc}}(\mathbf{x})$ before generating a reconstructed output $\hat{\mathbf{x}} = f_{\text{dec}}(\mathbf{z})$ \cite{belis2023machine, tinari2024}. When trained exclusively on dominant Standard Model background events, the network learns lossy compression tailored to nominal physics patterns \cite{belis2023machine, davide_proc}.Events containing BSM physics produce higher reconstruction errors due to unlearned substructure features \cite{belis2023machine, tinari2024}. An Anomaly Score ($AS$) is defined using the Mean Squared Error (MSE) metric \cite{belis2023machine, dav_ad_proc}:\begin{equation}AS = \frac{1}{N} \sum_{i=1}^{N} \left| \mathbf{x}_i - \hat{\mathbf{x}}_i \right|^2\end{equation}In ATLAS model-independent searches, cuts applied to the calculated $AS$ distribution isolate BSM candidates \cite{belis2023machine, davide_proc}. By filtering out high-probability background interactions, these architectures define signal-enriched regions directly from data, enabling model-agnostic resonance searches \cite{belis2023machine, tinari2024}.
-
-% #################################################à
-\section{CURCH}\label{sec:WhatisAD}
-
-
-%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%
-\section{How is it implemented?}\label{sec:ADimplementation}
-The process of training a  DL model is divided into three main phases: training, validation and test loop. They are defined "loop" because in each of them a different section of the dataset is used and the code loops over it.\\
-The most important stage is the training loop: in our case the chosen DL model is trained to reconstruct arrays containing information about particle jets, using only data with normal behaviour (background events) \cite{DLforAD}. In this phase, parameters of the model are adjusted in order to best fit to data. By doing so, DL model is able to recognise very well normal data and their structure. Our hope is that, once it faces an anomaly (signal event), it is able to identify it due to its difference from what it knows. The second step is the validation loop, where a valuation of the performance of the model is elaborated using the validation set. The valuation and the search for the best weights of the model are executed computing distance between output and input over training and validation set. When this distance is minimum within the validation loop, we save the model's weights.\\
-The trained and tuned model is then tested, using a dataset containing unseen data, the test set, where there are both background and signal events. The purpose of this phase is to validate results previously obtained and get a preview of what will happen once the model will be running with completely new data. The task is completed computing the Anomaly Score (AS). In this thesis, we implement it as a distance between input and output, with different dimension: instead of calculating it over a batch of data, we do so for each event. In this way we are able to plot a reconstruction probability graph: we expect that the distributions of AS from background and signal events are different, because signal data contains anomalies which our model does not know. By means of these distributions we can identify a threshold of separation between them. For any event we pass to our trained model, we compute AS: if it higher (lower) than the chosen threshold, we are looking at a background (signal) event. Since AD is distinguishing signal events from background, we are basically executing a classification task with two classes. Implementation of Anomaly Detection is discussed more in depth in chapters \ref{chap:Model} and \ref{chap:Results}.
-
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=3 in]{Images/Cap3/ADtestloop.png}
-%     \caption{Test loop of Anomaly Detection. Figure from Ref. \cite{DLforAD}}
-%     \label{fig:RECOprob}
-% \end{figure}
-
+\noindent On the AS distributions Working Points (WPs) are defined.
+They are used to reject a given amount of background: by selecting events with score greater (or lower, depending on the definition of AS) than a fixed threshold, the number of background events is reduced, hoping to have enhanced the signal.
+After the WPs computation, the second part of the search for WP can begin, with the application of common statistical analysis tools to derive an estimatore of the impact tof AD on banchmark signals.
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -301,7 +218,14 @@ We can also get some information we would not have got in the town, such as the 
 Then we climb down the hill and go straight to the point we observed. 
 Thanks to the details we obtained up there, we are able to find the church quite quickly and more easily. \\
 In other words, the church represents New Physics to be found, climbing the hill is training a DNN within the Anomaly Detection approach, climbing down is using statistical data analysis techniques. 
-It is quite powerful, isn't it? \\
-To apply Anomaly Detection it is necessary to hypothesize that anomalies are rare and they represent a small portion of a whole dataset. 
-This assumption is realistic in everyday life, where normal events are way more common then deviations, but also in Particle Physics. 
-In addition, if anomalies in Physics were more frequent, we would have already observed them through common data analysis.
+Such approach has a huge potential. \\
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=5.5 in]{Images/Chap4/RomeHILL.png}
+  \caption{View of Rome from the Janiculan Hill. From it, it is possible to scan the whole city and identify the neighbourhood of the Basilica of Saint Mary Major, for instance.}
+  \label{fig:AD/ADforHEP/RH}
+\end{figure}
+
+\noindent To apply Anomaly Detection it is necessary to hypothesize that anomalies are rare and they represent a small portion of a whole dataset. 
+This assumption is realistic in everyday life, where normal events are way more common then deviations, but also in Particle Physics: if anomalies were more frequent, we would have already observed NP through common data analysis.
