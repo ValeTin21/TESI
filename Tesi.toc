@@ -49,13 +49,16 @@
 \contentsline {section}{\numberline {4.4}Towards the statistical analysis}{47}{section.4.4}%
 \contentsline {chapter}{\numberline {5}ATLAS analysis with AD in hadronic final states}{49}{chapter.5}%
 \contentsline {section}{\numberline {5.1}The dataset}{49}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Machine Learning }{50}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Graph Neural Networks}{50}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Anomaly Detection Implementation with Deep Learning}{50}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Overview of Anomaly Detection}{51}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Graph Neural Networks}{52}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Anomaly Detection Implementation via Deep Architectures}{52}{section.5.7}%
-\contentsline {section}{\numberline {5.8}CURCH}{53}{section.5.8}%
-\contentsline {section}{\numberline {5.9}How is it implemented?}{53}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Conclusions}{54}{chapter.6}%
-\contentsline {chapter}{Bibliography}{55}{section*.50}%
+\contentsline {subsection}{\numberline {5.1.1}Final states}{50}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Signal processes}{50}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Background processes}{51}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Machine Learning }{52}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Graph Neural Networks}{52}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Anomaly Detection Implementation with Deep Learning}{52}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Overview of Anomaly Detection}{53}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Graph Neural Networks}{54}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Anomaly Detection Implementation via Deep Architectures}{54}{section.5.7}%
+\contentsline {section}{\numberline {5.8}CURCH}{55}{section.5.8}%
+\contentsline {section}{\numberline {5.9}How is it implemented?}{55}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Conclusions}{56}{chapter.6}%
+\contentsline {chapter}{Bibliography}{57}{section*.53}%

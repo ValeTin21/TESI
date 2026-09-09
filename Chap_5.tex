@@ -21,6 +21,79 @@ In this preliminary stage, a sample simluating 2023 events is used, the one deve
 The composition of the dataset is described in the following.\\
 
 %-------------------------------------------------------------------------------
+\subsection{Final states}\label{sec:ADJJ/dataset/states}
+This analysis hunts for BSM physics in the form of heavy resonances with masses in the TeV range which decay into quarks forming final states with two large-radius jets ($R=1.0$).
+Such signatures are chosen because they are predicted by several NP models and they are characterized by a high Branching Ratio (BR), from which the analysis sensitivity could benefit.
+Together with this, the high mass of the resonances results in highly boosted decay products, which are collimated and reconstructed as single large-radius jets each.
+This leads to a final state where jets can present a complex substructure, which can be exploited by the AD model to identify possible anomalies and NP candidates.\\
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.5 in]{Images/Chap5/DecayingHeavyBoson.pdf}
+    \caption{Schematic drawing of a heavy boson decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}
+    \label{fig:ADJJ/dataset/states/HBdecay}
+\end{figure}
+
+%-------------------------------------------------------------------------------
+\subsection{Signal processes}\label{sec:ADJJ/dataset/Signal}
+
+Despite the model-agnostic nature of the AD approach, a set of benchmark signal processes has to be chosen to test the sensitivity of the technique.
+In this analysis, two main physical processes are considered: Heavy Vector Triplet (Sec. \ref{sec:SM_BSM/BSM/HVT}) and Dark Jets (Sec. \ref{sec:SM_BSM/BSM/DJ}).\\
+The Dark sector is probed using a sample of a $Z'$ boson with mass $m_{Z'} = 3.5 \text{ TeV}$, decaying into a pair of dark quarks with a mass $m_{q_D} = 20 \text{ GeV}$ each .\\
+HVT, instead, are explored with three different processes.
+The first one is the decay of a heavy vector boson $V$, assumed to be the candidate $Y$ boson, into a BSM vector boson $X$ and the SM Higgs boson $H$.
+The masses of the $V$ and $X$ bosons are varied in order to explore different kinematic configurations, among $m_V = [2.3 , 3.4 , 5.0 , 6.0 ] \text{ TeV}$ and $m_X = [100 , 200, 2500, 400] \text{ GeV}$ respectively.
+The mass of the Higgs boson, instead, is fixed to its SM value of $m_H = 125 \text{ GeV}$.\\
+The second HVT process considered is the decay of a heavy vector boson $V$, into a pair of SM $W$ bosons.
+Once again, the mass of the $V$ boson is varied among $m_V = [2.0 , 3.0 , 4.0 , 5.0 ] \text{ TeV}$, while the masses of the $W$ bosons are fixed to their SM value of $m_W = 80 \text{ GeV}$.\\
+In conclusion, the third process studied is the decay of a heavy $W'$ boson into a $W$ and a $Z$ BSM bosons, with single masses at $m_{W'} = 3.0 \text{ TeV}$, $m_W = 200 \text{ GeV}$ and $m_Z = 400 \text{ GeV}$.\\
+In all the three cases, bosons are assumed to decay into quarks, forming jets in the final state.\\
+The complete list of signal processes considered in the analysis, together with their corresponding masses and theoretical cross-sections assumed, is reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.
+The theoretical cross-sections are derived from the ATLAS internal database for $MC23d$ campaign.
+
+\begin{table}[htbp]
+\raggedright
+\begin{tabular}{|c|c||c||c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Signal Name} & \textbf{Process} & \textbf{Masses [GeV]} & \shortstack{\textbf{Theoretical}\\\textbf{cross-section [pb]}} \\
+\hline\hline 
+
+ VcXH & $V \to XH$ & $m_V = 2300$, $m_X = 100$ & $4.7435 \cdot 10^{-1}$ \\
+ VcXH & $V \to XH$ & $m_V = 3400$, $m_X = 200$ & $4.1550 \cdot 10^{-2}$ \\
+ VcXH & $V \to XH$ & $m_V = 5000$, $m_X = 2500$ & $1.6359 \cdot 10^{-3}$ \\
+ VcXH & $V \to XH$ & $m_V = 6000$, $m_X = 400$ & $2.1811 \cdot 10^{-4}$ \\
+\hline
+
+ VzWW & $V \to WW$ & $m_V = 2000$ & $3.8476 \cdot 10^{-3}$ \\
+ VzWW & $V \to WW$ & $m_V = 3000$ & $3.5969 \cdot 10^{-4}$ \\
+ VzWW & $V \to WW$ & $m_V = 4000$ & $4.5256 \cdot 10^{-5}$ \\
+ VzWW & $V \to WW$ & $m_V = 5000$ & $6.2648 \cdot 10^{-6}$ \\
+\hline
+ 
+ Wprime & $W' \to WZ$ & $m_{W'} = 3000$, $m_W = 200$, $m_Z = 400$ & $9.6982 \cdot 10^{-16}$ \\
+\hline
+ 
+ DarkJet & $Z' \to q_D \bar{q}_D$ & $m_{Z'} = 3500$, $m_{q_D} = 20$, $m_{q_D} = 20$ & $1.05853 \cdot 10^{-9}$ \\
+\hline
+ 
+\end{tabular}
+\caption{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections.}
+\label{tab:sec:ADJJ/dataset/Signal}
+\end{table}
+
+%-------------------------------------------------------------------------------
+\subsection{Background processes}\label{sec:ADJJ/dataset/BKG}
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=4.5 in]{Images/Chap5/DataPlots/BKG_stack.pdf}
+    \caption{Stacked distribution of the di-jet invariant mass $m_{JJ}$ for the dominant background processes considered in the analysis.}
+    \label{fig:ADJJ/dataset/BKG/BKGstack}
+\end{figure}
+
+%-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Machine Learning }\label{sec:ADJJ/GNN}
 
