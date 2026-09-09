@@ -1,13 +1,33 @@
-\chapter{ADJJ analysis} \label{chap:ADJJ}
+\chapter{ATLAS analysis with AD in hadronic final states} \label{chap:ADJJ}
 
-\textbf{FINALLY, OUR ANALYSIS, GNN AND DATASET, MAYBE}
+The final and crucial chapter of this thesis is dedicated to present the implementation of the Anomaly Detection approach within an ATLAS analysis.
+This study searches for boson resonances associated with BSM physics decaying into fully hadronic final states in the described detector, making use of the AD technique.\\
+The goal of this analysis is to prove the feasibility of the AD approach in a full analysis, exploring its generalization capabilities, while hunting for New Physics and trying to improve the sensitivity of the search with respect to the state-of-the-art methods.\\ 
+At the moment, the status of the analysis is the following.
+The R\&D phase on the MC sample for the DNN model can be defined as concluded, as it is for the statistical analysis and modelling on the MC dataset.
+The preparation of the field to move towards the usage of the real data is currently on going, expecting the switch in dataset to happen soon.\\
+In the following sections, an overiew of the analysis is presented, with a description of the dataset and the Graph Neural Network model used for the AD implementation. 
+After this, an important portion of the chapter is dedicated to the description of the original work related to this thesis, which is the execution of the statistical analysis on the MC dataset, with the aim of testing the AD approach in a full analysis.\\
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{The dataset}\label{sec:ADJJ/dataset}
+The analysis focuses on exploring the data collected by the ATLAS detector during the LHC Run-3 from 2022 to 2024.
+It corresponds to a total integrated luminosity of 165 fb$^{-1}$, with a center-of-mass energy of $\sqrt{s} = 13.6$ TeV \cite{ATLAS_Luminosity}.\\
+Before running the full analysis pipeline on the real data, a preliminary study is performed on a MC dataset, which is used to train and validate the AD model and to test the statistical tools developed.
+The latter aspect is the goal of this thesis, which aims to conduct the analysis on the MC sample and validate the tools.
+In this preliminary stage, a sample simluating 2023 events is used, the one developed during \textit{MC23d} campaign.\\
+The composition of the dataset is described in the following.\\
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Machine Learning }\label{sec:ADJJ/GNN}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{V 2}\label{sec:ad_implementationAAAA}
-
 
 \section{Graph Neural Networks}
 \label{sec:gnn}

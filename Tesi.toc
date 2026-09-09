@@ -47,14 +47,15 @@
 \contentsline {subsection}{\numberline {4.2.5}Estimating the model's performance}{45}{subsection.4.2.5}%
 \contentsline {section}{\numberline {4.3}Anomaly Detection in High Energy Physics}{45}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Towards the statistical analysis}{47}{section.4.4}%
-\contentsline {chapter}{\numberline {5}ADJJ analysis}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}V 2}{49}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Graph Neural Networks}{49}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Anomaly Detection Implementation with Deep Learning}{50}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Overview of Anomaly Detection}{51}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Graph Neural Networks}{51}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Anomaly Detection Implementation via Deep Architectures}{52}{section.5.6}%
-\contentsline {section}{\numberline {5.7}CURCH}{52}{section.5.7}%
-\contentsline {section}{\numberline {5.8}How is it implemented?}{52}{section.5.8}%
+\contentsline {chapter}{\numberline {5}ATLAS analysis with AD in hadronic final states}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The dataset}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Machine Learning }{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Graph Neural Networks}{50}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Anomaly Detection Implementation with Deep Learning}{50}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Overview of Anomaly Detection}{51}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Graph Neural Networks}{52}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Anomaly Detection Implementation via Deep Architectures}{52}{section.5.7}%
+\contentsline {section}{\numberline {5.8}CURCH}{53}{section.5.8}%
+\contentsline {section}{\numberline {5.9}How is it implemented?}{53}{section.5.9}%
 \contentsline {chapter}{\numberline {6}Conclusions}{54}{chapter.6}%
 \contentsline {chapter}{Bibliography}{55}{section*.50}%
