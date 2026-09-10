@@ -53,9 +53,9 @@
 \contentsline {subsection}{\numberline {5.1.2}Signal processes}{50}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Background processes}{51}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}The event preselection}{52}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Machine Learning }{52}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Training the ML model }{52}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Graph Neural Networks}{53}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Anomaly Detection Implementation via Deep Architectures}{53}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Anomaly Detection Implementation via Deep Architectures}{54}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}The architecture in use}{54}{subsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.5.2}The loss to minimize}{54}{subsection.5.5.2}%
 \contentsline {subsection}{\numberline {5.5.3}Training results}{54}{subsection.5.5.3}%

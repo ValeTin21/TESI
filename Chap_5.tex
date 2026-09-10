@@ -121,7 +121,7 @@ The second feature is the integrated luminosity of the sample, which has been se
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\section{Machine Learning }\label{sec:ADJJ/GNN}
+\section{Training the ML model }\label{sec:ADJJ/GNN}
 The Anomaly Detection stage of the analysis is impemented using a Graph Neural Network (GNN) architecture \cite{GNN_HEP}.\\
 This type of architecture is chosen given the sparse and variable nature of jets, which can be represented very well as graphs, a data structure with the ability to represent variable-size objects and their relations.
 A visual representationof the jet-graph association is presented in Fig. \ref{fig:ADJJ/GNN/jetGraph}.
@@ -133,6 +133,12 @@ A visual representationof the jet-graph association is presented in Fig. \ref{fi
     \label{fig:ADJJ/GNN/jetGraph}
 \end{figure}
 
+\noindent Each graph can be represented compactly as $G = (V, E)$, where $V$ is the set of nodes and $E$ is the set of edges connecting the nodes.
+In the context of this analysis, each graph is associated with a single jet, a node represents a single constituent of the jet and an edge represents the relation between two constituents, defined based on the separation between them in $\Delta R$ exponentiated ($e^{-\Delta R}$).
+Two nodes, in fact, are connected, meaning that they can exchange information, if their separation is lower than a certain threshold, which has been set to $\Delta R < 0.6$ in this study.
+Such relatively high threshold increases the number of connections among the graph, allowing the network to learn more complex relations inside the jets.
+The nodes have stored in their features the kinematic information of the constituents, such as $p_T$, $\eta$ and $\phi$, together with their mass and taste.\\
+The dataset, mapped into graphs, is then used as input to train a particular type of GNN architecture, named EGAT.
 
 \section{Graph Neural Networks}\label{sec:gnn}
 Standard feedforward architectures struggle to process variable-size physical objects without imposing artificial ordering \cite{dav_ad_proc, Russo_thesis}.
