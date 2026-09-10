@@ -17,7 +17,7 @@ The analysis focuses on exploring the data collected by the ATLAS detector durin
 It corresponds to a total integrated luminosity of 165 fb$^{-1}$, with a center-of-mass energy of $\sqrt{s} = 13.6$ TeV \cite{ATLAS_Luminosity}.\\
 Before running the full analysis pipeline on the real data, a preliminary study is performed on a MC dataset, which is used to train and validate the AD model and to test the statistical tools developed.
 The latter aspect is the goal of this thesis, which aims to conduct the analysis on the MC sample and validate the tools.
-In this preliminary stage, a sample simluating 2023 events is used, the one developed during \textit{MC23d} campaign.\\
+In this preliminary stage, a sample simluating 2023 events is used, the one developed during \textit{MC23d} campaign, corresponding to a integrated luminosity of 25.76 fb$^{-1}$.\\
 The composition of the dataset is described in the following.\\
 
 %-------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ This leads to a final state where jets can present a complex substructure, which
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=2.5 in]{Images/Chap5/DecayingHeavyBoson.pdf}
+    \includegraphics[width=2.5 in]{Images/Chap5/Graphics/DecayingHeavyBoson.pdf}
     \caption{Schematic drawing of a heavy boson decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}
     \label{fig:ADJJ/dataset/states/HBdecay}
 \end{figure}
@@ -48,7 +48,16 @@ The second HVT process considered is the decay of a heavy vector boson $V$, into
 Once again, the mass of the $V$ boson is varied among $m_V = [2.0 , 3.0 , 4.0 , 5.0 ] \text{ TeV}$, while the masses of the $W$ bosons are fixed to their SM value of $m_W = 80 \text{ GeV}$.\\
 In conclusion, the third process studied is the decay of a heavy $W'$ boson into a $W$ and a $Z$ BSM bosons, with single masses at $m_{W'} = 3.0 \text{ TeV}$, $m_W = 200 \text{ GeV}$ and $m_Z = 400 \text{ GeV}$.\\
 In all the three cases, bosons are assumed to decay into quarks, forming jets in the final state.\\
-The complete list of signal processes considered in the analysis, together with their corresponding masses and theoretical cross-sections assumed, is reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.
+In Fig. \ref{fig:ADJJ/dataset/Signal/Fdiag} an example of a Feynman diagram of a HVT process ($VcXH$) is shown.\\
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=2.8 in]{Images/Chap5/FeyDiag/YXH_Fdiag.png}
+    \caption{Feynman diagram of a $VcXH$ process.}
+    \label{fig:ADJJ/dataset/Signal/Fdiag}
+\end{figure}
+
+\noindent The complete list of signal processes considered in the analysis, together with their corresponding masses and theoretical cross-sections assumed, is reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.
 The theoretical cross-sections are derived from the ATLAS internal database for $MC23d$ campaign.
 
 \begin{table}[htbp]
@@ -85,17 +94,51 @@ The theoretical cross-sections are derived from the ATLAS internal database for 
 %-------------------------------------------------------------------------------
 \subsection{Background processes}\label{sec:ADJJ/dataset/BKG}
 
+The main backgrounds for the signal signatures hunted in this analysis are SM processes with multiple jets in the final state.
+The dominant contribution comes from QCD multi-jet events, which are characterized by a very high cross-section.
+Other relevant contributions come from $t\bar{t}$, $W$+jets and $Z$+jets processes, which are associated with lower cross-sections but still relevan in the signal regions.\\
+In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stacked distribution of the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis, for the dominant background processes considered in the analysis.
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=4.5 in]{Images/Chap5/DataPlots/BKG_stack.pdf}
-    \caption{Stacked distribution of the di-jet invariant mass $m_{JJ}$ for the dominant background processes considered in the analysis.}
+    \includegraphics[width=5 in]{Images/Chap5/DataPlots/BKG_stack.pdf}
+    \caption{Stacked distribution of $m_{JJ}$ for the dominant background processes.}
     \label{fig:ADJJ/dataset/BKG/BKGstack}
 \end{figure}
+
+\noindent As evident from the plot in Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack}, the dominant background contribution comes from QCD jets, followed by $t\bar{t}$, $W$+jets and $Z$+jets processes.
+Concerning the latter, the contribution coming from $b$ jets is kept separate from the one coming from light jets, leveraging the information coming from $b$-tagging algorithms.\\ 
+More importantly, the plot shows two other main features of the distribution.
+The first one is the steeply falling nature of the distribution, which is a common feature of QCD-like processes.
+This, in principle, makes the search for NP resonances more challenging, as they are expected to appear as small bumps on top of the background distribution.
+The second feature is the integrated luminosity of the sample, which has been set to be 1 fb$^{-1}$, normalizing the distribution for a proper factor, in order to have a cleaner procedure to compute the events normalization at higher luminosities, a crucial computation for the next steps of the analysis.\\
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{The event preselection}\label{sec:ADJJ/evSel}
+
+\textbf{ADD HERE DETAILS ABOUT THE EVENT PRESELECTION APPLIED TO CREATE NTUPLES}
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Machine Learning }\label{sec:ADJJ/GNN}
+
+%-------------------------------------------------------------------------------
+\subsection{The architecture in use}\label{sec:ADJJ/GNN/architecture}
+
+%-------------------------------------------------------------------------------
+\subsection{The loss to minimize}\label{sec:ADJJ/GNN/loss}
+
+%-------------------------------------------------------------------------------
+\subsection{Training results}\label{sec:ADJJ/GNN/results}
+
+%-------------------------------------------------------------------------------
+\subsection{Anomaly Score distribution}\label{sec:ADJJ/GNN/AS}
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Correlation of the Score with kinematic variables}\label{sec:ADJJ/AScorrelation}
 
 
 
