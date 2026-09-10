@@ -140,13 +140,63 @@ Such relatively high threshold increases the number of connections among the gra
 The nodes have stored in their features the kinematic information of the constituents, such as $p_T$, $\eta$ and $\phi$, together with their mass and taste.\\
 The dataset, mapped into graphs, is then used as input to train a particular type of GNN architecture, named EGAT.
 
-\section{Graph Neural Networks}\label{sec:gnn}
-Standard feedforward architectures struggle to process variable-size physical objects without imposing artificial ordering \cite{dav_ad_proc, Russo_thesis}.
-Hadronic jets, composed of varying counts of collimated sub-particles, naturally map to graph structures $G = (V, E)$, where $V$ denotes constituent nodes and $E$ represents interaction edges \cite{kasieczka2021lhc, davide_proc}. 
-Node features contain kinematic variables $\mathbf{x}_i = (p_T, \eta, \phi)$, while edge features capture pairwise angular separations $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$ \cite{kasieczka2021lhc, davide_proc}.
-Graph Neural Networks (GNNs) preserve permutation invariance while executing local message passing \cite{kasieczka2021lhc, davide_proc}. 
-The representation $\mathbf{h}_i^{(l)}$ of node $i$ at layer $l$ updates according to aggregated messages from its spatial neighborhood $\mathcal{N}(i)$ \cite{davide_proc}:\begin{equation}\mathbf{m}_{ij}^{(l)} = \phi_e \left( \mathbf{h}_i^{(l-1)}, \mathbf{h}j^{(l-1)}, \mathbf{e}{ij} \right)\end{equation}\begin{equation}\mathbf{h}i^{(l)} = \phi_v \left( \mathbf{h}i^{(l-1)}, \bigoplus{j \in \mathcal{N}(i)} \mathbf{m}{ij}^{(l)} \right)\end{equation}where $\phi_e$ and $\phi_v$ denote neural operations, $\mathbf{e}_{ij}$ is the edge feature, and $\bigoplus$ represents a permutation-invariant aggregation operator such as sum, mean, or max \cite{kasieczka2021lhc, davide_proc}. 
-Graph-level outputs obtain global representations via permutation-invariant pooling functions across all nodes \cite{davide_proc}.
+%-------------------------------------------------------------------------------
+\subsection{The architecture in use}\label{sec:ADJJ/GNN/architecture}
+The assignment to compute the AS is performed feeding the graphs into an EGAT architecture, a Edge Graph ATtention Network \cite{EGAT}.
+This is a particular type of GNN architecture which implements the Multi-Head Attention mechanism using graphs \cite{MHA}, with the goal to let the network learn which nodes are more relevant for the task ongoing.
+For the purpose of this search, this mechanism is implemented leveraging also the information stored in the edges (from which the "Edge" in the name of the architecture comes from).
+The edges, in our case, carry information about the separation between two constituents, which could be crucial to learn the substructure of the jets and to identify possible anomalies.\\
+In Fig. \ref{fig:ADJJ/GNN/EGAT} a schematic representation of the implemented EGAT architecture is shown, with the main components highlighted.
+The yellow boxes represent a MLP layer (multilayer perceptron), a fully connected layer which is used to increase (decrease) the dimensionality of the input features.
+It is composed by a linear transformation, followed by a normalisation step and a dropout one, to conclude with a non-linear activation function, in this case a PReLU.
+The MLP is stacked in n layers, with the number of layers being a hyperparameter of the model.
+The light blue boxes represent the graph layers, which are the core of the architecture, meant to learn the relations between the nodes of the graph and to update their features accordingly.
+Its main component is the EGATConv layer, which implements the attention mechanism on both the nodes and the edges of the graph \cite{EGAT}.
+It is followed, again, by normalisation, dropout and PReLU activation.
+As for the MLP, also for the blue boxes the number of layers applied is a hyperparameter of the model.
+After the finaly MLP layer, a global pooling layer is applied to the graph, to select, reduce and connect the most relevant nodes \cite{GraphPooling}. 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=5.5 in]{Images/Chap5/Graphics/EGAT_sketch.png}
+    \caption{Visual representation of the EGAT architecture, with the three main components. The black arrows represent the flow of the data, highliting the edges usage.}
+    \label{fig:ADJJ/GNN/EGAT}
+\end{figure}
+
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Signals} & \textbf{AUC (\%)} \\
+\hline\hline
+VcXH ($m_V$ = 2300 GeV, $m_X$ = 130 GeV)       & 72 \\
+\hline
+VcXH ($m_V$ = 3400 GeV, $m_X$ = 200 GeV)        & 81.5 \\
+\hline
+VcXH ($m_V$ = 5000 GeV, $m_X$ = 2500 GeV)      & 79.7 \\
+\hline
+VcXH ($m_V$ = 6000 GeV, $m_X$ = 400 GeV)        & 87.6 \\
+\hline\hline
+VzWW ($m_V$ = 2000 GeV)            & 84.7 \\
+\hline
+VzWW ($m_V$ = 3000 GeV)          & 91.6 \\
+\hline
+VzWW ($m_V$ = 4000 GeV)            & 94.3 \\
+\hline
+VzWW ($m_V$ = 5000 GeV)             & 95.8 \\
+\hline\hline
+Dark Jets      & 59.6 \\
+\hline
+Wprime     & 64.9 \\
+\hline
+\end{tabular}
+\caption{AUC (\%) values for each signal (EGAT for DR $<$ 0.6, 4 jets, originNoAlpha).}
+\label{tab:auc}
+\end{table}
+
 
 \section{Anomaly Detection Implementation via Deep Architectures}\label{sec:ad_implementation}
 Unsupervised AD implementation utilizing DNNs and GNNs relies on latent representation learning \cite{belis2023machine, tinari2024}. 

@@ -21,12 +21,12 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Warning--entry type for "DLThesis" isn't style-file defined
 --line 469 of file bibliography.bib
-Warning--I didn't find a database entry for "dav_ad_proc"
-Warning--I didn't find a database entry for "Russo_thesis"
-Warning--I didn't find a database entry for "kasieczka2021lhc"
-Warning--I didn't find a database entry for "davide_proc"
 Warning--I didn't find a database entry for "belis2023machine"
 Warning--I didn't find a database entry for "tinari2024"
+Warning--I didn't find a database entry for "davide_proc"
+Warning--I didn't find a database entry for "dav_ad_proc"
+Warning--I didn't find a database entry for "kasieczka2021lhc"
+Warning--I didn't find a database entry for "Russo_thesis"
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -58,45 +58,45 @@ Warning--empty year in DLforAD
 Warning--empty year in AUC
 Warning--empty year in ROC
 Warning--empty chapter and pages in GNN_HEP
-You've used 65 entries,
+You've used 68 entries,
             2481 wiz_defined-function locations,
-            942 strings with 15086 characters,
-and the built_in function-call counts, 18528 in all, are:
-= -- 1645
-> -- 614
-< -- 55
-+ -- 307
-- -- 172
-* -- 1077
-:= -- 3003
-add.period$ -- 239
-call.type$ -- 65
-change.case$ -- 122
-chr.to.int$ -- 60
-cite$ -- 101
-duplicate$ -- 1123
-empty$ -- 1878
-format.name$ -- 258
-if$ -- 3967
+            959 strings with 15587 characters,
+and the built_in function-call counts, 19442 in all, are:
+= -- 1719
+> -- 663
+< -- 57
++ -- 327
+- -- 186
+* -- 1134
+:= -- 3151
+add.period$ -- 249
+call.type$ -- 68
+change.case$ -- 128
+chr.to.int$ -- 63
+cite$ -- 104
+duplicate$ -- 1169
+empty$ -- 1966
+format.name$ -- 277
+if$ -- 4163
 int.to.chr$ -- 6
-int.to.str$ -- 66
-missing$ -- 53
-newline$ -- 372
-num.names$ -- 180
-pop$ -- 588
+int.to.str$ -- 69
+missing$ -- 54
+newline$ -- 388
+num.names$ -- 189
+pop$ -- 620
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 68
 quote$ -- 0
-skip$ -- 696
+skip$ -- 731
 stack$ -- 0
-substring$ -- 231
-swap$ -- 130
+substring$ -- 237
+swap$ -- 136
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 425
+type$ -- 446
 warning$ -- 31
-while$ -- 129
+while$ -- 135
 width$ -- 0
-write$ -- 868
+write$ -- 906
 (There were 38 warnings)
