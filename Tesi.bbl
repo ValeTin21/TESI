@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -408,5 +408,12 @@ V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
   physics"}.
 \newblock \emph{Reviews in Physics}, (2023).
 \newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
+
+\bibitem[Duarte and Vlimant((2022))]{GNN_HEP}
+J.~Duarte and J.R. Vlimant.
+\newblock \emph{\textit{"Graph Neural Networks for Particle Tracking and
+  Reconstruction"}}.
+\newblock WORLD SCIENTIFIC, (2022).
+\newblock URL \url{http://dx.doi.org/10.1142/9789811234033_0012}.
 
 \end{thebibliography}

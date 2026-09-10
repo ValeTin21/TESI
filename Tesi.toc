@@ -53,18 +53,18 @@
 \contentsline {subsection}{\numberline {5.1.2}Signal processes}{50}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Background processes}{51}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}The event preselection}{52}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Machine Learning }{53}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}The architecture in use}{53}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}The loss to minimize}{53}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Training results}{53}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Anomaly Score distribution}{53}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Correlation of the Score with kinematic variables}{53}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Graph Neural Networks}{53}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Anomaly Detection Implementation with Deep Learning}{53}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Overview of Anomaly Detection}{55}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Graph Neural Networks}{55}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Anomaly Detection Implementation via Deep Architectures}{55}{section.5.9}%
-\contentsline {section}{\numberline {5.10}CURCH}{56}{section.5.10}%
-\contentsline {section}{\numberline {5.11}How is it implemented?}{56}{section.5.11}%
-\contentsline {chapter}{\numberline {6}Conclusions}{57}{chapter.6}%
-\contentsline {chapter}{Bibliography}{58}{section*.54}%
+\contentsline {section}{\numberline {5.3}Machine Learning }{52}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Graph Neural Networks}{53}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Anomaly Detection Implementation via Deep Architectures}{53}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}The architecture in use}{54}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}The loss to minimize}{54}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Training results}{54}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Anomaly Score distribution}{54}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Correlation of the Score with kinematic variables}{54}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Graph Neural Networks}{54}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Anomaly Detection Implementation with Deep Learning}{55}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Overview of Anomaly Detection}{56}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Graph Neural Networks}{56}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Anomaly Detection Implementation via Deep Architectures}{57}{section.5.11}%
+\contentsline {chapter}{\numberline {6}Conclusions}{58}{chapter.6}%
+\contentsline {chapter}{Bibliography}{59}{section*.55}%
