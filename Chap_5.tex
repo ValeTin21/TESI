@@ -295,7 +295,6 @@ Wprime     & 64.9 \\
 \end{table}
 
 
-
 %-------------------------------------------------------------------------------
 \subsection{Anomaly Score distribution}\label{sec:ADJJ/GNN/AS}
 
@@ -397,15 +396,20 @@ In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported,
 %-------------------------------------------------------------------------------
 \section{Correlation of the Score with kinematic variables}\label{sec:ADJJ/AScorrelation}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Assessing correlations between the GNN anomaly score and key kinematic variables remains essential to ensure the validity of downstream statistical modeling and avoid unexpected continuum distortion. 
+Strong coupling between the network's score and event quantities, particularly the di-jet invariant mass $m_{JJ}$, introduces artificial sculpting into background spectra after threshold selections are imposed. Such sculpting degrades the accuracy of smooth parametric background functions across selected signal regions and leads to potential false-positive resonance observations. 
+Evaluating these dynamic interdependencies involves computing two-dimensional feature profiles, Pearson correlation coefficients, and distance-correlation metrics across varying anomaly score working points. 
+When neural representations remain conditional on jet kinematics or un-decorrelated from primary mass observables, background sideband distributions shift unpredictably under stringent background rejection cuts. 
+Verifying minimal kinematic coupling across the baseline selection guarantees that background modeling functions retain robust, smooth functional forms, thereby safeguarding the integrity of subsequent $CL_s$ statistical upper limits.
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Signal modelling}\label{sec:ADJJ/SigModel}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Graph Neural Networks}
-\label{sec:gnn}
-
-
-Model-independent signal searches are subsequently executed by scanning the di-jet invariant mass $m_{JJ}$ spectrum across defined AS WPs. Smooth parametric functions model the suppressed SM background background continuum, while potential anomalous signals are evaluated using flexible resonance fits, such as Double-Sided Crystal Ball functions. Binned maximum likelihood fits combined with the $\text{CL}_s$ statistical method derive 95\% Confidence Level upper limits on production cross-sections, providing a sensitivity bridge between deep graph representations and model-agnostic BSM discoveries at CERN.
 
 

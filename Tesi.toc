@@ -60,6 +60,6 @@
 \contentsline {subsection}{\numberline {5.2.3}Performance of the GNN}{55}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Anomaly Score distribution}{55}{subsection.5.2.4}%
 \contentsline {section}{\numberline {5.3}Correlation of the Score with kinematic variables}{58}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Graph Neural Networks}{58}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Signal modelling}{58}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Conclusions}{59}{chapter.6}%
 \contentsline {chapter}{Bibliography}{60}{section*.61}%
