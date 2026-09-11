@@ -198,6 +198,14 @@ The DeepSVDD loss function is used also to compute the AS for each jet, which is
 
 %-------------------------------------------------------------------------------
 \subsection{Performance of the GNN}\label{sec:ADJJ/GNN/results}
+The performance of the EGAT model on the MC samples is evaluated using the AUC metric, which is computed for each signal process considered in the analysis and inserted in the dataset during the test phase.
+Results are reported in Tab. \ref{tab:ADJJ/GNN/results/AUC}, where the AUC values for each signal are shown.\\
+Discrimination power varies substantially depending on the process considered and the resonance mass. 
+HVT decays into $WW$ final states are the ones achieving higher discrimination, with an AUC up to $95.8\%$.  
+Similarly, $V \to XH$ decays present strong background rejection, yielding a maximum AUC of $87.6\%$ for the $(6.0\text{ TeV}, 400\text{ GeV})$ mass configuration.
+Moreover, signal processes with higher resonance masses tend to be more easily discriminated from the background, which is expected, since the raising jets are more boosted and their substructure is more defined than lower mass resonances, allowing the network to learn more complex structures.
+The Dark Jets process, instead, is the one with the lowest performance, with an AUC of $59.6\%$, which is expected since the dark jets are very similar to QCD jets, making the discrimination task more challenging.
+Probably, in this case, more specific features should be used to improve the performance of the model, such as the presence of displaced vertices, a typical feature of dark jets.
 
 
 \begin{table}[htbp]
@@ -228,12 +236,107 @@ Dark Jets      & 59.6 \\
 Wprime     & 64.9 \\
 \hline
 \end{tabular}
-\caption{AUC (\%) values for each signal (EGAT for DR $<$ 0.6, 4 jets, originNoAlpha).}
-\label{tab:ADJJ/GNN/results/auc}
+\caption{AUC (\%) values obtained with the trained EGAT model for each signal.}
+\label{tab:ADJJ/GNN/results/AUC}
 \end{table}
+
+
 
 %-------------------------------------------------------------------------------
 \subsection{Anomaly Score distribution}\label{sec:ADJJ/GNN/AS}
+
+The main goal of the AD approach is finally executed in the test phase, where the trained model is used to compute the AS for each jet in the mixed dataset.
+Such quantity is computed at jet level, for both the leading and subleading jets, providing a measure of how anomalous each jet is with respect to the background sample used for training.
+The distribution is presented in Fig. \ref{subfig:ADJJ/GNN/AS/AS1_tot} for the leading jet and in Fig. \ref{subfig:ADJJ/GNN/AS/AS2_tot} for the sub-leading jet, where the background is presented in the dashed blue line as a unique term, containing the different components summed up.
+In Fig. \ref{subfig:ADJJ/GNN/AS/AS1_sep} and Fig. \ref{subfig:ADJJ/GNN/AS/AS2_sep} the same distributions are shown, but this time the background is split into its components, to better understand the contribution of each process to the overall AS.\\
+
+\begin{figure}[htbp]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png}
+    \caption{}
+    \label{subfig:ADJJ/GNN/AS/AS1_tot}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png}
+    \caption{}
+    \label{subfig:ADJJ/GNN/AS/AS2_tot}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png}
+    \caption{}
+    \label{subfig:ADJJ/GNN/AS/AS1_sep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png} 
+    \caption{}
+    \label{subfig:ADJJ/GNN/AS/AS2_sep}
+  \end{subfigure}
+  
+  \caption{Score distributions for the leading (a,c) and sub-leading (b,d) jets, with the background shown as a single term (a,b) and split into its components (c,d).}
+  \label{fig:ADJJ/GNN/AS/AS_jets}
+\end{figure}
+
+\noindent As visible from the plots in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}, the AS distribution for the background is concentrated at lower values with respect to the signal processes, which tend to populate the high score region.
+In particular, the $VzWW$ processes are the ones with the highest AS, while the Dark Jets and Wprime processes are the ones with the lowest AS, which is consistent with the AUC values reported in Tab. \ref{tab:ADJJ/GNN/results/AUC}.
+For these reasons, it is expected that the $VzWW$ processes will be the easiest among our benchmarks to detect in the statistical analysis, while the Dark Jets process will be more challenging to identify.\\
+It is worth noting that the AS distribution are realized excluding the QCD events used in the training phase, which are set to have a negative score.
+This choice is made in order to avoid any bias in the evaluation of the model performance.\\
+Prior to realizing the plots in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}, events are filtered to select the invariant mass region of interest and a custom defined weight, \textit{fWeight}, is applied to the events, in order to rescale the sample to an integrated luminosity of 1.0 fb$^{-1}$.\\
+Starting from the AS distribution, different WPs are defined, as threshold values to cut on the jet level AS in order to reject between $20\%$ and $99.9\%$ of background events.
+Given the shapes presented, events with a Score greater than a specific WP are kept, defining the SR at that WP.
+In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported, together with the corresponding background rejection factor.
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{||c|c||}
+\hline
+\rowcolor{lightgray}
+\textbf{BKG rejection (\%)} & \textbf{AS cut value} \\
+\hline\hline
+20     & 4.61 \\
+\hline
+30        & 4.67 \\
+\hline
+40     & 4.73 \\
+\hline
+50        & 4.79\\
+\hline
+60          & 4.84 \\
+\hline
+70         & 4.91 \\
+\hline
+80           & 4.98 \\
+\hline
+85            & 5.03 \\
+\hline
+90      & 5.10 \\
+\hline
+95    & 5.21 \\
+\hline
+97    & 5.29 \\
+\hline
+99    & 5.47 \\
+\hline
+99.9    & 5.89 \\
+\hline
+\end{tabular}
+\caption{WPs and respective rejection factors computed on the QCD background.}
+\label{tab:ADJJ/GNN/AS/WPs}
+\end{table}
 
 
 %-------------------------------------------------------------------------------
@@ -248,65 +351,7 @@ Wprime     & 64.9 \\
 \section{Graph Neural Networks}
 \label{sec:gnn}
 
-Particle physics events inherently feature variable numbers of reconstructed objects—such as tracks, topological clusters, or jet constituents—interacting within complex geometrical spaces. Graph Neural Networks (GNNs) exploit this structure by representing collision events as sparse directed graphs $G = (V, E)$, where nodes $v_i \in V$ correspond to individual particles or sub-detectors, and edges $e_{ij} \in E$ parameterize relational features or spatial separations $\Delta R = \sqrt{(\Delta\eta)^2 + (\Delta\phi)^2}$.
-
-Node feature vectors $h_i^{(0)}$ encode basic spatial and kinematic observables, including transverse momentum $p_T$, pseudorapidity $\eta$, azimuthal angle $\phi$, and impact parameters. Graph neural architectures process relational topology through Message Passing Neural Network (MPNN) frameworks. At execution step $t$, node representations are updated iteratively using localized neighborhood information:
-\begin{equation}
-    m_i^{(t+1)} = \sum_{j \in \mathcal{N}(i)} \mathcal{M}_{\theta} \left( h_i^{(t)}, h_j^{(t)}, e_{ij} \right)
-\end{equation}
-\begin{equation}
-    h_i^{(t+1)} = \mathcal{U}_{\phi} \left( h_i^{(t)}, m_i^{(t+1)} \right)
-\end{equation}
-where $\mathcal{N}(i)$ defines the set of immediate spatial neighbors of node $i$, $\mathcal{M}_{\theta}$ represents a parameterized message function, and $\mathcal{U}_{\phi}$ constitutes a node-state update function.
-
-Permutation invariance across input node orderings is enforced via global pooling operations:
-\begin{equation}
-    h_G = \bigoplus_{v_i \in V} h_i^{(T)}
-\end{equation}
-where $\bigoplus$ represents a symmetric aggregation operator such as a element-wise summation, mean, or attention-weighted sum. In the context of large-radius jet substructure analyses within ATLAS, GNN architectures capture complex inter-particle correlations, color-flow dynamics, and energy distributions without relying on manually engineered substructure variables such as $N$-subjettiness $\tau_N$ or energy correlation functions $D_2$.
-
-\section{Anomaly Detection Implementation with Deep Learning}
-\label{sec:ad_implementation}
-
-Deep-learning-based Anomaly Detection in High Energy Physics is operationalized through distinct architectural formulations:
-
-\textbf{Self-Supervised Reconstruction Architectures:} Autoencoders (AEs) compress input vectors $x \in \mathbb{R}^d$ into a lower-dimensional latent representation $z \in \mathbb{R}^k$ ($k \ll d$) via an encoding network $f_\theta(x)$, subsequently reconstructing the input via a decoding network $g_\phi(z)$. Trained exclusively on dominant SM background events using loss metrics such as Mean Squared Error:
-\begin{equation}
-    \mathcal{L}_{\text{MSE}} = \| x - g_\phi(f_\theta(x)) \|^2
-\end{equation}
-the AE optimizes loss metrics for standard topologies. When evaluated on BSM topologies absent from training ensembles, the AE fails to accurately reconstruct the anomalous features, yielding significantly elevated reconstruction errors. These errors directly construct a continuous Anomaly Score (AS). Variational Autoencoders (VAEs) regularize this latent space by enforcing a standard Gaussian prior distribution $p(z) \sim \mathcal{N}(0, I)$ through a Kullback-Leibler divergence term $\mathcal{D}_{\text{KL}}$, balancing latent space continuity against reconstruction fidelity.
-
-\textbf{Weakly-Supervised Overdensity Estimation:} The Classification Without Labels (CWoLa) paradigm isolates overdensities in resonant spectra by establishing mixed signal-plus-background datasets. Defining a Signal Region (SR) in a invariant mass continuum $m_{JJ}$ alongside adjacent Control Sidebands (SB), a classifier is trained directly on unlabeled experimental data to distinguish SR events from SB events. By the Neyman-Pearson Lemma, a classifier trained on mixed ensembles with differing signal proportions converges monotonically to the optimal Likelihood Ratio:
-\begin{equation}
-    R(x) = \frac{p_{\text{data}}(x | m \in \text{SR})}{p_{\text{bg}}(x | m \in \text{SR})}
-\end{equation}
-
-Advanced weakly-supervised density estimators, such as CATHODE, CURTAINS, and ANODE, employ conditional normalizing flows or optimal transport algorithms to model sideband background dynamics, interpolating background probability densities directly into the SR to eliminate feature correlations and artificial mass sculpting.
-
-In the ATLAS ADJJ (Anomaly Detection in Dijet final states) analysis, GNN architectures are interfaced directly with model-independent search frameworks. Unsupervised GNN autoencoders process the constituent point-clouds of large-radius anti-$k_t$ ($R=1.0$) jets, outputting an Anomaly Score for every event. Selecting thresholds on the AS distribution defines specific Working Points (WPs), achieving background rejection factors spanning orders of magnitude. 
 
 Model-independent signal searches are subsequently executed by scanning the di-jet invariant mass $m_{JJ}$ spectrum across defined AS WPs. Smooth parametric functions model the suppressed SM background background continuum, while potential anomalous signals are evaluated using flexible resonance fits, such as Double-Sided Crystal Ball functions. Binned maximum likelihood fits combined with the $\text{CL}_s$ statistical method derive 95\% Confidence Level upper limits on production cross-sections, providing a sensitivity bridge between deep graph representations and model-agnostic BSM discoveries at CERN.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Overview of Anomaly Detection}
-\label{sec:ad_overview}
-
-Anomaly Detection encompasses algorithms that identify data instances deviating significantly from nominal distributions \cite{belis2023machine, tinari2024}. 
-In standard industrial contexts, anomalies manifest as out-of-sample or off-manifold events, such as fraudulent transactions or equipment failures \cite{kasieczka2021lhc, tinari2024}. 
-In High Energy Physics (HEP), single events rarely provide statistical evidence of new phenomena; BSM signals typically manifest as subtle over-densities in phase space \cite{belis2023machine, kasieczka2021lhc}.
-
-Within particle physics, ML-based AD strategies operate across different levels of supervision \cite{belis2023machine, tinari2024}. 
-Weakly supervised methods, such as Classification Without Labels (CWoLa) and CATHODE, estimate localized over-densities by comparing signal-enriched regions against adjacent sidebands \cite{belis2023machine, tinari2024}. 
-Conversely, fully unsupervised methods operate solely on background processes or unlabeled experimental data \cite{belis2023machine, tinari2024}. 
-These algorithms isolate rare topology features in kinematic distributions, providing an unbiased tool for model-agnostic BSM searches \cite{belis2023machine, davide_proc}.
-
-
-\section{Graph Neural Networks}\label{sec:gnn}
-Standard feedforward architectures struggle to process variable-size physical objects without imposing artificial ordering \cite{dav_ad_proc, Russo_thesis}. Hadronic jets, composed of varying counts of collimated sub-particles, naturally map to graph structures $G = (V, E)$, where $V$ denotes constituent nodes and $E$ represents interaction edges \cite{kasieczka2021lhc, davide_proc}. Node features contain kinematic variables $\mathbf{x}_i = (p_T, \eta, \phi)$, while edge features capture pairwise angular separations $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$ \cite{kasieczka2021lhc, davide_proc}.Graph Neural Networks (GNNs) preserve permutation invariance while executing local message passing \cite{kasieczka2021lhc, davide_proc}. The representation $\mathbf{h}_i^{(l)}$ of node $i$ at layer $l$ updates according to aggregated messages from its spatial neighborhood $\mathcal{N}(i)$ \cite{davide_proc}:\begin{equation}\mathbf{m}_{ij}^{(l)} = \phi_e \left( \mathbf{h}_i^{(l-1)}, \mathbf{h}j^{(l-1)}, \mathbf{e}{ij} \right)\end{equation}\begin{equation}\mathbf{h}i^{(l)} = \phi_v \left( \mathbf{h}i^{(l-1)}, \bigoplus{j \in \mathcal{N}(i)} \mathbf{m}{ij}^{(l)} \right)\end{equation}where $\phi_e$ and $\phi_v$ denote neural operations, $\mathbf{e}_{ij}$ is the edge feature, and $\bigoplus$ represents a permutation-invariant aggregation operator such as sum, mean, or max \cite{kasieczka2021lhc, davide_proc}. Graph-level outputs obtain global representations via permutation-invariant pooling functions across all nodes \cite{davide_proc}.
-
-\section{Anomaly Detection Implementation via Deep Architectures}\label{sec:ad_implementation}
-Unsupervised AD implementation utilizing DNNs and GNNs relies on latent representation learning \cite{belis2023machine, tinari2024}. Autoencoders (AEs) compress input graph representations $\mathbf{x}$ into a lower-dimensional bottleneck $\mathbf{z} = f_{\text{enc}}(\mathbf{x})$ before generating a reconstructed output $\hat{\mathbf{x}} = f_{\text{dec}}(\mathbf{z})$ \cite{belis2023machine, tinari2024}. When trained exclusively on dominant Standard Model background events, the network learns lossy compression tailored to nominal physics patterns \cite{belis2023machine, davide_proc}.Events containing BSM physics produce higher reconstruction errors due to unlearned substructure features \cite{belis2023machine, tinari2024}. An Anomaly Score ($AS$) is defined using the Mean Squared Error (MSE) metric \cite{belis2023machine, dav_ad_proc}:\begin{equation}AS = \frac{1}{N} \sum_{i=1}^{N} \left| \mathbf{x}_i - \hat{\mathbf{x}}_i \right|^2\end{equation}In ATLAS model-independent searches, cuts applied to the calculated $AS$ distribution isolate BSM candidates \cite{belis2023machine, davide_proc}. By filtering out high-probability background interactions, these architectures define signal-enriched regions directly from data, enabling model-agnostic resonance searches \cite{belis2023machine, tinari2024}.
 
 

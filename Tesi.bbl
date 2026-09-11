@@ -1,4 +1,4 @@
-\begin{thebibliography}{69}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -408,6 +408,11 @@ V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
   physics"}.
 \newblock \emph{Reviews in Physics}, (2023).
 \newblock URL \url{http://dx.doi.org/10.1016/j.revip.2024.100091}.
+
+\bibitem[{Pro Loco Roma Capitale}()]{Rome_view}
+{Pro Loco Roma Capitale}.
+\newblock \textit{"Il Colle Gianicolo "}.
+\newblock URL \url{https://www.prolocoroma.it/gianicolo/}.
 
 \bibitem[Duarte and Vlimant((2022))]{GNN_HEP}
 J.~Duarte and J.R. Vlimant.

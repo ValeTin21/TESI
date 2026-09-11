@@ -1,68 +1,64 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Introduction}{1}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}(Beyond) The Standard Model }{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}An overview of the Standard Model}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Quantum Electrodynamics}{6}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Quantum Chromodynamics}{7}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Electroweak model}{8}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}The Brout-Englert-Higgs mechanism}{9}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Hints of Physics Beyond the Standard Model}{10}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}New Physics at colliders}{11}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Heavy Vector Triplets}{12}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Dark Jets}{13}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiments}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The LHC}{14}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}CERN's accelerator system}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}The LHC parameters}{16}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}LHC Run Schedule}{17}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}\textit {pp} collisions at the LHC}{18}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Pile-Up and hadronisation}{19}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Electromagnetic Showers}{20}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Hadronic Showers}{21}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}The ATLAS detector}{21}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Coordinate system}{21}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Magnetic system}{24}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Particle tracking}{25}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}The Inner Detector}{26}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Calorimeters}{27}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Muon spectrometer}{29}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Trigger system}{31}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}The ATLAS Simulation Infrastructure}{32}{subsection.2.3.8}%
-\contentsline {chapter}{\numberline {3}Hadron reconstruction in ATLAS}{33}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tracks reconstruction in ID}{33}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Jets reconstruction}{34}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Jet constituents reconstruction}{34}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Constituents combination and jets formation}{37}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Jet calibration}{37}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Jet substructure variables}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}$N$-Subjettiness ($\tau _N$)}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Energy Correlation Functions (ECFs) and $D_2$}{39}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Anomaly Detection}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}What is Anomaly detection?}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Deep Learning}{42}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Mathematical definition}{42}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Loss function}{43}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Learning paradigms}{44}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}The steps for a model to learn}{44}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Estimating the model's performance}{45}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Anomaly Detection in High Energy Physics}{45}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Towards the statistical analysis}{47}{section.4.4}%
-\contentsline {chapter}{\numberline {5}ATLAS analysis with AD in hadronic final states}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The dataset}{49}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Final states}{50}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Signal processes}{50}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Background processes}{51}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}The event preselection}{52}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Training the ML model }{52}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}The architecture in use}{53}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Training the model}{54}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Performance of the GNN}{55}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Anomaly Score distribution}{55}{subsection.5.3.4}%
+\contentsline {chapter}{\numberline {1}(Beyond) The Standard Model }{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}An overview of the Standard Model}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Quantum Electrodynamics}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Quantum Chromodynamics}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Electroweak model}{7}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}The Brout-Englert-Higgs mechanism}{8}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Hints of Physics Beyond the Standard Model}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}New Physics at colliders}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Heavy Vector Triplets}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Dark Jets}{12}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiments}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The LHC}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}CERN's accelerator system}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}The LHC parameters}{15}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}LHC Run Schedule}{16}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}\textit {pp} collisions at the LHC}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Pile-Up and hadronisation}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Electromagnetic Showers}{19}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Hadronic Showers}{20}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}The ATLAS detector}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Coordinate system}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Magnetic system}{23}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Particle tracking}{24}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}The Inner Detector}{25}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Calorimeters}{26}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Muon spectrometer}{28}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Trigger system}{30}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}The ATLAS Simulation Infrastructure}{31}{subsection.2.3.8}%
+\contentsline {chapter}{\numberline {3}Hadron reconstruction in ATLAS}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tracks reconstruction in ID}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Jets reconstruction}{33}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Jet constituents reconstruction}{33}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constituents combination and jets formation}{36}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Jet calibration}{36}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Jet substructure variables}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}$N$-Subjettiness ($\tau _N$)}{38}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Energy Correlation Functions (ECFs) and $D_2$}{38}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Anomaly Detection}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}What is Anomaly detection?}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Deep Learning}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Mathematical definition}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Loss function}{42}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Learning paradigms}{43}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}The steps for a model to learn}{43}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Estimating the model's performance}{44}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Anomaly Detection in High Energy Physics}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Towards the statistical analysis}{46}{section.4.4}%
+\contentsline {chapter}{\numberline {5}ATLAS analysis with AD in hadronic final states}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The dataset}{48}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Final states}{49}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Signal processes}{49}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Background processes}{50}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}The event preselection}{51}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Training the ML model }{51}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}The architecture in use}{52}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Training the model}{53}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Performance of the GNN}{54}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Anomaly Score distribution}{54}{subsection.5.3.4}%
 \contentsline {section}{\numberline {5.4}Correlation of the Score with kinematic variables}{55}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Graph Neural Networks}{55}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Anomaly Detection Implementation with Deep Learning}{56}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Overview of Anomaly Detection}{57}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Graph Neural Networks}{58}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Anomaly Detection Implementation via Deep Architectures}{58}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Conclusions}{59}{chapter.6}%
-\contentsline {chapter}{Bibliography}{60}{section*.58}%
+\contentsline {chapter}{\numberline {6}Conclusions}{58}{chapter.6}%
+\contentsline {chapter}{Bibliography}{59}{section*.60}%
