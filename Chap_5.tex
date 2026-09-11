@@ -108,14 +108,30 @@ In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stac
 
 \noindent As evident from the plot in Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack}, the dominant background contribution comes from QCD jets, followed by $t\bar{t}$, $W$+jets and $Z$+jets processes.
 Concerning the latter, the contribution coming from $b$ jets is kept separate from the one coming from light jets, leveraging the information coming from $b$-tagging algorithms.\\ 
-More importantly, the plot shows two other main features of the distribution.
-The first one is the steeply falling nature of the distribution, which is a common feature of QCD-like processes.
-This, in principle, makes the search for NP resonances more challenging, as they are expected to appear as small bumps on top of the background distribution.
-The second feature is the integrated luminosity of the sample, which has been set to be 1 fb$^{-1}$, normalizing the distribution for a proper factor, in order to have a cleaner procedure to compute the events normalization at higher luminosities, a crucial computation for the next steps of the analysis.\\
+The plot shows three other main features of the distribution.
+The first feature is the integrated luminosity of the sample, which has been set to be 1 fb$^{-1}$, normalizing the distribution for a proper factor, in order to have a cleaner procedure to compute the events normalization at higher luminosities, a crucial computation for the next steps of the analysis.\\
+The second one is the steeply falling nature of the distribution ($\sim\frac{1}{q^2}$), which is a common feature of QCD-like processes.
+This, in principle, makes the search for NP resonances more challenging, as they are expected to appear as small bumps on top of the background distribution.\\
+The last feature, connected to the previous, is that, in reality, the background distribution is not smooth in the entire range of the variable, which would cause a divergence at $m_{JJ} \sim 0$ GeV.
+Instead, the distribution presents a turn on region, around 1 TeV, due to the trigger and kinematic requirements applied on the transverse momentum $p_T$ of the jets during the event preselection, which are described in Sec. \ref{sec:ADJJ/dataset/evSel}.
+The relation between those requirements and the turn on region comes from the equation of the invariant mass of two objects, which is defined as $m_{JJ} = \sqrt{2 p_{T,1} p_{T,2} (\cosh(\Delta \eta) - \cos(\Delta \phi))}$.
 
 %-------------------------------------------------------------------------------
+\subsection{Weights for the sample}\label{sec:ADJJ/dataset/weights}
+
+To create a MC sample, typically the full dataset in the entire invariant mass region of interest is not generated entirely all at once. 
+Instead, it is generated slice by slice, in steps of the invariant mass, where each slice is peaked to a mass value. 
+Since all these slices are assumed independent processes, they can be combined as the sum in quadrature of the terms, without intereferences. 
+This translates in the fact that the slices of MC histograms can be simply summed together bin per bin.
+When combining the slices, a proper normalization and reweighting has to be applied, in order to have a correct representation of the entire sample. 
+This procedure of combining the slices is named \textit{sampling} and it is applied when creating the samples to use.\\
+For each event a weight is defined, to take into account both the effect just cited and other aspects.
+Among those we find a compatibility, in terms of acceptance or efficiency, between the MC and the real data, which is not always guaranteed, or pile-up effects which have to be included.
+All these aspects are combined and taken into account by the variable \textit{weight\_total\_NOSYS} of the dataset. 
+
+
 %-------------------------------------------------------------------------------
-\section{The event preselection}\label{sec:ADJJ/evSel}
+\subsection{The event preselection}\label{sec:ADJJ/dataset/evSel}
 After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco}, an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
 The first step of preselection is the application of three trigger requirements.
 First of all, a jet has to fire the single jet trigger item \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
@@ -124,7 +140,7 @@ Finally, a cut on the leading jet $p_T$ is applied, requiring it to be greater t
 This latter requirement is meant to take into account the data bandwidth limitations: given the smoothly falling shape of the $p_T$ distribution, the region with lower $p_T$ is more populated, leading to a higher number of events to be stored, which is not sustainable given the limited bandwidth available.\\
 Together with the trigger criteria, a set of kinematic cuts is applied to the events, to properly define the objects of interest.
 In particular, each event is required to have at least two large-radius jets, each of it (leading and sub-leading) with mass greater than 50 GeV, $p_T$ greater than 200 GeV and pseudorapidity $\eta$ within the range $[-2.0, 2.0]$.\\
-The requirements applied during the event preselection are summarized in Tab. \ref{tab:ADJJ/evSel/preselection}.
+The requirements applied during the event preselection are summarized in Tab. \ref{tab:ADJJ/dataset/evSel/preselection}.
 
 
 \begin{table}[htbp]
@@ -152,7 +168,7 @@ $|\eta_{ jet}| \le 470$        \\
 \hline
 \end{tabular}
 \caption{Trigger and object definition requirements applied during the event preselection.}
-\label{tab:ADJJ/evSel/preselection}
+\label{tab:ADJJ/dataset/evSel/preselection}
 \end{table}
 
 \noindent Events passing this preselection form the dataset used to train and test the ML model, which is the core of the AD approach.
