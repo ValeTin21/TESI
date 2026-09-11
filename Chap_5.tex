@@ -116,8 +116,46 @@ The second feature is the integrated luminosity of the sample, which has been se
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{The event preselection}\label{sec:ADJJ/evSel}
+After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco}, an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
+The first step of preselection is the application of three trigger requirements.
+First of all, a jet has to fire the single jet trigger item \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
+Secondly, it is required that the object raising this trigger is the leading jet of the event, where the leading jet is defined as the one with the highest transverse momentum $p_T$.
+Finally, a cut on the leading jet $p_T$ is applied, requiring it to be greater than 470 GeV: $p_{\text{T}} > 470\text{ GeV}$.
+This latter requirement is meant to take into account the data bandwidth limitations: given the smoothly falling shape of the $p_T$ distribution, the region with lower $p_T$ is more populated, leading to a higher number of events to be stored, which is not sustainable given the limited bandwidth available.\\
+Together with the trigger criteria, a set of kinematic cuts is applied to the events, to properly define the objects of interest.
+In particular, each event is required to have at least two large-radius jets, each of it (leading and sub-leading) with mass greater than 50 GeV, $p_T$ greater than 200 GeV and pseudorapidity $\eta$ within the range $[-2.0, 2.0]$.\\
+The requirements applied during the event preselection are summarized in Tab. \ref{tab:ADJJ/evSel/preselection}.
 
-\textbf{ADD HERE DETAILS ABOUT THE EVENT PRESELECTION APPLIED TO CREATE NTUPLES}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Preselection requirements} \\
+\hline\hline
+Triger item  \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}     \\
+\hline
+Trigger fired by leading jet       \\
+\hline
+$p_{\text{T}, lead jet} > 470\text{ GeV}$       \\
+\hline
+\#jets > 2        \\
+\hline
+$m_{lead jet}   > 50\text{ GeV}$       \\
+\hline
+$m_{sublead jet}   > 50\text{ GeV}$         \\
+\hline
+$p_{\text{T}, jets} > 200\text{ GeV}$            \\
+\hline
+$|\eta_{ jet}| \le 470$        \\
+\hline
+\end{tabular}
+\caption{Trigger and object definition requirements applied during the event preselection.}
+\label{tab:ADJJ/evSel/preselection}
+\end{table}
+
+\noindent Events passing this preselection form the dataset used to train and test the ML model, which is the core of the AD approach.
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------

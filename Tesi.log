@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  11 SEP 2026 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  11 SEP 2026 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1738,54 +1738,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--115
  []
 
 [50 <./Images/Chap5/FeyDiag/YXH_Fdiag.png>]
-<Images/Chap5/Graphics/GraphTransversePlane.pdf, id=1283, 231.26399pt x 115.632pt>
+Overfull \hbox (58.63959pt too wide) in paragraph at lines 119--128
+\T1/lmr/m/n/10.95 (-20) all, a jet has to fire the sin-gle jet trig-ger item \T1/lmr/m/it/10.95 (-20) HLT_j460_a10_sd_cssk_pf_ftf_preselj225_L1J100\T1/lmr/m/n/10.95 (-20) .
+ []
+
+[51 <./Images/Chap5/DataPlots/BKG_stack.pdf, page is rotated 90 degrees>]
+<Images/Chap5/Graphics/GraphTransversePlane.pdf, id=1332, 231.26399pt x 115.632pt>
 File: Images/Chap5/Graphics/GraphTransversePlane.pdf Graphic file (type pdf)
 <use Images/Chap5/Graphics/GraphTransversePlane.pdf>
-Package pdftex.def Info: Images/Chap5/Graphics/GraphTransversePlane.pdf  used on input line 131.
+Package pdftex.def Info: Images/Chap5/Graphics/GraphTransversePlane.pdf  used on input line 169.
 (pdftex.def)             Requested size: 252.94499pt x 126.47923pt.
- [51 <./Images/Chap5/DataPlots/BKG_stack.pdf, page is rotated 90 degrees>] [52 <./Images/Chap5/Graphics/GraphTransversePlane.pdf>]
+ [52 <./Images/Chap5/Graphics/GraphTransversePlane.pdf>]
 <Images/Chap5/Graphics/EGAT_sketch.png, id=1351, 738.96075pt x 292.09125pt>
 File: Images/Chap5/Graphics/EGAT_sketch.png Graphic file (type png)
 <use Images/Chap5/Graphics/EGAT_sketch.png>
-Package pdftex.def Info: Images/Chap5/Graphics/EGAT_sketch.png  used on input line 161.
+Package pdftex.def Info: Images/Chap5/Graphics/EGAT_sketch.png  used on input line 199.
 (pdftex.def)             Requested size: 397.48499pt x 157.1163pt.
 
-Overfull \hbox (1.48499pt too wide) in paragraph at lines 161--162
+Overfull \hbox (1.48499pt too wide) in paragraph at lines 199--200
  [][] 
  []
 
-<Images/Chap5/Graphics/DeepSVDDloss.png, id=1354, 1088.26575pt x 337.26pt>
+[53]
+<Images/Chap5/Graphics/DeepSVDDloss.png, id=1364, 1088.26575pt x 337.26pt>
 File: Images/Chap5/Graphics/DeepSVDDloss.png Graphic file (type png)
 <use Images/Chap5/Graphics/DeepSVDDloss.png>
-Package pdftex.def Info: Images/Chap5/Graphics/DeepSVDDloss.png  used on input line 183.
+Package pdftex.def Info: Images/Chap5/Graphics/DeepSVDDloss.png  used on input line 221.
 (pdftex.def)             Requested size: 252.94499pt x 78.3864pt.
-[53 <./Images/Chap5/Graphics/EGAT_sketch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 248--252
+ [54 <./Images/Chap5/Graphics/EGAT_sketch.png> <./Images/Chap5/Graphics/DeepSVDDloss.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
-[54 <./Images/Chap5/Graphics/DeepSVDDloss.png>]
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png, id=1377, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png, id=1378, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png  used on input line 259.
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png  used on input line 297.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png, id=1378, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png, id=1379, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png  used on input line 266.
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png  used on input line 304.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png, id=1379, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png, id=1380, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png  used on input line 276.
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png  used on input line 314.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png, id=1380, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png, id=1381, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png  used on input line 283.
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png  used on input line 321.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
- [55] [56 <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>]) [57]
+[55] [56 <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>]) [57]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
@@ -1825,20 +1830,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 2CC6D12FE41CD824F4F64127A81DDEA5;11290.
+(rerunfilecheck)             Checksum: 3502EBF46C3BB1FB589F58DB92D99ED6;11290.
  ) 
 Here is how much of TeX's memory you used:
- 46795 strings out of 467510
- 1020514 string characters out of 5408794
- 1524546 words of memory out of 5000000
- 74551 multiletter control sequences out of 15000+600000
+ 46797 strings out of 467510
+ 1020559 string characters out of 5408794
+ 1524659 words of memory out of 5000000
+ 74552 multiletter control sequences out of 15000+600000
  784469 words of font info for 327 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (69 pages, 10755111 bytes).
+Output written on Tesi.pdf (69 pages, 10758695 bytes).
 PDF statistics:
- 1706 PDF objects out of 1728 (max. 8388607)
- 323 named destinations out of 1000 (max. 500000)
+ 1709 PDF objects out of 1728 (max. 8388607)
+ 324 named destinations out of 1000 (max. 500000)
  85247 words of extra memory for PDF output out of 89155 (max. 10000000)
 
