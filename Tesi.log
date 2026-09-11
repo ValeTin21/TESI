@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  11 SEP 2026 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  11 SEP 2026 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1785,12 +1785,72 @@ File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png Graphic file (type png
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png  used on input line 336.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
- [56] [57 <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>]) [58]
+ [56] [57 <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>]
+<Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png, id=1409, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png  used on input line 411.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png, id=1410, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png  used on input line 418.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png, id=1411, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png  used on input line 428.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png, id=1412, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png  used on input line 435.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png, id=1413, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png  used on input line 445.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png, id=1414, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png  used on input line 452.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+
+
+LaTeX Warning: Float too large for page by 0.30812pt on input line 460.
+
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png, id=1417, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png Graphic file (type png)
+<use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png  used on input line 477.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png, id=1418, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png Graphic file (type png)
+<use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png  used on input line 484.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png, id=1419, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png Graphic file (type png)
+<use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png  used on input line 494.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png, id=1420, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png Graphic file (type png)
+<use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png  used on input line 501.
+(pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+[58] [59 <./Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png>] [60 <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png>]) [61]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [59
+) [62
 
 
 
@@ -1804,18 +1864,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [60
+ [63
 
 
 
 
 
-] [61] [62] [63]
+] [64] [65] [66]
 Underfull \hbox (badness 1275) in paragraph at lines 399--404
 []\T1/lmr/m/n/10.95 (+20) Scikit-learn.  ROC curve.  URL: [][]$\T1/lmtt/m/n/10.95 https : / / scikit-[]learn . org / stable /
  []
 
-) [64] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
+) [67] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1825,20 +1885,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 57EF917EE6F671D9B6D1E3F37A2D63D5;11450.
+(rerunfilecheck)             Checksum: 161CDF08535A1A46FFAC8545136F1A0A;11450.
  ) 
 Here is how much of TeX's memory you used:
- 46801 strings out of 467510
- 1020662 string characters out of 5408794
- 1525718 words of memory out of 5000000
- 74554 multiletter control sequences out of 15000+600000
- 784469 words of font info for 327 fonts, out of 8000000 for 9000
+ 46904 strings out of 467510
+ 1026600 string characters out of 5408794
+ 1526781 words of memory out of 5000000
+ 74646 multiletter control sequences out of 15000+600000
+ 784740 words of font info for 330 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (70 pages, 10763054 bytes).
+Output written on Tesi.pdf (73 pages, 10976300 bytes).
 PDF statistics:
- 1721 PDF objects out of 1728 (max. 8388607)
- 326 named destinations out of 1000 (max. 500000)
- 85255 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1752 PDF objects out of 2073 (max. 8388607)
+ 331 named destinations out of 1000 (max. 500000)
+ 85305 words of extra memory for PDF output out of 89155 (max. 10000000)
 

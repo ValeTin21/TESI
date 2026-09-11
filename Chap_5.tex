@@ -396,13 +396,121 @@ In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported,
 %-------------------------------------------------------------------------------
 \section{Correlation of the Score with kinematic variables}\label{sec:ADJJ/AScorrelation}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+An important step before proceeding with the statistical analysis is to evaluate the correlation of the AS with key kinematic variables.
+This evalution is needed to verify that the AS is not strongly coupled with the kinematics of the events, which would lead to a distortion of the background distribution after applying a cut on the AS.
+The first crucial variable to be evaluated is the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis used to search for NP resonances.
+Together with this, also the coordinates $p_T, \eta, \phi$ of the leading and sub-leading jets are evaluated, to guarantee a full understanding of the correlations.\\
+In Fig. \ref{fig:ADJJ/AScorrelation/CorrPlots} the correlation plots of the score vs the other variables are shown, for the leading jet of QCD events, the main background component.
 
-Assessing correlations between the GNN anomaly score and key kinematic variables remains essential to ensure the validity of downstream statistical modeling and avoid unexpected continuum distortion. 
-Strong coupling between the network's score and event quantities, particularly the di-jet invariant mass $m_{JJ}$, introduces artificial sculpting into background spectra after threshold selections are imposed. Such sculpting degrades the accuracy of smooth parametric background functions across selected signal regions and leads to potential false-positive resonance observations. 
-Evaluating these dynamic interdependencies involves computing two-dimensional feature profiles, Pearson correlation coefficients, and distance-correlation metrics across varying anomaly score working points. 
-When neural representations remain conditional on jet kinematics or un-decorrelated from primary mass observables, background sideband distributions shift unpredictably under stringent background rejection cuts. 
-Verifying minimal kinematic coupling across the baseline selection guarantees that background modeling functions retain robust, smooth functional forms, thereby safeguarding the integrity of subsequent $CL_s$ statistical upper limits.
+\begin{figure}[htbp]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_mJJ}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_pt}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_eta}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png} 
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_phi}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Third row (Figure e f) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_D2}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png} 
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/AS1_leadmass}
+  \end{subfigure}
+
+  
+  \caption{Plots presentating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta$, (d) leading jet $\phi$, (e) $D_2$ and (f) mass.}
+  \label{fig:ADJJ/AScorrelation/CorrPlots}
+\end{figure}
+
+\noindent As visible from the plots in Fig. \ref{fig:ADJJ/AScorrelation/CorrPlots}, the AS is not strongly correlated with most of the kinematic variables considered.
+A slight correlation is visible with the leading jet mass, which is one of the training features of the model. Such correlation, anyway, is compensated by the reduced correlation with the sub-leading jet mass, which balances the situation.
+Results just presented are compatible with those obtained for the sub-leading jet score and its related variables.\\
+From this step it is possible to conclude that it is not expected to introduce any bias in the background distribution after applying a cut on it based on the AS.\\
+Another way to visualize the impact of the AS on the background distribution is to plot the di-jet invariant mass $m_{JJ}$ before and after applying a cut on the AS, at different WPs.
+If the correlation is low, the shape of the distribution should not change significantly after applying the cut.
+If this assumption is not verified, artificial sculpting is introduced in the background distribution by the AS cut, which could degrade the accuracy of the search.
+Plots associated to this study on the QCD distribution are shown in Fig. \ref{fig:ADJJ/AScorrelation/mJJ_AScut}.
+
+\begin{figure}[htbp]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/SRCR20}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/SRCR80}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png}
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/SRCR90}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png} 
+    \caption{}
+    \label{subfig:ADJJ/AScorrelation/SRCR99}
+  \end{subfigure}
+  
+  \caption{Plots presentating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99.}
+  \label{fig:ADJJ/AScorrelation/mJJ_AScut}
+\end{figure}
+
+\noindent The plots in Fig. \ref{fig:ADJJ/AScorrelation/mJJ_AScut} show that, as expected, the shape of the $m_{JJ}$ distribution is not significantly affected by the AS cut, even at high WPs, confirming that the AS is not strongly correlated with the di-jet invariant mass.
+In particular, the sculpting effect is not observed, guaranteeing that the background distribution can still be modeled with a smooth function even after applying an event selection based on AS.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
