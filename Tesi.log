@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  12 SEP 2026 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  13 SEP 2026 01:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1179,7 +1179,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=266, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=274, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 83.
@@ -1279,7 +1279,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  (Chap_1.tex
 Chapter 1.
-<Images/Chap1/SM_framework_UP.png, id=396, 2960.05875pt x 2890.8pt>
+<Images/Chap1/SM_framework_UP.png, id=406, 2960.05875pt x 2890.8pt>
 File: Images/Chap1/SM_framework_UP.png Graphic file (type png)
 <use Images/Chap1/SM_framework_UP.png>
 Package pdftex.def Info: Images/Chap1/SM_framework_UP.png  used on input line 14.
@@ -1300,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--112
  []
 
 [6] [7]
-<Images/Chap1/HiggsPotential.png, id=466, 563.10374pt x 355.3275pt>
+<Images/Chap1/HiggsPotential.png, id=476, 563.10374pt x 355.3275pt>
 File: Images/Chap1/HiggsPotential.png Graphic file (type png)
 <use Images/Chap1/HiggsPotential.png>
 Package pdftex.def Info: Images/Chap1/HiggsPotential.png  used on input line 169.
@@ -1320,13 +1320,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
-<Images/Chap1/ATLAS_VVJJ.png, id=514, 501.875pt x 475.7775pt>
+<Images/Chap1/ATLAS_VVJJ.png, id=524, 501.875pt x 475.7775pt>
 File: Images/Chap1/ATLAS_VVJJ.png Graphic file (type png)
 <use Images/Chap1/ATLAS_VVJJ.png>
 Package pdftex.def Info: Images/Chap1/ATLAS_VVJJ.png  used on input line 245.
 (pdftex.def)             Requested size: 216.81pt x 205.53862pt.
 [11 <./Images/Chap1/ATLAS_VVJJ.png (PNG copy)>]
-<Images/Chap1/DJ_Run2.png, id=530, 845.1575pt x 597.23125pt>
+<Images/Chap1/DJ_Run2.png, id=540, 845.1575pt x 597.23125pt>
 File: Images/Chap1/DJ_Run2.png Graphic file (type png)
 <use Images/Chap1/DJ_Run2.png>
 Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 260.
@@ -1336,7 +1336,7 @@ Package pdftex.def Info: Images/Chap1/DJ_Run2.png  used on input line 260.
 
  (Chap_2.tex
 Chapter 2.
-<Images/Chap2/CERN_acc_system.png, id=541, 346.896pt x 308.352pt>
+<Images/Chap2/CERN_acc_system.png, id=551, 346.896pt x 308.352pt>
 File: Images/Chap2/CERN_acc_system.png Graphic file (type png)
 <use Images/Chap2/CERN_acc_system.png>
 Package pdftex.def Info: Images/Chap2/CERN_acc_system.png  used on input line 14.
@@ -1354,30 +1354,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [14 <./Images/Chap2/CERN_acc_system.png>]
-<Images/Chap2/BeamsCERN.png, id=563, 506.89375pt x 521.95pt>
+<Images/Chap2/BeamsCERN.png, id=573, 506.89375pt x 521.95pt>
 File: Images/Chap2/BeamsCERN.png Graphic file (type png)
 <use Images/Chap2/BeamsCERN.png>
 Package pdftex.def Info: Images/Chap2/BeamsCERN.png  used on input line 56.
 (pdftex.def)             Requested size: 144.54pt x 148.82896pt.
  [15 <./Images/Chap2/BeamsCERN.png (PNG copy)>] [16]
-<Images/Chap2/ATLAS_L_R1_R3.png, id=589, 798.985pt x 574.145pt>
+<Images/Chap2/ATLAS_L_R1_R3.png, id=599, 798.985pt x 574.145pt>
 File: Images/Chap2/ATLAS_L_R1_R3.png Graphic file (type png)
 <use Images/Chap2/ATLAS_L_R1_R3.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_L_R1_R3.png  used on input line 115.
 (pdftex.def)             Requested size: 252.94499pt x 181.75899pt.
  [17 <./Images/Chap2/ATLAS_L_R1_R3.png>]
-<Images/Chap2/ppCollision.png, id=605, 687.56876pt x 529.98pt>
+<Images/Chap2/ppCollision.png, id=615, 687.56876pt x 529.98pt>
 File: Images/Chap2/ppCollision.png Graphic file (type png)
 <use Images/Chap2/ppCollision.png>
 Package pdftex.def Info: Images/Chap2/ppCollision.png  used on input line 135.
 (pdftex.def)             Requested size: 144.54pt x 111.4123pt.
-<Images/Chap2/PU_R1_R3.jpg, id=611, 210.88387pt x 148.00896pt>
+<Images/Chap2/PU_R1_R3.jpg, id=621, 210.88387pt x 148.00896pt>
 File: Images/Chap2/PU_R1_R3.jpg Graphic file (type jpg)
 <use Images/Chap2/PU_R1_R3.jpg>
 Package pdftex.def Info: Images/Chap2/PU_R1_R3.jpg  used on input line 153.
 (pdftex.def)             Requested size: 202.35622pt x 142.02824pt.
  [18 <./Images/Chap2/ppCollision.png (PNG copy)>]
-<Images/Chap2/EMShower.png, id=623, 853.1875pt x 480.79625pt>
+<Images/Chap2/EMShower.png, id=633, 853.1875pt x 480.79625pt>
 File: Images/Chap2/EMShower.png Graphic file (type png)
 <use Images/Chap2/EMShower.png>
 Package pdftex.def Info: Images/Chap2/EMShower.png  used on input line 173.
@@ -1387,12 +1387,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
 
-<Images/Chap2/ATLASDetector.png, id=634, 1445.4pt x 886.31125pt>
+<Images/Chap2/ATLASDetector.png, id=644, 1445.4pt x 886.31125pt>
 File: Images/Chap2/ATLASDetector.png Graphic file (type png)
 <use Images/Chap2/ATLASDetector.png>
 Package pdftex.def Info: Images/Chap2/ATLASDetector.png  used on input line 203.
 (pdftex.def)             Requested size: 310.76122pt x 190.55319pt.
-<Images/Chap2/CoordinateSyst.png, id=638, 935.74594pt x 454.69875pt>
+<Images/Chap2/CoordinateSyst.png, id=648, 935.74594pt x 454.69875pt>
 File: Images/Chap2/CoordinateSyst.png Graphic file (type png)
 <use Images/Chap2/CoordinateSyst.png>
 Package pdftex.def Info: Images/Chap2/CoordinateSyst.png  used on input line 215.
@@ -1401,13 +1401,13 @@ Package pdftex.def Info: Images/Chap2/CoordinateSyst.png  used on input line 215
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./Images/Chap2/ATLASDetector.png>]
-<Images/Chap2/Rap_PseudoRap.png, id=649, 6053.61626pt x 2579.6375pt>
+<Images/Chap2/Rap_PseudoRap.png, id=659, 6053.61626pt x 2579.6375pt>
 File: Images/Chap2/Rap_PseudoRap.png Graphic file (type png)
 <use Images/Chap2/Rap_PseudoRap.png>
 Package pdftex.def Info: Images/Chap2/Rap_PseudoRap.png  used on input line 238.
 (pdftex.def)             Requested size: 238.49121pt x 101.59344pt.
  [21 <./Images/Chap2/CoordinateSyst.png> <./Images/Chap2/Rap_PseudoRap.png>]
-<Images/Chap2/pTmiss.png, id=662, 2954.03625pt x 1710.39pt>
+<Images/Chap2/pTmiss.png, id=672, 2954.03625pt x 1710.39pt>
 File: Images/Chap2/pTmiss.png Graphic file (type png)
 <use Images/Chap2/pTmiss.png>
 Package pdftex.def Info: Images/Chap2/pTmiss.png  used on input line 281.
@@ -1417,7 +1417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-<Images/Chap2/ATLASMagnetSystem.png, id=672, 620.91975pt x 486.618pt>
+<Images/Chap2/ATLASMagnetSystem.png, id=682, 620.91975pt x 486.618pt>
 File: Images/Chap2/ATLASMagnetSystem.png Graphic file (type png)
 <use Images/Chap2/ATLASMagnetSystem.png>
 Package pdftex.def Info: Images/Chap2/ATLASMagnetSystem.png  used on input line 298.
@@ -1428,7 +1428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
  []
 
 [24]
-<Images/Chap2/InnerDetector_3D.png, id=701, 956.57375pt x 831.105pt>
+<Images/Chap2/InnerDetector_3D.png, id=711, 956.57375pt x 831.105pt>
 File: Images/Chap2/InnerDetector_3D.png Graphic file (type png)
 <use Images/Chap2/InnerDetector_3D.png>
 Package pdftex.def Info: Images/Chap2/InnerDetector_3D.png  used on input line 344.
@@ -1439,13 +1439,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--363
  []
 
 [25 <./Images/Chap2/InnerDetector_3D.png (PNG copy)>]
-<Images/Chap2/ATLAS_Calo.png, id=716, 1621.05624pt x 1091.07625pt>
+<Images/Chap2/ATLAS_Calo.png, id=726, 1621.05624pt x 1091.07625pt>
 File: Images/Chap2/ATLAS_Calo.png Graphic file (type png)
 <use Images/Chap2/ATLAS_Calo.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_Calo.png  used on input line 383.
 (pdftex.def)             Requested size: 245.71754pt x 165.36917pt.
  [26]
-<Images/Chap2/Accordion_CAL.png, id=727, 803.0pt x 652.4375pt>
+<Images/Chap2/Accordion_CAL.png, id=737, 803.0pt x 652.4375pt>
 File: Images/Chap2/Accordion_CAL.png Graphic file (type png)
 <use Images/Chap2/Accordion_CAL.png>
 Package pdftex.def Info: Images/Chap2/Accordion_CAL.png  used on input line 409.
@@ -1455,12 +1455,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
-<Images/Chap2/ATLAS_muon.png, id=741, 548.0475pt x 604.2575pt>
+<Images/Chap2/ATLAS_muon.png, id=751, 548.0475pt x 604.2575pt>
 File: Images/Chap2/ATLAS_muon.png Graphic file (type png)
 <use Images/Chap2/ATLAS_muon.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_muon.png  used on input line 446.
 (pdftex.def)             Requested size: 150.48193pt x 165.91777pt.
-<Images/Chap2/ATLAS_muon_proj.png, id=742, 626.94225pt x 401.0985pt>
+<Images/Chap2/ATLAS_muon_proj.png, id=752, 626.94225pt x 401.0985pt>
 File: Images/Chap2/ATLAS_muon_proj.png Graphic file (type png)
 <use Images/Chap2/ATLAS_muon_proj.png>
 Package pdftex.def Info: Images/Chap2/ATLAS_muon_proj.png  used on input line 454.
@@ -1468,7 +1468,7 @@ Package pdftex.def Info: Images/Chap2/ATLAS_muon_proj.png  used on input line 45
 [28] [29 <./Images/Chap2/ATLAS_muon.png (PNG copy)> <./Images/Chap2/ATLAS_muon_proj.png>]
 
 pdfTeX warning: pdflatex (file ./Images/Chap2/TDAQ_complex.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap2/TDAQ_complex.pdf, id=767, 796.77673pt x 597.432pt>
+<Images/Chap2/TDAQ_complex.pdf, id=777, 796.77673pt x 597.432pt>
 File: Images/Chap2/TDAQ_complex.pdf Graphic file (type pdf)
 <use Images/Chap2/TDAQ_complex.pdf>
 Package pdftex.def Info: Images/Chap2/TDAQ_complex.pdf  used on input line 499.
@@ -1487,7 +1487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-<Images/Chap3/Helix_traj.pdf, id=819, 214.39886pt x 218.34262pt>
+<Images/Chap3/Helix_traj.pdf, id=829, 214.39886pt x 218.34262pt>
 File: Images/Chap3/Helix_traj.pdf Graphic file (type pdf)
 <use Images/Chap3/Helix_traj.pdf>
 Package pdftex.def Info: Images/Chap3/Helix_traj.pdf  used on input line 17.
@@ -1505,7 +1505,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap3/Tracks_cone.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap3/Tracks_cone.pdf, id=869, 94.99188pt x 63.44403pt>
+<Images/Chap3/Tracks_cone.pdf, id=879, 94.99188pt x 63.44403pt>
 File: Images/Chap3/Tracks_cone.pdf Graphic file (type pdf)
 <use Images/Chap3/Tracks_cone.pdf>
 Package pdftex.def Info: Images/Chap3/Tracks_cone.pdf  used on input line 39.
@@ -1516,7 +1516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--85
  []
 
 [34] [35]
-<Images/Chap3/antikt_R1.png, id=909, 999.735pt x 724.7075pt>
+<Images/Chap3/antikt_R1.png, id=919, 999.735pt x 724.7075pt>
 File: Images/Chap3/antikt_R1.png Graphic file (type png)
 <use Images/Chap3/antikt_R1.png>
 Package pdftex.def Info: Images/Chap3/antikt_R1.png  used on input line 145.
@@ -1524,7 +1524,7 @@ Package pdftex.def Info: Images/Chap3/antikt_R1.png  used on input line 145.
  [36 <./Images/Chap3/antikt_R1.png (PNG copy)>]
 
 pdfTeX warning: pdflatex (file ./Images/Chap3/noBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap3/noBoostTop.pdf, id=923, 166.42879pt x 118.74864pt>
+<Images/Chap3/noBoostTop.pdf, id=933, 166.42879pt x 118.74864pt>
 File: Images/Chap3/noBoostTop.pdf Graphic file (type pdf)
 <use Images/Chap3/noBoostTop.pdf>
 Package pdftex.def Info: Images/Chap3/noBoostTop.pdf  used on input line 184.
@@ -1532,7 +1532,7 @@ Package pdftex.def Info: Images/Chap3/noBoostTop.pdf  used on input line 184.
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap3/midBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap3/midBoostTop.pdf, id=924, 169.95093pt x 110.77686pt>
+<Images/Chap3/midBoostTop.pdf, id=934, 169.95093pt x 110.77686pt>
 File: Images/Chap3/midBoostTop.pdf Graphic file (type pdf)
 <use Images/Chap3/midBoostTop.pdf>
 Package pdftex.def Info: Images/Chap3/midBoostTop.pdf  used on input line 191.
@@ -1540,7 +1540,7 @@ Package pdftex.def Info: Images/Chap3/midBoostTop.pdf  used on input line 191.
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap3/HighBoostTop.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap3/HighBoostTop.pdf, id=925, 169.95093pt x 80.31305pt>
+<Images/Chap3/HighBoostTop.pdf, id=935, 169.95093pt x 80.31305pt>
 File: Images/Chap3/HighBoostTop.pdf Graphic file (type pdf)
 <use Images/Chap3/HighBoostTop.pdf>
 Package pdftex.def Info: Images/Chap3/HighBoostTop.pdf  used on input line 198.
@@ -1573,12 +1573,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 214.
 
-<Images/Chap3/tau2W.png, id=937, 405.515pt x 355.3275pt>
+<Images/Chap3/tau2W.png, id=947, 405.515pt x 355.3275pt>
 File: Images/Chap3/tau2W.png Graphic file (type png)
 <use Images/Chap3/tau2W.png>
 Package pdftex.def Info: Images/Chap3/tau2W.png  used on input line 237.
 (pdftex.def)             Requested size: 145.73068pt x 127.6955pt.
-<Images/Chap3/tau2tau1W.png, id=938, 405.515pt x 355.3275pt>
+<Images/Chap3/tau2tau1W.png, id=948, 405.515pt x 355.3275pt>
 File: Images/Chap3/tau2tau1W.png Graphic file (type png)
 <use Images/Chap3/tau2tau1W.png>
 Package pdftex.def Info: Images/Chap3/tau2tau1W.png  used on input line 244.
@@ -1596,7 +1596,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 254.
 
 [38 <./Images/Chap3/noBoostTop.pdf> <./Images/Chap3/midBoostTop.pdf> <./Images/Chap3/HighBoostTop.pdf>]
-<Images/Chap3/D2.pdf, id=1033, 351.3125pt x 287.0725pt>
+<Images/Chap3/D2.pdf, id=1043, 351.3125pt x 287.0725pt>
 File: Images/Chap3/D2.pdf Graphic file (type pdf)
 <use Images/Chap3/D2.pdf>
 Package pdftex.def Info: Images/Chap3/D2.pdf  used on input line 273.
@@ -1609,7 +1609,7 @@ Chapter 4.
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap4/CombinedAD_picture.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap4/CombinedAD_picture.pdf, id=1115, 963.6pt x 542.025pt>
+<Images/Chap4/CombinedAD_picture.pdf, id=1125, 963.6pt x 542.025pt>
 File: Images/Chap4/CombinedAD_picture.pdf Graphic file (type pdf)
 <use Images/Chap4/CombinedAD_picture.pdf>
 Package pdftex.def Info: Images/Chap4/CombinedAD_picture.pdf  used on input line 26.
@@ -1620,30 +1620,30 @@ Package pdftex.def Info: Images/Chap4/CombinedAD_picture.pdf  used on input line
 
 
 ]
-<Images/Chap4/MLP_DNN.png, id=1129, 446.66875pt x 176.66pt>
+<Images/Chap4/MLP_DNN.png, id=1139, 446.66875pt x 176.66pt>
 File: Images/Chap4/MLP_DNN.png Graphic file (type png)
 <use Images/Chap4/MLP_DNN.png>
 Package pdftex.def Info: Images/Chap4/MLP_DNN.png  used on input line 50.
 (pdftex.def)             Requested size: 216.81pt x 85.75008pt.
  [41 <./Images/Chap4/CombinedAD_picture.pdf> <./Images/Chap4/MLP_DNN.png (PNG copy)>]
-<Images/Chap4/prelu.pdf, id=1147, 377.41pt x 148.555pt>
+<Images/Chap4/prelu.pdf, id=1157, 377.41pt x 148.555pt>
 File: Images/Chap4/prelu.pdf Graphic file (type pdf)
 <use Images/Chap4/prelu.pdf>
 Package pdftex.def Info: Images/Chap4/prelu.pdf  used on input line 82.
 (pdftex.def)             Requested size: 216.81pt x 85.33911pt.
  [42 <./Images/Chap4/prelu.pdf>]
-<Images/Chap4/SUPtrain.png, id=1174, 755.07094pt x 135.50626pt>
+<Images/Chap4/SUPtrain.png, id=1184, 755.07094pt x 135.50626pt>
 File: Images/Chap4/SUPtrain.png Graphic file (type png)
 <use Images/Chap4/SUPtrain.png>
 Package pdftex.def Info: Images/Chap4/SUPtrain.png  used on input line 113.
 (pdftex.def)             Requested size: 216.81pt x 38.90915pt.
-<Images/Chap4/UnSup_train.png, id=1178, 776.9025pt x 174.6525pt>
+<Images/Chap4/UnSup_train.png, id=1188, 776.9025pt x 174.6525pt>
 File: Images/Chap4/UnSup_train.png Graphic file (type png)
 <use Images/Chap4/UnSup_train.png>
 Package pdftex.def Info: Images/Chap4/UnSup_train.png  used on input line 125.
 (pdftex.def)             Requested size: 180.67499pt x 40.61694pt.
  [43 <./Images/Chap4/SUPtrain.png> <./Images/Chap4/UnSup_train.png>]
-<Images/Chap4/ROC_AUC.png, id=1193, 524.71031pt x 366.61969pt>
+<Images/Chap4/ROC_AUC.png, id=1203, 524.71031pt x 366.61969pt>
 File: Images/Chap4/ROC_AUC.png Graphic file (type png)
 <use Images/Chap4/ROC_AUC.png>
 Package pdftex.def Info: Images/Chap4/ROC_AUC.png  used on input line 163.
@@ -1651,7 +1651,7 @@ Package pdftex.def Info: Images/Chap4/ROC_AUC.png  used on input line 163.
  [44 <./Images/Chap4/ROC_AUC.png>]
 
 pdfTeX warning: pdflatex (file ./Images/Chap4/BumpHunt_drawing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap4/BumpHunt_drawing.pdf, id=1206, 228.68437pt x 120.85652pt>
+<Images/Chap4/BumpHunt_drawing.pdf, id=1216, 228.68437pt x 120.85652pt>
 File: Images/Chap4/BumpHunt_drawing.pdf Graphic file (type pdf)
 <use Images/Chap4/BumpHunt_drawing.pdf>
 Package pdftex.def Info: Images/Chap4/BumpHunt_drawing.pdf  used on input line 186.
@@ -1661,7 +1661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--197
 
  []
 
-<Images/Chap4/AS_distribution.png, id=1208, 378.213pt x 260.172pt>
+<Images/Chap4/AS_distribution.png, id=1218, 378.213pt x 260.172pt>
 File: Images/Chap4/AS_distribution.png Graphic file (type png)
 <use Images/Chap4/AS_distribution.png>
 Package pdftex.def Info: Images/Chap4/AS_distribution.png  used on input line 200.
@@ -1671,7 +1671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--222
 
  []
 
-<Images/Chap4/RomeHILL.png, id=1231, 963.6pt x 542.025pt>
+<Images/Chap4/RomeHILL.png, id=1241, 963.6pt x 542.025pt>
 File: Images/Chap4/RomeHILL.png Graphic file (type png)
 <use Images/Chap4/RomeHILL.png>
 Package pdftex.def Info: Images/Chap4/RomeHILL.png  used on input line 225.
@@ -1706,7 +1706,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--29
 
  []
 
-<Images/Chap5/Graphics/DecayingHeavyBoson.pdf, id=1249, 154.81238pt x 76.50081pt>
+<Images/Chap5/Graphics/DecayingHeavyBoson.pdf, id=1259, 154.81238pt x 76.50081pt>
 File: Images/Chap5/Graphics/DecayingHeavyBoson.pdf Graphic file (type pdf)
 <use Images/Chap5/Graphics/DecayingHeavyBoson.pdf>
 Package pdftex.def Info: Images/Chap5/Graphics/DecayingHeavyBoson.pdf  used on input line 32.
@@ -1717,7 +1717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--52
  []
 
 [49 <./Images/Chap5/Graphics/DecayingHeavyBoson.pdf>]
-<Images/Chap5/FeyDiag/YXH_Fdiag.png, id=1278, 900.36375pt x 446.26724pt>
+<Images/Chap5/FeyDiag/YXH_Fdiag.png, id=1288, 900.36375pt x 446.26724pt>
 File: Images/Chap5/FeyDiag/YXH_Fdiag.png Graphic file (type png)
 <use Images/Chap5/FeyDiag/YXH_Fdiag.png>
 Package pdftex.def Info: Images/Chap5/FeyDiag/YXH_Fdiag.png  used on input line 55.
@@ -1727,7 +1727,7 @@ Overfull \hbox (46.04967pt too wide) in paragraph at lines 65--90
  [][]
  []
 
-<Images/Chap5/DataPlots/BKG_stack.pdf, id=1281, 569.12625pt x 339.2675pt>
+<Images/Chap5/DataPlots/BKG_stack.pdf, id=1291, 569.12625pt x 339.2675pt>
 File: Images/Chap5/DataPlots/BKG_stack.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/BKG_stack.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/BKG_stack.pdf  used on input line 104.
@@ -1738,13 +1738,13 @@ Overfull \hbox (58.63959pt too wide) in paragraph at lines 135--144
  []
 
 [52]
-<Images/Chap5/Graphics/GraphTransversePlane.pdf, id=1348, 231.26399pt x 115.632pt>
+<Images/Chap5/Graphics/GraphTransversePlane.pdf, id=1358, 231.26399pt x 115.632pt>
 File: Images/Chap5/Graphics/GraphTransversePlane.pdf Graphic file (type pdf)
 <use Images/Chap5/Graphics/GraphTransversePlane.pdf>
 Package pdftex.def Info: Images/Chap5/Graphics/GraphTransversePlane.pdf  used on input line 185.
 (pdftex.def)             Requested size: 252.94499pt x 126.47923pt.
  [53 <./Images/Chap5/Graphics/GraphTransversePlane.pdf>]
-<Images/Chap5/Graphics/EGAT_sketch.png, id=1369, 738.96075pt x 292.09125pt>
+<Images/Chap5/Graphics/EGAT_sketch.png, id=1379, 738.96075pt x 292.09125pt>
 File: Images/Chap5/Graphics/EGAT_sketch.png Graphic file (type png)
 <use Images/Chap5/Graphics/EGAT_sketch.png>
 Package pdftex.def Info: Images/Chap5/Graphics/EGAT_sketch.png  used on input line 215.
@@ -1754,7 +1754,7 @@ Overfull \hbox (1.48499pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
-<Images/Chap5/Graphics/DeepSVDDloss.png, id=1372, 1088.26575pt x 337.26pt>
+<Images/Chap5/Graphics/DeepSVDDloss.png, id=1382, 1088.26575pt x 337.26pt>
 File: Images/Chap5/Graphics/DeepSVDDloss.png Graphic file (type png)
 <use Images/Chap5/Graphics/DeepSVDDloss.png>
 Package pdftex.def Info: Images/Chap5/Graphics/DeepSVDDloss.png  used on input line 237.
@@ -1765,53 +1765,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--305
  []
 
 [55 <./Images/Chap5/Graphics/DeepSVDDloss.png>]
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png, id=1395, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png, id=1405, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png  used on input line 312.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png, id=1396, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png, id=1406, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png  used on input line 319.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png, id=1397, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png, id=1407, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png  used on input line 329.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png, id=1398, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png, id=1408, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png  used on input line 336.
 (pdftex.def)             Requested size: 190.07831pt x 184.3469pt.
  [56] [57 <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_1.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_Score_2.png>]
-<Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png, id=1414, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png, id=1424, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png  used on input line 389.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png, id=1415, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png, id=1425, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png  used on input line 396.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png, id=1416, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png, id=1426, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png  used on input line 406.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png, id=1417, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png, id=1427, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png  used on input line 413.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png, id=1418, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png, id=1428, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png  used on input line 423.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png, id=1419, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png, id=1429, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png  used on input line 430.
@@ -1820,22 +1820,22 @@ Package pdftex.def Info: Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_
 
 LaTeX Warning: Float too large for page by 0.30812pt on input line 438.
 
-<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png, id=1422, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png, id=1432, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png  used on input line 455.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png, id=1423, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png, id=1433, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png  used on input line 462.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png, id=1424, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png, id=1434, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png  used on input line 472.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png, id=1425, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png, id=1435, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png Graphic file (type png)
 <use Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png  used on input line 479.
@@ -1846,12 +1846,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--490
  []
 
 [58] [59 <./Images/Chap5/DataPlots/Correlation_mJJ__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_pt__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_eta__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_phi__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_D2__Score_1__QCD.png> <./Images/Chap5/DataPlots/Correlation_leadjet_mass__Score_1__QCD.png>]
-<Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png, id=1444, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png, id=1454, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png  used on input line 507.
 (pdftex.def)             Requested size: 252.94499pt x 245.31108pt.
- [60 <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png>]) [61 <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png>] [62]
+ [60 <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP20_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP80_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP90_JLS_dY1p2.png> <./Images/Chap5/DataPlots/mJJ_SR_vs_CR_QCD_15GeVbins_WP99_JLS_dY1p2.png>] [61 <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png>]) [62]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
@@ -1897,20 +1897,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 1822CE5AEF7B5E5C7029B94D98C55117;11583.
+(rerunfilecheck)             Checksum: D53F2506157D5213B911CD9EDE4A307E;11820.
  ) 
 Here is how much of TeX's memory you used:
- 46970 strings out of 467510
- 1028423 string characters out of 5408794
- 1527997 words of memory out of 5000000
- 74682 multiletter control sequences out of 15000+600000
- 785249 words of font info for 336 fonts, out of 8000000 for 9000
+ 46976 strings out of 467510
+ 1028532 string characters out of 5408794
+ 1528091 words of memory out of 5000000
+ 74686 multiletter control sequences out of 15000+600000
+ 785166 words of font info for 335 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (76 pages, 11017675 bytes).
+Output written on Tesi.pdf (76 pages, 11022801 bytes).
 PDF statistics:
- 1788 PDF objects out of 2073 (max. 8388607)
- 342 named destinations out of 1000 (max. 500000)
- 85318 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1801 PDF objects out of 2073 (max. 8388607)
+ 346 named destinations out of 1000 (max. 500000)
+ 85334 words of extra memory for PDF output out of 89155 (max. 10000000)
 

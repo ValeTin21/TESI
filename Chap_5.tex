@@ -120,7 +120,7 @@ The relation between those requirements and the turn on region comes from the eq
 \subsection{Weights for the sample}\label{sec:ADJJ/dataset/weights}
 
 To create a MC sample, typically the full dataset in the entire invariant mass region of interest is not generated entirely all at once. 
-Instead, it is generated slice by slice, in steps of the invariant mass, where each slice is peaked to a mass value. 
+Instead, it is generated slice by slice, in steps of the transverse momentum $p_T$. 
 Since all these slices are assumed independent processes, they can be combined as the sum in quadrature of the terms, without intereferences. 
 This translates in the fact that the slices of MC histograms can be simply summed together bin per bin.
 When combining the slices, a proper normalization and reweighting has to be applied, in order to have a correct representation of the entire sample. 
@@ -132,7 +132,7 @@ All these aspects are combined and taken into account by the variable \textit{we
 
 %-------------------------------------------------------------------------------
 \subsection{The event preselection}\label{sec:ADJJ/dataset/evSel}
-After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco}, an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
+After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco} for large-radius jet ($R=1.0$), an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
 The first step of preselection is the application of three trigger requirements.
 First of all, a jet has to fire the single jet trigger item \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
 Secondly, it is required that the object raising this trigger is the leading jet of the event, where the leading jet is defined as the one with the highest transverse momentum $p_T$.
@@ -493,13 +493,13 @@ In particular, the sculpting effect is not observed, guaranteeing that the backg
 %-------------------------------------------------------------------------------
 \section{Event selection}\label{sec:ADJJ/evSel}
 
-The statistical analysis begins determining the event selection to apply on the dataset, to define the SRs and CRs with the goal to reduce the background contamination in the SRs.\\
+The statistical analysis begins determining the event selection to apply on the dataset, to define the SRs and CRs with the goal to reduce the background contamination in the former.\\
 The two criteria used to define the selection are based on the AS and the rapidity difference $|\Delta y|$ between the two leading jets.
 The first criterion has been already introduced in Sec. \ref{sec:ADJJ/GNN/AS}, where the WPs are defined in terms of background rejection factors, which are used to cut on the AS of the two jets separately.\\
-The second requirement is based on the rapidity difference $|\Delta y|$ between the two leading jets, which is defined as $|\Delta y| = |y_1 - y_2|$, where $y_1$ and $y_2$ are the rapidities of the leading and sub-leading jets, respectively.
+The second requirement is based on the rapidity difference $|\Delta y|$ between the leading jet $y_1$ and the sub-leading one $y_2$, defined as $|\Delta y| = |y_1 - y_2|$.
 Given the definition of the rapidity of a jet, Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity}, different values of its difference correspond to different $x_B$, the Bjorken scaling variable \cite{Bjorken_x}, which expresses the fraction of the momentum of the proton carried by the parton involved in the collision.
 This quantity is inserted in the defintion of the Parton Distribution Functions (PDFs) \cite{PDFs}, which are used to compute the probability of finding a parton with a certain $x_B$ inside the proton.
-In particular, lower the values of $|\Delta y|$, more collimated the two jets are, higher the values of $x_B$ and, consequently and higher the probability that the parton is a valence one instead of coming from the sea.
+In particular, lower the values of $|\Delta y|$, more collimated the two jets are, higher the values of $x_B$ and, consequently higher the probability that the parton is a valence one instead of coming from the sea.
 In Fig. \ref{fig:ADJJ/evSel/dY} the distribution of $|\Delta y|$ is shown for the total background (summed components) and the signal processes.
 
 \begin{figure}[ht!]
@@ -512,11 +512,11 @@ In Fig. \ref{fig:ADJJ/evSel/dY} the distribution of $|\Delta y|$ is shown for th
 \noindent As visible from the plot in Fig. \ref{fig:ADJJ/evSel/dY}, the signal processes are concentrated at lower values of $|\Delta y|$, while the background distribution has a peak at higher values of $|\Delta y|$.
 From the ratio plot, it is possible to define a threshold on $|\Delta y|$ to reduce the background abundance, which is set to $|\Delta y| < 1.2$.
 Other figures containing the same distribution but for the individual background components are reported in Appendix A.\\
-It is worth noticing that the main difference between the Fig. \ref{fig:ADJJ/evSel/dY} where the signal/background separation is more clear and those reported in Appendix A where the separation is not so obvious, is due to the application in the first case of the selection on the di-jet invariant mass region where the fits will be executed, which is not applied in the latter.
+It is worth noticing that the main difference between the Fig. \ref{fig:ADJJ/evSel/dY} where the signal/background separation is more clear and those reported in Appendix A where the separation is not so obvious, is due to the application in the former of the selection on the di-jet invariant mass region where the fits will be executed, which is not applied in the latter.
 The fit range, where the NP searches will be executed, has been determined to be $[1.5, 6.0]$ TeV, as discussed in following sections.\\
 At this point it is possible to define the SRs and CRs based on the criteria just discussed.
-The Signal Regions will be those with events with AS>WPs and $|\Delta y| < 1.2$, while the Control Regions will be those with opposite cut on AS, which means AS<WPs and $|\Delta y| < 1.2$.ù
-The efficiency of these two selections for the background and the signal processes is reported in Tab. \ref{tab:ADJJ/evSel/cuts}, where it is possible to notice that the application of the $|\Delta y|$ cut impacts consistently on the background reducing its efficiency by a factor of 2.
+The Signal Regions will be those with events with AS>WPs and $|\Delta y| < 1.2$, while the Control Regions will be those with opposite cut on AS, which means AS<WPs and $|\Delta y| < 1.2$.
+The efficiency of these two selections for the background and the signal processes is reported in Tab. \ref{tab:ADJJ/evSel/cuts}, where it is possible to notice that the application of the $|\Delta y|$ cut impacts consistently on the background, reducing its efficiency by a factor of 2.
 On the other hand, the signal processes are less affected by this latter cut, which justifies the choice to apply it.
 
 \begin{table}[ht!]
@@ -558,8 +558,49 @@ Wprime     &  1.61\%   &  1.44\% \\
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\section{Signal modelling}\label{sec:ADJJ/SigModel}
+\section{Modelling the samples}\label{sec:ADJJ/Model}
 
+The searches for NP are conducted performing a binned likelihood fit of signal+background to the sample in the variable of interest.
+For the purpose of this analysis, the variable of interest is the di-jet invariant mass $m_{JJ}$.
+It is the most relevant parameter of a HVT or Dark Jets model since it is expected to show a resonant peak in case of NP presence.\\
+In order to perform properly the fits, it is necessary to parametrize the signal and background samples, to describe them with a function instead of using directly the histogrammed spectra.
+Functions used to describe the background and the signals are discussed in the following sections.
+
+
+% In order to perform signal+background fits (Section 10.4), it is useful to parametrize the signal templates
+% 342 as function instead of directly using the histogrammed spectra. For this, a double-sided Crystal Ball
+% 343 (DSCB) function is fit to the (morphed) signal templates. The templates are derived in 1 GeV binning, but
+% 344 a rebinning to coarser bins with increasing mZ0 is applied to facilitate fit convergence. The spectra and the
+% 345 DSCB fits are shown in Fig. 12. The line shape is observed to shift from an elongated tail at high mj j for
+% low-mass Z
+% signals towards a tail below the peak for high-mass Z
+% 346 signals. In all tested cases a good
+% 347 description by the fit is observed. The fit parameters are interpolated linearly to describe arbitrary signal
+% 348 masses between two given (morphed) mass points.
+
+
+
+%-------------------------------------------------------------------------------
+\subsection{Signals}\label{sec:ADJJ/Model/SIG}
+
+
+\begin{equation}
+f(m; \mu, \sigma, \alpha_L, n_L, \alpha_R, n_R) = 
+\begin{cases}
+A_L \cdot \left( B_L - \frac{m - \mu}{\sigma_L} \right)^{-n_L} & \text{for } \frac{m - \mu}{\sigma_L} \le -\alpha_L \\
+\exp\left( -\frac{1}{2} \left( \frac{m - \mu}{\sigma_L} \right)^2 \right) & \text{for } 0 \le \frac{m - \mu}{\sigma_L} \\
+\exp\left( -\frac{1}{2} \left( \frac{m - \mu}{\sigma_R} \right)^2 \right) & \text{for } \frac{m - \mu}{\sigma_L} \le \alpha_R \\
+A_R \cdot \left( B_R + \frac{m - \mu}{\sigma_R} \right)^{-n_R} & \text{otherwise}
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\text{where} \quad A_i = \left( \frac{n_i}{|\alpha_i|} \right)^{n_i} \cdot \exp\left( -\frac{|\alpha_i|^2}{2} \right), \quad B_i = \frac{n_i}{|\alpha_i|} - |\alpha_i|
+\end{equation}
+
+
+%-------------------------------------------------------------------------------
+\subsection{Background}\label{sec:ADJJ/Model/BKG}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
