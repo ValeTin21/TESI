@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -445,5 +445,18 @@ L.~Ruff et~al.
 \newblock In \emph{Proceedings of the 35th International Conference on Machine
   Learning}, pages 4393--4402. PMLR, (2018).
 \newblock URL \url{https://proceedings.mlr.press/v80/ruff18a.html}.
+
+\bibitem[Bjorken((1969))]{Bjorken_x}
+J.~D. Bjorken.
+\newblock \textit{"Asymptotic Sum Rules at Infinite Momentum"}.
+\newblock \emph{Phys. Rev.}, 179:\penalty0 1547--1553, (1969).
+\newblock \doi{10.1103/PhysRev.179.1547}.
+
+\bibitem[Campbell et~al.((2017))Campbell, Huston, and Krauss]{PDFs}
+J.~Campbell, J.~Huston, and F.~Krauss.
+\newblock \textit{"Parton Distribution Functions"}.
+\newblock In \emph{The Black Book of Quantum Chromodynamics: A Primer for the
+  LHC Era}. Oxford University Press, (2017).
+\newblock URL \url{https://doi.org/10.1093/oso/9780199652747.003.0006}.
 
 \end{thebibliography}

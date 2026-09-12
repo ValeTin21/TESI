@@ -18,6 +18,8 @@ A level-1 auxiliary file: Chap_5.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Chap_6_concl.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: AppendixA_plots.aux
 Database file #1: bibliography.bib
 Warning--entry type for "DLThesis" isn't style-file defined
 --line 469 of file bibliography.bib
@@ -53,45 +55,45 @@ Warning--empty year in AUC
 Warning--empty year in ROC
 Warning--empty year in Rome_view
 Warning--empty chapter and pages in GNN_HEP
-You've used 70 entries,
+You've used 72 entries,
             2481 wiz_defined-function locations,
-            966 strings with 15812 characters,
-and the built_in function-call counts, 20231 in all, are:
-= -- 1799
-> -- 677
-< -- 60
-+ -- 335
-- -- 190
-* -- 1173
-:= -- 3257
-add.period$ -- 257
-call.type$ -- 70
-change.case$ -- 132
-chr.to.int$ -- 65
-cite$ -- 107
-duplicate$ -- 1216
-empty$ -- 2050
-format.name$ -- 283
-if$ -- 4349
+            983 strings with 16197 characters,
+and the built_in function-call counts, 20987 in all, are:
+= -- 1870
+> -- 705
+< -- 61
++ -- 347
+- -- 198
+* -- 1226
+:= -- 3377
+add.period$ -- 266
+call.type$ -- 72
+change.case$ -- 136
+chr.to.int$ -- 67
+cite$ -- 109
+duplicate$ -- 1258
+empty$ -- 2127
+format.name$ -- 293
+if$ -- 4514
 int.to.chr$ -- 6
-int.to.str$ -- 71
-missing$ -- 55
-newline$ -- 399
-num.names$ -- 195
-pop$ -- 642
+int.to.str$ -- 73
+missing$ -- 57
+newline$ -- 411
+num.names$ -- 201
+pop$ -- 660
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 72
 quote$ -- 0
-skip$ -- 770
+skip$ -- 789
 stack$ -- 0
-substring$ -- 281
-swap$ -- 152
+substring$ -- 316
+swap$ -- 156
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 460
+type$ -- 474
 warning$ -- 32
-while$ -- 142
+while$ -- 148
 width$ -- 0
-write$ -- 933
+write$ -- 963
 (There were 33 warnings)

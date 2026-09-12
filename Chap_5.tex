@@ -262,7 +262,7 @@ The Dark Jets process, instead, is the one with the lowest performance, with an 
 Probably, in this case, more specific features should be used to improve the performance of the model, such as the presence of displaced vertices, a typical feature of dark jets.
 
 
-\begin{table}[htbp]
+\begin{table}[ht!]
 \centering
 \begin{tabular}{|l|c|}
 \hline
@@ -303,7 +303,7 @@ Such quantity is computed at jet level, for both the leading and subleading jets
 The distribution is presented in Fig. \ref{subfig:ADJJ/GNN/AS/AS1_tot} for the leading jet and in Fig. \ref{subfig:ADJJ/GNN/AS/AS2_tot} for the sub-leading jet, where the background is presented in the dashed blue line as a unique term, containing the different components summed up.
 In Fig. \ref{subfig:ADJJ/GNN/AS/AS1_sep} and Fig. \ref{subfig:ADJJ/GNN/AS/AS2_sep} the same distributions are shown, but this time the background is split into its components, to better understand the contribution of each process to the overall AS.\\
 
-\begin{figure}[htbp]
+\begin{figure}[ht!]
   \centering
 
   % --- First row (Figure a b) ---
@@ -353,7 +353,7 @@ Given the shapes presented, events with a Score greater than a specific WP are k
 In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported, together with the corresponding background rejection factor.
 
 
-\begin{table}[htbp]
+\begin{table}[ht!]
 \centering
 \begin{tabular}{||>{\columncolor{lightgray}}c|c|c|c|c|c|c|c||}
 \hline
@@ -446,7 +446,7 @@ If the correlation is low, the shape of the distribution should not change signi
 If this assumption is not verified, artificial sculpting is introduced in the background distribution by the AS cut, which could degrade the accuracy of the search.
 Plots associated to this study on the QCD distribution are shown in Fig. \ref{fig:ADJJ/AScorrelation/mJJ_AScut}.
 
-\begin{figure}[htbp]
+\begin{figure}[ht!]
   \centering
 
   % --- First row (Figure a b) ---
@@ -493,38 +493,63 @@ In particular, the sculpting effect is not observed, guaranteeing that the backg
 %-------------------------------------------------------------------------------
 \section{Event selection}\label{sec:ADJJ/evSel}
 
+The statistical analysis begins determining the event selection to apply on the dataset, to define the SRs and CRs with the goal to reduce the background contamination in the SRs.\\
+The two criteria used to define the selection are based on the AS and the rapidity difference $|\Delta y|$ between the two leading jets.
+The first criterion has been already introduced in Sec. \ref{sec:ADJJ/GNN/AS}, where the WPs are defined in terms of background rejection factors, which are used to cut on the AS of the two jets separately.\\
+The second requirement is based on the rapidity difference $|\Delta y|$ between the two leading jets, which is defined as $|\Delta y| = |y_1 - y_2|$, where $y_1$ and $y_2$ are the rapidities of the leading and sub-leading jets, respectively.
+Given the definition of the rapidity of a jet, Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity}, different values of its difference correspond to different $x_B$, the Bjorken scaling variable \cite{Bjorken_x}, which expresses the fraction of the momentum of the proton carried by the parton involved in the collision.
+This quantity is inserted in the defintion of the Parton Distribution Functions (PDFs) \cite{PDFs}, which are used to compute the probability of finding a parton with a certain $x_B$ inside the proton.
+In particular, lower the values of $|\Delta y|$, more collimated the two jets are, higher the values of $x_B$ and, consequently and higher the probability that the parton is a valence one instead of coming from the sea.
+In Fig. \ref{fig:ADJJ/evSel/dY} the distribution of $|\Delta y|$ is shown for the total background (summed components) and the signal processes.
 
-\begin{table}[htbp]
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3.5 in]{Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg_mJJrange.png}
+    \caption{Distributions of $|\Delta y|$ variable between the leading and the sub-leading jet, with the selection of di-jet invariant mass region applied.}
+    \label{fig:ADJJ/evSel/dY}
+\end{figure}
+
+\noindent As visible from the plot in Fig. \ref{fig:ADJJ/evSel/dY}, the signal processes are concentrated at lower values of $|\Delta y|$, while the background distribution has a peak at higher values of $|\Delta y|$.
+From the ratio plot, it is possible to define a threshold on $|\Delta y|$ to reduce the background abundance, which is set to $|\Delta y| < 1.2$.
+Other figures containing the same distribution but for the individual background components are reported in Appendix A.\\
+It is worth noticing that the main difference between the Fig. \ref{fig:ADJJ/evSel/dY} where the signal/background separation is more clear and those reported in Appendix A where the separation is not so obvious, is due to the application in the first case of the selection on the di-jet invariant mass region where the fits will be executed, which is not applied in the latter.
+The fit range, where the NP searches will be executed, has been determined to be $[1.5, 6.0]$ TeV, as discussed in following sections.\\
+At this point it is possible to define the SRs and CRs based on the criteria just discussed.
+The Signal Regions will be those with events with AS>WPs and $|\Delta y| < 1.2$, while the Control Regions will be those with opposite cut on AS, which means AS<WPs and $|\Delta y| < 1.2$.ù
+The efficiency of these two selections for the background and the signal processes is reported in Tab. \ref{tab:ADJJ/evSel/cuts}, where it is possible to notice that the application of the $|\Delta y|$ cut impacts consistently on the background reducing its efficiency by a factor of 2.
+On the other hand, the signal processes are less affected by this latter cut, which justifies the choice to apply it.
+
+\begin{table}[ht!]
 \centering
-\begin{tabular}{|c||c|c|c|}
+\begin{tabular}{|c||c|c|}
 \hline
 \rowcolor{lightgray}
-\textbf{Sample} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score}} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score \& |$\Delta y$|}} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score \& |$\Delta y$| \& leadjet $p_T$}} \\
+\textbf{Sample} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score}} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score \& |$\Delta y$|}} \\
 \hline\hline
-Background     & 4.61 & &\\
-\hline\hline 
-VcXH\_2300        & 4.67 &&\\
-\hline
-VcXH\_3400      & 4.73 &&\\
-\hline
-VcXH\_5000         & 4.79&&\\
-\hline
-VcXH\_6000           & 4.84&& \\
-\hline\hline
-VzWW\_2000          & 4.91 &&\\
-\hline
-VzWW\_3000            & 4.98&& \\
-\hline
-VzWW\_4000             & 5.03 &&\\
-\hline
-VzWW\_5000       & 5.10 &&\\
-\hline\hline
-DarkJets    & 5.21 &&\\
-\hline
-Wprime    & 5.29 &&\\
+Background &  1.27 \% &   0.61\%  \\
+\hline \hline 
+VcXH\_2300 &  8.93\%  &   7.63\% \\
+\hline 
+VcXH\_3400 & 16.61\%  &  13.48\% \\
+\hline 
+VcXH\_5000 & 22.53\%  &  17.53\% \\
+\hline 
+VcXH\_6000 & 30.97\%  &  22.27\% \\
+\hline \hline 
+VzWW\_2000 & 29.22\%  &  25.57\% \\
+\hline 
+VzWW\_3000 & 56.27\%  &  46.09\% \\
+\hline 
+VzWW\_4000 & 71.60\%  &  56.08\% \\
+\hline 
+VzWW\_5000 & 80.81\%  &  62.43\% \\
+\hline \hline 
+DarkJets   &  1.08 \%  &  0.82\% \\
+\hline 
+Wprime     &  1.61\%   &  1.44\% \\
 \hline
 \end{tabular}
-\caption{Background and signal efficiencies after applying the three different event selection cuts, based on the AS, the rapidity difference $|\Delta y|$ and the leading jet $p_T$.}
+\caption{Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$.}
 \label{tab:ADJJ/evSel/cuts}
 \end{table}
 
