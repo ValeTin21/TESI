@@ -68,16 +68,16 @@ The theoretical cross-sections are derived from the ATLAS internal database for 
 \textbf{Signal Name} & \textbf{Process} & \textbf{Masses [GeV]} & \shortstack{\textbf{Theoretical}\\\textbf{cross-section [pb]}} \\
 \hline\hline 
 
- VcXH & $V \to XH$ & $m_V = 2300$, $m_X = 100$ & $4.7435 \cdot 10^{-1}$ \\
- VcXH & $V \to XH$ & $m_V = 3400$, $m_X = 200$ & $4.1550 \cdot 10^{-2}$ \\
- VcXH & $V \to XH$ & $m_V = 5000$, $m_X = 2500$ & $1.6359 \cdot 10^{-3}$ \\
- VcXH & $V \to XH$ & $m_V = 6000$, $m_X = 400$ & $2.1811 \cdot 10^{-4}$ \\
+ VcXH\_2300 & $V \to XH$ & $m_V = 2300$, $m_X = 100$ & $4.7435 \cdot 10^{-1}$ \\
+ VcXH\_3400 & $V \to XH$ & $m_V = 3400$, $m_X = 200$ & $4.1550 \cdot 10^{-2}$ \\
+ VcXH\_5000 & $V \to XH$ & $m_V = 5000$, $m_X = 2500$ & $1.6359 \cdot 10^{-3}$ \\
+ VcXH\_6000 & $V \to XH$ & $m_V = 6000$, $m_X = 400$ & $2.1811 \cdot 10^{-4}$ \\
 \hline
 
- VzWW & $V \to WW$ & $m_V = 2000$ & $3.8476 \cdot 10^{-3}$ \\
- VzWW & $V \to WW$ & $m_V = 3000$ & $3.5969 \cdot 10^{-4}$ \\
- VzWW & $V \to WW$ & $m_V = 4000$ & $4.5256 \cdot 10^{-5}$ \\
- VzWW & $V \to WW$ & $m_V = 5000$ & $6.2648 \cdot 10^{-6}$ \\
+ VzWW\_2000 & $V \to WW$ & $m_V = 2000$ & $3.8476 \cdot 10^{-3}$ \\
+ VzWW\_3000 & $V \to WW$ & $m_V = 3000$ & $3.5969 \cdot 10^{-4}$ \\
+ VzWW\_4000 & $V \to WW$ & $m_V = 4000$ & $4.5256 \cdot 10^{-5}$ \\
+ VzWW\_5000 & $V \to WW$ & $m_V = 5000$ & $6.2648 \cdot 10^{-6}$ \\
 \hline
  
  Wprime & $W' \to WZ$ & $m_{W'} = 3000$, $m_W = 200$, $m_Z = 400$ & $9.6982 \cdot 10^{-16}$ \\
@@ -355,42 +355,20 @@ In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported,
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{||c|c||}
+\begin{tabular}{||>{\columncolor{lightgray}}c|c|c|c|c|c|c|c||}
 \hline
-\rowcolor{lightgray}
-\textbf{BKG rejection (\%)} & \textbf{AS cut value} \\
+\textbf{BKG rejection (\%)} & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\
+\hline
+\textbf{AS cut value} & 4.61 & 4.67 & 4.73 & 4.79 & 4.84 & 4.91 & 4.98  \\
 \hline\hline
-20     & 4.61 \\
+\textbf{BKG rejection (\%)} &  85 & 90 & 95 & 97 & 99 & 99.9 & \\
 \hline
-30        & 4.67 \\
-\hline
-40     & 4.73 \\
-\hline
-50        & 4.79\\
-\hline
-60          & 4.84 \\
-\hline
-70         & 4.91 \\
-\hline
-80           & 4.98 \\
-\hline
-85            & 5.03 \\
-\hline
-90      & 5.10 \\
-\hline
-95    & 5.21 \\
-\hline
-97    & 5.29 \\
-\hline
-99    & 5.47 \\
-\hline
-99.9    & 5.89 \\
+\textbf{AS cut value}&  5.03 & 5.10 & 5.21 & 5.29 & 5.47 & 5.89 & \\
 \hline
 \end{tabular}
 \caption{WPs and respective rejection factors computed on the QCD background.}
 \label{tab:ADJJ/GNN/AS/WPs}
 \end{table}
-
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -509,6 +487,47 @@ Plots associated to this study on the QCD distribution are shown in Fig. \ref{fi
 
 \noindent The plots in Fig. \ref{fig:ADJJ/AScorrelation/mJJ_AScut} show that, as expected, the shape of the $m_{JJ}$ distribution is not significantly affected by the AS cut, even at high WPs, confirming that the AS is not strongly correlated with the di-jet invariant mass.
 In particular, the sculpting effect is not observed, guaranteeing that the background distribution can still be modeled with a smooth function even after applying an event selection based on AS.\\
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Event selection}\label{sec:ADJJ/evSel}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Sample} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score}} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score \& |$\Delta y$|}} & \shortstack{\textbf{Efficiency}\\\textbf{Cut: Score \& |$\Delta y$| \& leadjet $p_T$}} \\
+\hline\hline
+Background     & 4.61 & &\\
+\hline\hline 
+VcXH\_2300        & 4.67 &&\\
+\hline
+VcXH\_3400      & 4.73 &&\\
+\hline
+VcXH\_5000         & 4.79&&\\
+\hline
+VcXH\_6000           & 4.84&& \\
+\hline\hline
+VzWW\_2000          & 4.91 &&\\
+\hline
+VzWW\_3000            & 4.98&& \\
+\hline
+VzWW\_4000             & 5.03 &&\\
+\hline
+VzWW\_5000       & 5.10 &&\\
+\hline\hline
+DarkJets    & 5.21 &&\\
+\hline
+Wprime    & 5.29 &&\\
+\hline
+\end{tabular}
+\caption{Background and signal efficiencies after applying the three different event selection cuts, based on the AS, the rapidity difference $|\Delta y|$ and the leading jet $p_T$.}
+\label{tab:ADJJ/evSel/cuts}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
