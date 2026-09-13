@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  13 SEP 2026 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  13 SEP 2026 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1863,51 +1863,75 @@ File: Images/Chap5/DataPlots/example_signal_yxh3400.pdf Graphic file (type pdf)
 Package pdftex.def Info: Images/Chap5/DataPlots/example_signal_yxh3400.pdf  used on input line 576.
 (pdftex.def)             Requested size: 289.07999pt x 162.60048pt.
 [62 <./Images/Chap5/DataPlots/example_signal_yxh3400.pdf>]
-<Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png, id=1498, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png, id=1499, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png  used on input line 617.
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png  used on input line 618.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png, id=1499, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png, id=1500, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png  used on input line 624.
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png  used on input line 625.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png, id=1500, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png, id=1501, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png  used on input line 634.
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png  used on input line 635.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-<Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png, id=1501, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png, id=1502, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png  used on input line 641.
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png  used on input line 642.
 (pdftex.def)             Requested size: 178.19879pt x 172.81856pt.
-) [63] [64 <./Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png> <./Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png> <./Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png>]
+ [63] [64 <./Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png> <./Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png> <./Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png>]
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/diJetsMassyxh5000.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap5/DataPlots/diJetsMassyxh5000.pdf, id=1521, 963.6pt x 542.025pt>
+File: Images/Chap5/DataPlots/diJetsMassyxh5000.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/diJetsMassyxh5000.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/diJetsMassyxh5000.pdf  used on input line 670.
+(pdftex.def)             Requested size: 178.19879pt x 100.23169pt.
+
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/triJetsMassyxh5000.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap5/DataPlots/triJetsMassyxh5000.pdf, id=1522, 963.6pt x 542.025pt>
+File: Images/Chap5/DataPlots/triJetsMassyxh5000.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/triJetsMassyxh5000.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/triJetsMassyxh5000.pdf  used on input line 677.
+(pdftex.def)             Requested size: 178.19879pt x 100.23169pt.
+<Images/Chap5/FeyDiag/yxh5000_decay.jpg, id=1523, 783.92876pt x 365.365pt>
+File: Images/Chap5/FeyDiag/yxh5000_decay.jpg Graphic file (type jpg)
+<use Images/Chap5/FeyDiag/yxh5000_decay.jpg>
+Package pdftex.def Info: Images/Chap5/FeyDiag/yxh5000_decay.jpg  used on input line 689.
+(pdftex.def)             Requested size: 252.94499pt x 117.88924pt.
+) [65 <./Images/Chap5/DataPlots/diJetsMassyxh5000.pdf> <./Images/Chap5/DataPlots/triJetsMassyxh5000.pdf
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/triJetsMassyxh5000.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/Chap5/FeyDiag/yxh5000_decay.jpg>]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [65
+) [66
 
 
 
 
-] (Tesi.bbl [66
+] (Tesi.bbl [67
 
 
 
 
 
-] [67] [68] [69]
+] [68] [69] [70]
 Underfull \hbox (badness 1275) in paragraph at lines 399--404
 []\T1/lmr/m/n/10.95 (+20) Scikit-learn.  ROC curve.  URL: [][]$\T1/lmtt/m/n/10.95 https : / / scikit-[]learn . org / stable /
  []
 
-[70]) [71]
+[71]) [72]
 \openout2 = `AppendixA_plots.aux'.
 
- (AppendixA_plots.tex) [72
+ (AppendixA_plots.tex) [73
 
 
 ] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
@@ -1920,20 +1944,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 9238A72C7908D27E4DE017BA445A86BE;11820.
+(rerunfilecheck)             Checksum: CC9EAC71DB04244412143C8E9AD256B2;11820.
  ) 
 Here is how much of TeX's memory you used:
- 47031 strings out of 467510
- 1031309 string characters out of 5408794
- 1528842 words of memory out of 5000000
- 74736 multiletter control sequences out of 15000+600000
- 785166 words of font info for 335 fonts, out of 8000000 for 9000
+ 47065 strings out of 467510
+ 1032708 string characters out of 5408794
+ 1529302 words of memory out of 5000000
+ 74763 multiletter control sequences out of 15000+600000
+ 785343 words of font info for 337 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (78 pages, 11237512 bytes).
+Output written on Tesi.pdf (79 pages, 11410903 bytes).
 PDF statistics:
- 1841 PDF objects out of 2073 (max. 8388607)
- 351 named destinations out of 1000 (max. 500000)
- 85359 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1891 PDF objects out of 2073 (max. 8388607)
+ 354 named destinations out of 1000 (max. 500000)
+ 85374 words of extra memory for PDF output out of 89155 (max. 10000000)
 

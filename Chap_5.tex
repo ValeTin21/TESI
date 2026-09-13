@@ -606,7 +606,8 @@ First a Gaussian fuction is fitted in a small window around the peak of the dist
 The parameters obtained from this first fit are then used as initial values for the DSCB fit, which is performed in a wider window around the peak, excluding the noise and oscillating tails of the distribution.
 In Fig. \ref{fig:ADJJ/Model/SIG/DSCBfits_example} the results of the DSCD for the VcXH\_3400 and VzWW\_2000 processes are shown, with and without the application of the cut on AS at 99\% WP.
 In Appendix A all the other DSCB fits for the other signal processes are reported.
-
+WP 99\% is presented here and chosen to be the one to run the analysis on, since it is one of the most stringent cuts on the AS while guaranteeing a good efficiency for the signal processes, as shown in Tab. \ref{tab:ADJJ/evSel/cuts}.
+From this moment on, all the plots and results presented with the AS cut applied will refer to the WP 99\%, unless otherwise specified.
 
 \begin{figure}[ht!]
   \centering
@@ -647,9 +648,52 @@ In Appendix A all the other DSCB fits for the other signal processes are reporte
   \label{fig:ADJJ/Model/SIG/DSCBfits_example}
 \end{figure}
 
+\noindent Some observations can be made from the plots in Fig. \ref{fig:ADJJ/Model/SIG/DSCBfits_example} and in Appendix A.\\
+First of all, as pointed out in Tab. \ref{tab:ADJJ/evSel/cuts}, the impact of the AS cut on the signal efficiency is manageble, with a reduction of the number of events in the SRs but not a significant distortion of the shape of the distribution.
+Concerning the latter, the choice of the DSCB function as PDF to describe the signal samples is justified by the good agreement between the fit and the MC sample histograms, with a reduced $\chi^2$ ($\chi^2/ndf$) between 1 and 2 in almost all cases.
+Two cases capture the attention when looking at their modelling: Dark Jets and VcXH\_5000.
+The former is the one with the lowest efficiency after the AS cut, due to the high similarity between its score distribution and the one of the background, as shown in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}.
+This translates into a more noisy $m_{JJ}$ distribution at WP 99\%, which, nevertheless, can be still parametrized with the DSCB function.
+Differently, the VcXH\_5000 process is modelled with diffuclty by the DSCB function even without the AS cut.
+The limitation is more clear when looking at the $m_{JJ}$ for the sample, presented in Fig. \ref{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}, where a double peak structure is visible, which is not captured by the chosen PDF.
+The modelling function in use, instead, could adapt better to the tri-jet invariant mass distribution, $m_{JJJ}$, visible in Fig \ref{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}.
+This situation can be explained considering the kinematics of the simulated sample, where the $X$ boson has been produced with a mass of 2.5 $TeV$.
+Consequently, when the $V$ boson decays (assumed at rest), a large fraction of its momentum is transferred to the less massive product, the $H$ boson, which will undergo a more boosted decay, producing a more collimated pair of jets that can be reconstructed as a single large-radius jet.
+On the other hand, the $X$ boson will decay into a pair of jets that are more separated and can be reconstructed as two distinct jets.
+The result of this is a final state composed by three reconstructed large-radius jets, which is not well described by the DSCB function in the $m_{JJ}$ distribution.
+A schematic drawing of the bosons decaying and the reconstructed jets is shown in Fig. \ref{fig:ADJJ/Model/SIG/yxh5000_Fey}.
 
-\textbf{COMMENT FITS TO SIGNALS -> YXH5000 }\\
-\textbf{CITE THE XML CARDS (MAYBE BEFORE CITE THE FF USED)}
+\begin{figure}[ht!]
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/diJetsMassyxh5000.pdf}
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/triJetsMassyxh5000.pdf}
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}
+  \end{subfigure}
+  
+  \caption{Invariant mass distribution for the VcXH\_5000 sample in case of (a) two or (b)  three reconstructed jets in the final state.}
+  \label{fig:ADJJ/Model/SIG/yxh5000_dist}
+\end{figure}
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3.5 in]{Images/Chap5/FeyDiag/yxh5000_decay.jpg}
+    \caption{Schematic diagram of the VcXH\_5000 decay. The final state is more likely to be composed by three reconstructed large-radius jets.}
+    \label{fig:ADJJ/Model/SIG/yxh5000_Fey}
+\end{figure}
+
+\noindent For the reasons just discussed and because the variable of interest for the purpose of this analysis is $m_{JJ}$, the VcXH\_5000 sample is excluded at the moment from the statistical analysis, while the Dark Jets sample is kept, since it can be still modelled with the DSCB function.\\
+The parameters obtained from the DSCB fits are used to create an \texttt{xml card} for each signal sample, which will be used in the upper limits derivation as initial guesses for the fits, as discussed in the following.
+
 
 % In order to perform signal+background fits (Section 10.4), it is useful to parametrize the signal templates
 % 342 as function instead of directly using the histogrammed spectra. For this, a double-sided Crystal Ball
