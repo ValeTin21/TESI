@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -458,5 +458,10 @@ J.~Campbell, J.~Huston, and F.~Krauss.
 \newblock In \emph{The Black Book of Quantum Chromodynamics: A Primer for the
   LHC Era}. Oxford University Press, (2017).
 \newblock URL \url{https://doi.org/10.1093/oso/9780199652747.003.0006}.
+
+\bibitem[{ROOT Refence Guide}()]{ROOT_DSCB}
+{ROOT Refence Guide}.
+\newblock \textit{"RooCrystalBall Class Reference "}.
+\newblock URL \url{https://root.cern.ch/doc/v636/classRooCrystalBall.html}.
 
 \end{thebibliography}

@@ -7,8 +7,8 @@ At the moment, the status of the analysis is the following.
 The R\&D phase on the MC sample for the DNN model can be defined as concluded, as it is for the statistical analysis and modelling on the MC dataset.
 The preparation of the field to move towards the usage of the real data is currently on going, expecting the switch in dataset to happen soon.\\
 In the following sections, an overiew of the analysis is presented, with a description of the dataset and the Graph Neural Network model used for the AD implementation. 
-After this, an important portion of the chapter is dedicated to the description of the original work related to this thesis, which is the execution of the statistical analysis on the MC dataset, with the aim of testing the AD approach in a full analysis.\\
-
+After this, an important portion of the chapter is dedicated to the description of the original work related to this thesis, which is the execution of the statistical analysis on the MC dataset, with the aim of testing the AD approach in a full analysis.
+This work is conducted within the \texttt{Frequentist Framework}, a well established tool used inside the ATLAS collaboration. 
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -134,7 +134,7 @@ All these aspects are combined and taken into account by the variable \textit{we
 \subsection{The event preselection}\label{sec:ADJJ/dataset/evSel}
 After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco} for large-radius jet ($R=1.0$), an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
 The first step of preselection is the application of three trigger requirements.
-First of all, a jet has to fire the single jet trigger item \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
+First of all, a jet has to fire the single jet trigger item \texttt{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
 Secondly, it is required that the object raising this trigger is the leading jet of the event, where the leading jet is defined as the one with the highest transverse momentum $p_T$.
 Finally, a cut on the leading jet $p_T$ is applied, requiring it to be greater than 470 GeV: $p_{\text{T}} > 470\text{ GeV}$.
 This latter requirement is meant to take into account the data bandwidth limitations: given the smoothly falling shape of the $p_T$ distribution, the region with lower $p_T$ is more populated, leading to a higher number of events to be stored, which is not sustainable given the limited bandwidth available.\\
@@ -150,7 +150,7 @@ The requirements applied during the event preselection are summarized in Tab. \r
 \rowcolor{lightgray}
 \textbf{Preselection requirements} \\
 \hline\hline
-Triger item  \textit{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}     \\
+Triger item  \texttt{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}     \\
 \hline
 Trigger fired by leading jet       \\
 \hline
@@ -554,8 +554,6 @@ Wprime     &  1.61\%   &  1.44\% \\
 \end{table}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Modelling the samples}\label{sec:ADJJ/Model}
@@ -566,6 +564,92 @@ It is the most relevant parameter of a HVT or Dark Jets model since it is expect
 In order to perform properly the fits, it is necessary to parametrize the signal and background samples, to describe them with a function instead of using directly the histogrammed spectra.
 Functions used to describe the background and the signals are discussed in the following sections.
 
+%-------------------------------------------------------------------------------
+\subsection{Signals}\label{sec:ADJJ/Model/SIG}
+
+The signal samples, containing the BSM candidate processes, present a clear resonant peak in the $m_{JJ}$ distribution, expected to be centered around the mass of the resonance.
+The width of the resonance is assumed to be narrow with respect to the mass range considered. 
+This assumption and the peak-like shape of the signal can be observed in Fig. \ref{fig:ADJJ/Model/SIG/example_yxh3400}, where an example of the $m_{JJ}$ distribution for a VcXH\_3400 process is shown.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=4 in]{Images/Chap5/DataPlots/example_signal_yxh3400.pdf}
+    \caption{Example of the $m_{JJ}$ distribution for a VcXH\_3400 process, showing the peak expected for a resonant process.}
+    \label{fig:ADJJ/Model/SIG/example_yxh3400}
+\end{figure}
+
+\noindent The BSM samples are modeled and parametrized using a Double-Sided Crystal Ball (DSCB) function, which is an asymmetric function composed by a Gaussian core and two power-law tails.
+The function is implemented using the \texttt{RooCrystalBall Class} from \texttt{ROOT} \cite{ROOT_DSCB} and it is defined as follows: 
+
+\begin{equation}\label{eq:ADJJ/Model/SIG/DSCB}
+f_{DSCB}(m; \mu, \sigma, \alpha_L, n_L, \alpha_R, n_R) = 
+\begin{cases}
+A_L \cdot \left( B_L - \frac{m - \mu}{\sigma_L} \right)^{-n_L} & \text{for } \frac{m - \mu}{\sigma_L} \le -\alpha_L \\
+\exp\left( -\frac{1}{2} \cdot \left[ \frac{m - \mu}{\sigma_L} \right]^2 \right) & \text{for } 0 \le \frac{m - \mu}{\sigma_L} \\
+\exp\left( -\frac{1}{2}\cdot \left[ \frac{m - \mu}{\sigma_R} \right]^2 \right) & \text{for } \frac{m - \mu}{\sigma_L} \le \alpha_R \\
+A_R \cdot \left( B_R + \frac{m - \mu}{\sigma_R} \right)^{-n_R} & \text{otherwise}
+\end{cases}
+\end{equation}
+
+\noindent with: 
+
+\begin{equation}\label{eq:ADJJ/Model/SIG/DSCB_constants}
+A_{L/R} = \left( \frac{n_{L/R}}{|\alpha_{L/R}|} \right)^{n_{L/R}} \cdot \exp\left( -\frac{|\alpha_{L/R}|^2}{2} \right), \quad B_{L/R} = \frac{n_{L/R}}{|\alpha_{L/R}|} - |\alpha_{L/R}|
+\end{equation}
+
+\noindent The Eq. \ref{eq:ADJJ/Model/SIG/DSCB} defines the signal probability density function (PDF) used in the fits, with the parameters $\mu$ and $\sigma$ representing the mean and standard deviation of the Gaussian core, while $\alpha_L$, $n_L$, $\alpha_R$, and $n_R$ define the shape of the left and right tails of the distribution.
+Making use of this PDF, the command \texttt{pdf.fitTo()} of \texttt{ROOT} is excecuted to perform a binned fit to the $m_{JJ}$ distribution of the signal samples and extract the best-fit parameters for each of them.
+This command runs with the aim to minimize the negative log-likelihood of the PDF.
+The minimization is performed using the \texttt{MINUIT} class which implements the \texttt{MIGRAD} algorithm to minimize the function and \texttt{HESSE} to compute the uncertainties on them.\\
+To ensure a good convergence of the fit, the procedure is devided in two steps.
+First a Gaussian fuction is fitted in a small window around the peak of the distribution, where the window is defined as centred in the MC mass od the resonance and with a width of 1 $\sigma$ roughly estimated from the MC distribution.
+The parameters obtained from this first fit are then used as initial values for the DSCB fit, which is performed in a wider window around the peak, excluding the noise and oscillating tails of the distribution.
+In Fig. \ref{fig:ADJJ/Model/SIG/DSCBfits_example} the results of the DSCD for the VcXH\_3400 and VzWW\_2000 processes are shown, with and without the application of the cut on AS at 99\% WP.
+In Appendix A all the other DSCB fits for the other signal processes are reported.
+
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP0.png}
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP0}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SIGfits/VcXH3400_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP99}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP0.png}
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP0}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SIGfits/VzWW2000_DCB_fit_WP99.png} 
+    \caption{}
+    \label{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP99}
+  \end{subfigure}
+  
+  \caption{DSCB fits to the $m_{JJ}$ distribution for signals (a) VcXH\_3400 with no AS cut, (b)  VcXH\_3400 with AS cut at WP 99\%, (c) VzWW\_2000 with no AS cut, (d)  VzWW\_2000 with AS cut at WP 99\%,}
+  \label{fig:ADJJ/Model/SIG/DSCBfits_example}
+\end{figure}
+
+
+\textbf{COMMENT FITS TO SIGNALS -> YXH5000 }\\
+\textbf{CITE THE XML CARDS (MAYBE BEFORE CITE THE FF USED)}
 
 % In order to perform signal+background fits (Section 10.4), it is useful to parametrize the signal templates
 % 342 as function instead of directly using the histogrammed spectra. For this, a double-sided Crystal Ball
@@ -578,25 +662,6 @@ Functions used to describe the background and the signals are discussed in the f
 % 347 description by the fit is observed. The fit parameters are interpolated linearly to describe arbitrary signal
 % 348 masses between two given (morphed) mass points.
 
-
-
-%-------------------------------------------------------------------------------
-\subsection{Signals}\label{sec:ADJJ/Model/SIG}
-
-
-\begin{equation}
-f(m; \mu, \sigma, \alpha_L, n_L, \alpha_R, n_R) = 
-\begin{cases}
-A_L \cdot \left( B_L - \frac{m - \mu}{\sigma_L} \right)^{-n_L} & \text{for } \frac{m - \mu}{\sigma_L} \le -\alpha_L \\
-\exp\left( -\frac{1}{2} \left( \frac{m - \mu}{\sigma_L} \right)^2 \right) & \text{for } 0 \le \frac{m - \mu}{\sigma_L} \\
-\exp\left( -\frac{1}{2} \left( \frac{m - \mu}{\sigma_R} \right)^2 \right) & \text{for } \frac{m - \mu}{\sigma_L} \le \alpha_R \\
-A_R \cdot \left( B_R + \frac{m - \mu}{\sigma_R} \right)^{-n_R} & \text{otherwise}
-\end{cases}
-\end{equation}
-
-\begin{equation}
-\text{where} \quad A_i = \left( \frac{n_i}{|\alpha_i|} \right)^{n_i} \cdot \exp\left( -\frac{|\alpha_i|^2}{2} \right), \quad B_i = \frac{n_i}{|\alpha_i|} - |\alpha_i|
-\end{equation}
 
 
 %-------------------------------------------------------------------------------
