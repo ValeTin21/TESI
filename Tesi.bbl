@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{75}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -463,5 +463,15 @@ J.~Campbell, J.~Huston, and F.~Krauss.
 {ROOT Refence Guide}.
 \newblock \textit{"RooCrystalBall Class Reference "}.
 \newblock URL \url{https://root.cern.ch/doc/v636/classRooCrystalBall.html}.
+
+\bibitem[ATL((2020))]{ATLAS_smoothBKG}
+\textit{"Recommendations for the Modeling of Smooth Backgrounds"}.
+\newblock Technical report, CERN, (2020).
+\newblock URL \url{https://cds.cern.ch/record/2743717}.
+
+\bibitem[Verkerke and Kirkby((2003))]{RooFit}
+W.~Verkerke and D.~Kirkby.
+\newblock \textit{"The RooFit toolkit for data modeling"}, (2003).
+\newblock URL \url{https://arxiv.org/abs/physics/0306116}.
 
 \end{thebibliography}

@@ -695,23 +695,43 @@ A schematic drawing of the bosons decaying and the reconstructed jets is shown i
 The parameters obtained from the DSCB fits are used to create an \texttt{xml card} for each signal sample, which will be used in the upper limits derivation as initial guesses for the fits, as discussed in the following.
 
 
-% In order to perform signal+background fits (Section 10.4), it is useful to parametrize the signal templates
-% 342 as function instead of directly using the histogrammed spectra. For this, a double-sided Crystal Ball
-% 343 (DSCB) function is fit to the (morphed) signal templates. The templates are derived in 1 GeV binning, but
-% 344 a rebinning to coarser bins with increasing mZ0 is applied to facilitate fit convergence. The spectra and the
-% 345 DSCB fits are shown in Fig. 12. The line shape is observed to shift from an elongated tail at high mj j for
-% low-mass Z
-% signals towards a tail below the peak for high-mass Z
-% 346 signals. In all tested cases a good
-% 347 description by the fit is observed. The fit parameters are interpolated linearly to describe arbitrary signal
-% 348 masses between two given (morphed) mass points.
-
-
-
 %-------------------------------------------------------------------------------
 \subsection{Background}\label{sec:ADJJ/Model/BKG}
 
+The background samples, containing the SM processes, present a smoothly falling distribution ($\sim \frac{1}{q^2}$) in the $m_{JJ}$ variable, as shown in Fig. \ref{fig:ADJJ/Model/BKG/example_QCD}, where an example for the QCD process is shown.
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=4 in]{Images/Chap5/DataPlots/example_BKG.pdf}
+    \caption{Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape.}
+    \label{fig:ADJJ/Model/BKG/example_QCD}
+\end{figure}
+
+\noindent In order to determine the best function to model the background samples, ATLAS recommendations on the matter are followed \cite{ATLAS_smoothBKG}.\\
+The mass range to be considered for the fits is set to be $[1.5, 6.0]$ TeV, in order to allow a reasonable amount of events in the sidebands ($m_{JJ}$ region outside the peak of the signals) and guranteeing the trigger requirements.\\
+The chosen function to model the background is power law functional form, defined as:
+\begin{equation}
+f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{\sum_{i=2}^{N}  p_i \cdot \log(x)^{i-1}}
+\end{equation}
+
+\noindent where $x = \frac{m_{JJ}}{\sqrt{s}}$ and $\sqrt{s}$ is the center-of-mass energy of the collision, 13.6 TeV for the LHC Run 3 data.
+N, the order of the polynomial, is a parameter to be determined, which defines the number of free parameters in the function.
+The term $p_0$ is indeed fixed to 1, since it is a normalization factor, which is already taken into account by the \texttt{RooFit} framework, the one responsable to execute fits \cite{RooFit}.\\
+The function defined above is the one forming the background PDF, which is used to perform the fits on the background samples.\\
+Making use of the \texttt{Frequentist Framework} of the ATLAS collaboration and the \texttt{quickFit} tool contained in it (which leverages the \texttt{RooFit} framework), a set of fits is performed on the background samples.
+The fits are executed to find the parameters that minimize the negative log-likelihood composed only by the background PDF, with different polynomial orders, to determine the best one to use in the analysis.
+Each fit is iterated 1000 times, with Poissonian fluctuations applied to the data, to ensure a good convergence of the fit and to avoid local minima.
+The best number N of free parameters to use is determined as the one with the minimum mean value of the reduced $\chi^2$.
+The distributions of the reduced $\chi^2$ for the different background functions are shown in Fig. \ref{fig:ADJJ/Model/BKG/chi2}. 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap5/DataPlots/chi2_NBKG.png}
+    \caption{Distributions of the reduced $\chi^2$ for different number of free parameters in the background PDF.}
+    \label{fig:ADJJ/Model/BKG/chi2}
+\end{figure}
+
+\noindent As visible from the plot in Fig. \ref{fig:ADJJ/Model/BKG/chi2}, the best choice for the background PDF is the one with 4 free parameters, which is the one with the lowest mean value of the reduced $\chi^2$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
