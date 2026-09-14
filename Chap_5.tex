@@ -710,8 +710,8 @@ The background samples, containing the SM processes, present a smoothly falling 
 \noindent In order to determine the best function to model the background samples, ATLAS recommendations on the matter are followed \cite{ATLAS_smoothBKG}.\\
 The mass range to be considered for the fits is set to be $[1.5, 6.0]$ TeV, in order to allow a reasonable amount of events in the sidebands ($m_{JJ}$ region outside the peak of the signals) and guranteeing the trigger requirements.\\
 The chosen function to model the background is power law functional form, defined as:
-\begin{equation}
-f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{\sum_{i=2}^{N}  p_i \cdot \log(x)^{i-1}}
+\begin{equation}\label{eq:ADJJ/Model/BKG/general_BKG}
+f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{\sum_{i=2}^{N}  p_i \cdot \log(x)^{i-2}}
 \end{equation}
 
 \noindent where $x = \frac{m_{JJ}}{\sqrt{s}}$ and $\sqrt{s}$ is the center-of-mass energy of the collision, 13.6 TeV for the LHC Run 3 data.
@@ -726,12 +726,57 @@ The distributions of the reduced $\chi^2$ for the different background functions
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=3 in]{Images/Chap5/DataPlots/chi2_NBKG.png}
+    \includegraphics[width=2.5 in]{Images/Chap5/DataPlots/chi2_NBKG.png}
     \caption{Distributions of the reduced $\chi^2$ for different number of free parameters in the background PDF.}
     \label{fig:ADJJ/Model/BKG/chi2}
 \end{figure}
 
-\noindent As visible from the plot in Fig. \ref{fig:ADJJ/Model/BKG/chi2}, the best choice for the background PDF is the one with 4 free parameters, which is the one with the lowest mean value of the reduced $\chi^2$.
+\noindent As visible from the plot in Fig. \ref{fig:ADJJ/Model/BKG/chi2}, the best choice for the background PDF is the one with 4 free parameters, which is the one with the lowest mean value of the reduced $\chi^2$.\\
+For these reasons, the background PDF used in the fits is defined as:
+
+\begin{equation}\label{eq:ADJJ/Model/BKG/BKG_PDF}
+f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{p_2+p_3 \cdot \log(x)+p_4 \cdot \log^2(x)}
+\end{equation}
+
+\noindent Due to increasing correlation of the log parameters in the exponent, the 4-parameter functions need initial parameters reasonably close to the optimum in order to converge.
+These parameters are determined by performing a fit on the background sample on which the event selection is applied, together with the sample rescaled to a 1 $fb^{-1}$ luminosity applying the fWeight branch.
+The fit is executed setting the initial values and ranges to be quite wide.
+The parameters derived from this rough fit are then used to create an \texttt{xml card} for the background sample.
+Using such card, the fit with a background only PDF with 4 parameters to a background only distribution is performed, to derive the best-fit parameters modelling the background sample.
+The results of the fit are shown in Fig. \ref{fig:ADJJ/Model/BKG/BKGonlyfit_plot} and in Tab. \ref{tab:ADJJ/Model/BKG/BKGonlyfit_params}.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3.5 in]{Images/Chap5/DataPlots/BKG_only_fit.png}
+    \caption{Distributions of the reduced $\chi^2$ for different number of free parameters in the background PDF.}
+    \label{fig:ADJJ/Model/BKG/BKGonlyfit_plot}
+\end{figure}
+
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{|c||c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Parameter} & \textbf{Fitted value} \\
+\hline\hline
+$p_1$ &  21.49 $\pm$   3.42  \\
+\hline
+$p_2$ & 7.42 $\pm$ 3.30 \\
+\hline 
+$p_3$ & 3.84 $\pm$ 0.48 \\
+\hline 
+$p_4$ & 0.70 $\pm$ 0.42 \\
+\hline
+\end{tabular}
+\caption{Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample.}
+\label{tab:ADJJ/Model/BKG/BKGonlyfit_params}
+\end{table}
+
+\noindent From the results of the fit shown in Fig. \ref{fig:ADJJ/Model/BKG/BKGonlyfit_plot}, it is visible the good agreement between the fitted function and the background distribution, given the high p-value, the low reduced $\chi^2$ and the pull distribution (normalized residuals of data with respect to the fit) which is centered around 0 and contained within $\pm 2 \sigma$.\\
+The sample is presented and fitted as an histogram with bins of equal width of 15 GeV.
+This binning is chosen to have a fine granularity in $m_{JJ}$, presenting an almost-unbinned histogram, while avoiding single bin fluctuations due to the too tight width in case of 1/2 GeV bins.\\
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
