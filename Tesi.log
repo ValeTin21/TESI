@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  14 SEP 2026 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  15 SEP 2026 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1057,7 +1057,7 @@ LaTeX Info: Redefining \cite on input line 694.
 
 
 Writing index file Tesi.idx
-(Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
+(Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux) (AppendixB_SPT.aux))
 \openout1 = `Tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -1916,13 +1916,13 @@ Package pdftex.def Info: Images/Chap5/DataPlots/example_BKG.pdf  used on input l
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/triJetsMassyxh5000.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Images/Chap5/FeyDiag/yxh5000_decay.jpg>]
-<Images/Chap5/DataPlots/chi2_NBKG.png, id=1589, 554.67226pt x 467.94826pt>
+<Images/Chap5/DataPlots/chi2_NBKG.png, id=1590, 554.67226pt x 467.94826pt>
 File: Images/Chap5/DataPlots/chi2_NBKG.png Graphic file (type png)
 <use Images/Chap5/DataPlots/chi2_NBKG.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/chi2_NBKG.png  used on input line 729.
 (pdftex.def)             Requested size: 180.67499pt x 152.42412pt.
  [66 <./Images/Chap5/DataPlots/example_BKG.pdf>]
-<Images/Chap5/DataPlots/BKG_only_fit.png, id=1618, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/BKG_only_fit.png, id=1620, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/BKG_only_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/BKG_only_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/BKG_only_fit.png  used on input line 750.
@@ -1932,34 +1932,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--779
 
  []
 
-[67 <./Images/Chap5/DataPlots/chi2_NBKG.png> <./Images/Chap5/DataPlots/BKG_only_fit.png>]) [68]
+[67 <./Images/Chap5/DataPlots/chi2_NBKG.png> <./Images/Chap5/DataPlots/BKG_only_fit.png>] [68] [69]
+<Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png, id=1650, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png  used on input line 864.
+(pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
+<Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png, id=1651, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png  used on input line 871.
+(pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
+<Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, id=1655, 569.12625pt x 552.0625pt>
+File: Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf  used on input line 890.
+(pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
+<Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, id=1656, 569.12625pt x 552.0625pt>
+File: Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf  used on input line 897.
+(pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
+<Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, id=1657, 569.12625pt x 552.0625pt>
+File: Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf  used on input line 907.
+(pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
+<Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, id=1658, 569.12625pt x 552.0625pt>
+File: Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf Graphic file (type pdf)
+<use Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf>
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf  used on input line 914.
+(pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
+
+Overfull \hbox (55.11705pt too wide) in paragraph at lines 926--937
+ [][] 
+ []
+
+[70 <./Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png>] [71 <./Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, page is rotated 90 degrees>]) [72]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
 Chapter 6.
-) [69
+) [73
 
 
 
 
-] (Tesi.bbl [70
+] (Tesi.bbl [74
 
 
 
 
 
-] [71] [72] [73]
+] [75] [76] [77]
 Underfull \hbox (badness 1275) in paragraph at lines 399--404
 []\T1/lmr/m/n/10.95 (+20) Scikit-learn.  ROC curve.  URL: [][]$\T1/lmtt/m/n/10.95 https : / / scikit-[]learn . org / stable /
  []
 
-[74]) [75]
+[78]) [79]
 \openout2 = `AppendixA_plots.aux'.
 
- (AppendixA_plots.tex) [76
+ (AppendixA_plots.tex) [80
 
 
-] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
+]
+\openout2 = `AppendixB_SPT.aux'.
+
+ (AppendixB_SPT.tex) [81
+
+
+
+
+] (Tesi.aux (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux) (AppendixB_SPT.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1969,20 +2013,20 @@ L3 programming layer <2026-06-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 3A20ACA7CF38EA1328162D5CDDF11052;12503.
+(rerunfilecheck)             Checksum: AA941DF2AD2109A1F4EB99B79FB63744;12503.
  ) 
 Here is how much of TeX's memory you used:
- 47131 strings out of 467510
- 1034434 string characters out of 5408794
- 1530247 words of memory out of 5000000
- 74804 multiletter control sequences out of 15000+600000
+ 47245 strings out of 467510
+ 1039135 string characters out of 5408794
+ 1532436 words of memory out of 5000000
+ 74891 multiletter control sequences out of 15000+600000
  785780 words of font info for 342 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,131p,2550b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (82 pages, 11793772 bytes).
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Tesi.pdf (87 pages, 11945688 bytes).
 PDF statistics:
- 1966 PDF objects out of 2073 (max. 8388607)
- 369 named destinations out of 1000 (max. 500000)
- 85421 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2203 PDF objects out of 2487 (max. 8388607)
+ 389 named destinations out of 1000 (max. 500000)
+ 85451 words of extra memory for PDF output out of 89155 (max. 10000000)
 

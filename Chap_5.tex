@@ -582,12 +582,12 @@ This assumption and the peak-like shape of the signal can be observed in Fig. \r
 The function is implemented using the \texttt{RooCrystalBall Class} from \texttt{ROOT} \cite{ROOT_DSCB} and it is defined as follows: 
 
 \begin{equation}\label{eq:ADJJ/Model/SIG/DSCB}
-f_{DSCB}(m; \mu, \sigma, \alpha_L, n_L, \alpha_R, n_R) = 
+f_{DSCB}(m_{JJ}; \mu, \sigma, \alpha_L, n_L, \alpha_R, n_R) = 
 \begin{cases}
-A_L \cdot \left( B_L - \frac{m - \mu}{\sigma_L} \right)^{-n_L} & \text{for } \frac{m - \mu}{\sigma_L} \le -\alpha_L \\
-\exp\left( -\frac{1}{2} \cdot \left[ \frac{m - \mu}{\sigma_L} \right]^2 \right) & \text{for } 0 \le \frac{m - \mu}{\sigma_L} \\
-\exp\left( -\frac{1}{2}\cdot \left[ \frac{m - \mu}{\sigma_R} \right]^2 \right) & \text{for } \frac{m - \mu}{\sigma_L} \le \alpha_R \\
-A_R \cdot \left( B_R + \frac{m - \mu}{\sigma_R} \right)^{-n_R} & \text{otherwise}
+A_L \cdot \left( B_L - \frac{m_{JJ} - \mu}{\sigma_L} \right)^{-n_L} & \text{for } \frac{m_{JJ} - \mu}{\sigma_L} \le -\alpha_L \\
+\exp\left( -\frac{1}{2} \cdot \left[ \frac{m_{JJ} - \mu}{\sigma_L} \right]^2 \right) & \text{for } 0 \le \frac{m_{JJ} - \mu}{\sigma_L} \\
+\exp\left( -\frac{1}{2}\cdot \left[ \frac{m_{JJ} - \mu}{\sigma_R} \right]^2 \right) & \text{for } \frac{m_{JJ} - \mu}{\sigma_L} \le \alpha_R \\
+A_R \cdot \left( B_R + \frac{m_{JJ} - \mu}{\sigma_R} \right)^{-n_R} & \text{otherwise}
 \end{cases}
 \end{equation}
 
@@ -721,7 +721,7 @@ The function defined above is the one forming the background PDF, which is used 
 Making use of the \texttt{Frequentist Framework} of the ATLAS collaboration and the \texttt{quickFit} tool contained in it (which leverages the \texttt{RooFit} framework), a set of fits is performed on the background samples.
 The fits are executed to find the parameters that minimize the negative log-likelihood composed only by the background PDF, with different polynomial orders, to determine the best one to use in the analysis.
 Each fit is iterated 1000 times, with Poissonian fluctuations applied to the data, to ensure a good convergence of the fit and to avoid local minima.
-The best number N of free parameters to use is determined as the one with the minimum mean value of the reduced $\chi^2$.
+The best number N of free parameters to use is determined as the one with the minimum mean value of the reduced $\chi^2$ \cite{PearsonChi2}.
 The distributions of the reduced $\chi^2$ for the different background functions are shown in Fig. \ref{fig:ADJJ/Model/BKG/chi2}. 
 
 \begin{figure}[ht!]
@@ -777,7 +777,6 @@ $p_4$ & 0.70 $\pm$ 0.42 \\
 The sample is presented and fitted as an histogram with bins of equal width of 15 GeV.
 This binning is chosen to have a fine granularity in $m_{JJ}$, presenting an almost-unbinned histogram, while avoiding single bin fluctuations due to the too tight width in case of 1/2 GeV bins.\\
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -785,8 +784,176 @@ This binning is chosen to have a fine granularity in $m_{JJ}$, presenting an alm
 %-------------------------------------------------------------------------------
 \section{Validating the PDFs}\label{sec:ADJJ/Validation}
 
+The modelling defined in the previous section for the signal and background samples has to be carefully, to avoid rejecting genuine signals or misinterpreting background fluctuations as signal events.
+Two main validation tests are performed: the \textit{spurious signal tests} (or fit bias tests) and the \textit{signal injection tests}.\\
+To conduct these tests, the binned profile-likelihood in use is defined as the combination of the signal and background PDFs:
+
+% \begin{equation}
+%   \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) =  \frac{e^{-(\mu \cdot N_{sig} + N_{bkg})}}{N!}\prod_{i=1}^{N_{bins}} (\mu \cdot N_{sig} \cdot f_{DSCB}(m_i) + N_{bkg} \cdot f_{BKG}(m_i))^{n_i}
+% \end{equation}
+
+\begin{equation}\label{eq:ADJJ/Validation/likelihood}
+  \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) = \prod_{i}^{N_{bins}} Poiss(n_i | \tilde{\mu}  \cdot f_{DSCB}(\vec{\theta},\vec{k}) + N_{bkg} \cdot f_{BKG}(\vec{\theta},\vec{k})) \cdot \prod_{j}^{N_{syst}} G(\theta_j | 0, 1)
+\end{equation}
+
+\noindent where the first product runs over the number of bins which are assumed to follow a Poissonian distribution, with $n_i$ entries in each bin $i$.
+The second product is associated to the systematic uncertainties, which are assumed to follow a Gaussian distribution with mean 0 and standard deviation 1.
+The latter term is turned off in the validation tests and it is considered in the upper limits derivation, as discussed in Sec. \ref{sec:ADJJ/UpperLimits}.
+The likelihood depends on the nuisance parameters $\vec{\theta}$, which are constrained during the fit, and the parameters of interest (PoI) $\vec{k}$, which are free to vary during the fit.
+The term $\tilde{\mu}$ is the PoI when the signal hypothesis is tested and it is here defined as $\tilde{\mu} = \mu_s\cdot N_{sig}$, where $\mu_s$ is the signal strength ($\mu_s=\frac{\sigma_{exp}}{\sigma_{SM}}$) and $N_{sig}$ is the number of observed signal events.
+$N_{bkg}$ is the number of observed background events, which is a free parameter in the fit.\\
+From the performed fits, a set of values for all the parameters, nuisance and PoI, is obtained.
+Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, discriminates between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
+The likelihood ratio is defined as:
+\begin{equation}\label{eq:ADJJ/Validation/likelihood_ratio}
+  \lambda(\tilde{\mu}) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
+\end{equation}
+
+\noindent where $\vec{\hat{\hat{\theta}}}$ is the value of $\theta$ that maximizes $\mathcal{L}$ for the specified $\mu_s$.
+The denominator term is the maximized likelihood function.\\
+The ratio is used to define the test statistic $t_{\mu_s}$, which is a function of the PoI $\mu_s$ and, for the Wilk'sw theorem, follows a $\chi^2$ distribution.
+It is defined as:
+\begin{equation}\label{eq:ADJJ/Validation/test_statistic}
+  t_{\mu_s} = -2 \cdot \ln(\lambda(\mu_s))
+\end{equation}
+
+\noindent The test statistic is used to determine the p-value of the fit, to quantify the disagreement between the data and the tested hypothesis.
+The p-value is defined as:
+\begin{equation}\label{eq:ADJJ/Validation/p_value}
+  p_{\mu_s} = \int_{t_{\mu_s,obs}}^{\infty} f(t_{\mu_s}|\mu_s) dt_{\mu_s}
+\end{equation}
+
+\noindent where $t_{\mu, obs}$ is the value of the statistic $t_{\mu_s}$ observed from the data and $f(t_{\mu_s}|\mu_s)$ denotes the PDF of $t_{\mu_s}$ under the assumption of the signal strength $\mu$.
+Values of the p-value lower than 0.05 are considered to be statistically significant, meaning that the null hypothesis can be rejected with a confidence level of 95\%.\\
+A particular case of test statistic is the one defined for the background only hypothesis, which is obtained setting $\mu_s=0$ in Eq. \ref{eq:ADJJ/Validation/test_statistic} and it is defined as:
+\begin{equation}\label{eq:ADJJ/Validation/test_statistic_bkg}
+  t_{0} = -2 \cdot \ln(\lambda(0))\quad \text{for} \quad \hat{\mu_s} \ge 0, \quad t_{0} = 0 \quad otherwise
+\end{equation}
+
+\noindent From this, the p-value for the background only hypothesis can be computed, which is used to quantify the agreement between the data and the background only hypothesis.
+It is computed as:
+\begin{equation}\label{eq:ADJJ/Validation/p_value_bkg}
+  p_{0} = \int_{t_{0,obs}}^{\infty} f(t_{0}|\mu_s=0) dt_{0}
+\end{equation}
+
+\noindent If the $\mu_s = 0$ hypothesis is rejected, it means that the data is not compatible with the background only hypothesis and a signal may be present in the sample.
+
 %-------------------------------------------------------------------------------
 \subsection{Spurious signal tests}\label{sec:ADJJ/Validation/SPT}
+
+The first validation test performed is the \textit{spurious signal test}, also known as \textit{fit bias test}.
+In fact, it aims to quantify the bias introduced by the choice of the background PDF in the fit.\\
+The test is performed selecting a background only sample with a 1 $fb^{-1}$ luminosity and a fit with a PDF containing both the signal and the bacgkround component is executed.
+To take into account the statistical fluctuations of the sample, the fit is iterated 100 times, each of with a Poissonian fluctuation with a different seed is applied to the distribution.
+At this point, the fitted amount of signal is extracted from each iteration, the mean value $S_{spur}$ and the width (RMS) $\sigma_{fit}$ of the distribution of fitted values are computed.
+This test is repeated for each of the different signal samples and the different mass points.
+For each sample, the extracted quantities for each mass point are plotted in a graph, where the x-axis is the mass of the signal and the y-axis is amount of signal derived from the fits.
+In principle, $S_{spur}$ should be compatible with 0, given the background only hypothesis tested.
+More importantly, the ratio $S_{spur}/\sigma_{fit}$ for each sample is computed and plotted in the lower pad on the same graph.
+Following the ATLAS recommendations \cite{ATLAS_smoothBKG}, the ratio points should be in a range of $\pm$ 0.5 to pass this first test.\\
+Two example plots of the fits to the signal hypothesis VcXH\_2300 and VzWW\_2000 to the background only sample for a single seed are shown in Fig. \ref{fig:ADJJ/Validation/SPT/SPFit}.
+Other plots for the other signal samples with the same seed are reported in Appendix B.
+
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/aaa}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/bbb}
+  \end{subfigure}
+  
+  \caption{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000.}
+  \label{fig:ADJJ/Validation/SPT/SPFit}
+\end{figure}
+
+\noindent As visible from Fig. \ref{fig:ADJJ/Validation/SPT/SPFit}, the fits with a combined PDF are in good agreement with the background only histograms, with a p-value of 0.99 for both the signals.
+Some modelling issues are visible in the tails of the distributions, which are due to the lack of statistics in those regions, which is not enough to constrain the fit.\\
+The results of the fit bias study at 1 $fb^{-1}$ are presented in Fig. \ref{fig:ADJJ/Validation/SPT/SPplots} and in Tab. \ref{tab:ADJJ/Validation/SPT/SPvalue}.
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/VXH}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/VWW}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/Wprime}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf} 
+    \caption{}
+    \label{subfig:ADJJ/Validation/SPT/SPplots/DJ}
+  \end{subfigure}
+  
+  \caption{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied and this test can be considered passed.}
+  \label{fig:ADJJ/Validation/SPT/SPplots}
+\end{figure}
+
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{||>{\columncolor{lightgray}}c|c|c|c|c|c||}
+\hline
+\textbf{Signal} & VcXH\_2300 & VcXH\_3400 & VcXH\_6000 & VzWW\_2000 & VzWW\_3000 \\
+\hline
+\textbf{$|S_{spur}/\sigma_{fit}|$} & 0.24 & 0.19 & 0.07 & 0.01 & 0.19 \\
+\hline\hline
+\textbf{Signal} &  VzWW\_4000 & VzWW\_5000 & Wprime & DJ & / \\
+\hline
+\textbf{$|S_{spur}/\sigma_{fit}|$}&  0.19 & 0.13 & 0.18 & 0.20 & / \\
+\hline
+\end{tabular}
+\caption{Ratio values $|S_{spur}/\sigma_{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm$ 0.5 range, meaning that the test is considered passed.}
+\label{tab:ADJJ/Validation/SPT/SPvalue}
+\end{table}
+
+\noindent The results presented above in Fig. \ref{fig:ADJJ/Validation/SPT/SPplots} and in Tab. \ref{tab:ADJJ/Validation/SPT/SPvalue} show that the spurious signal test is passed for all the signal samples and mass points, given the ratio $|S_{spur}/\sigma_{fit}|$ within the required $\pm$ 0.5 range.\\
+The study conducted at 1 $fb^{-1}$ is then repeated scaling the samples to higher luminosities of [1.65, 16.5, 50.0, 100.0, 139.0, 165.0, 332.0]  $fb^{-1}$.
+This values are chosen since they correspond to fractions of the partial Run 3 sample studied (165.0 $fb^{-1}$), to the full Run 2 sample (139.0 $fb^{-1}$) and to the full Run 3 sample (332.0 $fb^{-1}$), or simply as intermediate values. 
+Those tests are performed to check the stability of the results with increasing statistics and to ensure that the background PDF is still able to model the background sample without introducing a bias in the fit.\\
+The results of this study are presented in Appendix B, where the plots for the different luminosities are shown.\\
+Analysing these results, it is visible that the ratio value is stable in the required range for all the signal, with samples at higher masses showing a reduced uncertainty on the fitted signal, given the lower statistics in the background sample at higher $m_{JJ}$ values.
+For these reasons, the spurious signal test is considered passed for all the signal samples, mass points and luminosities considered in this study.\\
+The test just discussed is perfomed to derive a systematic uncertainty to apply when performing the final fits and upper limits derivation.
+This uncertainty is referred to as \textit{background modelling uncertainty} which is included in the likelihood as a second source of signal with the same $m_{JJ}$ shape of the true signal:
+
+\begin{equation}
+  N_{sig}(m_{JJ}) = N_{sig}^{true}(m_{JJ}) + S_{modeling}(m_{JJ})\cdot \theta_{modeling}
+\end{equation}
+
+\noindent where the normalization term $\theta_{modeling}$ is a nuisance parameter constrained by a Gaussian term of mean 0 in the likelihood, with a width set to the absolute value of the spurious signal $|S_{spur}(m_{JJ})|$.\\
+The results of fits and upper limits derivation executed applying this systematic uncertainty are presented in Sec. \ref{sec:ADJJ/UpperLimits}.
 
 %-------------------------------------------------------------------------------
 \subsection{Signal injection tests}\label{sec:ADJJ/Validation/SINJ}
