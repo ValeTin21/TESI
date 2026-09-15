@@ -852,7 +852,7 @@ In principle, $S_{spur}$ should be compatible with 0, given the background only 
 More importantly, the ratio $S_{spur}/\sigma_{fit}$ for each sample is computed and plotted in the lower pad on the same graph.
 Following the ATLAS recommendations \cite{ATLAS_smoothBKG}, the ratio points should be in a range of $\pm$ 0.5 to pass this first test.\\
 Two example plots of the fits to the signal hypothesis VcXH\_2300 and VzWW\_2000 to the background only sample for a single seed are shown in Fig. \ref{fig:ADJJ/Validation/SPT/SPFit}.
-Other plots for the other signal samples with the same seed are reported in Appendix B.
+Other plots for the other signal samples with the same seed are reported in Appendix A.
 
 
 \begin{figure}[ht!]
@@ -942,13 +942,13 @@ The results of the fit bias study at 1 $fb^{-1}$ are presented in Fig. \ref{fig:
 The study conducted at 1 $fb^{-1}$ is then repeated scaling the samples to higher luminosities of [1.65, 16.5, 50.0, 100.0, 139.0, 165.0, 332.0]  $fb^{-1}$.
 This values are chosen since they correspond to fractions of the partial Run 3 sample studied (165.0 $fb^{-1}$), to the full Run 2 sample (139.0 $fb^{-1}$) and to the full Run 3 sample (332.0 $fb^{-1}$), or simply as intermediate values. 
 Those tests are performed to check the stability of the results with increasing statistics and to ensure that the background PDF is still able to model the background sample without introducing a bias in the fit.\\
-The results of this study are presented in Appendix B, where the plots for the different luminosities are shown.\\
+The results of this study are presented in Appendix A, where the plots for the different luminosities are shown.\\
 Analysing these results, it is visible that the ratio value is stable in the required range for all the signal, with samples at higher masses showing a reduced uncertainty on the fitted signal, given the lower statistics in the background sample at higher $m_{JJ}$ values.
 For these reasons, the spurious signal test is considered passed for all the signal samples, mass points and luminosities considered in this study.\\
 The test just discussed is perfomed to derive a systematic uncertainty to apply when performing the final fits and upper limits derivation.
 This uncertainty is referred to as \textit{background modelling uncertainty} which is included in the likelihood as a second source of signal with the same $m_{JJ}$ shape of the true signal:
 
-\begin{equation}
+\begin{equation}\label{ADJJ/Validation/SPT/Modified_likelihood}
   N_{sig}(m_{JJ}) = N_{sig}^{true}(m_{JJ}) + S_{modeling}(m_{JJ})\cdot \theta_{modeling}
 \end{equation}
 
@@ -958,9 +958,116 @@ The results of fits and upper limits derivation executed applying this systemati
 %-------------------------------------------------------------------------------
 \subsection{Signal injection tests}\label{sec:ADJJ/Validation/SINJ}
 
+The second validation test performed is the \textit{signal injection test}, which aims to quantify the ability of the model to recover a given amount of signal injected in a background sample.
+This validation proceeds in a similar way to previous, with the main difference situated in the creation of the histogram to fit, which is built as follows.\\
+The amount of injeted signal is quantified in terms of significance Z, which is defined as $Z = \frac{S}{\sqrt{B}}$, where S is the number of injected signal events and B is the number of background events in the Region of Interest (RoI).
+It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one and it is valid in the regime of B>>S, which is the case for the samples considered in this analysis \cite{Lik_tests}.
+Inverting the definition of Z, the number of injected signal events can be expressed as:
+\begin{equation}
+  S_{inj} = Z \cdot \sqrt{B}
+\end{equation}
+
+\noindent where Z is varied between 1 and 5, in steps of 1.
+B is defined in the RoI as $B=\sum_{i}^{bins~in~ FWHM}B_i$. 
+The RoI, in fact, is defined as the Full Width at Half Maximum (FWHM) of the signal in question, which is computed from the histogram of the signal in question, after the event selection is applied.
+The number of background events in each bin $B_i$, instead, is not derived from the background histogram but from the background only fit to this sample.
+This choice is made to avoid the statistical fluctuations of the background sample in the high-mass tails and to be able to extrapolate a background estimate even in this region, where the background sample is not populated enough to allow a reliable estimate.\\
+The injected sample generated as described, is then fitted with the combined PDF, as in the previous test, and the fitted amount of signal $S_{fit}$ is extracted.
+Two example plots of the fits to the signal hypothesis VcXH\_2300 and VzWW\_2000 to the injected sample with Z=5 are shown in Fig. \ref{fig:ADJJ/Validation/SINJ/SINJfit}.
+Other plots for the other signal samples with the same seed are reported in Appendix A.
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SINJfit/aaa}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SINJfit/bbb}
+  \end{subfigure}
+  
+  \caption{Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000, with a significance Z=5 injected.}
+  \label{fig:ADJJ/Validation/SINJ/SINJfit}
+\end{figure}
+
+\noindent The plots in Fig. \ref{fig:ADJJ/Validation/SINJ/SINJfit} show the good agreement between the fitted function and the injected sample, with a p-value of 0.97 and 0.99 respectively for the two signals.
+Despite this, some fluctuations, probably due to the binnig of the histogram, are present across the distribution and they are expected to be smoothed out when scaling the samples to higher luminosities, where the statistics is higher and the binning is less subject to fluctuations.\\
+From these fits, the quantity $S_{spur}$ is computed as the difference between the fitted and injected amount of signal, $S_{spur} = S_{fit} - S_{inj}$.
+The test, once again, is execute with 100 pseudodata samples.
+Extracting the values from the fits, $S_{spur}$ is mediated over the distribution and the width $\sigma_{fit}$ is computed.\\
+The computed quantities are then plotted, in a similar plane as before, with the x-axis being the amount of injected signal in terms of significance and the y-axis being the fitted significance.
+Each graph contains curves for the different mass points of the same signal process.
+The results obtained from the signal injection tests at 1$fb^{-1}$ are shown in Fig. \ref{fig:ADJJ/Validation/SINJ/SIplots}.
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/SINJ_VcXH_lumi1.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SIplots/VXH}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_VzWW_lumi1.65.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SIplots/VWW}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_Wprime_lumi1.png}
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_DJ_lumi1.png} 
+    \caption{}
+    \label{subfig:ADJJ/Validation/SINJ/SIplots/DJ}
+  \end{subfigure}
+  
+  \caption{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied and this test can be considered passed.}
+  \label{fig:ADJJ/Validation/SINJ/SIplots}
+\end{figure}
+
+\noindent The requirements for the signal injection test are that the main curve of each mass point should be compatible with a linearly increasing function with slope 1, and the same as the previous test, the ratio $S_{spur}/\sigma_{fit}$ has to be within the $\pm$ 0.5 range.
+The results presented above in Fig. \ref{fig:ADJJ/Validation/SINJ/SIplots} show that the signal injection test pass these requirements for the majority of the signal samples, mass points and injected significances.
+Some issues are visible for higher mass points as the VcXH\_6000, where the statistics is lower and the background sample is not populated enough to allow a reliable estimate of the background in the RoI.
+Other issues are visible for the lower mass points, where the distributions is more subject to statistical fluctuations due to the binning of the histogram.\\
+Overall, considering the entire curves, both the upper and lower plots, the signal injection test can be considered passed for 1 $fb^{-1}$ samples.\\
+The study conducted at 1 $fb^{-1}$ is then repeated scaling the samples to higher luminosities of [1.65, 16.5, 139.0, 165.0, 332.0]  $fb^{-1}$, to check the stability of the results with increasing statistics.
+The plots associated to these latter tests are reported in Appendix A.
+From those plots, the trend is slightly more crucial than the one observed at lower luminosity.\\
+The behaviour observed during this study could be associated to a cut on AS too aggresive, especially for the higher mass points: relaxing the requirement on the computed score, moving it from 99\% to 95\% or 90\%, could allow to recover more background events in the RoI, improving the modelling of samples and, consequently, the results of the test.\\
+In conclusion, despite the event selection with WP99 passes the spurious signal test, the signal injection one is more critical, suggesting that a compromise between the two tests in terms of event selection is needed to improve the results of the latter test.\\
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Upper limits derivation}\label{sec:ADJJ/UpperLimits}
 
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Comparison with a $D_2$ based event selection}\label{sec:ADJJ/D2}
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Analysis workflows}\label{sec:ADJJ/WF}
 
