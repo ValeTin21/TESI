@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{69}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{72}{subsection.5.6.2}%
 \contentsline {section}{\numberline {5.7}Upper limits derivation}{74}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{74}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Analysis workflows}{74}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Conclusions}{75}{chapter.6}%
-\contentsline {chapter}{Bibliography}{76}{section*.80}%
+\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{78}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{80}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Conclusions}{84}{chapter.6}%
+\contentsline {chapter}{Bibliography}{85}{section*.92}%

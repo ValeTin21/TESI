@@ -25,6 +25,8 @@ A level-1 auxiliary file: AppendixA_plots.aux
 Database file #1: bibliography.bib
 Warning--entry type for "DLThesis" isn't style-file defined
 --line 469 of file bibliography.bib
+Warning--entry type for "PhDGRusso" isn't style-file defined
+--line 625 of file bibliography.bib
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -59,45 +61,45 @@ Warning--empty year in Rome_view
 Warning--empty chapter and pages in GNN_HEP
 Warning--empty year in ROOT_DSCB
 Warning--empty author in ATLAS_smoothBKG
-You've used 77 entries,
+You've used 78 entries,
             2481 wiz_defined-function locations,
-            1008 strings with 16965 characters,
-and the built_in function-call counts, 22411 in all, are:
-= -- 1992
-> -- 769
-< -- 64
-+ -- 375
-- -- 216
-* -- 1316
-:= -- 3598
-add.period$ -- 282
-call.type$ -- 77
-change.case$ -- 147
-chr.to.int$ -- 72
-cite$ -- 117
-duplicate$ -- 1332
-empty$ -- 2268
-format.name$ -- 319
-if$ -- 4822
+            1014 strings with 17173 characters,
+and the built_in function-call counts, 22668 in all, are:
+= -- 2014
+> -- 776
+< -- 65
++ -- 379
+- -- 218
+* -- 1327
+:= -- 3637
+add.period$ -- 285
+call.type$ -- 78
+change.case$ -- 149
+chr.to.int$ -- 73
+cite$ -- 118
+duplicate$ -- 1346
+empty$ -- 2298
+format.name$ -- 322
+if$ -- 4879
 int.to.chr$ -- 6
-int.to.str$ -- 78
+int.to.str$ -- 79
 missing$ -- 58
-newline$ -- 437
-num.names$ -- 213
-pop$ -- 710
+newline$ -- 442
+num.names$ -- 216
+pop$ -- 722
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 78
 quote$ -- 0
-skip$ -- 847
+skip$ -- 859
 stack$ -- 0
-substring$ -- 327
-swap$ -- 165
+substring$ -- 329
+swap$ -- 167
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 509
+type$ -- 516
 warning$ -- 34
-while$ -- 156
+while$ -- 158
 width$ -- 0
-write$ -- 1025
-(There were 35 warnings)
+write$ -- 1037
+(There were 36 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -486,5 +486,11 @@ G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells.
   physics"}.
 \newblock \emph{The European Physical Journal C}, (2011).
 \newblock URL \url{http://dx.doi.org/10.1140/epjc/s10052-011-1554-0}.
+
+\bibitem[Russo((2025))]{PhDGRusso}
+G.~Russo.
+\newblock \textit{"Analysis and trigger approaches for New Physics searches
+  exploiting Machine Learning at the ATLAS detector"}, (2025).
+\newblock URL \url{https://hdl.handle.net/11573/1741047}.
 
 \end{thebibliography}

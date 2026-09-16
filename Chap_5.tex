@@ -1,4 +1,4 @@
-\chapter{ATLAS analysis with AD in hadronic final states} \label{chap:ADJJ}
+\chapter{ATLAS analysis with AD in hadronic final states}\label{chap:ADJJ}
 
 The final and crucial chapter of this thesis is dedicated to present the implementation of the Anomaly Detection approach within an ATLAS analysis.
 This study searches for boson resonances associated with BSM physics decaying into fully hadronic final states in the described detector, making use of the AD technique.\\
@@ -1061,13 +1061,432 @@ In conclusion, despite the event selection with WP99 passes the spurious signal 
 %-------------------------------------------------------------------------------
 \section{Upper limits derivation}\label{sec:ADJJ/UpperLimits}
 
+Using the validated PDFs for the signal and background samples, the upper limits on the signal cross-section are derived.\\
+This computation is performed with the \texttt{quickLimit} utility of the \texttt{quickFit} package, which is part of the \texttt{Frequentist Framework} of the ATLAS collaboration.
+The utility implements the \texttt{$CL_S$} method to determine 95\% Confidence Level (CL) intervals \cite{Lik_tests}, leveraging the likelihood defined in Eq. \ref{eq:ADJJ/Validation/likelihood} computed with the best-fit parameters obtained from the fits to the sample considering also the systematic uncertainty associated with background modeling, as discussed in Sec. \ref{sec:ADJJ/Validation/SPT}.
+The \texttt{$CL_S$} method is defined as:
+\begin{equation}
+  CL_S = \frac{CL_{S+B}}{CL_B}
+\end{equation}
+
+\noindent where $CL_{S+B}$ is the CL of the agreement between the data and the signal plus background hypothesis and $CL_B$, instead, is the CL of the agreement with the background only hypothesis.\\
+In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sample with the combined PDF, taking into account the systematic uncertainty derived from the spurious signal test, are shown for the VcXH\_3400 and VzWW\_2000 signals.
+
+
+\begin{figure}[ht!]
+  \centering
+
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Fit_VcXH}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Fit_VzWW}
+  \end{subfigure}
+  
+  \caption{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000.}
+  \label{fig:ADJJ/UpperLimits/Fits_lumi1}
+\end{figure}
+
+\noindent The fits to the other signal hypotheses are reported in Appendix A, where the same study for the different rescaled luminosities is also shown.\\
+The fit results are accepted if the p-value is higher than the canonical 0.05 threshold.
+Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, the requirement is satisfied for all the fits performed, with p-values higher than 0.05 for all the signal hypotheses and luminosities considered.\\
+For the reasons just discussed, it is expected that once the analysis will be performed on the real data, the results associated to the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
+The best-fit parameters are then used to compute the upper limits on the signal cross-section for each signal hypothesis and mass point, at the different tested luminosities.
+Since the PoI of the likelihood of this analysis is the signal yield $\tilde{\mu}$, the limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
+\begin{equation}\label{eq:ADJJ/UpperLimits/sigma_limit}
+  \sigma_{exp} = \frac{\tilde{\mu}}{Sig_{int} \cdot R_{lumi}}\cdot \sigma_{th}
+\end{equation}
+
+\noindent where $\tilde{\mu}$ is the limit derived on the signal yield, $Sig_{int}$ is the integral of the signal PDF, $R_{lumi}$ is the ratio between the luminosity to which the sample is rescaled and the initial luminosity (1 $fb^{-1}$) and $\sigma_{th}$ is the assumed theoretical cross-section of the signal in question reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.\\
+The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $\pm$ 2 $\sigma$ uncertainty bands, are shown in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} for the different signals and luminosities considered in this study.
+
+%%%%%%%%%%%%
+%%%%VcXH%%%%
+\begin{figure}[ht!]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=1, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VcXH2300}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=2, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VcXH3400}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=3,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VcXH600}
+  \end{subfigure}
+  
+  \caption{Expected upper limits scan at different luminosities on $\sigma_{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV. The plot presents an horizontal red line, corresponding to $\sigma_{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}
+  \label{fig:ADJJ/UpperLimits/VcXH}
+\end{figure}
+
+%%%%%%%%%%%%
+%%%%VzWW%%%%
+\begin{figure}[ht!]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=4, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VzWW2000}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=5, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VzWW3000}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=6,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VzWW4000}
+  \end{subfigure}
+    \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=7,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_VzWW5000}
+  \end{subfigure}
+
+  
+  \caption{Expected upper limits scan at different luminosities on $\sigma_{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma_{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}
+  \label{fig:ADJJ/UpperLimits/VzWW}
+\end{figure}
+
+%%%%%%%%%%%%
+%%%%Wprime & DJ%%%%
+\begin{figure}[ht!]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=8, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_Wprime}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=9, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Limit_DJ}
+  \end{subfigure}
+  
+  \caption{Expected upper limits scan at different luminosities on $\sigma_{exp}$ for the (a) Wprime and (b) Dark Jets signals. The plot presents an horizontal red line, corresponding to $\sigma_{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}
+  \label{fig:ADJJ/UpperLimits/WprimeDJ}
+\end{figure}
+
+\noindent Analaysing the figures \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ}, it is visible that the $\sigma_{exp}$ limits have a dependence on the luminosity of approximately $1/\sqrt{\mathcal{L}}$, as expected.\\
+Numerical values of the $\sigma_{exp}$ for the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$ are reported in Tab. \ref{tab:ADJJ/UpperLimits/SigmaLimits_AS} for the different signal hypotheses and mass points.
+For the same luminosities and signal hypotheses, a comparison between the $\sigma_{exp}$ and the theoretical cross-section $\sigma_{th}$ is shown in Fig. \ref{fig:ADJJ/UpperLimits/RatioTh}, where the ratio $(\sigma_{exp}-\sigma_{th})/\sigma_{th}$ is plotted as a function of the signal.
+The grids are a rapid visualisation of the results reported in Tab. \ref{tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded and the square is colored in a red scale.
+While if the ratio is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.
+In this latter case the square is colored in a green scale, with darker colors corresponding to a higher exclusion power of the analysis.
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c||c|c|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Signal} &  \textbf{$\sigma_{th}$ [pb]} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=139$ $fb^{-1}$}} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=165$ $fb^{-1}$}} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=332$ $fb^{-1}$}}\\
+\hline\hline 
+
+ VcXH\_2300 &  $4.7435 \cdot 10^{-1}$ & $6.54^{+2.56}_{-1.83} \cdot 10^{-2}$ & $5.83^{+2.28}_{-1.63} \cdot 10^{-2}$ & $4.30^{+1.68}_{-1.20} \cdot 10^{-2}$ \\
+ &&&&\\
+ VcXH\_3400 &  $4.1550 \cdot 10^{-2}$ & $1.47^{+0.58}_{-0.41} \cdot 10^{-2}$ & $1.20^{+0.47}_{-0.34} \cdot 10^{-2}$ & $9.61^{+3.77}_{-2.69} \cdot 10^{-3}$ \\
+ &&&&\\
+ VcXH\_6000 &  $2.1811 \cdot 10^{-4}$ & $8.81^{+3.45}_{-2.46} \cdot 10^{-4}$ & $7.81^{+3.06}_{-2.18} \cdot 10^{-4}$ & $5.81^{+2.27}_{-1.62} \cdot 10^{-4}$ \\
+\hline
+
+ VzWW\_2000 & $3.8476 \cdot 10^{-3}$ & $1.77^{+0.69}_{-0.49} \cdot 10^{-2}$ & $1.54^{+0.60}_{-0.43} \cdot 10^{-2}$ & $1.21^{+0.47}_{-0.34} \cdot 10^{-2}$ \\
+ &&&&\\
+ VzWW\_3000 & $3.5969 \cdot 10^{-4}$ & $4.61^{+1.81}_{-1.29} \cdot 10^{-3}$ & $3.74^{+1.47}_{-1.05} \cdot 10^{-3}$ & $2.99^{+1.17}_{-0.84} \cdot 10^{-3}$ \\
+ &&&&\\
+ VzWW\_4000 & $4.5256 \cdot 10^{-5}$ & $1.64^{+0.64}_{-0.46} \cdot 10^{-3}$ & $1.50^{+0.59}_{-0.42} \cdot 10^{-3}$ & $1.07^{+0.42}_{-0.30} \cdot 10^{-3}$ \\
+&&&&\\
+ VzWW\_5000 & $6.2648 \cdot 10^{-6}$ & $6.37^{+2.49}_{-1.78} \cdot 10^{-4}$ & $5.54^{+2.17}_{-1.55} \cdot 10^{-4}$ & $4.37^{+1.71}_{-1.22} \cdot 10^{-4}$ \\
+\hline
+ 
+ Wprime  & $9.6982 \cdot 10^{-16}$  & $1.46^{+0.57}_{-0.41} \cdot 10^{-1}$ & $1.18^{+0.46}_{-0.33} \cdot 10^{-1}$ & $9.47^{+3.71}_{-2.65} \cdot 10^{-2}$ \\
+\hline
+ 
+ DarkJet & $1.05853 \cdot 10^{-9}$ & $2.29^{+0.90}_{-0.64} \cdot 10^{-1}$ & $1.86^{+0.73}_{-0.52} \cdot 10^{-1}$ & $1.50^{+0.59}_{-0.42} \cdot 10^{-1}$ \\
+\hline
+ 
+\end{tabular}
+\caption{Expected upper limits derived selecting on AS for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma_{th}$ is also reported.}
+\label{tab:ADJJ/UpperLimits/SigmaLimits_AS}
+\end{table}
+
+
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Ratio_139}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Ratio_165}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/UpperLimits/Ratio_332}
+  \end{subfigure}
+  
+  \caption{Grid plots showing the exclusion limit $\sigma_{exp}$ compared with $\sigma_{exp}$ at  (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref{tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}
+  \label{fig:ADJJ/UpperLimits/RatioTh}
+\end{figure}
+
+\noindent From the results presented in Tab. \ref{tab:ADJJ/UpperLimits/SigmaLimits_AS} and Fig. \ref{fig:ADJJ/UpperLimits/RatioTh}, considerations on the exclusion power of the analysis can be made.
+At the target luminosities, the analysis with an event selection based on AS cuts has sufficient sensitivity to exclude  $V \to XH$ signals with masses 2300 GeV and 3400 GeV.
+It also presents promising performance for the higher mass point of 6000 GeV together with the lower mass points of the $V \to WW$ signals, with masses 2000 GeV and 3000 GeV.
+The analysis is not able to exclude the higher mass points of the $V \to WW$ signals, with masses 4000 GeV and 5000 GeV, nor the Wprime and Dark Jets signals.\\
+These results could be associated to multiple aspects.
+In the first place, combining the distributions of AS and $|\Delta y|$, which are the requirements involved in the event selection, the samples with worse performance in terms of upper limits are those with a smaller deviation from the background sample, in particular the Dark Jets and Wprime.
+These reduced deviations could be associated to the fact that those samples have a more complex substructure, which is probably not well captured by the trained GNN.
+Improvements in the training of the GNN could lead to a better discrimination power and, consequently, to an improved performance of the analysis.\\
+Secondly, the expected upper limits presented in this section are derived applying a cut on the AS at WP 99\%.
+The validation tests presented in Sec. \ref{sec:ADJJ/Validation} show that a better compromise in terms of WP should be considered, since the current choice performs well in terms of fit bias but it is more critical in terms of recovering the injected signal.
+This latter aspect is crucial going towards the execution of the analysis on real data where, in the (very rare) case of a signal presence, the analysis should be able to recover it correctly and not to reject it due to an aggressive cut on the AS.\\
+For all the reasons presented above, the AD strategy presents sufficient sensitivity but a more precise choice of the threshold is required to improve the final results.
+
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Comparison with a $D_2$ based event selection}\label{sec:ADJJ/D2}
 
+In order to extract an estimation of the advantages of the AD strategy and why it is worth training a GNN to perform an event selection, a comparison with is performed an analysis conducted with requirements on a more standard variable, $D_2$ (Sec. \ref{sec:Reco/Vars/D2}).\\
+The comparison starts from the computation of WPs on the $D_2$ variable of the leading jet to reject from 20\% to 99.9\% of the background events.
+The WPs are computed on the distribution presented in Fig. \ref{fig:ADJJ/D2/D2distribution} and the results are reported in Tab. \ref{tab:ADJJ/D2/WPs}.
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3.5 in]{Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg.pdf}
+    \caption{Distributions of the $D_2$ variable for the leading jet for the total background and different signal processes.}
+    \label{fig:ADJJ/D2/D2distribution}
+\end{figure}
+
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{||>{\columncolor{lightgray}}c|c|c|c|c|c|c|c||}
+\hline
+\textbf{BKG rejection (\%)} & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\
+\hline
+\textbf{$D_{2,lead}$ cut value} & 2.32 & 1.99 & 1.75 & 1.55 & 1.37 & 1.26 & 1.12  \\
+\hline\hline
+\textbf{BKG rejection (\%)} &  85 & 90 & 95 & 97 & 99 & 99.9 & / \\
+\hline
+\textbf{$D_{2,lead}$ cut value}&  1.04 & 0.94 & 0.81 & 0.73 & 0.59 & 0.36 & / \\
+\hline
+\end{tabular}
+\caption{WPs and respective rejection factors computed on the QCD background.}
+\label{tab:ADJJ/D2/WPs}
+\end{table}
+
+\noindent Given the $D_{2,lead}$ distribution in Fig. \ref{fig:ADJJ/D2/D2distribution}, it is clear that in this case the SRs are defined as events with $D_{2,lead}$ below the WPs, while the CRs are defined as events with $D_{2,lead}$ above the cut values.\\
+From what is presented above, it is clear that applying a cut on $D_{2,lead}$ at WP 99\% to get a direct comparison with AS results, the Dark Jets sample will be rejected almost completely and for this reason following results will not include this sample.
+A similar outcome is expected, since the discriminative quantity in this case is defined to target events with a 2-prong substructure, while the Dark Jets sample is characterized by a more complex substructure, which is not well captured by it.\\
+Using the PDFs defined before, assuming them valid also in this case, the same analysis workflow is applied and expected upper limits on $\sigma_{exp}$ are derived for the different signal hypotheses and mass points, at the same luminosities considered before.
+The results of the limits are reported in Fig. \ref{fig:ADJJ/D2/VcXH_Wprime}-\ref{fig:ADJJ/D2/VzWW}, Tab. \ref{tab:ADJJ/D2/SigmaLimits} and Fig. \ref{fig:ADJJ/D2/RatioTh}.\\
+
+%%%%%%%%%%%%
+%%%%VcXH%%%%
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=1, width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VcXH2300}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=2, width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VcXH3400}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=3,width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VcXH600}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=8,width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_Wprime}
+  \end{subfigure}
+  
+  \caption{Expected upper limits scan at different luminosities on $\sigma_{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV, (d) Wprime signal. The plot presents an horizontal red line, corresponding to $\sigma_{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}
+  \label{ADJJ/D2/VcXH_Wprime}
+\end{figure}
+
+%%%%%%%%%%%%
+%%%%VzWW%%%%
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=4, width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VzWW2000}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=5, width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VzWW3000}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=6,width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VzWW4000}
+  \end{subfigure}
+    \hfill
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[page=7,width=\textwidth]{Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Limit_VzWW5000}
+  \end{subfigure}
+
+  
+  \caption{Expected upper limits scan at different luminosities on $\sigma_{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma_{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}
+  \label{fig:ADJJ/D2/VzWW}
+\end{figure}
+
+
+%%%%%%%%%
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c||c|c|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Signal} &  \textbf{$\sigma_{th}$ [pb]} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=139$ $fb^{-1}$}} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=165$ $fb^{-1}$}} & \shortstack{\textbf{$\sigma_{exp}$ [pb]}\\\textbf{at $\mathcal{L}=332$ $fb^{-1}$}}\\
+\hline\hline 
+
+ VcXH\_2300 &  $4.7435 \cdot 10^{-1}$ & $5.52^{+2.16}_{-1.54} \cdot 10^{-2}$ & $5.05^{+1.98}_{-1.41} \cdot 10^{-2}$ & $3.52^{+1.38}_{-0.98} \cdot 10^{-2}$ \\
+ &&&&\\
+ VcXH\_3400 &  $4.1550 \cdot 10^{-2}$ & $1.11^{+0.44}_{-0.31} \cdot 10^{-2}$ & $1.04^{+0.41}_{-0.29} \cdot 10^{-2}$ & $7.29^{+2.86}_{-2.04} \cdot 10^{-3}$ \\
+  &&&&\\
+ VcXH\_6000 &  $2.1811 \cdot 10^{-4}$ & $6.29^{+2.47}_{-1.76} \cdot 10^{-4}$ & $6.02^{+2.36}_{-1.68} \cdot 10^{-4}$ & $3.62^{+1.42}_{-1.01} \cdot 10^{-4}$ \\
+\hline
+ VzWW\_2000 & $3.8476 \cdot 10^{-3}$ & $6.07^{+2.38}_{-1.70} \cdot 10^{-2}$ & $5.80^{+2.27}_{-1.62} \cdot 10^{-2}$ & $3.71^{+1.45}_{-1.04} \cdot 10^{-2}$ \\
+  &&&&\\
+ VzWW\_3000 & $3.5969 \cdot 10^{-4}$ & $1.28^{+0.50}_{-0.36} \cdot 10^{-2}$ & $1.23^{+0.48}_{-0.34} \cdot 10^{-2}$ & $8.50^{+3.33}_{-2.37} \cdot 10^{-3}$ \\
+ &&&&\\
+ VzWW\_4000 & $4.5256 \cdot 10^{-5}$ & $5.12^{+2.00}_{-1.43} \cdot 10^{-3}$ & $4.71^{+1.85}_{-1.32} \cdot 10^{-3}$ & $3.30^{+1.29}_{-0.92} \cdot 10^{-3}$ \\
+  &&&&\\
+ VzWW\_5000 & $6.2648 \cdot 10^{-6}$ & $1.97^{+0.77}_{-0.55} \cdot 10^{-3}$ & $1.91^{+0.75}_{-0.53} \cdot 10^{-3}$ & $1.30^{+0.51}_{-0.36} \cdot 10^{-3}$ \\
+\hline
+ 
+ Wprime  & $9.6982 \cdot 10^{-16}$  & $5.29^{+2.07}_{-1.48} \cdot 10^{-2}$ & $5.02^{+1.97}_{-1.40} \cdot 10^{-2}$ & $3.53^{+1.38}_{-0.99} \cdot 10^{-2}$ \\
+\hline
+ 
+\end{tabular}
+\caption{Expected upper limits derived selecting based on $D_{2,lead}$ for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma_{th}$ is also reported.}
+\label{tab:ADJJ/D2/SigmaLimits}
+\end{table}
+
+
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Ratio_139}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Ratio_165}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf}
+    \caption{}
+    \label{subfig:ADJJ/D2/Ratio_332}
+  \end{subfigure}
+  
+  \caption{Grid plots showing the exclusion limit $\sigma_{exp}$, derived with cuts on $D_{2,lead}$, compared with $\sigma_{exp}$ at  (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref{tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}
+  \label{fig:ADJJ/D2/RatioTh}
+\end{figure}
+
+\noindent At this point it is possible to compare the results obtained with the two different event selections.
+Despite $D_{2,lead}$ showing a good competitive performance on some single processes, the results obtained with the AD strategy are better in terms of generalisation power, as the analysis is able to get lower ratios for more signals and mass points.
+Or, in other words, the model independent approach of the AD strategy, expected to have a reduced sensitivity with respect to other approaches, is able to provide a discrimination power comparable to the one from the $D_{2,lead}$ variable, which has been defined to target a specific signal topology.\\
+After the study presented in this section, the workflow of the analysis on the MC sample is considered completely defined and the next steps before moving to real data are the optimization of the event selection and the addition of other systematic uncertainties in the likelihood model, such as JES and JER (uncertainties linked to the jet calibration).
+
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\section{Analysis workflows}\label{sec:ADJJ/WF}
+\section{Analysis workflows on real data}\label{sec:ADJJ/WF}
 
