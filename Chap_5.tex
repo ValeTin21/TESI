@@ -1488,5 +1488,47 @@ After the study presented in this section, the workflow of the analysis on the M
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
+\newpage
 \section{Analysis workflows on real data}\label{sec:ADJJ/WF}
 
+Among the studies conducted during this thesis project, the workflow of the analysis on real data has been analysed and defined.\\
+This phase is essential.
+In fact, based on the requirements for the analysis on real data, the needed tests and validations on the MC sample are performed in order to ensure that the analysis is robust and reliable.
+It should be noted that the MC phase works as preliminary testing for the final analysis, which will be conducted directly on real data, satisfying the requirement for AD to be data driven.\\
+The workflow of the analysis on real data has been inserted in a diagram.
+It is presented in Fig. \ref{fig:ADJJ/WF/WFdiagram_p1} and Fig. \ref{fig:ADJJ/WF/WFdiagram_p2}, where the first and second half of the diagram are shown respectively, and commented step by step below.
+The diagram has values which refer to a partial Run 3 sample with $\mathcal{L} = 165.0 \text{ fb}^{-1}$ , which is the luminosity on which the analysis on real data should be concluded.
+On the other hand, as visible from the studies conducted on the MC sample, there is no limitations in principle in using the full Run 3 statistics of $\mathcal{L} = 332.0 \text{ fb}^{-1}$.
+Whether to use the full Run 3 sample or a partial one is a choice that will be made based on the results of the MC phase after all the optimisations will be done and systematic uncertainties will be taken into account.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[page=1,width=6 in]{Images/Chap5/WFdata.pdf}
+    \caption{First half of the diagram showing the workflow of the analysis on real data.}
+    \label{fig:ADJJ/WF/WFdiagram_p1}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[page=2,width=6 in]{Images/Chap5/WFdata.pdf}
+    \caption{Second half of the diagram showing the workflow of the analysis on real data.}
+    \label{fig:ADJJ/WF/WFdiagram_p2}
+\end{figure}
+
+\noindent The starting point of the data driven analysis is crucial and it is represented by the amount of data to use to train the GNN.
+In fact, in AD the network should be trained on a sample where it is assumed that the presence of signal is negligible with respect to the background.
+This requirement is easly satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of real data, where the possible presence of signal is unknown.
+For this aspect, the robut MC tests conducted are essential.
+Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it is possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of real data.
+Looking at the results in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ}, it is visible that the region where the limits computed in the analysis are below the theoretical values vary from signal to signal and mass point.
+A more stable result is expected to be obtained once the MC phase will be fully optimized and concluded.
+For the moment, the threshold is set, as a reference, at $\mathcal{L} = 16.5 \text{ fb}^{-1}$, which is 10\% of the luminosity of the partial Run 3 sample.
+After the determination of the threshold, the unblinding of a sample of equivalent amount of data, the check of the correct shape of the distributions of the variables used, the upper limits are derived, planning to not observe any significant excess (p-value < 0.05).
+In case any excess is observed, the masking techinque is applied to the region of the excess and the analysis is repeated, until no significant excess is observed.\\
+Once the sample has been determined to contain only a negligible and not visible amount of signal, the GNN is trained on it and the WPs are computed on the AS distribution as thresholds to reject from 20\% to 99.9\% of the sample.\\
+At this point, leveraging the validation tests conducted on the MC sample for the PDFs modelling, the functional form modelling the $m_{JJ}$ will be determined. 
+Subsequently, the full target sample will be analysed, executing controls on the distributions of all the variables but the $m_{JJ}$, which is blinded, to avoid any bias in the analysis.
+Then the sample will be passed to the trained GNN and on the computed AS, the cuts at the determined WP will be applied to determine the SR.
+Only at this stage, the final fit on the $m_{JJ}$ distribution with the unblinding of the data will be performed.
+If any excess will be observed, they will be interpreted and explained.
+In the opposite, more probable, scenario, the upper limits will be derived and, after the final comparisons, the analysis will be concluded.
