@@ -1,4 +1,4 @@
-\chapter{The LHC and the ATLAS experiments} \label{chap:LHCAtlas}
+\chapter{The LHC and the ATLAS experiment} \label{chap:LHCAtlas}
 
 The history of the European Organization for Nuclear Research (CERN) traces back to the post-WWII era, when European physicists, including Edoardo Amaldi, Niels Bohr and Pierre Auger, promoted a collaborative international laboratory dedicated to fundamental science. CERN was established in September 1954 and today it hosts the world's largest and most energetic accelerator complex, centered around the Large Hadron Collider (LHC).\\
 In the following, after a description of the LHC machine, the discussion covers the architecture of the ATLAS (A Toroidal LHC ApparatuS) detector, one of the four major experiments at CERN, including its main sub-systems and simulation procedures. A special focus is given to the proton-proton collision dataset collected by ATLAS at a center-of-mass energy of 13.6 TeV during LHC Run 3, which forms the basis for this study.
@@ -18,11 +18,10 @@ In the following, after a description of the LHC machine, the discussion covers 
 
 The Large Hadron Collider (LHC) at CERN, with its 27 kilometres ring \cite{LHCguide}, is the world's largest particle accelerator. 
 It has four major interaction points which host the major CERN experiments: ATLAS, CMS, LHCb and ALICE. 
-LHC is situated about 100 metres underground for economic\footnotemark and geological reasons, as well as to provide radiation shielding. 
-With its first run on 10 September 2008, it currently accelerates hadrons. Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV respectively.
+LHC is situated about 100 metres underground for economic and geological reasons, as well as to provide radiation shielding. 
+Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV per nucleon respectively.
 In order to reach such high energies, a complex system of pre-acceleration is adopted, as presented in Fig. \ref{fig:LHCAtlas/LHC/CERN_acc_system}.\\
 
-\footnotetext{Building LHC on the surface would have required the purchase of properties to do so and an under the open sky structure with a 27 km circumference would have been more expensive than agreeing with landowner and excavate a tunnel underground.}
 
 
 %-------------------------------------------------------------------------------
@@ -58,13 +57,14 @@ The beam pipes and the interaction points are presented in Fig. \ref{fig:LHCAtla
     \label{fig:LHCAtlas/LHC/parameters/BeamsCERN}
 \end{figure}
 
-\noindent Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV/$c^2$, [p]=eV/c), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p>>m) was assumed. This information is used in the norm of the four-momentum of two colliding particles:
+\noindent In the following, the focus will be placed on proton-proton collisions, which are the ones used in this study.\\
+Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV, [p]=eV), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p$\gg$m) was assumed. This information is used in the norm of the four-momentum of two colliding particles:
 
 \begin{equation}\label{eq:LHCAtlas/LHC/parameters/centerofmasseq}
     \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
 \end{equation}
 
-\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV of energy reached by LHC protons confirm the assumption p>>m and it leads to the known value of $\sqrt{s}=13.6 \text{ TeV}$.\\
+\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV of energy reached by LHC protons confirm the assumption p$\gg$m and it leads to the known value of $\sqrt{s}=13.6 \text{ TeV}$ for proton-proton collisions.\\
 Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used to maintain the beams focused. 
 Magnets are kept at a temperature of 1.9 K to ensure a 11600 A electric current which is needed for the intense magnetic field. 
 Despite their essential contribution, magnets also represent one of the main limitations of this apparatus. 
@@ -88,7 +88,7 @@ F represents the geometric luminosity reduction factor:
 \end{equation}
 \noindent where $\theta_c$ is the full crossing angle at the interaction point, $\sigma_z$ is the RMS bunch length and $\sigma^*$ is the transverse RMS beam size at the interaction point.
 When the instantaneous luminosity goes below a fixed threshold during operations, beams are dumped and a new fill of the LHC is performed.\\
-During LHC Run 3, $\mathcal{L}$ gets the value of $10^{34} \text{ cm}^{-2}s^{-1}$ for both ATLAS and CMS experiments, while for LHCb and ALICE it is $10^{32} \text{ cm}^{-2}s^{-1}$ and $10^{27} \text{ cm}^{-2}s^{-1}$ respectively.\\
+During LHC Run 3, $\mathcal{L}$ gets a value of order $10^{34} \text{ cm}^{-2}s^{-1}$ for both ATLAS and CMS experiments, while for LHCb and ALICE it is $10^{32} \text{ cm}^{-2}s^{-1}$ and $10^{27} \text{ cm}^{-2}s^{-1}$ respectively.\\
 The instantaneous luminosity is linked with the number of collisions per second :
 \begin{equation}\label{eq:dNdt}
     \frac{dN}{dt}=\mathcal{L}\sigma_{tot}
@@ -96,14 +96,16 @@ The instantaneous luminosity is linked with the number of collisions per second 
 \noindent where $\sigma_{tot}$ is the total cross section, which is the measure of the probability of a specific interaction process to happen.
 If the instantaneous luminosity is integrated over time, the number of events collected is obtained:
 \begin{equation}\label{eq:LHCAtlas/LHC/parameters/Nevents}
-    N_{events}=\sigma_{tot}\int \mathcal{L} dt 
+    N_{events}=\sigma_{tot}A\epsilon \int \mathcal{L} dt 
 \end{equation}
+
+\noindent where $A$ is the acceptance of the detector and $\epsilon$ is the efficiency of the event selection criteria.
 
 %-------------------------------------------------------------------------------
 
 \subsection{LHC Run Schedule}
 
-The LHC operations are structured into extended physics data-taking campaigns named \textit{Runs}, which are separated by planned technical maintenance and machine upgrade periods, which are known as Long Shutdowns (LS). 
+The LHC operations are structured into extended physics data-taking campaigns named \textit{Runs}, which are separated by planned technical maintenance and upgrade periods for both the machine and the detectors, which are known as Long Shutdowns (LS). 
 It was Run 1, from 2010 to 2013, that started the LHC physics program, operating at center-of-mass energies of $\sqrt{s} = 7\text{ TeV}$ and $8\text{ TeV}$, with a delivered integrated luminosity of 28 $fb^{-1}$. Run 1 culminated in the discovery of the Higgs boson by the ATLAS and CMS collaborations.
 Following upgrades during LS1, meant to enable higher-energy operations, Run 2 took place between 2015 and 2018 at $\sqrt{s} = 13\text{ TeV}$, delivering an integrated luminosity of approximately $156\text{ fb}^{-1}$.
 After another round of upgrades during LS2 the collider entered the Run 3 era in 2022, which lasted until June 2026, operating at an increased center-of-mass energy of $\sqrt{s} = 13.6\text{ TeV}$. After having delivered an integrated luminosity of approximately $351\text{ fb}^{-1}$, the LHC was turned off for the beginning of LS3.
@@ -128,7 +130,8 @@ It fails at low energy scales, in the so called \textit{soft scattering}, where 
 In these cases, the \textit{factorization theorem} allows to compute the total cross-section of $pp$ collisions as a convolution of short-distance partonic matrix elements with long-distance Parton Distribution Functions (PDFs), which describe the probability of finding a parton with a given momentum fraction $x$ inside the proton.\\
 The situation described above gets a degree of complexity when considering that, in a single bunch crossing, multiple $pp$ collisions can occur. This phenomenon, known as \textit{pile-up}, is discussed in Sec. \ref{sec:LHCAtlas/ppColl/pileup}.\\
 As said, the calculation of the total cross-section of $pp$ collisions is not trivial. For this reason, event generators are used to simulate the physics of $pp$ collisions, as described in Sec. \ref{sec:LHCAtlas/ATLAS/Simulation} for ATLAS.\\
-In Fig. \ref{fig:LHCAtlas/ppColl/ppCollision} a Feynman diagram of a $pp$ collision is shown, where the two protons are represented as two bunches of partons, among which only two of them collide and produce the final state.
+In Fig. \ref{fig:LHCAtlas/ppColl/ppCollision} a Feynman diagram of a $pp$ collision is shown, where the two protons are represented as two bunches of partons, among which only two of them collide in the hard scatter and produce the final state.
+All the other processes are referred to as \textit{Underlying Events (UE)}, which are discussed in Sec. \ref{sec:LHCAtlas/ppColl/pileup}.
 
 \begin{figure}[ht!]
     \centering
@@ -142,7 +145,7 @@ In Fig. \ref{fig:LHCAtlas/ppColl/ppCollision} a Feynman diagram of a $pp$ collis
 The partons coming out of the hard scattering process emit gluon radiation and produce quark pairs in a cascading parton shower (Sec. \ref{sec:LHCAtlas/ppColl/HadShow}).\\
 When approaching energies compatible with the QCD scale $\Lambda_{\text{QCD}} \approx 200\text{/}300\text{ MeV}$, the soft scattering regime is reached, with the divergence of the perturbative expansion and the araising of colour confinment.
 For this reason, colour charged partons must bind into colour-neutral hadrons. This non-perturbative transition is known as \textit{hadronisation} \cite{Phenomenology}.
-The processes and collisions not related to the primary hard scatter are defined as \textit{underlying events}, which can rise from multiple sources, such as initial of final state radiation. 
+The processes and collisions not related to the primary hard scatter are defined as \textit{Underlying Events}, which can rise from multiple sources, such as initial of final state radiation. 
 This type of events, together with soft scattering processes from other partons, are responsible for the Pile-Up (PU) phenomenon.
 PU degrades event reconstruction and it has to be carefully controlled to ensure a correct physics analysis. 
 When referring to PU, the average number of $pp$ collisions per bunch crossing is presented, using the symbol $\langle\mu\rangle$.\\
@@ -158,14 +161,14 @@ In Fig. \ref{fig:LHCAtlas/ppColl/ATLAS_PU}, a plot showing the PU distribution i
 
 %-------------------------------------------------------------------------------
 \subsection{Electromagnetic Showers}\label{sec:LHCAtlas/ppColl/EMShow}
-Before discussing the hadronic showers, which are essential in the formation of jets, the main focus of this thesis, it is important to introduce the electromagnetic version of them.
+Before discussing the hadronic showers, which are essential in the formation of jets, the main focus of this thesis, it is important to introduce a similar and equally important type of shower, the electromagnetic one.
 Electromagnetic showers develop when high-energy electrons or photons interact with heavy materials.
 They are the basis of the electromagnetic calorimeter design, which is used to measure the energy of electrons and photons (Sec. \ref{sec:LHCAtlas/ATLAS/Calo/ECal}).
 The passive material, or absorber, is typically a high-Z material with a high probability of interacting with the incoming particles.
 These interactions reduce particles' energy and slowly stop them.\\
 Electromagnetic showers develop via two primary mechanisms: bremsstrahlung and pair production.
 Electrons (and positrons) lose energy via bremsstrahlung, which can be defined as the emission of photons (radiation). 
-Those photons undergo pair production, converting them into electron-positron pairs which then emit more photons via bremsstrahlung. This cycle repeats until electrons and photons loose their energies.\\
+Those photons undergo pair production, converting them into electron-positron pairs which then emit more photons via bremsstrahlung. This cycle repeats until electrons and photons lose their kinetic energies.\\
 The count of particles involved in the cascade grows exponentially, forming a literal \textit{shower} of particles, as shown in Fig \ref{fig:LHCAtlas/ppColl/EMShow/EMShower}. 
 
 \begin{figure}[ht!]
@@ -193,7 +196,7 @@ Again, the hadronic calorimeter needs to be deep enough to manage the containmen
 %-------------------------------------------------------------------------------
 \section{The ATLAS detector} \label{sec:LHCAtlas/ATLAS}
 
-A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world's largest particle detector, situated at Interaction Point 1 at CERN.
+A Toroidal LHC ApparatuS (ATLAS) \cite{ATLASwebsite} is the world's largest collider particle detector, situated at Interaction Point 1 at CERN.
 44m in length and 25m in height are required to investigate collisions between particles accelerated by the LHC, to study phenomena such dark matter, the Higgs boson and top quark.
 The ATLAS detector is composed of multiple sub-detectors organized in layers with a cylindrical symmetry around the beam pipe.
 Among the main sub-detectors we can find: the Inner Detector (ID), the Electromagnetic Calorimeter (ECal), the Hadronic Calorimeter (HCal) and the Muon Spectrometer (MS), as shown in Fig. \ref{fig:LHCAtlas/ATLAS/ATLASdetector}.\\
@@ -201,7 +204,7 @@ Among the main sub-detectors we can find: the Inner Detector (ID), the Electroma
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=4.3 in]{Images/Chap2/ATLASDetector.png}
-    \caption{ATLAS schematic. Figure form Ref. \cite{ATLAS_detector}.}
+    \caption{ATLAS schematic. Figure from Ref. \cite{ATLAS_detector}.}
     \label{fig:LHCAtlas/ATLAS/ATLASdetector}
 \end{figure}
 
@@ -245,10 +248,10 @@ Since Lorentz boosts are applied to move from the laboratory frame to the center
 In case of an ultra-relativistic particle, the rapidity and the pseudo-rapidity are approximately equal, $\eta \approx y$, as shown in Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/rapidity} and Eq. \ref{eq:LHCAtlas/ATLAS/coordinatesystem/eta}.
 The main difference between the two is that the rapidity depends both on the energy of the particle and its momentum, a combined measurement not trivial at high energies, while the pseudo-rapidity depends only on the particle's momentum.
 For these reasons, the pseudo-rapidity is preferred to the rapidity, making  ($r, \eta , \phi$) the used coordinate system. With such choice of coordinates, the detector components placed at high values of pseudo-rapidity are addressed as \textit{forward region}.\\
-The pseudo-rapidity and the azimuth angle, are used to define a geometrical distance, applied when computing the separation between two physics objects:
+The pseudo-rapidity and the azimuth angle, are used to define a geometrical distance, applied when computing the separation between two massive physics objects:
 
 \begin{equation} \label{eq:LHCAtlas/ATLAS/coordinatesystem/distance}
-    \Delta R=\sqrt{\Delta \eta ^2 + \Delta \phi ^2}
+    \Delta R=\sqrt{\Delta y ^2 + \Delta \phi ^2}
 \end{equation}
 
 \noindent Prior to an analysis of materials, some more useful quantities are defined. The first one is the transverse momentum $p_T$, which is the projection of the momentum  of the particle in the transverse plane $(x,y)$ of the interaction, defined as:
@@ -256,7 +259,10 @@ The pseudo-rapidity and the azimuth angle, are used to define a geometrical dist
     p_T = \sqrt{p_x^2 + p_y^2}
 \end{equation}
 
-\noindent The importance of this variables relies in the fact that at the LHC collisions happen mostly along the z-axis, generating Lorentz boosts mainly along this axis. This means that the transverse plane is not affected by these boosts, making $p_T$ a Lorentz invariant quantity.\\
+\noindent The importance of this variables relies in the fact that the particles collided at the LHC, protons, are not elementary particles, but composite states of partons.
+The result of this is that the energy of the center-of-mass of the colliding partons is not known, since it depends on the momentum fraction $x$ of the partons inside the protons.
+On the other hand, collisions happen mostly along the z-axis, generating Lorentz boosts mainly along this axis. This means that the transverse plane is not affected by these boosts, making the kinematics closed in this plane.
+For this reason, the transverse momentum $p_T$ is used to define the kinematics of the events, instead of the total momentum $|\Vec{p}|$.\\
 Similarly, the transverse energy $E_T$ is defined as the projection of the energy of the particle in the transverse plane $(x,y)$ of the interaction, defined as:
 \begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/ET}
     E_T = E\cdot \frac{p_T}{|\Vec{p}|}
@@ -283,13 +289,6 @@ For this reason, if a particle is not detected, as it happens with neutrinos, it
     \label{fig:LHCAtlas/ATLAS/coordinatesystem/pTmiss}
 \end{figure}
 
-\noindent In these cases, the transverse mass is used instead of the invariant mass, which is defined as:
-\begin{equation}\label{eq:LHCAtlas/ATLAS/coordinatesystem/mT}
-    m_T=\sqrt{2p_TE_T^{miss}[1-\cos(\Delta \phi)]}
-\end{equation}
-
-\noindent where $E_T^{miss}$ is the magnitude of the missing transverse momentum and $\Delta \phi$ is the azimuthal angle between the transverse momentum of the detected particle and the missing transverse momentum.\\
-
 %-------------------------------------------------------------------------------
 \subsection{Magnetic system}\label{sec:LHCAtlas/ATLAS/magneticsystem}
 
@@ -300,7 +299,7 @@ For this reason, if a particle is not detected, as it happens with neutrinos, it
     \label{fig:LHCAtlas/ATLAS/ATLASmagneticsystem}
 \end{figure}
 
-\noindent Magnetic fields play a crucial role in the ALTAS detector, allowing the tracking of charged particles and the measurement of their momenta via the sagitta method \cite{Sagitta_method}.
+\noindent Magnetic fields play a crucial role in the ATLAS detector, allowing the tracking of charged particles and the measurement of their momenta via the sagitta method \cite{Sagitta_method}.
 The ATLAS detector relies on a hybrid superconducting magnet system composed of four sub-components: a central solenoid, a barrel toroid and two end-cap toroids \cite{ATLAS_exp_2008}.
 This complex system was adopted to reduce particle interactions with inactive material and, more importantly, to obtain a higher momentum resolution.
 Cooled to 4.5 K using liquid helium, the system covers a total volume of 26 m in length and 21 m in outer diameter.

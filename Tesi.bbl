@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{79}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -207,10 +207,10 @@ Tobias Bisanz.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0168900226004869}.
 
-\bibitem[collaboration()]{ATLASwebsite}
+\bibitem[collaboration({\natexlab{a}})]{ATLASwebsite}
 ATLAS collaboration.
 \newblock {The ATLAS Experiment}.
-\newblock URL: \url{https://atlas.cern/}.
+\newblock URL: \url{https://atlas.cern/}, {\natexlab{a}}.
 
 \bibitem[Bianchi and Collaboration((2022))]{ATLAS_detector}
 Riccardo~Maria Bianchi and ATLAS Collaboration.
@@ -413,6 +413,13 @@ V.~Belis, P.~Odagiu, and Thea~K. Aarrestad.
 {Pro Loco Roma Capitale}.
 \newblock \textit{"Il Colle Gianicolo "}.
 \newblock URL \url{https://www.prolocoroma.it/gianicolo/}.
+
+\bibitem[collaboration({\natexlab{b}})]{FF}
+ATLAS collaboration.
+\newblock \texttt{Frequentist Framework}.
+\newblock URL:
+  \url{https://gitlab.cern.ch/atlas-phys-exotics-dijet-tla/FrequentistFramework},
+  {\natexlab{b}}.
 
 \bibitem[Duarte and Vlimant((2022))]{GNN_HEP}
 J.~Duarte and J.R. Vlimant.

@@ -1,5 +1,6 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
+\citation{FF}
 \citation{ATLAS_Luminosity}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}ATLAS analysis with AD in hadronic final states}{48}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -9,14 +10,14 @@
 \newlabel{sec:ADJJ/dataset}{{5.1}{48}{The dataset}{section.5.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Final states}{49}{subsection.5.1.1}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/states}{{5.1.1}{49}{Final states}{subsection.5.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic drawing of a heavy boson decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}}{49}{figure.caption.52}\protected@file@percent }
-\newlabel{fig:ADJJ/dataset/states/HBdecay}{{5.1}{49}{Schematic drawing of a heavy boson decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones)}{figure.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic drawing of a heavy boson decaying into two bosons subsequently decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}}{49}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:ADJJ/dataset/states/HBdecay}{{5.1}{49}{Schematic drawing of a heavy boson decaying into two bosons subsequently decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones)}{figure.caption.52}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Signal processes}{49}{subsection.5.1.2}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/Signal}{{5.1.2}{49}{Signal processes}{subsection.5.1.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Feynman diagram of a $VcXH$ process.}}{50}{figure.caption.53}\protected@file@percent }
 \newlabel{fig:ADJJ/dataset/Signal/Fdiag}{{5.2}{50}{Feynman diagram of a $VcXH$ process}{figure.caption.53}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections.}}{50}{table.caption.54}\protected@file@percent }
-\newlabel{tab:sec:ADJJ/dataset/Signal}{{5.1}{50}{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections}{table.caption.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section.}}{50}{table.caption.54}\protected@file@percent }
+\newlabel{tab:sec:ADJJ/dataset/Signal}{{5.1}{50}{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section}{table.caption.54}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Background processes}{50}{subsection.5.1.3}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/BKG}{{5.1.3}{50}{Background processes}{subsection.5.1.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Stacked distribution of $m_{JJ}$ for the dominant background processes.}}{51}{figure.caption.55}\protected@file@percent }
@@ -26,263 +27,267 @@
 \citation{GNN_HEP}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}The event preselection}{52}{subsection.5.1.5}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/evSel}{{5.1.5}{52}{The event preselection}{subsection.5.1.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Trigger and object definition requirements applied during the event preselection.}}{52}{table.caption.56}\protected@file@percent }
-\newlabel{tab:ADJJ/dataset/evSel/preselection}{{5.2}{52}{Trigger and object definition requirements applied during the event preselection}{table.caption.56}{}}
 \citation{GNN_HEP}
 \citation{GNN_HEP}
 \citation{EGAT}
 \citation{MHA}
 \citation{EGAT}
 \citation{GraphPooling}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Trigger and object definition requirements applied during the event preselection.}}{53}{table.caption.56}\protected@file@percent }
+\newlabel{tab:ADJJ/dataset/evSel/preselection}{{5.2}{53}{Trigger and object definition requirements applied during the event preselection}{table.caption.56}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Training the ML model }{53}{section.5.2}\protected@file@percent }
 \newlabel{sec:ADJJ/GNN}{{5.2}{53}{Training the ML model}{section.5.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Visualisation of sparse jets in the transverse plane on the left and their representation as graphs on the right. Figure from Ref. \cite  {GNN_HEP}.}}{53}{figure.caption.57}\protected@file@percent }
 \newlabel{fig:ADJJ/GNN/jetGraph}{{5.4}{53}{Visualisation of sparse jets in the transverse plane on the left and their representation as graphs on the right. Figure from Ref. \cite {GNN_HEP}}{figure.caption.57}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}The architecture in use}{53}{subsection.5.2.1}\protected@file@percent }
-\newlabel{sec:ADJJ/GNN/architecture}{{5.2.1}{53}{The architecture in use}{subsection.5.2.1}{}}
 \citation{DeepSVDD}
-\citation{DeepSVDD}
-\citation{DeepSVDD}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Visual representation of the EGAT architecture, with the three main components. The black arrows represent the flow of the data, highliting the edges usage.}}{54}{figure.caption.58}\protected@file@percent }
-\newlabel{fig:ADJJ/GNN/EGAT}{{5.5}{54}{Visual representation of the EGAT architecture, with the three main components. The black arrows represent the flow of the data, highliting the edges usage}{figure.caption.58}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Input features for each constituent (node) of the jet (graph), connected based on a distance criterion (edge), used to train the GNN model.}}{54}{table.caption.58}\protected@file@percent }
+\newlabel{tab:ADJJ/GNN/GNNfeatures}{{5.3}{54}{Input features for each constituent (node) of the jet (graph), connected based on a distance criterion (edge), used to train the GNN model}{table.caption.58}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}The architecture in use}{54}{subsection.5.2.1}\protected@file@percent }
+\newlabel{sec:ADJJ/GNN/architecture}{{5.2.1}{54}{The architecture in use}{subsection.5.2.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Training the model}{54}{subsection.5.2.2}\protected@file@percent }
 \newlabel{sec:ADJJ/GNN/train}{{5.2.2}{54}{Training the model}{subsection.5.2.2}{}}
 \newlabel{eq:ADJJ/GNN/train/loss}{{5.1}{54}{Training the model}{equation.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal  {F}$ and the centre of the hypersphere $c$. Figure from Ref. \cite  {DeepSVDD}.}}{55}{figure.caption.59}\protected@file@percent }
-\newlabel{fig:ADJJ/GNN/loss}{{5.6}{55}{Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal {F}$ and the centre of the hypersphere $c$. Figure from Ref. \cite {DeepSVDD}}{figure.caption.59}{}}
+\citation{DeepSVDD}
+\citation{DeepSVDD}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Visual representation of the EGAT architecture, with the three main components. The black arrows represent the flow of the data, highliting the edges usage.}}{55}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:ADJJ/GNN/EGAT}{{5.5}{55}{Visual representation of the EGAT architecture, with the three main components. The black arrows represent the flow of the data, highliting the edges usage}{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal  {F}$ and the centre of the hypersphere $c$. Figure from Ref. \cite  {DeepSVDD}.}}{55}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:ADJJ/GNN/loss}{{5.6}{55}{Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal {F}$ and the centre of the hypersphere $c$. Figure from Ref. \cite {DeepSVDD}}{figure.caption.60}{}}
 \newlabel{eq:ADJJ/GNN/train/AS}{{5.2}{55}{Training the model}{equation.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Performance of the GNN}{55}{subsection.5.2.3}\protected@file@percent }
-\newlabel{sec:ADJJ/GNN/results}{{5.2.3}{55}{Performance of the GNN}{subsection.5.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Anomaly Score distribution}{55}{subsection.5.2.4}\protected@file@percent }
-\newlabel{sec:ADJJ/GNN/AS}{{5.2.4}{55}{Anomaly Score distribution}{subsection.5.2.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces AUC (\%) values obtained with the trained EGAT model for each signal.}}{56}{table.caption.60}\protected@file@percent }
-\newlabel{tab:ADJJ/GNN/results/AUC}{{5.3}{56}{AUC (\%) values obtained with the trained EGAT model for each signal}{table.caption.60}{}}
-\newlabel{subfig:ADJJ/GNN/AS/AS1_tot}{{5.7a}{57}{\relax }{figure.caption.61}{}}
-\newlabel{sub@subfig:ADJJ/GNN/AS/AS1_tot}{{a}{57}{\relax }{figure.caption.61}{}}
-\newlabel{subfig:ADJJ/GNN/AS/AS2_tot}{{5.7b}{57}{\relax }{figure.caption.61}{}}
-\newlabel{sub@subfig:ADJJ/GNN/AS/AS2_tot}{{b}{57}{\relax }{figure.caption.61}{}}
-\newlabel{subfig:ADJJ/GNN/AS/AS1_sep}{{5.7c}{57}{\relax }{figure.caption.61}{}}
-\newlabel{sub@subfig:ADJJ/GNN/AS/AS1_sep}{{c}{57}{\relax }{figure.caption.61}{}}
-\newlabel{subfig:ADJJ/GNN/AS/AS2_sep}{{5.7d}{57}{\relax }{figure.caption.61}{}}
-\newlabel{sub@subfig:ADJJ/GNN/AS/AS2_sep}{{d}{57}{\relax }{figure.caption.61}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Score distributions for the leading (a,c) and sub-leading (b,d) jets, with the background shown as a single term (a,b) and split into its components (c,d).}}{57}{figure.caption.61}\protected@file@percent }
-\newlabel{fig:ADJJ/GNN/AS/AS_jets}{{5.7}{57}{Score distributions for the leading (a,c) and sub-leading (b,d) jets, with the background shown as a single term (a,b) and split into its components (c,d)}{figure.caption.61}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces WPs and respective rejection factors computed on the QCD background.}}{57}{table.caption.62}\protected@file@percent }
-\newlabel{tab:ADJJ/GNN/AS/WPs}{{5.4}{57}{WPs and respective rejection factors computed on the QCD background}{table.caption.62}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Correlation of the Score with kinematic variables}{57}{section.5.3}\protected@file@percent }
-\newlabel{sec:ADJJ/AScorrelation}{{5.3}{57}{Correlation of the Score with kinematic variables}{section.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Splitting of the dataset to compose the sets for the three phases of the training of the model. The training and validation sets are composed exclusively by QCD multi-jet events, while the testing set is composed by a mixed dataset, containing both all backgrounds and signals.}}{56}{table.caption.61}\protected@file@percent }
+\newlabel{tab:ADJJ/GNN/train/datasetSplit}{{5.4}{56}{Splitting of the dataset to compose the sets for the three phases of the training of the model. The training and validation sets are composed exclusively by QCD multi-jet events, while the testing set is composed by a mixed dataset, containing both all backgrounds and signals}{table.caption.61}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Performance of the GNN}{56}{subsection.5.2.3}\protected@file@percent }
+\newlabel{sec:ADJJ/GNN/results}{{5.2.3}{56}{Performance of the GNN}{subsection.5.2.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces AUC (\%) values obtained with the trained EGAT model for each signal.}}{57}{table.caption.62}\protected@file@percent }
+\newlabel{tab:ADJJ/GNN/results/AUC}{{5.5}{57}{AUC (\%) values obtained with the trained EGAT model for each signal}{table.caption.62}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Anomaly Score distribution}{57}{subsection.5.2.4}\protected@file@percent }
+\newlabel{sec:ADJJ/GNN/AS}{{5.2.4}{57}{Anomaly Score distribution}{subsection.5.2.4}{}}
+\newlabel{subfig:ADJJ/GNN/AS/AS1_tot}{{5.7a}{58}{\relax }{figure.caption.63}{}}
+\newlabel{sub@subfig:ADJJ/GNN/AS/AS1_tot}{{a}{58}{\relax }{figure.caption.63}{}}
+\newlabel{subfig:ADJJ/GNN/AS/AS2_tot}{{5.7b}{58}{\relax }{figure.caption.63}{}}
+\newlabel{sub@subfig:ADJJ/GNN/AS/AS2_tot}{{b}{58}{\relax }{figure.caption.63}{}}
+\newlabel{subfig:ADJJ/GNN/AS/AS1_sep}{{5.7c}{58}{\relax }{figure.caption.63}{}}
+\newlabel{sub@subfig:ADJJ/GNN/AS/AS1_sep}{{c}{58}{\relax }{figure.caption.63}{}}
+\newlabel{subfig:ADJJ/GNN/AS/AS2_sep}{{5.7d}{58}{\relax }{figure.caption.63}{}}
+\newlabel{sub@subfig:ADJJ/GNN/AS/AS2_sep}{{d}{58}{\relax }{figure.caption.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Score distributions for the leading (a,c) and sub-leading (b,d) jets, with the background shown as a single term (a,b) and split into its components (c,d).}}{58}{figure.caption.63}\protected@file@percent }
+\newlabel{fig:ADJJ/GNN/AS/AS_jets}{{5.7}{58}{Score distributions for the leading (a,c) and sub-leading (b,d) jets, with the background shown as a single term (a,b) and split into its components (c,d)}{figure.caption.63}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces WPs and respective rejection factors computed on the QCD background.}}{58}{table.caption.64}\protected@file@percent }
+\newlabel{tab:ADJJ/GNN/AS/WPs}{{5.6}{58}{WPs and respective rejection factors computed on the QCD background}{table.caption.64}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Correlation of the Score with kinematic variables}{58}{section.5.3}\protected@file@percent }
+\newlabel{sec:ADJJ/AScorrelation}{{5.3}{58}{Correlation of the Score with kinematic variables}{section.5.3}{}}
 \citation{Bjorken_x}
 \citation{PDFs}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Event selection}{58}{section.5.4}\protected@file@percent }
-\newlabel{sec:ADJJ/evSel}{{5.4}{58}{Event selection}{section.5.4}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_mJJ}{{5.8a}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_mJJ}{{a}{59}{\relax }{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_pt}{{5.8b}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_pt}{{b}{59}{\relax }{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_eta}{{5.8c}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_eta}{{c}{59}{\relax }{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_phi}{{5.8d}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_phi}{{d}{59}{\relax }{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_D2}{{5.8e}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_D2}{{e}{59}{\relax }{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/AS1_leadmass}{{5.8f}{59}{\relax }{figure.caption.63}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_leadmass}{{f}{59}{\relax }{figure.caption.63}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots presentating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta $, (d) leading jet $\phi $, (e) $D_2$ and (f) mass.}}{59}{figure.caption.63}\protected@file@percent }
-\newlabel{fig:ADJJ/AScorrelation/CorrPlots}{{5.8}{59}{Plots presentating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta $, (d) leading jet $\phi $, (e) $D_2$ and (f) mass}{figure.caption.63}{}}
-\newlabel{subfig:ADJJ/AScorrelation/SRCR20}{{5.9a}{60}{\relax }{figure.caption.64}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR20}{{a}{60}{\relax }{figure.caption.64}{}}
-\newlabel{subfig:ADJJ/AScorrelation/SRCR80}{{5.9b}{60}{\relax }{figure.caption.64}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR80}{{b}{60}{\relax }{figure.caption.64}{}}
-\newlabel{subfig:ADJJ/AScorrelation/SRCR90}{{5.9c}{60}{\relax }{figure.caption.64}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR90}{{c}{60}{\relax }{figure.caption.64}{}}
-\newlabel{subfig:ADJJ/AScorrelation/SRCR99}{{5.9d}{60}{\relax }{figure.caption.64}{}}
-\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR99}{{d}{60}{\relax }{figure.caption.64}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Plots presentating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99.}}{60}{figure.caption.64}\protected@file@percent }
-\newlabel{fig:ADJJ/AScorrelation/mJJ_AScut}{{5.9}{60}{Plots presentating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99}{figure.caption.64}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Distributions of $|\Delta y|$ variable between the leading and the sub-leading jet, with the selection of di-jet invariant mass region applied.}}{61}{figure.caption.65}\protected@file@percent }
-\newlabel{fig:ADJJ/evSel/dY}{{5.10}{61}{Distributions of $|\Delta y|$ variable between the leading and the sub-leading jet, with the selection of di-jet invariant mass region applied}{figure.caption.65}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Modelling the samples}{61}{section.5.5}\protected@file@percent }
-\newlabel{sec:ADJJ/Model}{{5.5}{61}{Modelling the samples}{section.5.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Event selection}{59}{section.5.4}\protected@file@percent }
+\newlabel{sec:ADJJ/evSel}{{5.4}{59}{Event selection}{section.5.4}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_mJJ}{{5.8a}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_mJJ}{{a}{60}{\relax }{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_pt}{{5.8b}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_pt}{{b}{60}{\relax }{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_eta}{{5.8c}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_eta}{{c}{60}{\relax }{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_phi}{{5.8d}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_phi}{{d}{60}{\relax }{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_D2}{{5.8e}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_D2}{{e}{60}{\relax }{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/AS1_leadmass}{{5.8f}{60}{\relax }{figure.caption.65}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/AS1_leadmass}{{f}{60}{\relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots representating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta $, (d) leading jet $\phi $, (e) $D_2$ and (f) mass.}}{60}{figure.caption.65}\protected@file@percent }
+\newlabel{fig:ADJJ/AScorrelation/CorrPlots}{{5.8}{60}{Plots representating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta $, (d) leading jet $\phi $, (e) $D_2$ and (f) mass}{figure.caption.65}{}}
+\newlabel{subfig:ADJJ/AScorrelation/SRCR20}{{5.9a}{61}{\relax }{figure.caption.66}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR20}{{a}{61}{\relax }{figure.caption.66}{}}
+\newlabel{subfig:ADJJ/AScorrelation/SRCR80}{{5.9b}{61}{\relax }{figure.caption.66}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR80}{{b}{61}{\relax }{figure.caption.66}{}}
+\newlabel{subfig:ADJJ/AScorrelation/SRCR90}{{5.9c}{61}{\relax }{figure.caption.66}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR90}{{c}{61}{\relax }{figure.caption.66}{}}
+\newlabel{subfig:ADJJ/AScorrelation/SRCR99}{{5.9d}{61}{\relax }{figure.caption.66}{}}
+\newlabel{sub@subfig:ADJJ/AScorrelation/SRCR99}{{d}{61}{\relax }{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Plots representating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99.}}{61}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:ADJJ/AScorrelation/mJJ_AScut}{{5.9}{61}{Plots representating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99}{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Distributions of $|\Delta y|$ variable between the leading and the sub-leading jet, with the selection of di-jet invariant mass region applied.}}{62}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:ADJJ/evSel/dY}{{5.10}{62}{Distributions of $|\Delta y|$ variable between the leading and the sub-leading jet, with the selection of di-jet invariant mass region applied}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Modelling the samples}{62}{section.5.5}\protected@file@percent }
+\newlabel{sec:ADJJ/Model}{{5.5}{62}{Modelling the samples}{section.5.5}{}}
 \citation{ROOT_DSCB}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$.}}{62}{table.caption.66}\protected@file@percent }
-\newlabel{tab:ADJJ/evSel/cuts}{{5.5}{62}{Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$}{table.caption.66}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Signals}{62}{subsection.5.5.1}\protected@file@percent }
-\newlabel{sec:ADJJ/Model/SIG}{{5.5.1}{62}{Signals}{subsection.5.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Example of the $m_{JJ}$ distribution for a VcXH\_3400 process, showing the peak expected for a resonant process.}}{62}{figure.caption.67}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/SIG/example_yxh3400}{{5.11}{62}{Example of the $m_{JJ}$ distribution for a VcXH\_3400 process, showing the peak expected for a resonant process}{figure.caption.67}{}}
-\newlabel{eq:ADJJ/Model/SIG/DSCB}{{5.3}{63}{Signals}{equation.5.3}{}}
-\newlabel{eq:ADJJ/Model/SIG/DSCB_constants}{{5.4}{63}{Signals}{equation.5.4}{}}
-\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP0}{{5.12a}{64}{\relax }{figure.caption.68}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP0}{{a}{64}{\relax }{figure.caption.68}{}}
-\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP99}{{5.12b}{64}{\relax }{figure.caption.68}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP99}{{b}{64}{\relax }{figure.caption.68}{}}
-\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP0}{{5.12c}{64}{\relax }{figure.caption.68}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP0}{{c}{64}{\relax }{figure.caption.68}{}}
-\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP99}{{5.12d}{64}{\relax }{figure.caption.68}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP99}{{d}{64}{\relax }{figure.caption.68}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces DSCB fits to the $m_{JJ}$ distribution for signals (a) VcXH\_3400 with no AS cut, (b) VcXH\_3400 with AS cut at WP 99\%, (c) VzWW\_2000 with no AS cut, (d) VzWW\_2000 with AS cut at WP 99\%,}}{64}{figure.caption.68}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/SIG/DSCBfits_example}{{5.12}{64}{DSCB fits to the $m_{JJ}$ distribution for signals (a) VcXH\_3400 with no AS cut, (b) VcXH\_3400 with AS cut at WP 99\%, (c) VzWW\_2000 with no AS cut, (d) VzWW\_2000 with AS cut at WP 99\%,}{figure.caption.68}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$.}}{63}{table.caption.68}\protected@file@percent }
+\newlabel{tab:ADJJ/evSel/cuts}{{5.7}{63}{Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$}{table.caption.68}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Signals}{63}{subsection.5.5.1}\protected@file@percent }
+\newlabel{sec:ADJJ/Model/SIG}{{5.5.1}{63}{Signals}{subsection.5.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Example of the $m_{JJ}$ distribution for a VcXH\_3400 process, showing the peak expected for a resonant process.}}{63}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/SIG/example_yxh3400}{{5.11}{63}{Example of the $m_{JJ}$ distribution for a VcXH\_3400 process, showing the peak expected for a resonant process}{figure.caption.69}{}}
+\newlabel{eq:ADJJ/Model/SIG/DSCB}{{5.3}{64}{Signals}{equation.5.3}{}}
+\newlabel{eq:ADJJ/Model/SIG/DSCB_constants}{{5.4}{64}{Signals}{equation.5.4}{}}
+\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP0}{{5.12a}{65}{\relax }{figure.caption.70}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP0}{{a}{65}{\relax }{figure.caption.70}{}}
+\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP99}{{5.12b}{65}{\relax }{figure.caption.70}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/yxh3400_WP99}{{b}{65}{\relax }{figure.caption.70}{}}
+\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP0}{{5.12c}{65}{\relax }{figure.caption.70}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP0}{{c}{65}{\relax }{figure.caption.70}{}}
+\newlabel{subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP99}{{5.12d}{65}{\relax }{figure.caption.70}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/DSCBfits/vww2000_WP99}{{d}{65}{\relax }{figure.caption.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces DSCB fits to the $m_{JJ}$ distribution for signals (a) VcXH\_3400 with no AS cut, (b) VcXH\_3400 with AS cut at WP 99\%, (c) VzWW\_2000 with no AS cut, (d) VzWW\_2000 with AS cut at WP 99\%,}}{65}{figure.caption.70}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/SIG/DSCBfits_example}{{5.12}{65}{DSCB fits to the $m_{JJ}$ distribution for signals (a) VcXH\_3400 with no AS cut, (b) VcXH\_3400 with AS cut at WP 99\%, (c) VzWW\_2000 with no AS cut, (d) VzWW\_2000 with AS cut at WP 99\%,}{figure.caption.70}{}}
 \citation{ATLAS_smoothBKG}
-\newlabel{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}{{5.13a}{65}{\relax }{figure.caption.69}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}{{a}{65}{\relax }{figure.caption.69}{}}
-\newlabel{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}{{5.13b}{65}{\relax }{figure.caption.69}{}}
-\newlabel{sub@subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}{{b}{65}{\relax }{figure.caption.69}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Invariant mass distribution for the VcXH\_5000 sample in case of (a) two or (b) three reconstructed jets in the final state.}}{65}{figure.caption.69}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/SIG/yxh5000_dist}{{5.13}{65}{Invariant mass distribution for the VcXH\_5000 sample in case of (a) two or (b) three reconstructed jets in the final state}{figure.caption.69}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Schematic diagram of the VcXH\_5000 decay. The final state is more likely to be composed by three reconstructed large-radius jets.}}{65}{figure.caption.70}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/SIG/yxh5000_Fey}{{5.14}{65}{Schematic diagram of the VcXH\_5000 decay. The final state is more likely to be composed by three reconstructed large-radius jets}{figure.caption.70}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Background}{65}{subsection.5.5.2}\protected@file@percent }
-\newlabel{sec:ADJJ/Model/BKG}{{5.5.2}{65}{Background}{subsection.5.5.2}{}}
+\newlabel{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}{{5.13a}{66}{\relax }{figure.caption.71}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}{{a}{66}{\relax }{figure.caption.71}{}}
+\newlabel{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}{{5.13b}{66}{\relax }{figure.caption.71}{}}
+\newlabel{sub@subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}{{b}{66}{\relax }{figure.caption.71}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Invariant mass distribution for the VcXH\_5000 sample in case of (a) two or (b) three reconstructed jets in the final state.}}{66}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/SIG/yxh5000_dist}{{5.13}{66}{Invariant mass distribution for the VcXH\_5000 sample in case of (a) two or (b) three reconstructed jets in the final state}{figure.caption.71}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Schematic diagram of the VcXH\_5000 decay. The final state is more likely to be composed by three reconstructed large-radius jets.}}{66}{figure.caption.72}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/SIG/yxh5000_Fey}{{5.14}{66}{Schematic diagram of the VcXH\_5000 decay. The final state is more likely to be composed by three reconstructed large-radius jets}{figure.caption.72}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Background}{66}{subsection.5.5.2}\protected@file@percent }
+\newlabel{sec:ADJJ/Model/BKG}{{5.5.2}{66}{Background}{subsection.5.5.2}{}}
 \citation{RooFit}
 \citation{PearsonChi2}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape.}}{66}{figure.caption.71}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/BKG/example_QCD}{{5.15}{66}{Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape}{figure.caption.71}{}}
-\newlabel{eq:ADJJ/Model/BKG/general_BKG}{{5.5}{66}{Background}{equation.5.5}{}}
-\newlabel{eq:ADJJ/Model/BKG/BKG_PDF}{{5.6}{66}{Background}{equation.5.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF.}}{67}{figure.caption.72}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/BKG/chi2}{{5.16}{67}{Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF}{figure.caption.72}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF.}}{67}{figure.caption.73}\protected@file@percent }
-\newlabel{fig:ADJJ/Model/BKG/BKGonlyfit_plot}{{5.17}{67}{Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF}{figure.caption.73}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape.}}{67}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/BKG/example_QCD}{{5.15}{67}{Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape}{figure.caption.73}{}}
+\newlabel{eq:ADJJ/Model/BKG/general_BKG}{{5.5}{67}{Background}{equation.5.5}{}}
+\newlabel{eq:ADJJ/Model/BKG/BKG_PDF}{{5.6}{67}{Background}{equation.5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF.}}{68}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/BKG/chi2}{{5.16}{68}{Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF}{figure.caption.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF.}}{68}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:ADJJ/Model/BKG/BKGonlyfit_plot}{{5.17}{68}{Distributions of the reduced $\chi ^2$ for different number of free parameters in the background PDF}{figure.caption.75}{}}
 \citation{Lik_tests}
-\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample.}}{68}{table.caption.74}\protected@file@percent }
-\newlabel{tab:ADJJ/Model/BKG/BKGonlyfit_params}{{5.6}{68}{Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample}{table.caption.74}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Validating the PDFs}{68}{section.5.6}\protected@file@percent }
-\newlabel{sec:ADJJ/Validation}{{5.6}{68}{Validating the PDFs}{section.5.6}{}}
-\newlabel{eq:ADJJ/Validation/likelihood}{{5.7}{68}{Validating the PDFs}{equation.5.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample.}}{69}{table.caption.76}\protected@file@percent }
+\newlabel{tab:ADJJ/Model/BKG/BKGonlyfit_params}{{5.8}{69}{Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample}{table.caption.76}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Validating the PDFs}{69}{section.5.6}\protected@file@percent }
+\newlabel{sec:ADJJ/Validation}{{5.6}{69}{Validating the PDFs}{section.5.6}{}}
+\newlabel{eq:ADJJ/Validation/likelihood}{{5.7}{69}{Validating the PDFs}{equation.5.7}{}}
 \citation{ATLAS_smoothBKG}
-\newlabel{eq:ADJJ/Validation/likelihood_ratio}{{5.8}{69}{Validating the PDFs}{equation.5.8}{}}
-\newlabel{eq:ADJJ/Validation/test_statistic}{{5.9}{69}{Validating the PDFs}{equation.5.9}{}}
-\newlabel{eq:ADJJ/Validation/p_value}{{5.10}{69}{Validating the PDFs}{equation.5.10}{}}
-\newlabel{eq:ADJJ/Validation/test_statistic_bkg}{{5.11}{69}{Validating the PDFs}{equation.5.11}{}}
-\newlabel{eq:ADJJ/Validation/p_value_bkg}{{5.12}{69}{Validating the PDFs}{equation.5.12}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{69}{subsection.5.6.1}\protected@file@percent }
-\newlabel{sec:ADJJ/Validation/SPT}{{5.6.1}{69}{Spurious signal tests}{subsection.5.6.1}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/aaa}{{5.18a}{70}{\relax }{figure.caption.75}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/aaa}{{a}{70}{\relax }{figure.caption.75}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/bbb}{{5.18b}{70}{\relax }{figure.caption.75}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/bbb}{{b}{70}{\relax }{figure.caption.75}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000.}}{70}{figure.caption.75}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SPT/SPFit}{{5.18}{70}{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000}{figure.caption.75}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VXH}{{5.19a}{71}{\relax }{figure.caption.76}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VXH}{{a}{71}{\relax }{figure.caption.76}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VWW}{{5.19b}{71}{\relax }{figure.caption.76}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VWW}{{b}{71}{\relax }{figure.caption.76}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{5.19c}{71}{\relax }{figure.caption.76}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{c}{71}{\relax }{figure.caption.76}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/DJ}{{5.19d}{71}{\relax }{figure.caption.76}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/DJ}{{d}{71}{\relax }{figure.caption.76}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed.}}{71}{figure.caption.76}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SPT/SPplots}{{5.19}{71}{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed}{figure.caption.76}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed.}}{71}{table.caption.77}\protected@file@percent }
-\newlabel{tab:ADJJ/Validation/SPT/SPvalue}{{5.7}{71}{Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed}{table.caption.77}{}}
+\newlabel{eq:ADJJ/Validation/likelihood_ratio}{{5.8}{70}{Validating the PDFs}{equation.5.8}{}}
+\newlabel{eq:ADJJ/Validation/test_statistic}{{5.9}{70}{Validating the PDFs}{equation.5.9}{}}
+\newlabel{eq:ADJJ/Validation/p_value}{{5.10}{70}{Validating the PDFs}{equation.5.10}{}}
+\newlabel{eq:ADJJ/Validation/test_statistic_bkg}{{5.11}{70}{Validating the PDFs}{equation.5.11}{}}
+\newlabel{eq:ADJJ/Validation/p_value_bkg}{{5.12}{70}{Validating the PDFs}{equation.5.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{70}{subsection.5.6.1}\protected@file@percent }
+\newlabel{sec:ADJJ/Validation/SPT}{{5.6.1}{70}{Spurious signal tests}{subsection.5.6.1}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/aaa}{{5.18a}{71}{\relax }{figure.caption.77}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/aaa}{{a}{71}{\relax }{figure.caption.77}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/bbb}{{5.18b}{71}{\relax }{figure.caption.77}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/bbb}{{b}{71}{\relax }{figure.caption.77}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000.}}{71}{figure.caption.77}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SPT/SPFit}{{5.18}{71}{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000}{figure.caption.77}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VXH}{{5.19a}{72}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VXH}{{a}{72}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VWW}{{5.19b}{72}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VWW}{{b}{72}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{5.19c}{72}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{c}{72}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/DJ}{{5.19d}{72}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/DJ}{{d}{72}{\relax }{figure.caption.78}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed.}}{72}{figure.caption.78}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SPT/SPplots}{{5.19}{72}{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed}{figure.caption.78}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed.}}{72}{table.caption.79}\protected@file@percent }
+\newlabel{tab:ADJJ/Validation/SPT/SPvalue}{{5.9}{72}{Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed}{table.caption.79}{}}
 \citation{Lik_tests}
-\newlabel{ADJJ/Validation/SPT/Modified_likelihood}{{5.13}{72}{Spurious signal tests}{equation.5.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{72}{subsection.5.6.2}\protected@file@percent }
-\newlabel{sec:ADJJ/Validation/SINJ}{{5.6.2}{72}{Signal injection tests}{subsection.5.6.2}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SINJfit/aaa}{{5.20a}{73}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SINJfit/aaa}{{a}{73}{\relax }{figure.caption.78}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SINJfit/bbb}{{5.20b}{73}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SINJfit/bbb}{{b}{73}{\relax }{figure.caption.78}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected.}}{73}{figure.caption.78}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SINJ/SINJfit}{{5.20}{73}{Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected}{figure.caption.78}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{5.21a}{74}{\relax }{figure.caption.79}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{a}{74}{\relax }{figure.caption.79}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{5.21b}{74}{\relax }{figure.caption.79}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{b}{74}{\relax }{figure.caption.79}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{5.21c}{74}{\relax }{figure.caption.79}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{c}{74}{\relax }{figure.caption.79}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{5.21d}{74}{\relax }{figure.caption.79}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{d}{74}{\relax }{figure.caption.79}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied.}}{74}{figure.caption.79}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SINJ/SIplots}{{5.21}{74}{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied}{figure.caption.79}{}}
+\newlabel{ADJJ/Validation/SPT/Modified_likelihood}{{5.13}{73}{Spurious signal tests}{equation.5.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{73}{subsection.5.6.2}\protected@file@percent }
+\newlabel{sec:ADJJ/Validation/SINJ}{{5.6.2}{73}{Signal injection tests}{subsection.5.6.2}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SINJfit/aaa}{{5.20a}{74}{\relax }{figure.caption.80}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SINJfit/aaa}{{a}{74}{\relax }{figure.caption.80}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SINJfit/bbb}{{5.20b}{74}{\relax }{figure.caption.80}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SINJfit/bbb}{{b}{74}{\relax }{figure.caption.80}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected.}}{74}{figure.caption.80}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SINJ/SINJfit}{{5.20}{74}{Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected}{figure.caption.80}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{5.21a}{75}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{a}{75}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{5.21b}{75}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{b}{75}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{5.21c}{75}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{c}{75}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{5.21d}{75}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{d}{75}{\relax }{figure.caption.81}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied.}}{75}{figure.caption.81}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SINJ/SIplots}{{5.21}{75}{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied}{figure.caption.81}{}}
 \citation{Lik_tests}
-\@writefile{toc}{\contentsline {section}{\numberline {5.7}Upper limits derivation}{75}{section.5.7}\protected@file@percent }
-\newlabel{sec:ADJJ/UpperLimits}{{5.7}{75}{Upper limits derivation}{section.5.7}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Fit_VcXH}{{5.22a}{76}{\relax }{figure.caption.80}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VcXH}{{a}{76}{\relax }{figure.caption.80}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Fit_VzWW}{{5.22b}{76}{\relax }{figure.caption.80}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VzWW}{{b}{76}{\relax }{figure.caption.80}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.22}{\ignorespaces Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000.}}{76}{figure.caption.80}\protected@file@percent }
-\newlabel{fig:ADJJ/UpperLimits/Fits_lumi1}{{5.22}{76}{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000}{figure.caption.80}{}}
-\newlabel{eq:ADJJ/UpperLimits/sigma_limit}{{5.16}{76}{Upper limits derivation}{equation.5.16}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{5.23a}{77}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{a}{77}{\relax }{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH3400}{{5.23b}{77}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH3400}{{b}{77}{\relax }{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH600}{{5.23c}{77}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH600}{{c}{77}{\relax }{figure.caption.81}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.23}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{77}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:ADJJ/UpperLimits/VcXH}{{5.23}{77}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW2000}{{5.24a}{78}{\relax }{figure.caption.82}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW2000}{{a}{78}{\relax }{figure.caption.82}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW3000}{{5.24b}{78}{\relax }{figure.caption.82}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW3000}{{b}{78}{\relax }{figure.caption.82}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW4000}{{5.24c}{78}{\relax }{figure.caption.82}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW4000}{{c}{78}{\relax }{figure.caption.82}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW5000}{{5.24d}{78}{\relax }{figure.caption.82}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW5000}{{d}{78}{\relax }{figure.caption.82}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.24}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{78}{figure.caption.82}\protected@file@percent }
-\newlabel{fig:ADJJ/UpperLimits/VzWW}{{5.24}{78}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.82}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{78}{section.5.8}\protected@file@percent }
-\newlabel{sec:ADJJ/D2}{{5.8}{78}{Comparison with a $D_2$ based event selection}{section.5.8}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_Wprime}{{5.25a}{79}{\relax }{figure.caption.83}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_Wprime}{{a}{79}{\relax }{figure.caption.83}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Limit_DJ}{{5.25b}{79}{\relax }{figure.caption.83}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_DJ}{{b}{79}{\relax }{figure.caption.83}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.25}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the (a) Wprime and (b) Dark Jets signals. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{79}{figure.caption.83}\protected@file@percent }
-\newlabel{fig:ADJJ/UpperLimits/WprimeDJ}{{5.25}{79}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the (a) Wprime and (b) Dark Jets signals. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.83}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces Expected upper limits derived selecting on AS for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported.}}{80}{table.caption.84}\protected@file@percent }
-\newlabel{tab:ADJJ/UpperLimits/SigmaLimits_AS}{{5.8}{80}{Expected upper limits derived selecting on AS for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported}{table.caption.84}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Ratio_139}{{5.26a}{80}{\relax }{figure.caption.85}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_139}{{a}{80}{\relax }{figure.caption.85}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Ratio_165}{{5.26b}{80}{\relax }{figure.caption.85}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_165}{{b}{80}{\relax }{figure.caption.85}{}}
-\newlabel{subfig:ADJJ/UpperLimits/Ratio_332}{{5.26c}{80}{\relax }{figure.caption.85}{}}
-\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_332}{{c}{80}{\relax }{figure.caption.85}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.26}{\ignorespaces Grid plots showing the exclusion limit $\sigma _{exp}$ compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}}{80}{figure.caption.85}\protected@file@percent }
-\newlabel{fig:ADJJ/UpperLimits/RatioTh}{{5.26}{80}{Grid plots showing the exclusion limit $\sigma _{exp}$ compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process}{figure.caption.85}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.27}{\ignorespaces Distributions of the $D_{2,ev}$ variable for the total background and different signal processes.}}{81}{figure.caption.86}\protected@file@percent }
-\newlabel{fig:ADJJ/D2/D2distribution}{{5.27}{81}{Distributions of the $D_{2,ev}$ variable for the total background and different signal processes}{figure.caption.86}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces WPs and respective rejection factors computed on the QCD background.}}{81}{table.caption.87}\protected@file@percent }
-\newlabel{tab:ADJJ/D2/WPs}{{5.9}{81}{WPs and respective rejection factors computed on the QCD background}{table.caption.87}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VcXH2300}{{5.28a}{82}{\relax }{figure.caption.88}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH2300}{{a}{82}{\relax }{figure.caption.88}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VcXH3400}{{5.28b}{82}{\relax }{figure.caption.88}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH3400}{{b}{82}{\relax }{figure.caption.88}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VcXH600}{{5.28c}{82}{\relax }{figure.caption.88}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH600}{{c}{82}{\relax }{figure.caption.88}{}}
-\newlabel{subfig:ADJJ/D2/Limit_Wprime}{{5.28d}{82}{\relax }{figure.caption.88}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_Wprime}{{d}{82}{\relax }{figure.caption.88}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.28}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV, (d) Wprime signal. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{82}{figure.caption.88}\protected@file@percent }
-\newlabel{fig:ADJJ/D2/VcXH_Wprime}{{5.28}{82}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV, (d) Wprime signal. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.88}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VzWW2000}{{5.29a}{83}{\relax }{figure.caption.89}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW2000}{{a}{83}{\relax }{figure.caption.89}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VzWW3000}{{5.29b}{83}{\relax }{figure.caption.89}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW3000}{{b}{83}{\relax }{figure.caption.89}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VzWW4000}{{5.29c}{83}{\relax }{figure.caption.89}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW4000}{{c}{83}{\relax }{figure.caption.89}{}}
-\newlabel{subfig:ADJJ/D2/Limit_VzWW5000}{{5.29d}{83}{\relax }{figure.caption.89}{}}
-\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW5000}{{d}{83}{\relax }{figure.caption.89}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.29}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{83}{figure.caption.89}\protected@file@percent }
-\newlabel{fig:ADJJ/D2/VzWW}{{5.29}{83}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.89}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Expected upper limits derived selecting based on $D_{2,ev}$ for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported.}}{84}{table.caption.90}\protected@file@percent }
-\newlabel{tab:ADJJ/D2/SigmaLimits}{{5.10}{84}{Expected upper limits derived selecting based on $D_{2,ev}$ for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported}{table.caption.90}{}}
-\newlabel{subfig:ADJJ/D2/Ratio_139}{{5.30a}{84}{\relax }{figure.caption.91}{}}
-\newlabel{sub@subfig:ADJJ/D2/Ratio_139}{{a}{84}{\relax }{figure.caption.91}{}}
-\newlabel{subfig:ADJJ/D2/Ratio_165}{{5.30b}{84}{\relax }{figure.caption.91}{}}
-\newlabel{sub@subfig:ADJJ/D2/Ratio_165}{{b}{84}{\relax }{figure.caption.91}{}}
-\newlabel{subfig:ADJJ/D2/Ratio_332}{{5.30c}{84}{\relax }{figure.caption.91}{}}
-\newlabel{sub@subfig:ADJJ/D2/Ratio_332}{{c}{84}{\relax }{figure.caption.91}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.30}{\ignorespaces Grid plots showing the exclusion limit $\sigma _{exp}$, derived with cuts on $D_{2,ev}$, compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}}{84}{figure.caption.91}\protected@file@percent }
-\newlabel{fig:ADJJ/D2/RatioTh}{{5.30}{84}{Grid plots showing the exclusion limit $\sigma _{exp}$, derived with cuts on $D_{2,ev}$, compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process}{figure.caption.91}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{85}{section.5.9}\protected@file@percent }
-\newlabel{sec:ADJJ/WF}{{5.9}{85}{Analysis workflows on real data}{section.5.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.31}{\ignorespaces First half of the diagram showing the workflow of the analysis on real data.}}{87}{figure.caption.92}\protected@file@percent }
-\newlabel{fig:ADJJ/WF/WFdiagram_p1}{{5.31}{87}{First half of the diagram showing the workflow of the analysis on real data}{figure.caption.92}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.32}{\ignorespaces Second half of the diagram showing the workflow of the analysis on real data.}}{88}{figure.caption.93}\protected@file@percent }
-\newlabel{fig:ADJJ/WF/WFdiagram_p2}{{5.32}{88}{Second half of the diagram showing the workflow of the analysis on real data}{figure.caption.93}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Upper limits derivation}{76}{section.5.7}\protected@file@percent }
+\newlabel{sec:ADJJ/UpperLimits}{{5.7}{76}{Upper limits derivation}{section.5.7}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Fit_VcXH}{{5.22a}{77}{\relax }{figure.caption.82}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VcXH}{{a}{77}{\relax }{figure.caption.82}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Fit_VzWW}{{5.22b}{77}{\relax }{figure.caption.82}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VzWW}{{b}{77}{\relax }{figure.caption.82}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.22}{\ignorespaces Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000.}}{77}{figure.caption.82}\protected@file@percent }
+\newlabel{fig:ADJJ/UpperLimits/Fits_lumi1}{{5.22}{77}{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000}{figure.caption.82}{}}
+\newlabel{eq:ADJJ/UpperLimits/sigma_limit}{{5.16}{77}{Upper limits derivation}{equation.5.16}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{5.23a}{78}{\relax }{figure.caption.83}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{a}{78}{\relax }{figure.caption.83}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH3400}{{5.23b}{78}{\relax }{figure.caption.83}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH3400}{{b}{78}{\relax }{figure.caption.83}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH600}{{5.23c}{78}{\relax }{figure.caption.83}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH600}{{c}{78}{\relax }{figure.caption.83}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.23}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{78}{figure.caption.83}\protected@file@percent }
+\newlabel{fig:ADJJ/UpperLimits/VcXH}{{5.23}{78}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.83}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW2000}{{5.24a}{79}{\relax }{figure.caption.84}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW2000}{{a}{79}{\relax }{figure.caption.84}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW3000}{{5.24b}{79}{\relax }{figure.caption.84}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW3000}{{b}{79}{\relax }{figure.caption.84}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW4000}{{5.24c}{79}{\relax }{figure.caption.84}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW4000}{{c}{79}{\relax }{figure.caption.84}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_VzWW5000}{{5.24d}{79}{\relax }{figure.caption.84}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VzWW5000}{{d}{79}{\relax }{figure.caption.84}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.24}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{79}{figure.caption.84}\protected@file@percent }
+\newlabel{fig:ADJJ/UpperLimits/VzWW}{{5.24}{79}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.84}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{79}{section.5.8}\protected@file@percent }
+\newlabel{sec:ADJJ/D2}{{5.8}{79}{Comparison with a $D_2$ based event selection}{section.5.8}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_Wprime}{{5.25a}{80}{\relax }{figure.caption.85}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_Wprime}{{a}{80}{\relax }{figure.caption.85}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Limit_DJ}{{5.25b}{80}{\relax }{figure.caption.85}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Limit_DJ}{{b}{80}{\relax }{figure.caption.85}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.25}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the (a) Wprime and (b) Dark Jets signals. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{80}{figure.caption.85}\protected@file@percent }
+\newlabel{fig:ADJJ/UpperLimits/WprimeDJ}{{5.25}{80}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ for the (a) Wprime and (b) Dark Jets signals. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.85}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Expected upper limits derived selecting on AS for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported.}}{81}{table.caption.86}\protected@file@percent }
+\newlabel{tab:ADJJ/UpperLimits/SigmaLimits_AS}{{5.10}{81}{Expected upper limits derived selecting on AS for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported}{table.caption.86}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Ratio_139}{{5.26a}{81}{\relax }{figure.caption.87}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_139}{{a}{81}{\relax }{figure.caption.87}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Ratio_165}{{5.26b}{81}{\relax }{figure.caption.87}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_165}{{b}{81}{\relax }{figure.caption.87}{}}
+\newlabel{subfig:ADJJ/UpperLimits/Ratio_332}{{5.26c}{81}{\relax }{figure.caption.87}{}}
+\newlabel{sub@subfig:ADJJ/UpperLimits/Ratio_332}{{c}{81}{\relax }{figure.caption.87}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.26}{\ignorespaces Grid plots showing the exclusion limit $\sigma _{exp}$ compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}}{81}{figure.caption.87}\protected@file@percent }
+\newlabel{fig:ADJJ/UpperLimits/RatioTh}{{5.26}{81}{Grid plots showing the exclusion limit $\sigma _{exp}$ compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process}{figure.caption.87}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.27}{\ignorespaces Distributions of the $D_{2,ev}$ variable for the total background and different signal processes.}}{82}{figure.caption.88}\protected@file@percent }
+\newlabel{fig:ADJJ/D2/D2distribution}{{5.27}{82}{Distributions of the $D_{2,ev}$ variable for the total background and different signal processes}{figure.caption.88}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.11}{\ignorespaces WPs and respective rejection factors computed on the QCD background.}}{82}{table.caption.89}\protected@file@percent }
+\newlabel{tab:ADJJ/D2/WPs}{{5.11}{82}{WPs and respective rejection factors computed on the QCD background}{table.caption.89}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VcXH2300}{{5.28a}{83}{\relax }{figure.caption.90}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH2300}{{a}{83}{\relax }{figure.caption.90}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VcXH3400}{{5.28b}{83}{\relax }{figure.caption.90}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH3400}{{b}{83}{\relax }{figure.caption.90}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VcXH600}{{5.28c}{83}{\relax }{figure.caption.90}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VcXH600}{{c}{83}{\relax }{figure.caption.90}{}}
+\newlabel{subfig:ADJJ/D2/Limit_Wprime}{{5.28d}{83}{\relax }{figure.caption.90}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_Wprime}{{d}{83}{\relax }{figure.caption.90}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.28}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV, (d) Wprime signal. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{83}{figure.caption.90}\protected@file@percent }
+\newlabel{fig:ADJJ/D2/VcXH_Wprime}{{5.28}{83}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VcXH signal, with mass points (a) 2300, (b) 3400 and (c) 6000 GeV, (d) Wprime signal. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.90}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VzWW2000}{{5.29a}{84}{\relax }{figure.caption.91}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW2000}{{a}{84}{\relax }{figure.caption.91}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VzWW3000}{{5.29b}{84}{\relax }{figure.caption.91}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW3000}{{b}{84}{\relax }{figure.caption.91}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VzWW4000}{{5.29c}{84}{\relax }{figure.caption.91}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW4000}{{c}{84}{\relax }{figure.caption.91}{}}
+\newlabel{subfig:ADJJ/D2/Limit_VzWW5000}{{5.29d}{84}{\relax }{figure.caption.91}{}}
+\newlabel{sub@subfig:ADJJ/D2/Limit_VzWW5000}{{d}{84}{\relax }{figure.caption.91}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.29}{\ignorespaces Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample).}}{84}{figure.caption.91}\protected@file@percent }
+\newlabel{fig:ADJJ/D2/VzWW}{{5.29}{84}{Expected upper limits scan at different luminosities on $\sigma _{exp}$ applying cuts on $D_{2,ev}$ for the VzWW signal, with mass points (a) 2000, (b) 3000, (c) 4000 and (d)5000 GeV. The plot presents an horizontal red line, corresponding to $\sigma _{th}$, and three blue vertical lines, corresponding to the luminosities of 139 $fb^{-1}$ (full Run 2 sample), 165 $fb^{-1}$ (partial Run 3 sample) and 332 $fb^{-1}$ (full Run 3 sample)}{figure.caption.91}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.12}{\ignorespaces Expected upper limits derived selecting based on $D_{2,ev}$ for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported.}}{85}{table.caption.92}\protected@file@percent }
+\newlabel{tab:ADJJ/D2/SigmaLimits}{{5.12}{85}{Expected upper limits derived selecting based on $D_{2,ev}$ for each signal and mass point at the three target luminosities of 139 $fb^{-1}$, 165 $fb^{-1}$ and 332 $fb^{-1}$. The theoretical cross-section $\sigma _{th}$ is also reported}{table.caption.92}{}}
+\newlabel{subfig:ADJJ/D2/Ratio_139}{{5.30a}{85}{\relax }{figure.caption.93}{}}
+\newlabel{sub@subfig:ADJJ/D2/Ratio_139}{{a}{85}{\relax }{figure.caption.93}{}}
+\newlabel{subfig:ADJJ/D2/Ratio_165}{{5.30b}{85}{\relax }{figure.caption.93}{}}
+\newlabel{sub@subfig:ADJJ/D2/Ratio_165}{{b}{85}{\relax }{figure.caption.93}{}}
+\newlabel{subfig:ADJJ/D2/Ratio_332}{{5.30c}{85}{\relax }{figure.caption.93}{}}
+\newlabel{sub@subfig:ADJJ/D2/Ratio_332}{{c}{85}{\relax }{figure.caption.93}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.30}{\ignorespaces Grid plots showing the exclusion limit $\sigma _{exp}$, derived with cuts on $D_{2,ev}$, compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process.}}{85}{figure.caption.93}\protected@file@percent }
+\newlabel{fig:ADJJ/D2/RatioTh}{{5.30}{85}{Grid plots showing the exclusion limit $\sigma _{exp}$, derived with cuts on $D_{2,ev}$, compared with $\sigma _{exp}$ at (a) 139 $fb^{-1}$, (b) 165 $fb^{-1}$ and (c) 332 $fb^{-1}$. The grids are a rapid visualisation of the results reported in Tab. \ref {tab:ADJJ/UpperLimits/SigmaLimits_AS} with respect to the the starting point: if the ratio is positive, the limit is above the theoretical cross-section and the signal is not excluded, while if it is negative, the limit is below the theoretical cross-section and the signal is excluded with the analysis improving the state of the art for that process}{figure.caption.93}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{86}{section.5.9}\protected@file@percent }
+\newlabel{sec:ADJJ/WF}{{5.9}{86}{Analysis workflows on real data}{section.5.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.31}{\ignorespaces First half of the diagram showing the workflow of the analysis on real data.}}{88}{figure.caption.94}\protected@file@percent }
+\newlabel{fig:ADJJ/WF/WFdiagram_p1}{{5.31}{88}{First half of the diagram showing the workflow of the analysis on real data}{figure.caption.94}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.32}{\ignorespaces Second half of the diagram showing the workflow of the analysis on real data.}}{89}{figure.caption.95}\protected@file@percent }
+\newlabel{fig:ADJJ/WF/WFdiagram_p2}{{5.32}{89}{Second half of the diagram showing the workflow of the analysis on real data}{figure.caption.95}{}}
 \@setckpt{Chap_5}{
-\setcounter{page}{89}
+\setcounter{page}{90}
 \setcounter{equation}{16}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -298,7 +303,7 @@
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
 \setcounter{figure}{32}
-\setcounter{table}{10}
+\setcounter{table}{12}
 \setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
 \setcounter{parentequation}{0}
@@ -306,7 +311,7 @@
 \setcounter{LT@chunks}{0}
 \setcounter{section@level}{1}
 \setcounter{Item}{0}
-\setcounter{Hfootnote}{2}
+\setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{71}
 \setcounter{blindtext}{1}
 \setcounter{Blindtext}{5}

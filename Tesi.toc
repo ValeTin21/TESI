@@ -10,17 +10,17 @@
 \contentsline {subsection}{\numberline {1.2.1}New Physics at colliders}{10}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Heavy Vector Triplets}{11}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Dark Jets}{12}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiments}{13}{chapter.2}%
+\contentsline {chapter}{\numberline {2}The LHC and the ATLAS experiment}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The LHC}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}CERN's accelerator system}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}CERN's accelerator system}{13}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}The LHC parameters}{15}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}LHC Run Schedule}{16}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}LHC Run Schedule}{17}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}\textit {pp} collisions at the LHC}{17}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Pile-Up and hadronisation}{18}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Electromagnetic Showers}{19}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Hadronic Showers}{20}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}The ATLAS detector}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Coordinate system}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Coordinate system}{21}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Magnetic system}{23}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Particle tracking}{24}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}The Inner Detector}{25}{subsection.2.3.4}%
@@ -55,20 +55,20 @@
 \contentsline {subsection}{\numberline {5.1.4}Weights for the sample}{51}{subsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.1.5}The event preselection}{52}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}Training the ML model }{53}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}The architecture in use}{53}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}The architecture in use}{54}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Training the model}{54}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Performance of the GNN}{55}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Anomaly Score distribution}{55}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Correlation of the Score with kinematic variables}{57}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Event selection}{58}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Modelling the samples}{61}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Signals}{62}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Background}{65}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}Validating the PDFs}{68}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{69}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{72}{subsection.5.6.2}%
-\contentsline {section}{\numberline {5.7}Upper limits derivation}{75}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{78}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{85}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Conclusions}{89}{chapter.6}%
-\contentsline {chapter}{Bibliography}{91}{section*.94}%
+\contentsline {subsection}{\numberline {5.2.3}Performance of the GNN}{56}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Anomaly Score distribution}{57}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Correlation of the Score with kinematic variables}{58}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Event selection}{59}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Modelling the samples}{62}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Signals}{63}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Background}{66}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Validating the PDFs}{69}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{70}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{73}{subsection.5.6.2}%
+\contentsline {section}{\numberline {5.7}Upper limits derivation}{76}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{79}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{86}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Conclusions}{90}{chapter.6}%
+\contentsline {chapter}{Bibliography}{92}{section*.96}%

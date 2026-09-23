@@ -5,10 +5,11 @@ This study searches for boson resonances associated with BSM physics decaying in
 The goal of this analysis is to prove the feasibility of the AD approach in a full analysis, exploring its generalization capabilities, while hunting for New Physics and trying to improve the sensitivity of the search with respect to the state-of-the-art methods.\\ 
 At the moment, the status of the analysis is the following.
 The R\&D phase on the MC sample for the DNN model can be defined as concluded, as it is for the statistical analysis and modelling on the MC dataset.
+The latter is associated with the original work of this thesis, which is the main contribution to the analysis on the MC samples, as described in details in the sections below.
 The preparation of the field to move towards the usage of the real data is currently on going, expecting the switch in dataset to happen soon.\\
 In the following sections, an overiew of the analysis is presented, with a description of the dataset and the Graph Neural Network model used for the AD implementation. 
 After this, an important portion of the chapter is dedicated to the description of the original work related to this thesis, which is the execution of the statistical analysis on the MC dataset, with the aim of testing the AD approach in a full analysis.
-This work is conducted within the \texttt{Frequentist Framework}, a well established tool used inside the ATLAS collaboration. 
+This work is conducted within the \texttt{Frequentist Framework} \cite{FF}, a well established tool used inside the ATLAS collaboration. 
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -22,15 +23,15 @@ The composition of the dataset is described in the following.\\
 
 %-------------------------------------------------------------------------------
 \subsection{Final states}\label{sec:ADJJ/dataset/states}
-This analysis hunts for BSM physics in the form of heavy resonances with masses in the TeV range which decay into quarks forming final states with two large-radius jets ($R=1.0$).
-Such signatures are chosen because they are predicted by several NP models and they are characterized by a high Branching Ratio (BR), from which the analysis sensitivity could benefit.
+This analysis hunts for BSM physics in the form of heavy resonances with masses in the TeV range which decay into quarks forming final states with two large-radius jets (reconstructed using the anti-$k_T$ algorithm with a radius parameter of $R=1.0$) with UFO constituents.
+Such signatures are chosen because they are predicted by several NP models.
 Together with this, the high mass of the resonances results in highly boosted decay products, which are collimated and reconstructed as single large-radius jets each.
 This leads to a final state where jets can present a complex substructure, which can be exploited by the AD model to identify possible anomalies and NP candidates.\\
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=2.5 in]{Images/Chap5/Graphics/DecayingHeavyBoson.pdf}
-    \caption{Schematic drawing of a heavy boson decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}
+    \includegraphics[width=3 in]{Images/Chap5/Graphics/DecayingHeavyBoson.pdf}
+    \caption{Schematic drawing of a heavy boson decaying into two bosons subsequently decaying into two large-radius jets (blue cones) with substructure, both normal (green cones) and anomalous (red cones).}
     \label{fig:ADJJ/dataset/states/HBdecay}
 \end{figure}
 
@@ -58,7 +59,7 @@ In Fig. \ref{fig:ADJJ/dataset/Signal/Fdiag} an example of a Feynman diagram of a
 \end{figure}
 
 \noindent The complete list of signal processes considered in the analysis, together with their corresponding masses and theoretical cross-sections assumed, is reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.
-The theoretical cross-sections are derived from the ATLAS internal database for $MC23d$ campaign.
+The theoretical cross-sections are those associated with the generated processes and they are derived from the ATLAS internal database for $MC23d$ campaign.
 
 \begin{table}[htbp]
 \raggedleft
@@ -83,20 +84,20 @@ The theoretical cross-sections are derived from the ATLAS internal database for 
  Wprime & $W' \to WZ$ & $m_{W'} = 3000$, $m_W = 200$, $m_Z = 400$ & $6.9682 \cdot 10^{-16}$ \\
 \hline
  
- DarkJet & $Z' \to q_D \bar{q}_D$ & $m_{Z'} = 3500$, $m_{q_D} = 20$, $m_{q_D} = 20$ & $1.05853 \cdot 10^{-9}$ \\
+ DarkJet & $Z' \to q_D \bar{q}_D$ & $m_{Z'} = 3500$, $m_{q_D} = 20$, $m_{\bar{q}_D} = 20$ & $1.05853 \cdot 10^{-9}$ \\
 \hline
  
 \end{tabular}
-\caption{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections.}
+\caption{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section.}
 \label{tab:sec:ADJJ/dataset/Signal}
 \end{table}
 
 %-------------------------------------------------------------------------------
 \subsection{Background processes}\label{sec:ADJJ/dataset/BKG}
 
-The main backgrounds for the signal signatures hunted in this analysis are SM processes with multiple jets in the final state.
+The main backgrounds to this search are SM processes with multiple jets in the final state.
 The dominant contribution comes from QCD multi-jet events, which are characterized by a very high cross-section.
-Other relevant contributions come from $t\bar{t}$, $W$+jets and $Z$+jets processes, which are associated with lower cross-sections but still relevan in the signal regions.\\
+Other relevant contributions come from $t\bar{t}$, $W$+jets and $Z$+jets processes, which are associated with lower cross-sections but still relevant in the signal regions.\\
 In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stacked distribution of the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis, for the dominant background processes considered in the analysis.
 
 \begin{figure}[ht!]
@@ -109,22 +110,25 @@ In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stac
 \noindent As evident from the plot in Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack}, the dominant background contribution comes from QCD jets, followed by $t\bar{t}$, $W$+jets and $Z$+jets processes.
 Concerning the latter, the contribution coming from $b$ jets is kept separate from the one coming from light jets, leveraging the information coming from $b$-tagging algorithms.\\ 
 The plot shows three other main features of the distribution.
-The first feature is the integrated luminosity of the sample, which has been set to be 1 fb$^{-1}$, normalizing the distribution for a proper factor, in order to have a cleaner procedure to compute the events normalization at higher luminosities, a crucial computation for the next steps of the analysis.\\
+The first feature is the integrated luminosity of the sample, which has been set to be 1 fb$^{-1}$, normalizing properly the distribution.\\
 The second one is the steeply falling nature of the distribution ($\sim\frac{1}{q^2}$), which is a common feature of QCD-like processes.
 This, in principle, makes the search for NP resonances more challenging, as they are expected to appear as small bumps on top of the background distribution.\\
-The last feature, connected to the previous, is that, in reality, the background distribution is not smooth in the entire range of the variable, which would cause a divergence at $m_{JJ} \sim 0$ GeV.
+The last feature, connected to the previous, is that, in reality, the background distribution is not smooth in the entire range of the variable.
 Instead, the distribution presents a turn on region, around 1 TeV, due to the trigger and kinematic requirements applied on the transverse momentum $p_T$ of the jets during the event preselection, which are described in Sec. \ref{sec:ADJJ/dataset/evSel}.
 The relation between those requirements and the turn on region comes from the equation of the invariant mass of two objects, which is defined as $m_{JJ} = \sqrt{2 p_{T,1} p_{T,2} (\cosh(\Delta \eta) - \cos(\Delta \phi))}$.
 
 %-------------------------------------------------------------------------------
 \subsection{Weights for the sample}\label{sec:ADJJ/dataset/weights}
 
-To create a MC sample, typically the full dataset in the entire invariant mass region of interest is not generated entirely all at once. 
-Instead, it is generated slice by slice, in steps of the transverse momentum $p_T$. 
-Since all these slices are assumed independent processes, they can be combined as the sum in quadrature of the terms, without intereferences. 
-This translates in the fact that the slices of MC histograms can be simply summed together bin per bin.
-When combining the slices, a proper normalization and reweighting has to be applied, in order to have a correct representation of the entire sample. 
-This procedure of combining the slices is named \textit{sampling} and it is applied when creating the samples to use.\\
+To create a MC sample, the full dataset over the entire kinematic region of interest is not generated entirely all at once. 
+Instead, it is generated slice by slice, in steps of $H_T$, which is defined as the scalar sum of the transverse momentum $p_T$ of the jets in the event. 
+This choice is made for two reasons.
+In the first place it is used to prevent the generation of a huge number of events in the low energy region where the QCD distribution has a peak, guaranteeing a reasonable number of events in the high energy region, which is the one of interest for many analyses.
+Secondly, this approach reduces the computational cost to generate a sample. 
+All these slices are associated with different section of the phase space which are assumed to be orthogonal, meaning that the interference between the terms is negligible.
+For this reasons, the total cross-section of the process can be computed as the direct sum of the partial cross-sections of each slice.
+This translates in the fact that the generated slices of MC histograms can be simply summed together bin per bin to form the total QCD distribution to study.\\
+When combining the slices, a proper normalization and reweighting has to be applied, in order to have a correct representation of the entire sample. \\
 For each event a weight is defined, to take into account both the effect just cited and other aspects.
 Among those we find a compatibility, in terms of acceptance or efficiency, between the MC and the real data, which is not always guaranteed, or pile-up effects which have to be included.
 All these aspects are combined and taken into account by the variable \textit{weight\_total\_NOSYS} of the dataset. 
@@ -134,12 +138,12 @@ All these aspects are combined and taken into account by the variable \textit{we
 \subsection{The event preselection}\label{sec:ADJJ/dataset/evSel}
 After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco} for large-radius jet ($R=1.0$), an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
 The first step of preselection is the application of three trigger requirements.
-First of all, a jet has to fire the single jet trigger item \texttt{HLT\_j460\_a10\_sd\_cssk\_pf\_ftf\_preselj225\_L1J100}.
+First of all, a jet has to fire the single jet trigger item which requires events with $E_T>100 \text{ GeV}$ at L1 trigger and $E_T>460 \text{ GeV}$ at HLT.
 Secondly, it is required that the object raising this trigger is the leading jet of the event, where the leading jet is defined as the one with the highest transverse momentum $p_T$.
-Finally, a cut on the leading jet $p_T$ is applied, requiring it to be greater than 470 GeV: $p_{\text{T}} > 470\text{ GeV}$.
+Finally, a cut on the leading jet $p_T$ is applied, requiring it to be greater than 470 GeV.
 This latter requirement is meant to take into account the data bandwidth limitations: given the smoothly falling shape of the $p_T$ distribution, the region with lower $p_T$ is more populated, leading to a higher number of events to be stored, which is not sustainable given the limited bandwidth available.\\
 Together with the trigger criteria, a set of kinematic cuts is applied to the events, to properly define the objects of interest.
-In particular, each event is required to have at least two large-radius jets, each of it (leading and sub-leading) with mass greater than 50 GeV, $p_T$ greater than 200 GeV and pseudorapidity $\eta$ within the range $[-2.0, 2.0]$.\\
+In particular, each event is required to have at least two large-radius jets (and less than four), each of it (leading and sub-leading i.e. highest and second-highest $p_T$) with mass greater than 50 GeV, $p_T$ greater than 200 GeV and pseudorapidity $\eta$ within the range $[-2.0, 2.0]$.\\
 The requirements applied during the event preselection are summarized in Tab. \ref{tab:ADJJ/dataset/evSel/preselection}.
 
 
@@ -156,7 +160,7 @@ Trigger fired by leading jet       \\
 \hline
 $p_{\text{T}, lead jet} > 470\text{ GeV}$       \\
 \hline
-\#jets > 2        \\
+2 < \#jets < 4        \\
 \hline
 $m_{lead jet}   > 50\text{ GeV}$       \\
 \hline
@@ -164,7 +168,7 @@ $m_{sublead jet}   > 50\text{ GeV}$         \\
 \hline
 $p_{\text{T}, jets} > 200\text{ GeV}$            \\
 \hline
-$|\eta_{ jet}| \le 470$        \\
+$|\eta_{ jet}| \le 2.0$        \\
 \hline
 \end{tabular}
 \caption{Trigger and object definition requirements applied during the event preselection.}
@@ -194,6 +198,22 @@ Such relatively high threshold increases the number of connections among the gra
 The nodes have stored in their features the kinematic information of the constituents, such as $p_T$, $\eta$ and $\phi$, together with their mass and taste.\\
 The dataset, mapped into graphs, is then used as input to train a particular type of GNN architecture, named EGAT.
 
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Graph component}  & \textbf{Feature}\\
+\hline\hline
+Nodes & $p_T$, $\eta$, $\phi$, mass, taste   \\
+\hline
+Edges & $e^{-\Delta R}$, active if $\Delta R < 0.6$  \\
+\hline
+\end{tabular}
+\caption{Input features for each constituent (node) of the jet (graph), connected based on a distance criterion (edge), used to train the GNN model.}
+\label{tab:ADJJ/GNN/GNNfeatures}
+\end{table}
+
 %-------------------------------------------------------------------------------
 \subsection{The architecture in use}\label{sec:ADJJ/GNN/architecture}
 The assignment to compute the AS is performed feeding the graphs into an EGAT architecture, a Edge Graph ATtention Network \cite{EGAT}.
@@ -222,7 +242,7 @@ After the finaly MLP layer, a global pooling layer is applied to the graph, to s
 \subsection{Training the model}\label{sec:ADJJ/GNN/train}
 
 The GNN model is trained with a fully unsupervised approach.
-The training dataset is composed exclusively by QCD multi-jet background events, looping over them to minimizes a Deep Support Vector Data Description (DeepSVDD) loss function \cite{DeepSVDD}.
+The training dataset is composed exclusively by $320~k$ QCD multi-jet background events, looping over them to minimizes a Deep Support Vector Data Description (DeepSVDD) loss function \cite{DeepSVDD}.
 This function computes the distance between the output of the network and a predefined coordinate vector $c$, centre of hypersphere in the latent feature space.
 The DeepSVDD loss can be graphically as presented in Fig. \ref{fig:ADJJ/GNN/loss} and it is computed as follows:
 \begin{equation}\label{eq:ADJJ/GNN/train/loss}
@@ -247,20 +267,47 @@ The DeepSVDD loss function is used also to compute the AS for each jet, which is
     AS = \|\phi(x_i; \mathcal{W^*}) - c\|^2
 \end{equation}
 
-\noindent where $\mathcal{W^*}$ are the weights of the trained model, which are fixed during the test phase.
+\noindent where $\mathcal{W^*}$ are the weights of the trained model, which are fixed during the test phase.\\
+The three phases of the training of the model, training, validation and testing (Sec. \ref{sec:AD/DL/Loops}) are executed using complementary datasets, to avoid any bias in the evaluation of the model performance.
+The splitting of the dataset to compose the sets for the three phases is presented in Tab. \ref{tab:ADJJ/GNN/train/datasetSplit}.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{lightgray}
+\textbf{Phase} & \textbf{Dataset} & \textbf{Number of events} \\
+\hline\hline
+Training & QCD multi-jet & 320 k \\
+\hline
+Validation & QCD multi-jet & 30 k \\
+\hline
+Testing & QCD + other Backgrounds + Signals & 2.6 M \\
+\hline
+\end{tabular}
+\caption{Splitting of the dataset to compose the sets for the three phases of the training of the model. The training and validation sets are composed exclusively by QCD multi-jet events, while the testing set is composed by a mixed dataset, containing both all backgrounds and signals.}
+\label{tab:ADJJ/GNN/train/datasetSplit}
+\end{table}
 
 
 %-------------------------------------------------------------------------------
 \subsection{Performance of the GNN}\label{sec:ADJJ/GNN/results}
-The performance of the EGAT model on the MC samples is evaluated using the AUC metric, which is computed for each signal process considered in the analysis and inserted in the dataset during the test phase.
+The performance of the EGAT model on the MC samples is evaluated using the AUC metric (Sec. \ref{sec:AD/DL/AUC}), which is computed for each signal process considered in the analysis and inserted in the dataset during the test phase.
 Results are reported in Tab. \ref{tab:ADJJ/GNN/results/AUC}, where the AUC values for each signal are shown.\\
 Discrimination power varies substantially depending on the process considered and the resonance mass. 
 HVT decays into $WW$ final states are the ones achieving higher discrimination, with an AUC up to $95.8\%$.  
 Similarly, $V \to XH$ decays present strong background rejection, yielding a maximum AUC of $87.6\%$ for the $(6.0\text{ TeV}, 400\text{ GeV})$ mass configuration.
 Moreover, signal processes with higher resonance masses tend to be more easily discriminated from the background, which is expected, since the raising jets are more boosted and their substructure is more defined than lower mass resonances, allowing the network to learn more complex structures.
-The Dark Jets process, instead, is the one with the lowest performance, with an AUC of $59.6\%$, which is expected since the dark jets are very similar to QCD jets, making the discrimination task more challenging.
-Probably, in this case, more specific features should be used to improve the performance of the model, such as the presence of displaced vertices, a typical feature of dark jets.
-
+The Dark Jets and Wprime processes, instead, are the ones with the lowest performance, with an AUC of $59.6\%$ and $64.9\%$ respectively.
+These lower results can be explained analysing what the network is learning.
+In Sec. \ref{sec:ADJJ/AScorrelation} the correlation between the AS and the jet features is studied to understand whether a cut on the AS could introduce a bias in the kinematic distributions of the jets, which is not desired.
+The plots in Fig. \ref{fig:ADJJ/AScorrelation/CorrPlots} can also be interpreted as a representation of the features of QCD jets learned by the GNN.
+In particular, the network seems to learn more in detail kinematic features of the jets, such as the mass and the transverse momentum.
+Less information is extracted from the $D_2$ variable, which is a measure of the substructure of the jets.
+From this it is evident that a sample as the Dark Jets, which has a complex substructure similar to the one of QCD jets and a peak in the $m_{JJ}$ distirbution outside the core of the AS vs $m_{JJ}$ correlation, is more difficult to discriminate from the background, leading to a lower AUC value.
+A similar reasoning can be applied to the Wprime process, which can be considered a 3-prong process, with a complex substructure to learn.
+Probably, in these cases, more specific features should be used to improve the performance of the model, such as the presence of displaced vertices, a typical feature of dark jets.\\
+The results discussed above are consistent with those presented in the following sections, where the AS distributions are studied together with the correlation between the AS and the features of QCD jets, the sample on which the model is trained.
 
 \begin{table}[ht!]
 \centering
@@ -345,7 +392,7 @@ In Fig. \ref{subfig:ADJJ/GNN/AS/AS1_sep} and Fig. \ref{subfig:ADJJ/GNN/AS/AS2_se
 \noindent As visible from the plots in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}, the AS distribution for the background is concentrated at lower values with respect to the signal processes, which tend to populate the high score region.
 In particular, the $VzWW$ processes are the ones with the highest AS, while the Dark Jets and Wprime processes are the ones with the lowest AS, which is consistent with the AUC values reported in Tab. \ref{tab:ADJJ/GNN/results/AUC}.
 For these reasons, it is expected that the $VzWW$ processes will be the easiest among our benchmarks to detect in the statistical analysis, while the Dark Jets process will be more challenging to identify.\\
-It is worth noting that the AS distribution are realized excluding the QCD events used in the training phase, which are set to have a negative score.
+It is worth noting that the AS distribution is realized excluding the QCD events used in the training phase, which are set to have a negative score.
 This choice is made in order to avoid any bias in the evaluation of the model performance.\\
 Prior to realizing the plots in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}, events are filtered to select the invariant mass region of interest and a custom defined weight, \textit{fWeight}, is applied to the events, in order to rescale the sample to an integrated luminosity of 1.0 fb$^{-1}$.\\
 Starting from the AS distribution, different WPs are defined, as threshold values to cut on the jet level AS in order to reject between $20\%$ and $99.9\%$ of background events.
@@ -375,8 +422,8 @@ In Tab. \ref{tab:ADJJ/GNN/AS/WPs} the WPs defined in this analysis are reported,
 \section{Correlation of the Score with kinematic variables}\label{sec:ADJJ/AScorrelation}
 
 An important step before proceeding with the statistical analysis is to evaluate the correlation of the AS with key kinematic variables.
-This evalution is needed to verify that the AS is not strongly coupled with the kinematics of the events, which would lead to a distortion of the background distribution after applying a cut on the AS.
-The first crucial variable to be evaluated is the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis used to search for NP resonances.
+This evalution is needed to verify that the AS is not strongly coupled with the kinematics of the events, which would lead to a distortion of the background invariant mass distribution after applying a cut on the AS.
+In fact, the first crucial variable to be evaluated is the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis used to search for NP resonances.
 Together with this, also the coordinates $p_T, \eta, \phi$ of the leading and sub-leading jets are evaluated, to guarantee a full understanding of the correlations.\\
 In Fig. \ref{fig:ADJJ/AScorrelation/CorrPlots} the correlation plots of the score vs the other variables are shown, for the leading jet of QCD events, the main background component.
 
@@ -433,7 +480,7 @@ In Fig. \ref{fig:ADJJ/AScorrelation/CorrPlots} the correlation plots of the scor
   \end{subfigure}
 
   
-  \caption{Plots presentating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta$, (d) leading jet $\phi$, (e) $D_2$ and (f) mass.}
+  \caption{Plots representating the correlation of the jet 1 Score with (a) di-jet invariant mass $m_{JJ}$, (b) leading jet $p_T$, (c) leading jet $\eta$, (d) leading jet $\phi$, (e) $D_2$ and (f) mass.}
   \label{fig:ADJJ/AScorrelation/CorrPlots}
 \end{figure}
 
@@ -481,7 +528,7 @@ Plots associated with this study on the QCD distribution are shown in Fig. \ref{
     \label{subfig:ADJJ/AScorrelation/SRCR99}
   \end{subfigure}
   
-  \caption{Plots presentating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99.}
+  \caption{Plots representating the QCD $m_{JJ}$ distribution before and after applying a cut on AS at WP (a) 20, (b) 80, (c) 90, (d) 99.}
   \label{fig:ADJJ/AScorrelation/mJJ_AScut}
 \end{figure}
 
@@ -561,7 +608,7 @@ Wprime     &  1.61\%   &  1.44\% \\
 The searches for NP are conducted performing a binned likelihood fit of signal+background to the sample in the variable of interest.
 For the purpose of this analysis, the variable of interest is the di-jet invariant mass $m_{JJ}$.
 It is the most relevant parameter of a HVT or Dark Jets model since it is expected to show a resonant peak in case of NP presence.\\
-In order to perform properly the fits, it is necessary to parametrize the signal and background samples, to describe them with a function instead of using directly the histogrammed spectra.
+It is necessary to parametrize the signal and background samples, to describe them with a function instead of using directly the histogrammed spectra.
 Functions used to describe the background and the signals are discussed in the following sections.
 
 %-------------------------------------------------------------------------------
@@ -654,7 +701,7 @@ Concerning the latter, the choice of the DSCB function as PDF to describe the si
 Two cases capture the attention when looking at their modelling: Dark Jets and VcXH\_5000.
 The former is the one with the lowest efficiency after the AS cut, due to the high similarity between its score distribution and the one of the background, as shown in Fig. \ref{fig:ADJJ/GNN/AS/AS_jets}.
 This translates into a more noisy $m_{JJ}$ distribution at WP 99\%, which, nevertheless, can be still parametrized with the DSCB function.
-Differently, the VcXH\_5000 process is modelled with diffuclty by the DSCB function even without the AS cut.
+Differently, the VcXH\_5000 process is modelled with difficulty by the DSCB function even without the AS cut.
 The limitation is more clear when looking at the $m_{JJ}$ for the sample, presented in Fig. \ref{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJ}, where a double peak structure is visible, which is not captured by the chosen PDF.
 The modelling function in use, instead, could adapt better to the tri-jet invariant mass distribution, $m_{JJJ}$, visible in Fig \ref{subfig:ADJJ/Model/SIG/yxh5000_dist/mJJJ}.
 This situation can be explained considering the kinematics of the simulated sample, where the $X$ boson has been produced with a mass of 2.5 $TeV$.
@@ -739,10 +786,10 @@ f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{p_2+p_3 \cdot \log(x)+p_4 \cdot 
 \end{equation}
 
 \noindent Due to increasing correlation of the log parameters in the exponent, the 4-parameter functions need initial parameters reasonably close to the optimum in order to converge.
-These parameters are determined by performing a fit on the background sample on which the event selection is applied, together with the sample rescaled to a 1 $fb^{-1}$ luminosity applying the fWeight branch.
+These parameters are determined by performing a preliminary fit on the background sample on which the event selection is applied, together with the sample rescaled to a 1 $fb^{-1}$ luminosity applying the fWeight branch.
 The fit is executed setting the initial values and ranges to be quite wide.
 The parameters derived from this rough fit are then used to create an \texttt{xml card} for the background sample.
-Using such card, the fit with a background only PDF with 4 parameters to a background only distribution is performed, to derive the best-fit parameters modelling the background sample.
+The parameters contained in the \texttt{xml card} are used as initial guesses with reduced ranges for the fit with a background only PDF with 4 parameters to a background only distribution, performed to derive the best-fit parameters modelling the background sample.
 The results of the fit are shown in Fig. \ref{fig:ADJJ/Model/BKG/BKGonlyfit_plot} and in Tab. \ref{tab:ADJJ/Model/BKG/BKGonlyfit_params}.
 
 \begin{figure}[ht!]
@@ -760,13 +807,13 @@ The results of the fit are shown in Fig. \ref{fig:ADJJ/Model/BKG/BKGonlyfit_plot
 \rowcolor{lightgray}
 \textbf{Parameter} & \textbf{Fitted value} \\
 \hline\hline
-$p_1$ &  21.49 $\pm$   3.42  \\
+$p_1$ &  21.5 $\pm$   3.4  \\
 \hline
-$p_2$ & 7.42 $\pm$ 3.30 \\
+$p_2$ & 7.4 $\pm$ 3.3 \\
 \hline 
-$p_3$ & 3.84 $\pm$ 0.48 \\
+$p_3$ & 3.8 $\pm$ 0.5 \\
 \hline 
-$p_4$ & 0.70 $\pm$ 0.42 \\
+$p_4$ & 0.7 $\pm$ 0.4 \\
 \hline
 \end{tabular}
 \caption{Best fit parameters for the background only PDF with 4 free parameters, derived from the fit to the background only sample.}
@@ -784,7 +831,7 @@ This binning is chosen to have a fine granularity in $m_{JJ}$, presenting an alm
 %-------------------------------------------------------------------------------
 \section{Validating the PDFs}\label{sec:ADJJ/Validation}
 
-The modelling defined in the previous section for the signal and background samples has to be carefully, to avoid rejecting genuine signals or misinterpreting background fluctuations as signal events.
+The modelling defined in the previous section for the signal and background samples has to be careful, to avoid rejecting genuine signals or misinterpreting background fluctuations as signal events.
 Two main validation tests are performed: the \textit{spurious signal tests} (or fit bias tests) and the \textit{signal injection tests}.\\
 To conduct these tests, the binned profile-likelihood in use is defined as the combination of the signal and background PDFs:
 
@@ -793,22 +840,22 @@ To conduct these tests, the binned profile-likelihood in use is defined as the c
 % \end{equation}
 
 \begin{equation}\label{eq:ADJJ/Validation/likelihood}
-  \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) = \prod_{i}^{N_{bins}} Poiss(n_i | \mu_s\cdot N_{sig}  \cdot f_{DSCB}(\vec{\theta},\vec{k}) + N_{bkg} \cdot f_{BKG}(\vec{\theta},\vec{k})) \cdot \prod_{j}^{N_{syst}} G(\theta_j)
+  \mathcal{L}(\vec{n}|\vec{\theta},\mu) = \prod_{i}^{N_{bins}} Poiss(n_i | \mu_s\cdot N_{sig}  \cdot f_{DSCB}(\vec{\theta},\mu) + N_{bkg} \cdot f_{BKG}(\vec{\theta},\mu)) \cdot \prod_{j}^{N_{syst}} G(\theta_j)
 \end{equation}
 
 \noindent where the first product runs over the number of bins which are assumed to follow a Poissonian distribution, with $n_i$ entries in each bin $i$.
 The second product is associated with the systematic uncertainties, which are assumed to follow a Gaussian distribution with mean 0 and standard deviation related to the uncertainty.
-The latter term is turned off in the validation tests and it is considered in the upper limits derivation, as discussed in Sec. \ref{sec:ADJJ/UpperLimits}.
-The likelihood depends on the nuisance parameters $\vec{\theta}$, which are constrained during the fit, and the parameters of interest (PoI) $\vec{k}$, which are free to vary during the fit.
+The gaussian constraints are applied only during the upper limits derivation, as discussed in Sec. \ref{sec:ADJJ/UpperLimits}.
+The likelihood depends on the nuisance parameters $\vec{\theta}$, which are constrained during the fit, and the parameter of interest (PoI) $\mu$, which is free to vary during the fit.
 The term $N_{sig}$ is the PoI of this analysis when the signal hypothesis is tested.
 In the following it will be referred to as $N_{sig} = \mu$.
-The quantity $\mu_s$ is the signal strength ($\mu_s=\frac{\sigma_{exp}}{\sigma_{SM}}=\frac{N_{sig,exp}}{N^{SM}_{sig}}$) and it is a normalization factor for the signal PDF.
+The quantity $\mu_s$ is the signal strength $\mu_s=\frac{\sigma_{exp}}{\sigma_{th}}=\frac{N_{sig,exp}}{N^{th}_{sig}}$, it is a normalization factor for the signal PDF compairing the measured cross-section $\sigma_{exp}$ with the nominal (theoretical) one $\sigma_{th}$ assumed in the samples.
 $N_{bkg}$ is the number of observed background events, which is a free parameter in the fit.\\
 From the performed fits, a set of values for all the parameters, nuisance and PoI, is obtained.
 Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, discriminates between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
 The likelihood ratio is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/likelihood_ratio}
-  \lambda(\mu) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
+  \lambda(\mu_s) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
 \end{equation}
 
 \noindent where $\vec{\hat{\hat{\theta}}}$ is the value of $\theta$ that maximizes $\mathcal{L}$ for the specified $\mu$.
@@ -1111,12 +1158,12 @@ The fit results are accepted if the p-value is higher than the canonical 0.05 th
 Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, the requirement is satisfied for all the fits performed, with p-values higher than 0.05 for all the signal hypotheses and luminosities considered.\\
 For the reasons just discussed, it is expected that once the analysis will be performed on the real data, the results associated with the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
 The best-fit parameters are then used to compute the upper limits on the signal cross-section for each signal hypothesis and mass point, at the different tested luminosities.
-Since the PoI of the likelihood of this analysis is the number of signal $N_{sig}$, referred to as $\mu$, using the definition of signal strength, limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
+Since the PoI of the likelihood of this analysis is the number of signal $N_{sig}$, referred to as $\mu$, using the definition of signal strength $\mu_s$, limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
 \begin{equation}\label{eq:ADJJ/UpperLimits/sigma_limit}
   \sigma_{exp} = \frac{\mu}{Sig_{int} \cdot R_{lumi}}\cdot \sigma_{th}
 \end{equation}
 
-\noindent where $\mu$ is the limit derived on the number of signal events, $Sig_{int}$ is the integral of the signal PDF serving as $N^{SM}_{sig}$, $R_{lumi}$ is the ratio between the luminosity to which the sample is rescaled and the initial luminosity (1 $fb^{-1}$) and $\sigma_{th}$ is the assumed theoretical cross-section of the signal in question reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.\\
+\noindent where $\mu$ is the limit derived on the number of signal events ($N_{sig,exp}$), $Sig_{int}$ is the integral of the signal PDF serving as $N^{th}_{sig}$, $R_{lumi}$ is the ratio between the luminosity to which the sample is rescaled and the initial luminosity (1 $fb^{-1}$) and $\sigma_{th}$ is the assumed theoretical cross-section of the signal in question reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.\\
 The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $\pm$ 2 $\sigma$ uncertainty bands, are shown in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} for the different signals and luminosities considered in this study.
 
 %%%%%%%%%%%%

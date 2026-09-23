@@ -1,6 +1,6 @@
 \chapter{Anomaly Detection} \label{chap:AD}
 
-As previously discussed in Sec. \ref{sec:SM_BSM/BSM}, SM is not a complete theory and New Physics beyond it should exist.
+As previously discussed in Sec. \ref{sec:SM_BSM/BSM}, SM is not a complete theory and the existence of New Physics beyond it has been predicted by many theoretical models.
 The usual model-dependent searches for BSM physics rely on MC simulations generated for specific BSM hypotheses to define signal-enriched regions.
 They provide optimized sensitivity for the specific process although they remain blind to a broader scenario and they have not yet produced any significant discoveries.
 This motivates the exploration of alternative approaches.\\
@@ -149,7 +149,7 @@ They are computed starting from the confusion matrix, where four groups are pres
 From them, rates are calculated: 
 
 \begin{equation}\label{eq:AD/DL/AUC/TPR_FPR}
-    TPR=\frac{TP}{TP+FN}\ \rm , \ \rm \ \rm \ \rm \textit{FPR}=\frac{\textit{FP}}{\textit{TN+FP}}
+    \rm TPR=\frac{TP}{TP+FN}\ \rm , \ \rm \ \rm \ \rm FPR=\frac{FP}{TN+FP}
 \end{equation}
 \\
 \noindent where TPR is the True Positive Rate and FPR is the False Positive Rate. 
@@ -174,7 +174,7 @@ There are two main categories by which AD be used in this context: \textit{outli
 The first one is based on the identification of events that are outliers, deviating for the common behaviour of the dataset, usually in the tails of distributions.
 This region is typically challenging to model and it is often dominated by statistical fluctuations, making it difficult to distinguish between real anomalies and random noise.
 The second one, instead, is based on the identification of a localised excess of data points over an expected smooth background.\\
-The increasing popularity of AD in HEP is due to its model agnostic nature, which allows to scan a bigger range of events, without any stringent assumption on the theoretical model, just hunting from outliers.
+The increasing popularity of AD in HEP is due to its model agnostic nature, which allows to scan a broader range of events, without any stringent assumption on the theoretical model, just hunting from outliers.
 Together with this, large unlabeled datasets have been collected by collider experiments, boosting the usage of unsupervised learning techniques.\\
 In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.\\
 Typically, before the raise of AD, the searches for NP were conducted on simulated MC data in the first stage, applying a proper event selection to define a region of interest, called Signal Region (SR), in the phase space of parameters where the signal is expected to be found. 
@@ -191,9 +191,9 @@ This approach relied strongly on simulated MC data.
 \noindent With the implementation of AD, the dependance on MC simulations can be reduced.
 The DNN, in fact, can be trained and validated directly on real data, in a CR where the presence of signal is not expected.
 For this reason, similar implementations of AD are referred to as \textit{data-driven} approaches.\\
-Once the DNN is trained, it is used to compute the Anomaly Score (SR) of the data, a distirbution of the probability for it to be anomalous, as shown in Fig. \ref{fig:AD/ADforHEP/AS_distribution}.
+Once the DNN is trained, it is used to compute the Anomaly Score (SR) of the data, a distribution of the probability for it to be anomalous, as shown in Fig. \ref{fig:AD/ADforHEP/AS_distribution}.
 AS is defined as a distance between the input and the output of the model.
-The assumption to be verified is that anomalous data will have a different distance with respect to the background, making the two AS distributions separated: greater the separation is, easier it will be to distinguish signal events from background ones and discarding the latter.\\
+The assumption to be verified is that anomalous data will have a different distance with respect to the background, making the two AS distributions separated: the greater the separation is, the easier it will be to distinguish signal events from background ones and discarding the latter.\\
 
 \begin{figure}[ht!]
 \centering
@@ -222,7 +222,7 @@ Such approach has a huge potential. \\
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=5.5 in]{Images/Chap4/RomeHILL.png}
+  \includegraphics[width=5 in]{Images/Chap4/RomeHILL.png}
   \caption{View of Rome from the Janiculan Hill. From it, it is possible to scan the whole city and identify the neighbourhood of the Basilica of Saint Mary Major, for instance. Photo from Ref. \cite{Rome_view}.}
   \label{fig:AD/ADforHEP/RH}
 \end{figure}
