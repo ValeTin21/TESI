@@ -894,13 +894,16 @@ It is computed as:
 \subsection{Spurious signal tests}\label{sec:ADJJ/Validation/SPT}
 
 The first validation test performed is the \textit{spurious signal test}, also known as \textit{fit bias test}.
-In fact, it aims to quantify the bias introduced by the choice of the background PDF in the fit.\\
-The test is performed selecting a background only sample with a 1 $fb^{-1}$ luminosity and a fit with a PDF containing both the signal and the bacgkround component is executed.
-To take into account the statistical fluctuations of the sample, the fit is iterated 100 times, each of with a Poissonian fluctuation with a different seed is applied to the distribution.
+In fact, it aims to quantify the bias introduced by the choice of the background PDF in the fit.
+A possible bias could be that the flexible background model could absorb part of the signal or that the signal+background model returns a non-zero signal yield even when fitting a background only sample to accomodate the fluctuations of the background distribution.
+The spurious signal test, indeed, corresponds to the difference between the median fitted signal yield and the known signal yield.\\ 
+The test is performed selecting a background only sample (signal yield = 0) with a 1 $fb^{-1}$ luminosity and a fit with a PDF containing both the signal and the bacgkround component is executed.
+To take into account the statistical fluctuations of the sample, 100 variations of the background only histogram are generated, where each of them is associated with a Poissonian fluctuation with a different seed.
+Each of these 100 histograms is fitted with the signal+background PDF.
 At this point, the fitted amount of signal is extracted from each iteration, the mean value $S_{spur}$ and the width (RMS) $\sigma_{fit}$ of the distribution of fitted values are computed.
-This test is repeated for each of the different signal samples and the different mass points.
-For each sample, the extracted quantities for each mass point are plotted in a graph, where the x-axis is the mass of the signal and the y-axis is amount of signal derived from the fits.
-In principle, $S_{spur}$ should be compatible with 0, given the background only hypothesis tested.
+This test is repeated for each of the different signal hypotheses and the different mass points.
+For each signal hypotheses, the extracted quantities for each mass point are plotted in a graph, where the x-axis is the true mass of the signal and the y-axis is amount of signal derived from the fits.
+In principle, $S_{spur}$ should be compatible with 0, given the fact that the fitted events were generated under the background only hypothesis.
 More importantly, the ratio $S_{spur}/\sigma_{fit}$ for each sample is computed and plotted in the lower pad on the same graph.
 Following the ATLAS recommendations \cite{ATLAS_smoothBKG}, the ratio points should be in a range of $\pm$ 0.5 to pass this first test.\\
 Two example plots of the fits to the signal hypothesis VcXH\_2300 and VzWW\_2000 to the background only sample for a single seed are shown in Fig. \ref{fig:ADJJ/Validation/SPT/SPFit}.
@@ -925,7 +928,7 @@ Other plots for the other signal samples with the same seed are reported in Appe
     \label{subfig:ADJJ/Validation/SPT/SPplots/bbb}
   \end{subfigure}
   
-  \caption{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000.}
+  \caption{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}
   \label{fig:ADJJ/Validation/SPT/SPFit}
 \end{figure}
 
@@ -968,7 +971,7 @@ The results of the fit bias study at 1 $fb^{-1}$ are presented in Fig. \ref{fig:
     \label{subfig:ADJJ/Validation/SPT/SPplots/DJ}
   \end{subfigure}
   
-  \caption{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In all cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied and this test can be considered passed.}
+  \caption{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. The quantity on the x-axis is the true mass of the signal hypothesis, while the y-axis is the fitted amount of signal $S_{spur}$ in the upper pad and the ratio $S_{spur}/\sigma_{fit}$ in the lower pad. In all cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied and this test can be considered passed.}
   \label{fig:ADJJ/Validation/SPT/SPplots}
 \end{figure}
 
@@ -992,19 +995,19 @@ The results of the fit bias study at 1 $fb^{-1}$ are presented in Fig. \ref{fig:
 
 \noindent The results presented above in Fig. \ref{fig:ADJJ/Validation/SPT/SPplots} and in Tab. \ref{tab:ADJJ/Validation/SPT/SPvalue} show that the spurious signal test is passed for all the signal samples and mass points, given the ratio $|S_{spur}/\sigma_{fit}|$ within the required $\pm$ 0.5 range.\\
 The study conducted at 1 $fb^{-1}$ is then repeated scaling the samples to higher luminosities of [1.65, 16.5, 50.0, 100.0, 139.0, 165.0, 332.0]  $fb^{-1}$.
-This values are chosen since they correspond to fractions of the partial Run 3 sample studied (165.0 $fb^{-1}$), to the full Run 2 sample (139.0 $fb^{-1}$) and to the full Run 3 sample (332.0 $fb^{-1}$), or simply as intermediate values. 
+These values are chosen since they correspond to fractions of the partial Run 3 sample studied (165.0 $fb^{-1}$ collected from 2022 to 2024), to the full Run 2 sample (139.0 $fb^{-1}$) and to the full Run 3 sample (332.0 $fb^{-1}$), or simply as intermediate values. 
 Those tests are performed to check the stability of the results with increasing statistics and to ensure that the background PDF is still able to model the background sample without introducing a bias in the fit.\\
 The results of this study are presented in Appendix A, where the plots for the different luminosities are shown.\\
 Analysing these results, it is visible that the ratio value is stable in the required range for all the signal, with samples at higher masses showing a reduced uncertainty on the fitted signal, given the lower statistics in the background sample at higher $m_{JJ}$ values.
 For these reasons, the spurious signal test is considered passed for all the signal samples, mass points and luminosities considered in this study.\\
-The test just discussed is perfomed to derive a systematic uncertainty to apply when performing the final fits and upper limits derivation.
+The test just discussed is performed to derive a systematic uncertainty to apply when performing the final fits and upper limits derivation.
 This uncertainty is referred to as \textit{background modelling uncertainty} which is included in the likelihood as a second source of signal with the same $m_{JJ}$ shape of the true signal:
 
 \begin{equation}\label{ADJJ/Validation/SPT/Modified_likelihood}
-  N_{sig}(m_{JJ}) = N_{sig}^{true}(m_{JJ}) + S_{modeling}(m_{JJ})\cdot \theta_{modeling}
+  N_{sig}(m_{JJ}) = N_{sig}^{true}(m_{JJ}) + S_{modelling}(m_{JJ})\cdot \theta_{modelling}
 \end{equation}
 
-\noindent where the normalization term $\theta_{modeling}$ is a nuisance parameter constrained by a Gaussian term of mean 0 in the likelihood, with a width set to the absolute value of the spurious signal $|S_{spur}(m_{JJ})|$.\\
+\noindent where $S_{modelling}(m_{JJ})$ is the fitted amount of spurious signal, the normalization term $\theta_{modelling}$ is a nuisance parameter constrained by a Gaussian term of mean 0 in the likelihood, with a width set to $|S_{spur}(m_{JJ})|$.\\
 The results of fits and upper limits derivation executed applying this systematic uncertainty are presented in Sec. \ref{sec:ADJJ/UpperLimits}.
 
 %-------------------------------------------------------------------------------
@@ -1013,7 +1016,7 @@ The results of fits and upper limits derivation executed applying this systemati
 The second validation test performed is the \textit{signal injection test}, which aims to quantify the ability of the model to recover a given amount of signal injected in a background sample.
 This validation proceeds in a similar way to previous, with the main difference situated in the creation of the histogram to fit, which is built as follows.\\
 The amount of injeted signal is quantified in terms of significance Z, which is defined as $Z \sim \frac{S}{\sqrt{B}}$, where S is the number of injected signal events and B is the number of background events in the Region of Interest (RoI).
-It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one and it is valid in the regime where B high enough and B>>S, which is the case for the samples considered in this analysis \cite{Lik_tests}.
+It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one $Z=\sqrt{2\Big((s+b)ln(1+\frac{s}{b})-s\Big)}$ and it is valid in the regime where B high enough and B>>S, which is the case for the samples considered in this analysis \cite{Lik_tests}.
 Inverting the definition of Z, the number of injected signal events can be expressed as:
 \begin{equation}
   S_{inj} \sim Z \cdot \sqrt{B}
@@ -1051,7 +1054,7 @@ Other plots for the other signal samples with the same seed are reported in Appe
 \end{figure}
 
 \noindent The plots in Fig. \ref{fig:ADJJ/Validation/SINJ/SINJfit} show the good agreement between the fitted function and the injected sample, with a p-value of 0.97 and 0.99 respectively for the two signals.
-Despite this, some fluctuations, probably due to the binnig of the histogram, are present across the distribution and they are expected to be smoothed out when scaling the samples to higher luminosities, where the statistics is higher and the binning is less subject to fluctuations.\\
+Despite this, some fluctuations, probably due to the binning of the histogram, are present across the distribution and they are expected to be smoothed out when scaling the samples to higher luminosities, where the statistics is higher and the binning is less subject to fluctuations.\\
 From these fits, the quantity $S_{spur}$ is computed as the difference between the fitted and injected amount of signal, $S_{spur} = S_{fit} - S_{inj}$.
 The test, once again, is execute with 100 pseudodata samples.
 Extracting the values from the fits, $S_{spur}$ is mediated over the distribution and the width $\sigma_{fit}$ is computed.\\
@@ -1094,14 +1097,14 @@ The results obtained from the signal injection tests at 1$fb^{-1}$ are shown in 
     \label{subfig:ADJJ/Validation/SINJ/SIplots/DJ}
   \end{subfigure}
   
-  \caption{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied.}
+  \caption{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. Each plot shows a different curve for each mass point of the signal hypothesis, with the x-axis being the injected significance and the y-axis being the fitted significance. In most of the cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied.}
   \label{fig:ADJJ/Validation/SINJ/SIplots}
 \end{figure}
 
 \noindent The requirements for the signal injection test are that the main curve of each mass point should be compatible with a linearly increasing function with slope 1 and, as the previous test, the ratio $S_{spur}/\sigma_{fit}$ has to be within the $\pm$ 0.5 range.
 The results presented above in Fig. \ref{fig:ADJJ/Validation/SINJ/SIplots} show that the signal injection test pass these requirements for the majority of the signal samples, mass points and injected significances.
 Some issues are visible for higher mass points as the VcXH\_6000, where the statistics is lower and the background sample is not populated enough to allow a reliable estimate of the background in the RoI, resulting in higher variance in the main curve.
-Other issues are visible for the lower mass points, where the distributions is more subject to statistical fluctuations due to the binning of the histogram.\\
+Other issues are visible for the lower mass points, where the distribution is more subject to statistical fluctuations due to the binning of the histogram.\\
 For these reasons, the signal injection test at 1 $fb^{-1}$ is considered passed for the samples Wprime and Dark Jets, together with the VzWW signal at lower masses and VcXH at 3400 GeV and 6000 GeV.
 Concerning the other mass points, the test is not passed and the results have to be considered with caution, as discussed in the following.\\
 The study conducted at 1 $fb^{-1}$ is in fact repeated scaling the samples to higher luminosities of [1.65, 16.5, 139.0, 165.0, 332.0]  $fb^{-1}$, to check the stability of the results with increasing statistics.
@@ -1109,11 +1112,28 @@ The plots associated with these latter tests are reported in Appendix A.
 From those plots, the trend is more crucial than the one observed at lower luminosity.
 In particular, increasing the statistics it is more evident that the only samples passing the signal injection test with the chosen PDFs and event selection are only those with masses around 3-3.5 TeV.
 All the other samples, both at lower and higher masses, show high fluctuations in the main curve and the ratio $S_{spur}/\sigma_{fit}$ clearly deviating from the $\pm$ 0.5 range, meaning that the test is not passed.
-The behaviour observed during this study could be associated with a cut on AS too aggresive, especially for the higher mass points: relaxing the requirement on the computed score, moving it from 99\% to 90\% or 80\%, could allow to recover more background events in the RoI, improving the modelling of samples and, consequently, the results of the test.
+The behaviour observed during this study could be associated with a cut on AS too aggressive, especially for the higher mass points: relaxing the requirement on the computed score, moving it from 99\% to 90\% or 80\%, could allow to recover more background events in the RoI, improving the modelling of samples and, consequently, the results of the test.
 Another possible explanation is that the chosen background PDF, with 4 free parameters, is not flexible enough to model the background sample in the RoI, in particular for higher mass points where the statistics in that region is low.
 Concerning the lower mass points, the issue is probably associated either with the binning of the histogram, which is too tight and more subject to fluctuations, or with the choice of the background PDF.\\
 In conclusion, despite the event selection with WP99 passes the spurious signal test indicating a contained bias in the background sample modelling, the signal injection one is more critical and not passed for all the signal samples and mass points.
 For these reasons, the study presented here is considered as preliminary and the choice of both the WP for the event selection and the background PDF should be further investigated, before applying them in the final analysis on the real data.
+
+\begin{table}[ht!]
+\centering
+\begin{tabular}{||>{\columncolor{lightgray}}c|c|c|c|c|c||}
+\hline
+\textbf{Signal} & VcXH\_2300 & VcXH\_3400 & VcXH\_6000 & VzWW\_2000 & VzWW\_3000 \\
+\hline
+\textbf{Passed} & \xmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\hline\hline
+\textbf{Signal} &  VzWW\_4000 & VzWW\_5000 & Wprime & DJ & / \\
+\hline
+\textbf{Passed}&  \checkmark & \xmark & \checkmark & \checkmark & / \\
+\hline
+\end{tabular}
+\caption{Lists of signal hypotheses passing or not the signal injection test.}
+\label{tab:ADJJ/Validation/SINJ/SINJ_check}
+\end{table}
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -1121,7 +1141,7 @@ For these reasons, the study presented here is considered as preliminary and the
 
 Using the validated PDFs for the signal and background samples, the upper limits on the signal cross-section are derived.\\
 This computation is performed with the \texttt{quickLimit} utility of the \texttt{quickFit} package, which is part of the \texttt{Frequentist Framework} of the ATLAS collaboration.
-The utility implements the \texttt{$CL_S$} method to determine 95\% Confidence Level (CL) intervals \cite{Lik_tests}, leveraging the likelihood defined in Eq. \ref{eq:ADJJ/Validation/likelihood} computed with the best-fit parameters obtained from the fits to the sample considering also the systematic uncertainty associated with background modeling, as discussed in Sec. \ref{sec:ADJJ/Validation/SPT}.
+The utility implements the \texttt{$CL_S$} method to determine 95\% Confidence Level (CL) intervals \cite{Lik_tests}, leveraging the likelihood defined in Eq. \ref{eq:ADJJ/Validation/likelihood} computed with the best-fit parameters obtained from the fits to the sample considering also the systematic uncertainty associated with background modelling, as discussed in Sec. \ref{sec:ADJJ/Validation/SPT}.
 The \texttt{$CL_S$} method is defined as:
 \begin{equation}
   CL_S = \frac{CL_{S+B}}{CL_B}
@@ -1557,14 +1577,13 @@ After the study presented in this section, the workflow of the analysis on the M
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \newpage
-\section{Analysis workflows on real data}\label{sec:ADJJ/WF}
+\section{Proposal for analysis workflows on real data}\label{sec:ADJJ/WF}
 
-Among the studies conducted during this thesis project, the workflow of the analysis on real data has been analysed and defined.\\
-This phase is essential.
-In fact, based on the requirements for the analysis on real data, the needed tests and validations on the MC sample are performed in order to ensure that the analysis is robust and reliable.
+Among the studies conducted during this thesis project, the workflow of the analysis on real data has been analysed and a strategy to be implemented has been proposed.\\
+This phase is essential because, based on the requirements for the analysis on real data, the needed tests and validations on the MC sample are performed in order to ensure that the analysis is robust and reliable.
 It should be noted that the MC phase works as preliminary testing for the final analysis, which will be conducted directly on real data, satisfying the requirement for AD to be data driven.\\
 The workflow of the analysis on real data has been inserted in a diagram.
-It is presented in Fig. \ref{fig:ADJJ/WF/WFdiagram_p1} and Fig. \ref{fig:ADJJ/WF/WFdiagram_p2}, where the first and second half of the diagram are shown respectively, and commented step by step below.
+It is presented in Fig. \ref{fig:ADJJ/WF/WFdiagram_p1} - \ref{fig:ADJJ/WF/WFdiagram_p5}, and commented step by step below.
 The diagram has values which refer to a partial Run 3 sample with $\mathcal{L} = 165.0 \text{ fb}^{-1}$ , which is the luminosity on which the analysis on real data should be concluded.
 On the other hand, as visible from the studies conducted on the MC sample, there is no limitations in principle in using the full Run 3 statistics of $\mathcal{L} = 332.0 \text{ fb}^{-1}$.
 Whether to use the full Run 3 sample or a partial one is a choice that will be made based on the results of the MC phase after all the optimisations will be done and systematic uncertainties will be taken into account.
@@ -1572,31 +1591,60 @@ Whether to use the full Run 3 sample or a partial one is a choice that will be m
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=1,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{First half of the diagram showing the workflow of the analysis on real data.}
+    \caption{Workflow of the analysis on real data up to determination of the amount of data to use for the GNN training.}
     \label{fig:ADJJ/WF/WFdiagram_p1}
 \end{figure}
+
+
+
+\noindent The starting point of the data driven analysis is crucial and it is represented by the amount of data to use to train the GNN.
+In fact, in AD the network should be trained on a sample where it is assumed that the presence of signal is negligible with respect to the background.
+This requirement is easily satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of real data, where the possible presence of signal is unknown.
+For this aspect, the robut MC tests conducted are essential.
+Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it should be possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of real data.
+At the moment a threshold can not be determined from the results in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} due to the fact that the region where the limits computed in the analysis are below the theoretical values vary from signal to signal and mass point.
+Moreover, the results of the signal injection tests presented in Sec. \ref{sec:ADJJ/Validation/SINJ} highlight the presence of critical aspects in the analysis, requiring more detailed validations of the possible signal contamination in the sample.
+A more stable result is expected to be obtained once the MC phase will be fully optimized and concluded.
+For the moment, the threshold is set in the diagrams at $\mathcal{L} = 16.5 \text{ fb}^{-1}$, which is 10\% of the luminosity of the partial Run 3 sample.
+It is important to underline that this value is only a reference for this discussion and it is not a final choice, which will be made after the conclusion of the MC phase.\\
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=2,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Second half of the diagram showing the workflow of the analysis on real data.}
+    \caption{Workflow of the analysis on real data up to the request for the sample with the full target statistics.}
     \label{fig:ADJJ/WF/WFdiagram_p2}
 \end{figure}
 
-\noindent The starting point of the data driven analysis is crucial and it is represented by the amount of data to use to train the GNN.
-In fact, in AD the network should be trained on a sample where it is assumed that the presence of signal is negligible with respect to the background.
-This requirement is easly satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of real data, where the possible presence of signal is unknown.
-For this aspect, the robut MC tests conducted are essential.
-Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it is possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of real data.
-Looking at the results in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ}, it is visible that the region where the limits computed in the analysis are below the theoretical values vary from signal to signal and mass point.
-A more stable result is expected to be obtained once the MC phase will be fully optimized and concluded.
-For the moment, the threshold is set, as a reference, at $\mathcal{L} = 16.5 \text{ fb}^{-1}$, which is 10\% of the luminosity of the partial Run 3 sample.
-After the determination of the threshold, the unblinding of a sample of equivalent amount of data, the check of the correct shape of the distributions of the variables used, the upper limits are derived, planning to not observe any significant excess (p-value < 0.05).
-In case any excess is observed, the masking techinque is applied to the region of the excess and the analysis is repeated, until no significant excess is observed.\\
+\noindent After the determination of the threshold, the unblinding of a sample of equivalent amount of data, the check of the correct shape of the distributions of the variables used, the upper limits are derived, planning to not observe any significant excess (p-value < 0.05).
+In case any excess is observed, the masking techinque is applied to the region of the excess and the analysis is carefully repeated, trying to avoid the inclusion of any statistical bias in the analysis, and the excess is interpreted and explained.\\
 Once the sample has been determined to contain only a negligible and not visible amount of signal, the GNN is trained on it and the WPs are computed on the AS distribution as thresholds to reject from 20\% to 99.9\% of the sample.\\
 At this point, leveraging the validation tests conducted on the MC sample for the PDFs modelling, the functional form modelling the $m_{JJ}$ will be determined. 
 Subsequently, the full target sample will be analysed, executing controls on the distributions of all the variables but the $m_{JJ}$, which is blinded, to avoid any bias in the analysis.
-Then the sample will be passed to the trained GNN and on the computed AS, the cuts at the determined WP will be applied to determine the SR.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[page=3,width=6 in]{Images/Chap5/WFdata.pdf}
+    \caption{Workflow of the analysis on real data up to the computation of the AS for the sample with the full target statistics.}
+    \label{fig:ADJJ/WF/WFdiagram_p3}
+\end{figure}
+
+\noindent Then the sample will be passed to the trained GNN and on the computed AS, the cuts at the determined WP will be applied to determine the SR.
 Only at this stage, the final fit on the $m_{JJ}$ distribution with the unblinding of the data will be performed.
 If any excess will be observed, they will be interpreted and explained.
-In the opposite, more probable, scenario, the upper limits will be derived and, after the final comparisons, the analysis will be concluded.
+In the opposite, more probable, scenario, the upper limits will be derived and, after the final comparisons, the analysis will end.\\
+In conclusion, it is necessary to highlight that the workflow of the analysis on real data presented above is still under development and discussion, determinig the crucial aspects to carefully validate on MC samples before moving to real data.
+For these reasons, the workflow is not yet considered definitive and it is expected to be modified and improved in the next months, before the analysis on real data will be executed.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[page=4,width=6 in]{Images/Chap5/WFdata.pdf}
+    \caption{Workflow of the analysis on real data up to the unblinding of the SR.}
+    \label{fig:ADJJ/WF/WFdiagram_p4}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[page=5,width=6 in]{Images/Chap5/WFdata.pdf}
+    \caption{Workflow of the analysis on real data up to the conclusion of the analysis.}
+    \label{fig:ADJJ/WF/WFdiagram_p5}
+\end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  23 SEP 2026 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  24 SEP 2026 01:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -746,7 +746,16 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count399
 \multirow@dima=\skip105
 \bigstrutjot=\dimen299
-) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
+) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks52
@@ -939,12 +948,12 @@ File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+))
+(C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+)) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1060,24 +1069,24 @@ Writing index file Tesi.idx
 (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
 \openout1 = `Tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1142,14 +1151,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \textsubscript on input line 80.
-LaTeX Info: Redefining \microtypecontext on input line 80.
-Package microtype Info: Applying patch `item' on input line 80.
-Package microtype Info: Applying patch `toc' on input line 80.
-Package microtype Info: Applying patch `eqnum' on input line 80.
-Package microtype Info: Applying patch `footnote' on input line 80.
-Package microtype Info: Applying patch `verbatim' on input line 80.
-LaTeX Info: Redefining \microtypesetup on input line 80.
+LaTeX Info: Redefining \textsubscript on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 83.
+Package microtype Info: Applying patch `item' on input line 83.
+Package microtype Info: Applying patch `toc' on input line 83.
+Package microtype Info: Applying patch `eqnum' on input line 83.
+Package microtype Info: Applying patch `footnote' on input line 83.
+Package microtype Info: Applying patch `verbatim' on input line 83.
+LaTeX Info: Redefining \microtypesetup on input line 83.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1163,7 +1172,7 @@ Package microtype Info: No adjustment of character kerning.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring ON on input line 80.
+Package hyperref Info: Link coloring ON on input line 83.
  (Tesi.out) (Tesi.out)
 \@outlinefile=\write7
 \openout7 = `Tesi.out'.
@@ -1171,7 +1180,7 @@ Package hyperref Info: Link coloring ON on input line 80.
 Package babel Info: Main language set to 'english'.
 \SAP@parboxindent=\skip108
 \SAP@parboxwidth=\skip109
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 84.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1182,56 +1191,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 <sapienzalogo.pdf, id=298, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
-Package pdftex.def Info: sapienzalogo.pdf  used on input line 84.
+Package pdftex.def Info: sapienzalogo.pdf  used on input line 87.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
  [1
 
 
 
 {C:/Users/valer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <C:/Users/valer/AppData/Local/Programs/MiKTeX/tex/latex/sapthesis/sapienzalogo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 84.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 84.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 87.
 (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 84.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 84.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 84.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 84.
+(Font)              <10> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 84.
+(Font)              <7> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 84.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+(Font)              <5> on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 
  []
 
@@ -1239,7 +1248,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--84
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \dedication
+l.87 \dedication
                 {"Te ne sei accorto, sì\\ [1
 
 {C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2
@@ -1278,7 +1287,7 @@ l.36 ...2.3}Jet calibration}{36}{subsection.3.2.3}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \newpage
+l.109 \newpage
                [2] [3]
 \openout2 = `Chap_0_Intro.aux'.
 
@@ -1295,7 +1304,7 @@ l.21
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \include{Chap_0_Intro}
+l.114 \include{Chap_0_Intro}
                              [2]
 \openout2 = `Chap_1.aux'.
 
@@ -1949,293 +1958,349 @@ Underfull \hbox (badness 10000) in paragraph at lines 823--826
 <Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png, id=1678, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png  used on input line 916.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png  used on input line 919.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
 <Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png, id=1679, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png  used on input line 923.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png  used on input line 926.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
-<Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, id=1683, 569.12625pt x 552.0625pt>
+ [71 <./Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png>]
+<Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, id=1689, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf  used on input line 942.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf  used on input line 945.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, id=1684, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, id=1690, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf  used on input line 949.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf  used on input line 952.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, id=1685, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, id=1691, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf  used on input line 959.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf  used on input line 962.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, id=1686, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, id=1692, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf  used on input line 966.
+Package pdftex.def Info: Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf  used on input line 969.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
 
-Overfull \hbox (55.11705pt too wide) in paragraph at lines 978--989
+Overfull \hbox (55.11705pt too wide) in paragraph at lines 981--992
  [][] 
  []
 
-[71 <./Images/Chap5/DataPlots/SPT/VcXH_3400_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_2000_lumi1_fit.png>] [72 <./Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, page is rotated 90 degrees>] [73]
-<Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png, id=1882, 798.985pt x 674.52pt>
+[72 <./Images/Chap5/DataPlots/SPT/spuriousSignal_VcXH_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_VzWW_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_Wprime_lumi1.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/spuriousSignal_DJ_lumi1.0.pdf, page is rotated 90 degrees>] [73]
+<Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png, id=1881, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png  used on input line 1037.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png  used on input line 1040.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
-<Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png, id=1883, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png, id=1882, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png  used on input line 1044.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png  used on input line 1047.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
-<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png, id=1886, 899.36pt x 875.27pt>
+ [74 <./Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png> <./Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png>]
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png, id=1891, 899.36pt x 875.27pt>
 File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png  used on input line 1068.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png  used on input line 1071.
 (pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
-<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png, id=1887, 899.36pt x 875.27pt>
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png, id=1892, 899.36pt x 875.27pt>
 File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png  used on input line 1075.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png  used on input line 1078.
 (pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
-<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png, id=1888, 899.36pt x 875.27pt>
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png, id=1893, 899.36pt x 875.27pt>
 File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png  used on input line 1085.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png  used on input line 1088.
 (pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
-<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png, id=1889, 899.36pt x 875.27pt>
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png, id=1894, 899.36pt x 875.27pt>
 File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png  used on input line 1092.
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png  used on input line 1095.
 (pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
- [74 <./Images/Chap5/DataPlots/SINJ/VcXH3400_seed1_lumi1.png> <./Images/Chap5/DataPlots/SINJ/VzWW2000_seed1_lumi1.png>] [75 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png>]
-<Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png, id=1905, 798.985pt x 674.52pt>
+ [75 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png>]
+Overfull \hbox (38.53648pt too wide) in paragraph at lines 1123--1134
+ [][] 
+ []
+
+[76]
+<Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png, id=1913, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png  used on input line 1140.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png  used on input line 1160.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
-<Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png, id=1906, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png, id=1914, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png  used on input line 1147.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png  used on input line 1167.
 (pdftex.def)             Requested size: 178.19879pt x 150.43274pt.
- [76]
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1917, page=1, 569.12625pt x 434.62375pt>
+ [77 <./Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png>]
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1925, page=1, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 1>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page1 used on input line 1176.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page1 used on input line 1196.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1918, page=2, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1926, page=2, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 2>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page2 used on input line 1183.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page2 used on input line 1203.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1919, page=3, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1927, page=3, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 3>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page3 used on input line 1193.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page3 used on input line 1213.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1920, page=4, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1928, page=4, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 4>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page4 used on input line 1209.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page4 used on input line 1229.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1921, page=5, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1929, page=5, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 5>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page5 used on input line 1216.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page5 used on input line 1236.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1922, page=6, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1930, page=6, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 6>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page6 used on input line 1226.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page6 used on input line 1246.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1923, page=7, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1931, page=7, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 7>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page7 used on input line 1233.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page7 used on input line 1253.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1924, page=8, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1932, page=8, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 8>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page8 used on input line 1250.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page8 used on input line 1270.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1925, page=9, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, id=1933, page=9, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page 9>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page9 used on input line 1257.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf , page9 used on input line 1277.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-
-Overfull \hbox (41.47084pt too wide) in paragraph at lines 1276--1306
+ [78 <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees>]
+Overfull \hbox (41.47084pt too wide) in paragraph at lines 1296--1326
  [][] 
  []
 
-<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf, id=1931, 741.353pt x 425.61432pt>
+<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf, id=1990, 741.353pt x 425.61432pt>
 File: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf  used on input line 1316.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf  used on input line 1336.
 (pdftex.def)             Requested size: 190.07831pt x 109.12444pt.
-<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf, id=1932, 741.353pt x 425.61432pt>
+<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf, id=1991, 741.353pt x 425.61432pt>
 File: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf  used on input line 1323.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf  used on input line 1343.
 (pdftex.def)             Requested size: 190.07831pt x 109.12444pt.
-<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf, id=1933, 741.353pt x 425.61432pt>
+<Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf, id=1992, 741.353pt x 425.61432pt>
 File: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf  used on input line 1333.
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf  used on input line 1353.
 (pdftex.def)             Requested size: 190.07831pt x 109.12444pt.
-[77 <./Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png>] [78 <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1358.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1358.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1358.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1358.
-
 [79 <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees>]
-<Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf, id=2003, 569.12625pt x 552.0625pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1378.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1378.
+
+<Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf, id=2006, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf  used on input line 1369.
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf  used on input line 1389.
 (pdftex.def)             Requested size: 252.94499pt x 245.35956pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1393--1400
+[80 <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees>] [81 <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf> <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf> <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1420
 
  []
 
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2009, page=1, 569.12625pt x 434.62375pt>
+[82 <./Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf, page is rotated 90 degrees>]
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2320, page=1, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 1>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page1 used on input line 1408.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page1 used on input line 1428.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2010, page=2, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2321, page=2, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 2>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page2 used on input line 1415.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page2 used on input line 1435.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2011, page=3, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2322, page=3, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 3>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page3 used on input line 1425.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page3 used on input line 1445.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2012, page=8, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2323, page=8, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 8>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page8 used on input line 1432.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page8 used on input line 1452.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2013, page=4, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2324, page=4, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 4>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page4 used on input line 1448.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page4 used on input line 1468.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2014, page=5, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2325, page=5, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 5>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page5 used on input line 1455.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page5 used on input line 1475.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2015, page=6, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2326, page=6, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 6>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page6 used on input line 1465.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page6 used on input line 1485.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
-<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2016, page=7, 569.12625pt x 434.62375pt>
+<Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, id=2327, page=7, 569.12625pt x 434.62375pt>
 File: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page 7>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page7 used on input line 1472.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf , page7 used on input line 1492.
 (pdftex.def)             Requested size: 178.19879pt x 136.08485pt.
 
-Overfull \hbox (40.24585pt too wide) in paragraph at lines 1486--1513
+Overfull \hbox (40.24585pt too wide) in paragraph at lines 1506--1533
  [][] 
  []
 
-<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf, id=2017, 741.353pt x 425.61432pt>
+<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf, id=2328, 741.353pt x 425.61432pt>
 File: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf  used on input line 1523.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf  used on input line 1543.
 (pdftex.def)             Requested size: 190.07831pt x 109.12444pt.
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf, id=2018, 963.6pt x 542.025pt>
+<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf, id=2329, 963.6pt x 542.025pt>
 File: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf  used on input line 1530.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf  used on input line 1550.
 (pdftex.def)             Requested size: 190.07831pt x 106.91435pt.
-<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf, id=2019, 741.353pt x 425.61432pt>
+<Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf, id=2330, 741.353pt x 425.61432pt>
 File: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf>
-Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf  used on input line 1540.
+Package pdftex.def Info: Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf  used on input line 1560.
 (pdftex.def)             Requested size: 190.07831pt x 109.12444pt.
-[80 <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf, page is rotated 90 degrees>] [81 <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf> <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf> <./Images/Chap5/DataPlots/Limits/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf>] [82 <./Images/Chap5/DataPlots/Signals_and_BKGs_D2_TotalBkg_ev.pdf, page is rotated 90 degrees>] [83 <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees>] [84 <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees>] [85 <./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf> <./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf
+[83 <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees>] [84 <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/D2Res/limit_vs_lumi_all_signals_EV.pdf, page is rotated 90 degrees>] [85 <./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_139fb.pdf> <./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_165fb.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/DataPlots/D2Res/signal_exclusion_grid_fractionalDifference_exp_332fb.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+>] [86]
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/WFdata.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap5/WFdata.pdf, id=2566, page=1, 1195.5867pt x 1689.19081pt>
+<Images/Chap5/WFdata.pdf, id=2573, page=1, 722.7pt x 406.3983pt>
 File: Images/Chap5/WFdata.pdf Graphic file (type pdf)
 <use Images/Chap5/WFdata.pdf, page 1>
-Package pdftex.def Info: Images/Chap5/WFdata.pdf , page1 used on input line 1574.
-(pdftex.def)             Requested size: 433.62pt x 612.64462pt.
+Package pdftex.def Info: Images/Chap5/WFdata.pdf , page1 used on input line 1593.
+(pdftex.def)             Requested size: 433.62pt x 243.84085pt.
 
-Overfull \hbox (37.62pt too wide) in paragraph at lines 1574--1575
+Overfull \hbox (37.62pt too wide) in paragraph at lines 1593--1594
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1610
+
+ []
+
+[87 <./Images/Chap5/WFdata.pdf>]
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/WFdata.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap5/WFdata.pdf, id=2604, page=2, 722.7pt x 406.3983pt>
+File: Images/Chap5/WFdata.pdf Graphic file (type pdf)
+<use Images/Chap5/WFdata.pdf, page 2>
+Package pdftex.def Info: Images/Chap5/WFdata.pdf , page2 used on input line 1613.
+(pdftex.def)             Requested size: 433.62pt x 243.84085pt.
+
+Overfull \hbox (37.62pt too wide) in paragraph at lines 1613--1614
+ [][] 
+ []
+
+[88 <./Images/Chap5/WFdata.pdf>]
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/WFdata.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap5/WFdata.pdf, id=2626, page=3, 722.7pt x 406.3983pt>
+File: Images/Chap5/WFdata.pdf Graphic file (type pdf)
+<use Images/Chap5/WFdata.pdf, page 3>
+Package pdftex.def Info: Images/Chap5/WFdata.pdf , page3 used on input line 1626.
+(pdftex.def)             Requested size: 433.62pt x 243.84085pt.
+
+Overfull \hbox (37.62pt too wide) in paragraph at lines 1626--1627
  [][] 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./Images/Chap5/WFdata.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Chap5/WFdata.pdf, id=2567, page=2, 1195.5867pt x 1689.19081pt>
+<Images/Chap5/WFdata.pdf, id=2627, page=4, 722.7pt x 406.3983pt>
 File: Images/Chap5/WFdata.pdf Graphic file (type pdf)
-<use Images/Chap5/WFdata.pdf, page 2>
-Package pdftex.def Info: Images/Chap5/WFdata.pdf , page2 used on input line 1581.
-(pdftex.def)             Requested size: 433.62pt x 612.64462pt.
+<use Images/Chap5/WFdata.pdf, page 4>
+Package pdftex.def Info: Images/Chap5/WFdata.pdf , page4 used on input line 1640.
+(pdftex.def)             Requested size: 433.62pt x 243.84085pt.
 
-Overfull \hbox (37.62pt too wide) in paragraph at lines 1581--1582
+Overfull \hbox (37.62pt too wide) in paragraph at lines 1640--1641
  [][] 
  []
 
-) [86] [87] [88 <./Images/Chap5/WFdata.pdf>] [89 <./Images/Chap5/WFdata.pdf>]
+
+
+pdfTeX warning: pdflatex (file ./Images/Chap5/WFdata.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Chap5/WFdata.pdf, id=2628, page=5, 722.7pt x 406.3983pt>
+File: Images/Chap5/WFdata.pdf Graphic file (type pdf)
+<use Images/Chap5/WFdata.pdf, page 5>
+Package pdftex.def Info: Images/Chap5/WFdata.pdf , page5 used on input line 1647.
+(pdftex.def)             Requested size: 433.62pt x 243.84085pt.
+
+Overfull \hbox (37.62pt too wide) in paragraph at lines 1647--1648
+ [][] 
+ []
+
+) [89 <./Images/Chap5/WFdata.pdf>] [90 <./Images/Chap5/WFdata.pdf> <./Images/Chap5/WFdata.pdf>]
 \openout2 = `Chap_6_concl.aux'.
 
  (Chap_6_concl.tex
 Chapter 6.
-[90
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--26
+
+ []
+
+[91
 
 
 
 
-]) [91] (Tesi.bbl [92
+]) [92] (Tesi.bbl [93
 
 
 
 
 
-] [93] [94] [95]
+] [94] [95] [96]
 Underfull \hbox (badness 1275) in paragraph at lines 399--404
 []\T1/lmr/m/n/10.95 (+20) Scikit-learn.  ROC curve.  URL: [][]$\T1/lmtt/m/n/10.95 https : / / scikit-[]learn . org / stable /
  []
 
-[96]) [97]
+[97]) [98]
 \openout2 = `AppendixA_plots.aux'.
 
- (AppendixA_plots.tex) [98
+ (AppendixA_plots.tex) [99
 
 
 ] (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
@@ -2244,20 +2309,20 @@ LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 1EAB142A32F87BEA36452B63EF1BB55C;13003.
+(rerunfilecheck)             Checksum: CD76945FF738EF94F93B7B9DC513C799;13075.
  ) 
 Here is how much of TeX's memory you used:
- 47564 strings out of 467510
- 1058096 string characters out of 5408794
- 1563082 words of memory out of 5000000
- 75152 multiletter control sequences out of 15000+600000
- 782445 words of font info for 354 fonts, out of 8000000 for 9000
+ 47645 strings out of 467510
+ 1059905 string characters out of 5408794
+ 1545852 words of memory out of 5000000
+ 75216 multiletter control sequences out of 15000+600000
+ 783135 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,131p,2550b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesi.pdf (107 pages, 12983190 bytes).
+ 102i,14n,131p,2550b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Tesi.pdf (108 pages, 13526924 bytes).
 PDF statistics:
- 2965 PDF objects out of 2984 (max. 8388607)
- 425 named destinations out of 1000 (max. 500000)
- 83589 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 3018 PDF objects out of 3580 (max. 8388607)
+ 430 named destinations out of 1000 (max. 500000)
+ 83604 words of extra memory for PDF output out of 89155 (max. 10000000)
 
