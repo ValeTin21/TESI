@@ -8,12 +8,16 @@ A possible solution to some of these issues could be Anomaly Detection (AD), tha
 This thesis investigates whether such an unsupervised approach can be applied to a concrete search. Using ATLAS official Monte Carlo (MC) samples simulating the ATLAS detector during Run-3, a search for BSM resonant signals decaying into hadronic final states with large-radius jets (used to probe boosted resonance topologies) has been conducted, preparing the necessary tools to finalise the analysis on real ATLAS data. Leveraging the Anomaly Score (AS) distributions computed by a Graph Neural Network (GNN) for each jet, the analysis strategy was defined, starting with the definition of Working Points (WPs), thresholds on the AS distribution corresponding to a given background rejection fraction. A crucial part of the strategy was determining the correct modelling function for the background and signals di-jet invariant mass ($m_{JJ}$) distribution. After tuning and validating a Double-Sided Crystal Ball (DSCB) function to model the signals and a 5-parameter function for the background distribution, fits to the MC samples were executed, deriving the expected
 upper limits at 95\% Confidence Level on $m_{JJ}$ using the CLs method, at different AS WPs. The study on MC samples was concluded and fully validated by performing sensitivity studies based on a binned maximum likelihood fit to the di-jet invariant mass distribution.\\
 The thesis is structured as follows. In Chapter \ref{chap:SM_BSM} the Standard Model is presented, together with theories of Physics beyond it. 
-The LHC collider and the ATLAS experiment are discussed in Chapter \ref{chap:LHCAtlas}.
+The LHC collider and the ATLAS experiment are discussed in Chapter \ref{chap:LHCAtlas}, followed, in Chapter \ref{chap:Reco}, by the description of the techniques used within the ATLAS collaboration to reconstruct and identify the particles produced in the collisions.
 Chapter \ref{chap:AD} presents the Anomaly Detection approach.
-The typical workflow of a Particle Physics analysis is described in Chapter \ref{chap:Analysis}.
 Chapter \ref{chap:ADJJ} presents the analysis conducted during this study and its results.
-Finally, conclusions are drawn in Chapter \ref{chap:concl}.\\
-
+Finally, conclusions are drawn in Chapter \ref{chap:concl}.\\[1em]
+The original contributions of this thesis are related to the validation of the GNN training and the implementation of the analysis strategy on the MC samples.
+In particular, after determing that a jet-level AS is a good choice for the analysis, given the reduced correlation with kinematic variables, the WPs were computed, defining an event selection strategy based on the AS distribution.
+Major efforts were spent in the development of the procedures to model and fit the $m_{JJ}$ distribution, both for the background and the signals, through rigorous validation tests.
+The results of these studies were instrumental in sensitivity studies and in the derivation of the expected upper limits on the production cross-section of the signals.
+These studies were followed by the definition of a proposal for the analysis strategy to be applied on real ATLAS Run 3 data.
+All the steps and results of this work are presented in Chapter \ref{chap:ADJJ}.
  
 
 

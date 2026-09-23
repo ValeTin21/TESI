@@ -69,6 +69,6 @@
 \contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{72}{subsection.5.6.2}%
 \contentsline {section}{\numberline {5.7}Upper limits derivation}{74}{section.5.7}%
 \contentsline {section}{\numberline {5.8}Comparison with a $D_2$ based event selection}{78}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{84}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Conclusions}{88}{chapter.6}%
-\contentsline {chapter}{Bibliography}{90}{section*.94}%
+\contentsline {section}{\numberline {5.9}Analysis workflows on real data}{85}{section.5.9}%
+\contentsline {chapter}{\numberline {6}Conclusions}{89}{chapter.6}%
+\contentsline {chapter}{Bibliography}{91}{section*.94}%

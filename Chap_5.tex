@@ -235,7 +235,7 @@ The second termn in the function is a regularization term, with $\lambda$ being 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=3.5 in]{Images/Chap5/Graphics/DeepSVDDloss.png}
-    \caption{Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal{F}$ and the centre of the hypersphere $c$.}
+    \caption{Visual representation of the DeepSVDD loss function, which computes the distance between the output of the network in the space $\mathcal{F}$ and the centre of the hypersphere $c$. Figure from Ref. \cite{DeepSVDD}.}
     \label{fig:ADJJ/GNN/loss}
 \end{figure}
 
@@ -793,25 +793,27 @@ To conduct these tests, the binned profile-likelihood in use is defined as the c
 % \end{equation}
 
 \begin{equation}\label{eq:ADJJ/Validation/likelihood}
-  \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) = \prod_{i}^{N_{bins}} Poiss(n_i | \tilde{\mu}  \cdot f_{DSCB}(\vec{\theta},\vec{k}) + N_{bkg} \cdot f_{BKG}(\vec{\theta},\vec{k})) \cdot \prod_{j}^{N_{syst}} G(\theta_j | 0, 1)
+  \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) = \prod_{i}^{N_{bins}} Poiss(n_i | \mu_s\cdot N_{sig}  \cdot f_{DSCB}(\vec{\theta},\vec{k}) + N_{bkg} \cdot f_{BKG}(\vec{\theta},\vec{k})) \cdot \prod_{j}^{N_{syst}} G(\theta_j)
 \end{equation}
 
 \noindent where the first product runs over the number of bins which are assumed to follow a Poissonian distribution, with $n_i$ entries in each bin $i$.
-The second product is associated to the systematic uncertainties, which are assumed to follow a Gaussian distribution with mean 0 and standard deviation 1.
+The second product is associated to the systematic uncertainties, which are assumed to follow a Gaussian distribution with mean 0 and standard deviation related to the uncertainty.
 The latter term is turned off in the validation tests and it is considered in the upper limits derivation, as discussed in Sec. \ref{sec:ADJJ/UpperLimits}.
 The likelihood depends on the nuisance parameters $\vec{\theta}$, which are constrained during the fit, and the parameters of interest (PoI) $\vec{k}$, which are free to vary during the fit.
-The term $\tilde{\mu}$ is the PoI when the signal hypothesis is tested and it is here defined as $\tilde{\mu} = \mu_s\cdot N_{sig}$, where $\mu_s$ is the signal strength ($\mu_s=\frac{\sigma_{exp}}{\sigma_{SM}}$) and $N_{sig}$ is the number of observed signal events.
+The term $N_{sig}$ is the PoI of this analysis when the signal hypothesis is tested.
+In the following it will be referred to as $N_{sig} = \mu$.
+The quantity $\mu_s$ is the signal strength ($\mu_s=\frac{\sigma_{exp}}{\sigma_{SM}}=\frac{N_{sig,exp}}{N^{SM}_{sig}}$) and it is a normalization factor for the signal PDF.
 $N_{bkg}$ is the number of observed background events, which is a free parameter in the fit.\\
 From the performed fits, a set of values for all the parameters, nuisance and PoI, is obtained.
 Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, discriminates between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
 The likelihood ratio is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/likelihood_ratio}
-  \lambda(\tilde{\mu}) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
+  \lambda(\mu) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
 \end{equation}
 
-\noindent where $\vec{\hat{\hat{\theta}}}$ is the value of $\theta$ that maximizes $\mathcal{L}$ for the specified $\mu_s$.
+\noindent where $\vec{\hat{\hat{\theta}}}$ is the value of $\theta$ that maximizes $\mathcal{L}$ for the specified $\mu$.
 The denominator term is the maximized likelihood function.\\
-The ratio is used to define the test statistic $t_{\mu_s}$, which is a function of the PoI $\mu_s$ and, for the Wilk'sw theorem, follows a $\chi^2$ distribution.
+The ratio is used to define the test statistic $t_{\mu}$, which is a function of the PoI $\mu$ and, for the Wilk's theorem, follows a $\chi^2$ distribution.
 It is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/test_statistic}
   t_{\mu_s} = -2 \cdot \ln(\lambda(\mu_s))
@@ -823,7 +825,7 @@ The p-value is defined as:
   p_{\mu_s} = \int_{t_{\mu_s,obs}}^{\infty} f(t_{\mu_s}|\mu_s) dt_{\mu_s}
 \end{equation}
 
-\noindent where $t_{\mu, obs}$ is the value of the statistic $t_{\mu_s}$ observed from the data and $f(t_{\mu_s}|\mu_s)$ denotes the PDF of $t_{\mu_s}$ under the assumption of the signal strength $\mu$.
+\noindent where $t_{\mu, obs}$ is the value of the statistic $t_{\mu}$ observed from the data and $f(t_{\mu}|\mu)$ denotes the PDF of $t_{\mu}$ under the assumption of the signal strength $\mu$.
 Values of the p-value lower than 0.05 are considered to be statistically significant, meaning that the null hypothesis can be rejected with a confidence level of 95\%.\\
 A particular case of test statistic is the one defined for the background only hypothesis, which is obtained setting $\mu_s=0$ in Eq. \ref{eq:ADJJ/Validation/test_statistic} and it is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/test_statistic_bkg}
@@ -1013,14 +1015,14 @@ The results obtained from the signal injection tests at 1$fb^{-1}$ are shown in 
   % --- First row (Figure a b) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/SINJ_VcXH_lumi1.png}
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.0.png}
     \caption{}
     \label{subfig:ADJJ/Validation/SINJ/SIplots/VXH}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_VzWW_lumi1.65.png}
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.0.png}
     \caption{}
     \label{subfig:ADJJ/Validation/SINJ/SIplots/VWW}
   \end{subfigure}
@@ -1030,19 +1032,19 @@ The results obtained from the signal injection tests at 1$fb^{-1}$ are shown in 
   % --- Second row (Figure c d) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_Wprime_lumi1.png}
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.0.png}
     \caption{}
     \label{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/placeholder_SINJ_DJ_lumi1.png} 
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.0.png} 
     \caption{}
     \label{subfig:ADJJ/Validation/SINJ/SIplots/DJ}
   \end{subfigure}
   
-  \caption{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied and this test can be considered passed.}
+  \caption{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b)  VzWW, (c) Wprime, (d) DarkJets. In most of the cases, the requirements of $S_{spur}/\sigma_{fit}$ within $\pm$ 0.5 are satisfied.}
   \label{fig:ADJJ/Validation/SINJ/SIplots}
 \end{figure}
 
@@ -1079,14 +1081,14 @@ In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sa
   % --- First row (Figure a b) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.pdf}
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Fit_VcXH}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.pdf}
+    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Fit_VzWW}
   \end{subfigure}
@@ -1100,12 +1102,12 @@ The fit results are accepted if the p-value is higher than the canonical 0.05 th
 Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, the requirement is satisfied for all the fits performed, with p-values higher than 0.05 for all the signal hypotheses and luminosities considered.\\
 For the reasons just discussed, it is expected that once the analysis will be performed on the real data, the results associated to the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
 The best-fit parameters are then used to compute the upper limits on the signal cross-section for each signal hypothesis and mass point, at the different tested luminosities.
-Since the PoI of the likelihood of this analysis is the signal yield $\tilde{\mu}$, the limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
+Since the PoI of the likelihood of this analysis is the number of signal $N_{sig}$, referred to as $\mu$, using the definition of signal strength, limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
 \begin{equation}\label{eq:ADJJ/UpperLimits/sigma_limit}
-  \sigma_{exp} = \frac{\tilde{\mu}}{Sig_{int} \cdot R_{lumi}}\cdot \sigma_{th}
+  \sigma_{exp} = \frac{\mu}{Sig_{int} \cdot R_{lumi}}\cdot \sigma_{th}
 \end{equation}
 
-\noindent where $\tilde{\mu}$ is the limit derived on the signal yield, $Sig_{int}$ is the integral of the signal PDF, $R_{lumi}$ is the ratio between the luminosity to which the sample is rescaled and the initial luminosity (1 $fb^{-1}$) and $\sigma_{th}$ is the assumed theoretical cross-section of the signal in question reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.\\
+\noindent where $\mu$ is the limit derived on the number of signal events, $Sig_{int}$ is the integral of the signal PDF serving as $N^{SM}_{sig}$, $R_{lumi}$ is the ratio between the luminosity to which the sample is rescaled and the initial luminosity (1 $fb^{-1}$) and $\sigma_{th}$ is the assumed theoretical cross-section of the signal in question reported in Tab. \ref{tab:sec:ADJJ/dataset/Signal}.\\
 The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $\pm$ 2 $\sigma$ uncertainty bands, are shown in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} for the different signals and luminosities considered in this study.
 
 %%%%%%%%%%%%
@@ -1115,14 +1117,14 @@ The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $
   % --- First row (Figure a b) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=1, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=1, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VcXH2300}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=2, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=2, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VcXH3400}
   \end{subfigure}
@@ -1132,7 +1134,7 @@ The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $
   % --- Second row (Figure c) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=3,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=3,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VcXH600}
   \end{subfigure}
@@ -1148,14 +1150,14 @@ The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $
   % --- First row (Figure a b) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=4, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=4, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VzWW2000}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=5, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=5, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VzWW3000}
   \end{subfigure}
@@ -1165,14 +1167,14 @@ The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $
   % --- Second row (Figure c d) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=6,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=6,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VzWW4000}
   \end{subfigure}
     \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=7,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=7,width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_VzWW5000}
   \end{subfigure}
@@ -1189,14 +1191,14 @@ The derived expected upper limits on $\sigma_{exp}$, together with $\pm$ 1 and $
   % --- First row (Figure a b) ---
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=8, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=8, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_Wprime}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \includegraphics[page=9, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals.pdf}
+    \includegraphics[page=9, width=\textwidth]{Images/Chap5/DataPlots/Limits/limit_vs_lumi_all_signals_SYST.pdf}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Limit_DJ}
   \end{subfigure}
