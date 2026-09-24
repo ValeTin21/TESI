@@ -1,9 +1,119 @@
-\phantomsection
-\appendix 
-\chapter*{Appendix A}
-\section*{Plots}
-
-aasdasdasdsadsadasdas
+% \phantomsection
+% \appendix 
+% \chapter{Other plots of the study}
+% \section*{Other plots of the study}
 
 
+\stepcounter{chapter}
 
+\chapter*{%
+  \vspace*{-20pt}%
+    {\huge\bfseries Appendix \thechapter}\\[1.5ex]%
+  Other plots of the study%
+}
+
+
+% -------------------------------------------------------------------
+% dY distributions
+% -------------------------------------------------------------------
+
+
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png}
+    \caption{}
+    \label{subfig:AppA/dY/total_nomJJ}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_dY.png}
+    \caption{}
+    \label{subfig:AppA/dY/separate_nomJJ}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png}
+    \caption{}
+    \label{subfig:AppA/dY/separatemJJ}
+  \end{subfigure}
+  
+  \caption{Distributions of $|\Delta y|$ with (a) summed background components without requirement on the $m_{JJ}$ range, (b) separate background components  without requirement on the $m_{JJ}$ range and (c) separate components  with requirement on the $m_{JJ}$ range. As visible, requiring the $m_{JJ}$ range of interest has a significant impact on the shape of the background distributions, separating it from the signals.}
+  \label{fig:AppA/dY}
+\end{figure}
+
+% -------------------------------------------------------------------
+% DSCB fits
+% -------------------------------------------------------------------
+
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit2}
+  \end{subfigure}
+
+  \vspace{0.5cm} 
+
+  % --- Second row (Figure c d) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit3}
+  \end{subfigure}
+    \hfill
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit4}
+  \end{subfigure}
+
+    \vspace{0.5cm} 
+
+  % --- Third row (Figure e f ) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit5}
+  \end{subfigure}
+    \hfill
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit6}
+  \end{subfigure}
+
+      \vspace{0.5cm} 
+
+  % --- Fourth row (Figure g ) ---
+  \begin{subfigure}[b]{0.40\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png}
+    \caption{}
+    \label{subfig:AppA/DSCB/fit5}
+  \end{subfigure}
+  
+  \caption{DSCB fits to the $m_{JJ}$ distribution for different signals with AS cut at WP 99\%.}
+  \label{fig:AppA/DSCB}
+\end{figure}

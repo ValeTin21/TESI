@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  24 SEP 2026 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 SEP 2026 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,7 +1066,14 @@ LaTeX Info: Redefining \cite on input line 694.
 
 
 Writing index file Tesi.idx
-(Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
+(Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux
+
+LaTeX Warning: Label `subfig:AppA/DSCB/fit5' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/DSCB/fit5' multiply defined.
+
+))
 \openout1 = `Tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -2330,29 +2337,88 @@ Underfull \hbox (badness 3128) in paragraph at lines 485--490
 ) [98]
 \openout2 = `AppendixA_plots.aux'.
 
- (AppendixA_plots.tex) [99
+ (AppendixA_plots.tex
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png, id=2800, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png  used on input line 26.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY.png, id=2801, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Signals_and_BKGs_dY.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Signals_and_BKGs_dY.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY.png  used on input line 33.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png, id=2802, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png  used on input line 43.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png, id=2803, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png  used on input line 61.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png, id=2804, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png  used on input line 68.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png, id=2805, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png  used on input line 78.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png, id=2806, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png  used on input line 85.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png, id=2807, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png  used on input line 95.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png, id=2808, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png  used on input line 102.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
+<Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png, id=2809, 798.985pt x 774.895pt>
+File: Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png  used on input line 112.
+(pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
 
 
-] (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
+LaTeX Warning: Float too large for page by 68.10768pt on input line 119.
+
+) [99
+
+
+ <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png>] [100 <./Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png>] (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: CD76945FF738EF94F93B7B9DC513C799;13075.
  ) 
 Here is how much of TeX's memory you used:
- 47652 strings out of 467510
- 1060000 string characters out of 5408794
- 1546725 words of memory out of 5000000
- 75222 multiletter control sequences out of 15000+600000
- 783135 words of font info for 356 fonts, out of 8000000 for 9000
+ 47747 strings out of 467510
+ 1064896 string characters out of 5408794
+ 1547969 words of memory out of 5000000
+ 75312 multiletter control sequences out of 15000+600000
+ 783312 words of font info for 358 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,131p,2550b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesi.pdf (108 pages, 13528366 bytes).
+Output written on Tesi.pdf (109 pages, 13828231 bytes).
 PDF statistics:
- 3026 PDF objects out of 3580 (max. 8388607)
- 431 named destinations out of 1000 (max. 500000)
- 83604 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 3042 PDF objects out of 3580 (max. 8388607)
+ 432 named destinations out of 1000 (max. 500000)
+ 83654 words of extra memory for PDF output out of 89155 (max. 10000000)
 
