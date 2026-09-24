@@ -88,7 +88,7 @@ The theoretical cross-sections are those associated with the generated processes
 \hline
  
 \end{tabular}
-\caption{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section.}
+\caption{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample.}
 \label{tab:sec:ADJJ/dataset/Signal}
 \end{table}
 
@@ -765,7 +765,7 @@ f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{\sum_{i=2}^{N}  p_i \cdot \log(x
 N, the order of the polynomial, is a parameter to be determined, which defines the number of free parameters in the function.
 The term $p_0$ is indeed fixed to 1, since it is a normalization factor, which is already taken into account by the \texttt{RooFit} framework, the one responsable to execute fits \cite{RooFit}.\\
 The function defined above is the one forming the background PDF, which is used to perform the fits on the background samples.\\
-Making use of the \texttt{Frequentist Framework} of the ATLAS collaboration and the \texttt{quickFit} tool contained in it (which leverages the \texttt{RooFit} framework), a set of fits is performed on the background samples.
+Making use of the \texttt{Frequentist Framework} of the ATLAS collaboration and the \texttt{quickFit} \cite{quickFit} tool contained in it (which leverages the \texttt{RooFit} framework), a set of fits is performed on the background samples.
 The fits are executed to find the parameters that minimize the negative log-likelihood composed only by the background PDF, with different polynomial orders, to determine the best one to use in the analysis.
 Each fit is iterated 1000 times, with Poissonian fluctuations applied to the data, to ensure a good convergence of the fit and to avoid local minima.
 The best number N of free parameters to use is determined as the one with the minimum mean value of the reduced $\chi^2$ \cite{PearsonChi2}.
@@ -860,23 +860,20 @@ The likelihood ratio is defined as:
 
 \noindent where $\vec{\hat{\hat{\theta}}}$ is the value of $\theta$ that maximizes $\mathcal{L}$ for the specified $\mu$.
 The denominator term is the maximized likelihood function.\\
-The ratio is used to define the test statistic $t_{\mu}$, which is a function of the PoI $\mu$ and, for the Wilk's theorem, follows a $\chi^2$ distribution.
-It is defined as:
+The ratio is used to define the test statistic $t_{\mu}$:
+
 \begin{equation}\label{eq:ADJJ/Validation/test_statistic}
   t_{\mu_s} = -2 \cdot \ln(\lambda(\mu_s))
 \end{equation}
 
-\noindent The test statistic is used to determine the p-value of the fit, to quantify the disagreement between the data and the tested hypothesis.
-The p-value is defined as:
+\noindent $t_{\mu_s}$ is a function of the PoI $\mu$ and, for the Wilk's theorem, follows a $\chi^2$ distribution.
+The p-value of the fit is computed from it:
 \begin{equation}\label{eq:ADJJ/Validation/p_value}
   p_{\mu_s} = \int_{t_{\mu_s,obs}}^{\infty} f(t_{\mu_s}|\mu_s) dt_{\mu_s}
 \end{equation}
 
 \noindent where $t_{\mu, obs}$ is the value of the statistic $t_{\mu}$ observed from the data and $f(t_{\mu}|\mu)$ denotes the PDF of $t_{\mu}$ under the assumption of the signal strength $\mu$.
-Values of the p-value higher than 0.05 are considered to be compatible with the tested hypothesis, pointing out that data do not show a significant statistical disagreement with it.
-In the case of a p-value lower than 0.05, the null hypothesis (sample composed by background only) can be rejected with a confidence level of 95\%.\\
-The interpretation of the p-value presented above is used to verify the presence of a signal in the sample, by testing the background only hypothesis ($\mu_s=0$) and the signal+background hypothesis ($\mu_s>0$).
-The same quantity can be used when evaluating the goodness of the fit, where the null hypothesis is the good agreement between the data and the fitted function with the best-fit parameters, while the alternative hypothesis is the disagreement between the two.\\
+$p_{\mu_s}$ is associated with the probability of observing $t >t_{\mu_s,obs}$, quantifying the disagreement between the data and the tested hypothesis.\\
 A particular case of test statistic is the one defined for the background only hypothesis, which is obtained setting $\mu_s=0$ in Eq. \ref{eq:ADJJ/Validation/test_statistic} and it is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/test_statistic_bkg}
   t_{0} = -2 \cdot \ln(\lambda(0))\quad \text{for} \quad \hat{\mu_s} \ge 0, \quad t_{0} = 0 \quad otherwise
@@ -888,8 +885,21 @@ It is computed as:
   p_{0} = \int_{t_{0,obs}}^{\infty} f(t_{0}|\mu_s=0) dt_{0}
 \end{equation}
 
-\noindent If the $\mu_s = 0$ hypothesis is rejected, it means that the data is not compatible with the background only hypothesis and a signal may be present in the sample.
+\noindent If the $\mu_s = 0$ hypothesis is rejected, it means that the data is not compatible with the background only hypothesis and a signal may be present in the sample.\\
+From these tools, the $CL_s$ method can be introduced \cite{Lik_tests,CLs}.
+The distribution of $t_{\mu_s,obs}$ is scanned for different values of $\mu_s$, to derive the probability of observing a worse t than $t_{\mu_s,obs}$ ($t >t_{\mu_s,obs}$).
+This defines the $CL_{s+b}$, also known as the p-value $p_{s+b}$.
+Similarly, the $CL_b$ ($p_b$) is defined as the probability of observing a worse t than $t_{\mu_s,obs}$ under the background only hypothesis ($\mu_s=0$).
+The $CL_s$ is then defined as the ratio between the two quantities:
+\begin{equation}\label{eq:ADJJ/Validation/CLs}
+  CL_s = \frac{CL_{s+b}}{CL_b}
+\end{equation}
 
+\noindent This quantity is compared with a threshold value $\alpha$, usually set to 0.05.
+Values of $CL_s$ higher than $\alpha$ are considered to be compatible with the tested hypothesis, pointing out that data do not show a significant statistical disagreement with it.
+In the case of $CL_s$ lower than the threshold, the null hypothesis (sample composed by background only) can be rejected with a confidence level of $1-\alpha$ (95\%).\\
+The interpretation of the p-value presented above is used to verify the presence of a signal in the sample, by testing the background only hypothesis ($\mu_s=0$) and the signal+background hypothesis ($\mu_s>0$).
+The same quantity can be used when evaluating the goodness of the fit, where the null hypothesis is the good agreement between the data and the fitted function with the best-fit parameters, while the alternative hypothesis is the disagreement between the two.\\
 %-------------------------------------------------------------------------------
 \subsection{Spurious signal tests}\label{sec:ADJJ/Validation/SPT}
 
@@ -1107,16 +1117,6 @@ Some issues are visible for higher mass points as the VcXH\_6000, where the stat
 Other issues are visible for the lower mass points, where the distribution is more subject to statistical fluctuations due to the binning of the histogram.\\
 For these reasons, the signal injection test at 1 $fb^{-1}$ is considered passed for the samples Wprime and Dark Jets, together with the VzWW signal at lower masses and VcXH at 3400 GeV and 6000 GeV.
 Concerning the other mass points, the test is not passed and the results have to be considered with caution, as discussed in the following.\\
-The study conducted at 1 $fb^{-1}$ is in fact repeated scaling the samples to higher luminosities of [1.65, 16.5, 139.0, 165.0, 332.0]  $fb^{-1}$, to check the stability of the results with increasing statistics.
-The plots associated with these latter tests are reported in Appendix A.
-From those plots, the trend is more crucial than the one observed at lower luminosity.
-In particular, increasing the statistics it is more evident that the only samples passing the signal injection test with the chosen PDFs and event selection are only those with masses around 3-3.5 TeV.
-All the other samples, both at lower and higher masses, show high fluctuations in the main curve and the ratio $S_{spur}/\sigma_{fit}$ clearly deviating from the $\pm$ 0.5 range, meaning that the test is not passed.
-The behaviour observed during this study could be associated with a cut on AS too aggressive, especially for the higher mass points: relaxing the requirement on the computed score, moving it from 99\% to 90\% or 80\%, could allow to recover more background events in the RoI, improving the modelling of samples and, consequently, the results of the test.
-Another possible explanation is that the chosen background PDF, with 4 free parameters, is not flexible enough to model the background sample in the RoI, in particular for higher mass points where the statistics in that region is low.
-Concerning the lower mass points, the issue is probably associated either with the binning of the histogram, which is too tight and more subject to fluctuations, or with the choice of the background PDF.\\
-In conclusion, despite the event selection with WP99 passes the spurious signal test indicating a contained bias in the background sample modelling, the signal injection one is more critical and not passed for all the signal samples and mass points.
-For these reasons, the study presented here is considered as preliminary and the choice of both the WP for the event selection and the background PDF should be further investigated, before applying them in the final analysis on the real data.
 
 \begin{table}[ht!]
 \centering
@@ -1131,9 +1131,21 @@ For these reasons, the study presented here is considered as preliminary and the
 \textbf{Passed}&  \checkmark & \xmark & \checkmark & \checkmark & / \\
 \hline
 \end{tabular}
-\caption{Lists of signal hypotheses passing or not the signal injection test.}
+\caption{Lists of signal hypotheses passing or not the signal injection test at 1 $fb^{-1}$.}
 \label{tab:ADJJ/Validation/SINJ/SINJ_check}
 \end{table}
+
+\noindent The study conducted at 1 $fb^{-1}$ is in fact repeated scaling the samples to higher luminosities of [1.65, 16.5, 139.0, 165.0, 332.0]  $fb^{-1}$, to check the stability of the results with increasing statistics.
+The plots associated with these latter tests are reported in Appendix A.
+From those plots, the trend is more crucial than the one observed at lower luminosity.
+In particular, increasing the statistics it is more evident that the only samples passing the signal injection test with the chosen PDFs and event selection are only those with masses around 3-3.5 TeV.
+All the other samples, both at lower and higher masses, show high fluctuations in the main curve and the ratio $S_{spur}/\sigma_{fit}$ clearly deviating from the $\pm$ 0.5 range, meaning that the test is not passed.
+The behaviour observed during this study could be associated with a cut on AS too aggressive, especially for the higher mass points: relaxing the requirement on the computed score, moving it from 99\% to 90\% or 80\%, could allow to recover more background events in the RoI, improving the modelling of samples and, consequently, the results of the test.
+Another possible explanation is that the chosen background PDF, with 4 free parameters, is not flexible enough to model the background sample in the RoI, in particular for higher mass points where the statistics in that region is low.
+Concerning the lower mass points, the issue is probably associated either with the binning of the histogram, which is too tight and more subject to fluctuations, or with the choice of the background PDF.\\
+In conclusion, despite the event selection with WP99 passes the spurious signal test indicating a contained bias in the background sample modelling, the signal injection one is more critical and not passed for all the signal samples and mass points.
+For these reasons, the study presented here is considered as preliminary and the choice of both the WP for the event selection and the background PDF should be further investigated, before applying them in the final analysis on the real data.
+
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -1141,13 +1153,7 @@ For these reasons, the study presented here is considered as preliminary and the
 
 Using the validated PDFs for the signal and background samples, the upper limits on the signal cross-section are derived.\\
 This computation is performed with the \texttt{quickLimit} utility of the \texttt{quickFit} package, which is part of the \texttt{Frequentist Framework} of the ATLAS collaboration.
-The utility implements the \texttt{$CL_S$} method to determine 95\% Confidence Level (CL) intervals \cite{Lik_tests}, leveraging the likelihood defined in Eq. \ref{eq:ADJJ/Validation/likelihood} computed with the best-fit parameters obtained from the fits to the sample considering also the systematic uncertainty associated with background modelling, as discussed in Sec. \ref{sec:ADJJ/Validation/SPT}.
-The \texttt{$CL_S$} method is defined as:
-\begin{equation}
-  CL_S = \frac{CL_{S+B}}{CL_B}
-\end{equation}
-
-\noindent where $CL_{S+B}$ is the CL of the agreement between the data and the signal plus background hypothesis and $CL_B$, instead, is the CL of the agreement with the background only hypothesis.\\
+The utility implements the \texttt{$CL_S$} method \cite{Lik_tests,CLs}, leveraging the likelihood defined in Eq. \ref{eq:ADJJ/Validation/likelihood} computed with the best-fit parameters obtained from the fits to the sample considering also the systematic uncertainty associated with background modelling, as discussed in Sec. \ref{sec:ADJJ/Validation/SPT}.\\
 In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sample with the combined PDF, taking into account the systematic uncertainty derived from the spurious signal test, are shown for the VcXH\_3400 and VzWW\_2000 signals.
 
 
@@ -1155,16 +1161,16 @@ In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sa
   \centering
 
   % --- First row (Figure a b) ---
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png}
+    \includegraphics[width=1.2\textwidth]{Images/Chap5/DataPlots/Limits/VcXH3400_limitFit_lumi1.png}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Fit_VcXH}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[b]{0.45\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png}
+    \includegraphics[width=1.2\textwidth]{Images/Chap5/DataPlots/Limits/VzWW2000_limitFit_lumi1.png}
     \caption{}
     \label{subfig:ADJJ/UpperLimits/Fit_VzWW}
   \end{subfigure}

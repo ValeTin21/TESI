@@ -26,7 +26,7 @@ Database file #1: bibliography.bib
 Warning--entry type for "DLThesis" isn't style-file defined
 --line 469 of file bibliography.bib
 Warning--entry type for "PhDGRusso" isn't style-file defined
---line 637 of file bibliography.bib
+--line 647 of file bibliography.bib
 Warning--empty publisher in Peskin_QFT
 Warning--empty chapter and pages in Greiner_QCD
 Warning--empty publisher in Greiner_QCD
@@ -62,45 +62,46 @@ Warning--empty year in FF
 Warning--empty chapter and pages in GNN_HEP
 Warning--empty year in ROOT_DSCB
 Warning--empty author in ATLAS_smoothBKG
-You've used 79 entries,
+Warning--empty year in quickFit
+You've used 81 entries,
             2481 wiz_defined-function locations,
-            1018 strings with 17290 characters,
-and the built_in function-call counts, 22933 in all, are:
-= -- 2037
-> -- 783
-< -- 66
-+ -- 384
-- -- 220
-* -- 1342
-:= -- 3677
-add.period$ -- 288
-call.type$ -- 79
-change.case$ -- 151
-chr.to.int$ -- 73
-cite$ -- 120
-duplicate$ -- 1360
-empty$ -- 2328
-format.name$ -- 325
-if$ -- 4937
-int.to.chr$ -- 7
-int.to.str$ -- 80
-missing$ -- 58
-newline$ -- 447
-num.names$ -- 219
-pop$ -- 733
+            1029 strings with 17589 characters,
+and the built_in function-call counts, 23478 in all, are:
+= -- 2087
+> -- 797
+< -- 68
++ -- 393
+- -- 224
+* -- 1369
+:= -- 3764
+add.period$ -- 296
+call.type$ -- 81
+change.case$ -- 155
+chr.to.int$ -- 74
+cite$ -- 123
+duplicate$ -- 1392
+empty$ -- 2386
+format.name$ -- 331
+if$ -- 5055
+int.to.chr$ -- 8
+int.to.str$ -- 82
+missing$ -- 59
+newline$ -- 459
+num.names$ -- 225
+pop$ -- 752
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 81
 quote$ -- 0
-skip$ -- 867
+skip$ -- 888
 stack$ -- 0
-substring$ -- 331
-swap$ -- 171
+substring$ -- 335
+swap$ -- 176
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 523
-warning$ -- 35
-while$ -- 160
+type$ -- 537
+warning$ -- 36
+while$ -- 164
 width$ -- 0
-write$ -- 1050
-(There were 37 warnings)
+write$ -- 1078
+(There were 38 warnings)

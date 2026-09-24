@@ -16,8 +16,8 @@
 \newlabel{sec:ADJJ/dataset/Signal}{{5.1.2}{49}{Signal processes}{subsection.5.1.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Feynman diagram of a $VcXH$ process.}}{50}{figure.caption.53}\protected@file@percent }
 \newlabel{fig:ADJJ/dataset/Signal/Fdiag}{{5.2}{50}{Feynman diagram of a $VcXH$ process}{figure.caption.53}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section.}}{50}{table.caption.54}\protected@file@percent }
-\newlabel{tab:sec:ADJJ/dataset/Signal}{{5.1}{50}{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample. However, this aspect is not relevant for the analysis, because when the fits are executed, the signal yields are normalized in order to have samples associated with the same nominal cross-section}{table.caption.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample.}}{50}{table.caption.54}\protected@file@percent }
+\newlabel{tab:sec:ADJJ/dataset/Signal}{{5.1}{50}{Signal processes considered in the analysis, with their corresponding masses and theoretical cross-sections. It is worth noting that the theoretical cross-section for the Wprime process is extremely low with respect to the other processes; this difference is due to the inclusion of the Branching Ratio for the decays of the sample}{table.caption.54}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Background processes}{50}{subsection.5.1.3}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/BKG}{{5.1.3}{50}{Background processes}{subsection.5.1.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Stacked distribution of $m_{JJ}$ for the dominant background processes.}}{51}{figure.caption.55}\protected@file@percent }
@@ -27,6 +27,8 @@
 \citation{GNN_HEP}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}The event preselection}{52}{subsection.5.1.5}\protected@file@percent }
 \newlabel{sec:ADJJ/dataset/evSel}{{5.1.5}{52}{The event preselection}{subsection.5.1.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Training the ML model }{52}{section.5.2}\protected@file@percent }
+\newlabel{sec:ADJJ/GNN}{{5.2}{52}{Training the ML model}{section.5.2}{}}
 \citation{GNN_HEP}
 \citation{GNN_HEP}
 \citation{EGAT}
@@ -35,8 +37,6 @@
 \citation{GraphPooling}
 \@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Trigger and object definition requirements applied during the event preselection.}}{53}{table.caption.56}\protected@file@percent }
 \newlabel{tab:ADJJ/dataset/evSel/preselection}{{5.2}{53}{Trigger and object definition requirements applied during the event preselection}{table.caption.56}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Training the ML model }{53}{section.5.2}\protected@file@percent }
-\newlabel{sec:ADJJ/GNN}{{5.2}{53}{Training the ML model}{section.5.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Visualisation of sparse jets in the transverse plane on the left and their representation as graphs on the right. Figure from Ref. \cite  {GNN_HEP}.}}{53}{figure.caption.57}\protected@file@percent }
 \newlabel{fig:ADJJ/GNN/jetGraph}{{5.4}{53}{Visualisation of sparse jets in the transverse plane on the left and their representation as graphs on the right. Figure from Ref. \cite {GNN_HEP}}{figure.caption.57}{}}
 \citation{DeepSVDD}
@@ -139,6 +139,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Background}{66}{subsection.5.5.2}\protected@file@percent }
 \newlabel{sec:ADJJ/Model/BKG}{{5.5.2}{66}{Background}{subsection.5.5.2}{}}
 \citation{RooFit}
+\citation{quickFit}
 \citation{PearsonChi2}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape.}}{67}{figure.caption.73}\protected@file@percent }
 \newlabel{fig:ADJJ/Model/BKG/example_QCD}{{5.15}{67}{Example of the $m_{JJ}$ distribution for a background process, without cuts on AS or $|\Delta y|$ applied, showing the smoothly falling shape}{figure.caption.73}{}}
@@ -154,34 +155,36 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5.6}Validating the PDFs}{69}{section.5.6}\protected@file@percent }
 \newlabel{sec:ADJJ/Validation}{{5.6}{69}{Validating the PDFs}{section.5.6}{}}
 \newlabel{eq:ADJJ/Validation/likelihood}{{5.7}{69}{Validating the PDFs}{equation.5.7}{}}
-\citation{ATLAS_smoothBKG}
+\citation{Lik_tests,CLs}
 \newlabel{eq:ADJJ/Validation/likelihood_ratio}{{5.8}{70}{Validating the PDFs}{equation.5.8}{}}
 \newlabel{eq:ADJJ/Validation/test_statistic}{{5.9}{70}{Validating the PDFs}{equation.5.9}{}}
 \newlabel{eq:ADJJ/Validation/p_value}{{5.10}{70}{Validating the PDFs}{equation.5.10}{}}
 \newlabel{eq:ADJJ/Validation/test_statistic_bkg}{{5.11}{70}{Validating the PDFs}{equation.5.11}{}}
 \newlabel{eq:ADJJ/Validation/p_value_bkg}{{5.12}{70}{Validating the PDFs}{equation.5.12}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{70}{subsection.5.6.1}\protected@file@percent }
-\newlabel{sec:ADJJ/Validation/SPT}{{5.6.1}{70}{Spurious signal tests}{subsection.5.6.1}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/aaa}{{5.18a}{71}{\relax }{figure.caption.77}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/aaa}{{a}{71}{\relax }{figure.caption.77}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/bbb}{{5.18b}{71}{\relax }{figure.caption.77}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/bbb}{{b}{71}{\relax }{figure.caption.77}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}}{71}{figure.caption.77}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SPT/SPFit}{{5.18}{71}{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}{figure.caption.77}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VXH}{{5.19a}{72}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VXH}{{a}{72}{\relax }{figure.caption.78}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VWW}{{5.19b}{72}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VWW}{{b}{72}{\relax }{figure.caption.78}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{5.19c}{72}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{c}{72}{\relax }{figure.caption.78}{}}
-\newlabel{subfig:ADJJ/Validation/SPT/SPplots/DJ}{{5.19d}{72}{\relax }{figure.caption.78}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/DJ}{{d}{72}{\relax }{figure.caption.78}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. The quantity on the x-axis is the true mass of the signal hypothesis, while the y-axis is the fitted amount of signal $S_{spur}$ in the upper pad and the ratio $S_{spur}/\sigma _{fit}$ in the lower pad. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed.}}{72}{figure.caption.78}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SPT/SPplots}{{5.19}{72}{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. The quantity on the x-axis is the true mass of the signal hypothesis, while the y-axis is the fitted amount of signal $S_{spur}$ in the upper pad and the ratio $S_{spur}/\sigma _{fit}$ in the lower pad. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed}{figure.caption.78}{}}
+\newlabel{eq:ADJJ/Validation/CLs}{{5.13}{70}{Validating the PDFs}{equation.5.13}{}}
+\citation{ATLAS_smoothBKG}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Spurious signal tests}{71}{subsection.5.6.1}\protected@file@percent }
+\newlabel{sec:ADJJ/Validation/SPT}{{5.6.1}{71}{Spurious signal tests}{subsection.5.6.1}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/aaa}{{5.18a}{72}{\relax }{figure.caption.77}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/aaa}{{a}{72}{\relax }{figure.caption.77}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/bbb}{{5.18b}{72}{\relax }{figure.caption.77}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/bbb}{{b}{72}{\relax }{figure.caption.77}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}}{72}{figure.caption.77}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SPT/SPFit}{{5.18}{72}{Fits for the spurious signal test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}{figure.caption.77}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed.}}{72}{table.caption.79}\protected@file@percent }
 \newlabel{tab:ADJJ/Validation/SPT/SPvalue}{{5.9}{72}{Ratio values $|S_{spur}/\sigma _{fit}|$ for the spurious signal test at 1 $fb^{-1}$ for the different signal samples and mass points. All values are within the $\pm $ 0.5 range, meaning that the test is considered passed}{table.caption.79}{}}
+\newlabel{ADJJ/Validation/SPT/Modified_likelihood}{{5.14}{72}{Spurious signal tests}{equation.5.14}{}}
 \citation{Lik_tests}
-\newlabel{ADJJ/Validation/SPT/Modified_likelihood}{{5.13}{73}{Spurious signal tests}{equation.5.13}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VXH}{{5.19a}{73}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VXH}{{a}{73}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/VWW}{{5.19b}{73}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/VWW}{{b}{73}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{5.19c}{73}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/Wprime}{{c}{73}{\relax }{figure.caption.78}{}}
+\newlabel{subfig:ADJJ/Validation/SPT/SPplots/DJ}{{5.19d}{73}{\relax }{figure.caption.78}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SPT/SPplots/DJ}{{d}{73}{\relax }{figure.caption.78}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. The quantity on the x-axis is the true mass of the signal hypothesis, while the y-axis is the fitted amount of signal $S_{spur}$ in the upper pad and the ratio $S_{spur}/\sigma _{fit}$ in the lower pad. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed.}}{73}{figure.caption.78}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SPT/SPplots}{{5.19}{73}{Spurious signal test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. The quantity on the x-axis is the true mass of the signal hypothesis, while the y-axis is the fitted amount of signal $S_{spur}$ in the upper pad and the ratio $S_{spur}/\sigma _{fit}$ in the lower pad. In all cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied and this test can be considered passed}{figure.caption.78}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Signal injection tests}{73}{subsection.5.6.2}\protected@file@percent }
 \newlabel{sec:ADJJ/Validation/SINJ}{{5.6.2}{73}{Signal injection tests}{subsection.5.6.2}{}}
 \newlabel{subfig:ADJJ/Validation/SINJ/SINJfit/aaa}{{5.20a}{74}{\relax }{figure.caption.80}{}}
@@ -190,28 +193,28 @@
 \newlabel{sub@subfig:ADJJ/Validation/SINJ/SINJfit/bbb}{{b}{74}{\relax }{figure.caption.80}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected.}}{74}{figure.caption.80}\protected@file@percent }
 \newlabel{fig:ADJJ/Validation/SINJ/SINJfit}{{5.20}{74}{Fits for the signal injection test at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000, with a significance Z=5 injected}{figure.caption.80}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{5.21a}{75}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{a}{75}{\relax }{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{5.21b}{75}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{b}{75}{\relax }{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{5.21c}{75}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{c}{75}{\relax }{figure.caption.81}{}}
-\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{5.21d}{75}{\relax }{figure.caption.81}{}}
-\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{d}{75}{\relax }{figure.caption.81}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. Each plot shows a different curve for each mass point of the signal hypothesis, with the x-axis being the injected significance and the y-axis being the fitted significance. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied.}}{75}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:ADJJ/Validation/SINJ/SIplots}{{5.21}{75}{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. Each plot shows a different curve for each mass point of the signal hypothesis, with the x-axis being the injected significance and the y-axis being the fitted significance. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied}{figure.caption.81}{}}
-\citation{Lik_tests}
-\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Lists of signal hypotheses passing or not the signal injection test.}}{76}{table.caption.82}\protected@file@percent }
-\newlabel{tab:ADJJ/Validation/SINJ/SINJ_check}{{5.10}{76}{Lists of signal hypotheses passing or not the signal injection test}{table.caption.82}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.7}Upper limits derivation}{76}{section.5.7}\protected@file@percent }
-\newlabel{sec:ADJJ/UpperLimits}{{5.7}{76}{Upper limits derivation}{section.5.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Lists of signal hypotheses passing or not the signal injection test at 1 $fb^{-1}$.}}{75}{table.caption.82}\protected@file@percent }
+\newlabel{tab:ADJJ/Validation/SINJ/SINJ_check}{{5.10}{75}{Lists of signal hypotheses passing or not the signal injection test at 1 $fb^{-1}$}{table.caption.82}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{5.21a}{76}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VXH}{{a}{76}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{5.21b}{76}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/VWW}{{b}{76}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{5.21c}{76}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/Wprime}{{c}{76}{\relax }{figure.caption.81}{}}
+\newlabel{subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{5.21d}{76}{\relax }{figure.caption.81}{}}
+\newlabel{sub@subfig:ADJJ/Validation/SINJ/SIplots/DJ}{{d}{76}{\relax }{figure.caption.81}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. Each plot shows a different curve for each mass point of the signal hypothesis, with the x-axis being the injected significance and the y-axis being the fitted significance. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied.}}{76}{figure.caption.81}\protected@file@percent }
+\newlabel{fig:ADJJ/Validation/SINJ/SIplots}{{5.21}{76}{Signal injection test results at 1 $fb^{-1}$ for signal process (a) VcXH, (b) VzWW, (c) Wprime, (d) DarkJets. Each plot shows a different curve for each mass point of the signal hypothesis, with the x-axis being the injected significance and the y-axis being the fitted significance. In most of the cases, the requirements of $S_{spur}/\sigma _{fit}$ within $\pm $ 0.5 are satisfied}{figure.caption.81}{}}
+\citation{Lik_tests,CLs}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Upper limits derivation}{77}{section.5.7}\protected@file@percent }
+\newlabel{sec:ADJJ/UpperLimits}{{5.7}{77}{Upper limits derivation}{section.5.7}{}}
 \newlabel{subfig:ADJJ/UpperLimits/Fit_VcXH}{{5.22a}{77}{\relax }{figure.caption.83}{}}
 \newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VcXH}{{a}{77}{\relax }{figure.caption.83}{}}
 \newlabel{subfig:ADJJ/UpperLimits/Fit_VzWW}{{5.22b}{77}{\relax }{figure.caption.83}{}}
 \newlabel{sub@subfig:ADJJ/UpperLimits/Fit_VzWW}{{b}{77}{\relax }{figure.caption.83}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.22}{\ignorespaces Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000.}}{77}{figure.caption.83}\protected@file@percent }
 \newlabel{fig:ADJJ/UpperLimits/Fits_lumi1}{{5.22}{77}{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b) VzWW\_2000}{figure.caption.83}{}}
-\newlabel{eq:ADJJ/UpperLimits/sigma_limit}{{5.16}{77}{Upper limits derivation}{equation.5.16}{}}
+\newlabel{eq:ADJJ/UpperLimits/sigma_limit}{{5.16}{78}{Upper limits derivation}{equation.5.16}{}}
 \newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{5.23a}{78}{\relax }{figure.caption.84}{}}
 \newlabel{sub@subfig:ADJJ/UpperLimits/Limit_VcXH2300}{{a}{78}{\relax }{figure.caption.84}{}}
 \newlabel{subfig:ADJJ/UpperLimits/Limit_VcXH3400}{{5.23b}{78}{\relax }{figure.caption.84}{}}
