@@ -1,14 +1,11 @@
 \phantomsection
 \chapter*{Abstract}
 
-This thesis implements the Anomaly Detection technique, a model-agnostic Machine Learning approach, to search for New Physics Beyond the Standard Model (BSM) in fully hadronic final states with large-radius jets in the ATLAS experiment. 
-The study focuses on four resonant BSM benchmark signals, among which Dark Jets and Heavy Vector Triplets, for different mass hypotheses of the resonant particles in the range between 2 TeV and 6 TeV. 
-The background to those signals is dominated by QCD multi-jet production, with additional contributions from $t \bar{t}\rightarrow W^+W^-b\bar{b}$, $Z(\rightarrow qq) + jets$ and $W(\rightarrow qq) + jets$.
-A Graph Neural Network is trained in an unbiased way on single jets from a Monte Carlo (MC) multi-jet sample simulating ATLAS Run-3 data, to compute the Anomaly Score (AS) of each jet.
-The statistical analysis on the di-jet invariant mass $m_{JJ}$ distribution started with the definition of Working Points on the AS distribution, to achieve background rejection rates from 20\% to 99.9\%, values tested to investigate the minimum amount of background to discard in order to enhance the signals. 
-After a careful optimization and validation of the parameteric modelling of the signal and background distributions via spurious signal tests and signal injection tests, the expected upper limits at 95\% Confidence Level on the cross section of the signals using binned maximum likelihood fits are derived using the CLs method.
-A complete validation was realized performing sensitivity studies to derive an estimation of the sensitivity of the analysis with the partial and full ATLAS Run 3 dataset.
-The results of the study show that an event selection based on the AS is competitive with the canonincal model-dependent seletions, presenting a possible improvement in the sensitivity to BSM signals, especially for the HVT benchmark signal in the VzWW process.
-
-
+This thesis presents a search for New Physics Beyond the Standard Model (BSM) in fully hadronic final states with large-radius jets in the ATLAS experiment. 
+While previous analyses searched for it strongly relying on theoretical assumptions, this study implements the Anomaly Detection technique, a model-agnostic Machine Learning approach.
+Using simulated ATLAS Run 3 Monte Carlo (MC) datasets, a focus is placed on four resonant BSM benchmark signals, among which Dark Jets and Heavy Vector Triplets (HVT), with the main background contribution coming from QCD multi-jet production.
+The core of this thesis is the validation of the statistical analysis on the di-jet invariant mass $m_{JJ}$ distribution using MC samples.
+It started with the definition of cut thresholds on the Anomaly Score (AS) distribution of each jet, computed by a Graph Neural Network trained on a QCD sample, to achieve background rejection rates from 20\% to 99.9\%. 
+After a careful validation of the parameteric modelling of the signal and background distributions, the expected upper limits at 95\% Confidence Level on the cross section of the signals using binned maximum likelihood fits are derived using the $CL_s$ method, together with sensitivity estimations with the partial and full ATLAS Run 3 dataset.
+The results of the study highlight, especially for the HVT benchmark signal, the potential of the Anomaly Detection technique in enhancing searches for New Physics in ATLAS, motivating its integration in future analyses.
 
