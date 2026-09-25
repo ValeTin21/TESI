@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 SEP 2026 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 SEP 2026 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2483,11 +2483,6 @@ Overfull \hbox (37.62pt too wide) in paragraph at lines 1713--1714
 
  (Chap_6_concl.tex
 Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--26
-
- []
-
 [93
 
 
@@ -2513,52 +2508,52 @@ Underfull \hbox (badness 3128) in paragraph at lines 485--490
 \openout2 = `AppendixA_plots.aux'.
 
  (AppendixA_plots.tex
-<Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png, id=2839, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png, id=2837, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png  used on input line 26.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_dY.png, id=2840, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY.png, id=2838, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_dY.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_dY.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY.png  used on input line 33.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png, id=2841, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png, id=2839, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png Graphic file (type png)
 <use Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png  used on input line 43.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png, id=2842, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png, id=2840, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png  used on input line 61.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png, id=2843, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png, id=2841, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png  used on input line 68.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png, id=2844, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png, id=2842, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png  used on input line 78.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png, id=2845, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png, id=2843, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png  used on input line 85.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png, id=2846, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png, id=2844, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png  used on input line 95.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png, id=2847, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png, id=2845, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png  used on input line 102.
 (pdftex.def)             Requested size: 142.55685pt x 138.25722pt.
-<Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png, id=2848, 798.985pt x 774.895pt>
+<Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png, id=2846, 798.985pt x 774.895pt>
 File: Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png  used on input line 112.
@@ -2567,37 +2562,37 @@ Package pdftex.def Info: Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.
 
 LaTeX Warning: Float too large for page by 68.10768pt on input line 119.
 
-<Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png, id=2849, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png, id=2847, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png  used on input line 131.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png, id=2850, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png, id=2848, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png  used on input line 138.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png, id=2851, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png, id=2849, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png  used on input line 148.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png, id=2852, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png, id=2850, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png  used on input line 155.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png, id=2853, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png, id=2851, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png  used on input line 165.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png, id=2854, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png, id=2852, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png  used on input line 172.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png, id=2855, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png, id=2853, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png  used on input line 182.
@@ -2605,37 +2600,37 @@ Package pdftex.def Info: Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png  u
 
 LaTeX Warning: Float too large for page by 32.47182pt on input line 189.
 
-<Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png, id=2856, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png, id=2854, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png  used on input line 201.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png, id=2857, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png, id=2855, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png  used on input line 208.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png, id=2858, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png, id=2856, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png  used on input line 218.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png, id=2859, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png, id=2857, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png  used on input line 225.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png, id=2860, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png, id=2858, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png  used on input line 235.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png, id=2861, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png, id=2859, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png  used on input line 242.
 (pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
-<Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png, id=2862, 798.985pt x 674.52pt>
+<Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png, id=2860, 798.985pt x 674.52pt>
 File: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png Graphic file (type png)
 <use Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png  used on input line 252.
@@ -2643,102 +2638,102 @@ Package pdftex.def Info: Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png  u
 
 LaTeX Warning: Float too large for page by 32.47182pt on input line 259.
 
-<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf, id=2863, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf, id=2861, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf  used on input line 271.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf, id=2864, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf, id=2862, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf  used on input line 278.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf, id=2865, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf, id=2863, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf  used on input line 288.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf, id=2866, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf, id=2864, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf  used on input line 295.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf, id=2867, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf, id=2865, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf  used on input line 315.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf, id=2868, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf, id=2866, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf  used on input line 322.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf, id=2869, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf, id=2867, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf  used on input line 332.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf, id=2870, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf, id=2868, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf  used on input line 339.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf, id=2871, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf, id=2869, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf  used on input line 358.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf, id=2872, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf, id=2870, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf  used on input line 365.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf, id=2873, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf, id=2871, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf  used on input line 375.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf, id=2874, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf, id=2872, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf  used on input line 382.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf, id=2875, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf, id=2873, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf  used on input line 401.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf, id=2876, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf, id=2874, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf  used on input line 408.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf, id=2877, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf, id=2875, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf  used on input line 418.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf, id=2878, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf, id=2876, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf  used on input line 425.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf, id=2879, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf, id=2877, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf  used on input line 444.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf, id=2880, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf, id=2878, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf  used on input line 451.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf, id=2881, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf, id=2879, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf  used on input line 461.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
-<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf, id=2882, 569.12625pt x 552.0625pt>
+<Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf, id=2880, 569.12625pt x 552.0625pt>
 File: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf Graphic file (type pdf)
 <use Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf  used on input line 468.
@@ -2767,9 +2762,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  102i,14n,131p,2550b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesi.pdf (118 pages, 15891187 bytes).
+Output written on Tesi.pdf (118 pages, 15890299 bytes).
 PDF statistics:
- 4020 PDF objects out of 4296 (max. 8388607)
+ 4018 PDF objects out of 4296 (max. 8388607)
  452 named destinations out of 1000 (max. 500000)
  83852 words of extra memory for PDF output out of 89155 (max. 10000000)
 

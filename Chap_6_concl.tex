@@ -4,23 +4,24 @@ This thesis has been the opportunity to investigate the novel Anomaly Detection 
 This model agnostic technique could potentially be a powerful tool to observe new phenomena predicted by many theoretical models but never observed in the data collected by the LHC experiments.
 The main innovative aspect of the approach is that it does not require any prior knowledge of the signal, which is often unknown and difficult to model.
 To prevent this, using a Monte Carlo (MC) simulated dataset (from the \textit{MC23d} campaign), a Graph Neural Network was trained on a large background sample.
-It was then tested on a mixed sample, containing benchmark processes chosen for the analysis, such as 2prong, 3prong Heavy Vector Triplets and signals associated to the dark sector, all candidates for New Physics.
-The signal events, being anomalous for the model, are reconstructed with a higher error than the background events, allowing to distinguish between the two classes using the Anomaly Score variable.\\
-After applying an event selection which allows to reject up to 99\% of the background based on the Anomaly Score, combined with requirements on $|\Delta y|$, the difference of rapidity between the two leading jets, a binned maximum likelihood fit was performed to derive the contribution of different signal topologies in the sample.
+It was then tested on a mixed sample, containing benchmark processes chosen for the analysis, such as 2prong, 3prong Heavy Vector Triplets (HVT) and signals associated to the dark sector (DJ), all candidates for New Physics.
+The signal events, being anomalous for the model, are reconstructed with a higher error than the background events, allowing to distinguish between the two classes using the Anomaly Score (AS) variable.\\
+The original contributions of this thesis are related to the implementation and validation of the analysis strategy using simulated MC datasets.
+Starting form the defintion of an event selection which allows to reject up to 99\% of the background based on the AS, binned maximum likelihood fits were performed to derive the expected sensitivity to different signal topologies in the sample.
 The functions used to model the background and signal samples were chosen and validated, in order to avoid the introduction of biases in the final results.
-Expected upper limits at 95\% Confidence Level on the cross-section of the different signals were derived using the $CL_S$ method.
-The results were compared with the theoretical predictions of the cross-section for each signal, pointing out the ability of the approach to improve the exclusion limits only on a limited set of signal topologies.
-This limited performance could be due to the sub-optimal choice of the event selection WP on Anomaly Score which, as also pointed out by signal injection tests, should be improved in order to increase the ability of the fit PDF to detect and measure the contribution of the signal in the sample.\\ 
-The results obtained in this thesis when executing sensitivity studies on the MC sample at higher luminosities, are compared with the state of the art of the ATLAS experiment.
-In particular, another analysis \cite{ATLAS_AD_VVJJ} searching for one of the benchmark signals considered in this thesis, the Heavy Vector Triplet $Y\to XH$, determined a 95\% CL upper limit on the cross-section of the process at different mass points roughly a factor of 20 lower than the one obtained here. 
-This discrepancy is due to the fact that the cited analysis implements a more sophisticated event selection, applying more stringent requirements on the decay products of the $Y$ boson.
-It is also possible that the discrepancy could be reabsorbed once the systematic uncertainties on jet calibration (JES and JER) are included in the fit.
-Those quantities have been previously measured within the analysis team conducting the search discussed in this thesis to have approximately 20\% of impact on the fit \cite{PhDGRusso}.\\
-Concerning the previous stage of the analysis presented in \cite{PhDGRusso}, the implementation of a Graph Neural Network to perform the Anomaly Detection task has been a significant improvement in terms of performance and flexibility of the model, with respect to the previous Transformer-based approach.\\
-In conclusion, the results obtained applying an event selection based on the AS, have been compared with those obtained when selecting events based on the $D_2$ varible, which is meant to target 2-prong structures.
-The AS based selection has shown a greater ability to generalize the selection and to detect different signal topologies, with performance comparable to those from the other selection but in principle expected to be more sensitive to the specific signal topology considered.\\
-Natural next steps for the analysis would be to improve the choice of background rejection on the AS, before concluding the MC phase of the study and moving towards the analysis of the real data collected by ATLAS during Run 3.
+Expected upper limits at 95\% Confidence Level on the cross-section of the different signals were derived using the $CL_s$ method.\\
+The results obtained in this thesis point out the ability of the Anomaly Detection approach to improve the exclusion limits only on a limited set of signal topologies, such as lower mass points of the $Y\to XH$ HVT process.
+From the studies on the other HVT process, $V\to WW$, promising performance and potential to improve was observed.
+The presented analysis is not able to exclude Wprime and DJ signals.
+This limited performance could be caused by the sub-optimal choice of the event selection WP on AS which, as also pointed out by signal injection tests, should be improved in order to increase the ability of the fit PDF to detect and measure the contribution of the signal in the sample.\\
+The results obtained applying an event selection based on the AS, have been compared with those obtained when selecting events based on the $D_2$ varible, which is meant to target 2-prong structures.
+The novel selection has shown comparable performance to those from the "canonical" selection without making any assumption on the nature of the decay products of the BSM resonant bosons.\\ 
+Before the analysis moves to real data, some improvements are requested on the MC phase.
+In particular, the sample modelling and event selection need to be optimized and other systematic uncertainties in the likelihood model have to be added, such as JES and JER (uncertainties linked to the jet calibration)
+Those uncertainties have been previously measured within the analysis team conducting the search discussed in this thesis to have approximately 20\% of impact on the fit \cite{PhDGRusso}.\\
 Together with this, given the possible presence of discrepancies between results obtained from MC training and those derived from real data, a derivation of results using SM candles as a validation will be necessary.
-For this purpose, 2-prong W+jet events and 3-prong $t\bar{t}$ events can be used as benchmarks to be re-observed by the trained GNN model.
-This step will be crucial to validate the approach, ensuring its reliability before searching for less known New Physics processes.\\
+For this purpose, 2-prong $W/Z+jets$ events and 3-prong $t\bar{t}$ events can be used as benchmarks to be re-observed by the trained GNN model.
+This step will be crucial to validate the approach, ensuring its reliability.
+Only at this point, the analysis will move towards the real data collected by ATLAS during Run 3, searching for less known New Physics processes.\\
+The model agnostic and data driven Anomaly Detection approach presented in this thesis has shown promising results on simulated datasets and, with the proper optimizations, it is expected to be a powerful tool towards experimental evidence of New Physics Beyond the Standard Model at the LHC.
 
