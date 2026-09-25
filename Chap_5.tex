@@ -1579,6 +1579,67 @@ In fact, the AD strategy is a model independent approach, meaning that its main 
 This is the reason why it is worth implementing a AD approach in the analysis.\\
 After the study presented in this section, the workflow of the analysis on the MC sample is considered completely defined and the next steps before moving to real data are the optimization of the sample modelling and event selection, together with the addition of other systematic uncertainties in the likelihood model, such as JES and JER (uncertainties linked to the jet calibration).
 
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{Comparison of the study with the state of the art}\label{sec:ADJJ/VVJJ}
+
+The upper limits derived in this thesis at higher luminosities on the MC sample are used to extrapolate an estimation of the sensitivity that the analysis could have on real data.
+These estimations are compared with the state of the art within the ATLAS experiment, in order to understand what aspects of the analysis could be improved to increase its sensitivity.
+In particular, another analysis \cite{ATLAS_AD_VVJJ} searching for one of the benchmark signals considered in this thesis, the Heavy Vector Triplet $Y\to XH$, determined a 95\% CL upper limit on the cross-section of the process roughly a factor of 10-15 lower than the estimation obtained here, as visible from Fig. \ref{fig:ADJJ/VVJJ/Limit}.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3 in]{Images/Chap5/VVJJ/Observed_limit.png}
+    \caption{Result from the ATLAS analysis \cite{ATLAS_AD_VVJJ}, the 95\% CL limits on the cross section of $Y\to XH$ process in the two-dimensional space of $m_Y$ versus $m_X$, obtained from a fit with all statistical and systematic uncertainties.}
+    \label{fig:ADJJ/VVJJ/Limit}
+\end{figure}
+
+\noindent This discrepancy is due to the fact that the cited analysis implements a more sophisticated event selection, applying more stringent requirements on the decay products of the $Y$ boson.
+In fact, after resolving the ambiguity in the assignment of the two leading jets to the $X$ and $H$ bosons using a dedicated tagger algorithm, the analysis applied dedicated selections on the product bosons before executing the statistical analysis.
+In particular, the $H$ boson candidates are identified making use of a dedicated tagger algorithm, ensuring compatibility with the $H\to b \bar{b}$ decay topology.
+A cut is applied at 60\% WP on the output of the tagger, the discriminating variable $D_{H_{bb}}$ presented in Fig. \ref{fig:ADJJ/VVJJ/HbbTagger}, corresponding to $D_{H_{bb}}>2.44$.
+Together with this, the $H$ boson candidates are required to have a mass in the range $[75, 145]$ GeV, which is compatible with the $H$ boson mass.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=3.2 in]{Images/Chap5/VVJJ/XbbTagger.png}
+    \caption{Distributions of the $D_{H_{bb}}$ score for the $H$ candidates from the ATLAS analysis \cite{ATLAS_AD_VVJJ}.}
+    \label{fig:ADJJ/VVJJ/HbbTagger}
+\end{figure}
+
+\noindent On the other hand, the $X$ boson candidates are associated with three different Signal Regions.
+The first one is defined applying a cut at 0.5 on the Anomaly Score distribution computed from a neural network, shown in Fig. \ref{subfig:ADJJ/VVJJ/Xtag/AS}.
+Other two SRs are defined on the $D_2^{trk}$ variable ($D_2$ of the tracks of the jet).
+Values of $D_2^{trk}$ below 1.2 determined the merged regime (substructure grouped in a single jet) and above it the resolved regime (substructure of the jet reconstructed), as visible from Fig. \ref{subfig:ADJJ/VVJJ/Xtag/D2}.
+
+\begin{figure}[htbp]
+  \centering
+  % --- First row (Figure a b) ---
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/VVJJ/AS_X_YXH.png}
+    \caption{}
+    \label{subfig:ADJJ/VVJJ/Xtag/AS}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/Chap5/VVJJ/D2_X.png}
+    \caption{}
+    \label{subfig:ADJJ/VVJJ/Xtag/D2}
+  \end{subfigure}
+  \caption{Distributions of the (a) AS score  and (b) $D_2^{trk}$ for the $X$ candidates from the ATLAS analysis \cite{ATLAS_AD_VVJJ}.}
+  \label{fig:ADJJ/VVJJ/Xtag}
+\end{figure}
+
+\noindent In the three SRs defined for the $x$ boson candidates, combined with the selected $H$ boson candidates, the analysis performs the search.\\
+From what is presented above, it is clear that the more sophisticated event selection implemented in the ATLAS analysis \cite{ATLAS_AD_VVJJ} leads to a better sensitivity to the $Y\to XH$ process, with respect to the analysis presented in this thesis.
+On the other hand, the study conducted here applies less restrictive requirements on the decay products of the $Y$ boson, without making any assumption on their nature and kinematics.
+This approach allows to be sensitive to a wider range of possible signals, without excluding processes like the $V\to WW$ which are slightly different from the $Y\to X H$.\\
+A possible improvement of the analysis araising from this comparison is the need to optimize the choice of the WPs on the AS distribution, as already discussed in the validation tests presented in Sec. \ref{sec:ADJJ/Validation}.
+
+
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \newpage
