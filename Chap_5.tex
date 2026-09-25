@@ -833,7 +833,7 @@ This binning is chosen to have a fine granularity in $m_{JJ}$, presenting an alm
 
 The modelling defined in the previous section for the signal and background samples has to be careful, to avoid rejecting genuine signals or misinterpreting background fluctuations as signal events.
 Two main validation tests are performed: the \textit{spurious signal tests} (or fit bias tests) and the \textit{signal injection tests}.\\
-To conduct these tests, the binned profile-likelihood in use is defined as the combination of the signal and background PDFs:
+To statistically interpret the results of the study, the binned profile-likelihood in use is defined as the combination of the signal and background PDFs:
 
 % \begin{equation}
 %   \mathcal{L}(\vec{n}|\vec{\theta},\vec{k}) =  \frac{e^{-(\mu \cdot N_{sig} + N_{bkg})}}{N!}\prod_{i=1}^{N_{bins}} (\mu \cdot N_{sig} \cdot f_{DSCB}(m_i) + N_{bkg} \cdot f_{BKG}(m_i))^{n_i}
@@ -852,7 +852,7 @@ In the following it will be referred to as $N_{sig} = \mu$.
 The quantity $\mu_s$ is the signal strength $\mu_s=\frac{\sigma_{exp}}{\sigma_{th}}=\frac{N_{sig,exp}}{N^{th}_{sig}}$, it is a normalization factor for the signal PDF compairing the measured cross-section $\sigma_{exp}$ with the nominal (theoretical) one $\sigma_{th}$ assumed in the samples.
 $N_{bkg}$ is the number of observed background events, which is a free parameter in the fit.\\
 From the performed fits, a set of values for all the parameters, nuisance and PoI, is obtained.
-Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, discriminates between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
+Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, is used to discriminate between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
 The likelihood ratio is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/likelihood_ratio}
   \lambda(\mu_s) = \frac{\mathcal{L}(\mu_s, \hat{\hat{\vec{\theta}}}(\mu_s))}{\mathcal{L}(\hat{\mu_s}, \hat{\vec{\theta}})}
@@ -867,12 +867,12 @@ The ratio is used to define the test statistic $t_{\mu}$:
 \end{equation}
 
 \noindent $t_{\mu_s}$ is a function of the PoI $\mu$ and, for the Wilk's theorem, follows a $\chi^2$ distribution.
-The p-value of the fit is computed from it:
+The p-value is computed from it:
 \begin{equation}\label{eq:ADJJ/Validation/p_value}
   p_{\mu_s} = \int_{t_{\mu_s,obs}}^{\infty} f(t_{\mu_s}|\mu_s) dt_{\mu_s}
 \end{equation}
 
-\noindent where $t_{\mu, obs}$ is the value of the statistic $t_{\mu}$ observed from the data and $f(t_{\mu}|\mu)$ denotes the PDF of $t_{\mu}$ under the assumption of the signal strength $\mu$.
+\noindent where $t_{\mu_s, obs}$ is the value of the statistic $t_{\mu_s}$ observed from the data and $f(t_{\mu_s}|\mu_s)$ denotes the PDF of $t_{\mu_s}$ under the assumption of the signal strength $\mu_s$.
 $p_{\mu_s}$ is associated with the probability of observing $t >t_{\mu_s,obs}$, quantifying the disagreement between the data and the tested hypothesis.\\
 A particular case of test statistic is the one defined for the background only hypothesis, which is obtained setting $\mu_s=0$ in Eq. \ref{eq:ADJJ/Validation/test_statistic} and it is defined as:
 \begin{equation}\label{eq:ADJJ/Validation/test_statistic_bkg}
@@ -886,7 +886,7 @@ It is computed as:
 \end{equation}
 
 \noindent If the $\mu_s = 0$ hypothesis is rejected, it means that the data is not compatible with the background only hypothesis and a signal may be present in the sample.\\
-From these tools, the $CL_s$ method can be introduced \cite{Lik_tests,CLs}.
+The hypothesis testing is performed using the CLs method. \cite{Lik_tests,CLs}.
 The distribution of $t_{\mu_s,obs}$ is scanned for different values of $\mu_s$, to derive the probability of observing a worse t than $t_{\mu_s,obs}$ ($t >t_{\mu_s,obs}$).
 This defines the $CL_{s+b}$, also known as the p-value $p_{s+b}$.
 Similarly, the $CL_b$ ($p_b$) is defined as the probability of observing a worse t than $t_{\mu_s,obs}$ under the background only hypothesis ($\mu_s=0$).
@@ -898,7 +898,7 @@ The $CL_s$ is then defined as the ratio between the two quantities:
 \noindent This quantity is compared with a threshold value $\alpha$, usually set to 0.05.
 Values of $CL_s$ higher than $\alpha$ are considered to be compatible with the tested hypothesis, pointing out that data do not show a significant statistical disagreement with it.
 In the case of $CL_s$ lower than the threshold, the null hypothesis (sample composed by background only) can be rejected with a confidence level of $1-\alpha$ (95\%).\\
-The interpretation of the p-value presented above is used to verify the presence of a signal in the sample, by testing the background only hypothesis ($\mu_s=0$) and the signal+background hypothesis ($\mu_s>0$).
+The interpretation of the p-value presented above is used to verify the presence of a signal in the sample (i.e. a given hypothesised value of $\mu_s>0$), by testing the background only hypothesis ($\mu_s=0$) and the signal+background hypothesis ($\mu_s>0$).
 The same quantity can be used when evaluating the goodness of the fit, where the null hypothesis is the good agreement between the data and the fitted function with the best-fit parameters, while the alternative hypothesis is the disagreement between the two.\\
 %-------------------------------------------------------------------------------
 \subsection{Spurious signal tests}\label{sec:ADJJ/Validation/SPT}
@@ -938,7 +938,7 @@ Other plots for the other signal samples with the same seed are reported in Appe
     \label{subfig:ADJJ/Validation/SPT/SPplots/bbb}
   \end{subfigure}
   
-  \caption{Fits for the spurious signal test at 1 $fb^{-1}$ for signal hypotheses (a) VcXH\_3400 and (b)  VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample}
+  \caption{Fits for the spurious signal test at 1 $fb^{-1}$ for signal hypotheses (a) VcXH\_3400 and (b)  VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample.}
   \label{fig:ADJJ/Validation/SPT/SPFit}
 \end{figure}
 
@@ -1024,9 +1024,9 @@ The results of fits and upper limits derivation executed applying this systemati
 \subsection{Signal injection tests}\label{sec:ADJJ/Validation/SINJ}
 
 The second validation test performed is the \textit{signal injection test}, which aims to quantify the ability of the model to recover a given amount of signal injected in a background sample.
-This validation proceeds in a similar way to previous, with the main difference situated in the creation of the histogram to fit, which is built as follows.\\
+This validation proceeds similarly to the previous one; the main difference consists in how the histogram to fit is created, as explained below.\\
 The amount of injeted signal is quantified in terms of significance Z, which is defined as $Z \sim \frac{S}{\sqrt{B}}$, where S is the number of injected signal events and B is the number of background events in the Region of Interest (RoI).
-It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one $Z=\sqrt{2\Big((s+b)ln(1+\frac{s}{b})-s\Big)}$ and it is valid in the regime where B high enough and B>>S, which is the case for the samples considered in this analysis \cite{Lik_tests}.
+It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one $Z=\sqrt{2\Big((S+B)ln(1+\frac{S}{B})-S\Big)}$ and it is valid in the regime where B high enough and $B\gg S$, which is the case for the samples considered in this analysis \cite{Lik_tests}.
 Inverting the definition of Z, the number of injected signal events can be expressed as:
 \begin{equation}
   S_{inj} \sim Z \cdot \sqrt{B}
@@ -1063,7 +1063,7 @@ Other plots for the other signal samples with the same seed are reported in Appe
   \label{fig:ADJJ/Validation/SINJ/SINJfit}
 \end{figure}
 
-\noindent The plots in Fig. \ref{fig:ADJJ/Validation/SINJ/SINJfit} show the good agreement between the fitted function and the injected sample, with a p-value of 0.97 and 0.99 respectively for the two signals.
+\noindent The plots in Fig. \ref{fig:ADJJ/Validation/SINJ/SINJfit} show the good agreement between the fitted function and the injected sample, with a p-value of the signal+background hypothesis of 0.97 and 0.99 respectively for the two signals.
 Despite this, some fluctuations, probably due to the binning of the histogram, are present across the distribution and they are expected to be smoothed out when scaling the samples to higher luminosities, where the statistics is higher and the binning is less subject to fluctuations.\\
 From these fits, the quantity $S_{spur}$ is computed as the difference between the fitted and injected amount of signal, $S_{spur} = S_{fit} - S_{inj}$.
 The test, once again, is execute with 100 pseudodata samples.
@@ -1175,13 +1175,12 @@ In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sa
     \label{subfig:ADJJ/UpperLimits/Fit_VzWW}
   \end{subfigure}
   
-  \caption{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000.}
+  \caption{Fits to the background only sample, with systematic uncertainty applied, at 1 $fb^{-1}$ for signals hypothesis (a) VcXH\_3400 and (b)  VzWW\_2000. The red curve represents the background function with the best-fit parameters determined from the background only fit. The blue curve represents the signal+background function with the best-fit parameters determined during the S+B fit to a varied background only sample.}
   \label{fig:ADJJ/UpperLimits/Fits_lumi1}
 \end{figure}
 
 \noindent The fits to the other signal hypotheses are reported in Appendix A, where the same study for the different rescaled luminosities is also shown.\\
-The fit results are accepted if the p-value is higher than the canonical 0.05 threshold.
-Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, the requirement is satisfied for all the fits performed, with p-values higher than 0.05 for all the signal hypotheses and luminosities considered.\\
+Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, given the computed p-values quantifying the agreement between the data and the fitted function, the fits are considered acceptable for all the signal hypotheses and luminosities tested in this study.
 For the reasons just discussed, it is expected that once the analysis will be performed on the real data, the results associated with the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
 The best-fit parameters are then used to compute the upper limits on the signal cross-section for each signal hypothesis and mass point, at the different tested luminosities.
 Since the PoI of the likelihood of this analysis is the number of signal $N_{sig}$, referred to as $\mu$, using the definition of signal strength $\mu_s$, limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
