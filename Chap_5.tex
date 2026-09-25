@@ -47,7 +47,7 @@ The masses of the $V$ and $X$ bosons are varied in order to explore different ki
 The mass of the Higgs boson, instead, is fixed to its SM value of $m_H = 125 \text{ GeV}$.\\
 The second HVT process considered is the decay of a heavy vector boson $V$, into a pair of SM $W$ bosons.
 Once again, the mass of the $V$ boson is varied among $m_V = [2.0 , 3.0 , 4.0 , 5.0 ] \text{ TeV}$, while the masses of the $W$ bosons are fixed to their SM value of $m_W = 80 \text{ GeV}$.\\
-In conclusion, the third process studied is the decay of a heavy $W'$ boson into a $W$ and a $Z$ BSM bosons, with single masses at $m_{W'} = 3.0 \text{ TeV}$, $m_W = 200 \text{ GeV}$ and $m_Z = 400 \text{ GeV}$.\\
+Finally, the third process studied is the decay of a heavy $W'$ boson into a $W$ and a $Z$ BSM bosons, with single masses at $m_{W'} = 3.0 \text{ TeV}$, $m_W = 200 \text{ GeV}$ and $m_Z = 400 \text{ GeV}$.\\
 In all the three cases, bosons are assumed to decay into quarks, forming jets in the final state.\\
 In Fig. \ref{fig:ADJJ/dataset/Signal/Fdiag} an example of a Feynman diagram of a HVT process ($VcXH$) is shown.\\
 
@@ -297,7 +297,7 @@ Results are reported in Tab. \ref{tab:ADJJ/GNN/results/AUC}, where the AUC value
 Discrimination power varies substantially depending on the process considered and the resonance mass. 
 HVT decays into $WW$ final states are the ones achieving higher discrimination, with an AUC up to $95.8\%$.  
 Similarly, $V \to XH$ decays present strong background rejection, yielding a maximum AUC of $87.6\%$ for the $(6.0\text{ TeV}, 400\text{ GeV})$ mass configuration.
-Moreover, signal processes with higher resonance masses tend to be more easily discriminated from the background, which is expected, since the raising jets are more boosted and their substructure is more defined than lower mass resonances, allowing the network to learn more complex structures.
+Signal processes with higher resonance masses also tend to be more easily discriminated from the background, which is expected, since the raising jets are more boosted and their substructure is more defined than lower mass resonances, allowing the network to learn more complex structures.
 The Dark Jets and Wprime processes, instead, are the ones with the lowest performance, with an AUC of $59.6\%$ and $64.9\%$ respectively.
 These lower results can be explained analysing what the network is learning.
 In Sec. \ref{sec:ADJJ/AScorrelation} the correlation between the AS and the jet features is studied to understand whether a cut on the AS could introduce a bias in the kinematic distributions of the jets, which is not desired.
@@ -648,10 +648,10 @@ A_{L/R} = \left( \frac{n_{L/R}}{|\alpha_{L/R}|} \right)^{n_{L/R}} \cdot \exp\lef
 Making use of this PDF, the command \texttt{pdf.fitTo()} of \texttt{ROOT} is excecuted to perform a binned fit to the $m_{JJ}$ distribution of the signal samples and extract the best-fit parameters for each of them.
 This command runs with the aim to minimize the negative log-likelihood of the PDF.
 The minimization is performed using the \texttt{MINUIT} class which implements the \texttt{MIGRAD} algorithm to minimize the function and \texttt{HESSE} to compute the uncertainties on them.\\
-To ensure a good convergence of the fit, the procedure is devided in two steps.
-First a Gaussian fuction is fitted in a small window around the peak of the distribution, where the window is defined as centred in the MC mass od the resonance and with a width of 1 $\sigma$ roughly estimated from the MC distribution.
+To ensure a good convergence of the fit, the procedure is divided into two steps.
+First a Gaussian function is fitted in a small window around the peak of the distribution, where the window is defined as centred in the MC mass od the resonance and with a width of 1$\sigma$ roughly estimated from the MC distribution.
 The parameters obtained from this first fit are then used as initial values for the DSCB fit, which is performed in a wider window around the peak, excluding the noise and oscillating tails of the distribution.
-In Fig. \ref{fig:ADJJ/Model/SIG/DSCBfits_example} the results of the DSCD for the VcXH\_3400 and VzWW\_2000 processes are shown, with and without the application of the cut on AS at 99\% WP.
+In Fig. \ref{fig:ADJJ/Model/SIG/DSCBfits_example} the results of the DSCB for the VcXH\_3400 and VzWW\_2000 processes are shown, with and without the application of the cut on AS at 99\% WP.
 In Appendix A all the other DSCB fits with the WP 99\% applied for the other signal processes are reported.
 WP 99\% is presented here and chosen to be the one to run the analysis on, since it is one of the most stringent cuts on the AS while guaranteeing a good efficiency for the signal processes, as shown in Tab. \ref{tab:ADJJ/evSel/cuts}.
 From this moment on, all the plots and results presented with the AS cut applied will refer to the WP 99\%, unless otherwise specified.
@@ -849,7 +849,7 @@ The gaussian constraints are applied only during the upper limits derivation, as
 The likelihood depends on the nuisance parameters $\vec{\theta}$, which are constrained during the fit, and the parameter of interest (PoI) $\mu$, which is free to vary during the fit.
 The term $N_{sig}$ is the PoI of this analysis when the signal hypothesis is tested.
 In the following it will be referred to as $N_{sig} = \mu$.
-The quantity $\mu_s$ is the signal strength $\mu_s=\frac{\sigma_{exp}}{\sigma_{th}}=\frac{N_{sig,exp}}{N^{th}_{sig}}$, it is a normalization factor for the signal PDF compairing the measured cross-section $\sigma_{exp}$ with the nominal (theoretical) one $\sigma_{th}$ assumed in the samples.
+The quantity $\mu_s$ is the signal strength $\mu_s=\frac{\sigma_{exp}}{\sigma_{th}}=\frac{N_{sig,exp}}{N^{th}_{sig}}$, it is a normalization factor for the signal PDF comparing the measured cross-section $\sigma_{exp}$ with the nominal (theoretical) one $\sigma_{th}$ assumed in the samples.
 $N_{bkg}$ is the number of observed background events, which is a free parameter in the fit.\\
 From the performed fits, a set of values for all the parameters, nuisance and PoI, is obtained.
 Those parameters are used to compute the likelihood ratio \cite{Lik_tests}, a variable that, for the Neyman-Pearson lemma, is used to discriminate between the presence ($\mu_s >0$) or absence ($\mu_s$=0) of a signal in the sample.
@@ -866,7 +866,7 @@ The ratio is used to define the test statistic $t_{\mu}$:
   t_{\mu_s} = -2 \cdot \ln(\lambda(\mu_s))
 \end{equation}
 
-\noindent $t_{\mu_s}$ is a function of the PoI $\mu$ and, for the Wilk's theorem, follows a $\chi^2$ distribution.
+\noindent $t_{\mu_s}$ is a function of the PoI $\mu$ and, for the Wilks' theorem, follows a $\chi^2$ distribution.
 The p-value is computed from it:
 \begin{equation}\label{eq:ADJJ/Validation/p_value}
   p_{\mu_s} = \int_{t_{\mu_s,obs}}^{\infty} f(t_{\mu_s}|\mu_s) dt_{\mu_s}
@@ -907,7 +907,7 @@ The first validation test performed is the \textit{spurious signal test}, also k
 In fact, it aims to quantify the bias introduced by the choice of the background PDF in the fit.
 A possible bias could be that the flexible background model could absorb part of the signal or that the signal+background model returns a non-zero signal yield even when fitting a background only sample to accomodate the fluctuations of the background distribution.
 The spurious signal test, indeed, corresponds to the difference between the median fitted signal yield and the known signal yield.\\ 
-The test is performed selecting a background only sample (signal yield = 0) with a 1 $fb^{-1}$ luminosity and a fit with a PDF containing both the signal and the bacgkround component is executed.
+The test is performed selecting a background only sample (signal yield = 0) with a 1 $fb^{-1}$ luminosity and a fit with a PDF containing both the signal and the background component is executed.
 To take into account the statistical fluctuations of the sample, 100 variations of the background only histogram are generated, where each of them is associated with a Poissonian fluctuation with a different seed.
 Each of these 100 histograms is fitted with the signal+background PDF.
 At this point, the fitted amount of signal is extracted from each iteration, the mean value $S_{spur}$ and the width (RMS) $\sigma_{fit}$ of the distribution of fitted values are computed.
@@ -1666,7 +1666,7 @@ Whether to use the full Run 3 sample or a partial one is a choice that will be m
 \noindent The starting point of the data driven analysis is crucial and it is represented by the amount of data to use to train the GNN.
 In fact, in AD the network should be trained on a sample where it is assumed that the presence of signal is negligible with respect to the background.
 This requirement is easily satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of real data, where the possible presence of signal is unknown.
-For this aspect, the robut MC tests conducted are essential.
+For this aspect, the robust MC tests conducted are essential.
 Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it should be possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of real data.
 At the moment a threshold can not be determined from the results in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} due to the fact that the region where the limits computed in the analysis are below the theoretical values vary from signal to signal and mass point.
 Moreover, the results of the signal injection tests presented in Sec. \ref{sec:ADJJ/Validation/SINJ} highlight the presence of critical aspects in the analysis, requiring more detailed validations of the possible signal contamination in the sample.
@@ -1682,7 +1682,7 @@ It is important to underline that this value is only a reference for this discus
 \end{figure}
 
 \noindent After the determination of the threshold, the unblinding of a sample of equivalent amount of data, the check of the correct shape of the distributions of the variables used, the upper limits are derived, planning to not observe any significant excess (p-value < 0.05).
-In case any excess is observed, the masking techinque is applied to the region of the excess and the analysis is carefully repeated, trying to avoid the inclusion of any statistical bias in the analysis, and the excess is interpreted and explained.\\
+In case any excess is observed, the masking technique is applied to the region of the excess and the analysis is carefully repeated, trying to avoid the inclusion of any statistical bias in the analysis, and the excess is interpreted and explained.\\
 Once the sample has been determined to contain only a negligible and not visible amount of signal, the GNN is trained on it and the WPs are computed on the AS distribution as thresholds to reject from 20\% to 99.9\% of the sample.\\
 At this point, leveraging the validation tests conducted on the MC sample for the PDFs modelling, the functional form modelling the $m_{JJ}$ will be determined. 
 Subsequently, the full target sample will be analysed, executing controls on the distributions of all the variables but the $m_{JJ}$, which is blinded, to avoid any bias in the analysis.
@@ -1698,7 +1698,7 @@ Subsequently, the full target sample will be analysed, executing controls on the
 Only at this stage, the final fit on the $m_{JJ}$ distribution with the unblinding of the data will be performed.
 If any excess will be observed, they will be interpreted and explained.
 In the opposite, more probable, scenario, the upper limits will be derived and, after the final comparisons, the analysis will end.\\
-In conclusion, it is necessary to highlight that the workflow of the analysis on real data presented above is still under development and discussion, determinig the crucial aspects to carefully validate on MC samples before moving to real data.
+In conclusion, it is necessary to highlight that the workflow of the analysis on real data presented above is still under development and discussion, determining the crucial aspects to carefully validate on MC samples before moving to real data.
 For these reasons, the workflow is not yet considered definitive and it is expected to be modified and improved in the next months, before the analysis on real data will be executed.
 
 \begin{figure}[ht!]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 SEP 2026 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  25 SEP 2026 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1226,6 +1226,144 @@ LaTeX Warning: Label `sub@subfig:AppA/SPplots/DJ' multiply defined.
 
 LaTeX Warning: Label `fig:AppA/SPplots' multiply defined.
 
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VXH' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/VWW' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/Wprime' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/Validation/SINJ/SIplots/DJ' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit1' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit1' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit2' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit2' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit3' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit3' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit4' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit4' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit5' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit5' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit6' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit6' multiply defined.
+
+
+LaTeX Warning: Label `subfig:AppA/SINJfits/fit7' multiply defined.
+
+
+LaTeX Warning: Label `sub@subfig:AppA/SINJfits/fit7' multiply defined.
+
 ))
 \openout1 = `Tesi.aux'.
 
@@ -1340,7 +1478,7 @@ Package hyperref Info: Link coloring ON on input line 83.
 Package babel Info: Main language set to 'english'.
 \SAP@parboxindent=\skip108
 \SAP@parboxwidth=\skip109
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 87.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1351,56 +1489,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 <sapienzalogo.pdf, id=302, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
-Package pdftex.def Info: sapienzalogo.pdf  used on input line 87.
+Package pdftex.def Info: sapienzalogo.pdf  used on input line 94.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
  [1
 
 
 
 {C:/Users/valer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <C:/Users/valer/AppData/Local/Programs/MiKTeX/tex/latex/sapthesis/sapienzalogo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 87.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 87.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 94.
 (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 87.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 87.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 87.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 87.
+(Font)              <10> on input line 94.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 87.
+(Font)              <7> on input line 94.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+(Font)              <5> on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
  (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\valer\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 
  []
 
@@ -1408,8 +1546,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--87
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \dedication
-                {"Te ne sei accorto, sì\\ [1
+l.94 
+      [1
 
 {C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2
 
@@ -1447,7 +1585,7 @@ l.36 ...2.3}Jet calibration}{36}{subsection.3.2.3}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \newpage
+l.112 \newpage
                [2{C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [3]
 \openout2 = `Chap_0_Intro.aux'.
 
@@ -1464,7 +1602,7 @@ l.21
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \include{Chap_0_Intro}
+l.117 \include{Chap_0_Intro}
                              [2]
 \openout2 = `Chap_1.aux'.
 
@@ -2738,10 +2876,183 @@ File: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf Graphic
 <use Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf>
 Package pdftex.def Info: Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf  used on input line 468.
 (pdftex.def)             Requested size: 178.19879pt x 172.85605pt.
+<Images/Chap5/DataPlots/SINJ/VcXH2300_seed1_lumi165.png, id=2881, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/VcXH2300_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/VcXH2300_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VcXH2300_seed1_lumi165.png  used on input line 487.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/VcXH6000_seed1_lumi165.png, id=2882, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/VcXH6000_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/VcXH6000_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VcXH6000_seed1_lumi165.png  used on input line 494.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/VzWW3000_seed1_lumi165.png, id=2883, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/VzWW3000_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/VzWW3000_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VzWW3000_seed1_lumi165.png  used on input line 504.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/VzWW4000_seed1_lumi165.png, id=2884, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/VzWW4000_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/VzWW4000_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VzWW4000_seed1_lumi165.png  used on input line 511.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/VzWW5000_seed1_lumi165.png, id=2885, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/VzWW5000_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/VzWW5000_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/VzWW5000_seed1_lumi165.png  used on input line 521.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/DJ3500_seed1_lumi165.png, id=2886, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/DJ3500_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/DJ3500_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/DJ3500_seed1_lumi165.png  used on input line 528.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/Wprime3000_seed1_lumi165.png, id=2887, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/SINJ/Wprime3000_seed1_lumi165.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/Wprime3000_seed1_lumi165.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/Wprime3000_seed1_lumi165.png  used on input line 538.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.65.png, id=2888, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.65.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.65.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.65.png  used on input line 558.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.65/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.65.png, id=2889, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.65/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.65.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.65/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.65.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.65/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.65.png  used on input line 565.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.65.png, id=2890, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.65.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.65.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.65.png  used on input line 575.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.65/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.65.png, id=2891, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.65/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.65.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.65/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.65.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.65/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.65.png  used on input line 582.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi16.5.png, id=2892, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi16.5.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi16.5.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi16.5.png  used on input line 602.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_16.5/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi16.5.png, id=2893, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_16.5/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi16.5.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_16.5/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi16.5.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_16.5/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi16.5.png  used on input line 609.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi16.5.png, id=2894, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi16.5.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi16.5.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi16.5.png  used on input line 619.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_16.5/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi16.5.png, id=2895, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_16.5/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi16.5.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_16.5/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi16.5.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_16.5/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi16.5.png  used on input line 626.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi139.0.png, id=2896, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi139.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi139.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi139.0.png  used on input line 646.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_139.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi139.0.png, id=2897, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_139.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi139.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_139.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi139.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_139.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi139.0.png  used on input line 653.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi139.0.png, id=2898, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi139.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi139.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi139.0.png  used on input line 663.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_139.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi139.0.png, id=2899, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_139.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi139.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_139.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi139.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_139.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi139.0.png  used on input line 670.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi165.0.png, id=2900, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi165.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi165.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi165.0.png  used on input line 689.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_165.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi165.0.png, id=2901, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_165.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi165.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_165.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi165.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_165.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi165.0.png  used on input line 696.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi165.0.png, id=2902, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi165.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi165.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi165.0.png  used on input line 706.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_165.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi165.0.png, id=2903, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_165.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi165.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_165.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi165.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_165.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi165.0.png  used on input line 713.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi332.0.png, id=2904, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi332.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi332.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi332.0.png  used on input line 732.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_332.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi332.0.png, id=2905, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_332.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi332.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_332.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi332.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_332.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi332.0.png  used on input line 739.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi332.0.png, id=2906, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi332.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi332.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi332.0.png  used on input line 749.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_332.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi332.0.png, id=2907, 899.36pt x 875.27pt>
+File: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_332.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi332.0.png Graphic file (type png)
+<use Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_332.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi332.0.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_332.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi332.0.png  used on input line 756.
+(pdftex.def)             Requested size: 178.19879pt x 173.42152pt.
+<Images/Chap5/DataPlots/Limits/VcXH2300_limitFit_lumi1.png, id=2908, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/VcXH2300_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/VcXH2300_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VcXH2300_limitFit_lumi1.png  used on input line 775.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/VcXH6000_limitFit_lumi1.png, id=2909, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/VcXH6000_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/VcXH6000_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VcXH6000_limitFit_lumi1.png  used on input line 782.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/VzWW3000_limitFit_lumi1.png, id=2910, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/VzWW3000_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/VzWW3000_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VzWW3000_limitFit_lumi1.png  used on input line 792.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/VzWW4000_limitFit_lumi1.png, id=2911, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/VzWW4000_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/VzWW4000_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VzWW4000_limitFit_lumi1.png  used on input line 799.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/VzWW5000_limitFit_lumi1.png, id=2912, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/VzWW5000_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/VzWW5000_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/VzWW5000_limitFit_lumi1.png  used on input line 809.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/DJ3500_limitFit_lumi1.png, id=2913, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/DJ3500_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/DJ3500_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/DJ3500_limitFit_lumi1.png  used on input line 816.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+<Images/Chap5/DataPlots/Limits/Wprime3000_limitFit_lumi1.png, id=2914, 798.985pt x 674.52pt>
+File: Images/Chap5/DataPlots/Limits/Wprime3000_limitFit_lumi1.png Graphic file (type png)
+<use Images/Chap5/DataPlots/Limits/Wprime3000_limitFit_lumi1.png>
+Package pdftex.def Info: Images/Chap5/DataPlots/Limits/Wprime3000_limitFit_lumi1.png  used on input line 826.
+(pdftex.def)             Requested size: 142.55685pt x 120.34825pt.
+
+LaTeX Warning: Float too large for page by 8.47182pt on input line 833.
+
 ) [101
 
 
- <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png>] [102 <./Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png>] [103 <./Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png>] [104 <./Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png>] [105 <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf, page is rotated 90 degrees>] [106 <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf, page is rotated 90 degrees>] [107 <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf, page is rotated 90 degrees>] [108 <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf, page is rotated 90 degrees>] [109 <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf, page is rotated 90 degrees>] (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
+ <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_TotalBkg.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY.png> <./Images/Chap5/DataPlots/Signals_and_BKGs_dY_mJJrange.png>] [102 <./Images/Chap5/DataPlots/SIGfits/VcXH2300_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VcXH6000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW3000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW4000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/VzWW5000_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/DJ3500_DCB_fit_WP99.png> <./Images/Chap5/DataPlots/SIGfits/Wprime3000_DCB_fit_WP99.png>] [103 <./Images/Chap5/DataPlots/SPT/VcXH_2300_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_6000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_3000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_4000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_5000_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/DJ_3500_lumi1_fit.png> <./Images/Chap5/DataPlots/SPT/Wprime_3000_lumi1_fit.png>] [104 <./Images/Chap5/DataPlots/SPT/VcXH_2300_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_6000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_3000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_4000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_5000_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VcXH_3400_lumi165_fit.png> <./Images/Chap5/DataPlots/SPT/VzWW_2000_lumi165_fit.png>] [105 <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VcXH_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_VzWW_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_Wprime_lumi1.65.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi1.65/spuriousSignal_DJ_lumi1.65.pdf, page is rotated 90 degrees>] [106 <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VcXH_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_VzWW_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_Wprime_lumi16.5.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi16.5/spuriousSignal_DJ_lumi16.5.pdf, page is rotated 90 degrees>] [107 <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VcXH_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_VzWW_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_Wprime_lumi139.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi139/spuriousSignal_DJ_lumi139.0.pdf, page is rotated 90 degrees>] [108 <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VcXH_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_VzWW_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_Wprime_lumi165.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi165/spuriousSignal_DJ_lumi165.0.pdf, page is rotated 90 degrees>] [109 <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VcXH_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_VzWW_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_Wprime_lumi332.0.pdf, page is rotated 90 degrees> <./Images/Chap5/DataPlots/SPT/lumi332/spuriousSignal_DJ_lumi332.0.pdf, page is rotated 90 degrees>] [110 <./Images/Chap5/DataPlots/SINJ/VcXH2300_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/VcXH6000_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/VzWW3000_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/VzWW4000_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/VzWW5000_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/DJ3500_seed1_lumi165.png> <./Images/Chap5/DataPlots/SINJ/Wprime3000_seed1_lumi165.png>] [111 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi1.65.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_1.65/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi1.65.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_1.65/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi1.65.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_1.65/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi1.65.png>] [112 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi16.5.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_16.5/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi16.5.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_16.5/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi16.5.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_16.5/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi16.5.png>] [113 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi139.0.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_139.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi139.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_139.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi139.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_139.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi139.0.png>] [114 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi165.0.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_165.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi165.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_165.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi165.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_165.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi165.0.png>] [115 <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VcXH/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_VcXH_lumi332.0.png> <./Images/Chap5/DataPlots/SINJ/INJ_TOYS_5par_MultiSignal_VzWW/lumi_332.0/2026-09-14_14-52-18/extractionGraphs_signalInjection_toys_VzWW_lumi332.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_Wprime/lumi_332.0/2026-09-12_18-02-38/extractionGraphs_signalInjection_toys_Wprime_lumi332.0.png> <./Images/Chap5/DataPlots/SINJ/INPUT_FRES_5par_MultiSignal_DJ/lumi_332.0/2026-09-22_22-48-22/extractionGraphs_signalInjection_toys_DJ_lumi332.0.png>] [116 <./Images/Chap5/DataPlots/Limits/VcXH2300_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VcXH6000_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VzWW3000_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VzWW4000_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/VzWW5000_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/DJ3500_limitFit_lumi1.png> <./Images/Chap5/DataPlots/Limits/Wprime3000_limitFit_lumi1.png>] (Tesi.aux (Abstract.aux) (Chap_0_Intro.aux) (Chap_1.aux) (Chap_2.aux) (Chap_3.aux) (Chap_4.aux) (Chap_5.aux) (Chap_6_concl.aux) (AppendixA_plots.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -2754,17 +3065,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 9E1F532C222F65EA22EAC8C895B6F581;13403.
  ) 
 Here is how much of TeX's memory you used:
- 48064 strings out of 467510
- 1083674 string characters out of 5408794
- 1568685 words of memory out of 5000000
- 75611 multiletter control sequences out of 15000+600000
- 783218 words of font info for 357 fonts, out of 8000000 for 9000
+ 48349 strings out of 467510
+ 1112415 string characters out of 5408794
+ 1584549 words of memory out of 5000000
+ 75878 multiletter control sequences out of 15000+600000
+ 783395 words of font info for 359 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,131p,2550b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/valer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesi.pdf (118 pages, 15890299 bytes).
+Output written on Tesi.pdf (125 pages, 17741359 bytes).
 PDF statistics:
- 4018 PDF objects out of 4296 (max. 8388607)
- 452 named destinations out of 1000 (max. 500000)
- 83852 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 4090 PDF objects out of 4296 (max. 8388607)
+ 466 named destinations out of 1000 (max. 500000)
+ 84022 words of extra memory for PDF output out of 89155 (max. 10000000)
 
