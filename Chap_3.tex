@@ -66,7 +66,7 @@ The formation of topoclusters is controlled by the parameter $\zeta_{cell}$, the
 Starting from these seed cells, the cluster is grown by adding adjacent cells with lower significance, $ \zeta_{cell} \ge 2$. 
 Finally, all the cells with $ \zeta_{cell} \ge 0$ are added to the cluster if they are adjacent to a cell already added to the cluster.\\
 In the case of overlapping particle showers, the topocluster can contain multiple local energy maxima, which are then split into two separate clusters, with the requirement $E_{\text{cell}} > 500\text{ MeV}$.\\
-To each topocluster is assigned a four-momentum $P_{\text{clus}}$ and it is treated as a pseudo-particle. In fact the mass is set to zero, since there is no information about the mass of the particles producing the energy deposits, and the energy is computed as the sum of the energies of the cells in the cluster:
+To each topocluster is assigned a four-momentum $P_{\text{clus}}$ and it is treated as a pseudo-particle. Their mass is assumed to be zero because there is no information available about the mass of the particles producing the energy deposits, and the energy is computed as the sum of the energies of the cells in the cluster:
 \begin{equation}\label{eq:Reco/Jets/Components/Topoclusters/Eclus}
 E_{\text{clus}} = \sum_{i} E_{\text{cell}, i}
 \end{equation}
@@ -218,7 +218,7 @@ Following the jet reconstruction as described in the previous section, $\tau_N$ 
 \end{equation}
 
 \noindent where $i$ runs over all jet constituents, $R_0$ is the jet radius and $\Delta R_{k,i}$ represents the distance between constituent $i$ and subjet axis $k$.
-Small values of $\tau_N$ indicate that the radiation is aligned with the direction of the $N$ subjects, therefore the jet is compatible with an $N$-prong hypothesis, while large values of $\tau_N$ indicate that the jet are compatible with the $N+1$-prong and higher hypothesis.
+Small values of $\tau_N$ indicate that the radiation is aligned with the direction of the $N$ subjets, therefore the jet is compatible with an $N$-prong hypothesis, while large values of $\tau_N$ indicate that the jet are compatible with the $N+1$-prong and higher hypothesis.
 The ratio of two subjettiness is usually preferred to discriminate between different prong hypotheses. It is defined as:
 \begin{equation}\label{eq:Reco/Vars/tau_ratio}
 \tau_{N, N-1} = \frac{\tau_N}{\tau_{N-1}}

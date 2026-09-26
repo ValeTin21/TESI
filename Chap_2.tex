@@ -18,7 +18,7 @@ In the following, after a description of the LHC machine, the discussion covers 
 
 The Large Hadron Collider (LHC) at CERN, with its 27-kilometer ring \cite{LHCguide}, is the world's largest particle accelerator. 
 It has four major interaction points which host the major CERN experiments: ATLAS, CMS, LHCb and ALICE. 
-LHC is situated about 100 metres underground for economic and geological reasons, as well as to provide radiation shielding. 
+The LHC is situated about 100 metres underground for economic and geological reasons, as well as to provide radiation shielding. 
 Depending on the run, protons or lead nuclei are collided, with a center-of-mass energy of 13.6 TeV and 5.36 TeV per nucleon respectively.
 In order to reach such high energies, a complex system of pre-acceleration is adopted, as presented in Fig. \ref{fig:LHCAtlas/LHC/CERN_acc_system}.\\
 
@@ -58,13 +58,13 @@ The beam pipes and the interaction points are presented in Fig. \ref{fig:LHCAtla
 \end{figure}
 
 \noindent In the following, the focus will be placed on proton-proton collisions, which are the ones used in this study.\\
-Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV, [p]=eV), we get: $E^2=m^2+p^2\simeq p^2$, where at the end an ultra-relativistic particle (p$\gg$m) was assumed. This information is used in the norm of the four-momentum of two colliding particles:
+Due to the very high speed, when the two beams collide, the energy of the center of mass, known as $\sqrt{s}$, is twice the energy of each beam (which is the same). In fact, knowing that $E^2=m^2c^4+p^2c^2$ and using the natural unit system ([m]=eV, [p]=eV), we get: $E^2=m^2+p^2\simeq p^2$, where an ultra-relativistic particle (p$\gg$m) was assumed. This information is used in the norm of the four-momentum of two colliding particles:
 
 \begin{equation}\label{eq:LHCAtlas/LHC/parameters/centerofmasseq}
     \sqrt{s}=\sqrt{P_{\mu}P^{\mu}}=\sqrt{E_{tot}^2-|\Vec{p_{tot}}|^2}=\sqrt{(E_1+E_2)^2-|\Vec{p_1}-\Vec{p_2}|^2}\simeq 2 E
 \end{equation}
 
-\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV beam energy reached by LHC protons confirm the assumption p$\gg$m and it leads to the known value of $\sqrt{s}=13.6 \text{ TeV}$ for proton-proton collisions.\\
+\noindent where we assumed $E_1$ = $E_2$. The 6.8 TeV beam energy reached by LHC protons confirms the assumption p$\gg$m and it leads to the known value of $\sqrt{s}=13.6 \text{ TeV}$ for proton-proton collisions.\\
 Accelerated beams are directed and curved by superconducting electromagnets with a magnetic field of up to 8.3 T \cite{LHC_magnets}: 1232 dipole magnets and 392 quadrupole magnets are used to maintain the beams focused. 
 Magnets are kept at a temperature of 1.9 K to ensure a 11600 A electric current which is needed for the intense magnetic field. 
 Despite their essential contribution, magnets also represent one of the main limitations of this apparatus. 
@@ -323,7 +323,7 @@ Making use of the relation \ref{eq:LHCAtlas/LHC/parameters/pqBR} between the rad
     p = \frac{0.3BL^2}{8s}
 \end{equation}
 
-\noindent As direct consequence of this latter equation, the reltive uncertainty on the momentum measurement is equal to the relative uncertainty on the sagitta measurement, $\frac{\Delta p}{p}=\frac{\Delta s}{s}$, which, using $\sigma_x$ position uncertainty and N number of measured points, leads to:
+\noindent As direct consequence of this latter equation, the relative uncertainty on the momentum measurement is equal to the relative uncertainty on the sagitta measurement, $\frac{\Delta p}{p}=\frac{\Delta s}{s}$, which, using $\sigma_x$ position uncertainty and N number of measured points, leads to:
 \begin{equation}\label{eq:LHCAtlas/ATLAS/particleTracking/momentum_uncertainty_sagitta}
     \frac{\sigma_p}{p} = \frac{\sigma_x [m]}{0.3BL^2 [T m^2]}\sqrt{\frac{720}{N+5}}p [GeV]
 \end{equation}

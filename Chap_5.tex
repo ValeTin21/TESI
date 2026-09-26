@@ -98,7 +98,7 @@ The theoretical cross-sections are those associated with the generated processes
 The main backgrounds to this search are SM processes with multiple jets in the final state.
 The dominant contribution comes from QCD multi-jet events, which are characterized by a very high cross-section.
 Other relevant contributions come from $t\bar{t}$, $W$+jets and $Z$+jets processes, which are associated with lower cross-sections but still relevant in the signal regions.\\
-In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stacked distribution of the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis, for the dominant background processes considered in the analysis.
+In Fig. \ref{fig:ADJJ/dataset/BKG/BKGstack} a plot is shown, containing the stacked distribution of the di-jet invariant mass $m_{JJ}$, which is the variable of interest for this analysis, for the main background processes considered in the analysis.
 
 \begin{figure}[ht!]
     \centering
@@ -645,7 +645,7 @@ A_{L/R} = \left( \frac{n_{L/R}}{|\alpha_{L/R}|} \right)^{n_{L/R}} \cdot \exp\lef
 \end{equation}
 
 \noindent The Eq. \ref{eq:ADJJ/Model/SIG/DSCB} defines the signal probability density function (PDF) used in the fits, with the parameters $\mu$ and $\sigma$ representing the mean and standard deviation of the Gaussian core, while $\alpha_L$, $n_L$, $\alpha_R$, and $n_R$ define the shape of the left and right tails of the distribution.
-Making use of this PDF, the command \texttt{pdf.fitTo()} of \texttt{ROOT} is excecuted to perform a binned fit to the $m_{JJ}$ distribution of the signal samples and extract the best-fit parameters for each of them.
+Making use of this PDF, the \texttt{ROOT} command \texttt{pdf.fitTo()} is executed to perform a binned fit to the $m_{JJ}$ distribution of the signal samples and extract the best-fit parameters for each of them.
 This command runs with the aim to minimize the negative log-likelihood of the PDF.
 The minimization is performed using the \texttt{MINUIT} class which implements the \texttt{MIGRAD} algorithm to minimize the function and \texttt{HESSE} to compute the uncertainties on them.\\
 To ensure a good convergence of the fit, the procedure is divided into two steps.
@@ -763,7 +763,7 @@ f_{BKG}(x) = p_0 \cdot (1 - x)^{p_1} \cdot (x)^{\sum_{i=2}^{N}  p_i \cdot \log(x
 
 \noindent where $x = \frac{m_{JJ}}{\sqrt{s}}$ and $\sqrt{s}$ is the center-of-mass energy of the collision, 13.6 TeV for the LHC Run 3 data.
 N, the order of the polynomial, is a parameter to be determined, which defines the number of free parameters in the function.
-The term $p_0$ is indeed fixed to 1, since it is a normalization factor, which is already taken into account by the \texttt{RooFit} framework, the one responsable to execute fits \cite{RooFit}.\\
+The term $p_0$ is indeed fixed to 1, since it is a normalization factor, which is already taken into account by the \texttt{RooFit} framework, which is used to execute fits \cite{RooFit}.\\
 The function defined above is the one forming the background PDF, which is used to perform the fits on the background samples.\\
 Making use of the \texttt{Frequentist Framework} of the ATLAS collaboration and the \texttt{quickFit} \cite{quickFit} tool contained in it (which leverages the \texttt{RooFit} framework), a set of fits is performed on the background samples.
 The fits are executed to find the parameters that minimize the negative log-likelihood composed only by the background PDF, with different polynomial orders, to determine the best one to use in the analysis.
@@ -1026,7 +1026,7 @@ The results of fits and upper limits derivation executed applying this systemati
 The second validation test performed is the \textit{signal injection test}, which aims to quantify the ability of the model to recover a given amount of signal injected in a background sample.
 This validation proceeds similarly to the previous one; the main difference consists in how the histogram to fit is created, as explained below.\\
 The amount of injeted signal is quantified in terms of significance Z, which is defined as $Z \sim \frac{S}{\sqrt{B}}$, where S is the number of injected signal events and B is the number of background events in the Region of Interest (RoI).
-It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one $Z=\sqrt{2\Big((S+B)ln(1+\frac{S}{B})-S\Big)}$ and it is valid in the regime where B high enough and $B\gg S$, which is the case for the samples considered in this analysis \cite{Lik_tests}.
+It has to be noted that the definition of significance used in this study is a simplified version, which is assumed to be a limit of the more general one $Z=\sqrt{2\Big((S+B)ln(1+\frac{S}{B})-S\Big)}$ and it is valid in the regime where B is high enough and $B\gg S$, which holds true for the samples evaluated in this analysis \cite{Lik_tests}.
 Inverting the definition of Z, the number of injected signal events can be expressed as:
 \begin{equation}
   S_{inj} \sim Z \cdot \sqrt{B}

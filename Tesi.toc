@@ -73,3 +73,4 @@
 \contentsline {section}{\numberline {5.10}Proposal for analysis workflows on real data}{89}{section.5.10}%
 \contentsline {chapter}{\numberline {6}Conclusions}{93}{chapter.6}%
 \contentsline {chapter}{Bibliography}{95}{section*.103}%
+\contentsline {chapter}{Acknowledgments}{117}{appendix*.122}%
