@@ -1,6 +1,6 @@
 
 %%Packages import
-\documentclass[a4paper, oneside]{sapthesis}
+\documentclass[a4paper, noexaminfo,oneside]{sapthesis}
 \usepackage{microtype}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -13,8 +13,11 @@
 \usepackage[table]{xcolor}
 
 \definecolor{citegreen}{RGB}{0, 128, 0} 
+\definecolor{citeblack}{RGB}{0, 0, 0} 
+
 
 \usepackage[colorlinks=true, citecolor=citegreen, linkcolor=black, urlcolor=black, filecolor=black]{hyperref}
+% \usepackage[colorlinks=true, citecolor=citeblack, linkcolor=black, urlcolor=black, filecolor=black]{hyperref}
 \usepackage{blindtext}
 \usepackage{comment}
 \usepackage{color,soul}
@@ -26,11 +29,13 @@
 \usepackage{subcaption}
 \usepackage{multirow}
 \usepackage{booktabs}
+% \usepackage{eso-pic}
+
 
 \usepackage{pifont}
 \newcommand{\xmark}{\ding{55}}
 
-\usepackage[linguistics]{forest} %per dare i diagrammi: https://texdoc.org/serve/forest/0
+\usepackage[linguistics]{forest} 
 
 
 \newcommand*{\belowrulesepcolor}[1]{% 
@@ -48,6 +53,8 @@
 \bibliographystyle{unsrtnat}
 \setcitestyle{lower,open={[},close={]}}
 
+% \providecommand{\customexaminerlabel}{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%Main Settings
 \hypersetup{pdftitle={Search for New Physics with Anomaly Detection approach at the LHC}, pdfauthor={Nome Cognome}}
@@ -62,15 +69,13 @@
 \coadvisor{Dr. Valerio Ippolito \\Dr. Giuliano Gustavino}
 \customcoadvisorlabel{Co-Advisors}
 %\director{Dott.  Nome Cognome}
-%\customdirectorlabel{Specializzando\\Responsabile della ricerca}
 \authoremail{tinari.1998628@studenti.uniroma1.it}
 \copyyear{2026}
-% \examdate{}
-% \examiner{} 
 
-%In caso di titoli di section a 2 righe
-%\setlength{\headheight}{22.59052pt}
-%\addtolength{\topmargin}{-10.59052pt}
+\thesistype{Master's Thesis}
+
+% \examdate{28/10/2026}
+% \examiner{}
 
 \makeindex
 
@@ -89,12 +94,6 @@ Che passi tutto il giorno a disegnare\\
 Quella barchetta ferma in mezzo al mare\\
 E non ti butti mai"\\[1em]
 \textit{Brunori Sas} - \textit{La Verità}}
-
-% \\[1em]
-% A chi sa che non sempre tutto è determinato\\
-% e lo accetta, passo dopo passo.}
-
-% \dedication{dedica}
 
 
 \newpage

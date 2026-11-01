@@ -170,7 +170,7 @@ A random classifier can only obtain a AUC=0.5 (TPR=FPR); a perfect classifier fl
 \section{Anomaly Detection in High Energy Physics}\label{sec:AD/ADforHEP}
 
 Searches for NP could gain a reasonable benefit from the implementation of AD techniques, given the multiple limitations of the field.
-There are two main categories by which AD be used in this context: \textit{outlier detection} and \textit{overdensity estimation} \cite{ML4ADHEP}.
+There are two main categories by which AD can be used in this context: \textit{outlier detection} and \textit{overdensity estimation} \cite{ML4ADHEP}.
 The first one is based on the identification of events that are outliers, deviating for the common behaviour of the dataset, usually in the tails of distributions.
 This region is typically challenging to model and it is often dominated by statistical fluctuations, making it difficult to distinguish between real anomalies and random noise.
 The second one, instead, is based on the identification of a localised excess of data points over an expected smooth background.\\
@@ -178,7 +178,7 @@ The increasing popularity of AD in HEP is due to its model agnostic nature, whic
 Together with this, large unlabeled datasets have been collected by collider experiments, boosting the usage of unsupervised learning techniques.\\
 In this approach, the data is divided into two categories: \textit{background}, containing Standard Model events, and \textit{signal}, including the hypothetical NP.\\
 Typically, before the raise of AD, the searches for NP were conducted on simulated MC data in the first stage, applying a proper event selection to define a region of interest, called Signal Region (SR), in the phase space of parameters where the signal is expected to be found. 
-Then, after validating the found parameters, the search was performed on real data, looking for an excess of events in the SR with respect to the background prediction, as shown in figure \ref{fig:AD/ADforHEP/BumpHunt}.\\
+Then, after validating the found parameters, the search was performed on data, looking for an excess of events in the SR with respect to the background prediction, as shown in figure \ref{fig:AD/ADforHEP/BumpHunt}.\\
 This approach relied strongly on simulated MC data.
 
 \begin{figure}[ht!]
@@ -189,7 +189,7 @@ This approach relied strongly on simulated MC data.
 \end{figure}
 
 \noindent With the implementation of AD, the dependance on MC simulations can be reduced.
-The DNN, in fact, can be trained and validated directly on real data, in a CR where the presence of signal is not expected.
+The DNN, in fact, can be trained and validated directly on data, in a CR where the presence of signal is not expected.
 For this reason, similar implementations of AD are referred to as \textit{data-driven} approaches.\\
 Once the DNN is trained, it is used to compute the Anomaly Score (SR) of the data, a distribution of the probability for it to be anomalous, as shown in Fig. \ref{fig:AD/ADforHEP/AS_distribution}.
 AS is defined as a distance between the input and the output of the model.

@@ -6,7 +6,7 @@ The goal of this analysis is to prove the feasibility of the AD approach in a fu
 At the moment, the status of the analysis is the following.
 The R\&D phase on the MC sample for the DNN model can be defined as concluded, as it is for the statistical analysis and modelling on the MC dataset.
 The latter is associated with the original work of this thesis, which is the main contribution to the analysis on the MC samples, as described in details in the sections below.
-The preparation of the field to move towards the usage of the real data is currently on going, expecting the switch in dataset to happen soon.\\
+The preparation of the field to move towards the usage of the data is currently on going, expecting the switch in dataset to happen soon.\\
 In the following sections, an overiew of the analysis is presented, with a description of the dataset and the Graph Neural Network model used for the AD implementation. 
 After this, an important portion of the chapter is dedicated to the description of the original work related to this thesis, which is the execution of the statistical analysis on the MC dataset, with the aim of testing the AD approach in a full analysis.
 This work is conducted within the \texttt{Frequentist Framework} \cite{FF}, a well established tool used inside the ATLAS collaboration. 
@@ -16,7 +16,7 @@ This work is conducted within the \texttt{Frequentist Framework} \cite{FF}, a we
 \section{The dataset}\label{sec:ADJJ/dataset}
 The analysis focuses on exploring the data collected by the ATLAS detector during the LHC Run-3 from 2022 to 2024.
 It corresponds to a total integrated luminosity of 165 fb$^{-1}$, with a center-of-mass energy of $\sqrt{s} = 13.6$ TeV \cite{ATLAS_Luminosity}.\\
-Before running the full analysis pipeline on the real data, a preliminary study is performed on a MC dataset, which is used to train and validate the AD model and to test the statistical tools developed.
+Before running the full analysis pipeline on the data, a preliminary study is performed on a MC dataset, which is used to train and validate the AD model and to test the statistical tools developed.
 The latter aspect is the goal of this thesis, which aims to conduct the analysis on the MC sample and validate the tools.
 In this preliminary stage, a sample simluating 2023 events is used, the one developed during \textit{MC23d} campaign, corresponding to a integrated luminosity of 25.76 fb$^{-1}$.\\
 The composition of the dataset is described in the following.\\
@@ -130,13 +130,13 @@ For this reasons, the total cross-section of the process can be computed as the 
 This translates in the fact that the generated slices of MC histograms can be simply summed together bin per bin to form the total QCD distribution to study.\\
 When combining the slices, a proper normalization and reweighting has to be applied, in order to have a correct representation of the entire sample. \\
 For each event a weight is defined, to take into account both the effect just cited and other aspects.
-Among those we find a compatibility, in terms of acceptance or efficiency, between the MC and the real data, which is not always guaranteed, or pile-up effects which have to be included.
+Among those we find a compatibility, in terms of acceptance or efficiency, between the MC and the data, which is not always guaranteed, or pile-up effects which have to be included.
 All these aspects are combined and taken into account by the variable \textit{weight\_total\_NOSYS} of the dataset. 
 
 
 %-------------------------------------------------------------------------------
 \subsection{The event preselection}\label{sec:ADJJ/dataset/evSel}
-After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco} for large-radius jet ($R=1.0$), an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on real data.\\
+After generating the MC samples and applying the reconstruction algorithms described in Chap. \ref{chap:Reco} for large-radius jet ($R=1.0$), an event preselection is applied to the dataset, to reduce its size and to reproduce the typical event selection applied on data.\\
 The first step of preselection is the application of three trigger requirements.
 First of all, a jet has to fire the single jet trigger item which requires events with $E_T>100 \text{ GeV}$ at L1 trigger and $E_T>460 \text{ GeV}$ at HLT.
 Secondly, it is required that the object raising this trigger is the leading jet of the event, where the leading jet is defined as the one with the highest transverse momentum $p_T$.
@@ -160,7 +160,7 @@ Trigger fired by leading jet       \\
 \hline
 $p_{\text{T}, lead jet} > 470\text{ GeV}$       \\
 \hline
- \#jets = 4        \\
+ \#jets = 2        \\
 \hline
 $m_{lead jet}   > 50\text{ GeV}$       \\
 \hline
@@ -278,11 +278,11 @@ The splitting of the dataset to compose the sets for the three phases is present
 \rowcolor{lightgray}
 \textbf{Phase} & \textbf{Dataset} & \textbf{Number of events} \\
 \hline\hline
-Training & QCD multi-jet & 320 k \\
+Training & QCD multi-jet & 220 k \\
 \hline
-Validation & QCD multi-jet & 30 k \\
+Validation & QCD + other Backgrounds + Signals & 11 k \\
 \hline
-Testing & QCD + other Backgrounds + Signals & 2.6 M \\
+Testing & QCD + other Backgrounds + Signals & 869 k \\
 \hline
 \end{tabular}
 \caption{Splitting of the dataset to compose the sets for the three phases of the training of the model. The training and validation sets are composed exclusively by QCD multi-jet events, while the testing set is composed by a mixed dataset, containing both all backgrounds and signals.}
@@ -596,7 +596,7 @@ DarkJets   &  1.1\%  &  0.8\% \\
 Wprime     &  1.6\%   &  1.4\% \\
 \hline
 \end{tabular}
-\caption{Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 90\% and the rapidity difference $|\Delta y|<1.2$.}
+\caption{Background and signal efficiencies after applying the two different event selection cuts, based on the AS at WP 99\% and the rapidity difference $|\Delta y|<1.2$.}
 \label{tab:ADJJ/evSel/cuts}
 \end{table}
 
@@ -1145,7 +1145,7 @@ The behaviour observed during this study could be associated with a cut on AS to
 Another possible explanation is that the chosen background PDF, with 4 free parameters, is not flexible enough to model the background sample in the RoI, in particular for higher mass points where the statistics in that region is low.
 Concerning the lower mass points, the issue is probably associated either with the binning of the histogram, which is too tight and more subject to fluctuations, or with the choice of the background PDF.\\
 In conclusion, despite the event selection with WP99 passes the spurious signal test indicating a contained bias in the background sample modelling, the signal injection one is more critical and not passed for all the signal samples and mass points.
-For these reasons, the study presented here is considered as preliminary and the choice of both the WP for the event selection and the background PDF should be further investigated, before applying them in the final analysis on the real data.
+For these reasons, the study presented here is considered as preliminary and the choice of both the WP for the event selection and the background PDF should be further investigated, before applying them in the final analysis on the data.
 
 
 %-------------------------------------------------------------------------------
@@ -1182,7 +1182,7 @@ In Fig. \ref{fig:ADJJ/UpperLimits/Fits_lumi1} the fits to the background only sa
 
 \noindent The fits to the other signal hypotheses are reported in Appendix A, where the same study for the different rescaled luminosities is also shown.\\
 Despite some fluctuations in the tails of the distributions due to the low statistics in those regions, given the computed p-values quantifying the agreement between the data and the fitted function, the fits are considered acceptable for all the signal hypotheses and luminosities tested in this study.
-For the reasons just discussed, it is expected that once the analysis will be performed on the real data, the results associated with the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
+For the reasons just discussed, it is expected that once the analysis will be performed on the data, the results associated with the search for lower mass signals will be more subject to systematic uncertainties, as the background modelling one, and for those at higher masses, the statistical uncertainty will be dominant.\\
 The best-fit parameters are then used to compute the upper limits on the signal cross-section for each signal hypothesis and mass point, at the different tested luminosities.
 Since the PoI of the likelihood of this analysis is the number of signal $N_{sig}$, referred to as $\mu$, using the definition of signal strength $\mu_s$, limits are derived on this quantity and then converted to the cross-section $\sigma_{exp}$ using the relation:
 \begin{equation}\label{eq:ADJJ/UpperLimits/sigma_limit}
@@ -1375,7 +1375,7 @@ These reduced deviations could be associated with the fact that those samples ha
 Improvements in the training of the GNN could lead to a better discrimination power and, consequently, to an improved performance of the analysis.\\
 Secondly, the expected upper limits presented in this section are derived applying a cut on the AS at WP 99\%.
 The validation tests presented in Sec. \ref{sec:ADJJ/Validation} show that a better compromise in terms of WP should be considered, since the current choice performs well in terms of fit bias but it is more critical in terms of recovering the injected signal.
-This latter aspect is crucial going towards the execution of the analysis on real data where, in the (very rare) case of a signal presence, the analysis should be able to recover it correctly and not to reject it due to an aggressive cut on the AS.\\
+This latter aspect is crucial going towards the execution of the analysis on data where, in the (very rare) case of a signal presence, the analysis should be able to recover it correctly and not to reject it due to an aggressive cut on the AS.\\
 For all the reasons presented above, the AD strategy presents sufficient sensitivity but a more precise choice of the threshold is required to improve the final results.
 
 
@@ -1383,7 +1383,7 @@ For all the reasons presented above, the AD strategy presents sufficient sensiti
 %-------------------------------------------------------------------------------
 \section{Comparison with a $D_2$ based event selection}\label{sec:ADJJ/D2}
 
-In order to extract an estimation of the advantages of the AD strategy and why it is worth training a GNN to perform an event selection, a comparison with is performed an analysis conducted with requirements on a more standard variable, $D_2$ (Sec. \ref{sec:Reco/Vars/D2}).\\
+In order to extract an estimation of the advantages of the AD strategy and why it is worth training a GNN to perform an event selection, a comparison is performed with an analysis conducted with requirements on a more standard variable, $D_2$ (Sec. \ref{sec:Reco/Vars/D2}).\\
 The comparison starts from the definition of the $D_{2,ev}$ variable, which is considered as the product of $D_2$ of the leading and subleading jets, $D_{2,ev} = D_{2,lead} \cdot D_{2,sublead}$.
 This variable is introduced to get a direct comparison with the AD strategy, where the selection is performed on the AS of the leading and subleading jets separately and then combined using the logical AND operator.
 After having determined the right variable to deal with, WPs are computed on the $D_{2,ev}$ distirbution presented in Fig. \ref{fig:ADJJ/D2/D2distribution} to reject from 20\% to 99.9\% of the background events.
@@ -1578,14 +1578,14 @@ Apparently it is not worth investing time and resources in training a complex GN
 However, this assumption is not correct.
 In fact, the AD strategy is a model independent approach, meaning that its main advantages is the ability to identify, with competitive performance, different signal topologies without making any specific BSM assumption during the model training.
 This is the reason why it is worth implementing a AD approach in the analysis.\\
-After the study presented in this section, the workflow of the analysis on the MC sample is considered completely defined and the next steps before moving to real data are the optimization of the sample modelling and event selection, together with the addition of other systematic uncertainties in the likelihood model, such as JES and JER (uncertainties linked to the jet calibration).
+After the study presented in this section, the workflow of the analysis on the MC sample is considered completely defined and the next steps before moving to data are the optimization of the sample modelling and event selection, together with the addition of other systematic uncertainties in the likelihood model, such as JES and JER (uncertainties linked to the jet calibration).
 
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{Comparison of the study with the state of the art}\label{sec:ADJJ/VVJJ}
 
-The upper limits derived in this thesis at higher luminosities on the MC sample are used to extrapolate an estimation of the sensitivity that the analysis could have on real data.
+The upper limits derived in this thesis at higher luminosities on the MC sample are used to extrapolate an estimation of the sensitivity that the analysis could have on data.
 These estimations are compared with the state of the art within the ATLAS experiment, in order to understand what aspects of the analysis could be improved to increase its sensitivity.
 In particular, another analysis \cite{ATLAS_AD_VVJJ} searching for one of the benchmark signals considered in this thesis, the Heavy Vector Triplet $Y\to XH$, determined a 95\% CL upper limit on the cross-section of the process roughly a factor of 10-15 lower than the estimation obtained here, as visible from Fig. \ref{fig:ADJJ/VVJJ/Limit}.
 
@@ -1644,21 +1644,21 @@ A possible improvement of the analysis araising from this comparison is the need
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \newpage
-\section{Proposal for analysis workflows on real data}\label{sec:ADJJ/WF}
+\section{Proposal for analysis workflows on data}\label{sec:ADJJ/WF}
 
-Among the studies conducted during this thesis project, the workflow of the analysis on real data has been analysed and a strategy to be implemented has been proposed.\\
-This phase is essential because, based on the requirements for the analysis on real data, the needed tests and validations on the MC sample are performed in order to ensure that the analysis is robust and reliable.
-It should be noted that the MC phase works as preliminary testing for the final analysis, which will be conducted directly on real data, satisfying the requirement for AD to be data driven.\\
-The workflow of the analysis on real data has been inserted in a diagram.
+Among the studies conducted during this thesis project, the workflow of the analysis on data has been analysed and a strategy to be implemented has been proposed.\\
+This phase is essential because, based on the requirements for the analysis on data, the needed tests and validations on the MC sample are performed in order to ensure that the analysis is robust and reliable.
+It should be noted that the MC phase works as preliminary testing for the final analysis, which will be conducted directly on data, satisfying the requirement for AD to be data driven.\\
+The workflow of the analysis on data has been inserted in a diagram.
 It is presented in Fig. \ref{fig:ADJJ/WF/WFdiagram_p1} - \ref{fig:ADJJ/WF/WFdiagram_p5}, and commented step by step below.
-The diagram has values which refer to a partial Run 3 sample with $\mathcal{L} = 165.0 \text{ fb}^{-1}$ , which is the luminosity on which the analysis on real data should be concluded.
+The diagram has values which refer to a partial Run 3 sample with $\mathcal{L} = 165.0 \text{ fb}^{-1}$ , which is the luminosity on which the analysis on data should be concluded.
 On the other hand, as visible from the studies conducted on the MC sample, there is no limitations in principle in using the full Run 3 statistics of $\mathcal{L} = 332.0 \text{ fb}^{-1}$.
 Whether to use the full Run 3 sample or a partial one is a choice that will be made based on the results of the MC phase after all the optimisations will be done and systematic uncertainties will be taken into account.
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=1,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Workflow of the analysis on real data up to determination of the amount of data to use for the GNN training.}
+    \caption{Workflow of the analysis on data up to determination of the amount of data to use for the GNN training.}
     \label{fig:ADJJ/WF/WFdiagram_p1}
 \end{figure}
 
@@ -1666,9 +1666,9 @@ Whether to use the full Run 3 sample or a partial one is a choice that will be m
 
 \noindent The starting point of the data driven analysis is crucial and it is represented by the amount of data to use to train the GNN.
 In fact, in AD the network should be trained on a sample where it is assumed that the presence of signal is negligible with respect to the background.
-This requirement is easily satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of real data, where the possible presence of signal is unknown.
+This requirement is easily satisfied in the case of MC samples, where the truth label about the event is known, but it is more critical in the case of data, where the possible presence of signal is unknown.
 For this aspect, the robust MC tests conducted are essential.
-Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it should be possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of real data.
+Based on the results presented in Sec. \ref{sec:ADJJ/UpperLimits}, it should be possible to define a luminosity threshold, below which the presence of signal can be considered negligible, the sensitivity to NP is very low and the GNN can be trained using the equivalent amount of data.
 At the moment a threshold can not be determined from the results in Fig. \ref{fig:ADJJ/UpperLimits/VcXH}-\ref{fig:ADJJ/UpperLimits/WprimeDJ} due to the fact that the region where the limits computed in the analysis are below the theoretical values vary from signal to signal and mass point.
 Moreover, the results of the signal injection tests presented in Sec. \ref{sec:ADJJ/Validation/SINJ} highlight the presence of critical aspects in the analysis, requiring more detailed validations of the possible signal contamination in the sample.
 A more stable result is expected to be obtained once the MC phase will be fully optimized and concluded.
@@ -1678,7 +1678,7 @@ It is important to underline that this value is only a reference for this discus
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=2,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Workflow of the analysis on real data up to the request for the sample with the full target statistics.}
+    \caption{Workflow of the analysis on data up to the request for the sample with the full target statistics.}
     \label{fig:ADJJ/WF/WFdiagram_p2}
 \end{figure}
 
@@ -1691,7 +1691,7 @@ Subsequently, the full target sample will be analysed, executing controls on the
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=3,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Workflow of the analysis on real data up to the computation of the AS for the sample with the full target statistics.}
+    \caption{Workflow of the analysis on data up to the computation of the AS for the sample with the full target statistics.}
     \label{fig:ADJJ/WF/WFdiagram_p3}
 \end{figure}
 
@@ -1699,19 +1699,19 @@ Subsequently, the full target sample will be analysed, executing controls on the
 Only at this stage, the final fit on the $m_{JJ}$ distribution with the unblinding of the data will be performed.
 If any excess will be observed, they will be interpreted and explained.
 In the opposite, more probable, scenario, the upper limits will be derived and, after the final comparisons, the analysis will end.\\
-In conclusion, it is necessary to highlight that the workflow of the analysis on real data presented above is still under development and discussion, determining the crucial aspects to carefully validate on MC samples before moving to real data.
-For these reasons, the workflow is not yet considered definitive and it is expected to be modified and improved in the next months, before the analysis on real data will be executed.
+In conclusion, it is necessary to highlight that the workflow of the analysis on data presented above is still under development and discussion, determining the crucial aspects to carefully validate on MC samples before moving to data.
+For these reasons, the workflow is not yet considered definitive and it is expected to be modified and improved in the next months, before the analysis on data will be executed.
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=4,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Workflow of the analysis on real data up to the unblinding of the SR.}
+    \caption{Workflow of the analysis on data up to the unblinding of the SR.}
     \label{fig:ADJJ/WF/WFdiagram_p4}
 \end{figure}
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[page=5,width=6 in]{Images/Chap5/WFdata.pdf}
-    \caption{Workflow of the analysis on real data up to the conclusion of the analysis.}
+    \caption{Workflow of the analysis on data up to the conclusion of the analysis.}
     \label{fig:ADJJ/WF/WFdiagram_p5}
 \end{figure}
